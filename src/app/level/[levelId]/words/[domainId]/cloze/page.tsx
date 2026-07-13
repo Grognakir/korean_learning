@@ -30,7 +30,11 @@ export default async function ClozePage({
           ]}
         />
         <h1 className="font-display mb-6 text-3xl font-semibold">Подстановка · {domain.titleRu}</h1>
-        <PracticeQuiz exercises={exercises} title={`Слова: ${domain.titleKo}`} />
+        <PracticeQuiz
+          exercises={exercises}
+          title={`Слова: ${domain.titleKo}`}
+          studiedKey={{ kind: "studiedDomains", id: domainId }}
+        />
       </main>
     </div>
   );

@@ -1,11 +1,17 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { ClozeExercise, ChoiceExercise } from "@/lib/types";
+import { markStudied } from "@/lib/progress";
 
 type Exercise =
   | (ClozeExercise & { kind?: "cloze" })
   | (ChoiceExercise & { kind: "choice" });
+
+type StudiedKey = {
+  kind: "studiedGrammar" | "studiedTopics" | "studiedDomains";
+  id: string;
+};
 
 function isChoice(ex: Exercise): ex is ChoiceExercise & { kind: "choice" } {
   return ex.kind === "choice" || ("promptRu" in ex && !("sentenceKo" in ex));
@@ -14,15 +20,23 @@ function isChoice(ex: Exercise): ex is ChoiceExercise & { kind: "choice" } {
 export function PracticeQuiz({
   exercises,
   title,
+  studiedKey,
 }: {
   exercises: Exercise[];
   title: string;
+  studiedKey?: StudiedKey;
 }) {
   const list = useMemo(() => exercises, [exercises]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
+
+  useEffect(() => {
+    if (finished && studiedKey) {
+      markStudied(studiedKey.kind, studiedKey.id);
+    }
+  }, [finished, studiedKey]);
 
   if (list.length === 0) {
     return (

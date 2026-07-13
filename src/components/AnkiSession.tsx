@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { VocabItem } from "@/lib/types";
-import { getDueCards, getSrsStats, loadProgress, updateSrs } from "@/lib/progress";
+import { getDueCards, getSrsStats, loadProgress, markStudied, updateSrs } from "@/lib/progress";
 import type { SrsRating } from "@/lib/types";
 
 type Direction = "ko-ru" | "ru-ko";
@@ -29,7 +29,11 @@ export function AnkiSession({ words, domainId }: { words: VocabItem[]; domainId:
     if (!currentId) return;
     updateSrs(currentId, rating);
     setFlipped(false);
-    setQueue((q) => q.slice(1));
+    const remaining = queue.slice(1);
+    setQueue(remaining);
+    if (remaining.length === 0) {
+      markStudied("studiedDomains", domainId);
+    }
     setStats(getSrsStats(cardIds));
   }
 

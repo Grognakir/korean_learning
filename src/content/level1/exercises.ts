@@ -1304,13 +1304,36 @@ export const vocabClozes: ClozeExercise[] = [
   },
 ];
 
+import { buildGrammarSupplements, mergeGrammarExercises } from "./exerciseGenerator";
+import { getTopic } from "./topics";
+
 export function getGrammarExercises(grammarId: string): GrammarExercise[] {
-  return grammarExercises.filter((e) => e.relatedGrammarId === grammarId);
+  return mergeGrammarExercises(grammarExercises, grammarId);
 }
 
 export function getTopicExercises(topicId: string): GrammarExercise[] {
-  return grammarExercises.filter((e) => e.topicId === topicId);
+  const topic = getTopic(topicId);
+  if (!topic) return [];
+
+  const grammarIds = [...new Set(topic.subtopics.flatMap((s) => s.grammarIds))];
+  const byGrammar = grammarIds.flatMap((id) => mergeGrammarExercises(grammarExercises, id));
+  const vocab = vocabClozes
+    .filter(
+      (e) =>
+        e.topicId === topicId ||
+        (e.domainId !== undefined && topic.vocabDomainIds.includes(e.domainId)),
+    )
+    .map((e) => ({ ...e, kind: "cloze" as const }));
+
+  const seen = new Set<string>();
+  return [...byGrammar, ...vocab].filter((e) => {
+    if (seen.has(e.id)) return false;
+    seen.add(e.id);
+    return true;
+  });
 }
+
+export { buildGrammarSupplements };
 
 export function getDomainClozes(domainId: string): ClozeExercise[] {
   return vocabClozes.filter((e) => e.domainId === domainId);

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs, SiteHeader } from "@/components/Nav";
 import { PracticeQuiz } from "@/components/PracticeQuiz";
 import { getLevel } from "@/content/levels";
-import { getTopic, getTopicExercises, getDomainClozes } from "@/content/level1";
+import { getTopic, getTopicExercises } from "@/content/level1";
 
 export default async function TopicPracticePage({
   params,
@@ -14,12 +14,7 @@ export default async function TopicPracticePage({
   const topic = getTopic(topicId);
   if (!level?.available || !topic) notFound();
 
-  const grammarEx = getTopicExercises(topicId);
-  const vocabEx = topic.vocabDomainIds.flatMap((id) => getDomainClozes(id)).slice(0, 8);
-  const exercises = [
-    ...grammarEx,
-    ...vocabEx.map((e) => ({ ...e, kind: "cloze" as const })),
-  ];
+  const exercises = getTopicExercises(topicId);
 
   return (
     <div className="min-h-screen">
@@ -35,7 +30,11 @@ export default async function TopicPracticePage({
           ]}
         />
         <h1 className="font-display mb-6 text-3xl font-semibold">Тренировка: {topic.titleRu}</h1>
-        <PracticeQuiz exercises={exercises} title={`${topic.unit}과 · ${topic.titleKo}`} />
+        <PracticeQuiz
+          exercises={exercises}
+          title={`${topic.unit}과 · ${topic.titleKo}`}
+          studiedKey={{ kind: "studiedTopics", id: topicId }}
+        />
       </main>
     </div>
   );

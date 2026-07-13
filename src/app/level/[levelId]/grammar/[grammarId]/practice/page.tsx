@@ -31,7 +31,7 @@ export default async function GrammarPracticePage({
         />
         <h1 className="font-display mb-2 text-3xl font-semibold">Тренировка</h1>
         <p className="ko-text mb-6 text-[var(--accent)]">{point.form}</p>
-        <PracticeQuiz exercises={exercises} title={point.titleRu} />
+        <PracticeQuiz exercises={exercises} title={point.titleRu} studiedKey={{ kind: "studiedGrammar", id: grammarId }} />
       </main>
     </div>
   );

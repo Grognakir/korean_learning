@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #eef3f1;
+  --bg-deep: #d9e5e0;
+  --ink: #14261f;
+  --ink-soft: #3d564b;
+  --panel: rgba(255, 252, 248, 0.88);
+  --panel-solid: #fffaf4;
+  --line: rgba(20, 38, 31, 0.1);
+  --accent: #0f6b5c;
+  --accent-2: #c45c26;
+  --accent-soft: #d8efe9;
+  --warn: #9a3412;
+  --ok: #166534;
+  --bad: #991b1b;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-ko: var(--font-ko);
+}
+
+body {
+  min-height: 100%;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #cfe7df 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #f3dcc8 0%, transparent 45%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.font-ko {
+  font-family: var(--font-ko), "Apple SD Gothic Neo", sans-serif;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+}
+
+.ko-text {
+  font-family: var(--font-ko), "Apple SD Gothic Neo", sans-serif;
+  letter-spacing: -0.01em;
+}

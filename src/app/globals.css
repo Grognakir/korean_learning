@@ -20,8 +20,6 @@
   --color-background: var(--bg);
   --color-foreground: var(--ink);
   --font-sans: var(--font-body);
-  --font-display: var(--font-display);
-  --font-ko: var(--font-ko);
 }
 
 body {
@@ -35,11 +33,11 @@ body {
 }
 
 .font-display {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 .font-ko {
-  font-family: var(--font-ko), "Apple SD Gothic Neo", sans-serif;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
 }
 
 .panel {
@@ -49,6 +47,6 @@ body {
 }
 
 .ko-text {
-  font-family: var(--font-ko), "Apple SD Gothic Neo", sans-serif;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
   letter-spacing: -0.01em;
 }

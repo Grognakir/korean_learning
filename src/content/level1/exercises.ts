@@ -1308,12 +1308,18 @@ export const vocabClozes: ClozeExercise[] = [
 ];
 
 const topicExerciseCache = new Map<string, GrammarExercise[]>();
+let grammarCacheReady = false;
 
-for (const point of grammar) {
-  mergeGrammarExercises(grammarExercises, point.id);
+function ensureGrammarCache() {
+  if (grammarCacheReady) return;
+  for (const point of grammar) {
+    mergeGrammarExercises(grammarExercises, point.id);
+  }
+  grammarCacheReady = true;
 }
 
 export function getGrammarExercises(grammarId: string): GrammarExercise[] {
+  ensureGrammarCache();
   return mergeGrammarExercises(grammarExercises, grammarId);
 }
 

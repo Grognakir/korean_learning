@@ -1,4 +1,7 @@
 import type { ChoiceExercise, ClozeExercise } from "@/lib/types";
+import { buildGrammarSupplements, mergeGrammarExercises } from "./exerciseGenerator";
+import { grammar } from "./grammar";
+import { getTopic } from "./topics";
 
 export type GrammarExercise = (ClozeExercise & { kind: "cloze" }) | (ChoiceExercise & { kind: "choice" });
 
@@ -1304,14 +1307,20 @@ export const vocabClozes: ClozeExercise[] = [
   },
 ];
 
-import { buildGrammarSupplements, mergeGrammarExercises } from "./exerciseGenerator";
-import { getTopic } from "./topics";
+const topicExerciseCache = new Map<string, GrammarExercise[]>();
+
+for (const point of grammar) {
+  mergeGrammarExercises(grammarExercises, point.id);
+}
 
 export function getGrammarExercises(grammarId: string): GrammarExercise[] {
   return mergeGrammarExercises(grammarExercises, grammarId);
 }
 
 export function getTopicExercises(topicId: string): GrammarExercise[] {
+  const cached = topicExerciseCache.get(topicId);
+  if (cached) return cached;
+
   const topic = getTopic(topicId);
   if (!topic) return [];
 
@@ -1326,11 +1335,13 @@ export function getTopicExercises(topicId: string): GrammarExercise[] {
     .map((e) => ({ ...e, kind: "cloze" as const }));
 
   const seen = new Set<string>();
-  return [...byGrammar, ...vocab].filter((e) => {
+  const result = [...byGrammar, ...vocab].filter((e) => {
     if (seen.has(e.id)) return false;
     seen.add(e.id);
     return true;
   });
+  topicExerciseCache.set(topicId, result);
+  return result;
 }
 
 export { buildGrammarSupplements };

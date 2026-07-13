@@ -4,6 +4,11 @@ import type { GrammarExercise } from "./exercises";
 
 const PARTICLES = ["이", "가", "은", "는", "을", "를", "에", "에서", "도", "만", "의", "와", "과"];
 
+const ALL_EXAMPLE_KO = grammar.flatMap((g) => g.examples.map((e) => e.ko));
+const ALL_FORMS = grammar.map((g) => g.form);
+
+const mergedCache = new Map<string, GrammarExercise[]>();
+
 function seededShuffle<T>(items: T[], seed: string): T[] {
   let hash = 0;
   for (let i = 0; i < seed.length; i += 1) {
@@ -33,11 +38,15 @@ function uniqueOptions(answer: string, pool: string[], seed: string, count = 4):
 }
 
 function wrongSentences(pointId: string, correct: string): string[] {
-  return grammar
-    .filter((g) => g.id !== pointId)
-    .flatMap((g) => g.examples.map((e) => e.ko))
-    .filter((ko) => ko !== correct)
-    .slice(0, 12);
+  const pointExamples = new Set(
+    grammar.find((g) => g.id === pointId)?.examples.map((e) => e.ko) ?? [],
+  );
+  const pool: string[] = [];
+  for (const ko of ALL_EXAMPLE_KO) {
+    if (ko !== correct && !pointExamples.has(ko)) pool.push(ko);
+    if (pool.length >= 12) break;
+  }
+  return pool;
 }
 
 function buildChoiceFromExample(
@@ -65,10 +74,7 @@ function buildFormChoice(
   topicId: string,
   form: string,
 ): ChoiceExercise & { kind: "choice" } {
-  const others = grammar
-    .filter((g) => g.id !== grammarId)
-    .map((g) => g.form)
-    .slice(0, 6);
+  const others = ALL_FORMS.filter((f) => f !== form).slice(0, 6);
   return {
     kind: "choice",
     id: `gen-${grammarId}-form`,
@@ -148,6 +154,11 @@ export function mergeGrammarExercises(
   manual: GrammarExercise[],
   grammarId: string,
 ): GrammarExercise[] {
+  const cached = mergedCache.get(grammarId);
+  if (cached) return cached;
+
   const base = manual.filter((e) => e.relatedGrammarId === grammarId);
-  return [...base, ...buildGrammarSupplements(manual, grammarId)];
+  const result = [...base, ...buildGrammarSupplements(manual, grammarId)];
+  mergedCache.set(grammarId, result);
+  return result;
 }

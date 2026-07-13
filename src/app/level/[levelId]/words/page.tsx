@@ -1,8 +1,13 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, SectionTabs, SiteHeader } from "@/components/Nav";
+import { ContentLink } from "@/components/ContentLink";
 import { getLevel } from "@/content/levels";
 import { vocabDomains } from "@/content/level1";
+import { levelParams } from "@/content/level1/params";
+
+export function generateStaticParams() {
+  return levelParams();
+}
 
 export default async function WordsPage({
   params,
@@ -32,7 +37,7 @@ export default async function WordsPage({
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {vocabDomains.map((domain) => (
-            <Link
+            <ContentLink
               key={domain.id}
               href={`/level/${levelId}/words/${domain.id}`}
               className="panel rounded-2xl p-5 hover:shadow-md"
@@ -40,7 +45,7 @@ export default async function WordsPage({
               <p className="ko-text text-xl font-semibold">{domain.titleKo}</p>
               <p className="mt-1 font-medium">{domain.titleRu}</p>
               <p className="mt-3 text-sm text-[var(--ink-soft)]">{domain.words.length} слов</p>
-            </Link>
+            </ContentLink>
           ))}
         </div>
       </main>

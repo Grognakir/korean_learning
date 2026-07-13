@@ -3,6 +3,11 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs, SiteHeader } from "@/components/Nav";
 import { getLevel } from "@/content/levels";
 import { getGrammar, getGrammarExercises, getTopic } from "@/content/level1";
+import { grammarParams } from "@/content/level1/params";
+
+export function generateStaticParams() {
+  return grammarParams();
+}
 
 export default async function GrammarDetailPage({
   params,

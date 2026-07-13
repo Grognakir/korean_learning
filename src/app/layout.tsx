@@ -5,19 +5,23 @@ import "./globals.css";
 const display = Fraunces({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["600", "700"],
+  display: "swap",
 });
 
 const body = Manrope({
   variable: "--font-body",
   subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600"],
+  display: "swap",
 });
 
 const korean = Noto_Sans_KR({
   variable: "--font-ko",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "700"],
+  display: "swap",
+  preload: true,
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {

@@ -14,7 +14,7 @@ export default async function TopicPracticePage({
   const topic = getTopic(topicId);
   if (!level?.available || !topic) notFound();
 
-  const exercises = getTopicExercises(topicId);
+  const exercises = getTopicExercises(topicId).slice(0, 15);
 
   return (
     <div className="min-h-screen">

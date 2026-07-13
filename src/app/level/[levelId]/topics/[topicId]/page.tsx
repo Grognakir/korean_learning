@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, SiteHeader } from "@/components/Nav";
+import { ContentLink } from "@/components/ContentLink";
 import { getLevel } from "@/content/levels";
 import { getGrammar, getTopic, vocabDomains } from "@/content/level1";
+import { topicParams } from "@/content/level1/params";
+
+export function generateStaticParams() {
+  return topicParams();
+}
 
 export default async function TopicDetailPage({
   params,
@@ -56,13 +62,13 @@ export default async function TopicDetailPage({
                     if (!g) return null;
                     return (
                       <li key={gid}>
-                        <Link
+                        <ContentLink
                           href={`/level/${levelId}/grammar/${gid}`}
                           className="flex flex-wrap items-baseline gap-2 rounded-lg px-2 py-1.5 hover:bg-white/70"
                         >
                           <span className="ko-text font-medium text-[var(--accent)]">{g.form}</span>
                           <span className="text-sm text-[var(--ink-soft)]">{g.titleRu}</span>
-                        </Link>
+                        </ContentLink>
                       </li>
                     );
                   })}
@@ -77,13 +83,13 @@ export default async function TopicDetailPage({
             <h2 className="font-display text-2xl font-semibold">Связанные слова</h2>
             <div className="mt-4 flex flex-wrap gap-3">
               {domains.map((d) => (
-                <Link
+                <ContentLink
                   key={d.id}
                   href={`/level/${levelId}/words/${d.id}`}
                   className="rounded-full bg-white/80 px-4 py-2 text-sm font-medium hover:bg-white"
                 >
                   {d.titleRu}
-                </Link>
+                </ContentLink>
               ))}
             </div>
           </section>

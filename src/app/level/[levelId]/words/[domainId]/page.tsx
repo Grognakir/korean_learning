@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, SiteHeader } from "@/components/Nav";
+import { ContentLink } from "@/components/ContentLink";
 import { getLevel } from "@/content/levels";
 import { getDomain } from "@/content/level1";
+import { domainParams } from "@/content/level1/params";
+
+export function generateStaticParams() {
+  return domainParams();
+}
 
 export default async function DomainPage({
   params,
@@ -50,10 +56,10 @@ export default async function DomainPage({
 
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {modes.map((mode) => (
-            <Link key={mode.href} href={mode.href} className="panel rounded-2xl p-5 hover:shadow-md">
+            <ContentLink key={mode.href} href={mode.href} className="panel rounded-2xl p-5 hover:shadow-md">
               <p className="font-display text-xl font-semibold">{mode.title}</p>
               <p className="mt-2 text-sm text-[var(--ink-soft)]">{mode.desc}</p>
-            </Link>
+            </ContentLink>
           ))}
         </div>
 

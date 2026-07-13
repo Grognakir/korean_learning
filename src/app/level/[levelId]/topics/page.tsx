@@ -1,8 +1,13 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, SectionTabs, SiteHeader } from "@/components/Nav";
+import { ContentLink } from "@/components/ContentLink";
 import { getLevel } from "@/content/levels";
 import { topics } from "@/content/level1";
+import { levelParams } from "@/content/level1/params";
+
+export function generateStaticParams() {
+  return levelParams();
+}
 
 export default async function TopicsPage({
   params,
@@ -30,7 +35,7 @@ export default async function TopicsPage({
 
         <div className="mt-8 grid gap-3">
           {topics.map((topic) => (
-            <Link
+            <ContentLink
               key={topic.id}
               href={`/level/${levelId}/topics/${topic.id}`}
               className="panel rounded-2xl px-5 py-4 transition hover:shadow-md"
@@ -43,7 +48,7 @@ export default async function TopicsPage({
               </div>
               <p className="ko-text mt-1 text-xl font-semibold">{topic.titleKo}</p>
               <p className="text-[var(--ink-soft)]">{topic.titleRu}</p>
-            </Link>
+            </ContentLink>
           ))}
         </div>
       </main>

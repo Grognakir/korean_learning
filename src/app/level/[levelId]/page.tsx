@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, SectionTabs, SiteHeader } from "@/components/Nav";
+import { ContentLink } from "@/components/ContentLink";
 import { getLevel } from "@/content/levels";
 import { grammar, topics, vocabDomains } from "@/content/level1";
+import { levelParams } from "@/content/level1/params";
+
+export function generateStaticParams() {
+  return levelParams();
+}
 
 export default async function LevelPage({
   params,
@@ -61,7 +67,7 @@ export default async function LevelPage({
           <h2 className="font-display text-2xl font-semibold">С чего начать</h2>
           <div className="mt-4 grid gap-3">
             {topics.slice(0, 3).map((topic) => (
-              <Link
+              <ContentLink
                 key={topic.id}
                 href={`/level/${levelId}/topics/${topic.id}`}
                 className="panel flex items-center justify-between rounded-xl px-5 py-4 hover:shadow-sm"
@@ -74,7 +80,7 @@ export default async function LevelPage({
                   </p>
                 </div>
                 <span className="text-[var(--accent)]">→</span>
-              </Link>
+              </ContentLink>
             ))}
           </div>
         </section>

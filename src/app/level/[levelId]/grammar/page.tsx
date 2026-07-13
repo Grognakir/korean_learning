@@ -1,8 +1,13 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, SectionTabs, SiteHeader } from "@/components/Nav";
+import { ContentLink } from "@/components/ContentLink";
 import { getLevel } from "@/content/levels";
 import { grammar, getTopic } from "@/content/level1";
+import { levelParams } from "@/content/level1/params";
+
+export function generateStaticParams() {
+  return levelParams();
+}
 
 export default async function GrammarListPage({
   params,
@@ -32,7 +37,7 @@ export default async function GrammarListPage({
           {grammar.map((g) => {
             const topic = getTopic(g.topicId);
             return (
-              <Link
+              <ContentLink
                 key={g.id}
                 href={`/level/${levelId}/grammar/${g.id}`}
                 className="panel rounded-2xl px-5 py-4 hover:shadow-md"
@@ -46,7 +51,7 @@ export default async function GrammarListPage({
                   )}
                 </div>
                 <p className="mt-1 font-medium">{g.titleRu}</p>
-              </Link>
+              </ContentLink>
             );
           })}
         </div>

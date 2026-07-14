@@ -1,4 +1,4 @@
-import type { LevelMeta } from "@/lib/types";
+import type { LevelId, LevelMeta, TopicMeta } from "@/lib/types";
 
 export const levels: LevelMeta[] = [
   {
@@ -6,45 +6,62 @@ export const levels: LevelMeta[] = [
     titleKo: "1급",
     titleRu: "1급 — Начальный",
     available: true,
-    description: "Приветствия, быт, школа, покупки, еда, телефон, транспорт. По программе 새인하한국어1.",
+    description: "Начальный уровень.",
   },
   {
     id: "2",
     titleKo: "2급",
     titleRu: "2급 — Элементарный",
     available: false,
-    description: "Скоро: более сложные конструкции и темы повседневной жизни.",
+    description: "Элементарный уровень.",
   },
   {
     id: "3",
     titleKo: "3급",
     titleRu: "3급 — Средний−",
     available: false,
-    description: "Скоро: абстрактные темы и развёрнутые высказывания.",
+    description: "Средний уровень (−).",
   },
   {
     id: "4",
     titleKo: "4급",
     titleRu: "4급 — Средний+",
     available: false,
-    description: "Скоро: аргументация, новости, рабочие ситуации.",
+    description: "Средний уровень (+).",
   },
   {
     id: "5",
     titleKo: "5급",
     titleRu: "5급 — Продвинутый−",
     available: false,
-    description: "Скоро: академический и профессиональный язык.",
+    description: "Продвинутый уровень (−).",
   },
   {
     id: "6",
     titleKo: "6급",
     titleRu: "6급 — Продвинутый+",
     available: false,
-    description: "Скоро: нюансы, стили речи, сложные тексты.",
+    description: "Продвинутый уровень (+).",
   },
 ];
 
-export function getLevel(id: string): LevelMeta | undefined {
-  return levels.find((l) => l.id === id);
+export const topicsByLevel: Record<LevelId, TopicMeta[]> = {
+  "1": [
+    {
+      slug: "location",
+      titleKo: "위치",
+      titleRu: "Расположение в пространстве",
+      description: "Где находится предмет, здание или человек: 앞, 뒤, 옆, 위, 아래 и другие отношения.",
+      available: true,
+    },
+  ],
+  "2": [],
+  "3": [],
+  "4": [],
+  "5": [],
+  "6": [],
+};
+
+export function isLevelId(value: string): value is LevelId {
+  return levels.some((level) => level.id === value);
 }

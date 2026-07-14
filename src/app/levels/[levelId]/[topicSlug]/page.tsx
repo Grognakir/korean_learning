@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { cacheLife } from "next/cache";
 import { notFound } from "next/navigation";
+import { LocationTopic } from "@/components/topics/location/LocationTopic";
 import { isLevelId, levels, topicsByLevel } from "@/content/levels";
+import { scenes, tasks, vocab } from "@/content/topics/location";
 
 export async function generateStaticParams() {
   return levels
@@ -54,16 +56,13 @@ export default async function TopicPage({
         <p className="mt-3 text-base leading-relaxed text-[var(--ink-soft)]">{topic.description}</p>
       </section>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      {topic.slug === "location" ? (
+        <LocationTopic tasks={tasks} scenes={scenes} vocab={vocab} />
+      ) : (
         <section className="panel rounded-2xl p-5">
-          <h2 className="font-display text-xl font-semibold">Задания</h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">скоро</p>
+          <p className="text-sm text-[var(--ink-soft)]">скоро</p>
         </section>
-        <section className="panel rounded-2xl p-5">
-          <h2 className="font-display text-xl font-semibold">Игра слов</h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">скоро</p>
-        </section>
-      </div>
+      )}
     </main>
   );
 }

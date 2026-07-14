@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { SkinSwitcher } from "@/components/scene/SkinSwitcher";
 import { RhythmGame } from "@/components/topics/location/RhythmGame";
 import { TaskRunner } from "@/components/topics/location/TaskRunner";
 import type { LocationTask, VocabWord } from "@/content/topics/location";
@@ -49,6 +50,7 @@ export function LocationTopic({ tasks, scenes, vocab }: LocationTopicProps) {
       ) : (
         <RhythmGame vocab={vocab} />
       )}
+      <SkinSwitcher />
     </div>
   );
 }

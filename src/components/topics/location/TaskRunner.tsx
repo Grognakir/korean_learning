@@ -1,7 +1,7 @@
 "use client";
 
 import { type FormEvent, useMemo, useState } from "react";
-import { SceneCanvas } from "@/components/scene/SceneCanvas";
+import { SceneView } from "@/components/scene/SceneView";
 import type { LocationTask, VocabWord } from "@/content/topics/location";
 import { subjectParticle } from "@/lib/ko/hangul";
 import { findLexeme, positionWords } from "@/lib/ko/lexicon";
@@ -371,7 +371,7 @@ function TaskStep({
       </div>
 
       <div className="panel overflow-hidden rounded-2xl p-3 sm:p-4">
-        <SceneCanvas
+        <SceneView
           scene={scene}
           highlightId={task.subjectId}
           className="rounded-xl"

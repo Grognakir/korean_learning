@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ViewTransition } from "react";
 import { Fraunces, Manrope, Noto_Sans_KR } from "next/font/google";
+import localFont from "next/font/local";
 import { SiteHeader } from "@/components/Nav";
 import "./globals.css";
 
@@ -22,6 +23,18 @@ const korean = Noto_Sans_KR({
   weight: ["400", "500", "700"],
 });
 
+const pixel = localFont({
+  src: [
+    {
+      path: "../../public/fonts/galmuri/Galmuri11.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-pixel",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Корейский — обучение по 급ам",
   description: "Уровни 급 для изучения корейского языка",
@@ -33,7 +46,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" className={`${display.variable} ${body.variable} ${korean.variable} h-full`}>
+    <html
+      lang="ru"
+      className={`${display.variable} ${body.variable} ${korean.variable} ${pixel.variable} h-full`}
+    >
       <body className="min-h-full antialiased">
         <SiteHeader />
         <ViewTransition enter="auto" exit="auto" default="none">

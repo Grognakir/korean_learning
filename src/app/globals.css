@@ -72,3 +72,20 @@ body {
   animation: scene-highlight-pulse 1.4s ease-in-out infinite;
   pointer-events: none;
 }
+
+@keyframes scene-pixel-bounce {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -6px);
+  }
+}
+
+.scene-pixel-marker {
+  animation: scene-pixel-bounce 0.9s ease-in-out infinite;
+  font-size: 14px;
+  line-height: 1;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}

@@ -53,6 +53,29 @@ describe("location content", () => {
     }
   });
 
+  it("requires command goals to move the subject from the start cell", () => {
+    for (const task of tasks) {
+      if (task.type !== "command") {
+        continue;
+      }
+      const scene = sceneById[task.sceneId];
+      const subject = scene.entities.find((entity) => entity.id === task.subjectId);
+      expect(subject).toBeDefined();
+      if (!subject) {
+        continue;
+      }
+      const cell = resolveTargetCell(scene, task.subjectId, task.goal);
+      expect(cell, task.promptRu).not.toBeNull();
+      if (!cell) {
+        continue;
+      }
+      const sameCol = cell.col === subject.col;
+      const sameRow = cell.row === subject.row;
+      const sameContainer = (cell.containerId ?? undefined) === subject.containerId;
+      expect(sameCol && sameRow && sameContainer, task.promptRu).toBe(false);
+    }
+  });
+
   it("keeps fix wrongSentence within parser grammar (fact ≠ goal or particle error)", () => {
     for (const task of tasks) {
       if (task.type !== "fix") {

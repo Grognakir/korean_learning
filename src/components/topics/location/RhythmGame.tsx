@@ -281,7 +281,9 @@ export function RhythmGame({ vocab }: RhythmGameProps) {
     setMisses([]);
     setFlash(null);
     flashRef.current = null;
-    setPaused(false);
+    const startPaused = typeof document !== "undefined" && document.hidden;
+    pausedRef.current = startPaused;
+    setPaused(startPaused);
     setPhase("playing");
     spawnWord(performance.now());
   }
@@ -496,9 +498,10 @@ export function RhythmGame({ vocab }: RhythmGameProps) {
               <div className="relative min-h-0 flex-1">
                 {falling && falling.lane === lane ? (
                   <div
-                    className="pointer-events-none absolute left-1/2 top-0 z-10"
+                    className="pointer-events-none absolute left-1/2 z-10"
                     style={{
-                      transform: `translate(-50%, ${progress * 100}%)`,
+                      top: `${progress * 100}%`,
+                      transform: `translate(-50%, ${-progress * 100}%)`,
                     }}
                   >
                     <span

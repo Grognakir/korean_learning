@@ -384,4 +384,111 @@ describe("scene relations", () => {
       expect(covered.has(relation)).toBe(true);
     }
   });
+
+  it("does not place beside into an adjacent building on street", () => {
+    const scene: Scene = {
+      id: "adjacent-buildings",
+      kind: "street",
+      cols: 6,
+      rows: 3,
+      entities: [
+        {
+          id: "hakgyo",
+          kind: "building",
+          sprite: "school",
+          ko: "학교",
+          ru: "школа",
+          col: 0,
+          row: 1,
+          w: 2,
+          h: 1,
+        },
+        {
+          id: "eunhaeng",
+          kind: "building",
+          sprite: "bank",
+          ko: "은행",
+          ru: "банк",
+          col: 2,
+          row: 1,
+          w: 2,
+          h: 1,
+        },
+        {
+          id: "minsu",
+          kind: "person",
+          sprite: "person",
+          ko: "민수",
+          ru: "Минсу",
+          col: 5,
+          row: 1,
+          movable: true,
+        },
+      ],
+    };
+
+    expect(
+      resolveTargetCell(scene, "minsu", {
+        relation: "beside",
+        refIds: ["hakgyo"],
+      }),
+    ).toBeNull();
+  });
+
+  it("never returns a cell occupied by another person", () => {
+    const scene: Scene = {
+      id: "two-persons",
+      kind: "classroom",
+      cols: 5,
+      rows: 3,
+      entities: [
+        {
+          id: "chaeksang",
+          kind: "object",
+          sprite: "desk",
+          ko: "책상",
+          ru: "парта",
+          col: 2,
+          row: 1,
+        },
+        {
+          id: "minsu",
+          kind: "person",
+          sprite: "person",
+          ko: "민수",
+          ru: "Минсу",
+          col: 0,
+          row: 1,
+          movable: true,
+        },
+        {
+          id: "yuna",
+          kind: "person",
+          sprite: "person-2",
+          ko: "유나",
+          ru: "Юна",
+          col: 1,
+          row: 1,
+          movable: true,
+        },
+      ],
+    };
+
+    const cell = resolveTargetCell(scene, "minsu", {
+      relation: "beside",
+      refIds: ["chaeksang"],
+    });
+    expect(cell).not.toBeNull();
+    expect(cell).toEqual({ col: 3, row: 1 });
+    expect(cell).not.toEqual({ col: 1, row: 1 });
+
+    const near = resolveTargetCell(scene, "minsu", {
+      relation: "near",
+      refIds: ["chaeksang"],
+    });
+    expect(near).not.toBeNull();
+    if (near) {
+      expect(near.col === 1 && near.row === 1).toBe(false);
+    }
+  });
 });

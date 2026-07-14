@@ -278,10 +278,16 @@ function isBlocked(
     if (entity.id === subject.id) {
       continue;
     }
-    if (entity.movable) {
+    if (entity.kind === "room") {
       continue;
     }
-    if (entity.kind === "building" || entity.kind === "room") {
+    if (entity.kind === "building" && scene.kind === "building-cut") {
+      continue;
+    }
+    if (
+      entity.movable &&
+      entity.kind !== "person"
+    ) {
       continue;
     }
     if (rectsOverlap(candidate, rectOf(entity))) {

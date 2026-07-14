@@ -46,6 +46,14 @@ const relationRu: Record<SpatialRelation, string> = {
   near: "недалеко от",
 };
 
+const instrumentalRelations = new Set<SpatialRelation>([
+  "front",
+  "beside",
+  "above",
+  "below",
+  "between",
+]);
+
 function cloneScene(scene: Scene): Scene {
   return {
     ...scene,
@@ -84,12 +92,39 @@ function entityLabel(scene: Scene, id: string): string {
   return `${entity.ru} (${entity.ko})`;
 }
 
+function resolveLexeme(scene: Scene, id: string) {
+  const entity = findEntity(scene, id);
+  if (entity) {
+    return findLexeme(entity.ko) ?? findLexeme(id);
+  }
+  return findLexeme(id);
+}
+
+function entityLocLabel(
+  scene: Scene,
+  id: string,
+  relation: SpatialRelation,
+): string {
+  const entity = findEntity(scene, id);
+  const lexeme = resolveLexeme(scene, id);
+  const ko = entity?.ko ?? lexeme?.ko ?? id;
+  if (!lexeme) {
+    return entity ? `${entity.ru} (${ko})` : id;
+  }
+  const form = instrumentalRelations.has(relation)
+    ? lexeme.ruLoc.ins
+    : lexeme.ruLoc.gen;
+  return `${form} (${ko})`;
+}
+
 function describeFactRu(scene: Scene, subjectId: string, fact: RelationFact): string {
   const subject = entityLabel(scene, subjectId);
   if (fact.relation === "between" && fact.refIds.length >= 2) {
-    return `${subject} находится между ${entityLabel(scene, fact.refIds[0])} и ${entityLabel(scene, fact.refIds[1])}`;
+    return `${subject} находится между ${entityLocLabel(scene, fact.refIds[0], "between")} и ${entityLocLabel(scene, fact.refIds[1], "between")}`;
   }
-  const ref = fact.refIds[0] ? entityLabel(scene, fact.refIds[0]) : "…";
+  const ref = fact.refIds[0]
+    ? entityLocLabel(scene, fact.refIds[0], fact.relation)
+    : "…";
   return `${subject} ${relationRu[fact.relation]} ${ref}`;
 }
 

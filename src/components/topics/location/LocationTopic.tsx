@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { RhythmGame } from "@/components/topics/location/RhythmGame";
 import { TaskRunner } from "@/components/topics/location/TaskRunner";
 import type { LocationTask, VocabWord } from "@/content/topics/location";
 import type { Scene } from "@/lib/scene/types";
@@ -46,10 +47,7 @@ export function LocationTopic({ tasks, scenes, vocab }: LocationTopicProps) {
       {tab === "tasks" ? (
         <TaskRunner tasks={tasks} scenes={scenes} vocab={vocab} />
       ) : (
-        <section className="panel rounded-2xl p-5">
-          <h2 className="font-display text-xl font-semibold">Слова</h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">скоро</p>
-        </section>
+        <RhythmGame vocab={vocab} />
       )}
     </div>
   );

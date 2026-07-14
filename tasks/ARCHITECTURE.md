@@ -176,6 +176,10 @@ export type VocabWord = { ko: string; ru: string };
    - command/fix: `resolveTargetCell` по *написанному* → анимированное перемещение → сравнение написанного факта с `goal` → верно/неверно + объяснение.
 4. Ритм-игра берёт `VocabWord[]` из того же контента.
 
+## Скины сцен (пиксель-арт, TASK-09+)
+
+Рендер сцены абстрагирован контрактом `Skin` (`src/lib/scene/skin.ts`): скин отдаёт координаты спрайтов в PNG-атласах (`public/assets/`), кадры персонажей и спецификацию фона; `SceneView` выбирает `PixelSceneCanvas` (HTML, background-position, pixelated) или старый SVG `SceneCanvas`. Скины: `cc0` (Kenney + Ninja Adventure, CC0), `cozy` (Sprout Lands + LimeZu, локально, вне git), `lpc` (CC-BY-SA), `svg` (fallback). Лицензии — `public/assets/ATTRIBUTION.md`.
+
 ## Definition of Done для каждой задачи
 
 - `npm run lint` и `npm run build` проходят без ошибок.

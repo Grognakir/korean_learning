@@ -57,3 +57,18 @@ body {
 ::view-transition-new(root) {
   animation-duration: 140ms;
 }
+
+@keyframes scene-highlight-pulse {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.scene-highlight-ring {
+  animation: scene-highlight-pulse 1.4s ease-in-out infinite;
+  pointer-events: none;
+}

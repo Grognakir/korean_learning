@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { ViewTransition } from "react";
 import { Fraunces, Manrope, Noto_Sans_KR } from "next/font/google";
+import { SiteHeader } from "@/components/Nav";
 import "./globals.css";
 
 const display = Fraunces({
@@ -22,7 +24,7 @@ const korean = Noto_Sans_KR({
 
 export const metadata: Metadata = {
   title: "Корейский — обучение по 급ам",
-  description: "Темы, грамматика и слова для изучения корейского языка",
+  description: "Уровни 급 для изучения корейского языка",
 };
 
 export default function RootLayout({
@@ -32,7 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={`${display.variable} ${body.variable} ${korean.variable} h-full`}>
-      <body className="min-h-full antialiased">{children}</body>
+      <body className="min-h-full antialiased">
+        <SiteHeader />
+        <ViewTransition enter="auto" exit="auto" default="none">
+          {children}
+        </ViewTransition>
+      </body>
     </html>
   );
 }

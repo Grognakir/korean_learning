@@ -2,6 +2,7 @@ import { APP_NAME } from "@/constants";
 import { Badge, Button, Card, Input, Textarea } from "@/components/ui";
 
 import styles from "./page.module.css";
+import { FeedbackPreview } from "./FeedbackPreview";
 
 export default function HomePage() {
   return (
@@ -57,6 +58,11 @@ export default function HomePage() {
               label="Заметка"
               placeholder="Что стоит повторить?"
             />
+          </div>
+
+          <div className={styles.group}>
+            <h3 className={styles.groupTitle}>Обратная связь</h3>
+            <FeedbackPreview />
           </div>
         </Card>
       </section>

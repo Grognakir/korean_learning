@@ -4,27 +4,25 @@
 
 ## Чем занимаемся
 
-Фаза 1 продолжается. Итерации F1-I01–F1-I07 завершены: приложение имеет воспроизводимый quality/test harness, визуальный фундамент и первую доступную UI-библиотеку.
+Фаза 1 продолжается. Итерации F1-I01–F1-I08 завершены: к визуальному фундаменту добавлен единый набор доступных состояний и обратной связи.
 
 ## Принятые решения
 
-- Реализованы Button, Input, Textarea, Card и Badge; каждый компонент имеет CSS Module, ближайший component test и публичный `index.ts`.
-- В React 19 ref передаётся как обычный prop через `ComponentPropsWithRef`; `forwardRef` не используется, поскольку React пометил его как будущий deprecated API.
-- Button поддерживает только реальные варианты `primary`, `secondary`, `ghost`; минимальная высота всех кнопок — 44 px.
-- Badge поддерживает смысловые тона `neutral`, `accent`, `success`, `warning`, `danger`; для компонентов добавлены недостающие semantic tokens.
-- Input и Textarea требуют доступный `label`, генерируют стабильные id, объединяют внешнее и внутренние `aria-describedby`, выставляют `aria-invalid` при ошибке и сохраняют все нативные props.
-- Для интерактивных тестов добавлен `@testing-library/user-event` 14.6.3.
-- Главная страница временно служит адаптивным showcase UI-примитивов до появления полноценной оболочки и маршрутов.
-- Браузерная проверка подтвердила hover/active/focus/disabled, ввод корейского текста, отсутствие mobile overflow и console issues.
+- Добавлены ProgressBar, Spinner и Modal в `src/components/ui`, Alert и EmptyState в `src/components/feedback`.
+- Modal построен на нативном `<dialog>` с клавиатурной ловушкой, Escape-закрытием и восстановлением фокуса на исходное действие.
+- Обычная обратная связь объявляется через `role="status"` и `aria-live="polite"`; критическая ошибка — через `role="alert"` и `aria-live="assertive"`.
+- Анимации ProgressBar и Spinner учитывают `prefers-reduced-motion`.
+- Главная страница временно демонстрирует новые состояния до появления общей оболочки и маршрутов.
+- Браузерная проверка подтвердила фокус диалога, Tab/Shift+Tab, Escape, отсутствие горизонтального overflow на 375 px и корректную мобильную компоновку.
 - `PLAN_REVISION_2026-08-07.md` остаётся пользовательским неотслеживаемым файлом вне коммитов.
 
 ## Открытые задачи
 
-- [ ] Выполнить F1-I08 в отдельной ветке: ProgressBar, Spinner, Modal, EmptyState и Alert.
-- [ ] Зафиксировать aria-live conventions и проверить keyboard/focus behavior Modal.
-- [ ] Продолжать малые итерации до пользовательской контрольной точки CP-1 после F1-I11.
+- [ ] Выполнить F1-I09: AppShell, PageContainer, ContentSection, AuthBoundary, TrainingShell, Header и PageHeader.
+- [ ] Выполнить F1-I10: маршруты и desktop/mobile навигацию.
+- [ ] Выполнить F1-I11: окончательную мобильную адаптацию и CP-1 visual review.
 - [ ] Выполнить фактический GitHub Actions run после разрешённого push.
 
 ## Контекст для следующей сессии
 
-Текущая ветка — `feature/ui-primitives`; F1-I01–F1-I06 находятся в её истории. F1-I07 добавляет `src/components/ui`, расширяет semantic tokens, подключает user-event и выводит showcase на `/`. Frozen install, Prettier, ESLint, 11/11 тестов, typecheck, production build и ручная desktop/mobile проверка проходят. Следующая итерация F1-I08 должна переиспользовать существующие токены и примитивы, не добавляя доменную логику.
+Текущая ветка — `feature/ui-feedback`; F1-I01–F1-I07 находятся в её истории. F1-I08 проходит 19/19 тестов, ESLint, Prettier, typecheck, production build и ручную desktop/mobile проверку. Следующая итерация F1-I09 должна собрать общую оболочку без бизнес-логики и преждевременной auth-связности.

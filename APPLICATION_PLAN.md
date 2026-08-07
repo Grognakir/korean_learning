@@ -351,7 +351,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I08 — UI состояния и обратная связь
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** единообразно показывать прогресс и системные состояния.
 - **Входные зависимости:** F1-I07.
 - **Задачи:** ProgressBar, Spinner, Modal/dialog, EmptyState, Alert/feedback; aria-live conventions; portal only if necessary.

@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+blob-report/
+pnpm-lock.yaml
+next-env.d.ts
+
+# Generated or externally maintained documents
+AGENTS.md
+CLAUDE.md
+README.md
+APPLICATION_PLAN.md
+PLAN_REVISION_*.md
+.Codex/

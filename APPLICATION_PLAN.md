@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01 и F1-I02 завершены; минимальное Next.js-приложение работает.
+- **Общее состояние:** F1-I01–F1-I03 завершены; минимальное приложение и единый quality baseline работают.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I02 — инициализация Next.js без Tailwind.
+- **Текущая итерация:** F1-I03 — TypeScript, ESLint, форматирование и базовый CI.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** установлен Next.js 16.3.0, React 19.2.8 и TypeScript 7.0.2; создан минимальный App Router в `src/app`; добавлены scripts `dev/build/start`, `next.config.ts`, `tsconfig.json` и `pnpm-lock.yaml`; Tailwind отсутствует; framework-generated `AGENTS.md` сохранён и применён.
-- **Выполненные проверки:** frozen-lockfile install, `next typegen`, `tsc --noEmit` и production build проходят; framework-команды выполнялись на Node.js 24.18.0; dev server запущен на `127.0.0.1:3000`, `/` вернул HTTP 200 и ожидаемые заголовок/текст; маршрут `/` статически пререндерен; Tailwind package/config отсутствуют; `next-env.d.ts` игнорируется согласно локальной документации Next.js 16.3; `git diff --check` проходит. ESLint и тесты неприменимы до F1-I03/F1-I04.
-- **Сейчас работает:** минимальная русскоязычная страница `/`, App Router, metadata, dev server, route type generation, TypeScript и production build.
-- **Пока не работает:** дизайн-система, полноценные маршруты, UI-компоненты, тренировки, тесты, Supabase, авторизация, прогресс, модуль 높임말, CI и деплой.
-- **Следующий конкретный шаг:** F1-I03 — усилить strict TypeScript, настроить ESLint/Prettier и базовый GitHub Actions CI.
+- **Уже сделано:** подключены совместимые TypeScript 6.0.3, ESLint 9.39.2, Next.js ESLint-конфигурация и Prettier 3.9.6; усилены strict options; добавлены единые scripts; создан GitHub Actions workflow с Node.js/pnpm из закреплённых версий и concurrency cancellation.
+- **Выполненные проверки:** frozen-lockfile install, Prettier check, ESLint без предупреждений, `next typegen`, строгий `tsc --noEmit`, production build и `git diff --check` проходят; статические и framework-команды выполнялись на Node.js 24.18.0; workflow синтаксически разобран Prettier, фактический GitHub run ожидает разрешённого push. Тесты неприменимы до F1-I04.
+- **Сейчас работает:** минимальная русскоязычная страница `/`, App Router, metadata, dev server, route type generation, строгий TypeScript, ESLint, Prettier, локальный production build и базовый CI workflow.
+- **Пока не работает:** дизайн-система, полноценные маршруты, UI-компоненты, тренировки, тесты, Supabase, авторизация, прогресс, модуль 높임말, внешний CI run и деплой.
+- **Следующий конкретный шаг:** F1-I04 — подключить Vitest и React Testing Library, добавить smoke-тесты и тестовый шаг в CI.
 - **Блокирующие вопросы:** нет.
 - **Решения, требующие подтверждения:** нет для текущей итерации; внешние Vercel/Supabase действия выполняются на предусмотренных контрольных точках.
 - **Последнее обновление:** 2026-08-07.
@@ -266,7 +266,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I03 — TypeScript, ESLint, форматирование и базовый CI
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** единые локальные и автоматические статические проверки с самого начала.
 - **Входные зависимости:** F1-I02.
 - **Задачи:** включить strict options; настроить алиас; ESLint Next/React/TypeScript; форматтер; scripts `typecheck`, `lint`, `format:check`; создать GitHub Actions workflow с checkout, установкой Node.js из `.nvmrc`, явной установкой закреплённой pnpm, frozen-lockfile, format/lint/typecheck/build; включить concurrency cancellation; запускать PR в `main` и push в `main`, не дублируя push+PR каждой рабочей ветки.

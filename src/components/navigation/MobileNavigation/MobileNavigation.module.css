@@ -5,7 +5,9 @@
   left: 0;
   z-index: var(--z-index-overlay);
   display: none;
-  padding: var(--space-2) var(--space-2) max(var(--space-2), env(safe-area-inset-bottom));
+  padding-block: var(--space-2) max(var(--space-2), env(safe-area-inset-bottom));
+  padding-inline-start: max(var(--space-2), env(safe-area-inset-left));
+  padding-inline-end: max(var(--space-2), env(safe-area-inset-right));
   border-block-start: 1px solid var(--color-border);
   background: color-mix(in srgb, var(--color-surface) 94%, transparent);
   box-shadow: 0 -8px 24px rgb(23 33 29 / 8%);
@@ -51,7 +53,7 @@
   color: var(--color-text-on-accent);
 }
 
-@media (max-width: 63.99rem) {
+@media (max-width: 47.99rem) {
   .navigation {
     display: block;
   }

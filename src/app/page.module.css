@@ -56,6 +56,9 @@
 }
 
 .routeCard a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -80,6 +83,9 @@
 }
 
 .textLink {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
   justify-self: start;
   color: var(--color-accent-hover);
   font-weight: var(--font-weight-semibold);

@@ -9,16 +9,21 @@
 
 .inner {
   display: flex;
-  width: min(calc(100% - (var(--space-4) * 2)), var(--content-width-default));
+  width: 100%;
+  max-width: calc(var(--content-width-default) + (var(--space-8) * 2));
   min-height: 4.5rem;
   margin-inline: auto;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
+  padding-inline-start: max(var(--space-4), env(safe-area-inset-left));
+  padding-inline-end: max(var(--space-4), env(safe-area-inset-right));
 }
 
 .brand {
   display: inline-flex;
+  min-height: 2.75rem;
+  flex: 0 0 auto;
   align-items: center;
   gap: var(--space-3);
   color: var(--color-text);
@@ -69,6 +74,13 @@
 
 @media (min-width: 48rem) {
   .inner {
-    width: min(calc(100% - (var(--space-8) * 2)), var(--content-width-default));
+    padding-inline-start: max(var(--space-8), env(safe-area-inset-left));
+    padding-inline-end: max(var(--space-8), env(safe-area-inset-right));
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 71.99rem) {
+  .brandCopy {
+    display: none;
   }
 }

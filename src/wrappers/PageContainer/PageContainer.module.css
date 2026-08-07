@@ -1,22 +1,25 @@
 .container {
-  width: calc(100% - (var(--space-4) * 2));
+  width: 100%;
   margin-inline: auto;
+  padding-inline-start: max(var(--space-4), env(safe-area-inset-left));
+  padding-inline-end: max(var(--space-4), env(safe-area-inset-right));
 }
 
 .narrow {
-  max-width: var(--content-width-narrow);
+  max-width: calc(var(--content-width-narrow) + (var(--space-8) * 2));
 }
 
 .default {
-  max-width: var(--content-width-default);
+  max-width: calc(var(--content-width-default) + (var(--space-8) * 2));
 }
 
 .wide {
-  max-width: var(--content-width-wide);
+  max-width: calc(var(--content-width-wide) + (var(--space-8) * 2));
 }
 
 @media (min-width: 48rem) {
   .container {
-    width: calc(100% - (var(--space-8) * 2));
+    padding-inline-start: max(var(--space-8), env(safe-area-inset-left));
+    padding-inline-end: max(var(--space-8), env(safe-area-inset-right));
   }
 }

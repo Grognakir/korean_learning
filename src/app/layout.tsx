@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+import { APP_DESCRIPTION, APP_NAME, DEFAULT_LANGUAGE } from "@/constants";
+
 export const metadata: Metadata = {
-  title: "Korean Learning",
-  description: "Приложение для изучения корейского языка",
+  title: APP_NAME,
+  description: APP_DESCRIPTION,
 };
 
 type RootLayoutProps = Readonly<{
@@ -12,7 +14,7 @@ type RootLayoutProps = Readonly<{
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="ru">
+    <html lang={DEFAULT_LANGUAGE}>
       <body>{children}</body>
     </html>
   );

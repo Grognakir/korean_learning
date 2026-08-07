@@ -1,0 +1,1 @@
+export { APP_DESCRIPTION, APP_NAME, DEFAULT_LANGUAGE } from "./app";

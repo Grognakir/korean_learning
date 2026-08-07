@@ -1,0 +1,12 @@
+{
+  "name": "korean-learning",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Web application for learning Korean",
+  "license": "MIT",
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=24.18.0 <25",
+    "pnpm": "10.34.5"
+  }
+}

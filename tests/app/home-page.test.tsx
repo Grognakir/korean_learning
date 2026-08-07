@@ -10,7 +10,7 @@ describe("HomePage", () => {
     const heading = screen.getByRole("heading", { level: 1, name: "Korean Learning" });
 
     expect(heading).toBeVisible();
-    expect(heading.closest("main")).toHaveAttribute("id", "main-content");
-    expect(screen.getByText("Приложение готовится к первому учебному модулю.")).toBeVisible();
+    expect(heading.closest("header")).toBeInTheDocument();
+    expect(screen.getByText(/Спокойная практика корейского языка/)).toBeVisible();
   });
 });

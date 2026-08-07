@@ -1,30 +1,7 @@
-.hero {
+.page {
   display: grid;
-  max-width: var(--content-width-narrow);
-  gap: var(--space-4);
-}
-
-.hero > :first-child {
-  justify-self: start;
-}
-
-.showcase {
-  display: grid;
-  gap: var(--space-6);
-  padding-block-start: clamp(var(--space-12), 10vw, var(--space-20));
-}
-
-.showcaseHeading {
-  display: grid;
-  gap: var(--space-2);
-}
-
-.kicker {
-  color: var(--color-accent);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  gap: clamp(var(--space-12), 9vw, var(--space-20));
+  padding-block: clamp(var(--space-10), 8vw, var(--space-16));
 }
 
 .preview {

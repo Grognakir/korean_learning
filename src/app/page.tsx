@@ -1,24 +1,25 @@
 import { APP_NAME } from "@/constants";
 import { Badge, Button, Card, Input, Textarea } from "@/components/ui";
+import { PageHeader } from "@/components/layout";
+import { ContentSection, PageContainer } from "@/wrappers";
 
 import styles from "./page.module.css";
 import { FeedbackPreview } from "./FeedbackPreview";
 
 export default function HomePage() {
   return (
-    <main className="page-container page-section flow" id="main-content" tabIndex={-1}>
-      <header className={styles.hero}>
-        <Badge tone="accent">한국어 · 1급</Badge>
-        <h1>{APP_NAME}</h1>
-        <p>Приложение готовится к первому учебному модулю.</p>
-      </header>
+    <PageContainer className={styles.page}>
+      <PageHeader
+        description="Спокойная практика корейского языка короткими понятными шагами."
+        eyebrow={<Badge tone="accent">한국어 · 1급</Badge>}
+        title={APP_NAME}
+      />
 
-      <section aria-labelledby="ui-preview-title" className={styles.showcase}>
-        <div className={styles.showcaseHeading}>
-          <p className={styles.kicker}>UI foundation</p>
-          <h2 id="ui-preview-title">Базовые компоненты</h2>
-        </div>
-
+      <ContentSection
+        description="Доступные элементы, из которых собираются будущие учебные сценарии."
+        eyebrow="UI foundation"
+        title="Базовые компоненты"
+      >
         <Card className={styles.preview}>
           <div className={styles.group}>
             <h3 className={styles.groupTitle}>Действия</h3>
@@ -65,7 +66,7 @@ export default function HomePage() {
             <FeedbackPreview />
           </div>
         </Card>
-      </section>
-    </main>
+      </ContentSection>
+    </PageContainer>
   );
 }

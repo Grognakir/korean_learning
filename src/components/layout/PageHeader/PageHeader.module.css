@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+.copy {
+  display: grid;
+  max-width: var(--content-width-narrow);
+  gap: var(--space-3);
+}
+
+.eyebrow {
+  color: var(--color-accent);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: var(--font-size-lg);
+}
+
+.actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+@media (max-width: 42rem) {
+  .header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

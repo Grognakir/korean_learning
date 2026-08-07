@@ -368,7 +368,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I09 — Wrappers и общий layout
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** единая композиция приложения и границы контента.
 - **Входные зависимости:** F1-I08.
 - **Задачи:** AppShell, PageContainer, ContentSection, AuthBoundary interface, TrainingShell; Header/PageHeader placeholders; metadata и skip link.

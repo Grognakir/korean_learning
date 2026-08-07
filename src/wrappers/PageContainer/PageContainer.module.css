@@ -1,0 +1,22 @@
+.container {
+  width: calc(100% - (var(--space-4) * 2));
+  margin-inline: auto;
+}
+
+.narrow {
+  max-width: var(--content-width-narrow);
+}
+
+.default {
+  max-width: var(--content-width-default);
+}
+
+.wide {
+  max-width: var(--content-width-wide);
+}
+
+@media (min-width: 48rem) {
+  .container {
+    width: calc(100% - (var(--space-8) * 2));
+  }
+}

@@ -4,25 +4,25 @@
 
 ## Чем занимаемся
 
-Фаза 1 продолжается. Итерации F1-I01–F1-I08 завершены: к визуальному фундаменту добавлен единый набор доступных состояний и обратной связи.
+Фаза 1 продолжается. Итерации F1-I01–F1-I09 завершены: приложение получило общую доступную оболочку и границы контента для всех будущих маршрутов.
 
 ## Принятые решения
 
-- Добавлены ProgressBar, Spinner и Modal в `src/components/ui`, Alert и EmptyState в `src/components/feedback`.
-- Modal построен на нативном `<dialog>` с клавиатурной ловушкой, Escape-закрытием и восстановлением фокуса на исходное действие.
-- Обычная обратная связь объявляется через `role="status"` и `aria-live="polite"`; критическая ошибка — через `role="alert"` и `aria-live="assertive"`.
-- Анимации ProgressBar и Spinner учитывают `prefers-reduced-motion`.
-- Главная страница временно демонстрирует новые состояния до появления общей оболочки и маршрутов.
-- Браузерная проверка подтвердила фокус диалога, Tab/Shift+Tab, Escape, отсутствие горизонтального overflow на 375 px и корректную мобильную компоновку.
+- Root layout использует AuthBoundary и AppShell; на документ приходится один `main#main-content`, общий Header, footer и skip-link.
+- AuthBoundary пока является публичным интерфейсным швом и без условий пропускает гостевой контент, не создавая преждевременной auth-связности.
+- Добавлены PageContainer, ContentSection и TrainingShell; последний поддерживает опциональный контекст и sticky actions.
+- Добавлены Header и PageHeader с корректной структурой заголовков и областей страницы.
+- Метаданные используют общий title template `%s · Korean Learning`.
+- Главная страница переведена на общие PageContainer, PageHeader и ContentSection.
+- Браузерная проверка подтвердила один `main`, один `h1`, отсутствие overflow на 375 и 1280 px, устойчивую шапку и подвал.
 - `PLAN_REVISION_2026-08-07.md` остаётся пользовательским неотслеживаемым файлом вне коммитов.
 
 ## Открытые задачи
 
-- [ ] Выполнить F1-I09: AppShell, PageContainer, ContentSection, AuthBoundary, TrainingShell, Header и PageHeader.
-- [ ] Выполнить F1-I10: маршруты и desktop/mobile навигацию.
-- [ ] Выполнить F1-I11: окончательную мобильную адаптацию и CP-1 visual review.
+- [ ] Выполнить F1-I10: home, topics, module detail, training, session, review, progress, dictionary, login и desktop/mobile навигацию.
+- [ ] Выполнить F1-I11: responsive nav, safe-area, viewport matrix и CP-1 visual review.
 - [ ] Выполнить фактический GitHub Actions run после разрешённого push.
 
 ## Контекст для следующей сессии
 
-Текущая ветка — `feature/ui-feedback`; F1-I01–F1-I07 находятся в её истории. F1-I08 проходит 19/19 тестов, ESLint, Prettier, typecheck, production build и ручную desktop/mobile проверку. Следующая итерация F1-I09 должна собрать общую оболочку без бизнес-логики и преждевременной auth-связности.
+Текущая ветка — `feature/application-shell`; F1-I01–F1-I08 находятся в её истории. F1-I09 проходит 26/26 тестов, ESLint, Prettier, typecheck, production build и ручную проверку 375/1280 px. Следующая итерация F1-I10 должна заменить временный Header placeholder реальной навигацией и создать минимальные route placeholders без бизнес-логики.

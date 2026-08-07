@@ -7,11 +7,13 @@ describe("RootLayout", () => {
   it("задаёт язык документа и ссылку пропуска навигации", () => {
     const markup = renderToStaticMarkup(
       <RootLayout>
-        <main id="main-content">Содержимое</main>
+        <div>Содержимое</div>
       </RootLayout>,
     );
 
     expect(markup).toContain('<html lang="ru">');
     expect(markup).toContain('<a class="skip-link" href="#main-content">');
+    expect(markup).toContain('<main class="');
+    expect(markup).toContain('id="main-content"');
   });
 });

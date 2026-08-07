@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I03 завершены; минимальное приложение и единый quality baseline работают.
+- **Общее состояние:** F1-I01–F1-I04 завершены; статические проверки и unit/component test harness работают.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I03 — TypeScript, ESLint, форматирование и базовый CI.
+- **Текущая итерация:** F1-I04 — Vitest и React Testing Library.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** подключены совместимые TypeScript 6.0.3, ESLint 9.39.2, Next.js ESLint-конфигурация и Prettier 3.9.6; усилены strict options; добавлены единые scripts; создан GitHub Actions workflow с Node.js/pnpm из закреплённых версий и concurrency cancellation.
-- **Выполненные проверки:** frozen-lockfile install, Prettier check, ESLint без предупреждений, `next typegen`, строгий `tsc --noEmit`, production build и `git diff --check` проходят; статические и framework-команды выполнялись на Node.js 24.18.0; workflow синтаксически разобран Prettier, фактический GitHub run ожидает разрешённого push. Тесты неприменимы до F1-I04.
-- **Сейчас работает:** минимальная русскоязычная страница `/`, App Router, metadata, dev server, route type generation, строгий TypeScript, ESLint, Prettier, локальный production build и базовый CI workflow.
-- **Пока не работает:** дизайн-система, полноценные маршруты, UI-компоненты, тренировки, тесты, Supabase, авторизация, прогресс, модуль 높임말, внешний CI run и деплой.
-- **Следующий конкретный шаг:** F1-I04 — подключить Vitest и React Testing Library, добавить smoke-тесты и тестовый шаг в CI.
+- **Уже сделано:** подключены Vitest 4.1.10, jsdom 30.0.1, React Testing Library, jest-dom matchers и V8 coverage; алиас `@/` настроен без несовместимого `vite-tsconfig-paths`; добавлены smoke component test и тестовый шаг CI.
+- **Выполненные проверки:** frozen-lockfile install, Prettier check, ESLint без предупреждений, 1/1 smoke test, V8 coverage, `next typegen`, строгий `tsc --noEmit` и production build проходят на Node.js 24.18.0; намеренно сломанный assertion дал ожидаемый exit code 1 и затем был восстановлен; внешний CI run ожидает разрешённого push.
+- **Сейчас работает:** минимальная страница `/`, App Router, строгий TypeScript, ESLint, Prettier, Vitest/Testing Library, coverage, production build и базовый CI workflow со статическими проверками и тестами.
+- **Пока не работает:** дизайн-система, полноценные маршруты, прикладные UI-компоненты, тренировки, E2E, Supabase, авторизация, прогресс, модуль 높임말, внешний CI run и деплой.
+- **Следующий конкретный шаг:** F1-I05 — материализовать каркас source-каталогов и публичные границы без преждевременных абстракций.
 - **Блокирующие вопросы:** нет.
 - **Решения, требующие подтверждения:** нет для текущей итерации; внешние Vercel/Supabase действия выполняются на предусмотренных контрольных точках.
 - **Последнее обновление:** 2026-08-07.
@@ -283,7 +283,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I04 — Vitest и React Testing Library
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** возможность тестировать каждый следующий компонент и доменную функцию.
 - **Входные зависимости:** F1-I03.
 - **Задачи:** настроить jsdom, Testing Library, jest-dom matchers, coverage и test setup; добавить smoke unit/component тесты; расширить существующий CI job командой `pnpm run test:run` после frozen install.

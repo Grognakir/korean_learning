@@ -4,23 +4,25 @@
 
 ## Чем занимаемся
 
-Фаза 1 продолжается. Итерации F1-I01–F1-I03 завершены: репозиторий подготовлен, минимальное Next.js-приложение работает, а статические проверки и базовый CI настроены.
+Фаза 1 продолжается. Итерации F1-I01–F1-I04 завершены: минимальное Next.js-приложение, статические проверки, базовый CI и unit/component test harness работают.
 
 ## Принятые решения
 
 - Проект использует Node.js 24.18.0 LTS и pnpm 10.34.5; проверки выполняются на точном Node.js 24.18.0.
 - TypeScript закреплён на 6.0.3, ESLint — на совместимой ветке 9.39.2; latest TypeScript 7 и ESLint 10 пока не проходят peer-диапазоны Next.js ESLint-плагинов.
-- Включены дополнительные строгие TypeScript options: `exactOptionalPropertyTypes`, `noUncheckedIndexedAccess`, `noImplicitOverride`, `noImplicitReturns`, `noFallthroughCasesInSwitch` и контроль регистра путей.
-- ESLint использует flat config Next.js `core-web-vitals` и TypeScript, а Prettier отвечает только за форматирование.
-- CI запускается для pull request в `main`, push в `main` и вручную; устанавливает закреплённые pnpm/Node.js и выполняет frozen install, format, lint, typecheck и build.
+- Тестовый стек закреплён на Vitest 4.1.10, jsdom 30.0.1, React Testing Library 16.3.2 и jest-dom 7.0.0.
+- `vite-tsconfig-paths` удалён из-за peer-конфликта с TypeScript 6; алиас `@/` зеркалируется напрямую в `vitest.config.mts`.
+- V8 coverage включён отдельной командой, папка `coverage/` игнорируется Git.
+- Синхронные Server/Client Components можно проверять Vitest; async Server Components по рекомендации Next.js будут покрываться E2E.
+- CI выполняет frozen install, format, lint, typecheck, unit/component tests и build.
 - `PLAN_REVISION_2026-08-07.md` остаётся пользовательским неотслеживаемым файлом вне коммитов.
 
 ## Открытые задачи
 
-- [ ] Выполнить F1-I04 в отдельной ветке: подключить Vitest, React Testing Library и smoke-тесты.
-- [ ] Добавить unit/component test step в существующий CI workflow.
+- [ ] Выполнить F1-I05 в отдельной ветке: добавить минимальный source-каркас и публичные границы.
 - [ ] Продолжать малые итерации до пользовательской контрольной точки CP-1 после F1-I11.
+- [ ] Выполнить фактический GitHub Actions run после разрешённого push.
 
 ## Контекст для следующей сессии
 
-Текущая ветка — `chore/code-quality`; F1-I01 и F1-I02 находятся в её истории. F1-I03 добавляет ESLint/Prettier, строгие TypeScript options и `.github/workflows/ci.yml`. Frozen install, format check, lint, typecheck и production build проходят; фактический GitHub Actions run возможен после push. Перед дальнейшим кодом необходимо читать релевантные руководства в `node_modules/next/dist/docs/` согласно корневому `AGENTS.md`.
+Текущая ветка — `chore/unit-test-tooling`; F1-I01–F1-I03 находятся в её истории. F1-I04 добавляет `vitest.config.mts`, общий test setup, smoke-тест главной страницы, coverage и тестовый шаг CI. Положительный тест и coverage проходят; отрицательная проверка корректно завершилась кодом 1. Перед дальнейшим кодом необходимо читать релевантные руководства в `node_modules/next/dist/docs/` согласно корневому `AGENTS.md`.

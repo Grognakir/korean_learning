@@ -12,5 +12,6 @@ describe("Header", () => {
       "href",
       "/",
     );
+    expect(screen.getByRole("link", { name: "Войти" })).toHaveAttribute("href", "/login");
   });
 });

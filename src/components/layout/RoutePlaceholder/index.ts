@@ -1,5 +1,2 @@
-export { Header } from "./Header";
-export { PageHeader } from "./PageHeader";
-export type { PageHeaderProps } from "./PageHeader";
 export { RoutePlaceholder } from "./RoutePlaceholder";
 export type { RoutePlaceholderAction, RoutePlaceholderProps } from "./RoutePlaceholder";

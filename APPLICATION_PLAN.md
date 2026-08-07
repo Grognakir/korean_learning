@@ -385,7 +385,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I10 — Маршруты и навигация
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** сделать весь будущий MVP обозримым и навигируемым.
 - **Входные зависимости:** F1-I09.
 - **Задачи:** создать home, topics, module detail, training, session, review, progress, dictionary, login; desktop/mobile navigation; active state; минимальные placeholders.

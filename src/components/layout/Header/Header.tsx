@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { PrimaryNavigation } from "@/components/navigation";
 import { APP_NAME } from "@/constants";
 
 import styles from "./Header.module.css";
@@ -17,12 +18,10 @@ export function Header() {
             <span>Персональная практика</span>
           </span>
         </Link>
-        <div
-          aria-label="Основная навигация появится на следующем этапе"
-          className={styles.placeholder}
-        >
-          Учебный режим
-        </div>
+        <PrimaryNavigation />
+        <Link className={styles.login} href="/login">
+          Войти
+        </Link>
       </div>
     </header>
   );

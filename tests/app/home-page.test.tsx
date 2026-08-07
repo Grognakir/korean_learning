@@ -7,10 +7,13 @@ describe("HomePage", () => {
   it("показывает название и состояние приложения", () => {
     render(<HomePage />);
 
-    const heading = screen.getByRole("heading", { level: 1, name: "Korean Learning" });
+    const heading = screen.getByRole("heading", {
+      level: 1,
+      name: "Корейский язык — шаг за шагом",
+    });
 
     expect(heading).toBeVisible();
     expect(heading.closest("header")).toBeInTheDocument();
-    expect(screen.getByText(/Спокойная практика корейского языка/)).toBeVisible();
+    expect(screen.getByRole("link", { name: "Выбрать тему" })).toHaveAttribute("href", "/topics");
   });
 });

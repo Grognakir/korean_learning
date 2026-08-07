@@ -69,10 +69,12 @@
   --radius-sm: 0.375rem;
   --radius-md: 0.75rem;
   --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
   --radius-full: 9999px;
 
   --shadow-sm: 0 1px 2px rgb(23 33 29 / 8%);
   --shadow-md: 0 12px 32px rgb(23 33 29 / 10%);
+  --shadow-lg: 0 24px 60px rgb(23 33 29 / 13%);
   --shadow-focus: 0 0 0 3px rgb(20 127 190 / 25%);
 
   --content-width-narrow: 40rem;
@@ -110,5 +112,6 @@
   --color-focus: #63bce9;
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 28%);
   --shadow-md: 0 12px 32px rgb(0 0 0 / 32%);
+  --shadow-lg: 0 24px 60px rgb(0 0 0 / 38%);
   --shadow-focus: 0 0 0 3px rgb(99 188 233 / 28%);
 }

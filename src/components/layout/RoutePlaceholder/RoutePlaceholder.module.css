@@ -1,22 +1,94 @@
 .page {
   display: grid;
-  max-width: 56rem;
-  gap: var(--space-8);
-  padding-block: clamp(var(--space-10), 9vw, var(--space-20));
+  max-width: 64rem;
+  gap: clamp(var(--space-8), 5vw, var(--space-12));
+  padding-block: clamp(var(--space-8), 8vw, var(--space-20));
 }
 
-.card {
+.panel {
   display: grid;
-  gap: var(--space-6);
+  overflow: hidden;
+  gap: var(--space-8);
+  padding: clamp(var(--space-5), 5vw, var(--space-10));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
 }
 
-.card > :first-child {
-  justify-self: start;
+.wordCard {
+  position: relative;
+  display: grid;
+  min-height: 16rem;
+  place-content: center;
+  justify-items: center;
+  gap: var(--space-2);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 76% 18%, rgb(255 255 255 / 72%), transparent 10rem),
+    var(--color-accent-soft);
+}
+
+.wordCard::before,
+.wordCard::after {
+  position: absolute;
+  border: 1px solid rgb(19 107 83 / 12%);
+  border-radius: var(--radius-full);
+  content: "";
+}
+
+.wordCard::before {
+  width: 12rem;
+  height: 12rem;
+  inset-block-start: -7rem;
+  inset-inline-start: -4rem;
+}
+
+.wordCard::after {
+  width: 9rem;
+  height: 9rem;
+  inset-block-end: -5rem;
+  inset-inline-end: -2rem;
+}
+
+.wordCard span,
+.wordCard strong,
+.wordCard p {
+  position: relative;
+  z-index: 1;
+}
+
+.wordCard span {
+  color: var(--color-text);
+  font-size: clamp(3.25rem, 9vw, 5.5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+}
+
+.wordCard strong {
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+}
+
+.wordCard p {
+  color: var(--color-text);
+}
+
+.panelContent {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: var(--space-6);
 }
 
 .content {
   display: grid;
   gap: var(--space-4);
+}
+
+.content > p {
+  font-size: var(--font-size-lg);
 }
 
 .actions {
@@ -63,5 +135,16 @@
   .primaryAction,
   .secondaryAction {
     width: 100%;
+  }
+}
+
+@media (min-width: 48rem) {
+  .panel {
+    grid-template-columns: minmax(16rem, 0.82fr) minmax(0, 1.18fr);
+    align-items: stretch;
+  }
+
+  .wordCard {
+    min-height: 22rem;
   }
 }

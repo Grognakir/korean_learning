@@ -2,18 +2,18 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I06 завершены; визуальный фундамент и доступные глобальные стили работают.
+- **Общее состояние:** F1-I01–F1-I07 завершены; первая доступная UI-библиотека работает.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I06 — дизайн-токены и глобальные стили.
+- **Текущая итерация:** F1-I07 — базовые UI-компоненты ввода и действий.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** добавлены reset, полная система semantic/color/typography/spacing/radius/shadow/content/z-index/transition tokens, dark-token scaffold, глобальная типографика, Korean fallback, доступный focus, reduced-motion overrides, layout utilities и skip-link.
-- **Выполненные проверки:** Prettier, ESLint, 3/3 теста, `next typegen`, строгий `tsc --noEmit` и production build проходят на Node.js 24.18.0; desktop 1280×720 и mobile 390×844 проверены в браузере без горизонтального скролла; focus-ring видим, skip-link не перекрывает заголовок, reduced-motion rule загружено, предупреждений/ошибок консоли нет.
-- **Сейчас работает:** минимальная страница `/`, App Router, строгий TypeScript, quality/test harness, production build, CI, публичные source-границы и адаптивный визуальный фундамент.
-- **Пока не работает:** прикладные UI-компоненты, полноценные маршруты, тренировки, E2E, Supabase, авторизация, прогресс, модуль 높임말, внешний CI run и деплой.
-- **Следующий конкретный шаг:** F1-I07 — создать доступные Button, Input, Textarea, Card и Badge на основе новых токенов.
+- **Уже сделано:** реализованы Button, Input, Textarea, Card и Badge с CSS Modules, узкими variant/tone API, нативными props и React 19 ref-as-prop; Input/Textarea связывают label, hint/error и `aria-describedby`; на `/` добавлен адаптивный showcase компонентов.
+- **Выполненные проверки:** frozen-lockfile install, Prettier, ESLint, 11/11 тестов в 8 файлах, `next typegen`, строгий `tsc --noEmit` и production build проходят на Node.js 24.18.0; в браузере проверены hover/active/focus/disabled, ввод корейского текста и mobile 390×844 без горизонтального скролла; console issues отсутствуют.
+- **Сейчас работает:** минимальная страница `/`, App Router, строгий TypeScript, quality/test harness, production build, CI, публичные source-границы, адаптивные стили и первая UI-библиотека.
+- **Пока не работает:** компоненты системной обратной связи, полноценные маршруты, тренировки, E2E, Supabase, авторизация, прогресс, модуль 높임말, внешний CI run и деплой.
+- **Следующий конкретный шаг:** F1-I08 — создать ProgressBar, Spinner, Modal, EmptyState и Alert с едиными aria-live conventions.
 - **Блокирующие вопросы:** нет.
 - **Решения, требующие подтверждения:** нет для текущей итерации; внешние Vercel/Supabase действия выполняются на предусмотренных контрольных точках.
-- **Последнее обновление:** 2026-08-07.
+- **Последнее обновление:** 2026-08-08.
 
 ## 1. Цель, результат и границы
 
@@ -334,10 +334,10 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I07 — Базовые UI-компоненты ввода и действий
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** создать доступные переиспользуемые примитивы.
 - **Входные зависимости:** F1-I06.
-- **Задачи:** Button, Input, Textarea, Card, Badge; variants/sizes только по реальным потребностям; forward refs и нативные props.
+- **Задачи:** Button, Input, Textarea, Card, Badge; variants/sizes только по реальным потребностям; ref forwarding через React 19 ref-as-prop и нативные props.
 - **Предполагаемые файлы:** папки компонентов в `src/components/ui/` с TSX, CSS Module, test и index.
 - **Компоненты:** Button, Input, Textarea, Card, Badge.
 - **Данные / БД:** без изменений.

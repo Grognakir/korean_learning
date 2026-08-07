@@ -1,0 +1,65 @@
+.hero {
+  display: grid;
+  max-width: var(--content-width-narrow);
+  gap: var(--space-4);
+}
+
+.hero > :first-child {
+  justify-self: start;
+}
+
+.showcase {
+  display: grid;
+  gap: var(--space-6);
+  padding-block-start: clamp(var(--space-12), 10vw, var(--space-20));
+}
+
+.showcaseHeading {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.kicker {
+  color: var(--color-accent);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.preview {
+  display: grid;
+  gap: var(--space-10);
+}
+
+.group {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.groupTitle {
+  font-size: var(--font-size-lg);
+}
+
+.actions,
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.fields {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 48rem) {
+  .fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fields > :last-child {
+    grid-column: 1 / -1;
+  }
+}

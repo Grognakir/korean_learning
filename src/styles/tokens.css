@@ -17,11 +17,13 @@
   --color-surface-muted: #f1f4f1;
   --color-text: var(--color-palette-ink);
   --color-text-muted: var(--color-palette-slate);
+  --color-text-on-accent: var(--color-palette-white);
   --color-border: var(--color-palette-mist);
   --color-accent: var(--color-palette-forest);
   --color-accent-hover: var(--color-palette-forest-dark);
   --color-accent-soft: var(--color-palette-mint);
   --color-success: #237a57;
+  --color-success-soft: #dff3e9;
   --color-warning: var(--color-palette-amber);
   --color-warning-soft: var(--color-palette-amber-soft);
   --color-danger: var(--color-palette-red);
@@ -94,11 +96,13 @@
   --color-surface-muted: #202a25;
   --color-text: #f2f7f4;
   --color-text-muted: #aebdb5;
+  --color-text-on-accent: #10231c;
   --color-border: #33423a;
   --color-accent: #67d4ae;
   --color-accent-hover: #8de1c2;
   --color-accent-soft: #1d493b;
   --color-success: #71d5ad;
+  --color-success-soft: #1b4938;
   --color-warning: #f1bc62;
   --color-warning-soft: #4b3718;
   --color-danger: #ff9299;

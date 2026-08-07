@@ -20,6 +20,7 @@
 }
 
 .description {
+  min-block-size: 2lh;
   font-size: var(--font-size-lg);
 }
 
@@ -34,5 +35,15 @@
   .header {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .description {
+    min-block-size: 3lh;
+  }
+}
+
+@media (max-width: 22rem) {
+  .copy h1 {
+    min-block-size: 2lh;
   }
 }

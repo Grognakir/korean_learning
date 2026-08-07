@@ -9,21 +9,18 @@ const STARTING_POINTS = [
   {
     description: "Посмотрите доступные направления и выберите первый модуль.",
     href: "/topics",
-    index: "01",
     label: "Каталог",
     title: "Темы",
   },
   {
     description: "Начните короткую сессию и потренируйте активное вспоминание.",
     href: "/training",
-    index: "02",
     label: "Практика",
     title: "Тренировка",
   },
   {
     description: "Вернитесь к сложным словам и закрепите их в удобном темпе.",
     href: "/review",
-    index: "03",
     label: "Закрепление",
     title: "Повторение",
   },
@@ -63,10 +60,7 @@ export default function HomePage() {
         <div className={styles.grid}>
           {STARTING_POINTS.map((item) => (
             <Link className={styles.routeCard} href={item.href} key={item.href}>
-              <div className={styles.cardTop}>
-                <span>{item.index}</span>
-                <Badge>{item.label}</Badge>
-              </div>
+              <Badge>{item.label}</Badge>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               <span className={styles.cardAction}>

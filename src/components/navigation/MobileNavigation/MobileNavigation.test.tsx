@@ -11,11 +11,12 @@ vi.mock("next/navigation", () => ({
 
 describe("MobileNavigation", () => {
   it("uses the shared mobile targets and active state", () => {
-    render(<MobileNavigation />);
+    const { container } = render(<MobileNavigation />);
 
     const mobileItems = NAVIGATION_ITEMS.filter((item) => item.mobile);
 
     expect(screen.getAllByRole("link")).toHaveLength(mobileItems.length);
+    expect(container.querySelectorAll("nav svg")).toHaveLength(mobileItems.length);
     expect(screen.getByRole("link", { name: /Учиться/ })).toHaveAttribute("aria-current", "page");
   });
 });

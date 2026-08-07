@@ -43,6 +43,11 @@
   font-weight: var(--font-weight-bold);
 }
 
+.mark > span {
+  line-height: 1;
+  transform: translateY(0.08em);
+}
+
 .brandCopy {
   display: grid;
   line-height: var(--line-height-tight);

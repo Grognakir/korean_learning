@@ -8,7 +8,7 @@
   position: relative;
   display: grid;
   overflow: hidden;
-  gap: clamp(var(--space-10), 6vw, 6rem);
+  align-items: center;
   padding: clamp(var(--space-6), 6vw, 4.5rem);
   border: 1px solid color-mix(in srgb, var(--color-accent) 14%, var(--color-border));
   border-radius: var(--radius-xl);
@@ -29,14 +29,15 @@
   inset-inline-start: 42%;
 }
 
-.heroCopy,
-.lessonPreview {
+.heroCopy {
   position: relative;
   z-index: 1;
 }
 
 .heroCopy {
   display: grid;
+  width: 100%;
+  max-width: 45rem;
   min-width: 0;
   align-content: center;
   justify-items: start;
@@ -97,104 +98,6 @@
 
 .secondaryAction:hover {
   background: var(--color-surface);
-}
-
-.heroFacts {
-  display: grid;
-  width: 100%;
-  max-width: 35rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-4);
-  padding-block-start: var(--space-2);
-  list-style: none;
-}
-
-.heroFacts li {
-  display: grid;
-  gap: var(--space-1);
-}
-
-.heroFacts strong {
-  font-size: var(--font-size-sm);
-}
-
-.heroFacts span {
-  color: var(--color-text-muted);
-  font-size: var(--font-size-xs);
-}
-
-.lessonPreview {
-  display: grid;
-  width: 100%;
-  max-width: 27rem;
-  justify-self: center;
-  gap: var(--space-6);
-  padding: clamp(var(--space-6), 4vw, var(--space-8));
-  border: 1px solid rgb(255 255 255 / 75%);
-  border-radius: var(--radius-lg);
-  background: color-mix(in srgb, var(--color-surface) 92%, transparent);
-  box-shadow: var(--shadow-lg);
-  backdrop-filter: blur(16px);
-}
-
-.previewHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
-  color: var(--color-text-muted);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-}
-
-.word {
-  display: grid;
-  justify-items: center;
-  gap: var(--space-2);
-  padding-block: var(--space-5);
-  border-block: 1px solid var(--color-border);
-  text-align: center;
-}
-
-.word strong {
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  line-height: 1.1;
-}
-
-.word span {
-  color: var(--color-accent);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-}
-
-.word p {
-  color: var(--color-text);
-}
-
-.nextStep {
-  display: grid;
-  gap: var(--space-2);
-}
-
-.nextStep > span {
-  color: var(--color-accent);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.previewAction {
-  display: flex;
-  min-height: 2.75rem;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
-  padding-block-start: var(--space-4);
-  border-block-start: 1px solid var(--color-border);
-  color: var(--color-accent-hover);
-  font-weight: var(--font-weight-semibold);
-  text-decoration: none;
 }
 
 .section {
@@ -286,16 +189,6 @@
     width: 100%;
   }
 
-  .heroFacts {
-    grid-template-columns: 1fr;
-    gap: var(--space-3);
-  }
-
-  .heroFacts li {
-    grid-template-columns: 7rem 1fr;
-    align-items: baseline;
-  }
-
   .routeCard {
     min-height: 17rem;
   }
@@ -318,13 +211,7 @@
 
 @media (min-width: 64rem) {
   .hero {
-    min-height: 36rem;
-    grid-template-columns: minmax(0, 1.08fr) minmax(20rem, 0.82fr);
-    align-items: center;
-  }
-
-  .lessonPreview {
-    justify-self: end;
+    min-height: 30rem;
   }
 
   .grid {

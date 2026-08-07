@@ -47,40 +47,7 @@ export default function HomePage() {
               Посмотреть прогресс
             </Link>
           </div>
-          <ul aria-label="Особенности обучения" className={styles.heroFacts}>
-            <li>
-              <strong>5 минут</strong>
-              <span>на первый шаг</span>
-            </li>
-            <li>
-              <strong>Свой темп</strong>
-              <span>без дедлайнов</span>
-            </li>
-            <li>
-              <strong>Ясный путь</strong>
-              <span>без перегрузки</span>
-            </li>
-          </ul>
         </div>
-
-        <aside aria-label="Следующий учебный шаг" className={styles.lessonPreview}>
-          <div className={styles.previewHeader}>
-            <span>План на сегодня</span>
-            <Badge tone="success">5 минут</Badge>
-          </div>
-          <div className={styles.word}>
-            <strong lang="ko">안녕하세요</strong>
-            <span>annyeonghaseyo</span>
-            <p>Здравствуйте</p>
-          </div>
-          <div className={styles.nextStep}>
-            <span>Первый шаг</span>
-            <p>Выберите тему и начните короткое занятие.</p>
-          </div>
-          <Link className={styles.previewAction} href="/topics">
-            Открыть темы <span aria-hidden="true">→</span>
-          </Link>
-        </aside>
       </header>
 
       <section aria-labelledby="start-title" className={styles.section}>

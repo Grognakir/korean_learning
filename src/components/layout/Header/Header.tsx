@@ -11,7 +11,7 @@ export function Header() {
       <div className={styles.inner}>
         <Link aria-label={`${APP_NAME} — на главную`} className={styles.brand} href="/">
           <span aria-hidden="true" className={styles.mark} lang="ko">
-            한
+            <span>한</span>
           </span>
           <span className={styles.brandCopy}>
             <strong>{APP_NAME}</strong>

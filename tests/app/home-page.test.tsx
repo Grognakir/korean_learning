@@ -7,7 +7,10 @@ describe("HomePage", () => {
   it("показывает название и состояние приложения", () => {
     render(<HomePage />);
 
-    expect(screen.getByRole("heading", { level: 1, name: "Korean Learning" })).toBeVisible();
+    const heading = screen.getByRole("heading", { level: 1, name: "Korean Learning" });
+
+    expect(heading).toBeVisible();
+    expect(heading.closest("main")).toHaveAttribute("id", "main-content");
     expect(screen.getByText("Приложение готовится к первому учебному модулю.")).toBeVisible();
   });
 });

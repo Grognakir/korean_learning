@@ -1,0 +1,92 @@
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+html {
+  background: var(--color-background);
+}
+
+body {
+  min-height: 100svh;
+  overflow-wrap: break-word;
+  background:
+    radial-gradient(circle at 8% 4%, rgb(217 241 232 / 75%), transparent 32rem),
+    var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  text-wrap: balance;
+}
+
+h1 {
+  max-width: 16ch;
+  font-size: var(--font-size-3xl);
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+p {
+  max-width: 68ch;
+  color: var(--color-text-muted);
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+  box-shadow: var(--shadow-focus);
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-text);
+}
+
+[lang="ko"] {
+  font-family: var(--font-family-korean);
+  word-break: keep-all;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

@@ -279,76 +279,6 @@
   font-weight: var(--font-weight-semibold);
 }
 
-.rhythm {
-  display: grid;
-  gap: var(--space-8);
-  padding: clamp(var(--space-6), 6vw, var(--space-12));
-  border-radius: var(--radius-xl);
-  background: var(--color-text);
-  color: var(--color-surface);
-}
-
-.rhythmCopy {
-  display: grid;
-  align-content: center;
-  justify-items: start;
-  gap: var(--space-4);
-}
-
-.rhythm h2,
-.rhythm dd {
-  color: var(--color-surface);
-}
-
-.rhythm p {
-  color: color-mix(in srgb, var(--color-surface) 70%, transparent);
-}
-
-.rhythm .kicker,
-.rhythm .textLink {
-  color: #8de1c2;
-}
-
-.textLink {
-  display: inline-flex;
-  min-height: 2.75rem;
-  align-items: center;
-  gap: var(--space-3);
-  justify-self: start;
-  font-weight: var(--font-weight-semibold);
-  text-decoration: none;
-}
-
-.rhythmStats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-3);
-}
-
-.rhythmStats > div {
-  display: grid;
-  align-content: center;
-  gap: var(--space-2);
-  min-height: 8.5rem;
-  padding: var(--space-5);
-  border: 1px solid rgb(255 255 255 / 12%);
-  border-radius: var(--radius-md);
-  background: rgb(255 255 255 / 6%);
-}
-
-.rhythmStats dt {
-  color: color-mix(in srgb, var(--color-surface) 62%, transparent);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-semibold);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.rhythmStats dd {
-  font-size: clamp(var(--font-size-lg), 2vw, var(--font-size-xl));
-  font-weight: var(--font-weight-bold);
-}
-
 @media (max-width: 42rem) {
   .heroActions,
   .primaryAction,
@@ -369,14 +299,6 @@
   .routeCard {
     min-height: 17rem;
   }
-
-  .rhythmStats {
-    grid-template-columns: 1fr;
-  }
-
-  .rhythmStats > div {
-    min-height: auto;
-  }
 }
 
 @media (min-width: 48rem) {
@@ -391,11 +313,6 @@
 
   .routeCard:last-child {
     grid-column: 1 / -1;
-  }
-
-  .rhythm {
-    grid-template-columns: minmax(0, 0.8fr) minmax(26rem, 1.2fr);
-    align-items: center;
   }
 }
 

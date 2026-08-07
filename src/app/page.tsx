@@ -109,34 +109,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
-      <section aria-labelledby="rhythm-title" className={styles.rhythm}>
-        <div className={styles.rhythmCopy}>
-          <p className={styles.kicker}>Ритм обучения</p>
-          <h2 id="rhythm-title">Маленький шаг каждый день</h2>
-          <p>
-            Занимайтесь столько, сколько удобно. Мы сохраним направление и покажем, что повторить
-            дальше.
-          </p>
-          <Link className={styles.textLink} href="/progress">
-            Открыть прогресс <span aria-hidden="true">→</span>
-          </Link>
-        </div>
-        <dl className={styles.rhythmStats}>
-          <div>
-            <dt>Фокус</dt>
-            <dd>1 шаг</dd>
-          </div>
-          <div>
-            <dt>Практика</dt>
-            <dd>5 минут</dd>
-          </div>
-          <div>
-            <dt>Режим</dt>
-            <dd>Свой темп</dd>
-          </div>
-        </dl>
-      </section>
     </PageContainer>
   );
 }

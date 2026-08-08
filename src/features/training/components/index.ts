@@ -10,6 +10,8 @@ export { MatchingExercise } from "./MatchingExercise";
 export type { MatchingExerciseProps } from "./MatchingExercise";
 export { ModuleCard } from "./ModuleCard";
 export type { ModuleCardProps } from "./ModuleCard";
+export { ResumeTrainingPrompt } from "./ResumeTrainingPrompt";
+export type { ResumeTrainingPromptProps } from "./ResumeTrainingPrompt";
 export { TextAnswerExercise } from "./TextAnswerExercise";
 export type { TextAnswerExerciseProps } from "./TextAnswerExercise";
 export { TrainingSession } from "./TrainingSession";

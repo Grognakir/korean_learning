@@ -3,11 +3,21 @@
 import Link from "next/link";
 import { useEffect, useRef, type KeyboardEvent as ReactKeyboardEvent } from "react";
 
+import { Alert } from "@/components/feedback";
 import { Button, ProgressBar } from "@/components/ui";
 import { TrainingShell } from "@/wrappers";
 
-import type { Exercise } from "../../domain";
-import { useTrainingSession, type UseTrainingSessionOptions } from "../../hooks/useTrainingSession";
+import type { Exercise, TrainingSessionState } from "../../domain";
+import {
+  persistTrainingSessionState,
+  usePersistedSessionBootstrap,
+} from "../../hooks/usePersistedTrainingSession";
+import {
+  useTrainingSession,
+  type UseTrainingSessionOptions,
+  type UseTrainingSessionResult,
+} from "../../hooks/useTrainingSession";
+import { LocalTrainingSessionStore } from "../../persistence";
 import type { ExerciseView } from "../../presentation";
 import { ExerciseFeedback } from "../ExerciseFeedback";
 import { ExerciseRenderer } from "../ExerciseRenderer";
@@ -21,8 +31,12 @@ export type TrainingSessionProps = {
   readonly moduleSlug?: string;
   readonly seed?: number;
   readonly limit?: number;
+  readonly contentVersion?: string;
   readonly now?: UseTrainingSessionOptions["now"];
   readonly createSubmissionId?: UseTrainingSessionOptions["createSubmissionId"];
+  /** When false, skips localStorage (unit tests). Default true. */
+  readonly persist?: boolean;
+  readonly store?: LocalTrainingSessionStore;
 };
 
 function exerciseInstruction(exercise: ExerciseView): string | null {
@@ -46,24 +60,13 @@ function isSingleLineTextField(target: EventTarget | null): target is HTMLInputE
   );
 }
 
-export function TrainingSession({
-  createSubmissionId,
-  exercises,
-  limit,
-  moduleSlug,
-  now,
-  seed,
-  sessionId,
-}: TrainingSessionProps) {
-  const session = useTrainingSession({
-    exercises,
-    ...(sessionId === undefined ? {} : { sessionId }),
-    ...(moduleSlug === undefined ? {} : { moduleSlug }),
-    ...(seed === undefined ? {} : { seed }),
-    ...(limit === undefined ? {} : { limit }),
-    ...(now === undefined ? {} : { now }),
-    ...(createSubmissionId === undefined ? {} : { createSubmissionId }),
-  });
+function TrainingSessionView({
+  notice,
+  session,
+}: {
+  readonly notice: string | null;
+  readonly session: UseTrainingSessionResult;
+}) {
   const promptHeadingRef = useRef<HTMLHeadingElement>(null);
   const previousExerciseIdRef = useRef<string | null>(null);
 
@@ -85,17 +88,24 @@ export function TrainingSession({
 
   if (session.isCompleted) {
     return (
-      <section aria-labelledby="training-complete-title" className={styles.complete}>
-        <h1 className={styles.completeTitle} id="training-complete-title">
-          Тренировка завершена
-        </h1>
-        <p className={styles.completeCopy}>
-          Вы прошли все задания этой короткой сессии. Можно вернуться к списку тренировок.
-        </p>
-        <Link className={styles.exitLink} href="/training">
-          К тренировке
-        </Link>
-      </section>
+      <>
+        {notice ? (
+          <Alert className={styles.notice} title="Сохранение" tone="info">
+            {notice}
+          </Alert>
+        ) : null}
+        <section aria-labelledby="training-complete-title" className={styles.complete}>
+          <h1 className={styles.completeTitle} id="training-complete-title">
+            Тренировка завершена
+          </h1>
+          <p className={styles.completeCopy}>
+            Вы прошли все задания этой короткой сессии. Можно вернуться к списку тренировок.
+          </p>
+          <Link className={styles.exitLink} href="/training">
+            К тренировке
+          </Link>
+        </section>
+      </>
     );
   }
 
@@ -152,6 +162,11 @@ export function TrainingSession({
 
   return (
     <div className={styles.sessionForm} onKeyDown={handleSessionKeyDown}>
+      {notice ? (
+        <Alert className={styles.notice} title="Сохранение" tone="info">
+          {notice}
+        </Alert>
+      ) : null}
       <TrainingShell className={styles.shell}>
         <div className={styles.progressBlock}>
           <div className={styles.progressMeta}>
@@ -210,5 +225,105 @@ export function TrainingSession({
         {session.currentAttempt ? <ExerciseFeedback attempt={session.currentAttempt} /> : null}
       </TrainingShell>
     </div>
+  );
+}
+
+function TrainingSessionRuntime({
+  contentVersion,
+  createSubmissionId,
+  exercises,
+  initialState,
+  limit,
+  moduleSlug,
+  notice,
+  now,
+  persist,
+  persistCreate,
+  seed,
+  sessionId,
+  store,
+}: TrainingSessionProps & {
+  readonly initialState?: TrainingSessionState;
+  readonly notice: string | null;
+  readonly persistCreate: boolean;
+}) {
+  const storeRef = useRef(store ?? new LocalTrainingSessionStore());
+  const didPersistCreate = useRef(false);
+
+  const session = useTrainingSession({
+    exercises,
+    ...(sessionId === undefined ? {} : { sessionId }),
+    ...(moduleSlug === undefined ? {} : { moduleSlug }),
+    ...(seed === undefined ? {} : { seed }),
+    ...(limit === undefined ? {} : { limit }),
+    ...(contentVersion === undefined ? {} : { contentVersion }),
+    ...(now === undefined ? {} : { now }),
+    ...(createSubmissionId === undefined ? {} : { createSubmissionId }),
+    ...(initialState ? { initialState } : {}),
+    ...(persist
+      ? {
+          onStateChange: (state: TrainingSessionState) => {
+            persistTrainingSessionState(state, storeRef.current);
+          },
+        }
+      : {}),
+  });
+
+  useEffect(() => {
+    if (!persist || !persistCreate || didPersistCreate.current) {
+      return;
+    }
+
+    didPersistCreate.current = true;
+    persistTrainingSessionState(session.state, storeRef.current);
+  }, [persist, persistCreate, session.state]);
+
+  return <TrainingSessionView notice={notice} session={session} />;
+}
+
+export function TrainingSession({
+  contentVersion,
+  createSubmissionId,
+  exercises,
+  limit,
+  moduleSlug,
+  now,
+  persist = true,
+  seed,
+  sessionId,
+  store,
+}: TrainingSessionProps) {
+  const bootstrap = usePersistedSessionBootstrap({
+    persist,
+    ...(sessionId === undefined ? {} : { sessionId }),
+    ...(moduleSlug === undefined ? {} : { moduleSlug }),
+    ...(contentVersion === undefined ? {} : { contentVersion }),
+    ...(store === undefined ? {} : { store }),
+  });
+
+  if (bootstrap.status === "pending") {
+    return (
+      <p aria-busy="true" className={styles.loading}>
+        Загрузка сессии…
+      </p>
+    );
+  }
+
+  return (
+    <TrainingSessionRuntime
+      exercises={exercises}
+      notice={bootstrap.notice}
+      persist={persist}
+      persistCreate={bootstrap.persistCreate}
+      {...(contentVersion === undefined ? {} : { contentVersion })}
+      {...(createSubmissionId === undefined ? {} : { createSubmissionId })}
+      {...(bootstrap.initialState === undefined ? {} : { initialState: bootstrap.initialState })}
+      {...(limit === undefined ? {} : { limit })}
+      {...(moduleSlug === undefined ? {} : { moduleSlug })}
+      {...(now === undefined ? {} : { now })}
+      {...(seed === undefined ? {} : { seed })}
+      {...(sessionId === undefined ? {} : { sessionId })}
+      {...(store === undefined ? {} : { store })}
+    />
   );
 }

@@ -92,11 +92,13 @@ export default async function SessionPage({ params }: SessionPageProps) {
   }
 
   const exercises = exerciseRepository.list({ moduleSlug: session.moduleSlug });
+  const learningModule = learningModuleRegistry.getBySlug(session.moduleSlug);
 
   return (
     <PageContainer className={styles.page} width="narrow">
       <PageHeader description={session.description} title="Учебная сессия" />
       <TrainingSession
+        contentVersion={learningModule?.contentVersion ?? "1.0.0"}
         exercises={exercises}
         moduleSlug={session.moduleSlug}
         sessionId={session.sessionId}

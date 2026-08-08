@@ -1,0 +1,65 @@
+.panel {
+  display: grid;
+  gap: var(--space-5);
+  padding: clamp(var(--space-5), 4vw, var(--space-8));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.copy {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.title {
+  margin: 0;
+  max-width: none;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  text-wrap: wrap;
+}
+
+.description {
+  margin: 0;
+  max-width: none;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-md);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.primaryAction {
+  display: inline-flex;
+  min-height: 2.75rem;
+  min-width: 8rem;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) var(--space-5);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.primaryAction:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-text-on-accent);
+}
+
+@media (max-width: 30rem) {
+  .actions,
+  .primaryAction,
+  .actions :global(button) {
+    width: 100%;
+  }
+}

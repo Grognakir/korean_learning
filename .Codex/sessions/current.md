@@ -4,22 +4,20 @@
 
 ## Чем занимаемся
 
-Закрыта polish-итерация `fix/cp1a-training-ui` после ручных замечаний CP-1A. Следующий шаг плана — F1-I18, но только после явного «CP-1A принят».
+F1-I18 завершена: локальное сохранение active training session. Следующая итерация — F1-I19 (результаты), не начинать в этом шаге.
 
 ## Принятые решения
 
-- Preflight: `docs/ITERATION_MANDATORY_CONDITIONS.md` + `.cursor/rules/iteration-preflight.mdc` (§4.7–4.8, инвентарь рядов).
-- Select: value+шеврон в flex-потоке; Matching label+Select выровнены.
-- Training layout: heading на всю ширину; кнопка под упражнением; без sticky; компактный feedback (без «Пояснение»/status, fill-blank → правильный ответ).
-- `scrollbar-gutter: stable` без `both-edges`.
-- Choice distractors без утечки ответа («возраст», не «возраст (уважительно)»).
-- Complete-экран: без растяжки на 1fr и без `h1 max-width: 16ch`.
+- CP-1A принят пользователем.
+- Persistence: key `korean-learning:training-session:v1`, TTL 7 дней, Zod после parse.
+- Save после create/submit/next; completed не очищается в F1-I18.
+- SSR: чтение localStorage только после mount; `/training` показывает ResumeTrainingPrompt.
 
 ## Открытые задачи
 
-- [ ] Пользователь: подтвердить **CP-1A** (`CP-1A принят`).
-- [ ] Только после CP-1A: ветка `feature/local-session-persistence` → F1-I18.
+- [ ] Следующая карточка: F1-I19 (`feature/training-results`) — только по запросу / следующему шагу плана.
+- [ ] Не пушить ветку без разрешения.
 
 ## Контекст
 
-Ветка: `fix/cp1a-training-ui`. Gate: format/lint/typecheck/189 tests/build зелёные.
+Ветка: `feature/local-session-persistence`. Gate: 202 tests + build зелёные.

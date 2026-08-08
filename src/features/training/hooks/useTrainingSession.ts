@@ -67,6 +67,8 @@ export type UseTrainingSessionOptions = {
   readonly contentVersion?: string;
   readonly now?: () => string;
   readonly createSubmissionId?: () => string;
+  readonly initialState?: TrainingSessionState;
+  readonly onStateChange?: (state: TrainingSessionState) => void;
 };
 
 export type UseTrainingSessionResult = {
@@ -217,13 +219,26 @@ export function useTrainingSession(options: UseTrainingSessionOptions): UseTrain
   const now = options.now ?? (() => new Date().toISOString());
   const createSubmissionId = options.createSubmissionId ?? (() => crypto.randomUUID());
   const seed = options.seed ?? DEMO_TRAINING_SEED;
+  const onStateChange = options.onStateChange;
 
   const exercisesById = useMemo(() => {
     return new Map(options.exercises.map((exercise) => [exercise.id, exercise]));
   }, [options.exercises]);
 
-  const [state, setState] = useState(() => createSessionState(options, now));
+  const [state, setState] = useState(
+    () => options.initialState ?? createSessionState(options, now),
+  );
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const commitState = (updater: (currentState: TrainingSessionState) => TrainingSessionState) => {
+    setState((currentState) => {
+      const nextState = updater(currentState);
+      if (nextState !== currentState) {
+        onStateChange?.(nextState);
+      }
+      return nextState;
+    });
+  };
 
   const currentExerciseId = selectCurrentExerciseId(state);
   const currentExercise = selectCurrentExercise(state, exercisesById);
@@ -336,7 +351,7 @@ export function useTrainingSession(options: UseTrainingSessionOptions): UseTrain
     setIsSubmitting(true);
 
     try {
-      setState((currentState) => {
+      commitState((currentState) => {
         if (selectHasAnsweredCurrent(currentState) || currentState.status !== "active") {
           return currentState;
         }
@@ -360,7 +375,7 @@ export function useTrainingSession(options: UseTrainingSessionOptions): UseTrain
 
     const occurredAt = now();
 
-    setState((currentState) => {
+    commitState((currentState) => {
       if (!selectHasAnsweredCurrent(currentState) || currentState.status !== "active") {
         return currentState;
       }

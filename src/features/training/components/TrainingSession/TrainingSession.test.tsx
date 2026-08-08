@@ -27,6 +27,7 @@ function renderSession(exercises: readonly Exercise[], limit?: number) {
   submissionCounter = 0;
   return render(
     <TrainingSession
+      persist={false}
       createSubmissionId={createSubmissionId}
       exercises={exercises}
       {...(limit === undefined ? {} : { limit })}

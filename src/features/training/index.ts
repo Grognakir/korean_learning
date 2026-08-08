@@ -2,6 +2,7 @@ export {
   ExerciseFeedback,
   ExerciseRenderer,
   ModuleCard,
+  ResumeTrainingPrompt,
   TextAnswerExercise,
   TrainingSession,
 } from "./components";
@@ -12,6 +13,7 @@ export type {
   FillBlankExerciseProps,
   MatchingExerciseProps,
   ModuleCardProps,
+  ResumeTrainingPromptProps,
   TextAnswerExerciseProps,
   TrainingSessionProps,
 } from "./components";
@@ -114,6 +116,28 @@ export type {
   UseTrainingSessionOptions,
   UseTrainingSessionResult,
 } from "./hooks/useTrainingSession";
+export {
+  persistTrainingSessionState,
+  usePersistedSessionBootstrap,
+} from "./hooks/usePersistedTrainingSession";
+export type {
+  PersistedSessionBootstrap,
+  UsePersistedSessionBootstrapOptions,
+} from "./hooks/usePersistedTrainingSession";
+export {
+  LocalTrainingSessionStore,
+  TRAINING_SESSION_STORAGE_KEY,
+  TRAINING_SESSION_STORAGE_VERSION,
+  TRAINING_SESSION_TTL_MS,
+} from "./persistence";
+export type {
+  LocalTrainingSessionStoreOptions,
+  PersistedTrainingSessionRecord,
+  TrainingSessionClock,
+  TrainingSessionLoadResult,
+  TrainingSessionStorageAdapter,
+  TrainingSessionStorageVersion,
+} from "./persistence";
 export {
   describeFillBlankTemplate,
   parseFillBlankTemplate,

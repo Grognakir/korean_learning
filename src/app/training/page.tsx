@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { PageHeader } from "@/components/layout";
 import { Badge } from "@/components/ui";
-import { DEMO_TRAINING_SESSION_ID } from "@/features/training";
+import { DEMO_TRAINING_SESSION_ID, ResumeTrainingPrompt } from "@/features/training";
 import {
   HONORIFICS_MODULE_SLUG,
   HONORIFICS_PREVIEW_SESSION_ID,
@@ -33,6 +33,8 @@ export default function TrainingPage() {
         eyebrow="Активная практика"
         title="Тренировка"
       />
+
+      <ResumeTrainingPrompt />
 
       <section aria-label="Доступный модуль для тренировки" className={styles.panel}>
         <div className={styles.meta}>

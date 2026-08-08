@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 
-import { RoutePlaceholder } from "@/components/layout";
+import { GuestFeatureEmptyState } from "@/components/feedback";
+import { PageHeader } from "@/components/layout";
+import { PageContainer } from "@/wrappers";
+
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Словарь",
@@ -9,11 +13,16 @@ export const metadata: Metadata = {
 
 export default function DictionaryPage() {
   return (
-    <RoutePlaceholder
-      actions={[{ href: "/topics", label: "Вернуться к темам" }]}
-      description="Ищите изученные слова, значения и связанные примеры употребления."
-      eyebrow="Справочник"
-      title="Словарь"
-    />
+    <PageContainer className={styles.page}>
+      <PageHeader
+        description="Ищите изученные слова, значения и связанные примеры употребления."
+        eyebrow="Справочник"
+        title="Словарь"
+      />
+      <GuestFeatureEmptyState
+        description="Словарь станет доступен после накопления изученных слов. Сейчас можно тренироваться локально и открывать темы."
+        title="Словарь пока недоступен"
+      />
+    </PageContainer>
   );
 }

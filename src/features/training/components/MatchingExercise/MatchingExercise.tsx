@@ -1,7 +1,9 @@
 "use client";
 
-import { ExerciseText } from "../ExerciseText";
+import { Select } from "@/components/ui";
+
 import type { MatchingExerciseView } from "../../presentation";
+import { ExerciseText } from "../ExerciseText";
 
 import styles from "./MatchingExercise.module.css";
 
@@ -11,6 +13,14 @@ export type MatchingExerciseProps = {
   readonly disabled?: boolean;
   readonly onChange: (leftPairId: string, rightPairId: string) => void;
 };
+
+function optionLang(label: { ko: string | null; ru: string | null }): string | undefined {
+  if (label.ko && !label.ru) {
+    return "ko";
+  }
+
+  return undefined;
+}
 
 function labelText(label: { ko: string | null; ru: string | null }): string {
   return [label.ko, label.ru].filter(Boolean).join(" / ");
@@ -22,33 +32,38 @@ export function MatchingExercise({
   matches,
   onChange,
 }: MatchingExerciseProps) {
+  const rightOptions = exercise.rightOptions.map((rightOption) => {
+    const lang = optionLang(rightOption.label);
+    return {
+      value: rightOption.pairId,
+      label: labelText(rightOption.label),
+      ...(lang ? { lang } : {}),
+    };
+  });
+
   return (
     <div className={styles.root}>
       <p className={styles.hint}>Сопоставьте пары с помощью выпадающего списка.</p>
       <ul className={styles.list}>
         {exercise.leftItems.map((leftItem) => {
           const selectId = `match-${exercise.id}-${leftItem.pairId}`;
+          const labelId = `${selectId}-label`;
           const selectedRightId = matches[leftItem.pairId] ?? "";
 
           return (
             <li className={styles.item} key={leftItem.pairId}>
-              <label className={styles.left} htmlFor={selectId}>
+              <span className={styles.left} id={labelId}>
                 <ExerciseText text={leftItem.label} />
-              </label>
-              <select
-                className={styles.select}
+              </span>
+              <Select
+                aria-labelledby={labelId}
                 disabled={disabled}
                 id={selectId}
-                onChange={(event) => onChange(leftItem.pairId, event.currentTarget.value)}
+                onChange={(value) => onChange(leftItem.pairId, value)}
+                options={rightOptions}
+                placeholder="Выберите соответствие"
                 value={selectedRightId}
-              >
-                <option value="">Выберите соответствие</option>
-                {exercise.rightOptions.map((rightOption) => (
-                  <option key={rightOption.pairId} value={rightOption.pairId}>
-                    {labelText(rightOption.label)}
-                  </option>
-                ))}
-              </select>
+              />
             </li>
           );
         })}

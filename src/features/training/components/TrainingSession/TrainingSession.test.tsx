@@ -1,4 +1,4 @@
-import { render, screen, within } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 
@@ -65,27 +65,26 @@ async function answerCurrentExercise(user: ReturnType<typeof userEvent.setup>) {
     return;
   }
 
-  const selects = screen.queryAllByRole("combobox");
-  if (selects.length > 0) {
-    for (const select of selects) {
-      const pairId = select.id.match(/^match-[0-9a-f-]{36}-(.+)$/)?.[1];
-      const optionValues = within(select)
-        .getAllByRole("option")
-        .map((option) => option.getAttribute("value"))
-        .filter((value): value is string => Boolean(value));
+  const comboboxes = screen.queryAllByRole("combobox");
+  if (comboboxes.length > 0) {
+    for (const combobox of comboboxes) {
+      const pairId = combobox.id.match(/^match-[0-9a-f-]{36}-(.+)$/)?.[1];
+      await user.click(combobox);
 
-      if (pairId && optionValues.includes(pairId)) {
-        await user.selectOptions(select, pairId);
+      const preferredOption =
+        pairId === undefined ? null : document.getElementById(`${combobox.id}-option-${pairId}`);
+      if (preferredOption) {
+        await user.click(preferredOption);
         continue;
       }
 
-      if (optionValues[0]) {
-        await user.selectOptions(select, optionValues[0]);
+      const options = screen.getAllByRole("option");
+      if (options[0]) {
+        await user.click(options[0]);
       }
     }
   }
 }
-
 const twoBlankExercise: FillBlankExercise = {
   schemaVersion: 1,
   id: "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeee1",

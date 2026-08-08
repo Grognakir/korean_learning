@@ -7,14 +7,14 @@
 
 ## Статус исправлений
 
-| ID     | Приоритет | Статус        | Решение |
-| ------ | --------- | ------------- | ------- |
-| UI-001 | P0        | исправлено    | На `<48rem` панель действий в обычном потоке; sticky только с `48rem`, `bottom` от `--training-actions-sticky-offset` |
-| UI-002 | P1        | исправлено    | `TrainingShell` grid `minmax(0,1fr) auto` + sticky offset страницы на desktop |
-| UI-003 | P1        | исправлено    | `scrollbar-gutter: stable both-edges` на `html` |
-| UI-004 | P1        | исправлено    | Модель прогресса выполнения: позиция `Задание X из N`, полоса = `answeredCount` |
-| UI-005 | P1        | исправлено    | `<form onSubmit>` + `Ответить` как `type="submit"`; `Дальше` остаётся `type="button"` |
-| UI-006 | P2        | исправлено    | `lang="ko"` на badge уровней / `한국어 · 1급`; preview description с вложенным `<span lang="ko">` |
+| ID     | Приоритет | Статус     | Решение                                                                                                               |
+| ------ | --------- | ---------- | --------------------------------------------------------------------------------------------------------------------- |
+| UI-001 | P0        | исправлено | На `<48rem` панель действий в обычном потоке; sticky только с `48rem`, `bottom` от `--training-actions-sticky-offset` |
+| UI-002 | P1        | исправлено | `TrainingShell` grid `minmax(0,1fr) auto` + sticky offset страницы на desktop                                         |
+| UI-003 | P1        | исправлено | `scrollbar-gutter: stable both-edges` на `html`                                                                       |
+| UI-004 | P1        | исправлено | Модель прогресса выполнения: позиция `Задание X из N`, полоса = `answeredCount`                                       |
+| UI-005 | P1        | исправлено | `<form onSubmit>` + `Ответить` как `type="submit"`; `Дальше` остаётся `type="button"`                                 |
+| UI-006 | P2        | исправлено | `lang="ko"` на badge уровней / `한국어 · 1급`; preview description с вложенным `<span lang="ko">`                     |
 
 Автоматические проверки после fix: Vitest 186/186, TypeScript, ESLint, Prettier, production build.
 

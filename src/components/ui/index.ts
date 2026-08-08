@@ -10,6 +10,8 @@ export { Modal } from "./Modal";
 export type { ModalProps } from "./Modal";
 export { ProgressBar } from "./ProgressBar";
 export type { ProgressBarProps } from "./ProgressBar";
+export { Select } from "./Select";
+export type { SelectOption, SelectProps } from "./Select";
 export { Spinner } from "./Spinner";
 export type { SpinnerProps, SpinnerSize } from "./Spinner";
 export { Textarea } from "./Textarea";

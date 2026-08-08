@@ -18,7 +18,7 @@ if (matchingView.type !== "matching-translation") {
 }
 
 describe("MatchingExercise", () => {
-  it("matches pairs with selects and does not require drag-and-drop", async () => {
+  it("matches pairs with a custom dropdown and does not require drag-and-drop", async () => {
     const user = userEvent.setup();
     const onChange = vi.fn();
     render(
@@ -30,10 +30,14 @@ describe("MatchingExercise", () => {
     );
 
     expect(screen.getByText("집")).toHaveAttribute("lang", "ko");
+    expect(document.querySelector("select")).toBeNull();
     expect(screen.getAllByRole("combobox")).toHaveLength(2);
     expect(document.querySelector("[draggable]")).toBeNull();
 
-    await user.selectOptions(screen.getAllByRole("combobox")[0]!, "home");
+    const firstCombobox = screen.getAllByRole("combobox")[0]!;
+    await user.click(firstCombobox);
+    await user.click(screen.getByRole("option", { name: "дом" }));
+
     expect(onChange).toHaveBeenCalledWith(matchingView.leftItems[0]!.pairId, "home");
   });
 });

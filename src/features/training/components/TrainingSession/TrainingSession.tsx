@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, type FormEvent } from "react";
+import { useEffect, useRef, type KeyboardEvent as ReactKeyboardEvent } from "react";
 
 import { Button, ProgressBar } from "@/components/ui";
 import { TrainingShell } from "@/wrappers";
@@ -23,6 +23,13 @@ export type TrainingSessionProps = {
   readonly now?: UseTrainingSessionOptions["now"];
   readonly createSubmissionId?: UseTrainingSessionOptions["createSubmissionId"];
 };
+
+function isSingleLineTextField(target: EventTarget | null): target is HTMLInputElement {
+  return (
+    target instanceof HTMLInputElement &&
+    (target.type === "text" || target.type === "search" || target.type === "")
+  );
+}
 
 export function TrainingSession({
   createSubmissionId,
@@ -93,15 +100,42 @@ export function TrainingSession({
   const completionLabel = `Выполнено заданий: ${session.progress.answeredCount} из ${session.progress.total}`;
   const inputsDisabled = session.hasAnsweredCurrent || session.isSubmitting;
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  function submitAnswer() {
     if (session.canSubmit) {
       session.submit();
     }
   }
 
+  function handleSessionKeyDown(event: ReactKeyboardEvent<HTMLDivElement>) {
+    if (event.key !== "Enter" || event.nativeEvent.isComposing) {
+      return;
+    }
+
+    if (event.target instanceof HTMLTextAreaElement) {
+      return;
+    }
+
+    if (event.target instanceof HTMLElement) {
+      const role = event.target.getAttribute("role");
+      if (role === "combobox" || role === "listbox" || role === "option") {
+        return;
+      }
+
+      if (event.target.closest('[role="listbox"]')) {
+        return;
+      }
+    }
+
+    if (!isSingleLineTextField(event.target)) {
+      return;
+    }
+
+    event.preventDefault();
+    submitAnswer();
+  }
+
   return (
-    <form className={styles.sessionForm} onSubmit={handleSubmit}>
+    <div className={styles.sessionForm} onKeyDown={handleSessionKeyDown}>
       <TrainingShell
         actions={
           <div className={styles.actions}>
@@ -110,7 +144,7 @@ export function TrainingSession({
                 Дальше
               </Button>
             ) : (
-              <Button disabled={!session.canSubmit} type="submit">
+              <Button disabled={!session.canSubmit} onClick={submitAnswer} type="button">
                 Ответить
               </Button>
             )}
@@ -155,6 +189,6 @@ export function TrainingSession({
 
         {session.currentAttempt ? <ExerciseFeedback attempt={session.currentAttempt} /> : null}
       </TrainingShell>
-    </form>
+    </div>
   );
 }

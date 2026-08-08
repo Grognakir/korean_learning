@@ -12,7 +12,6 @@ export default function LoginPage() {
     <RoutePlaceholder
       actions={[{ href: "/", label: "Продолжить как гость" }]}
       description="Авторизация будет подключена после настройки защищённого хранилища и политик доступа."
-      eyebrow="Аккаунт"
       title="Вход"
     />
   );

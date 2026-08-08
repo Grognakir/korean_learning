@@ -16,7 +16,6 @@ export default function ProgressPage() {
     <PageContainer className={styles.page}>
       <PageHeader
         description="Статистика регулярности и освоенных тем появится после облачной синхронизации."
-        eyebrow="Результаты"
         title="Прогресс"
       />
       <GuestFeatureEmptyState

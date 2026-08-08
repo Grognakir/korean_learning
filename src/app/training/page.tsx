@@ -33,7 +33,6 @@ export default function TrainingPage() {
     <PageContainer className={styles.page}>
       <PageHeader
         description="Короткая практика на локальных модулях. Draft preview появляется только в development."
-        eyebrow="Активная практика"
         title="Тренировка"
       />
 

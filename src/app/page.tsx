@@ -51,7 +51,6 @@ export default function HomePage() {
 
       <section aria-labelledby="start-title" className={styles.section}>
         <div className={styles.sectionHeading}>
-          <p className={styles.kicker}>Начало работы</p>
           <h2 id="start-title">С чего хотите начать?</h2>
         </div>
         <div className={styles.grid}>

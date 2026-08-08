@@ -16,7 +16,7 @@ export type RoutePlaceholderProps = {
   actions?: readonly RoutePlaceholderAction[];
   children?: ReactNode;
   description: ReactNode;
-  eyebrow: ReactNode;
+  eyebrow?: ReactNode;
   title: ReactNode;
 };
 

@@ -10,7 +10,6 @@ export default function NotFound() {
     <PageContainer className={styles.page}>
       <PageHeader
         description="Такой страницы нет или материал ещё не опубликован."
-        eyebrow="404"
         title="Страница не найдена"
       />
       <section aria-label="Что можно сделать дальше" className={styles.panel}>

@@ -5,12 +5,6 @@
   padding-block-end: clamp(var(--space-6), 6vw, var(--space-16));
 }
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3);
-}
-
 .primaryAction {
   display: inline-flex;
   min-height: 3rem;
@@ -35,20 +29,21 @@
 .koreanIntro {
   display: grid;
   gap: var(--space-3);
+  justify-items: start;
   padding: clamp(var(--space-6), 5vw, var(--space-10));
   border: 1px solid color-mix(in srgb, var(--color-accent) 18%, var(--color-border));
   border-radius: var(--radius-lg);
   background: linear-gradient(135deg, var(--color-accent-soft), var(--color-surface));
 }
 
-.koreanIntro > p:first-child {
+.koreanIntro > p:first-of-type {
   color: var(--color-accent-hover);
   font-size: clamp(var(--font-size-2xl), 5vw, var(--font-size-3xl));
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
 }
 
-.koreanIntro > p:last-child {
+.koreanIntro > p:last-of-type {
   color: var(--color-text);
   font-size: var(--font-size-lg);
 }

@@ -16,7 +16,6 @@ export default function DictionaryPage() {
     <PageContainer className={styles.page}>
       <PageHeader
         description="Ищите изученные слова, значения и связанные примеры употребления."
-        eyebrow="Справочник"
         title="Словарь"
       />
       <GuestFeatureEmptyState

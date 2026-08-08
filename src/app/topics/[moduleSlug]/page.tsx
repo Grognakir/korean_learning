@@ -51,25 +51,19 @@ export default async function ModulePage({ params }: ModulePageProps) {
           </Link>
         }
         description={learningModule.description.ru}
-        eyebrow={
-          <span className={styles.eyebrow}>
-            <Badge lang="ko" tone="accent">
-              {learningModule.level}
-            </Badge>
-            Учебный модуль
-          </span>
-        }
         title={learningModule.title.ru}
       />
 
       <div className={styles.koreanIntro}>
+        <Badge lang="ko" tone="accent">
+          {learningModule.level}
+        </Badge>
         <p lang="ko">{learningModule.title.ko}</p>
         <p lang="ko">{learningModule.description.ko}</p>
       </div>
 
       <ContentSection
         description="Темы расположены от базовых понятий к первым практическим выражениям."
-        eyebrow="Содержание"
         title="Темы модуля"
       >
         {topics.length === 0 ? (

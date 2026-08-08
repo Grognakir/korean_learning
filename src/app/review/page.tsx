@@ -16,7 +16,6 @@ export default function ReviewPage() {
     <PageContainer className={styles.page}>
       <PageHeader
         description="Очередь повторения ошибок появится после облачной синхронизации."
-        eyebrow="Закрепление"
         title="Повторение"
       />
       <GuestFeatureEmptyState

@@ -2,17 +2,17 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I23 завершены; F1-I24 в работе; CP-1A/CP-2/CP-3 приняты.
+- **Общее состояние:** F1-I01–F1-I24 завершены; CP-1A/CP-2/CP-3 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I24 Vercel preview — `in_progress`.
-- **Статус текущей итерации:** `in_progress`.
-- **Уже сделано:** локальный каркас, quality gate, UI polish; Vercel project `korean-learning` связан с GitHub.
-- **Выполненные проверки:** локальный full gate зелёный; preview deploy после push.
-- **Сейчас работает:** Git-integrated Vercel project (Node 24.x, pnpm из packageManager).
-- **Пока не работает:** production deploy (не делаем); Supabase (F1-I25 / CP-4).
-- **Следующий конкретный шаг:** проверить preview smoke после deploy; затем F1-I25 только после CP-4.
-- **Блокирующие вопросы:** нет для завершения F1-I24 после зелёного preview.
-- **Решения, требующие подтверждения:** CP-4 позже.
+- **Текущая итерация:** F1-I24 Vercel preview — `done`.
+- **Статус текущей итерации:** `done`.
+- **Уже сделано:** локальный каркас, quality gate, UI polish; Vercel project `korean-learning` + первый Git deploy.
+- **Выполненные проверки:** локальный full gate; Vercel Ready; HTTP smoke публичного URL (маршруты 200, unknown module/session 404, без honorifics в production build).
+- **Сейчас работает:** hosting pipeline на `https://korean-learning-gray.vercel.app` (pnpm 10.34.5, Next.js 16.3.0).
+- **Пока не работает:** Supabase (F1-I25 / CP-4); Production Branch ещё не `main` (первый деплой помечен Production); Vercel Node runtime `24.15.0` отстаёт от engines `>=24.18.0` (WARN).
+- **Следующий конкретный шаг:** F1-I25 только после явного CP-4.
+- **Блокирующие вопросы:** нет для остановки на F1-I24.
+- **Решения, требующие подтверждения:** CP-4; вручную в Vercel: Production Branch = `main`.
 - **Последнее обновление:** 2026-08-09.
 
 ## 1. Цель, результат и границы
@@ -640,20 +640,20 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I24 — Первый Vercel preview deployment
 
-- **Фаза / статус:** 1 / `in_progress`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** подтвердить реальную сборку и hosting pipeline до Supabase.
 - **Входные зависимости:** F1-I23, CP-3, доступ к Vercel.
 - **Задачи:** связать проект; задать framework/root и Node `24.x`; подтвердить фактический Node `>=24.18.0 <25` и pnpm `10.34.5` в build log; после CP-3 push `chore/vercel-preview` для Git-integrated preview; проверить URL/logs; не публиковать production без отдельного подтверждения.
 - **Предполагаемые файлы:** `.vercelignore` или конфигурация только при реальной необходимости; `.env.example` без секретов.
 - **Компоненты:** без изменений.
 - **Данные / БД:** local content в preview.
-- **Тесты:** Vercel build; e2e smoke против preview при безопасной конфигурации.
-- **Ручная проверка:** все маршруты, refresh dynamic route, mobile, console.
-- **Критерии готовности:** доступный preview воспроизводит локальное поведение.
+- **Тесты:** Vercel build; curl smoke публичного alias (Playwright против preview не требовался для close-out).
+- **Ручная проверка:** `/`, `/topics`, `/training`, `/progress`, `/review`, `/dictionary` → 200; unknown module/session → 404; draft 높임말 отсутствует.
+- **Критерии готовности:** доступный preview воспроизводит локальное поведение — выполнено.
 - **Ожидаемый результат:** проверенный hosting pipeline.
-- **Риски:** несоответствие Node/runtime, публичный тестовый URL.
-- **Ветка / коммит:** `chore/vercel-preview` / `chore: configure Vercel preview deployment`.
-- **Следующий шаг:** F1-I25.
+- **Риски / P2:** (1) первый Git deploy получил `target: production` — в Settings → Git задать Production Branch = `main`; (2) Vercel Node `v24.15.0` при engines `>=24.18.0 <25` → Unsupported engine WARN, сборка успешна; (3) branch alias может требовать Vercel SSO — smoke через `korean-learning-gray.vercel.app`.
+- **Ветка / коммит:** `chore/vercel-preview` / `chore: configure Vercel preview deployment` + docs close-out.
+- **Следующий шаг:** F1-I25 только после CP-4.
 
 ### F1-I25 — Supabase-проект и клиенты приложения
 

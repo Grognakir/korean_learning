@@ -4,24 +4,23 @@
 
 ## Чем занимаемся
 
-F1-I24: Vercel preview. CP-3 получен. Проект `korean-learning` создан/связан, GitHub connected, Node `24.x`.
+F1-I24 закрыта: Vercel project `korean-learning`, Git deploy Ready, HTTP smoke на публичном URL зелёный. Следующая итерация — F1-I25, только после явного **CP-4**.
 
 ## Принятые решения
 
 - CP-1A, CP-2, CP-3 приняты.
-- Vercel scope: `grognakirs-projects`.
-- Project: `korean-learning` (новый; единственный с этим именем).
-- Git remote: `Grognakir/korean_learning`.
-- `.vercel/` не коммитится.
-- Production deploy/promote не выполнять.
+- Vercel scope: `grognakirs-projects`; project: `korean-learning`.
+- Git: `Grognakir/korean_learning`; ветка `chore/vercel-preview`.
+- Публичный smoke URL: `https://korean-learning-gray.vercel.app`.
+- `.vercel/` не коммитится; production promote не делать.
+- P2: Production Branch → выставить `main` в дашборде; Node runtime Vercel `24.15.0` отстаёт от engines.
 
 ## Открытые задачи
 
-- [ ] Push `chore/vercel-preview` и дождаться preview.
-- [ ] Smoke preview URL.
-- [ ] Закрыть F1-I24 в статусе; не начинать F1-I25 без CP-4.
+- [ ] Пользователь: в Vercel Settings → Git → Production Branch = `main`.
+- [ ] Следующая карточка: F1-I25 — только после **CP-4**.
+- [ ] Не начинать Supabase без CP-4.
 
 ## Контекст
 
-Ветка: `chore/vercel-preview`.
-Локальный gate: format/lint/typecheck/219 unit/17 integration/build — зелёные.
+Deployment: `dpl_Dwc68xq2Gf6t6PT3QGS5eEzRrbVz` Ready; pnpm 10.34.5; Next 16.3.0.

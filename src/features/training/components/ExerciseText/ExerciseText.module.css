@@ -3,6 +3,28 @@
   line-height: var(--line-height-body);
 }
 
-.text [lang="ko"] {
+.stacked {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-2);
+}
+
+.korean {
   font-family: var(--font-family-korean);
+}
+
+.stacked .korean {
+  font-size: 1.2em;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
+.russian {
+  color: inherit;
+}
+
+.stacked .russian {
+  color: var(--color-text-muted);
+  font-size: 0.92em;
+  font-weight: var(--font-weight-medium);
 }

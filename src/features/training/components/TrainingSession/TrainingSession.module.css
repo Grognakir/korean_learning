@@ -43,10 +43,12 @@
 
 .promptHeading {
   margin: 0;
+  min-width: 0;
   color: var(--color-text);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-heading);
+  overflow-wrap: anywhere;
 }
 
 .promptHeading:focus {

@@ -3,7 +3,13 @@ import Link from "next/link";
 
 import { PageHeader } from "@/components/layout";
 import { Badge } from "@/components/ui";
-import { exerciseRepository, learningModuleRegistry } from "@/modules";
+import { DEMO_TRAINING_SESSION_ID } from "@/features/training";
+import {
+  HONORIFICS_MODULE_SLUG,
+  HONORIFICS_PREVIEW_SESSION_ID,
+  exerciseRepository,
+  learningModuleRegistry,
+} from "@/modules";
 import { PageContainer } from "@/wrappers";
 
 import styles from "./page.module.css";
@@ -13,38 +19,61 @@ export const metadata: Metadata = {
 };
 
 export default function TrainingPage() {
-  const learningModule = learningModuleRegistry.getBySlug("sample-module");
-  const exerciseCount = exerciseRepository.list({ moduleSlug: "sample-module" }).length;
+  const sampleModule = learningModuleRegistry.getBySlug("sample-module");
+  const sampleExerciseCount = exerciseRepository.list({ moduleSlug: "sample-module" }).length;
+  const honorificsModule = learningModuleRegistry.getBySlug(HONORIFICS_MODULE_SLUG);
+  const honorificsExerciseCount = honorificsModule
+    ? exerciseRepository.list({ moduleSlug: HONORIFICS_MODULE_SLUG }).length
+    : 0;
 
   return (
     <PageContainer className={styles.page} width="narrow">
       <PageHeader
-        description="Короткая практика на локальном sample-модуле: все семь типов заданий."
+        description="Короткая практика на локальных модулях. Draft preview появляется только в development."
         eyebrow="Активная практика"
         title="Тренировка"
       />
 
       <section aria-label="Доступный модуль для тренировки" className={styles.panel}>
         <div className={styles.meta}>
-          <Badge tone="accent">{learningModule?.level ?? "1급"}</Badge>
-          <span>{exerciseCount} заданий</span>
+          <Badge tone="accent">{sampleModule?.level ?? "1급"}</Badge>
+          <span>{sampleExerciseCount} заданий</span>
         </div>
         <div className={styles.copy}>
-          {learningModule?.title.ko ? (
+          {sampleModule?.title.ko ? (
             <p className={styles.koreanTitle} lang="ko">
-              {learningModule.title.ko}
+              {sampleModule.title.ko}
             </p>
           ) : null}
-          <h2>{learningModule?.title.ru ?? "Первые шаги в корейском"}</h2>
+          <h2>{sampleModule?.title.ru ?? "Первые шаги в корейском"}</h2>
           <p>
-            В модуле доступно {exerciseCount} заданий. Запустите демо-сессию и пройдите упражнения
-            подряд.
+            В модуле доступно {sampleExerciseCount} заданий. Запустите демо-сессию и пройдите
+            упражнения подряд.
           </p>
         </div>
-        <Link className={styles.startAction} href="/training/demo-session">
+        <Link className={styles.startAction} href={`/training/${DEMO_TRAINING_SESSION_ID}`}>
           Начать тренировку
         </Link>
       </section>
+
+      {honorificsModule ? (
+        <section aria-label="Draft preview модуль для тренировки" className={styles.panel}>
+          <div className={styles.meta}>
+            <Badge tone="neutral">draft preview</Badge>
+            <span>{honorificsExerciseCount} заданий</span>
+          </div>
+          <div className={styles.copy}>
+            <p className={styles.koreanTitle} lang="ko">
+              {honorificsModule.title.ko}
+            </p>
+            <h2>{honorificsModule.title.ru}</h2>
+            <p>{honorificsModule.description.ru}</p>
+          </div>
+          <Link className={styles.startAction} href={`/training/${HONORIFICS_PREVIEW_SESSION_ID}`}>
+            Начать preview-тренировку
+          </Link>
+        </section>
+      ) : null}
     </PageContainer>
   );
 }

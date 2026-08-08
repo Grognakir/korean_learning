@@ -1,3 +1,5 @@
+import { classNames } from "@/lib/utilities";
+
 import type { ExerciseTextView } from "../../presentation";
 
 import styles from "./ExerciseText.module.css";
@@ -9,28 +11,23 @@ export type ExerciseTextProps = {
 };
 
 export function ExerciseText({ as: Component = "span", className, text }: ExerciseTextProps) {
-  const parts: Array<{ key: string; value: string; lang?: "ko" }> = [];
+  const hasKorean = Boolean(text.ko);
+  const hasRussian = Boolean(text.ru);
 
-  if (text.ko) {
-    parts.push({ key: "ko", value: text.ko, lang: "ko" });
-  }
-
-  if (text.ru) {
-    parts.push({ key: "ru", value: text.ru });
-  }
-
-  if (parts.length === 0) {
+  if (!hasKorean && !hasRussian) {
     return null;
   }
 
+  const isStacked = hasKorean && hasRussian;
+
   return (
-    <Component className={className ? `${styles.text} ${className}` : styles.text}>
-      {parts.map((part, index) => (
-        <span key={part.key}>
-          {index > 0 ? " " : null}
-          <span lang={part.lang}>{part.value}</span>
+    <Component className={classNames(styles.text, isStacked && styles.stacked, className)}>
+      {text.ko ? (
+        <span className={styles.korean} lang="ko">
+          {text.ko}
         </span>
-      ))}
+      ) : null}
+      {text.ru ? <span className={styles.russian}>{text.ru}</span> : null}
     </Component>
   );
 }

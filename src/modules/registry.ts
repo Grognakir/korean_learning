@@ -1,9 +1,6 @@
-import { LocalExerciseRepository, ModuleRegistry } from "@/features/training";
+import { composeLearningContent } from "./composeLearningContent";
 
-import { sampleExercises, sampleModule } from "./sample";
+const composition = composeLearningContent(process.env.NODE_ENV ?? "production");
 
-export const learningModuleRegistry = new ModuleRegistry([sampleModule]);
-export const exerciseRepository = new LocalExerciseRepository(
-  sampleExercises,
-  learningModuleRegistry,
-);
+export const learningModuleRegistry = composition.learningModuleRegistry;
+export const exerciseRepository = composition.exerciseRepository;

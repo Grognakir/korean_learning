@@ -1,7 +1,16 @@
 .page {
+  --page-block-padding: clamp(var(--space-6), 6vw, var(--space-16));
+  --training-actions-sticky-offset: var(--page-block-padding);
+  --app-header-height: 4.5rem;
+  --app-mobile-nav-reserve: 0px;
+
   display: grid;
+  flex: 1 1 auto;
+  grid-template-rows: auto minmax(0, 1fr);
   gap: clamp(var(--space-6), 4vw, var(--space-10));
-  padding-block: clamp(var(--space-6), 6vw, var(--space-16));
+  min-height: calc(100svh - var(--app-header-height) - var(--app-mobile-nav-reserve));
+  padding-block: var(--page-block-padding);
+  box-sizing: border-box;
 }
 
 .missing {
@@ -55,6 +64,12 @@
 
 .secondaryAction:hover {
   background: var(--color-accent-soft);
+}
+
+@media (max-width: 47.99rem) {
+  .page {
+    --app-mobile-nav-reserve: calc(4.75rem + env(safe-area-inset-bottom));
+  }
 }
 
 @media (max-width: 30rem) {

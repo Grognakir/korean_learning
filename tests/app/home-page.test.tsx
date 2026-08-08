@@ -14,6 +14,7 @@ describe("HomePage", () => {
 
     expect(heading).toBeVisible();
     expect(heading.closest("header")).toBeInTheDocument();
+    expect(screen.getByText("한국어 · 1급")).toHaveAttribute("lang", "ko");
     expect(screen.getByRole("link", { name: "Выбрать тему" })).toHaveAttribute("href", "/topics");
   });
 });

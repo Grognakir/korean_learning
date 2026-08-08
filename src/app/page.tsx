@@ -31,7 +31,9 @@ export default function HomePage() {
     <PageContainer className={styles.page}>
       <header aria-labelledby="hero-title" className={styles.hero}>
         <div className={styles.heroCopy}>
-          <Badge tone="accent">한국어 · 1급</Badge>
+          <Badge lang="ko" tone="accent">
+            한국어 · 1급
+          </Badge>
           <div className={styles.heroHeading}>
             <h1 id="hero-title">Корейский язык — шаг за шагом</h1>
             <p>Короткие занятия, понятный прогресс и спокойное повторение без перегрузки.</p>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, type FormEvent } from "react";
 
 import { Button, ProgressBar } from "@/components/ui";
 import { TrainingShell } from "@/wrappers";
@@ -89,62 +89,72 @@ export function TrainingSession({
     );
   }
 
-  const progressLabel = `Прогресс: задание ${session.progress.current} из ${session.progress.total}`;
+  const positionLabel = `Задание ${session.progress.current} из ${session.progress.total}`;
+  const completionLabel = `Выполнено заданий: ${session.progress.answeredCount} из ${session.progress.total}`;
   const inputsDisabled = session.hasAnsweredCurrent || session.isSubmitting;
 
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (session.canSubmit) {
+      session.submit();
+    }
+  }
+
   return (
-    <TrainingShell
-      actions={
-        <div className={styles.actions}>
-          {session.hasAnsweredCurrent ? (
-            <Button onClick={session.next} type="button">
-              Дальше
-            </Button>
-          ) : (
-            <Button disabled={!session.canSubmit} onClick={session.submit} type="button">
-              Ответить
-            </Button>
-          )}
+    <form className={styles.sessionForm} onSubmit={handleSubmit}>
+      <TrainingShell
+        actions={
+          <div className={styles.actions}>
+            {session.hasAnsweredCurrent ? (
+              <Button onClick={session.next} type="button">
+                Дальше
+              </Button>
+            ) : (
+              <Button disabled={!session.canSubmit} type="submit">
+                Ответить
+              </Button>
+            )}
+          </div>
+        }
+        className={styles.shell}
+      >
+        <div className={styles.progressBlock}>
+          <div className={styles.progressMeta}>
+            <p className={styles.eyebrow}>Учебная сессия</p>
+            <p aria-live="polite" className={styles.progressText}>
+              {positionLabel}
+            </p>
+          </div>
+          <ProgressBar
+            label={completionLabel}
+            max={session.progress.total}
+            value={session.progress.answeredCount}
+          />
         </div>
-      }
-      className={styles.shell}
-    >
-      <div className={styles.progressBlock}>
-        <div className={styles.progressMeta}>
-          <p className={styles.eyebrow}>Учебная сессия</p>
-          <p aria-live="polite" className={styles.progressText}>
-            {session.progress.current} / {session.progress.total}
-          </p>
-        </div>
-        <ProgressBar
-          label={progressLabel}
-          max={session.progress.total}
-          value={session.progress.current}
-        />
-      </div>
 
-      <section aria-labelledby="training-prompt-heading" className={styles.promptSection}>
-        <h2
-          className={styles.promptHeading}
-          id="training-prompt-heading"
-          ref={promptHeadingRef}
-          tabIndex={-1}
-        >
-          <ExerciseText text={session.currentExerciseView.prompt} />
-        </h2>
+        <section aria-labelledby="training-prompt-heading" className={styles.promptSection}>
+          <h2
+            className={styles.promptHeading}
+            id="training-prompt-heading"
+            ref={promptHeadingRef}
+            tabIndex={-1}
+          >
+            <ExerciseText text={session.currentExerciseView.prompt} />
+          </h2>
 
-        <ExerciseRenderer
-          disabled={inputsDisabled}
-          draft={session.draft}
-          exercise={session.currentExerciseView}
-          onChangeFillBlank={session.setFillBlankAnswer}
-          onChangeFreeResponse={session.setFreeResponseAnswer}
-          onChangeMatching={session.setMatchingPair}
-          onSelectChoice={session.setChoiceOption}
-        />
-      </section>
+          <ExerciseRenderer
+            disabled={inputsDisabled}
+            draft={session.draft}
+            exercise={session.currentExerciseView}
+            onChangeFillBlank={session.setFillBlankAnswer}
+            onChangeFreeResponse={session.setFreeResponseAnswer}
+            onChangeMatching={session.setMatchingPair}
+            onSelectChoice={session.setChoiceOption}
+          />
+        </section>
 
-      {session.currentAttempt ? <ExerciseFeedback attempt={session.currentAttempt} /> : null}
-    </TrainingShell>
+        {session.currentAttempt ? <ExerciseFeedback attempt={session.currentAttempt} /> : null}
+      </TrainingShell>
+    </form>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import { PageHeader } from "@/components/layout";
 import {
@@ -29,13 +30,17 @@ export function generateStaticParams() {
   return [{ sessionId: DEMO_TRAINING_SESSION_ID }];
 }
 
-function resolveSession(sessionId: string) {
+function resolveSession(sessionId: string): {
+  readonly sessionId: string;
+  readonly moduleSlug: string;
+  readonly description: ReactNode;
+} | null {
   if (sessionId === DEMO_TRAINING_SESSION_ID) {
     return {
       sessionId: DEMO_TRAINING_SESSION_ID,
       moduleSlug: DEMO_TRAINING_MODULE_SLUG,
       description: "Отвечайте на задания по очереди. Прогресс считается локально в этой сессии.",
-    } as const;
+    };
   }
 
   const honorificsAvailable =
@@ -45,9 +50,13 @@ function resolveSession(sessionId: string) {
     return {
       sessionId: HONORIFICS_PREVIEW_SESSION_ID,
       moduleSlug: HONORIFICS_MODULE_SLUG,
-      description:
-        "Draft preview 높임말. Контент не утверждён — сессия нужна только для проверки общего UI.",
-    } as const;
+      description: (
+        <>
+          Черновой preview <span lang="ko">높임말</span>. Контент не утверждён — сессия нужна только
+          для проверки общего UI.
+        </>
+      ),
+    };
   }
 
   return null;

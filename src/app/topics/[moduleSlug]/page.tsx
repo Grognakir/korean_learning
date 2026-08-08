@@ -49,7 +49,9 @@ export default async function ModulePage({ params }: ModulePageProps) {
         description={learningModule.description.ru}
         eyebrow={
           <span className={styles.eyebrow}>
-            <Badge tone="accent">{learningModule.level}</Badge>
+            <Badge lang="ko" tone="accent">
+              {learningModule.level}
+            </Badge>
             Учебный модуль
           </span>
         }

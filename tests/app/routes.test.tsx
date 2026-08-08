@@ -43,6 +43,13 @@ describe("application routes", () => {
       screen.getByRole("heading", { level: 1, name: "Первые шаги в корейском" }),
     ).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Основы хангыля" })).toBeInTheDocument();
+    expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
+  });
+
+  it("marks the training module level badge with lang=ko", () => {
+    render(<TrainingPage />);
+
+    expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
   });
 
   it("renders the demo training session route", async () => {

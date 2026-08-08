@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 
 import { sampleExercises } from "@/modules/sample";
-import type { Exercise } from "../../domain";
+import type { Exercise, FillBlankExercise, FreeResponseExercise } from "../../domain";
 
 import { TrainingSession } from "./TrainingSession";
 
@@ -59,15 +59,9 @@ async function answerCurrentExercise(user: ReturnType<typeof userEvent.setup>) {
 
   if (screen.queryByLabelText(/Пропуск 1/)) {
     const blank = screen.getByLabelText(/Пропуск 1/);
-    const answer = (blank.getAttribute("id") ?? "").includes("thanks")
-      ? "감사합니다"
-      : blank.getAttribute("aria-label")?.includes("thanks")
-        ? "감사합니다"
-        : "안녕하세요";
     const label = blank.getAttribute("aria-label") ?? "";
     const value = label.includes("thanks") ? "감사합니다" : "안녕하세요";
     await user.type(blank, value);
-    void answer;
     return;
   }
 
@@ -92,6 +86,48 @@ async function answerCurrentExercise(user: ReturnType<typeof userEvent.setup>) {
   }
 }
 
+const twoBlankExercise: FillBlankExercise = {
+  schemaVersion: 1,
+  id: "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeee1",
+  logicalId: "fill-two-for-enter",
+  moduleSlug: "sample-module",
+  topicIds: byLogicalId("fill-greeting").topicIds,
+  type: "fill-blank",
+  difficulty: "easy",
+  prompt: { ko: null, ru: "Заполните оба пропуска." },
+  explanation: { ko: null, ru: "Нужны оба ответа." },
+  contentVersion: "1.0.0",
+  scoring: { points: 2, partialCredit: false },
+  template: "{{a}} {{b}}",
+  templateLanguage: "ko",
+  blanks: [
+    {
+      id: "a",
+      acceptedAnswers: [{ id: "canonical", value: "안녕하세요", isCanonical: true }],
+    },
+    {
+      id: "b",
+      acceptedAnswers: [{ id: "canonical", value: "감사합니다", isCanonical: true }],
+    },
+  ],
+};
+
+const russianTextareaExercise: FreeResponseExercise = {
+  schemaVersion: 1,
+  id: "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeee2",
+  logicalId: "write-russian-textarea",
+  moduleSlug: "sample-module",
+  topicIds: byLogicalId("write-greeting").topicIds,
+  type: "free-response",
+  difficulty: "easy",
+  prompt: { ko: null, ru: "Напишите перевод." },
+  explanation: { ko: null, ru: "Канонический ответ — дом." },
+  contentVersion: "1.0.0",
+  scoring: { points: 1, partialCredit: false },
+  answerLanguage: "ru",
+  acceptedAnswers: [{ id: "canonical", value: "дом", isCanonical: true }],
+};
+
 describe("TrainingSession", () => {
   it("renders and submits each of the seven exercise types", async () => {
     const user = userEvent.setup();
@@ -108,13 +144,14 @@ describe("TrainingSession", () => {
     renderSession(oneOfEach);
 
     for (let index = 0; index < oneOfEach.length; index += 1) {
-      expect(screen.getByText(`${index + 1} / ${oneOfEach.length}`)).toBeInTheDocument();
-      expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", String(index + 1));
+      expect(screen.getByText(`Задание ${index + 1} из ${oneOfEach.length}`)).toBeInTheDocument();
+      expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", String(index));
 
       await answerCurrentExercise(user);
       await user.click(screen.getByRole("button", { name: "Ответить" }));
       const feedback = screen.queryByRole("status") ?? screen.getByRole("alert");
       expect(feedback.textContent).toMatch(/Верно|Неверно|Частично/);
+      expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", String(index + 1));
 
       if (index < oneOfEach.length - 1) {
         await user.click(screen.getByRole("button", { name: "Дальше" }));
@@ -123,6 +160,113 @@ describe("TrainingSession", () => {
 
     await user.click(screen.getByRole("button", { name: "Дальше" }));
     expect(screen.getByRole("heading", { name: "Тренировка завершена" })).toBeInTheDocument();
+  });
+
+  it("shows position 1 of N and aria-valuenow 0 before the first answer", () => {
+    renderSession([byLogicalId("write-greeting"), byLogicalId("write-thanks")]);
+
+    expect(screen.getByText("Задание 1 из 2")).toBeInTheDocument();
+    expect(screen.getByRole("progressbar", { name: "Выполнено заданий: 0 из 2" })).toHaveAttribute(
+      "aria-valuenow",
+      "0",
+    );
+  });
+
+  it("increments completed progress after submit and before next", async () => {
+    const user = userEvent.setup();
+    renderSession([byLogicalId("write-greeting"), byLogicalId("write-thanks")]);
+
+    await user.type(screen.getByLabelText("Ваш ответ"), "안녕하세요");
+    await user.click(screen.getByRole("button", { name: "Ответить" }));
+
+    expect(screen.getByText("Задание 1 из 2")).toBeInTheDocument();
+    expect(screen.getByRole("progressbar", { name: "Выполнено заданий: 1 из 2" })).toHaveAttribute(
+      "aria-valuenow",
+      "1",
+    );
+  });
+
+  it("keeps last-item progress at N-1 until the final answer is accepted", async () => {
+    const user = userEvent.setup();
+    renderSession([byLogicalId("choose-home-meaning"), byLogicalId("write-thanks")]);
+
+    await user.click(screen.getByLabelText("дом"));
+    await user.click(screen.getByRole("button", { name: "Ответить" }));
+    await user.click(screen.getByRole("button", { name: "Дальше" }));
+
+    expect(screen.getByText("Задание 2 из 2")).toBeInTheDocument();
+    expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", "1");
+
+    await user.type(screen.getByLabelText("Ваш ответ"), "감사합니다");
+    await user.click(screen.getByRole("button", { name: "Ответить" }));
+
+    expect(screen.getByRole("progressbar", { name: "Выполнено заданий: 2 из 2" })).toHaveAttribute(
+      "aria-valuenow",
+      "2",
+    );
+  });
+
+  it("submits a single-line free response on Enter without clicking the button", async () => {
+    const user = userEvent.setup();
+    renderSession([byLogicalId("write-greeting")]);
+
+    await user.type(screen.getByLabelText("Ваш ответ"), "안녕하세요{Enter}");
+
+    expect(screen.getByText("Верно")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Дальше" })).toBeInTheDocument();
+  });
+
+  it("does not submit on Enter when the single-line answer is empty or whitespace", async () => {
+    const user = userEvent.setup();
+    renderSession([byLogicalId("write-greeting")]);
+
+    await user.type(screen.getByLabelText("Ваш ответ"), "   {Enter}");
+
+    expect(screen.queryByText("Верно")).not.toBeInTheDocument();
+    expect(screen.queryByText("Неверно")).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Ответить" })).toBeDisabled();
+  });
+
+  it("keeps Enter as a newline inside textarea and does not submit the form", async () => {
+    const user = userEvent.setup();
+    renderSession([russianTextareaExercise]);
+
+    const field = screen.getByLabelText("Ваш ответ");
+    await user.type(field, "первая{Enter}вторая");
+
+    expect(field).toHaveValue("первая\nвторая");
+    expect(screen.queryByText("Верно")).not.toBeInTheDocument();
+    expect(screen.queryByText("Неверно")).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Ответить" })).toBeInTheDocument();
+  });
+
+  it("does not submit multi-blank fill exercises on Enter until every blank is filled", async () => {
+    const user = userEvent.setup();
+    renderSession([twoBlankExercise]);
+
+    const firstBlank = screen.getByLabelText(/Пропуск 1/);
+    await user.type(firstBlank, "안녕하세요{Enter}");
+
+    expect(screen.queryByText("Верно")).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Ответить" })).toBeDisabled();
+
+    await user.type(screen.getByLabelText(/Пропуск 2/), "감사합니다{Enter}");
+
+    expect(screen.getByText("Верно")).toBeInTheDocument();
+  });
+
+  it("ignores repeated Enter after an accepted answer without advancing", async () => {
+    const user = userEvent.setup();
+    renderSession([byLogicalId("write-greeting"), byLogicalId("write-thanks")]);
+
+    await user.type(screen.getByLabelText("Ваш ответ"), "안녕하세요{Enter}");
+    expect(screen.getByText("Верно")).toBeInTheDocument();
+
+    await user.keyboard("{Enter}");
+
+    expect(screen.getByText("Задание 1 из 2")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Дальше" })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Ответить" })).not.toBeInTheDocument();
   });
 
   it("blocks empty submit and locks after a successful answer", async () => {
@@ -152,10 +296,10 @@ describe("TrainingSession", () => {
 
     await answerCurrentExercise(user);
     await user.click(screen.getByRole("button", { name: "Ответить" }));
-    expect(screen.getByText("1 / 2")).toBeInTheDocument();
+    expect(screen.getByText("Задание 1 из 2")).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "Дальше" }));
-    expect(screen.getByText("2 / 2")).toBeInTheDocument();
+    expect(screen.getByText("Задание 2 из 2")).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2 })).toHaveFocus();
   });
 

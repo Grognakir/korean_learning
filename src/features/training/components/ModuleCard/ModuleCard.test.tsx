@@ -11,6 +11,7 @@ describe("ModuleCard", () => {
 
     expect(screen.getByRole("heading", { name: "Первые шаги в корейском" })).toBeInTheDocument();
     expect(screen.getByText("한국어 첫걸음")).toHaveAttribute("lang", "ko");
+    expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
     expect(screen.getByText("2 темы")).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Открыть модуль/ })).toHaveAttribute(
       "href",

@@ -40,7 +40,9 @@ export function ModuleCard({ module }: ModuleCardProps) {
         href={`/topics/${module.slug}`}
       >
         <div className={styles.meta}>
-          <Badge tone="accent">{module.level}</Badge>
+          <Badge lang="ko" tone="accent">
+            {module.level}
+          </Badge>
           <span>Версия {module.contentVersion}</span>
         </div>
         <div className={styles.copy}>

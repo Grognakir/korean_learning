@@ -36,7 +36,9 @@ export default function TrainingPage() {
 
       <section aria-label="Доступный модуль для тренировки" className={styles.panel}>
         <div className={styles.meta}>
-          <Badge tone="accent">{sampleModule?.level ?? "1급"}</Badge>
+          <Badge lang="ko" tone="accent">
+            {sampleModule?.level ?? "1급"}
+          </Badge>
           <span>{sampleExerciseCount} заданий</span>
         </div>
         <div className={styles.copy}>

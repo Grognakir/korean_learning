@@ -5,7 +5,9 @@
 }
 
 .main {
+  display: flex;
   min-width: 0;
+  flex-direction: column;
 }
 
 @media (max-width: 47.99rem) {

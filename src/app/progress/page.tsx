@@ -8,6 +8,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Прогресс",
+  description: "Статистика регулярности и освоенных тем после облачной синхронизации.",
 };
 
 export default function ProgressPage() {

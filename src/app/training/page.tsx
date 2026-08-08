@@ -17,6 +17,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Тренировка",
+  description: "Короткая практика на локальных модулях с активным вспоминанием.",
 };
 
 export default function TrainingPage() {

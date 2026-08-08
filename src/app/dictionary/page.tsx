@@ -4,6 +4,7 @@ import { RoutePlaceholder } from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "Словарь",
+  description: "Ищите изученные слова, значения и связанные примеры употребления.",
 };
 
 export default function DictionaryPage() {

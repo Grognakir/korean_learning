@@ -25,10 +25,20 @@ type SessionPageProps = {
 
 export const metadata: Metadata = {
   title: "Учебная сессия",
+  description: "Короткая учебная сессия с локальным прогрессом и проверкой ответов.",
 };
 
+/** Unknown session ids must 404 at the routing layer (avoids soft-200 under streaming). */
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return [{ sessionId: DEMO_TRAINING_SESSION_ID }];
+  const params = [{ sessionId: DEMO_TRAINING_SESSION_ID }];
+
+  if (process.env.NODE_ENV === "development") {
+    params.push({ sessionId: HONORIFICS_PREVIEW_SESSION_ID });
+  }
+
+  return params;
 }
 
 function resolveSession(sessionId: string): {

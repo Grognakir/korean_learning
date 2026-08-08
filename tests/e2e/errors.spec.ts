@@ -2,13 +2,18 @@ import { expect, test } from "@playwright/test";
 
 test.describe("errors and empty routes", () => {
   test("unknown module and session urls show not-found", async ({ page }) => {
-    await page.goto("/topics/missing-module");
+    const missingModule = await page.goto("/topics/missing-module");
+    expect(missingModule?.status()).toBe(404);
     await expect(page.getByRole("heading", { name: "Страница не найдена" })).toBeVisible();
     await expect(page.getByRole("main").getByRole("link", { name: "На главную" })).toBeVisible();
     await expect(page.getByRole("main").getByRole("link", { name: "К каталогу" })).toBeVisible();
 
-    await page.goto("/training/missing-session");
+    const missingSession = await page.goto("/training/missing-session");
+    expect(missingSession?.status()).toBe(404);
     await expect(page.getByRole("heading", { name: "Страница не найдена" })).toBeVisible();
+
+    const honorificsPreview = await page.goto("/training/honorifics-preview");
+    expect(honorificsPreview?.status()).toBe(404);
   });
 
   test("guest progress and review show safe empty states", async ({ page }) => {

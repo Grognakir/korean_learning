@@ -4,22 +4,26 @@
 
 ## Чем занимаемся
 
-F1-I22 завершена: Playwright e2e (Chromium desktop + mobile). Следующая итерация — F1-I23 (quality gate / CP-2), не начинать в этом шаге.
+F1-I23: локальный quality gate каркаса выполнен. Итерация `blocked` до push ветки, зелёного внешнего CI и явного CP-2. F1-I24 не начинать.
 
 ## Принятые решения
 
 - CP-1A принят.
-- E2E: `@playwright/test`, порт 3100, `next start` после `pnpm build`.
-- Projects: desktop Chromium 1280×800 и mobile 375×812.
-- CI e2e job: PR → main, `workflow_dispatch`, push checkpoint-веток; не на обычных iteration branches.
-- Короткие сессии в e2e сидятся через `page.evaluate` после goto `/training` (не `addInitScript`).
+- `dynamicParams = false` на `/topics/[moduleSlug]` и `/training/[sessionId]` — реальный HTTP 404 вместо soft-200 при streaming/`loading.tsx`.
+- Honorifics preview session в `generateStaticParams` только при `NODE_ENV === "development"`.
+- Production composition без draft honorifics подтверждена smoke + e2e.
+- Metadata `description` добавлены на публичные routes.
+- Client boundaries: pages/layouts остаются Server Components; `"use client"` только у interactive UI/hooks/`error.tsx`.
 
 ## Открытые задачи
 
-- [ ] Следующая карточка: F1-I23 (`chore/framework-quality-gate`) — только по запросу.
-- [ ] Не пушить ветку без разрешения.
+- [ ] Пользователь: разрешить push `chore/framework-quality-gate`.
+- [ ] Дождаться зелёного внешнего CI (checks + e2e).
+- [ ] Пользователь: принять CP-2 (`CP-2 принят`).
+- [ ] Не начинать F1-I24 без CP-2 и отдельного CP-3.
 
 ## Контекст
 
-Ветка: `test/playwright-setup`.
-Gate: 219 unit + 17 integration + 16 e2e + build зелёные.
+Ветка: `chore/framework-quality-gate`.
+Локальный gate: frozen install + 219 unit + 17 integration + 16 e2e + build/start smoke — зелёные.
+P0/P1: нет. P2: ручной 200% zoom / Lighthouse не автоматизированы (диагностика, не blocker).

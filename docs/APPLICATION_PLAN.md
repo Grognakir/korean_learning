@@ -2,17 +2,17 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I22 завершены; CP-1A принят.
+- **Общее состояние:** F1-I01–F1-I22 завершены; F1-I23 локально пройден, ждёт push/CI/CP-2; CP-1A принят.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I22 Playwright e2e — `done`.
-- **Статус текущей итерации:** `done`.
-- **Уже сделано:** training loop, persistence, results, application states, unit/integration/e2e suites.
-- **Выполненные проверки:** Prettier, ESLint, 219 unit + 17 integration + 16 e2e, typecheck и production build зелёные.
-- **Сейчас работает:** `pnpm test:e2e` (Chromium desktop/mobile); CI e2e job на PR в main, workflow_dispatch и checkpoint-ветки.
-- **Пока не работает:** server sync, auth; quality gate каркаса (F1-I23 / CP-2).
-- **Следующий конкретный шаг:** F1-I23 (`chore/framework-quality-gate`) по отдельному запросу.
-- **Блокирующие вопросы:** нет для перехода к F1-I23.
-- **Решения, требующие подтверждения:** CP-2/CP-3/CP-4/CP-5 позже.
+- **Текущая итерация:** F1-I23 framework quality gate — `blocked` (ожидает push + внешний CI + CP-2).
+- **Статус текущей итерации:** `blocked`.
+- **Уже сделано:** training loop, persistence, results, states, unit/integration/e2e; локальный quality gate F1-I23.
+- **Выполненные проверки:** frozen install; Prettier, ESLint, 219 unit + 17 integration + 16 e2e; typecheck; production build/start smoke всех маршрутов; honorifics отсутствует в production.
+- **Сейчас работает:** полный локальный gate; `dynamicParams=false` даёт реальный HTTP 404 на неизвестных module/session; route metadata descriptions.
+- **Пока не работает:** внешний CI checkpoint-ветки (нужен push); server sync, auth, Vercel (CP-3).
+- **Следующий конкретный шаг:** push `chore/framework-quality-gate` по разрешению → зелёный CI → принять CP-2.
+- **Блокирующие вопросы:** разрешение на push checkpoint-ветки; затем явное «CP-2 принят».
+- **Решения, требующие подтверждения:** CP-2 сейчас; CP-3/CP-4/CP-5 позже.
 - **Последнее обновление:** 2026-08-08.
 
 ## 1. Цель, результат и границы
@@ -623,7 +623,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I23 — Production build, performance и доступность каркаса
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `blocked` (локальный gate зелёный; push/CI/CP-2).
 - **Цель и зачем:** принять каркас перед внешним деплоем по локальному gate и внешнему CI checkpoint-ветки.
 - **Входные зависимости:** F1-I22.
 - **Задачи:** полный local quality run; build/start smoke; bundle and client boundary review; metadata; accessibility audit; console/network errors; после отдельного разрешения push `chore/framework-quality-gate` и зелёный внешний CI; corrective iteration if needed; CP-2.

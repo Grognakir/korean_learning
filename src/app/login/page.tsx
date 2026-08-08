@@ -4,6 +4,7 @@ import { RoutePlaceholder } from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "Вход",
+  description: "Вход в аккаунт появится после подключения защищённого хранилища.",
 };
 
 export default function LoginPage() {

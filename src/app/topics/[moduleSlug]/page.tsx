@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: ModulePageProps): Promise<Met
   };
 }
 
+/** Unknown module slugs must 404 at the routing layer (avoids soft-200 under streaming). */
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return learningModuleRegistry.getPublished().map((module) => ({ moduleSlug: module.slug }));
 }

@@ -3,7 +3,15 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import { generateStaticParams as generateTopicStaticParams } from "@/app/topics/[moduleSlug]/page";
+import {
+  dynamicParams as topicDynamicParams,
+  generateStaticParams as generateTopicStaticParams,
+} from "@/app/topics/[moduleSlug]/page";
+import {
+  dynamicParams as sessionDynamicParams,
+  generateStaticParams as generateSessionStaticParams,
+} from "@/app/training/[sessionId]/page";
+import { DEMO_TRAINING_SESSION_ID } from "@/features/training";
 import { composeLearningContent } from "@/modules";
 
 const nextDirectory = path.join(process.cwd(), ".next");
@@ -31,8 +39,12 @@ function collectPaths(directory: string): string[] {
 describe("honorifics production build gate", () => {
   it("keeps generateStaticParams free of honorifics under the default non-dev registry", () => {
     const params = generateTopicStaticParams();
+    const sessionParams = generateSessionStaticParams();
 
+    expect(topicDynamicParams).toBe(false);
+    expect(sessionDynamicParams).toBe(false);
     expect(params.map((entry) => entry.moduleSlug)).not.toContain("honorifics");
+    expect(sessionParams.map((entry) => entry.sessionId)).toEqual([DEMO_TRAINING_SESSION_ID]);
     expect(
       composeLearningContent(process.env.NODE_ENV ?? "test").modules.map((m) => m.slug),
     ).not.toContain("honorifics");

@@ -10,6 +10,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Темы",
+  description: "Выберите модуль и двигайтесь по коротким темам в своём темпе.",
 };
 
 export default function TopicsPage() {

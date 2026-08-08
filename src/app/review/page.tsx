@@ -8,6 +8,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Повторение",
+  description: "Очередь повторения ошибок появится после облачной синхронизации.",
 };
 
 export default function ReviewPage() {

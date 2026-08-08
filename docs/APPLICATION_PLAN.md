@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I22 завершены; F1-I23 локально пройден, ждёт push/CI/CP-2; CP-1A принят.
+- **Общее состояние:** F1-I01–F1-I23 локально и в CI готовы; UI polish каталогов на `fix/topics-modules-grid`; CP-1A принят; CP-2 ещё не принят.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I23 framework quality gate — `blocked` (ожидает push + внешний CI + CP-2).
+- **Текущая итерация:** F1-I23 framework quality gate — `blocked` (ожидает «CP-2 принят»).
 - **Статус текущей итерации:** `blocked`.
-- **Уже сделано:** training loop, persistence, results, states, unit/integration/e2e; локальный quality gate F1-I23.
-- **Выполненные проверки:** frozen install; Prettier, ESLint, 219 unit + 17 integration + 16 e2e; typecheck; production build/start smoke всех маршрутов; honorifics отсутствует в production.
-- **Сейчас работает:** полный локальный gate; `dynamicParams=false` даёт реальный HTTP 404 на неизвестных module/session; route metadata descriptions.
-- **Пока не работает:** внешний CI checkpoint-ветки (нужен push); server sync, auth, Vercel (CP-3).
-- **Следующий конкретный шаг:** push `chore/framework-quality-gate` по разрешению → зелёный CI → принять CP-2.
-- **Блокирующие вопросы:** разрешение на push checkpoint-ветки; затем явное «CP-2 принят».
+- **Уже сделано:** training loop, persistence, results, states, unit/integration/e2e; quality gate F1-I23; polish сеток/home/dictionary.
+- **Выполненные проверки:** локальный full gate; внешний CI `chore/framework-quality-gate` зелёный ([run 31256971883](https://github.com/Grognakir/korean_learning/actions/runs/31256971883)).
+- **Сейчас работает:** локальный каркас + Playwright; draft honorifics только в development.
+- **Пока не работает:** server sync, auth, Vercel preview (F1-I24 / CP-3).
+- **Следующий конкретный шаг:** принять CP-2; затем F1-I24 только после отдельного CP-3.
+- **Блокирующие вопросы:** явное «CP-2 принят»; для F1-I24 — отдельное «CP-3» на Vercel.
 - **Решения, требующие подтверждения:** CP-2 сейчас; CP-3/CP-4/CP-5 позже.
 - **Последнее обновление:** 2026-08-08.
 

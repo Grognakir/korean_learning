@@ -145,7 +145,7 @@ export function Select({
   }
 
   return (
-    <div className={classNames(styles.root, className)} ref={rootRef}>
+    <div className={classNames(styles.root, className)} data-select-root="" ref={rootRef}>
       <button
         aria-controls={listboxId}
         aria-expanded={isOpen}

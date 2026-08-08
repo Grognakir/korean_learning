@@ -8,6 +8,7 @@ import { TrainingShell } from "@/wrappers";
 
 import type { Exercise } from "../../domain";
 import { useTrainingSession, type UseTrainingSessionOptions } from "../../hooks/useTrainingSession";
+import type { ExerciseView } from "../../presentation";
 import { ExerciseFeedback } from "../ExerciseFeedback";
 import { ExerciseRenderer } from "../ExerciseRenderer";
 import { ExerciseText } from "../ExerciseText";
@@ -23,6 +24,20 @@ export type TrainingSessionProps = {
   readonly now?: UseTrainingSessionOptions["now"];
   readonly createSubmissionId?: UseTrainingSessionOptions["createSubmissionId"];
 };
+
+function exerciseInstruction(exercise: ExerciseView): string | null {
+  switch (exercise.type) {
+    case "matching-translation":
+    case "matching-honorific":
+      return "Сопоставьте пары с помощью выпадающего списка.";
+    case "meaning-choice":
+    case "honorific-choice":
+    case "plain-choice":
+      return "Выберите один вариант";
+    default:
+      return null;
+  }
+}
 
 function isSingleLineTextField(target: EventTarget | null): target is HTMLInputElement {
   return (
@@ -99,6 +114,7 @@ export function TrainingSession({
   const positionLabel = `Задание ${session.progress.current} из ${session.progress.total}`;
   const completionLabel = `Выполнено заданий: ${session.progress.answeredCount} из ${session.progress.total}`;
   const inputsDisabled = session.hasAnsweredCurrent || session.isSubmitting;
+  const instruction = exerciseInstruction(session.currentExerciseView);
 
   function submitAnswer() {
     if (session.canSubmit) {
@@ -136,22 +152,7 @@ export function TrainingSession({
 
   return (
     <div className={styles.sessionForm} onKeyDown={handleSessionKeyDown}>
-      <TrainingShell
-        actions={
-          <div className={styles.actions}>
-            {session.hasAnsweredCurrent ? (
-              <Button onClick={session.next} type="button">
-                Дальше
-              </Button>
-            ) : (
-              <Button disabled={!session.canSubmit} onClick={submitAnswer} type="button">
-                Ответить
-              </Button>
-            )}
-          </div>
-        }
-        className={styles.shell}
-      >
+      <TrainingShell className={styles.shell}>
         <div className={styles.progressBlock}>
           <div className={styles.progressMeta}>
             <p className={styles.eyebrow}>Учебная сессия</p>
@@ -167,14 +168,21 @@ export function TrainingSession({
         </div>
 
         <section aria-labelledby="training-prompt-heading" className={styles.promptSection}>
-          <h2
-            className={styles.promptHeading}
-            id="training-prompt-heading"
-            ref={promptHeadingRef}
-            tabIndex={-1}
-          >
-            <ExerciseText text={session.currentExerciseView.prompt} />
-          </h2>
+          <div className={styles.promptCopy}>
+            <h2
+              className={styles.promptHeading}
+              id="training-prompt-heading"
+              ref={promptHeadingRef}
+              tabIndex={-1}
+            >
+              <ExerciseText text={session.currentExerciseView.prompt} />
+            </h2>
+            {instruction ? (
+              <p className={styles.promptInstruction} id="training-exercise-instruction">
+                {instruction}
+              </p>
+            ) : null}
+          </div>
 
           <ExerciseRenderer
             disabled={inputsDisabled}
@@ -185,6 +193,18 @@ export function TrainingSession({
             onChangeMatching={session.setMatchingPair}
             onSelectChoice={session.setChoiceOption}
           />
+
+          <div className={styles.actions}>
+            {session.hasAnsweredCurrent ? (
+              <Button onClick={session.next} type="button">
+                Дальше
+              </Button>
+            ) : (
+              <Button disabled={!session.canSubmit} onClick={submitAnswer} type="button">
+                Ответить
+              </Button>
+            )}
+          </div>
         </section>
 
         {session.currentAttempt ? <ExerciseFeedback attempt={session.currentAttempt} /> : null}

@@ -63,6 +63,7 @@
 .heroActions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: var(--space-3);
 }
 
@@ -116,7 +117,7 @@
 }
 
 .sectionDescription {
-  align-self: end;
+  align-self: center;
 }
 
 .kicker {
@@ -219,7 +220,7 @@
 @media (min-width: 72rem) {
   .sectionHeading {
     grid-template-columns: max-content minmax(18rem, 32rem);
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     column-gap: var(--space-10);
   }

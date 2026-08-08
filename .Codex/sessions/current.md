@@ -4,20 +4,22 @@
 
 ## Чем занимаемся
 
-До F1-I18: кастомные формы/dropdown по `docs/ITERATION_MANDATORY_CONDITIONS.md` §4.7. Нативные `<form>` и `<select>` в training UI заменены. CP-1A по-прежнему ждёт явного подтверждения.
+Закрыта polish-итерация `fix/cp1a-training-ui` после ручных замечаний CP-1A. Следующий шаг плана — F1-I18, но только после явного «CP-1A принят».
 
 ## Принятые решения
 
-- Preflight: `docs/ITERATION_MANDATORY_CONDITIONS.md` + `.cursor/rules/iteration-preflight.mdc`.
-- Общий UI-примитив `Select` (`combobox` + `listbox`), matching переведён на него.
-- `TrainingSession` — кастомная композиция без native `<form>`; Enter в однострочных input по-прежнему отправляет ответ.
-- F1-I18 не начинать до «CP-1A принят».
+- Preflight: `docs/ITERATION_MANDATORY_CONDITIONS.md` + `.cursor/rules/iteration-preflight.mdc` (§4.7–4.8, инвентарь рядов).
+- Select: value+шеврон в flex-потоке; Matching label+Select выровнены.
+- Training layout: heading на всю ширину; кнопка под упражнением; без sticky; компактный feedback (без «Пояснение»/status, fill-blank → правильный ответ).
+- `scrollbar-gutter: stable` без `both-edges`.
+- Choice distractors без утечки ответа («возраст», не «возраст (уважительно)»).
+- Complete-экран: без растяжки на 1fr и без `h1 max-width: 16ch`.
 
 ## Открытые задачи
 
-- [ ] Пользователь: подтвердить CP-1A после проверки кастомных dropdown/форм.
-- [ ] Только после CP-1A: F1-I18.
+- [ ] Пользователь: подтвердить **CP-1A** (`CP-1A принят`).
+- [ ] Только после CP-1A: ветка `feature/local-session-persistence` → F1-I18.
 
 ## Контекст
 
-Ветка: `fix/cp1a-training-ui`. Baseline: 188/188 теста.
+Ветка: `fix/cp1a-training-ui`. Gate: format/lint/typecheck/189 tests/build зелёные.

@@ -43,7 +43,6 @@ export function MatchingExercise({
 
   return (
     <div className={styles.root}>
-      <p className={styles.hint}>Сопоставьте пары с помощью выпадающего списка.</p>
       <ul className={styles.list}>
         {exercise.leftItems.map((leftItem) => {
           const selectId = `match-${exercise.id}-${leftItem.pairId}`;

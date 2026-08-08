@@ -22,7 +22,7 @@ export function ChoiceExercise({
 
   return (
     <fieldset className={styles.fieldset} disabled={disabled}>
-      <legend className={styles.legend}>Выберите один вариант</legend>
+      <legend className={`${styles.legend} visually-hidden`}>Выберите один вариант</legend>
       <div className={styles.options}>
         {exercise.options.map((option) => {
           const optionId = `${groupName}-${option.id}`;

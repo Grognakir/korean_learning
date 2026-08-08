@@ -1,13 +1,12 @@
 .sessionForm {
   display: grid;
+  align-self: start;
+  width: 100%;
   min-width: 0;
-  min-height: 100%;
-  height: 100%;
 }
 
 .shell {
-  min-height: 100%;
-  height: 100%;
+  min-width: 0;
 }
 
 .progressBlock {
@@ -17,7 +16,7 @@
 
 .progressMeta {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
 }
@@ -49,14 +48,29 @@
   box-shadow: var(--shadow-sm);
 }
 
+.promptCopy {
+  display: grid;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
 .promptHeading {
   margin: 0;
   min-width: 0;
+  width: 100%;
   color: var(--color-text);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-heading);
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  text-wrap: wrap;
+}
+
+.promptInstruction {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
 }
 
 .promptHeading:focus {
@@ -70,7 +84,7 @@
 
 .actions {
   display: flex;
-  width: 100%;
+  align-items: center;
   justify-content: flex-end;
   gap: var(--space-3);
 }
@@ -82,9 +96,11 @@
 
 .complete {
   display: grid;
-  gap: var(--space-5);
+  align-self: start;
+  width: 100%;
+  gap: var(--space-4);
   justify-items: start;
-  padding: clamp(var(--space-6), 5vw, var(--space-10));
+  padding: clamp(var(--space-5), 4vw, var(--space-8));
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: var(--color-surface);
@@ -93,17 +109,19 @@
 
 .completeTitle {
   margin: 0;
+  max-width: none;
   color: var(--color-text);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
+  text-wrap: wrap;
 }
 
 .completeCopy {
   margin: 0;
-  max-width: 36rem;
+  max-width: none;
   color: var(--color-text-muted);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   line-height: var(--line-height-body);
 }
 

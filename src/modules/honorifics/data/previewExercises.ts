@@ -14,7 +14,7 @@ const exerciseDefaults = {
 } as const;
 
 const ageMeaningOptions = [
-  { id: "age-honorific", label: { ko: null, ru: "возраст (уважительно)" } },
+  { id: "age-honorific", label: { ko: null, ru: "возраст" } },
   { id: "name", label: { ko: null, ru: "имя" } },
 ] as const;
 
@@ -39,7 +39,7 @@ const grandparentsTranslationPairs = [
 ] as const;
 
 const teacherMeaningOptions = [
-  { id: "teacher", label: { ko: null, ru: "учитель / преподаватель" } },
+  { id: "teacher", label: { ko: null, ru: "учитель" } },
   { id: "doctor", label: { ko: null, ru: "врач" } },
 ] as const;
 
@@ -55,7 +55,9 @@ const professionTranslationPairs = [
 
 /**
  * Draft preview exercises for UI validation only.
- * Keep prompts and accepted answers unambiguous; do not treat as approved content.
+ * Keep prompts clear, but choice distractors must not leak the answer
+ * (no labels like «возраст (уважительно)» next to plain «имя»).
+ * Do not treat as approved content.
  */
 export const honorificsPreviewExercises = [
   {

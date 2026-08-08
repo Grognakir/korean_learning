@@ -95,6 +95,7 @@
 
 .actions {
   display: flex;
+  align-items: center;
   align-self: end;
   flex-wrap: wrap;
   gap: var(--space-3);

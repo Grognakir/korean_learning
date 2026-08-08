@@ -71,7 +71,6 @@ export default async function SessionPage({ params }: SessionPageProps) {
       <PageContainer className={styles.page} width="narrow">
         <PageHeader
           description="Сейчас доступна только локальная демо-сессия."
-          eyebrow="Сессия"
           title="Сессия не найдена"
         />
         <section className={styles.missing}>
@@ -96,7 +95,7 @@ export default async function SessionPage({ params }: SessionPageProps) {
 
   return (
     <PageContainer className={styles.page} width="narrow">
-      <PageHeader description={session.description} eyebrow="Сессия" title="Учебная сессия" />
+      <PageHeader description={session.description} title="Учебная сессия" />
       <TrainingSession
         exercises={exercises}
         moduleSlug={session.moduleSlug}

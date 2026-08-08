@@ -40,13 +40,15 @@ function toneForReason(
 export function ExerciseFeedback({ attempt }: ExerciseFeedbackProps) {
   const { evaluation } = attempt;
   const explanation = toExerciseTextView(evaluation.explanation);
-  const itemErrors: string[] = [];
+  const answerLines: string[] = [];
 
   if (evaluation.type === "fill-blank") {
     for (const item of evaluation.itemResults) {
       if (!item.isCorrect) {
-        itemErrors.push(
-          `Пропуск «${item.blankId}»: ожидалось «${item.canonicalAnswer}», получено «${item.submittedAnswer || "—"}».`,
+        answerLines.push(
+          `Правильный ответ: «${item.canonicalAnswer}»${
+            item.submittedAnswer ? ` (вы написали «${item.submittedAnswer}»)` : ""
+          }`,
         );
       }
     }
@@ -55,10 +57,13 @@ export function ExerciseFeedback({ attempt }: ExerciseFeedbackProps) {
   if (evaluation.type === "matching-translation" || evaluation.type === "matching-honorific") {
     for (const item of evaluation.itemResults) {
       if (!item.isCorrect) {
-        itemErrors.push(`Пара «${item.leftPairId}» сопоставлена неверно.`);
+        answerLines.push(`Пара «${item.leftPairId}» сопоставлена неверно`);
       }
     }
   }
+
+  const hasAnswerLines = answerLines.length > 0;
+  const showExplanation = !hasAnswerLines && Boolean(explanation.ko || explanation.ru);
 
   return (
     <Alert
@@ -66,23 +71,15 @@ export function ExerciseFeedback({ attempt }: ExerciseFeedbackProps) {
       title={correctnessTitle(evaluation.reasonCode)}
       tone={toneForReason(evaluation.reasonCode)}
     >
-      <p className={styles.status}>
-        {evaluation.isCorrect
-          ? "Ответ принят как правильный."
-          : evaluation.reasonCode === "partially-correct"
-            ? "Часть ответа верна — проверьте отмеченные элементы."
-            : "Ответ пока неправильный. Изучите пояснение и продолжайте."}
-      </p>
-      {explanation.ko || explanation.ru ? (
+      {showExplanation ? (
         <div className={styles.explanation}>
-          <strong>Пояснение</strong>
           <ExerciseText as="p" text={explanation} />
         </div>
       ) : null}
-      {itemErrors.length > 0 ? (
+      {hasAnswerLines ? (
         <ul className={styles.errors}>
-          {itemErrors.map((error) => (
-            <li key={error}>{error}</li>
+          {answerLines.map((line) => (
+            <li key={line}>{line}</li>
           ))}
         </ul>
       ) : null}

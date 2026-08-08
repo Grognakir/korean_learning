@@ -43,10 +43,41 @@ describe("ExerciseFeedback", () => {
     expect(screen.getByText(/집 означает/)).toBeInTheDocument();
   });
 
-  it("announces incorrect feedback", () => {
+  it("announces incorrect choice feedback with explanation", () => {
     render(<ExerciseFeedback attempt={attemptFor(false)} />);
 
     expect(screen.getByRole("alert")).toHaveAttribute("aria-live", "assertive");
     expect(screen.getByText("Неверно")).toBeInTheDocument();
+    expect(screen.getByText(/집 означает/)).toBeInTheDocument();
+  });
+
+  it("shows the correct fill-blank answer without repeating the prompt explanation", () => {
+    const fillBlank = sampleExercises.find((item) => item.logicalId === "fill-greeting");
+    if (!fillBlank || fillBlank.type !== "fill-blank") {
+      throw new Error("Expected fill-blank sample exercise");
+    }
+
+    const submission = {
+      exerciseId: fillBlank.id,
+      type: "fill-blank" as const,
+      answers: [{ blankId: "greeting", answer: "wrong" }],
+    };
+    const evaluation = evaluateAnswer(fillBlank, submission);
+
+    render(
+      <ExerciseFeedback
+        attempt={{
+          submissionId: "attempt-fill",
+          exerciseId: fillBlank.id,
+          submittedAt: "2026-08-08T00:00:00.000Z",
+          submission,
+          evaluation,
+        }}
+      />,
+    );
+
+    expect(screen.getByText("Неверно")).toBeInTheDocument();
+    expect(screen.getByText(/Правильный ответ:/)).toBeInTheDocument();
+    expect(screen.queryByText(/В начале разговора/)).not.toBeInTheDocument();
   });
 });

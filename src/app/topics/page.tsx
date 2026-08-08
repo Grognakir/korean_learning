@@ -20,7 +20,6 @@ export default function TopicsPage() {
     <PageContainer className={styles.page}>
       <PageHeader
         description="Выберите модуль и двигайтесь по коротким темам в своём темпе."
-        eyebrow="Учебный каталог"
         title="Темы"
       />
       {modules.length === 0 ? (

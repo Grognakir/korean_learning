@@ -1,0 +1,68 @@
+.page {
+  display: grid;
+  gap: clamp(var(--space-8), 5vw, var(--space-12));
+  padding-block: clamp(var(--space-6), 6vw, var(--space-16));
+}
+
+.panel {
+  display: grid;
+  gap: var(--space-6);
+  padding: clamp(var(--space-5), 4vw, var(--space-8));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.copy {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.copy > h2,
+.copy > p {
+  margin: 0;
+}
+
+.koreanTitle {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.startAction {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  padding: var(--space-2) var(--space-5);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.startAction:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-text-on-accent);
+}
+
+@media (max-width: 30rem) {
+  .startAction {
+    width: 100%;
+    min-height: 3.5rem;
+  }
+}

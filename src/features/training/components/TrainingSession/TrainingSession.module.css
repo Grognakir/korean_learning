@@ -1,0 +1,125 @@
+.shell {
+  gap: var(--space-6);
+}
+
+.progressBlock {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.progressMeta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.progressText {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.promptSection {
+  display: grid;
+  gap: var(--space-5);
+  min-width: 0;
+  padding: clamp(var(--space-5), 4vw, var(--space-8));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.promptHeading {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-heading);
+}
+
+.promptHeading:focus {
+  outline: none;
+}
+
+.promptHeading:focus-visible {
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-focus);
+}
+
+.actions {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+.actions > :global(button) {
+  min-width: 8rem;
+  min-height: 2.75rem;
+}
+
+.complete {
+  display: grid;
+  gap: var(--space-5);
+  justify-items: start;
+  padding: clamp(var(--space-6), 5vw, var(--space-10));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.completeTitle {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
+.completeCopy {
+  margin: 0;
+  max-width: 36rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-body);
+}
+
+.exitLink {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) var(--space-5);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.exitLink:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-text-on-accent);
+}
+
+@media (max-width: 30rem) {
+  .actions,
+  .actions > :global(button),
+  .exitLink {
+    width: 100%;
+  }
+}

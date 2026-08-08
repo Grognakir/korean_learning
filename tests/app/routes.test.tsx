@@ -30,6 +30,10 @@ describe("application routes", () => {
     render(<TrainingPage />);
 
     expect(screen.getByText(/доступно 14 заданий/)).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Начать тренировку" })).toHaveAttribute(
+      "href",
+      "/training/demo-session",
+    );
   });
 
   it("renders a module detail route", async () => {
@@ -41,10 +45,19 @@ describe("application routes", () => {
     expect(screen.getByRole("heading", { name: "Основы хангыля" })).toBeInTheDocument();
   });
 
-  it("renders a training session route", async () => {
+  it("renders the demo training session route", async () => {
     render(await SessionPage({ params: Promise.resolve({ sessionId: "demo-session" }) }));
 
     expect(screen.getByRole("heading", { level: 1, name: "Учебная сессия" })).toBeInTheDocument();
-    expect(screen.getByText("demo-session")).toBeInTheDocument();
+    expect(screen.getByRole("progressbar")).toBeInTheDocument();
+  });
+
+  it("shows a clear message for unknown session ids", async () => {
+    render(await SessionPage({ params: Promise.resolve({ sessionId: "missing-session" }) }));
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Сессия не найдена" }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("missing-session")).toBeInTheDocument();
   });
 });

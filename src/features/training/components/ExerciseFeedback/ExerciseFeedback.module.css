@@ -1,0 +1,22 @@
+.feedback {
+  margin-block-start: var(--space-2);
+}
+
+.status,
+.explanation,
+.errors {
+  margin: 0;
+}
+
+.explanation {
+  display: grid;
+  gap: var(--space-2);
+  margin-block-start: var(--space-3);
+}
+
+.errors {
+  display: grid;
+  gap: var(--space-2);
+  margin-block-start: var(--space-3);
+  padding-inline-start: var(--space-5);
+}

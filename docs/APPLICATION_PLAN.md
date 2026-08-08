@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I16 завершены; остаток фазы 1 подробно зафиксирован в `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`.
+- **Общее состояние:** F1-I01–F1-I17 завершены; остаток фазы 1 подробно зафиксирован в `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I16 — движок тренировочной сессии; завершена.
+- **Текущая итерация:** F1-I17 — интерактивный экран тренировки; завершена.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** адаптивная оболочка и маршруты, UI/feedback-компоненты, module/topic/exercise contracts, Zod, ModuleRegistry, sample exercises, LocalExerciseRepository, детерминированный evaluator, сериализуемый training session engine (create/submit/next/abandon + selectors).
-- **Выполненные проверки:** Prettier, ESLint, 141/141 теста в 35 файлах, `next typegen`, строгий `tsc --noEmit` и production build проходят на Node.js 24.18.0 и pnpm 10.34.5.
-- **Сейчас работает:** каталог контента, оценка ответов и чистая session state machine вне React.
-- **Пока не работает:** интерактивный UI тренировки, локальное возобновление, результаты, E2E, Supabase, авторизация, server persistence, прогресс и review queue.
-- **Следующий конкретный шаг:** только F1-I17 по `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`; F1-I17A не начинать в той же итерации.
-- **Блокирующие вопросы:** нет для перехода к F1-I17; CP-1A/CP-2/CP-3/CP-4/CP-5 остаются жёсткими остановками позже.
+- **Уже сделано:** оболочка и маршруты, module/exercise contracts, repository, evaluator, session engine, интерактивный UI тренировки на `/training` и `/training/demo-session` для всех семи типов.
+- **Выполненные проверки:** Prettier, ESLint, 167/167 теста в 43 файлах, `next typegen`, строгий `tsc --noEmit` и production build проходят на Node.js 24.18.0 и pnpm 10.34.5.
+- **Сейчас работает:** гость может пройти локальную sample-тренировку всеми типами заданий через session engine.
+- **Пока не работает:** draft 높임말 slice, локальное возобновление, экран результата, application states, E2E, Supabase, авторизация, server persistence, прогресс и review queue.
+- **Следующий конкретный шаг:** только F1-I17A по `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`; после неё обязателен CP-1A до F1-I18.
+- **Блокирующие вопросы:** нет для F1-I17A; после F1-I17A нельзя начинать F1-I18 без явного CP-1A.
 - **Решения, требующие подтверждения:** CP-1A, CP-2, CP-3, CP-4 и CP-5 подтверждаются в точках, указанных в исполнимом плане.
 - **Последнее обновление:** 2026-08-08.
 
@@ -504,7 +504,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I17 — Интерактивный экран тренировки
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** дать пользователю пройти все общие типы упражнений.
 - **Входные зависимости:** F1-I16.
 - **Задачи:** exercise renderer registry; формы choice/free/fill/matching; progress; submit lock; feedback; next; TrainingShell integration.

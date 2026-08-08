@@ -1,0 +1,8 @@
+.text {
+  display: inline;
+  line-height: var(--line-height-body);
+}
+
+.text [lang="ko"] {
+  font-family: var(--font-family-korean);
+}

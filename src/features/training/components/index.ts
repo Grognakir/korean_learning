@@ -1,2 +1,16 @@
+export { ChoiceExercise } from "./ChoiceExercise";
+export type { ChoiceExerciseProps } from "./ChoiceExercise";
+export { ExerciseFeedback } from "./ExerciseFeedback";
+export type { ExerciseFeedbackProps } from "./ExerciseFeedback";
+export { ExerciseRenderer } from "./ExerciseRenderer";
+export type { ExerciseRendererProps } from "./ExerciseRenderer";
+export { FillBlankExercise } from "./FillBlankExercise";
+export type { FillBlankExerciseProps } from "./FillBlankExercise";
+export { MatchingExercise } from "./MatchingExercise";
+export type { MatchingExerciseProps } from "./MatchingExercise";
 export { ModuleCard } from "./ModuleCard";
 export type { ModuleCardProps } from "./ModuleCard";
+export { TextAnswerExercise } from "./TextAnswerExercise";
+export type { TextAnswerExerciseProps } from "./TextAnswerExercise";
+export { TrainingSession } from "./TrainingSession";
+export type { TrainingSessionProps } from "./TrainingSession";

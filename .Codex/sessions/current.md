@@ -4,27 +4,27 @@
 
 ## Чем занимаемся
 
-Завершены F1-I15 и F1-I16. Следующая итерация F1-I17 (интерактивный экран тренировки) ещё не начата.
+Завершены F1-I15, F1-I16 и F1-I17. Следующая итерация — F1-I17A (draft 높임말 vertical slice), после которой обязателен CP-1A.
 
 ## Принятые решения
 
-- Все проектные документы создаются и хранятся в `docs/`; `.Codex/sessions/current.md` остаётся обязательным служебным исключением.
-- `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md` — приоритетная пошаговая инструкция для F1-I15–F1-I33.
-- Одна итерация = один branch + один commit + полный локальный gate + остановка перед следующим кодом.
-- Evaluation и session domain остаются чистыми: без React, localStorage, Supabase и OpenAI.
-- Session score вычисляется selectors из immutable attempts; UUID/время инъецируются снаружи.
-- Seeded shuffle реализован локальным mulberry32 PRNG без внешней библиотеки.
+- Документы только в `docs/`; `.Codex/sessions/current.md` — служебное исключение.
+- Одна итерация = отдельная ветка + один commit + локальный gate + остановка перед следующим кодом.
+- Evaluation/session domain без React; UI использует engine через `useTrainingSession`.
+- `toExerciseView` отдаёт UI-view без answer keys; полный `Exercise` остаётся для client-side evaluator только на временном sample path.
+- Локальный маршрут сессии: `/training/demo-session`.
 - Local/CI: Node.js `24.18.0`, pnpm `10.34.5`.
-- Промежуточные iteration branches не пушатся.
+- После F1-I17A нельзя начинать F1-I18 без явного CP-1A.
 
 ## Открытые задачи
 
-- [ ] Выполнить только F1-I17 (`feature/training-interface`) и остановиться перед F1-I17A.
-- [ ] После F1-I17A запросить CP-1A до F1-I18.
+- [ ] Выполнить F1-I17A (`feature/honorifics-early-slice`) и остановиться с запросом CP-1A.
+- [ ] Не начинать F1-I18 до принятия CP-1A.
 
 ## Контекст для следующей сессии
 
-Текущая ветка — `feature/training-session-engine`.
-- F1-I15: `src/features/training/domain/evaluation/*` — `evaluateAnswer` / checkers.
-- F1-I16: `src/features/training/domain/session/*` — create/reducer/submit/selectors/seededShuffle.
-Baseline: 141/141 теста в 35 файлах. Следующий шаг — F1-I17, interactive training UI на `/training` и `/training/demo-session`.
+Текущая ветка — `feature/training-interface`.
+- F1-I15: evaluation domain
+- F1-I16: session engine
+- F1-I17: training UI (`TrainingSession`, renderers, `/training`, `/training/demo-session`)
+Baseline: 167/167 теста в 43 файлах. Следующий шаг — F1-I17A.

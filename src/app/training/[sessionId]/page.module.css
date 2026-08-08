@@ -1,0 +1,66 @@
+.page {
+  display: grid;
+  gap: clamp(var(--space-6), 4vw, var(--space-10));
+  padding-block: clamp(var(--space-6), 6vw, var(--space-16));
+}
+
+.missing {
+  display: grid;
+  gap: var(--space-5);
+  padding: clamp(var(--space-5), 4vw, var(--space-8));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.missing > p {
+  margin: 0;
+  color: var(--color-text);
+  line-height: var(--line-height-body);
+}
+
+.missingActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) var(--space-5);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.primaryAction {
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+}
+
+.primaryAction:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-text-on-accent);
+}
+
+.secondaryAction {
+  background: var(--color-surface);
+  color: var(--color-accent-hover);
+}
+
+.secondaryAction:hover {
+  background: var(--color-accent-soft);
+}
+
+@media (max-width: 30rem) {
+  .missingActions,
+  .primaryAction,
+  .secondaryAction {
+    width: 100%;
+  }
+}

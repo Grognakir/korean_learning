@@ -1,5 +1,20 @@
-export { ModuleCard } from "./components";
-export type { ModuleCardProps } from "./components";
+export {
+  ExerciseFeedback,
+  ExerciseRenderer,
+  ModuleCard,
+  TextAnswerExercise,
+  TrainingSession,
+} from "./components";
+export type {
+  ChoiceExerciseProps,
+  ExerciseFeedbackProps,
+  ExerciseRendererProps,
+  FillBlankExerciseProps,
+  MatchingExerciseProps,
+  ModuleCardProps,
+  TextAnswerExerciseProps,
+  TrainingSessionProps,
+} from "./components";
 export { ExerciseRepositoryError, LocalExerciseRepository } from "./data";
 export type { ExerciseQuery, ExerciseRepository, ExerciseRepositoryErrorCode } from "./data";
 export {
@@ -84,3 +99,37 @@ export type {
   TrainingSessionState,
   TrainingSessionStatus,
 } from "./domain";
+export {
+  DEMO_TRAINING_MODULE_SLUG,
+  DEMO_TRAINING_SEED,
+  DEMO_TRAINING_SESSION_ID,
+} from "./sessionConstants";
+export { useTrainingSession } from "./hooks/useTrainingSession";
+export type {
+  AnswerDraft,
+  ChoiceAnswerDraft,
+  FillBlankAnswerDraft,
+  FreeResponseAnswerDraft,
+  MatchingAnswerDraft,
+  UseTrainingSessionOptions,
+  UseTrainingSessionResult,
+} from "./hooks/useTrainingSession";
+export {
+  describeFillBlankTemplate,
+  parseFillBlankTemplate,
+  toExerciseTextView,
+  toExerciseView,
+} from "./presentation";
+export type {
+  ChoiceExerciseView,
+  ChoiceOptionView,
+  ExerciseTextView,
+  ExerciseView,
+  FillBlankExerciseView,
+  FillBlankTemplateSegment,
+  FreeResponseExerciseView,
+  MatchingExerciseView,
+  MatchingLeftItemView,
+  MatchingRightOptionView,
+  ToExerciseViewOptions,
+} from "./presentation";

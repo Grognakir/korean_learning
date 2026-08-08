@@ -51,13 +51,8 @@ export default function HomePage() {
 
       <section aria-labelledby="start-title" className={styles.section}>
         <div className={styles.sectionHeading}>
-          <div>
-            <p className={styles.kicker}>Начало работы</p>
-            <h2 id="start-title">С чего хотите начать?</h2>
-          </div>
-          <p className={styles.sectionDescription}>
-            Выберите один понятный следующий шаг. Между разделами всегда можно переключиться.
-          </p>
+          <p className={styles.kicker}>Начало работы</p>
+          <h2 id="start-title">С чего хотите начать?</h2>
         </div>
         <div className={styles.grid}>
           {STARTING_POINTS.map((item) => (

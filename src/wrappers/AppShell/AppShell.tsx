@@ -17,10 +17,6 @@ export function AppShell({ children }: AppShellProps) {
         {children}
       </main>
       <MobileNavigation />
-      <footer className={styles.footer}>
-        <span lang="ko">천천히, 꾸준히</span>
-        <span>Небольшие шаги каждый день.</span>
-      </footer>
     </div>
   );
 }

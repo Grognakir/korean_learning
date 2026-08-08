@@ -10,6 +10,6 @@ describe("AppShell", () => {
     expect(screen.getByRole("banner")).toBeInTheDocument();
     expect(screen.getByRole("main")).toHaveAttribute("id", "main-content");
     expect(screen.getByRole("main")).toHaveTextContent("Учебное содержимое");
-    expect(screen.getByRole("contentinfo")).toBeInTheDocument();
+    expect(screen.queryByText("Небольшие шаги каждый день.")).not.toBeInTheDocument();
   });
 });

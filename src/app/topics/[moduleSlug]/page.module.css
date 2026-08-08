@@ -1,0 +1,101 @@
+.page {
+  display: grid;
+  gap: clamp(var(--space-10), 6vw, var(--space-16));
+  padding-block: clamp(var(--space-6), 6vw, var(--space-16));
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.primaryAction {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-6);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  box-shadow: 0 8px 20px rgb(13 81 63 / 18%);
+  color: var(--color-text-on-accent);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  text-decoration: none;
+}
+
+.primaryAction:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-text-on-accent);
+}
+
+.koreanIntro {
+  display: grid;
+  gap: var(--space-3);
+  padding: clamp(var(--space-6), 5vw, var(--space-10));
+  border: 1px solid color-mix(in srgb, var(--color-accent) 18%, var(--color-border));
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--color-accent-soft), var(--color-surface));
+}
+
+.koreanIntro > p:first-child {
+  color: var(--color-accent-hover);
+  font-size: clamp(var(--font-size-2xl), 5vw, var(--font-size-3xl));
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+.koreanIntro > p:last-child {
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+}
+
+.topicGrid {
+  display: grid;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.topicCard {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-5);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.topicNumber {
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+}
+
+.topicCard > div {
+  display: grid;
+  align-content: start;
+  gap: var(--space-2);
+}
+
+.topicKoreanTitle {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-semibold);
+}
+
+@media (max-width: 42rem) {
+  .primaryAction {
+    width: 100%;
+  }
+}
+
+@media (min-width: 48rem) {
+  .topicGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

@@ -29,8 +29,10 @@ describe("application routes", () => {
   it("renders a module detail route", async () => {
     render(await ModulePage({ params: Promise.resolve({ moduleSlug: "sample-module" }) }));
 
-    expect(screen.getByRole("heading", { level: 1, name: "Описание модуля" })).toBeInTheDocument();
-    expect(screen.getByText("sample-module")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Первые шаги в корейском" }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Основы хангыля" })).toBeInTheDocument();
   });
 
   it("renders a training session route", async () => {

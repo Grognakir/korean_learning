@@ -1,0 +1,1 @@
+export { learningModuleRegistry } from "./registry";

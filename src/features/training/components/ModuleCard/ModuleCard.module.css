@@ -1,0 +1,82 @@
+.card {
+  min-width: 0;
+}
+
+.link {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--space-6);
+  padding: clamp(var(--space-6), 4vw, var(--space-8));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  color: var(--color-text);
+  text-decoration: none;
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-base);
+}
+
+.link:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+  box-shadow: var(--shadow-md);
+  color: var(--color-text);
+  transform: translateY(-0.25rem);
+}
+
+.meta,
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.meta > span:last-child {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+}
+
+.copy {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+}
+
+.koreanTitle {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.action {
+  min-height: 2.75rem;
+  padding-block-start: var(--space-4);
+  border-block-start: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.action > span:last-child {
+  color: var(--color-accent);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.action > span:last-child > span {
+  margin-inline-start: var(--space-2);
+  font-size: var(--font-size-xl);
+  line-height: 1;
+}
+
+@media (max-width: 24rem) {
+  .meta,
+  .action {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+}

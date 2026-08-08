@@ -1,4 +1,4 @@
-import type { LearningModuleDefinition } from "@/types";
+import { EXERCISE_TYPE_IDS, type LearningModuleDefinition } from "@/types";
 
 export const sampleModule = {
   id: "ad66b9f8-61b6-4fd0-9e98-6ec426547dd0",
@@ -15,7 +15,7 @@ export const sampleModule = {
   status: "published",
   contentVersion: "1.0.0",
   sortOrder: 10,
-  supportedExerciseTypes: ["meaning-choice", "free-response"],
+  supportedExerciseTypes: EXERCISE_TYPE_IDS,
   topics: [
     {
       id: "d8b1e1e2-97d8-4413-a890-730f85b32b51",

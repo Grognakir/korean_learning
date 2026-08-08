@@ -1,1 +1,1 @@
-export { learningModuleRegistry } from "./registry";
+export { exerciseRepository, learningModuleRegistry } from "./registry";

@@ -1,5 +1,7 @@
 export { ModuleCard } from "./components";
 export type { ModuleCardProps } from "./components";
+export { ExerciseRepositoryError, LocalExerciseRepository } from "./data";
+export type { ExerciseQuery, ExerciseRepository, ExerciseRepositoryErrorCode } from "./data";
 export {
   EXERCISE_DIFFICULTIES,
   EXERCISE_SCHEMA_VERSION,

@@ -26,6 +26,12 @@ describe("application routes", () => {
     expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
   });
 
+  it("loads the validated local exercise set on the training route", () => {
+    render(<TrainingPage />);
+
+    expect(screen.getByText(/доступно 14 заданий/)).toBeInTheDocument();
+  });
+
   it("renders a module detail route", async () => {
     render(await ModulePage({ params: Promise.resolve({ moduleSlug: "sample-module" }) }));
 

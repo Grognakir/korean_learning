@@ -1,5 +1,9 @@
-import { ModuleRegistry } from "@/features/training/domain";
+import { LocalExerciseRepository, ModuleRegistry } from "@/features/training";
 
-import { sampleModule } from "./sample";
+import { sampleExercises, sampleModule } from "./sample";
 
 export const learningModuleRegistry = new ModuleRegistry([sampleModule]);
+export const exerciseRepository = new LocalExerciseRepository(
+  sampleExercises,
+  learningModuleRegistry,
+);

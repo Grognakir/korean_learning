@@ -2,18 +2,18 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I23 завершены; CP-1A и CP-2 приняты; UI polish на `fix/topics-modules-grid`.
+- **Общее состояние:** F1-I01–F1-I23 завершены; F1-I24 в работе; CP-1A/CP-2/CP-3 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I23 framework quality gate — `done`.
-- **Статус текущей итерации:** `done`.
-- **Уже сделано:** локальный каркас, quality gate, e2e, CI checkpoint-ветки; polish каталогов/home/dictionary.
-- **Выполненные проверки:** локальный full gate; внешний CI `chore/framework-quality-gate` зелёный ([run 31256971883](https://github.com/Grognakir/korean_learning/actions/runs/31256971883)).
-- **Сейчас работает:** стабильный локальный каркас перед первым Vercel preview.
-- **Пока не работает:** Vercel preview (F1-I24), server sync, auth.
-- **Следующий конкретный шаг:** F1-I24 (`chore/vercel-preview`) только после явного CP-3.
-- **Блокирующие вопросы:** явное разрешение CP-3 на действия с Vercel.
-- **Решения, требующие подтверждения:** CP-3 сейчас; CP-4/CP-5 позже.
-- **Последнее обновление:** 2026-08-08.
+- **Текущая итерация:** F1-I24 Vercel preview — `in_progress`.
+- **Статус текущей итерации:** `in_progress`.
+- **Уже сделано:** локальный каркас, quality gate, UI polish; Vercel project `korean-learning` связан с GitHub.
+- **Выполненные проверки:** локальный full gate зелёный; preview deploy после push.
+- **Сейчас работает:** Git-integrated Vercel project (Node 24.x, pnpm из packageManager).
+- **Пока не работает:** production deploy (не делаем); Supabase (F1-I25 / CP-4).
+- **Следующий конкретный шаг:** проверить preview smoke после deploy; затем F1-I25 только после CP-4.
+- **Блокирующие вопросы:** нет для завершения F1-I24 после зелёного preview.
+- **Решения, требующие подтверждения:** CP-4 позже.
+- **Последнее обновление:** 2026-08-09.
 
 ## 1. Цель, результат и границы
 
@@ -640,7 +640,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I24 — Первый Vercel preview deployment
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `in_progress`.
 - **Цель и зачем:** подтвердить реальную сборку и hosting pipeline до Supabase.
 - **Входные зависимости:** F1-I23, CP-3, доступ к Vercel.
 - **Задачи:** связать проект; задать framework/root и Node `24.x`; подтвердить фактический Node `>=24.18.0 <25` и pnpm `10.34.5` в build log; после CP-3 push `chore/vercel-preview` для Git-integrated preview; проверить URL/logs; не публиковать production без отдельного подтверждения.

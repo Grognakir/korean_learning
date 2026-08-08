@@ -1,25 +1,27 @@
 # Контекст сессии — Korean Learning
 
-Последнее обновление: 2026-08-08
+Последнее обновление: 2026-08-09
 
 ## Чем занимаемся
 
-**CP-2 принят.** F1-I23 закрыта. Следующая карточка — F1-I24 (Vercel preview), но только после явного CP-3. Не начинать без CP-3.
+F1-I24: Vercel preview. CP-3 получен. Проект `korean-learning` создан/связан, GitHub connected, Node `24.x`.
 
 ## Принятые решения
 
-- CP-1A принят.
-- CP-2 принят пользователем.
-- F1-I23 CI: https://github.com/Grognakir/korean_learning/actions/runs/31256971883
-- UI polish на `fix/topics-modules-grid` (padding 60px, без eyebrows, сетки, dictionary empty state).
+- CP-1A, CP-2, CP-3 приняты.
+- Vercel scope: `grognakirs-projects`.
+- Project: `korean-learning` (новый; единственный с этим именем).
+- Git remote: `Grognakir/korean_learning`.
+- `.vercel/` не коммитится.
+- Production deploy/promote не выполнять.
 
 ## Открытые задачи
 
-- [ ] Пользователь: явное **CP-3** (разрешение на Vercel / preview deploy).
-- [ ] После CP-3: F1-I24 `chore/vercel-preview`.
-- [ ] Опционально: push `fix/topics-modules-grid`.
+- [ ] Push `chore/vercel-preview` и дождаться preview.
+- [ ] Smoke preview URL.
+- [ ] Закрыть F1-I24 в статусе; не начинать F1-I25 без CP-4.
 
 ## Контекст
 
-Ветка: `fix/topics-modules-grid`.
-План: F1-I24 blocked до CP-3.
+Ветка: `chore/vercel-preview`.
+Локальный gate: format/lint/typecheck/219 unit/17 integration/build — зелёные.

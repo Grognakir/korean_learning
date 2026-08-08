@@ -2,17 +2,17 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I24 завершены; CP-1A/CP-2/CP-3 приняты.
+- **Общее состояние:** F1-I01–F1-I25 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I24 Vercel preview — `done`.
+- **Текущая итерация:** F1-I25 Supabase client foundation — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** локальный каркас, quality gate, UI polish; Vercel project `korean-learning` + первый Git deploy.
-- **Выполненные проверки:** локальный full gate; Vercel Ready; HTTP smoke публичного URL (маршруты 200, unknown module/session 404, без honorifics в production build).
-- **Сейчас работает:** hosting pipeline на `https://korean-learning-gray.vercel.app` (pnpm 10.34.5, Next.js 16.3.0).
-- **Пока не работает:** Supabase (F1-I25 / CP-4); Production Branch ещё не `main` (первый деплой помечен Production); Vercel Node runtime `24.15.0` отстаёт от engines `>=24.18.0` (WARN).
-- **Следующий конкретный шаг:** F1-I25 только после явного CP-4.
-- **Блокирующие вопросы:** нет для остановки на F1-I24.
-- **Решения, требующие подтверждения:** CP-4; вручную в Vercel: Production Branch = `main`.
+- **Уже сделано:** Vercel preview; Supabase CLI config + env Zod + browser/server clients; local Docker stack.
+- **Выполненные проверки:** format/lint/typecheck/230 unit/17 integration/build на Node 24.18.0; auth health 200 на local Supabase.
+- **Сейчас работает:** `@supabase/ssr` client boundary; `pnpm supabase:start|stop|status`; `.env.example` без секретов.
+- **Пока не работает:** schema/migrations (F1-I26); auth UI (F1-I28); remote cloud project link (нужен `supabase login` + link).
+- **Следующий конкретный шаг:** F1-I26 database schema — без дополнительного CP.
+- **Блокирующие вопросы:** нет для остановки на F1-I25.
+- **Решения, требующие подтверждения:** remote Supabase project в dashboard (опционально до F1-I26).
 - **Последнее обновление:** 2026-08-09.
 
 ## 1. Цель, результат и границы
@@ -657,7 +657,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I25 — Supabase-проект и клиенты приложения
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** безопасно подключить облачный backend без переноса данных.
 - **Входные зависимости:** F1-I24, CP-4, Supabase project credentials.
 - **Задачи:** создать/подключить project; local CLI config; env Zod schema; browser/server client factories; cookie strategy; service role только для явно серверных задач и не в MVP browser path.
@@ -665,10 +665,10 @@ MVP включает каталог тем, прохождение и возоб
 - **Компоненты:** нет.
 - **Данные / БД:** проект пуст; Storage bucket не создаётся.
 - **Тесты:** env schema, client factory mocks, missing env behavior, build with documented env classes.
-- **Ручная проверка:** health query/local connection без утечки ключей в client bundle/logs.
-- **Критерии готовности:** разделены public anon/publishable и server-only secrets.
+- **Ручная проверка:** auth health 200 на local stack (`supabase start`); secrets не в client bundle.
+- **Критерии готовности:** разделены public publishable и server-only secrets — выполнено.
 - **Ожидаемый результат:** безопасный infrastructure boundary.
-- **Риски:** устаревшие auth helper patterns; сверить официальную документацию.
+- **Риски / P2:** remote cloud project не линкован (нужен `supabase login`); session refresh Proxy — F1-I28.
 - **Ветка / коммит:** `feature/supabase-foundation` / `feat: add Supabase client foundation`.
 - **Следующий шаг:** F1-I26.
 

@@ -4,23 +4,23 @@
 
 ## Чем занимаемся
 
-F1-I24 закрыта: Vercel project `korean-learning`, Git deploy Ready, HTTP smoke на публичном URL зелёный. Следующая итерация — F1-I25, только после явного **CP-4**.
+F1-I25 закрыта: Supabase client foundation + local Docker stack. Следующая карточка — **F1-I26** (schema/migrations). Не начинать в этом шаге.
 
 ## Принятые решения
 
-- CP-1A, CP-2, CP-3 приняты.
-- Vercel scope: `grognakirs-projects`; project: `korean-learning`.
-- Git: `Grognakir/korean_learning`; ветка `chore/vercel-preview`.
-- Публичный smoke URL: `https://korean-learning-gray.vercel.app`.
-- `.vercel/` не коммитится; production promote не делать.
-- P2: Production Branch → выставить `main` в дашборде; Node runtime Vercel `24.15.0` отстаёт от engines.
+- CP-1A, CP-2, CP-3, CP-4 приняты.
+- Env: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, server-only `SUPABASE_SECRET_KEY`.
+- Client barrel (`src/lib/supabase/index.ts`) — только browser + health; server factories отдельно.
+- Local: `supabase/config.toml`, storage disabled, seed disabled до F1-I26.
+- Admin/service-role factory не создан (deferred).
 
 ## Открытые задачи
 
-- [ ] Пользователь: в Vercel Settings → Git → Production Branch = `main`.
-- [ ] Следующая карточка: F1-I25 — только после **CP-4**.
-- [ ] Не начинать Supabase без CP-4.
+- [ ] Опционально: `supabase login` + link remote cloud project.
+- [ ] Следующая итерация: F1-I26 по отдельному запросу.
 
 ## Контекст
 
-Deployment: `dpl_Dwc68xq2Gf6t6PT3QGS5eEzRrbVz` Ready; pnpm 10.34.5; Next 16.3.0.
+Ветка: `feature/supabase-foundation`.
+Gate: 230 unit + 17 integration + build зелёные на Node 24.18.0.
+Local auth health: HTTP 200 на `127.0.0.1:54321`.

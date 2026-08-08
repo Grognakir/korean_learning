@@ -1,0 +1,29 @@
+.page {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.panel {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.guestAction {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.guestAction a {
+  color: var(--color-accent-hover);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.guestAction a:hover {
+  text-decoration: underline;
+}

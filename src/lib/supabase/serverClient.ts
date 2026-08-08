@@ -24,7 +24,7 @@ export function createServerSupabaseClientWithCookies(
 /**
  * Server Component / Route Handler / Server Action client.
  * Creates a new client per call — never reuse across requests.
- * Cookie writes from Server Components may fail; session refresh Proxy arrives in F1-I28.
+ * Cookie writes from Server Components may fail; session refresh is handled in `src/proxy.ts`.
  */
 export async function createServerSupabaseClient(
   env: PublicSupabaseEnv = parsePublicSupabaseEnv(),

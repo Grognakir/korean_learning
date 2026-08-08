@@ -56,14 +56,8 @@ describe("RLS user isolation", () => {
     const clientA = asUserClient(userA);
     const clientB = asUserClient(userB);
 
-    const { error: profileError } = await clientA.from("profiles").insert({
-      user_id: userA.id,
-      display_name: "User A",
-    });
-    expect(profileError).toBeNull();
-
     await expectSelectCount(clientA, "profiles", 1);
-    await expectSelectCount(clientB, "profiles", 0);
+    await expectSelectCount(clientB, "profiles", 1);
 
     const { data: session, error: sessionError } = await clientA
       .from("training_sessions")

@@ -16,7 +16,6 @@ const STATIC_ROUTES = [
   ["Повторение", ReviewPage],
   ["Прогресс", ProgressPage],
   ["Словарь", DictionaryPage],
-  ["Вход", LoginPage],
 ] as const;
 
 describe("application routes", () => {
@@ -24,6 +23,12 @@ describe("application routes", () => {
     render(<Page />);
 
     expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
+  });
+
+  it("renders the login route with one page heading", async () => {
+    render(await LoginPage({ searchParams: Promise.resolve({}) }));
+
+    expect(screen.getByRole("heading", { level: 1, name: "Вход" })).toBeInTheDocument();
   });
 
   it("loads the validated local exercise set on the training route", () => {

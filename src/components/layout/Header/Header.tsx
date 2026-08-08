@@ -1,11 +1,17 @@
 import Link from "next/link";
 
+import { UserMenu } from "@/features/authentication/components/UserMenu";
+import type { AuthUser } from "@/features/authentication/domain/types";
 import { PrimaryNavigation } from "@/components/navigation";
 import { APP_NAME } from "@/constants";
 
 import styles from "./Header.module.css";
 
-export function Header() {
+export type HeaderProps = {
+  user?: AuthUser | null;
+};
+
+export function Header({ user = null }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
@@ -19,9 +25,7 @@ export function Header() {
           </span>
         </Link>
         <PrimaryNavigation />
-        <Link className={styles.login} href="/login">
-          Войти
-        </Link>
+        <UserMenu user={user} />
       </div>
     </header>
   );

@@ -4,7 +4,7 @@
 
 ## Чем занимаемся
 
-F1-I27 закрыта. Следующая карточка — **F1-I28** (Supabase Auth) — только по отдельному запросу.
+F1-I28 закрыта. Следующая карточка — **F1-I29** (Supabase content) — только по отдельному запросу.
 
 ## Принятые решения
 
@@ -15,14 +15,15 @@ F1-I27 закрыта. Следующая карточка — **F1-I28** (Supab
 - Auth redirects: localhost + Vercel preview (`korean-learning-gray.vercel.app/auth/callback`).
 - `.env.local` содержит remote keys — не коммитить.
 - Remote migrations на production **не применялись** (только local + CI).
+- Guest training остаётся без login; guest→account import — F1-I30.
 
 ## Открытые задачи
 
 - [ ] Отозвать/перевыпустить Supabase access token (был в чате).
-- [ ] F1-I28 Supabase Auth — по отдельному запросу.
+- [ ] F1-I29 Supabase content — по отдельному запросу.
 
 ## Контекст
 
-Ветка: `feature/database-rls` (`feat: secure database with row level security`).
-Gate: format/lint/typecheck/230 unit/17 integration/5 db/9 rls/build на Node 24.18.0.
-RLS: published/approved content для anon; owner isolation; `exercise_options_public` без `is_correct`.
+Ветка: `feature/supabase-auth` (`feat: add Supabase authentication`).
+Gate: format/lint/typecheck/248 unit/17 integration/6 db/9 rls/build на Node 24.18.0.
+Auth: LoginForm OTP/magic link, `/auth/callback`, `src/proxy.ts`, profile trigger on `auth.users`.

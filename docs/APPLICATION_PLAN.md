@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I27 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
+- **Общее состояние:** F1-I01–F1-I28 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I27 Row Level Security — `done`.
+- **Текущая итерация:** F1-I28 Supabase Auth — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** RLS policies на всех exposed tables; view `exercise_options_public`; tightened grants; `pnpm test:rls` (9 tests).
-- **Выполненные проверки:** format/lint/typecheck/230 unit/17 integration/5 db/9 rls/build на Node 24.18.0.
-- **Сейчас работает:** deny-by-default RLS; anon читает только published/approved content; owner isolation для profiles/sessions; direct client writes в attempts/review_queue заблокированы.
-- **Пока не работает:** auth UI (F1-I28).
-- **Следующий конкретный шаг:** F1-I28 Supabase Auth — без дополнительного CP.
+- **Уже сделано:** magic-link login form; `/auth/callback`; session refresh proxy; UserMenu/logout; profile bootstrap trigger.
+- **Выполненные проверки:** format/lint/typecheck/248 unit/17 integration/6 db/9 rls/build на Node 24.18.0.
+- **Сейчас работает:** email OTP/magic link вход; guest training без login; auth state в Header/AuthBoundary; безопасные redirect targets.
+- **Пока не работает:** Supabase content repository (F1-I29); cloud session/attempt sync (F1-I30).
+- **Следующий конкретный шаг:** F1-I29 load learning content from Supabase — без дополнительного CP.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed.
 - **Последнее обновление:** 2026-08-09.
@@ -708,7 +708,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I28 — Supabase Auth
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** связать пользовательский прогресс с безопасной учётной записью.
 - **Входные зависимости:** F1-I27, подтверждённый способ входа.
 - **Задачи:** login form; magic link/OTP flow; callback; session refresh; logout; profile bootstrap; protected/optional boundaries; redirect sanitization; guest-to-user UX decision.
@@ -717,7 +717,7 @@ MVP включает каталог тем, прохождение и возоб
 - **Данные / БД:** `auth.users` + `profiles`; trigger/function или idempotent server bootstrap.
 - **Тесты:** form/schema, safe redirect, unauth/auth boundaries, profile ownership; local auth integration.
 - **Ручная проверка:** sign in/out, expired link, refresh, two users, mobile.
-- **Критерии готовности:** session поддерживается безопасно, чужие данные недоступны.
+- **Критерии готовности:** session поддерживается безопасно, чужие данные недоступны — выполнено.
 - **Ожидаемый результат:** рабочая авторизация.
 - **Риски:** email delivery/redirect config; предусмотреть local test user.
 - **Ветка / коммит:** `feature/supabase-auth` / `feat: add Supabase authentication`.

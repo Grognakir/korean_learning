@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I25 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
+- **Общее состояние:** F1-I01–F1-I26 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I25 Supabase client foundation — `done`.
+- **Текущая итерация:** F1-I26 database schema — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** Vercel preview; Supabase CLI config + env Zod + browser/server clients; local Docker stack.
-- **Выполненные проверки:** format/lint/typecheck/230 unit/17 integration/build на Node 24.18.0; auth health 200 на local Supabase.
-- **Сейчас работает:** `@supabase/ssr` client boundary; `pnpm supabase:start|stop|status`; `.env.example` без секретов.
-- **Пока не работает:** schema/migrations (F1-I26); auth UI (F1-I28).
-- **Следующий конкретный шаг:** F1-I26 database schema — без дополнительного CP.
+- **Уже сделано:** versioned migrations + deterministic seed; generated `database.ts`; DB CI job; `pnpm test:db` (5 tests).
+- **Выполненные проверки:** format/lint/typecheck/230 unit/17 integration/5 db/build на Node 24.18.0.
+- **Сейчас работает:** `pnpm supabase:reset`, `db:seed`, `db:types`, `test:db`; local schema из 4 migrations + seed (1 module, 14 exercises).
+- **Пока не работает:** RLS (F1-I27); auth UI (F1-I28).
+- **Следующий конкретный шаг:** F1-I27 Row Level Security — без дополнительного CP.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed.
 - **Последнее обновление:** 2026-08-09.
@@ -674,7 +674,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I26 — Схема PostgreSQL, миграции и seed
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** материализовать нормализованную модель данных с воспроизводимой историей.
 - **Входные зависимости:** F1-I25 и утверждённая модель раздела 13.
 - **Задачи:** SQL migrations tables/enums/checks/FKs/indexes/timestamps; updated_at triggers only where needed; deterministic seed for dev; generated DB types; добавить CI job локального reset/migration/seed без production credentials, если поддерживаемая Supabase CLI-схема допускает стабильный запуск на GitHub runner.
@@ -683,7 +683,7 @@ MVP включает каталог тем, прохождение и возоб
 - **Данные / БД:** все core content/user/training/review/progress/AI-review tables; без production import.
 - **Тесты:** reset+apply migrations; constraints; FK/cascade behavior; seed idempotency or clean-reset repeatability.
 - **Ручная проверка:** schema diff пуст после повторной генерации; таблицы/индексы соответствуют модели.
-- **Критерии готовности:** чистая база создаётся одной последовательностью миграций.
+- **Критерии готовности:** чистая база создаётся одной последовательностью миграций — выполнено.
 - **Ожидаемый результат:** версионируемая схема.
 - **Риски:** чрезмерная JSONB-модель или опасные cascade; проверить каждую связь.
 - **Ветка / коммит:** `feature/database-schema` / `feat: add initial database schema`.

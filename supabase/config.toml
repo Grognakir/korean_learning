@@ -64,10 +64,8 @@ enabled = true
 schema_paths = []
 
 [db.seed]
-# Seed arrives in F1-I26 with schema; keep disabled until then.
-enabled = false
-# Specifies an ordered list of seed files to load during db reset.
-# Supports glob patterns relative to supabase directory: "./seeds/*.sql"
+# F1-I26 sample module seed (deterministic UUIDs from local registry).
+enabled = true
 sql_paths = ["./seed.sql"]
 
 [db.network_restrictions]

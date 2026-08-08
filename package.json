@@ -21,7 +21,11 @@
     "test:coverage": "vitest run --coverage",
     "supabase:start": "supabase start",
     "supabase:stop": "supabase stop",
-    "supabase:status": "supabase status"
+    "supabase:status": "supabase status",
+    "supabase:reset": "supabase db reset",
+    "db:seed": "tsx scripts/generate-db-seed.ts",
+    "db:types": "supabase gen types typescript --local > src/types/database.ts",
+    "test:db": "vitest run --config vitest.db.config.mts"
   },
   "engines": {
     "node": ">=24.18.0 <25",
@@ -53,6 +57,7 @@
     "jsdom": "30.0.1",
     "prettier": "^3.9.6",
     "supabase": "^2.113.0",
+    "tsx": "^4.23.11",
     "typescript": "^6.0.3",
     "vitest": "4.1.10"
   }

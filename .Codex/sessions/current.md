@@ -4,26 +4,21 @@
 
 ## Чем занимаемся
 
-F1-I23: локальный quality gate каркаса выполнен. Итерация `blocked` до push ветки, зелёного внешнего CI и явного CP-2. F1-I24 не начинать.
+UI-fix: сетка каталога `/topics` выровнена с `/training` (и home). F1-I23 по-прежнему ждёт явного CP-2.
 
 ## Принятые решения
 
-- CP-1A принят.
-- `dynamicParams = false` на `/topics/[moduleSlug]` и `/training/[sessionId]` — реальный HTTP 404 вместо soft-200 при streaming/`loading.tsx`.
-- Honorifics preview session в `generateStaticParams` только при `NODE_ENV === "development"`.
-- Production composition без draft honorifics подтверждена smoke + e2e.
-- Metadata `description` добавлены на публичные routes.
-- Client boundaries: pages/layouts остаются Server Components; `"use client"` только у interactive UI/hooks/`error.tsx`.
+- CP-1A принят; F1-I23 локально + CI зелёные; CP-2 ещё не принят.
+- Topics grid: 1 → 2 (≥36rem) → 3 (≥58rem); odd last-child центрируется на 2 колонках.
+- ModuleCard `h2` — `font-size-xl`, как заголовки панелей на `/training`.
 
 ## Открытые задачи
 
-- [ ] Пользователь: разрешить push `chore/framework-quality-gate`.
-- [ ] Дождаться зелёного внешнего CI (checks + e2e).
 - [ ] Пользователь: принять CP-2 (`CP-2 принят`).
 - [ ] Не начинать F1-I24 без CP-2 и отдельного CP-3.
+- [ ] Не пушить без разрешения.
 
 ## Контекст
 
-Ветка: `chore/framework-quality-gate`.
-Локальный gate: frozen install + 219 unit + 17 integration + 16 e2e + build/start smoke — зелёные.
-P0/P1: нет. P2: ручной 200% zoom / Lighthouse не автоматизированы (диагностика, не blocker).
+Ветка: `fix/topics-modules-grid` (от `chore/framework-quality-gate` @ `ff2411b`).
+Gate: 219 unit + 17 integration + 16 e2e + build — зелёные.

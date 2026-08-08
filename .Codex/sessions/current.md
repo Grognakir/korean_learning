@@ -4,32 +4,25 @@
 
 ## Чем занимаемся
 
-Замечания из `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN_REVIEW.md` проверены и применены к исполнимому плану F1-I15–F1-I33. Реализация F1-I15 не начиналась.
+Завершена итерация F1-I15: детерминированная проверка ответов. Следующая итерация F1-I16 ещё не начата.
 
 ## Принятые решения
 
 - Все проектные документы создаются и хранятся в `docs/`; `.Codex/sessions/current.md` остаётся обязательным служебным исключением.
-- `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md` является приоритетной пошаговой инструкцией для F1-I15–F1-I33, а `docs/APPLICATION_PLAN.md` сохраняет общую продуктовую и архитектурную основу.
+- `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md` является приоритетной пошаговой инструкцией для F1-I15–F1-I33.
 - Исполнитель реализует ровно одну итерацию, запускает её тесты, обновляет статусы, создаёт один коммит и останавливается, не начиная следующий шаг.
-- CP-1A, CP-2, CP-3, CP-4 и CP-5 являются жёсткими остановками; внешние действия без соответствующего подтверждения запрещены.
-- Для progress зафиксирована формула `practiced`: минимум 3 graded attempts и accuracy не ниже 80%; учитываются только completed sessions.
-- Для review зафиксирована простая цепочка интервалов 1/3/7 дней и mastery после четвёртого подряд правильного review answer.
-- Guest import в F1-I30 переносит только текущую local session после явного подтверждения; молчаливого merge нет.
-- Статус `docs/APPLICATION_PLAN.md` синхронизирован: F1-I01–F1-I14 завершены, F1-I15 только запланирована.
-- `docs/PLAN_REVISION_2026-08-07.md` заменён обзорным `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN_REVIEW.md`; review не является исполнимой инструкцией.
-- Каждая итерация проходит полный локальный gate; промежуточные iteration branches не пушатся и отдельные PR для них не создаются.
-- Исключение — `chore/vercel-preview`: после CP-3 она пушится для Git-integrated Vercel preview, но не запускает checkpoint CI.
-- Внешний CI запускается после разрешённого push только веток `chore/framework-quality-gate` на CP-2 и `chore/framework-stabilization` на CP-5; merge всегда требует отдельной команды.
-- F1-I21 создаёт `vitest.integration.config.mts`, согласованный с существующим ESM-конфигом.
-- F1-I33 обязательно удаляет `previewModule.ts`, `previewExercises.ts` и development composition 높임말; фаза 2 создаёт канонический модуль заново.
-- Local/CI используют Node.js `24.18.0` и pnpm `10.34.5`; Vercel использует фактический Node `24.x` в диапазоне `>=24.18.0 <25`, а версия фиксируется в deployment report.
-- Молчаливый fallback local/CI runtime запрещён; изменение pin требует отдельного согласования и полного baseline gate.
+- CP-1A, CP-2, CP-3, CP-4 и CP-5 являются жёсткими остановками.
+- Evaluation domain остаётся чистым: без React, repository implementation, Supabase и OpenAI.
+- Базовая нормализация ответа: Unicode NFC, trim, схлопывание пробельных последовательностей; без fuzzy matching и корейской морфологической нормализации.
+- Partial credit применяется только при `exercise.scoring.partialCredit === true`.
+- Local/CI используют Node.js `24.18.0` и pnpm `10.34.5`.
+- Промежуточные iteration branches не пушатся; отдельные PR на каждую итерацию не открываются.
 
 ## Открытые задачи
 
-- [ ] Не начинать F1-I15 до отдельного явного указания пользователя.
-- [ ] После разрешения выполнить только F1-I15 по подробной карточке и остановиться перед F1-I16.
+- [ ] Выполнить только F1-I16 (`feature/training-session-engine`) по карточке плана и остановиться перед F1-I17.
+- [ ] Не начинать F1-I17A и последующие шаги до завершения предыдущих и подтверждения checkpoint'ов.
 
 ## Контекст для следующей сессии
 
-Текущая ветка — `feature/local-exercise-repository`, последний кодовый коммит — `711b30f`. Исполнимый и основной планы синхронизированы по принятым замечаниям ревью. Следующий технический шаг — F1-I15, но реализацию не начинать без нового явного указания.
+Текущая ветка — `feature/answer-evaluation`. F1-I15 добавила `src/features/training/domain/evaluation/*` с `evaluateAnswer` / `CheckerRegistry`, checkers для choice/free-response/fill-blank/matching и table-driven тестами. Все 14 sample exercises оцениваются. Baseline после итерации: 124/124 теста в 34 файлах. Следующий технический шаг — F1-I16, session engine.

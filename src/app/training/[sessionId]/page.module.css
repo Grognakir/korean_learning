@@ -10,7 +10,8 @@
   align-content: start;
   gap: clamp(var(--space-5), 2.5vw, var(--space-8));
   min-height: calc(100svh - var(--app-header-height) - var(--app-mobile-nav-reserve));
-  padding-block: var(--page-block-padding);
+  padding-block-start: clamp(var(--space-4), 2.5vw, var(--space-6));
+  padding-block-end: var(--page-block-padding);
   box-sizing: border-box;
 }
 

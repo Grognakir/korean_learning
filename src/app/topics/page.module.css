@@ -32,4 +32,11 @@
     grid-column: auto;
     justify-self: stretch;
   }
+
+  /* Один модуль: не оставлять карточку в левой трети ряда */
+  .grid > :nth-child(1):nth-last-child(1) {
+    grid-column: 1 / -1;
+    width: calc((100% - (2 * var(--space-5))) / 3);
+    justify-self: center;
+  }
 }

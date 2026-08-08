@@ -4,21 +4,22 @@
 
 ## Чем занимаемся
 
-UI-fix: сетка каталога `/topics` выровнена с `/training` (и home). F1-I23 по-прежнему ждёт явного CP-2.
+UI-fix сетки каталогов: `/topics` выровнен с `/training`/home. После ревью исправлены runtime stale-dev и центрирование единственной карточки на ≥58rem.
 
 ## Принятые решения
 
-- CP-1A принят; F1-I23 локально + CI зелёные; CP-2 ещё не принят.
-- Topics grid: 1 → 2 (≥36rem) → 3 (≥58rem); odd last-child центрируется на 2 колонках.
-- ModuleCard `h2` — `font-size-xl`, как заголовки панелей на `/training`.
+- CP-1A принят; F1-I23 CI зелёный; CP-2 ещё не принят.
+- Grid: 1 → 2 (≥36rem) → 3 (≥58rem).
+- Единственный child на 3 колонках: `:nth-child(1):nth-last-child(1)` (specificity выше, чем у `:only-child` vs odd:last-child).
+- Долгий `pnpm dev` после смены веток давал browser «module factory is not available» → нужен restart + hard refresh.
 
 ## Открытые задачи
 
 - [ ] Пользователь: принять CP-2 (`CP-2 принят`).
-- [ ] Не начинать F1-I24 без CP-2 и отдельного CP-3.
-- [ ] Не пушить без разрешения.
+- [ ] Hard refresh браузера после restart dev.
+- [ ] Не начинать F1-I24 без CP-2 и CP-3.
 
 ## Контекст
 
-Ветка: `fix/topics-modules-grid` (от `chore/framework-quality-gate` @ `ff2411b`).
-Gate: 219 unit + 17 integration + 16 e2e + build — зелёные.
+Ветка: `fix/topics-modules-grid`.
+Dev: перезапущен на :3000 (свежий `.next`).

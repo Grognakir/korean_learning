@@ -209,6 +209,12 @@
     grid-column: auto;
     justify-self: stretch;
   }
+
+  .routeCard:nth-child(1):nth-last-child(1) {
+    grid-column: 1 / -1;
+    width: calc((100% - (2 * var(--space-5))) / 3);
+    justify-self: center;
+  }
 }
 
 @media (min-width: 64rem) {

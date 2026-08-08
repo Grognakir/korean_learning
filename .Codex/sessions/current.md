@@ -25,6 +25,6 @@
 ## Контекст для следующей сессии
 
 Текущая ветка — `feature/honorifics-early-slice`.
-Коммиты цепочки: F1-I15 `f071d61` → F1-I16 `3ff5e18` → F1-I17 `1b039d7` → F1-I17A (pending commit).
+Коммиты цепочки: F1-I15 `f071d61` → F1-I16 `3ff5e18` → F1-I17 `1b039d7` → F1-I17A `5b504da`.
 Baseline: 177/177 теста в 46 файлах.
 Статус: **blocked on CP-1A**.

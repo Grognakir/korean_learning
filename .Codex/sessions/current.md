@@ -4,22 +4,22 @@
 
 ## Чем занимаемся
 
-F1-I21 завершена: интеграционные тесты каркаса. Следующая итерация — F1-I22 (Playwright), не начинать в этом шаге.
+F1-I22 завершена: Playwright e2e (Chromium desktop + mobile). Следующая итерация — F1-I23 (quality gate / CP-2), не начинать в этом шаге.
 
 ## Принятые решения
 
 - CP-1A принят.
-- Unit (`pnpm test:run`) исключает `tests/integration/**`.
-- Integration (`pnpm test:integration`) — отдельный config, 17 тестов.
-- CI `push.branches`: `main`, `chore/framework-quality-gate`, `chore/framework-stabilization`.
-- Factories + fake clock/memory storage в `tests/factories` и `tests/helpers/integration.ts`.
+- E2E: `@playwright/test`, порт 3100, `next start` после `pnpm build`.
+- Projects: desktop Chromium 1280×800 и mobile 375×812.
+- CI e2e job: PR → main, `workflow_dispatch`, push checkpoint-веток; не на обычных iteration branches.
+- Короткие сессии в e2e сидятся через `page.evaluate` после goto `/training` (не `addInitScript`).
 
 ## Открытые задачи
 
-- [ ] Следующая карточка: F1-I22 (`test/playwright-setup`) — только по запросу.
+- [ ] Следующая карточка: F1-I23 (`chore/framework-quality-gate`) — только по запросу.
 - [ ] Не пушить ветку без разрешения.
 
 ## Контекст
 
-Ветка: `test/framework-integration`.
-Gate: 219 unit + 17 integration + build зелёные.
+Ветка: `test/playwright-setup`.
+Gate: 219 unit + 17 integration + 16 e2e + build зелёные.

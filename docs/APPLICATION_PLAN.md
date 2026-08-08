@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I21 завершены; CP-1A принят.
+- **Общее состояние:** F1-I01–F1-I22 завершены; CP-1A принят.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I21 framework integration tests — `done`.
+- **Текущая итерация:** F1-I22 Playwright e2e — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** training loop, persistence, results, application states, раздельные unit/integration suites.
-- **Выполненные проверки:** Prettier, ESLint, 219 unit + 17 integration, typecheck и production build зелёные.
-- **Сейчас работает:** `pnpm test:integration`; CI push только main + checkpoint-ветки; lifecycle/resume/routing scenarios.
-- **Пока не работает:** Playwright e2e (F1-I22+), server sync, auth.
-- **Следующий конкретный шаг:** F1-I22 (`test/playwright-setup`) по отдельному запросу.
-- **Блокирующие вопросы:** нет для перехода к F1-I22.
+- **Уже сделано:** training loop, persistence, results, application states, unit/integration/e2e suites.
+- **Выполненные проверки:** Prettier, ESLint, 219 unit + 17 integration + 16 e2e, typecheck и production build зелёные.
+- **Сейчас работает:** `pnpm test:e2e` (Chromium desktop/mobile); CI e2e job на PR в main, workflow_dispatch и checkpoint-ветки.
+- **Пока не работает:** server sync, auth; quality gate каркаса (F1-I23 / CP-2).
+- **Следующий конкретный шаг:** F1-I23 (`chore/framework-quality-gate`) по отдельному запросу.
+- **Блокирующие вопросы:** нет для перехода к F1-I23.
 - **Решения, требующие подтверждения:** CP-2/CP-3/CP-4/CP-5 позже.
 - **Последнее обновление:** 2026-08-08.
 
@@ -606,7 +606,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I22 — Playwright и сквозные сценарии
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** проверить приложение в реальном браузере.
 - **Входные зависимости:** F1-I21.
 - **Задачи:** Playwright config/webServer; desktop/mobile projects; traces/screenshots on failure; smoke navigation and full local training; добавить отдельный CI job для pull request в `main`, ручного запуска и push двух checkpoint-веток; не запускать browser suite на остальных iteration branches.

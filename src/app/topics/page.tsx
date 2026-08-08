@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { CatalogEmptyState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import { ModuleCard } from "@/features/training";
 import { learningModuleRegistry } from "@/modules";
@@ -21,11 +22,15 @@ export default function TopicsPage() {
         eyebrow="Учебный каталог"
         title="Темы"
       />
-      <section aria-label="Доступные учебные модули" className={styles.grid}>
-        {modules.map((module) => (
-          <ModuleCard key={module.id} module={module} />
-        ))}
-      </section>
+      {modules.length === 0 ? (
+        <CatalogEmptyState />
+      ) : (
+        <section aria-label="Доступные учебные модули" className={styles.grid}>
+          {modules.map((module) => (
+            <ModuleCard key={module.id} module={module} />
+          ))}
+        </section>
+      )}
     </PageContainer>
   );
 }

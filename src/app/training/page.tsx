@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { CatalogEmptyState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import { Badge } from "@/components/ui";
 import { DEMO_TRAINING_SESSION_ID, ResumeTrainingPrompt } from "@/features/training";
@@ -25,6 +26,7 @@ export default function TrainingPage() {
   const honorificsExerciseCount = honorificsModule
     ? exerciseRepository.list({ moduleSlug: HONORIFICS_MODULE_SLUG }).length
     : 0;
+  const hasModules = Boolean(sampleModule) || Boolean(honorificsModule);
 
   return (
     <PageContainer className={styles.page}>
@@ -36,53 +38,59 @@ export default function TrainingPage() {
 
       <ResumeTrainingPrompt />
 
-      <section aria-label="Доступные модули для тренировки" className={styles.grid}>
-        <article className={styles.panel}>
-          <div className={styles.meta}>
-            <Badge lang="ko" tone="accent">
-              {sampleModule?.level ?? "1급"}
-            </Badge>
-            <span>{sampleExerciseCount} заданий</span>
-          </div>
-          <div className={styles.copy}>
-            {sampleModule?.title.ko ? (
-              <p className={styles.koreanTitle} lang="ko">
-                {sampleModule.title.ko}
-              </p>
-            ) : null}
-            <h2>{sampleModule?.title.ru ?? "Первые шаги в корейском"}</h2>
-            <p>
-              В модуле доступно {sampleExerciseCount} заданий. Запустите демо-сессию и пройдите
-              упражнения подряд.
-            </p>
-          </div>
-          <Link className={styles.startAction} href={`/training/${DEMO_TRAINING_SESSION_ID}`}>
-            Начать тренировку
-          </Link>
-        </article>
+      {!hasModules ? (
+        <CatalogEmptyState />
+      ) : (
+        <section aria-label="Доступные модули для тренировки" className={styles.grid}>
+          {sampleModule ? (
+            <article className={styles.panel}>
+              <div className={styles.meta}>
+                <Badge lang="ko" tone="accent">
+                  {sampleModule.level}
+                </Badge>
+                <span>{sampleExerciseCount} заданий</span>
+              </div>
+              <div className={styles.copy}>
+                {sampleModule.title.ko ? (
+                  <p className={styles.koreanTitle} lang="ko">
+                    {sampleModule.title.ko}
+                  </p>
+                ) : null}
+                <h2>{sampleModule.title.ru}</h2>
+                <p>
+                  В модуле доступно {sampleExerciseCount} заданий. Запустите демо-сессию и пройдите
+                  упражнения подряд.
+                </p>
+              </div>
+              <Link className={styles.startAction} href={`/training/${DEMO_TRAINING_SESSION_ID}`}>
+                Начать тренировку
+              </Link>
+            </article>
+          ) : null}
 
-        {honorificsModule ? (
-          <article className={styles.panel}>
-            <div className={styles.meta}>
-              <Badge tone="neutral">draft preview</Badge>
-              <span>{honorificsExerciseCount} заданий</span>
-            </div>
-            <div className={styles.copy}>
-              <p className={styles.koreanTitle} lang="ko">
-                {honorificsModule.title.ko}
-              </p>
-              <h2>{honorificsModule.title.ru}</h2>
-              <p>{honorificsModule.description.ru}</p>
-            </div>
-            <Link
-              className={styles.startAction}
-              href={`/training/${HONORIFICS_PREVIEW_SESSION_ID}`}
-            >
-              Начать preview-тренировку
-            </Link>
-          </article>
-        ) : null}
-      </section>
+          {honorificsModule ? (
+            <article className={styles.panel}>
+              <div className={styles.meta}>
+                <Badge tone="neutral">draft preview</Badge>
+                <span>{honorificsExerciseCount} заданий</span>
+              </div>
+              <div className={styles.copy}>
+                <p className={styles.koreanTitle} lang="ko">
+                  {honorificsModule.title.ko}
+                </p>
+                <h2>{honorificsModule.title.ru}</h2>
+                <p>{honorificsModule.description.ru}</p>
+              </div>
+              <Link
+                className={styles.startAction}
+                href={`/training/${HONORIFICS_PREVIEW_SESSION_ID}`}
+              >
+                Начать preview-тренировку
+              </Link>
+            </article>
+          ) : null}
+        </section>
+      )}
     </PageContainer>
   );
 }

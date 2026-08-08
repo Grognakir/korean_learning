@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import type { ReactNode } from "react";
+import { notFound } from "next/navigation";
 
+import { ExercisesEmptyState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import {
   DEMO_TRAINING_MODULE_SLUG,
@@ -67,32 +68,20 @@ export default async function SessionPage({ params }: SessionPageProps) {
   const session = resolveSession(sessionId);
 
   if (!session) {
-    return (
-      <PageContainer className={styles.page} width="narrow">
-        <PageHeader
-          description="Сейчас доступна только локальная демо-сессия."
-          title="Сессия не найдена"
-        />
-        <section className={styles.missing}>
-          <p>
-            Идентификатор <code>{sessionId}</code> не поддерживается. Откройте демо-сессию или
-            вернитесь к списку тренировок.
-          </p>
-          <div className={styles.missingActions}>
-            <Link className={styles.primaryAction} href={`/training/${DEMO_TRAINING_SESSION_ID}`}>
-              Открыть демо-сессию
-            </Link>
-            <Link className={styles.secondaryAction} href="/training">
-              К тренировке
-            </Link>
-          </div>
-        </section>
-      </PageContainer>
-    );
+    notFound();
   }
 
   const exercises = exerciseRepository.list({ moduleSlug: session.moduleSlug });
   const learningModule = learningModuleRegistry.getBySlug(session.moduleSlug);
+
+  if (exercises.length === 0) {
+    return (
+      <PageContainer className={styles.page} width="narrow">
+        <PageHeader description="Для выбранной сессии сейчас нет заданий." title="Учебная сессия" />
+        <ExercisesEmptyState />
+      </PageContainer>
+    );
+  }
 
   return (
     <PageContainer className={styles.page} width="narrow">

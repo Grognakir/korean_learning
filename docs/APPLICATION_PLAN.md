@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I19 завершены; CP-1A принят.
+- **Общее состояние:** F1-I01–F1-I20 завершены; CP-1A принят.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I19 training results — `done`.
+- **Текущая итерация:** F1-I20 application states — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** training loop, draft 높임말, CP-1A UI polish, guest persistence, экран результата с retry ошибок.
-- **Выполненные проверки:** Prettier, ESLint, 211/211 теста, typecheck и production build зелёные.
-- **Сейчас работает:** после completion — score/темы/ошибки; «Повторить ошибки» / «Новая тренировка»; active localStorage очищается.
-- **Пока не работает:** loading/error/empty states (F1-I20+), server sync, auth.
-- **Следующий конкретный шаг:** F1-I20 (`feature/application-states`) по отдельному запросу.
-- **Блокирующие вопросы:** нет для перехода к F1-I20.
+- **Уже сделано:** training loop, persistence, results, loading/error/404/empty states.
+- **Выполненные проверки:** Prettier, ESLint, 219/219 теста, typecheck и production build зелёные.
+- **Сейчас работает:** глобальные loading/error/not-found; empty каталог/темы/задания; guest progress/review; `notFound()` для неизвестных module/session.
+- **Пока не работает:** integration suite (F1-I21+), Playwright, server sync, auth.
+- **Следующий конкретный шаг:** F1-I21 (`test/framework-integration`) по отдельному запросу.
+- **Блокирующие вопросы:** нет для перехода к F1-I21.
 - **Решения, требующие подтверждения:** CP-2/CP-3/CP-4/CP-5 позже.
 - **Последнее обновление:** 2026-08-08.
 
@@ -572,7 +572,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I20 — Loading, error, not-found и empty states
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** предсказуемое поведение при пограничных состояниях.
 - **Входные зависимости:** F1-I19.
 - **Задачи:** global/route loading; error boundary reset; 404; no modules/exercises/progress/review; invalid/expired session; safe error messages.

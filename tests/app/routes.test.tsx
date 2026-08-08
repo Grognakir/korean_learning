@@ -58,13 +58,4 @@ describe("application routes", () => {
     expect(screen.getByRole("heading", { level: 1, name: "Учебная сессия" })).toBeInTheDocument();
     expect(screen.getByRole("progressbar")).toBeInTheDocument();
   });
-
-  it("shows a clear message for unknown session ids", async () => {
-    render(await SessionPage({ params: Promise.resolve({ sessionId: "missing-session" }) }));
-
-    expect(
-      screen.getByRole("heading", { level: 1, name: "Сессия не найдена" }),
-    ).toBeInTheDocument();
-    expect(screen.getByText("missing-session")).toBeInTheDocument();
-  });
 });

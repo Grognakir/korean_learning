@@ -4,22 +4,22 @@
 
 ## Чем занимаемся
 
-F1-I19 завершена: экран результата тренировки. Следующая итерация — F1-I20 (loading/error/empty states), не начинать в этом шаге.
+F1-I20 завершена: loading / error / not-found / empty states. Следующая итерация — F1-I21 (integration tests), не начинать в этом шаге.
 
 ## Принятые решения
 
 - CP-1A принят.
-- Result snapshot строится только из completed `TrainingSessionState`.
-- «Повторить ошибки» → `mode: "review"` без shuffle (исходный порядок mistake ids).
-- После snapshot active localStorage очищается идемпотентно; снимок живёт в состоянии вкладки.
-- «Новая тренировка» → `/training`.
+- Next.js 16 `error.tsx` использует `retry` (рекомендовано docs; `reset` оставлен API для спецслучаев).
+- Пользовательские сообщения без stack/SQL/env/raw error; `console.error` только в development.
+- Неизвестные module/session → `notFound()`.
+- Guest progress/review — EmptyState до облака; `ServiceUnavailableState` готов к reuse.
 
 ## Открытые задачи
 
-- [ ] Следующая карточка: F1-I20 (`feature/application-states`) — только по запросу.
+- [ ] Следующая карточка: F1-I21 (`test/framework-integration`) — только по запросу.
 - [ ] Не пушить ветку без разрешения.
 
 ## Контекст
 
-Ветка: `feature/training-results` (от `fix/training-modules-grid` → F1-I18).
-Gate: 211 tests + build зелёные.
+Ветка: `feature/application-states`.
+Gate: 219 tests + build зелёные.

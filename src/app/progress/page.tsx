@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 
-import { RoutePlaceholder } from "@/components/layout";
+import { GuestFeatureEmptyState } from "@/components/feedback";
+import { PageHeader } from "@/components/layout";
+import { PageContainer } from "@/wrappers";
+
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Прогресс",
@@ -8,11 +12,16 @@ export const metadata: Metadata = {
 
 export default function ProgressPage() {
   return (
-    <RoutePlaceholder
-      actions={[{ href: "/topics", label: "Выбрать следующую тему" }]}
-      description="Статистика покажет регулярность, освоенные темы и точки для повторения."
-      eyebrow="Результаты"
-      title="Прогресс"
-    />
+    <PageContainer className={styles.page}>
+      <PageHeader
+        description="Статистика регулярности и освоенных тем появится после облачной синхронизации."
+        eyebrow="Результаты"
+        title="Прогресс"
+      />
+      <GuestFeatureEmptyState
+        description="Пока доступна только локальная тренировка. Облачный прогресс гостя появится после подключения аккаунта."
+        title="Прогресс пока недоступен"
+      />
+    </PageContainer>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { TopicsEmptyState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import { Badge } from "@/components/ui";
 import { selectPublishedTopics } from "@/features/training";
@@ -68,20 +69,24 @@ export default async function ModulePage({ params }: ModulePageProps) {
         eyebrow="Содержание"
         title="Темы модуля"
       >
-        <ol className={styles.topicGrid}>
-          {topics.map((topic, index) => (
-            <li className={styles.topicCard} key={topic.id}>
-              <span className={styles.topicNumber}>{String(index + 1).padStart(2, "0")}</span>
-              <div>
-                <p className={styles.topicKoreanTitle} lang="ko">
-                  {topic.title.ko}
-                </p>
-                <h3>{topic.title.ru}</h3>
-                <p>{topic.summary.ru}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
+        {topics.length === 0 ? (
+          <TopicsEmptyState />
+        ) : (
+          <ol className={styles.topicGrid}>
+            {topics.map((topic, index) => (
+              <li className={styles.topicCard} key={topic.id}>
+                <span className={styles.topicNumber}>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <p className={styles.topicKoreanTitle} lang="ko">
+                    {topic.title.ko}
+                  </p>
+                  <h3>{topic.title.ru}</h3>
+                  <p>{topic.summary.ru}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        )}
       </ContentSection>
     </PageContainer>
   );

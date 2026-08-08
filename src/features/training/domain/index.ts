@@ -51,3 +51,35 @@ export type {
   PlainChoiceExercise,
 } from "./exercise";
 export { selectPublishedModules, selectPublishedTopics } from "./moduleSelectors";
+export {
+  TRAINING_SESSION_MODES,
+  TRAINING_SESSION_SCHEMA_VERSION,
+  TRAINING_SESSION_STATUSES,
+  TrainingSessionError,
+  createTrainingSession,
+  seededShuffle,
+  selectCurrentAttempt,
+  selectCurrentExercise,
+  selectCurrentExerciseId,
+  selectHasAnsweredCurrent,
+  selectMistakeExerciseIds,
+  selectProgress,
+  selectResultSummary,
+  selectScoreSummary,
+  submitTrainingAnswer,
+  trainingSessionReducer,
+} from "./session";
+export type {
+  TrainingAttemptSnapshot,
+  TrainingSessionAction,
+  TrainingSessionConfig,
+  TrainingSessionContentSnapshot,
+  TrainingSessionErrorCode,
+  TrainingSessionMode,
+  TrainingSessionProgress,
+  TrainingSessionResultSummary,
+  TrainingSessionSchemaVersion,
+  TrainingSessionScoreSummary,
+  TrainingSessionState,
+  TrainingSessionStatus,
+} from "./session";

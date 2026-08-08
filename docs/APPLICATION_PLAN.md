@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I15 завершены; остаток фазы 1 подробно зафиксирован в `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`.
+- **Общее состояние:** F1-I01–F1-I16 завершены; остаток фазы 1 подробно зафиксирован в `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I15 — детерминированная проверка ответов; завершена.
+- **Текущая итерация:** F1-I16 — движок тренировочной сессии; завершена.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** адаптивная оболочка и маршруты, общие UI/feedback-компоненты, доменные контракты module/topic/exercise, Zod-валидация, ModuleRegistry, 14 sample-упражнений семи типов, `ExerciseRepository`/`LocalExerciseRepository`, детерминированный evaluator (`CheckerRegistry` / `evaluateAnswer`) для всех семи типов.
-- **Выполненные проверки:** Prettier, ESLint, 124/124 теста в 34 файлах, `next typegen`, строгий `tsc --noEmit` и production build проходят на Node.js 24.18.0 и pnpm 10.34.5.
-- **Сейчас работает:** каталог из registry/repository и чистое ядро оценки ответов без React/Supabase/OpenAI.
-- **Пока не работает:** session engine, интерактивная тренировка, локальное возобновление, результаты, E2E, Supabase, авторизация, server persistence, прогресс и review queue.
-- **Следующий конкретный шаг:** только F1-I16 по `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`; F1-I17 не начинать в той же итерации.
-- **Блокирующие вопросы:** нет для перехода к F1-I16; CP-1A/CP-2/CP-3/CP-4/CP-5 остаются жёсткими остановками позже.
+- **Уже сделано:** адаптивная оболочка и маршруты, UI/feedback-компоненты, module/topic/exercise contracts, Zod, ModuleRegistry, sample exercises, LocalExerciseRepository, детерминированный evaluator, сериализуемый training session engine (create/submit/next/abandon + selectors).
+- **Выполненные проверки:** Prettier, ESLint, 141/141 теста в 35 файлах, `next typegen`, строгий `tsc --noEmit` и production build проходят на Node.js 24.18.0 и pnpm 10.34.5.
+- **Сейчас работает:** каталог контента, оценка ответов и чистая session state machine вне React.
+- **Пока не работает:** интерактивный UI тренировки, локальное возобновление, результаты, E2E, Supabase, авторизация, server persistence, прогресс и review queue.
+- **Следующий конкретный шаг:** только F1-I17 по `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`; F1-I17A не начинать в той же итерации.
+- **Блокирующие вопросы:** нет для перехода к F1-I17; CP-1A/CP-2/CP-3/CP-4/CP-5 остаются жёсткими остановками позже.
 - **Решения, требующие подтверждения:** CP-1A, CP-2, CP-3, CP-4 и CP-5 подтверждаются в точках, указанных в исполнимом плане.
 - **Последнее обновление:** 2026-08-08.
 
@@ -487,7 +487,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I16 — Движок тренировочной сессии
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** управлять полным жизненным циклом тренировки вне React.
 - **Входные зависимости:** F1-I15.
 - **Задачи:** session factory/reducer; queue selection/shuffle с seed; submit/next/complete/abandon; idempotency; score and error summary.

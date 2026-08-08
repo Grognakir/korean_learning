@@ -2,17 +2,17 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I23 локально и в CI готовы; UI polish каталогов на `fix/topics-modules-grid`; CP-1A принят; CP-2 ещё не принят.
+- **Общее состояние:** F1-I01–F1-I23 завершены; CP-1A и CP-2 приняты; UI polish на `fix/topics-modules-grid`.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I23 framework quality gate — `blocked` (ожидает «CP-2 принят»).
-- **Статус текущей итерации:** `blocked`.
-- **Уже сделано:** training loop, persistence, results, states, unit/integration/e2e; quality gate F1-I23; polish сеток/home/dictionary.
+- **Текущая итерация:** F1-I23 framework quality gate — `done`.
+- **Статус текущей итерации:** `done`.
+- **Уже сделано:** локальный каркас, quality gate, e2e, CI checkpoint-ветки; polish каталогов/home/dictionary.
 - **Выполненные проверки:** локальный full gate; внешний CI `chore/framework-quality-gate` зелёный ([run 31256971883](https://github.com/Grognakir/korean_learning/actions/runs/31256971883)).
-- **Сейчас работает:** локальный каркас + Playwright; draft honorifics только в development.
-- **Пока не работает:** server sync, auth, Vercel preview (F1-I24 / CP-3).
-- **Следующий конкретный шаг:** принять CP-2; затем F1-I24 только после отдельного CP-3.
-- **Блокирующие вопросы:** явное «CP-2 принят»; для F1-I24 — отдельное «CP-3» на Vercel.
-- **Решения, требующие подтверждения:** CP-2 сейчас; CP-3/CP-4/CP-5 позже.
+- **Сейчас работает:** стабильный локальный каркас перед первым Vercel preview.
+- **Пока не работает:** Vercel preview (F1-I24), server sync, auth.
+- **Следующий конкретный шаг:** F1-I24 (`chore/vercel-preview`) только после явного CP-3.
+- **Блокирующие вопросы:** явное разрешение CP-3 на действия с Vercel.
+- **Решения, требующие подтверждения:** CP-3 сейчас; CP-4/CP-5 позже.
 - **Последнее обновление:** 2026-08-08.
 
 ## 1. Цель, результат и границы
@@ -623,7 +623,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I23 — Production build, performance и доступность каркаса
 
-- **Фаза / статус:** 1 / `blocked` (локальный gate зелёный; push/CI/CP-2).
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** принять каркас перед внешним деплоем по локальному gate и внешнему CI checkpoint-ветки.
 - **Входные зависимости:** F1-I22.
 - **Задачи:** полный local quality run; build/start smoke; bundle and client boundary review; metadata; accessibility audit; console/network errors; после отдельного разрешения push `chore/framework-quality-gate` и зелёный внешний CI; corrective iteration if needed; CP-2.

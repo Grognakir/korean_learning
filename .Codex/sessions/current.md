@@ -4,24 +4,22 @@
 
 ## Чем занимаемся
 
-UI polish каталогов/home закрыт на `fix/topics-modules-grid`. F1-I23 CI зелёный. План остановлен на **CP-2**.
+**CP-2 принят.** F1-I23 закрыта. Следующая карточка — F1-I24 (Vercel preview), но только после явного CP-3. Не начинать без CP-3.
 
 ## Принятые решения
 
 - CP-1A принят.
+- CP-2 принят пользователем.
 - F1-I23 CI: https://github.com/Grognakir/korean_learning/actions/runs/31256971883
-- Page top padding: `3.75rem` (60px) на всех app pages.
-- Без section eyebrows на основных экранах.
-- Сетки каталогов: 1→2→3, 1–2 карточки слева.
-- Dictionary как progress/review empty state.
+- UI polish на `fix/topics-modules-grid` (padding 60px, без eyebrows, сетки, dictionary empty state).
 
 ## Открытые задачи
 
-- [ ] Пользователь: **CP-2 принят** (закрывает F1-I23).
-- [ ] После CP-2: F1-I24 только при отдельном **CP-3** (Vercel).
+- [ ] Пользователь: явное **CP-3** (разрешение на Vercel / preview deploy).
+- [ ] После CP-3: F1-I24 `chore/vercel-preview`.
 - [ ] Опционально: push `fix/topics-modules-grid`.
 
 ## Контекст
 
-Ветка: `fix/topics-modules-grid` (17 коммитов поверх `ff2411b`).
-Следующая карточка: F1-I24 `chore/vercel-preview` — blocked до CP-2 + CP-3.
+Ветка: `fix/topics-modules-grid`.
+План: F1-I24 blocked до CP-3.

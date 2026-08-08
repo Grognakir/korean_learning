@@ -94,7 +94,7 @@ jobs:
         run: supabase start
 
       - name: Run database tests
-        run: pnpm test:db
+        run: pnpm test:db && pnpm test:rls
 
       - name: Stop local Supabase
         if: always()

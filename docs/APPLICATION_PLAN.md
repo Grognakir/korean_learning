@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I26 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
+- **Общее состояние:** F1-I01–F1-I27 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I26 database schema — `done`.
+- **Текущая итерация:** F1-I27 Row Level Security — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** versioned migrations + deterministic seed; generated `database.ts`; DB CI job; `pnpm test:db` (5 tests).
-- **Выполненные проверки:** format/lint/typecheck/230 unit/17 integration/5 db/build на Node 24.18.0.
-- **Сейчас работает:** `pnpm supabase:reset`, `db:seed`, `db:types`, `test:db`; local schema из 4 migrations + seed (1 module, 14 exercises).
-- **Пока не работает:** RLS (F1-I27); auth UI (F1-I28).
-- **Следующий конкретный шаг:** F1-I27 Row Level Security — без дополнительного CP.
+- **Уже сделано:** RLS policies на всех exposed tables; view `exercise_options_public`; tightened grants; `pnpm test:rls` (9 tests).
+- **Выполненные проверки:** format/lint/typecheck/230 unit/17 integration/5 db/9 rls/build на Node 24.18.0.
+- **Сейчас работает:** deny-by-default RLS; anon читает только published/approved content; owner isolation для profiles/sessions; direct client writes в attempts/review_queue заблокированы.
+- **Пока не работает:** auth UI (F1-I28).
+- **Следующий конкретный шаг:** F1-I28 Supabase Auth — без дополнительного CP.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed.
 - **Последнее обновление:** 2026-08-09.
@@ -691,7 +691,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I27 — Row Level Security и проверка доступа
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** запретить межпользовательский доступ и изменение утверждённого контента.
 - **Входные зависимости:** F1-I26.
 - **Задачи:** enable RLS на всех exposed tables; public read only approved/published content; owner policies для profile/session/attempt/review/progress; запрет client writes в content/AI review; SQL security tests; расширить DB CI job матрицей доступов.
@@ -700,7 +700,7 @@ MVP включает каталог тем, прохождение и возоб
 - **Данные / БД:** policies, grants, helper functions с безопасным `search_path` при необходимости.
 - **Тесты:** anonymous/auth user A/user B/admin-server matrix; select/insert/update/delete; unpublished content hidden.
 - **Ручная проверка:** policy inspection и попытки доступа с anon/user tokens.
-- **Критерии готовности:** deny-by-default доказан тестами, service role не нужен клиенту.
+- **Критерии готовности:** deny-by-default доказан тестами, service role не нужен клиенту — выполнено.
 - **Ожидаемый результат:** изолированные пользовательские данные.
 - **Риски:** policy recursion/privilege escalation; минимизировать security-definer functions.
 - **Ветка / коммит:** `feature/database-rls` / `feat: secure database with row level security`.

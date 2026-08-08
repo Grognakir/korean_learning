@@ -972,10 +972,57 @@ export type Database = {
       };
     };
     Views: {
-      [_ in never]: never;
+      exercise_options_public: {
+        Row: {
+          exercise_id: string | null;
+          explanation_ru: string | null;
+          id: string | null;
+          label_ko: string | null;
+          label_ru: string | null;
+          option_key: string | null;
+          sort_order: number | null;
+          value_payload: Json | null;
+        };
+        Insert: {
+          exercise_id?: string | null;
+          explanation_ru?: string | null;
+          id?: string | null;
+          label_ko?: string | null;
+          label_ru?: string | null;
+          option_key?: string | null;
+          sort_order?: number | null;
+          value_payload?: Json | null;
+        };
+        Update: {
+          exercise_id?: string | null;
+          explanation_ru?: string | null;
+          id?: string | null;
+          label_ko?: string | null;
+          label_ru?: string | null;
+          option_key?: string | null;
+          sort_order?: number | null;
+          value_payload?: Json | null;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "exercise_options_exercise_id_fkey";
+            columns: ["exercise_id"];
+            isOneToOne: false;
+            referencedRelation: "exercises";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
     };
     Functions: {
+      is_public_exercise: { Args: { p_exercise_id: string }; Returns: boolean };
+      is_published_module: { Args: { p_module_id: string }; Returns: boolean };
+      is_published_topic: { Args: { p_topic_id: string }; Returns: boolean };
       is_semver: { Args: { "": string }; Returns: boolean };
+      owns_training_session: {
+        Args: { p_session_id: string };
+        Returns: boolean;
+      };
     };
     Enums: {
       accepted_answer_review_status: "pending" | "approved" | "rejected";

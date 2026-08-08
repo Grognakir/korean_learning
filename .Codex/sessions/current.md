@@ -4,7 +4,7 @@
 
 ## Чем занимаемся
 
-F1-I26 закрыта. Следующая карточка — **F1-I27** (RLS) — только по отдельному запросу.
+F1-I27 закрыта. Следующая карточка — **F1-I28** (Supabase Auth) — только по отдельному запросу.
 
 ## Принятые решения
 
@@ -19,10 +19,10 @@ F1-I26 закрыта. Следующая карточка — **F1-I27** (RLS) 
 ## Открытые задачи
 
 - [ ] Отозвать/перевыпустить Supabase access token (был в чате).
-- [ ] F1-I27 RLS — по отдельному запросу.
+- [ ] F1-I28 Supabase Auth — по отдельному запросу.
 
 ## Контекст
 
-Ветка: `feature/database-schema` (`feat: add initial database schema`).
-Gate: format/lint/typecheck/230 unit/17 integration/5 db/build на Node 24.18.0.
-Seed: 1 module, 2 topics, 14 exercises, 15 content reviews.
+Ветка: `feature/database-rls` (`feat: secure database with row level security`).
+Gate: format/lint/typecheck/230 unit/17 integration/5 db/9 rls/build на Node 24.18.0.
+RLS: published/approved content для anon; owner isolation; `exercise_options_public` без `is_correct`.

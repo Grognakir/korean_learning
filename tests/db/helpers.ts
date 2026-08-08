@@ -6,6 +6,7 @@ import type { Database } from "@/types/database";
 
 type LocalSupabaseEnv = {
   apiUrl: string;
+  anonKey: string;
   serviceRoleKey: string;
   dbUrl: string;
 };
@@ -35,11 +36,12 @@ export function getLocalSupabaseEnv(): LocalSupabaseEnv {
 
   cachedEnv = {
     apiUrl: env.API_URL ?? "",
+    anonKey: env.ANON_KEY ?? "",
     serviceRoleKey: env.SERVICE_ROLE_KEY ?? "",
     dbUrl: env.DB_URL ?? "",
   };
 
-  if (!cachedEnv.apiUrl || !cachedEnv.serviceRoleKey || !cachedEnv.dbUrl) {
+  if (!cachedEnv.apiUrl || !cachedEnv.anonKey || !cachedEnv.serviceRoleKey || !cachedEnv.dbUrl) {
     throw new Error("Local Supabase is not running. Start it with `pnpm supabase:start`.");
   }
 
@@ -50,6 +52,25 @@ export function createLocalAdminClient(): SupabaseClient<Database> {
   const { apiUrl, serviceRoleKey } = getLocalSupabaseEnv();
   return createClient<Database>(apiUrl, serviceRoleKey, {
     auth: { persistSession: false, autoRefreshToken: false },
+  });
+}
+
+export function createLocalAnonClient(): SupabaseClient<Database> {
+  const { apiUrl, anonKey } = getLocalSupabaseEnv();
+  return createClient<Database>(apiUrl, anonKey, {
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+}
+
+export function createLocalUserClient(accessToken: string): SupabaseClient<Database> {
+  const { apiUrl, anonKey } = getLocalSupabaseEnv();
+  return createClient<Database>(apiUrl, anonKey, {
+    auth: { persistSession: false, autoRefreshToken: false },
+    global: {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    },
   });
 }
 

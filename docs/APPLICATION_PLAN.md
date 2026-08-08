@@ -9,10 +9,10 @@
 - **Уже сделано:** Vercel preview; Supabase CLI config + env Zod + browser/server clients; local Docker stack.
 - **Выполненные проверки:** format/lint/typecheck/230 unit/17 integration/build на Node 24.18.0; auth health 200 на local Supabase.
 - **Сейчас работает:** `@supabase/ssr` client boundary; `pnpm supabase:start|stop|status`; `.env.example` без секретов.
-- **Пока не работает:** schema/migrations (F1-I26); auth UI (F1-I28); remote cloud project link (нужен `supabase login` + link).
+- **Пока не работает:** schema/migrations (F1-I26); auth UI (F1-I28).
 - **Следующий конкретный шаг:** F1-I26 database schema — без дополнительного CP.
-- **Блокирующие вопросы:** нет для остановки на F1-I25.
-- **Решения, требующие подтверждения:** remote Supabase project в dashboard (опционально до F1-I26).
+- **Блокирующие вопросы:** нет.
+- **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed.
 - **Последнее обновление:** 2026-08-09.
 
 ## 1. Цель, результат и границы
@@ -668,7 +668,7 @@ MVP включает каталог тем, прохождение и возоб
 - **Ручная проверка:** auth health 200 на local stack (`supabase start`); secrets не в client bundle.
 - **Критерии готовности:** разделены public publishable и server-only secrets — выполнено.
 - **Ожидаемый результат:** безопасный infrastructure boundary.
-- **Риски / P2:** remote cloud project не линкован (нужен `supabase login`); session refresh Proxy — F1-I28.
+- **Риски / P2:** session refresh Proxy — F1-I28; remote linked (`cyoezrdxqncroflgkyry`).
 - **Ветка / коммит:** `feature/supabase-foundation` / `feat: add Supabase client foundation`.
 - **Следующий шаг:** F1-I26.
 

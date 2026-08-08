@@ -77,7 +77,9 @@
 
 .panelContent {
   display: grid;
-  align-content: center;
+  min-block-size: 16rem;
+  grid-template-rows: auto auto minmax(2.75rem, 1fr);
+  align-content: stretch;
   justify-items: start;
   gap: var(--space-6);
 }
@@ -93,6 +95,7 @@
 
 .actions {
   display: flex;
+  align-self: end;
   flex-wrap: wrap;
   gap: var(--space-3);
 }
@@ -135,6 +138,11 @@
   .primaryAction,
   .secondaryAction {
     width: 100%;
+  }
+
+  .primaryAction,
+  .secondaryAction {
+    min-height: 3.5rem;
   }
 }
 

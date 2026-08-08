@@ -95,7 +95,7 @@
 - Service-role key не импортируется в браузерный граф и не используется там, где достаточно authenticated Supabase client + RLS.
 - Все timestamps в domain/session/storage — ISO-строки, не `Date`; состояние обязано сериализоваться JSON.
 - Случайность в тестируемом domain-коде всегда задаётся seed или инъецируемой функцией.
-- Любая внешняя запись, deploy, создание проекта, миграция удалённой БД, push или merge выполняются только в разрешённой контрольной точке.
+- Любая внешняя запись, deploy, создание проекта, миграция удалённой БД, push или merge выполняются только в разрешённой контрольной точке и по правилам раздела 4.6.
 
 ### 4.4. Минимальные проверки каждой кодовой итерации
 
@@ -120,6 +120,13 @@ pnpm test:rls
 
 Нельзя удалять или ослаблять существующий тест только ради зелёного запуска. Изменение ожидания допустимо лишь при подтверждённом изменении пользовательского поведения текущей итерации.
 
+#### Политика версий runtime
+
+- Local development и GitHub Actions используют точные Node.js `24.18.0` из `.nvmrc` и pnpm `10.34.5` из `packageManager`/CI setup.
+- Vercel использует актуальную поддерживаемую patch/minor-версию Node `24.x`: платформа не гарантирует точный patch. Фактическая версия обязана удовлетворять `package.json#engines.node` (`>=24.18.0 <25`) и фиксируется в отчёте deployment через build log/`node -v`.
+- pnpm на Vercel остаётся точным `10.34.5` через `packageManager`; install log должен подтвердить версию.
+- Если точный local/CI runtime больше нельзя получить, запрещён молчаливый fallback. Остановиться, отдельно согласовать новый pin, синхронно обновить `.nvmrc`, `package.json`, CI и этот план, затем повторить полный baseline gate.
+
 ### 4.5. Порядок работы внутри итерации
 
 Внутри каждой карточки соблюдать один порядок:
@@ -135,6 +142,16 @@ pnpm test:rls
 9. Отправить отчёт по формату раздела 28 и остановиться.
 
 Если новый тест не может быть сначала красным, потому что он только фиксирует уже существующий contract, в отчёте отдельно указать это и объяснить, какую регрессию он предотвращает.
+
+### 4.6. Локальные проверки и внешний CI
+
+- Каждая итерация F1-I15–F1-I33 полностью проверяется локально по разделам 4.4–4.5 до коммита.
+- Промежуточные iteration branches не пушить и отдельные PR для каждой итерации не открывать. Единственное исключение — `chore/vercel-preview`: её push разрешён только после CP-3 и используется для Vercel preview, но не добавляется в CI `push.branches`.
+- В F1-I21 расширить `push.branches` текущего workflow ровно тремя значениями: `main`, `chore/framework-quality-gate`, `chore/framework-stabilization`. Сохранить `pull_request` в `main` и `workflow_dispatch`; другие рабочие ветки в `push` не добавлять.
+- После локального F1-I23 запросить разрешение на push ветки `chore/framework-quality-gate`. CP-2 считается технически готовой только после зелёного внешнего CI с checks, integration и E2E и последующего принятия пользователем.
+- После локального F1-I33 запросить разрешение на push ветки `chore/framework-stabilization`. CP-5 считается технически готовой только после зелёного внешнего CI со всеми появившимися checks, integration, E2E, DB и RLS jobs и последующего принятия пользователем.
+- `workflow_dispatch` запускать только по отдельной явной команде пользователя. PR в `main` продолжает запускать CI, если пользователь отдельно распорядится открыть PR, но PR не является обязательным шагом каждой итерации.
+- Push, открытие/закрытие PR и merge не следуют автоматически из зелёных локальных тестов. Merge никогда не выполнять без отдельного явного указания.
 
 ## 5. Карта последовательности и жёсткие остановки
 
@@ -675,7 +692,7 @@ Repository, evaluator, session engine, persistence и feature boundaries про�
 - `tests/factories/exerciseFactory.ts`
 - `tests/factories/sessionFactory.ts`
 - дополнительные helpers с fake clock/storage/seed
-- отдельный `vitest.integration.config.ts`
+- отдельный `vitest.integration.config.mts`, сохраняющий ESM-формат существующего `vitest.config.mts`
 - scripts в `package.json`
 - job/step в `.github/workflows/ci.yml`
 
@@ -686,6 +703,7 @@ Repository, evaluator, session engine, persistence и feature boundaries про�
 - `pnpm test:run` не выполняет integration второй раз.
 - `pnpm test:integration` запускает integration suite один раз.
 - Общий CI `checks` выполняет оба scripts после typecheck.
+- Workflow получает checkpoint-only `push.branches` из раздела 4.6; push-триггеры других iteration branches не добавляются.
 
 Не создавать второй setup с расходящимися globals; общий `tests/helpers/setup.ts` переиспользуется либо явно расширяется.
 
@@ -766,7 +784,7 @@ Repository, evaluator, session engine, persistence и feature boundaries про�
 ### CI
 
 - E2E job зависит от static checks/build.
-- Запускать для `pull_request` в `main` и `workflow_dispatch`.
+- Запускать для `pull_request` в `main`, `workflow_dispatch` и push только веток `chore/framework-quality-gate`/`chore/framework-stabilization`.
 - Не запускать полный browser suite на каждый push рабочей ветки.
 - Использовать concurrency cancellation.
 - Upload artifacts выполняется только при failure и не содержит env/secrets.
@@ -781,7 +799,7 @@ Repository, evaluator, session engine, persistence и feature boundaries про�
 
 ### Результат
 
-Локальный каркас принят как стабильный перед первым внешним deploy.
+Каркас подтверждён локальным quality gate и внешним CI checkpoint-ветки перед первым deploy.
 
 ### Ветка и коммит
 
@@ -800,6 +818,7 @@ Repository, evaluator, session engine, persistence и feature boundaries про�
 8. Проверка focus order, live regions, fieldset/labels и targets ≥44 px.
 9. Lighthouse используется как диагностика; не подгонять код под один score ценой UX или архитектуры.
 10. Проверка, что draft honorifics недоступен production build.
+11. После полного локального gate запросить разрешение на push `chore/framework-quality-gate`, выполнить push и дождаться внешнего CI.
 
 ### Исправления
 
@@ -807,11 +826,11 @@ Repository, evaluator, session engine, persistence и feature boundaries про�
 
 ### Обязательный отчёт в статусе
 
-Зафиксировать команды, количество test files/tests, browser matrix, известные P2 и отсутствие P0/P1. Отдельный отчётный файл не создавать.
+Зафиксировать команды, количество test files/tests, browser matrix, URL/conclusion внешнего CI run, известные P2 и отсутствие P0/P1. Отдельный отчётный файл не создавать.
 
 ### CP-2
 
-После зелёного quality gate исполнитель останавливается и просит принять CP-2. Даже при полном техническом успехе нельзя начинать F1-I24 без CP-2 и отдельного CP-3 на внешнее действие.
+После зелёных локального gate и внешнего CI исполнитель останавливается и просит принять CP-2. Если push не разрешён или внешний CI не зелёный, CP-2 остаётся незавершённой. Даже при полном техническом успехе нельзя начинать F1-I24 без CP-2 и отдельного CP-3 на Vercel.
 
 ## 16. F1-I24 — Первый Vercel preview deployment
 
@@ -832,9 +851,9 @@ Repository, evaluator, session engine, persistence и feature boundaries про�
 
 1. Проверить, существует ли Vercel project; не создавать второй проект с похожим именем.
 2. Связать repository/root без коммита `.vercel/`.
-3. Проверить, что Vercel использует repository config с Node.js 24.18.0 и pnpm 10.34.5; при несовпадении явно задать те же версии до deployment.
+3. Настроить Vercel на Node `24.x`; подтвердить в build log фактическую версию `>=24.18.0 <25`. Точный patch `24.18.0` на Vercel не требовать. Подтвердить pnpm `10.34.5` из `packageManager`.
 4. Не добавлять environment variables, которые ещё не нужны.
-5. Создать preview из текущей ветки.
+5. После уже полученного CP-3 выполнить push `chore/vercel-preview`; связанный Vercel project создаёт preview через Git integration. Не использовать production deploy/promote.
 6. Проверить build log, install с frozen lockfile и отсутствие secret warnings.
 7. Выполнить smoke: `/`, `/topics`, `/topics/sample-module`, `/training`, `/training/demo-session`, result/retry path, invalid route и refresh dynamic route.
 8. Проверить desktop/mobile, console и network failures.
@@ -848,6 +867,7 @@ Repository, evaluator, session engine, persistence и feature boundaries про�
 ### Тесты
 
 - Локальный полный suite остаётся зелёным.
+- Deployment report содержит фактические `node -v` и `pnpm -v`; Node удовлетворяет engines range, pnpm равен `10.34.5`.
 - Preview smoke можно выполнить существующим Playwright config через временный `PLAYWRIGHT_BASE_URL`, не меняя default local suite.
 - Не хранить preview URL жёстко в тестах.
 
@@ -1466,11 +1486,25 @@ Phase 1 проходит полный quality gate на чистой среде 
 
 - Исправление найденных regression, accessibility, responsive, security, migration и test reliability defects.
 - Удаление dead code, debug logging и accidental answer leakage.
+- Обязательное удаление временного dev-only preview 높임말 из F1-I17A.
 - Уточнение существующих error/empty/loading messages.
 - Стабилизация flaky tests с устранением причины, а не увеличением retry.
 - Документирование подтверждённых ограничений и rollback steps в существующих docs.
 
 Любая новая функция, новая exercise type, новая метрика или новый workflow выносится за phase 1.
+
+### Обязательная очистка preview 높임말
+
+До финального full run:
+
+- удалить `src/modules/honorifics/domain/previewModule.ts` и `src/modules/honorifics/data/previewExercises.ts`;
+- удалить module-specific validation/tests, существующие только ради preview;
+- удалить development composition/registry gate, подключавший preview по `NODE_ENV`;
+- удалить пустые каталоги `src/modules/honorifics`, если после очистки в них не осталось production-кода;
+- обновить затронутые registry/composition tests и подтвердить поиском, что `previewModule`, `previewExercises` и preview slug больше не импортируются;
+- не переносить preview payload в Supabase, sample module или будущие phase 2 fixtures.
+
+Phase 2 создаёт канонический `src/modules/honorifics` заново по F2-I01–F2-I05. Источником старого preview при необходимости остаётся Git history, а не живой код.
 
 ### Полный прогон на чистой среде
 
@@ -1479,8 +1513,8 @@ Phase 1 проходит полный quality gate на чистой среде 
 3. Применить все migrations с нуля.
 4. Загрузить seed и проверить его повторяемость.
 5. Выполнить format, lint, typecheck, unit, component, integration, DB/RLS, E2E и production build.
-6. Развернуть новый preview из чистой ветки.
-7. Выполнить smoke matrix на preview.
+6. Запросить разрешение на push `chore/framework-stabilization`, выполнить push и дождаться полного внешнего CI и Git-integrated Vercel preview этой же ветки.
+7. Выполнить smoke matrix на созданном preview.
 
 ### Smoke matrix
 
@@ -1516,10 +1550,12 @@ Phase 1 проходит полный quality gate на чистой среде 
 
 - Все пункты раздела 27 отмечены фактическими evidence.
 - Три последовательных full runs зелёные.
+- Временный preview 높임말 и его development composition полностью удалены.
 - Preview smoke matrix пройдена.
+- Внешний CI ветки `chore/framework-stabilization` зелёный, включая DB/RLS jobs.
 - Нет незакрытых P0/P1/security issues.
 - Создан CP-5 отчёт с commit, preview URL, test totals и известными ограничениями.
-- После CP-5 остановиться. Production launch и phase 2 не начинать без явного решения пользователя.
+- Если push не разрешён или внешний CI не зелёный, CP-5 остаётся незавершённой. После принятия CP-5 остановиться. Production launch и phase 2 не начинать без явного решения пользователя.
 
 ## 26. Матрица обязательных тестов по итерациям
 
@@ -1534,7 +1570,7 @@ Phase 1 проходит полный quality gate на чистой среде 
 | F1-I20   | Component/route: loading/error/not-found/empty/retry                           |
 | F1-I21   | Integration: guest end-to-end flow across repository→engine→persistence→result |
 | F1-I22   | E2E: desktop/mobile critical journey, refresh, keyboard, no console errors     |
-| F1-I23   | Full local gate and regression confirmation                                    |
+| F1-I23   | Full local gate, checkpoint branch CI and regression confirmation              |
 | F1-I24   | Preview smoke, refresh/deep-link, env and console checks                       |
 | F1-I25   | Env/client factory tests and local Supabase connection smoke                   |
 | F1-I26   | Migration/constraint/seed tests on clean DB                                    |
@@ -1544,7 +1580,7 @@ Phase 1 проходит полный quality gate на чистой среде 
 | F1-I30   | API/service/DB/RLS: validation, ownership, idempotency, concurrency, rollback  |
 | F1-I31   | Calculation boundaries, DB aggregates, RLS and progress UI states              |
 | F1-I32   | Fake-clock policy, atomic queue, RLS and review UI states                      |
-| F1-I33   | Three complete gates plus preview smoke matrix                                 |
+| F1-I33   | Preview cleanup, three complete gates, checkpoint branch CI and smoke matrix   |
 
 Новый test file должен находиться рядом с tested unit либо в выделенном integration/e2e/db наборе. Нельзя дублировать unit suite в integration command. Любой flaky test считается defect, а не допустимым состоянием CI.
 
@@ -1562,11 +1598,13 @@ Phase 1 проходит полный quality gate на чистой среде 
 - [ ] Review queue соответствует политике F1-I32 и защищена RLS.
 - [ ] Anon, owner и other-user сценарии подтверждены DB/RLS tests.
 - [ ] Draft/rejected/unpublished content недоступен в production path.
+- [ ] Временный dev-only preview 높임말 из F1-I17A удалён до завершения F1-I33.
 - [ ] Loading, empty, not-found, error и retry states существуют на затронутых routes.
 - [ ] Mobile/desktop не имеют критических layout defects, скачков action buttons и horizontal scroll.
 - [ ] Format, lint, typecheck, unit, component, integration, DB/RLS, E2E и build зелёные.
 - [ ] Чистая установка, migrations и seed воспроизводимы.
 - [ ] Preview smoke matrix пройдена без console errors.
+- [ ] Внешний CI checkpoint-веток CP-2 и CP-5 завершён зелёным результатом.
 - [ ] Нет P0/P1/security defects; остальные ограничения перечислены явно.
 - [ ] `docs/APPLICATION_PLAN.md` и `.Codex/sessions/current.md` отражают фактическое состояние.
 - [ ] После CP-5 работа остановлена до следующего явного указания.

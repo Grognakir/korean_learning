@@ -40,10 +40,10 @@ MVP включает каталог тем, прохождение и возоб
 - **CP-0:** утверждение этого плана; открывает F1-I01.
 - **CP-1:** после F1-I11 — визуальная проверка оболочки, маршрутов и мобильного интерфейса.
 - **CP-1A:** после F1-I17A — проверка ощущения реальной короткой тренировки 높임말 и пригодности общего UI.
-- **CP-2:** после F1-I23 — локальный каркас, тесты и production build.
+- **CP-2:** после F1-I23 — локальный quality gate и внешний CI ветки `chore/framework-quality-gate`.
 - **CP-3:** перед F1-I24 — отдельное разрешение на создание/изменение Vercel-проекта и первый деплой.
 - **CP-4:** перед F1-I25 — предоставление/создание Supabase-проекта и согласование auth-настроек.
-- **CP-5:** после F1-I33 — приёмка рабочего каркаса.
+- **CP-5:** после F1-I33 — удаление временного preview-кода, полный локальный gate, preview smoke и внешний CI ветки `chore/framework-stabilization`.
 - **CP-6:** после F2-I05 — утверждение словаря, грамматических правил и спорных переводов.
 - **CP-7:** после F2-I18 — проверка всех типов упражнений и учебной обратной связи.
 - **CP-8:** после F2-I21 — языковая приёмка проверяющим.
@@ -52,7 +52,7 @@ MVP включает каталог тем, прохождение и возоб
 ## 3. Технологический фундамент
 
 - Next.js с App Router, React и строгий TypeScript.
-- Актуальная LTS-ветка Node.js на момент F1-I01; версия фиксируется в `.nvmrc` и `package.json#engines` после проверки совместимости с Next.js и Vercel.
+- Local development и GitHub Actions используют точный Node.js из `.nvmrc`; `package.json#engines` задаёт совместимый диапазон. Vercel использует актуальный поддерживаемый patch/minor выбранной major-ветки, поэтому фактическая версия проверяется и фиксируется в deployment report, а не приравнивается к local patch.
 - pnpm как единственный менеджер пакетов; точная версия фиксируется в `package.json#packageManager`, коммитится только `pnpm-lock.yaml`. Локальная и CI-установка настраивается явно и не полагается исключительно на встроенный в Node.js Corepack.
 - CSS Modules, обычный CSS, CSS Custom Properties, mobile-first.
 - Supabase PostgreSQL, Supabase Auth и RLS. Storage не создаётся, пока не появятся пользовательские файлы.
@@ -592,8 +592,8 @@ MVP включает каталог тем, прохождение и возоб
 - **Фаза / статус:** 1 / `planned`.
 - **Цель и зачем:** проверить взаимодействие repository, engine, persistence и UI.
 - **Входные зависимости:** F1-I20.
-- **Задачи:** factories/helpers; integration cases start→answer→resume→complete→retry; module routing; invalid data; добавить integration script в CI без дублирования unit run.
-- **Предполагаемые файлы:** `tests/integration/*`, `tests/factories/*`, `tests/helpers/*`, `package.json`, `.github/workflows/ci.yml`.
+- **Задачи:** factories/helpers; integration cases start→answer→resume→complete→retry; module routing; invalid data; добавить integration script в CI без дублирования unit run; добавить push-триггеры только для двух checkpoint-веток CP-2/CP-5.
+- **Предполагаемые файлы:** `tests/integration/*`, `tests/factories/*`, `tests/helpers/*`, `vitest.integration.config.mts`, `package.json`, `.github/workflows/ci.yml`.
 - **Компоненты:** тестируются готовые feature boundaries.
 - **Данные / БД:** isolated fixtures.
 - **Тесты:** happy path, incorrect path, reload, content-version mismatch, no exercises.
@@ -609,7 +609,7 @@ MVP включает каталог тем, прохождение и возоб
 - **Фаза / статус:** 1 / `planned`.
 - **Цель и зачем:** проверить приложение в реальном браузере.
 - **Входные зависимости:** F1-I21.
-- **Задачи:** Playwright config/webServer; desktop/mobile projects; traces/screenshots on failure; smoke navigation and full local training; добавить отдельный CI job для pull request в `main` и ручного запуска, с отменой устаревших runs; не запускать полный browser suite повторно на каждый push ветки.
+- **Задачи:** Playwright config/webServer; desktop/mobile projects; traces/screenshots on failure; smoke navigation and full local training; добавить отдельный CI job для pull request в `main`, ручного запуска и push двух checkpoint-веток; не запускать browser suite на остальных iteration branches.
 - **Предполагаемые файлы:** `playwright.config.*`, `tests/e2e/*`, `package.json`, `.gitignore`, `.github/workflows/ci.yml`.
 - **Компоненты:** сквозная проверка приложения.
 - **Данные / БД:** deterministic local fixtures.
@@ -624,15 +624,15 @@ MVP включает каталог тем, прохождение и возоб
 ### F1-I23 — Production build, performance и доступность каркаса
 
 - **Фаза / статус:** 1 / `planned`.
-- **Цель и зачем:** принять локальный каркас перед внешним деплоем.
+- **Цель и зачем:** принять каркас перед внешним деплоем по локальному gate и внешнему CI checkpoint-ветки.
 - **Входные зависимости:** F1-I22.
-- **Задачи:** полный quality run; build/start smoke; bundle and client boundary review; metadata; accessibility audit; console/network errors; corrective iteration if needed; CP-2.
+- **Задачи:** полный local quality run; build/start smoke; bundle and client boundary review; metadata; accessibility audit; console/network errors; после отдельного разрешения push `chore/framework-quality-gate` и зелёный внешний CI; corrective iteration if needed; CP-2.
 - **Предполагаемые файлы:** только исправления обнаруженных проблем; scripts при необходимости.
 - **Компоненты:** весь каркас.
 - **Данные / БД:** local only.
 - **Тесты:** typecheck, lint, unit, integration, e2e, build.
 - **Ручная проверка:** keyboard-only, 200% zoom, mobile/desktop, production server, Lighthouse как диагностический ориентир.
-- **Критерии готовности:** все ворота зелёные, нет P0/P1 дефектов, CP-2 принят.
+- **Критерии готовности:** локальные ворота и внешний CI зелёные, нет P0/P1 дефектов, CP-2 принят.
 - **Ожидаемый результат:** локально стабильный каркас.
 - **Риски:** найденные системные дефекты создадут fix iteration.
 - **Ветка / коммит:** `chore/framework-quality-gate` / `chore: verify application framework quality`.
@@ -643,7 +643,7 @@ MVP включает каталог тем, прохождение и возоб
 - **Фаза / статус:** 1 / `planned`.
 - **Цель и зачем:** подтвердить реальную сборку и hosting pipeline до Supabase.
 - **Входные зависимости:** F1-I23, CP-3, доступ к Vercel.
-- **Задачи:** связать проект; задать framework/root/node settings; deploy preview; проверить URL/logs; не публиковать production без отдельного подтверждения.
+- **Задачи:** связать проект; задать framework/root и Node `24.x`; подтвердить фактический Node `>=24.18.0 <25` и pnpm `10.34.5` в build log; после CP-3 push `chore/vercel-preview` для Git-integrated preview; проверить URL/logs; не публиковать production без отдельного подтверждения.
 - **Предполагаемые файлы:** `.vercelignore` или конфигурация только при реальной необходимости; `.env.example` без секретов.
 - **Компоненты:** без изменений.
 - **Данные / БД:** local content в preview.
@@ -796,13 +796,13 @@ MVP включает каталог тем, прохождение и возоб
 - **Фаза / статус:** 1 / `planned`.
 - **Цель и зачем:** принять фазу 1 как стабильную платформу для 높임말.
 - **Входные зависимости:** F1-I32.
-- **Задачи:** полный security/quality/data review; schema reset; preview smoke; auth/two-user tests; accessibility/mobile/performance; исправления отдельными fix iterations; CP-5.
+- **Задачи:** удалить dev-only preview 높임말 из F1-I17A и его composition; полный security/quality/data review; schema reset; preview smoke; auth/two-user tests; accessibility/mobile/performance; после отдельного разрешения push `chore/framework-stabilization` и зелёный полный внешний CI; исправления отдельными fix iterations; CP-5.
 - **Предполагаемые файлы:** только необходимые исправления и статусы.
 - **Компоненты:** весь каркас.
 - **Данные / БД:** verify migration/seed/RLS/backups.
 - **Тесты:** полный набор unit/integration/e2e/build плюс DB access matrix.
 - **Ручная проверка:** guest/auth, desktop/mobile, offline/error, preview deployment.
-- **Критерии готовности:** критерии раздела 16 выполнены; нет P0/P1; CP-5 принят.
+- **Критерии готовности:** preview-код F1-I17A удалён; критерии раздела 16 выполнены; локальные проверки и внешний CI зелёные; нет P0/P1; CP-5 принят.
 - **Ожидаемый результат:** рабочий модульно-независимый каркас.
 - **Риски:** инфраструктурные дефекты; фаза 2 не начинается до исправления.
 - **Ветка / коммит:** `chore/framework-stabilization` / `chore: stabilize learning application framework`.
@@ -1363,7 +1363,9 @@ MVP включает каталог тем, прохождение и возоб
 - Авторизованный пользователь может сохранять сессии/попытки, видеть прогресс и очередь повторения.
 - Supabase schema воспроизводится миграциями; RLS two-user/anon tests проходят.
 - Preview Vercel работает; секреты отсутствуют в репозитории и client bundle.
+- Временный dev-only preview 높임말 из F1-I17A удалён; фаза 2 начинает канонический модуль без параллельного источника данных.
 - TypeScript, ESLint, форматирование, unit, component, integration, e2e и production build зелёные.
+- Внешние CI-запуски checkpoint-веток CP-2 и CP-5 зелёные.
 - Нет известных P0/P1; пользователь принял CP-5.
 
 ## 17. Критерии готовности модуля 높임말 и MVP
@@ -1403,7 +1405,7 @@ MVP включает каталог тем, прохождение и возоб
 | Korean normalization | Unicode/spacing/punctuation | checker variants | IME answer | macOS/iOS/Android if available |
 | 높임말 rules | positive/negative/common error | content coverage | representative each mode | qualified language review |
 | Responsive/a11y | semantic components | — | mobile viewport + keyboard | 320/375/768/1280, zoom 200% |
-| CI | scripts/config validation | локальные jobs по мере появления | PR critical-path jobs | сверка локальных и CI-команд |
+| CI | scripts/config validation | локальный полный gate каждой итерации | push checkpoint-веток CP-2/CP-5 и явные PR | сверка локальных и CI-команд |
 | Deployment | env schema | DB smoke | preview smoke | logs, routes, rollback readiness |
 
 Минимальный release suite: `format:check`, `lint`, `typecheck`, unit/component, integration, DB/RLS, Playwright critical paths, `next build`, production-server smoke. Coverage thresholds вводятся после появления осмысленного baseline; высокий процент не заменяет rule/branch cases.

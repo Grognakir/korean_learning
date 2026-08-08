@@ -56,7 +56,11 @@ export {
   TRAINING_SESSION_SCHEMA_VERSION,
   TRAINING_SESSION_STATUSES,
   TrainingSessionError,
+  buildTrainingResultSnapshot,
+  createMistakeRetrySessionConfig,
   createTrainingSession,
+  formatCanonicalAnswerLabel,
+  formatSubmittedAnswerLabel,
   seededShuffle,
   selectCurrentAttempt,
   selectCurrentExercise,
@@ -70,7 +74,11 @@ export {
   trainingSessionReducer,
 } from "./session";
 export type {
+  BuildTrainingResultSnapshotOptions,
   TrainingAttemptSnapshot,
+  TrainingResultMistake,
+  TrainingResultSnapshot,
+  TrainingResultTopicBreakdown,
   TrainingSessionAction,
   TrainingSessionConfig,
   TrainingSessionContentSnapshot,

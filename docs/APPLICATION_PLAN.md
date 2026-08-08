@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I18 завершены; CP-1A принят.
+- **Общее состояние:** F1-I01–F1-I19 завершены; CP-1A принят.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I18 local session persistence — `done`.
+- **Текущая итерация:** F1-I19 training results — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** training loop, draft 높임말, CP-1A UI polish, guest session localStorage persistence + resume prompt.
-- **Выполненные проверки:** Prettier, ESLint, 202/202 теста, typecheck и production build зелёные.
-- **Сейчас работает:** refresh восстанавливает active-сессию; `/training` предлагает «Продолжить» / «Начать заново».
-- **Пока не работает:** экран результата (F1-I19+), server sync, auth.
-- **Следующий конкретный шаг:** F1-I19 (`feature/training-results`) по отдельному запросу.
-- **Блокирующие вопросы:** нет для перехода к F1-I19.
+- **Уже сделано:** training loop, draft 높임말, CP-1A UI polish, guest persistence, экран результата с retry ошибок.
+- **Выполненные проверки:** Prettier, ESLint, 211/211 теста, typecheck и production build зелёные.
+- **Сейчас работает:** после completion — score/темы/ошибки; «Повторить ошибки» / «Новая тренировка»; active localStorage очищается.
+- **Пока не работает:** loading/error/empty states (F1-I20+), server sync, auth.
+- **Следующий конкретный шаг:** F1-I20 (`feature/application-states`) по отдельному запросу.
+- **Блокирующие вопросы:** нет для перехода к F1-I20.
 - **Решения, требующие подтверждения:** CP-2/CP-3/CP-4/CP-5 позже.
 - **Последнее обновление:** 2026-08-08.
 
@@ -555,7 +555,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I19 — Экран результата
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** завершить петлю обучения понятным итогом.
 - **Входные зависимости:** F1-I18.
 - **Задачи:** score, correct/total, topic breakdown, error list, explanations, retry mistakes/new session actions; clear active local session after success.

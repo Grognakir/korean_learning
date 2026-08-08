@@ -16,6 +16,14 @@ export type {
   TrainingSessionResultSummary,
   TrainingSessionScoreSummary,
 } from "./selectors";
+export { buildTrainingResultSnapshot, createMistakeRetrySessionConfig } from "./resultSnapshot";
+export type {
+  BuildTrainingResultSnapshotOptions,
+  TrainingResultMistake,
+  TrainingResultSnapshot,
+  TrainingResultTopicBreakdown,
+} from "./resultSnapshot";
+export { formatCanonicalAnswerLabel, formatSubmittedAnswerLabel } from "./formatAnswerLabels";
 export { seededShuffle } from "./seededShuffle";
 export { submitTrainingAnswer } from "./submitTrainingAnswer";
 export { trainingSessionReducer } from "./trainingSessionReducer";

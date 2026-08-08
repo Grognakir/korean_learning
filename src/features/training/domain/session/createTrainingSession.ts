@@ -38,12 +38,17 @@ function resolveQueue(config: TrainingSessionConfig): readonly string[] {
     }
   }
 
-  const shuffled = seededShuffle(config.exerciseIds, config.seed);
+  // Review / mistake-retry queues keep authored order (F1-I19).
+  const ordered =
+    config.mode === "review"
+      ? [...config.exerciseIds]
+      : seededShuffle(config.exerciseIds, config.seed);
+
   if (config.limit === undefined) {
-    return shuffled;
+    return ordered;
   }
 
-  return shuffled.slice(0, Math.min(config.limit, shuffled.length));
+  return ordered.slice(0, Math.min(config.limit, ordered.length));
 }
 
 export function createTrainingSession(config: TrainingSessionConfig): TrainingSessionState {

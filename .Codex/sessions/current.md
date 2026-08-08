@@ -4,20 +4,22 @@
 
 ## Чем занимаемся
 
-F1-I18 завершена: локальное сохранение active training session. Следующая итерация — F1-I19 (результаты), не начинать в этом шаге.
+F1-I19 завершена: экран результата тренировки. Следующая итерация — F1-I20 (loading/error/empty states), не начинать в этом шаге.
 
 ## Принятые решения
 
-- CP-1A принят пользователем.
-- Persistence: key `korean-learning:training-session:v1`, TTL 7 дней, Zod после parse.
-- Save после create/submit/next; completed не очищается в F1-I18.
-- SSR: чтение localStorage только после mount; `/training` показывает ResumeTrainingPrompt.
+- CP-1A принят.
+- Result snapshot строится только из completed `TrainingSessionState`.
+- «Повторить ошибки» → `mode: "review"` без shuffle (исходный порядок mistake ids).
+- После snapshot active localStorage очищается идемпотентно; снимок живёт в состоянии вкладки.
+- «Новая тренировка» → `/training`.
 
 ## Открытые задачи
 
-- [ ] Следующая карточка: F1-I19 (`feature/training-results`) — только по запросу / следующему шагу плана.
+- [ ] Следующая карточка: F1-I20 (`feature/application-states`) — только по запросу.
 - [ ] Не пушить ветку без разрешения.
 
 ## Контекст
 
-Ветка: `feature/local-session-persistence`. Gate: 202 tests + build зелёные.
+Ветка: `feature/training-results` (от `fix/training-modules-grid` → F1-I18).
+Gate: 211 tests + build зелёные.

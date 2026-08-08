@@ -308,7 +308,7 @@ describe("TrainingSession", () => {
     expect(screen.getByText("집")).toHaveAttribute("lang", "ko");
   });
 
-  it("completes a short session and offers an exit link", async () => {
+  it("completes a short session and shows the results screen", async () => {
     const user = userEvent.setup();
     renderSession([byLogicalId("choose-school-meaning")]);
 
@@ -317,7 +317,33 @@ describe("TrainingSession", () => {
     await user.click(screen.getByRole("button", { name: "Дальше" }));
 
     expect(screen.getByRole("heading", { name: "Тренировка завершена" })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "К тренировке" })).toHaveAttribute("href", "/training");
+    expect(screen.getByRole("heading", { name: "Итог" })).toBeInTheDocument();
+    expect(screen.getByLabelText("Процент успеха: 100")).toHaveTextContent("100%");
+    expect(screen.queryByRole("button", { name: "Повторить ошибки" })).not.toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Новая тренировка" })).toHaveAttribute(
+      "href",
+      "/training",
+    );
+  });
+
+  it("shows retry for a mixed session and starts a review queue", async () => {
+    const user = userEvent.setup();
+    renderSession([byLogicalId("choose-home-meaning"), byLogicalId("choose-school-meaning")]);
+
+    await user.click(screen.getByLabelText("школа"));
+    await user.click(screen.getByRole("button", { name: "Ответить" }));
+    await user.click(screen.getByRole("button", { name: "Дальше" }));
+
+    await user.click(screen.getByLabelText("школа"));
+    await user.click(screen.getByRole("button", { name: "Ответить" }));
+    await user.click(screen.getByRole("button", { name: "Дальше" }));
+
+    expect(screen.getByRole("button", { name: "Повторить ошибки" })).toBeInTheDocument();
+    expect(screen.getByText("Ваш ответ")).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: "Повторить ошибки" }));
+    expect(screen.getByText("Задание 1 из 1")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 2 })).toBeInTheDocument();
   });
 
   it("shows incorrect feedback for a wrong choice", async () => {

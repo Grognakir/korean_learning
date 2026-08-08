@@ -1,27 +1,36 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, type KeyboardEvent as ReactKeyboardEvent } from "react";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type KeyboardEvent as ReactKeyboardEvent,
+} from "react";
 
 import { Alert } from "@/components/feedback";
 import { Button, ProgressBar } from "@/components/ui";
+import type { LearningTopicDefinition } from "@/types";
 import { TrainingShell } from "@/wrappers";
 
 import type { Exercise, TrainingSessionState } from "../../domain";
 import {
+  buildTrainingResultSnapshot,
+  createMistakeRetrySessionConfig,
+  createTrainingSession,
+} from "../../domain";
+import {
   persistTrainingSessionState,
   usePersistedSessionBootstrap,
 } from "../../hooks/usePersistedTrainingSession";
-import {
-  useTrainingSession,
-  type UseTrainingSessionOptions,
-  type UseTrainingSessionResult,
-} from "../../hooks/useTrainingSession";
+import { useTrainingSession, type UseTrainingSessionOptions } from "../../hooks/useTrainingSession";
 import { LocalTrainingSessionStore } from "../../persistence";
 import type { ExerciseView } from "../../presentation";
 import { ExerciseFeedback } from "../ExerciseFeedback";
 import { ExerciseRenderer } from "../ExerciseRenderer";
 import { ExerciseText } from "../ExerciseText";
+import { TrainingResult } from "../TrainingResult";
 
 import styles from "./TrainingSession.module.css";
 
@@ -32,6 +41,7 @@ export type TrainingSessionProps = {
   readonly seed?: number;
   readonly limit?: number;
   readonly contentVersion?: string;
+  readonly topics?: readonly LearningTopicDefinition[];
   readonly now?: UseTrainingSessionOptions["now"];
   readonly createSubmissionId?: UseTrainingSessionOptions["createSubmissionId"];
   /** When false, skips localStorage (unit tests). Default true. */
@@ -60,15 +70,69 @@ function isSingleLineTextField(target: EventTarget | null): target is HTMLInputE
   );
 }
 
-function TrainingSessionView({
+function TrainingSessionRuntime({
+  contentVersion,
+  createSubmissionId,
+  exercises,
+  initialState,
+  limit,
+  moduleSlug,
   notice,
-  session,
-}: {
+  now,
+  onRetryMistakes,
+  persist,
+  persistCreate,
+  seed,
+  sessionId,
+  store,
+  topics,
+}: TrainingSessionProps & {
+  readonly contentVersion: string;
+  readonly initialState?: TrainingSessionState;
+  readonly moduleSlug: string;
   readonly notice: string | null;
-  readonly session: UseTrainingSessionResult;
+  readonly onRetryMistakes: (mistakeExerciseIds: readonly string[]) => void;
+  readonly persistCreate: boolean;
+  readonly store: LocalTrainingSessionStore;
+  readonly topics: readonly LearningTopicDefinition[];
 }) {
+  const didPersistCreate = useRef(false);
+  const didClearActiveSession = useRef(false);
   const promptHeadingRef = useRef<HTMLHeadingElement>(null);
   const previousExerciseIdRef = useRef<string | null>(null);
+
+  const exercisesById = useMemo(
+    () => new Map(exercises.map((exercise) => [exercise.id, exercise])),
+    [exercises],
+  );
+
+  const session = useTrainingSession({
+    exercises,
+    ...(sessionId === undefined ? {} : { sessionId }),
+    moduleSlug,
+    ...(seed === undefined ? {} : { seed }),
+    ...(limit === undefined ? {} : { limit }),
+    contentVersion,
+    ...(now === undefined ? {} : { now }),
+    ...(createSubmissionId === undefined ? {} : { createSubmissionId }),
+    ...(initialState ? { initialState } : {}),
+    ...(persist
+      ? {
+          onStateChange: (state: TrainingSessionState) => {
+            persistTrainingSessionState(state, store);
+          },
+        }
+      : {}),
+  });
+
+  useEffect(() => {
+    if (!persist || !persistCreate || didPersistCreate.current) {
+      return;
+    }
+
+    didPersistCreate.current = true;
+    persistTrainingSessionState(session.state, store);
+  }, [persist, persistCreate, session.state, store]);
 
   useEffect(() => {
     if (!session.currentExerciseId) {
@@ -86,7 +150,18 @@ function TrainingSessionView({
     }
   }, [session.currentExerciseId]);
 
+  useEffect(() => {
+    if (!session.isCompleted || !persist || didClearActiveSession.current) {
+      return;
+    }
+
+    didClearActiveSession.current = true;
+    store.clear();
+  }, [persist, session.isCompleted, store]);
+
   if (session.isCompleted) {
+    const snapshot = buildTrainingResultSnapshot(session.state, exercisesById, { topics });
+
     return (
       <>
         {notice ? (
@@ -94,17 +169,10 @@ function TrainingSessionView({
             {notice}
           </Alert>
         ) : null}
-        <section aria-labelledby="training-complete-title" className={styles.complete}>
-          <h1 className={styles.completeTitle} id="training-complete-title">
-            Тренировка завершена
-          </h1>
-          <p className={styles.completeCopy}>
-            Вы прошли все задания этой короткой сессии. Можно вернуться к списку тренировок.
-          </p>
-          <Link className={styles.exitLink} href="/training">
-            К тренировке
-          </Link>
-        </section>
+        <TrainingResult
+          onRetryMistakes={() => onRetryMistakes(snapshot.mistakeExerciseIds)}
+          snapshot={snapshot}
+        />
       </>
     );
   }
@@ -228,80 +296,57 @@ function TrainingSessionView({
   );
 }
 
-function TrainingSessionRuntime({
-  contentVersion,
-  createSubmissionId,
-  exercises,
-  initialState,
-  limit,
-  moduleSlug,
-  notice,
-  now,
-  persist,
-  persistCreate,
-  seed,
-  sessionId,
-  store,
-}: TrainingSessionProps & {
-  readonly initialState?: TrainingSessionState;
-  readonly notice: string | null;
-  readonly persistCreate: boolean;
-}) {
-  const storeRef = useRef(store ?? new LocalTrainingSessionStore());
-  const didPersistCreate = useRef(false);
-
-  const session = useTrainingSession({
-    exercises,
-    ...(sessionId === undefined ? {} : { sessionId }),
-    ...(moduleSlug === undefined ? {} : { moduleSlug }),
-    ...(seed === undefined ? {} : { seed }),
-    ...(limit === undefined ? {} : { limit }),
-    ...(contentVersion === undefined ? {} : { contentVersion }),
-    ...(now === undefined ? {} : { now }),
-    ...(createSubmissionId === undefined ? {} : { createSubmissionId }),
-    ...(initialState ? { initialState } : {}),
-    ...(persist
-      ? {
-          onStateChange: (state: TrainingSessionState) => {
-            persistTrainingSessionState(state, storeRef.current);
-          },
-        }
-      : {}),
-  });
-
-  useEffect(() => {
-    if (!persist || !persistCreate || didPersistCreate.current) {
-      return;
-    }
-
-    didPersistCreate.current = true;
-    persistTrainingSessionState(session.state, storeRef.current);
-  }, [persist, persistCreate, session.state]);
-
-  return <TrainingSessionView notice={notice} session={session} />;
-}
-
 export function TrainingSession({
-  contentVersion,
+  contentVersion = "1.0.0",
   createSubmissionId,
   exercises,
   limit,
-  moduleSlug,
+  moduleSlug = "sample-module",
   now,
   persist = true,
   seed,
   sessionId,
-  store,
+  store: storeProp,
+  topics = [],
 }: TrainingSessionProps) {
+  const [fallbackStore] = useState(() => new LocalTrainingSessionStore());
+  const store = storeProp ?? fallbackStore;
+  const clock = now ?? (() => new Date().toISOString());
+
+  const [runtimeKey, setRuntimeKey] = useState(0);
+  const [forcedInitialState, setForcedInitialState] = useState<TrainingSessionState | null>(null);
+  const [skipBootstrap, setSkipBootstrap] = useState(false);
+
   const bootstrap = usePersistedSessionBootstrap({
-    persist,
+    persist: persist && !skipBootstrap,
     ...(sessionId === undefined ? {} : { sessionId }),
-    ...(moduleSlug === undefined ? {} : { moduleSlug }),
-    ...(contentVersion === undefined ? {} : { contentVersion }),
-    ...(store === undefined ? {} : { store }),
+    moduleSlug,
+    contentVersion,
+    store,
   });
 
-  if (bootstrap.status === "pending") {
+  function handleRetryMistakes(mistakeExerciseIds: readonly string[]) {
+    if (mistakeExerciseIds.length === 0) {
+      return;
+    }
+
+    store.clear();
+    const retryState = createTrainingSession(
+      createMistakeRetrySessionConfig({
+        sessionId: `${sessionId ?? "session"}-retry-${runtimeKey + 1}`,
+        moduleSlug,
+        mistakeExerciseIds,
+        contentVersion,
+        startedAt: clock(),
+      }),
+    );
+
+    setForcedInitialState(retryState);
+    setSkipBootstrap(true);
+    setRuntimeKey((value) => value + 1);
+  }
+
+  if (!skipBootstrap && bootstrap.status === "pending") {
     return (
       <p aria-busy="true" className={styles.loading}>
         Загрузка сессии…
@@ -309,21 +354,29 @@ export function TrainingSession({
     );
   }
 
+  const readyBootstrap = bootstrap.status === "ready" ? bootstrap : null;
+  const initialState = forcedInitialState ?? readyBootstrap?.initialState;
+  const notice = skipBootstrap ? null : (readyBootstrap?.notice ?? null);
+  const persistCreate = skipBootstrap ? true : (readyBootstrap?.persistCreate ?? false);
+
   return (
     <TrainingSessionRuntime
+      key={runtimeKey}
+      contentVersion={contentVersion}
       exercises={exercises}
-      notice={bootstrap.notice}
+      moduleSlug={moduleSlug}
+      notice={notice}
+      onRetryMistakes={handleRetryMistakes}
       persist={persist}
-      persistCreate={bootstrap.persistCreate}
-      {...(contentVersion === undefined ? {} : { contentVersion })}
+      persistCreate={persistCreate}
+      store={store}
+      topics={topics}
       {...(createSubmissionId === undefined ? {} : { createSubmissionId })}
-      {...(bootstrap.initialState === undefined ? {} : { initialState: bootstrap.initialState })}
+      {...(initialState === undefined ? {} : { initialState })}
       {...(limit === undefined ? {} : { limit })}
-      {...(moduleSlug === undefined ? {} : { moduleSlug })}
       {...(now === undefined ? {} : { now })}
       {...(seed === undefined ? {} : { seed })}
       {...(sessionId === undefined ? {} : { sessionId })}
-      {...(store === undefined ? {} : { store })}
     />
   );
 }

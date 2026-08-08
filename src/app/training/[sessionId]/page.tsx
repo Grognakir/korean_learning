@@ -102,6 +102,7 @@ export default async function SessionPage({ params }: SessionPageProps) {
         exercises={exercises}
         moduleSlug={session.moduleSlug}
         sessionId={session.sessionId}
+        topics={learningModule?.topics ?? []}
       />
     </PageContainer>
   );

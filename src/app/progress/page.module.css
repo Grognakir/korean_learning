@@ -1,5 +1,5 @@
 .page {
   display: grid;
-  gap: clamp(var(--space-8), 5vw, var(--space-12));
+  gap: clamp(var(--space-5), 2.5vw, var(--space-8));
   padding-block: clamp(var(--space-6), 6vw, var(--space-16));
 }

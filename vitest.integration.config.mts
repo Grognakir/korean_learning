@@ -12,14 +12,8 @@ export default defineConfig({
   test: {
     clearMocks: true,
     environment: "jsdom",
-    exclude: ["**/node_modules/**", "**/tests/integration/**"],
+    include: ["tests/integration/**/*.{test,spec}.{ts,tsx}"],
     restoreMocks: true,
     setupFiles: ["./tests/helpers/setup.ts"],
-    coverage: {
-      include: ["src/**/*.{ts,tsx}"],
-      provider: "v8",
-      reporter: ["text", "html", "lcov"],
-      reportsDirectory: "coverage",
-    },
   },
 });

@@ -16,6 +16,7 @@
     "format:check": "prettier --check .",
     "test": "vitest",
     "test:run": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.config.mts",
     "test:coverage": "vitest run --coverage"
   },
   "engines": {

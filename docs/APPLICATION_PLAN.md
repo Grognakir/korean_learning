@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I20 завершены; CP-1A принят.
+- **Общее состояние:** F1-I01–F1-I21 завершены; CP-1A принят.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I20 application states — `done`.
+- **Текущая итерация:** F1-I21 framework integration tests — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** training loop, persistence, results, loading/error/404/empty states.
-- **Выполненные проверки:** Prettier, ESLint, 219/219 теста, typecheck и production build зелёные.
-- **Сейчас работает:** глобальные loading/error/not-found; empty каталог/темы/задания; guest progress/review; `notFound()` для неизвестных module/session.
-- **Пока не работает:** integration suite (F1-I21+), Playwright, server sync, auth.
-- **Следующий конкретный шаг:** F1-I21 (`test/framework-integration`) по отдельному запросу.
-- **Блокирующие вопросы:** нет для перехода к F1-I21.
+- **Уже сделано:** training loop, persistence, results, application states, раздельные unit/integration suites.
+- **Выполненные проверки:** Prettier, ESLint, 219 unit + 17 integration, typecheck и production build зелёные.
+- **Сейчас работает:** `pnpm test:integration`; CI push только main + checkpoint-ветки; lifecycle/resume/routing scenarios.
+- **Пока не работает:** Playwright e2e (F1-I22+), server sync, auth.
+- **Следующий конкретный шаг:** F1-I22 (`test/playwright-setup`) по отдельному запросу.
+- **Блокирующие вопросы:** нет для перехода к F1-I22.
 - **Решения, требующие подтверждения:** CP-2/CP-3/CP-4/CP-5 позже.
 - **Последнее обновление:** 2026-08-08.
 
@@ -589,7 +589,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I21 — Интеграционные тесты каркаса
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** проверить взаимодействие repository, engine, persistence и UI.
 - **Входные зависимости:** F1-I20.
 - **Задачи:** factories/helpers; integration cases start→answer→resume→complete→retry; module routing; invalid data; добавить integration script в CI без дублирования unit run; добавить push-триггеры только для двух checkpoint-веток CP-2/CP-5.

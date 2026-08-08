@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+      - chore/framework-quality-gate
+      - chore/framework-stabilization
   pull_request:
     branches:
       - main
@@ -52,6 +54,9 @@ jobs:
 
       - name: Test
         run: pnpm test:run
+
+      - name: Integration tests
+        run: pnpm test:integration
 
       - name: Build
         run: pnpm build

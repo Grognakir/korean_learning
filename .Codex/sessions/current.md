@@ -4,22 +4,22 @@
 
 ## Чем занимаемся
 
-F1-I20 завершена: loading / error / not-found / empty states. Следующая итерация — F1-I21 (integration tests), не начинать в этом шаге.
+F1-I21 завершена: интеграционные тесты каркаса. Следующая итерация — F1-I22 (Playwright), не начинать в этом шаге.
 
 ## Принятые решения
 
 - CP-1A принят.
-- Next.js 16 `error.tsx` использует `retry` (рекомендовано docs; `reset` оставлен API для спецслучаев).
-- Пользовательские сообщения без stack/SQL/env/raw error; `console.error` только в development.
-- Неизвестные module/session → `notFound()`.
-- Guest progress/review — EmptyState до облака; `ServiceUnavailableState` готов к reuse.
+- Unit (`pnpm test:run`) исключает `tests/integration/**`.
+- Integration (`pnpm test:integration`) — отдельный config, 17 тестов.
+- CI `push.branches`: `main`, `chore/framework-quality-gate`, `chore/framework-stabilization`.
+- Factories + fake clock/memory storage в `tests/factories` и `tests/helpers/integration.ts`.
 
 ## Открытые задачи
 
-- [ ] Следующая карточка: F1-I21 (`test/framework-integration`) — только по запросу.
+- [ ] Следующая карточка: F1-I22 (`test/playwright-setup`) — только по запросу.
 - [ ] Не пушить ветку без разрешения.
 
 ## Контекст
 
-Ветка: `feature/application-states`.
-Gate: 219 tests + build зелёные.
+Ветка: `test/framework-integration`.
+Gate: 219 unit + 17 integration + build зелёные.

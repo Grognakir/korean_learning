@@ -487,7 +487,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I12 — Словарь по темам и категориям
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** заменить placeholder `/dictionary` рабочим безопасным словарём.
 - **Вход:** F2-I11 `done`.
 - **Ветка:** `codex/f2-i12-dictionary-catalog`.

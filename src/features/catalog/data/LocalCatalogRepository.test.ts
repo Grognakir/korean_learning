@@ -37,7 +37,7 @@ describe("LocalCatalogRepository", () => {
     expect(counts).toEqual({
       units: 2,
       grammarTopics: 2,
-      dictionaryEntries: 2,
+      dictionaryEntries: 3,
       readingPassages: 1,
       approvedExercises: 2,
     });

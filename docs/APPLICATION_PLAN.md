@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I11 `done`; CP-6 принят).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I12 `done`; CP-6 принят).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I11 curriculum detail pages — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i11-content-details`.
-- **Уже сделано:** theme/grammar detail на `/topics/[slug]` (+ `?grammar=`); training setup hrefs; draft hidden; sample module сохранён.
-- **Выполненные проверки:** unit/integration/lint/typecheck/build (gate итерации); e2e detail smoke.
-- **Сейчас работает:** детали урока/грамматики из published fixture; CTA ведут в `/training?skill&unit[&grammar]`.
-- **Пока не работает / ограничения:** словарь UI (F2-I12); training setup ещё не потребляет query (F2-I13); curriculum в seed в основном draft → Supabase public lists пустые до publish.
-- **Следующий конкретный шаг:** F2-I12 — themed dictionary catalog.
+- **Текущая итерация:** F2-I12 themed dictionary catalog — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i12-dictionary-catalog`.
+- **Уже сделано:** рабочий `/dictionary` с custom filters unit/POS, pagination, homonym labels; search отложен.
+- **Выполненные проверки:** unit/integration/lint/typecheck/build (gate итерации).
+- **Сейчас работает:** published dictionary senses по темам; client не сериализует весь банк.
+- **Пока не работает / ограничения:** training setup (F2-I13); curriculum в seed в основном draft → Supabase public dictionary пустой до publish; полнотекстовый поиск отложен.
+- **Следующий конкретный шаг:** F2-I13 — skill based training setup.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

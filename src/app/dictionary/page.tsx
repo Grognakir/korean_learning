@@ -1,27 +1,38 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
-import { GuestFeatureEmptyState } from "@/components/feedback";
+import { CatalogSectionSkeleton } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import { PageContainer } from "@/wrappers";
 
+import { DictionaryCatalog } from "./DictionaryCatalog";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Словарь",
-  description: "Ищите изученные слова, значения и связанные примеры употребления.",
+  description: "Проверенные значения по темам программы 1급.",
 };
 
-export default function DictionaryPage() {
+type DictionaryPageProps = {
+  searchParams?: Promise<{
+    unit?: string | string[];
+    pos?: string | string[];
+    page?: string | string[];
+  }>;
+};
+
+export default function DictionaryPage({
+  searchParams = Promise.resolve({}),
+}: DictionaryPageProps) {
   return (
     <PageContainer className={styles.page}>
       <PageHeader
-        description="Ищите изученные слова, значения и связанные примеры употребления."
+        description="Проверенные значения по темам. Полнотекстовый поиск отложен до серверного query."
         title="Словарь"
       />
-      <GuestFeatureEmptyState
-        description="Словарь станет доступен после накопления изученных слов. Сейчас можно тренироваться локально и открывать темы."
-        title="Словарь пока недоступен"
-      />
+      <Suspense fallback={<CatalogSectionSkeleton label="Загрузка словаря…" />}>
+        <DictionaryCatalog searchParams={searchParams} />
+      </Suspense>
     </PageContainer>
   );
 }

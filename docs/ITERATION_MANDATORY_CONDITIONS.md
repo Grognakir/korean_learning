@@ -177,6 +177,8 @@
 | `CatalogViewSwitch` `.switch`                      | tab-ряд — вертикальный центр                                                                                                                                              |
 | `DetailActionArea` `.area` / `.slot`               | action slots равной высоты; label+reason колонка с единой горизонтальной осью                                                                                             |
 | `UnitDetailView` / `GrammarDetailView` intro       | badge/meta/title stack; pattern `lang=ko`, `overflow-wrap: break-word`                                                                                                    |
+| `DictionaryFilters` `.filters` / `.field`          | label+Select колонка; фильтры в ряду — вертикальный низ/`align-items: end`                                                                                                |
+| `DictionaryEntryList` `.head` / `.pager` / desktop | lemma+sense вертикальный центр; pager links вертикальный центр; desktop card columns `align-items: center`                                                                |
 
 **Исключения** перечислять явно в таблице выше; молчаливый «оставил baseline/end потому что красивее» запрещён без записи здесь.
 

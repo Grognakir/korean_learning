@@ -56,6 +56,11 @@ test.describe("navigation", () => {
       "/training?skill=grammar&unit=u01&grammar=grammar.u01.n01",
     );
 
+    await page.goto("/dictionary?unit=u01");
+    await expect(page.getByRole("heading", { level: 1, name: "Словарь" })).toBeVisible();
+    await expect(page.getByText("привет")).toBeVisible();
+    await expect(page.getByText("пока")).toBeVisible();
+
     for (const width of [320, 375, 768, 1280] as const) {
       await page.setViewportSize({ width, height: 800 });
       await assertNoHorizontalOverflow(page);

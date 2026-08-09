@@ -4,28 +4,28 @@
 
 ## Чем занимаемся
 
-F2-I04 выполнен. Следующая карточка — F2-I05 (dictionary draft).
+F2-I05 выполнен. Следующая карточка — F2-I06 (reading corpus).
 
-## F2-I04 — результат
+## F2-I05 — результат
 
-- Generator `scripts/content/generate-curriculum-catalog.ts` + `pnpm content:generate-catalog`
-- `content/phase-2/units.json`: 16 draft units (`u01`…`u16`)
-- `content/phase-2/grammar-topics.json`: 80 draft syllabus topics, counts `5,4,5,5,5,6,5,5,5,5,5,5,5,5,5,5`
-- `content/phase-2/provenance.json`: 96 rows (units + grammar)
-- Coverage tests in `scripts/content/curriculum-catalog.test.ts`
-- Ничего не published; honorifics module не создавался
+- `scripts/content/normalize-dictionary.ts` + `generate-dictionary.ts`
+- `pnpm content:generate-dictionary`
+- `dictionary-entries.json`: 1091 draft senses
+- 50 irregular rows → relations (не новые senses)
+- `dictionary-unit-links.json`: пусто (в Markdown нет unit map)
+- `dictionary-reconciliation.json`: полная классификация строк + derived 803/731/179 coverage-only
+- Категория `добавлено` отсутствует; бизнес-лексика `level=business-draft`, status draft
 
 ## Gate
 
-- `pnpm content:validate` green
-- `pnpm test:content` includes catalog coverage
+- content:validate / test:content green
 - format/lint/typecheck/unit/integration/build по карточке
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i04-curriculum-catalog`
-- Commit: `feat: add level one curriculum catalog`
+- Branch: `codex/f2-i05-dictionary-canonicalization`
+- Commit: `feat: reconcile canonical Korean dictionary`
 
 ## Следующий шаг
 
-F2-I05 — reconcile canonical Korean dictionary. Push/merge без ожидания CI по указанию пользователя.
+F2-I06 — reconcile reading source corpus. Push/merge без ожидания CI по указанию пользователя.

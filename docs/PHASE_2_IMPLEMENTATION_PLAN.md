@@ -374,7 +374,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I05 — Словарный draft и reconciliation
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** получить одну словарную базу без молчаливой потери омонимов и без доверия к производным выгрузкам.
 - **Вход:** F2-I04 `done`.
 - **Ветка:** `codex/f2-i05-dictionary-canonicalization`.

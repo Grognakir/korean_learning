@@ -375,16 +375,29 @@ export function buildCurriculumSeedSql(
 
     const status = mapExerciseStatus(exercise.status);
     const difficulty = mapDifficulty(exercise.difficulty);
+    const dbExerciseType =
+      exercise.exerciseType === "translation-matching"
+        ? "matching-translation"
+        : exercise.exerciseType;
     const payload =
       exercise.exerciseType === "free-response"
         ? {
             answerLanguage: "ko" as const,
             acceptedAnswerIds: exercise.acceptedAnswers.map((_, index) => `ans${index + 1}`),
           }
-        : {
-            correctOptionId: exercise.correctOptionId,
-            optionIds: exercise.options.map((option) => option.id),
-          };
+        : exercise.exerciseType === "matching-translation" ||
+            exercise.exerciseType === "translation-matching"
+          ? {
+              pairs: exercise.pairs.map((pair) => ({
+                id: pair.id,
+                left: pair.left,
+                right: pair.right,
+              })),
+            }
+          : {
+              correctOptionId: exercise.correctOptionId,
+              optionIds: exercise.options.map((option) => option.id),
+            };
 
     if (mode === "upsert") {
       lines.push(
@@ -424,7 +437,7 @@ export function buildCurriculumSeedSql(
       `  ${topicId ? `'${topicId}'` : "null"},`,
       `  '${exercise.skill}',`,
       `  ${passageId ? `'${passageId}'` : "null"},`,
-      `  '${exercise.exerciseType}',`,
+      `  '${dbExerciseType}',`,
       `  '${difficulty}',`,
       `  ${sqlString(exercise.prompt.ko)},`,
       `  ${sqlString(exercise.prompt.ru)},`,

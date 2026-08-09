@@ -295,6 +295,12 @@ export const exerciseOptionSchema = z.strictObject({
   label: localizedTextSchema,
 });
 
+export const exercisePairSchema = z.strictObject({
+  id: z.string().trim().min(1),
+  left: localizedTextSchema,
+  right: localizedTextSchema,
+});
+
 export const exerciseRecordSchema = z
   .strictObject({
     ...entityBaseFields,
@@ -306,6 +312,7 @@ export const exerciseRecordSchema = z
       "reverse-word-choice",
       "sentence-choice",
       "translation-matching",
+      "matching-translation",
       "word-matching",
       "fill-blank",
       "free-response",
@@ -318,6 +325,7 @@ export const exerciseRecordSchema = z
     explanation: localizedTextSchema,
     difficulty: z.enum(["intro", "practice", "challenge"]),
     options: z.array(exerciseOptionSchema).default([]),
+    pairs: z.array(exercisePairSchema).default([]),
     correctOptionId: z.string().trim().min(1).nullable(),
     acceptedAnswers: z.array(z.string().trim().min(1)).default([]),
   })
@@ -348,11 +356,11 @@ export const exerciseRecordSchema = z
       });
     }
 
-    if (exercise.exerciseType === "single-choice") {
+    if (exercise.exerciseType === "single-choice" || exercise.exerciseType === "meaning-choice") {
       if (exercise.options.length < 2) {
         context.addIssue({
           code: "custom",
-          message: "single-choice requires at least 2 options",
+          message: `${exercise.exerciseType} requires at least 2 options`,
           path: ["options"],
         });
       }
@@ -361,7 +369,7 @@ export const exerciseRecordSchema = z
       if (new Set(optionIds).size !== optionIds.length) {
         context.addIssue({
           code: "custom",
-          message: "single-choice options must have unique ids",
+          message: `${exercise.exerciseType} options must have unique ids`,
           path: ["options"],
         });
       }
@@ -369,8 +377,30 @@ export const exerciseRecordSchema = z
       if (!exercise.correctOptionId || !optionIds.includes(exercise.correctOptionId)) {
         context.addIssue({
           code: "custom",
-          message: "single-choice requires exactly one correctOptionId from options",
+          message: `${exercise.exerciseType} requires exactly one correctOptionId from options`,
           path: ["correctOptionId"],
+        });
+      }
+    }
+
+    if (
+      exercise.exerciseType === "matching-translation" ||
+      exercise.exerciseType === "translation-matching"
+    ) {
+      if (exercise.pairs.length < 2) {
+        context.addIssue({
+          code: "custom",
+          message: "matching exercises require at least 2 pairs",
+          path: ["pairs"],
+        });
+      }
+
+      const pairIds = exercise.pairs.map((pair) => pair.id);
+      if (new Set(pairIds).size !== pairIds.length) {
+        context.addIssue({
+          code: "custom",
+          message: "matching pairs must have unique ids",
+          path: ["pairs"],
         });
       }
     }
@@ -419,6 +449,7 @@ export type SourceManifest = z.infer<typeof sourceManifestSchema>;
 export type UnitRecord = z.infer<typeof unitRecordSchema>;
 export type GrammarTopicRecord = z.infer<typeof grammarTopicRecordSchema>;
 export type DictionaryEntryRecord = z.infer<typeof dictionaryEntryRecordSchema>;
+export type DictionaryUnitLinkRecord = z.infer<typeof dictionaryUnitLinkRecordSchema>;
 export type ExerciseRecord = z.infer<typeof exerciseRecordSchema>;
 export type ProvenanceRecord = z.infer<typeof provenanceRecordSchema>;
 

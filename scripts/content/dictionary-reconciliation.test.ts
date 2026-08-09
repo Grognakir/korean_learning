@@ -61,18 +61,26 @@ describe("phase-2 dictionary reconciliation", () => {
     expect(report.derivedCoverage.quizletTsvRows.role).toBe("coverage-only");
   });
 
-  it("imports draft senses without dangling unit links or approved publication", () => {
+  it("keeps dictionary bank unpublished and links only to known units", () => {
     validatePhase2Content(PHASE_2_CONTENT_ROOT);
     const graph = loadPhase2ContentGraph(PHASE_2_CONTENT_ROOT);
     const report = JSON.parse(readFileSync(REPORT_PATH, "utf8")) as DictionaryReconciliationReport;
 
     expect(graph.dictionaryEntries.items.length).toBe(report.counts.canonicalSenses);
-    expect(graph.dictionaryEntries.items.every((entry) => entry.status === "draft")).toBe(true);
     expect(graph.dictionaryEntries.items.every((entry) => entry.status !== "approved")).toBe(true);
-    expect(graph.dictionaryUnitLinks.items).toHaveLength(0);
+    expect(
+      graph.dictionaryEntries.items.every(
+        (entry) => entry.status === "draft" || entry.status === "reviewed",
+      ),
+    ).toBe(true);
+    expect(graph.dictionaryUnitLinks.items.length).toBeGreaterThanOrEqual(192);
 
     const unitIds = new Set(graph.units.items.map((unit) => unit.logicalId));
+    const entryIds = new Set(graph.dictionaryEntries.items.map((entry) => entry.logicalId));
     expect(graph.dictionaryUnitLinks.items.every((link) => unitIds.has(link.unitLogicalId))).toBe(
+      true,
+    );
+    expect(graph.dictionaryUnitLinks.items.every((link) => entryIds.has(link.entryLogicalId))).toBe(
       true,
     );
 

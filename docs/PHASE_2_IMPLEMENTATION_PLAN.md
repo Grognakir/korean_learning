@@ -552,7 +552,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I16 — Минимальный vocabulary exercise bank
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** дать практику слов в обоих направлениях для каждой темы.
 - **Вход:** F2-I15 `done`.
 - **Ветка:** `codex/f2-i16-vocabulary-exercises`.

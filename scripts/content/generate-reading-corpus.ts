@@ -202,6 +202,7 @@ const exercisesReading = {
         },
         difficulty: "practice" as const,
         options,
+        pairs: [],
         correctOptionId,
         acceptedAnswers: [],
       };

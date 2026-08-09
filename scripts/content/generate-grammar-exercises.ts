@@ -98,6 +98,7 @@ function buildRecognitionExercise(
     },
     difficulty: "intro",
     options,
+    pairs: [],
     correctOptionId,
     acceptedAnswers: [],
   };
@@ -132,6 +133,7 @@ function buildApplicationExercise(topic: GrammarTopicRecord): ExerciseRecord {
     },
     difficulty: "practice",
     options: [],
+    pairs: [],
     correctOptionId: null,
     acceptedAnswers,
   };

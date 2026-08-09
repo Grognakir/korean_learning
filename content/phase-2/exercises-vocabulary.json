@@ -1,4 +1,3911 @@
 {
   "schemaVersion": "phase-2.v1",
-  "items": []
+  "items": [
+    {
+      "logicalId": "exercise.vocabulary.u01.vy.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L383"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u01",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.dangsin.vy"],
+      "prompt": {
+        "ko": "당신",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "вы",
+            "ru": "вы"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "там (среднее расстояние)",
+            "ru": "там (среднее расстояние)"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "он; тот (определитель)",
+            "ru": "он; тот (определитель)"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "они",
+            "ru": "они"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u01.tam-srednee-rasstoyanie.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L395"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u01",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.geogi.tam-srednee-rasstoyanie"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «там (среднее расстояние)»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "거기",
+            "ru": "거기"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "당신",
+            "ru": "당신"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "그",
+            "ru": "그"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "그들",
+            "ru": "그들"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u01.on-tot-opredelitel.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L386"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u01",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.geu.on-tot-opredelitel"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «он; тот (определитель)»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["그"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u01.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u01",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.geudeul.oni",
+        "dict.geugeot.to-predmet-srednee-rasstoyanie",
+        "dict.geugot.to-mesto-tam",
+        "dict.geunyeo.ona"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "그들",
+            "ru": "그들"
+          },
+          "right": {
+            "ko": "они",
+            "ru": "они"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "그것",
+            "ru": "그것"
+          },
+          "right": {
+            "ko": "то (предмет, среднее расстояние)",
+            "ru": "то (предмет, среднее расстояние)"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "그곳",
+            "ru": "그곳"
+          },
+          "right": {
+            "ko": "то место, там",
+            "ru": "то место, там"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "그녀",
+            "ru": "그녀"
+          },
+          "right": {
+            "ko": "она",
+            "ru": "она"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u02.ochki.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L557"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u02",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.angyeong.ochki"],
+      "prompt": {
+        "ko": "안경",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "очки",
+            "ru": "очки"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "рюкзак (походный, туристический)",
+            "ru": "рюкзак (походный, туристический)"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "подушка",
+            "ru": "подушка"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "мыло",
+            "ru": "мыло"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u02.ryukzak-pohodnyi-turisticheskii.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L554"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u02",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.baenang.ryukzak-pohodnyi-turisticheskii"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «рюкзак (походный, туристический)»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "배낭",
+            "ru": "배낭"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "안경",
+            "ru": "안경"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "베개",
+            "ru": "베개"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "비누",
+            "ru": "비누"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u02.podushka.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L558"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u02",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.begae.podushka"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «подушка»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["베개"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u02.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u02",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.binu.mylo",
+        "dict.bolpen.sharikovaya-ruchka",
+        "dict.bongtu.konvert-paketik",
+        "dict.chaek.kniga"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "비누",
+            "ru": "비누"
+          },
+          "right": {
+            "ko": "мыло",
+            "ru": "мыло"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "볼펜",
+            "ru": "볼펜"
+          },
+          "right": {
+            "ko": "шариковая ручка",
+            "ru": "шариковая ручка"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "봉투",
+            "ru": "봉투"
+          },
+          "right": {
+            "ko": "конверт, пакетик",
+            "ru": "конверт, пакетик"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "책",
+            "ru": "책"
+          },
+          "right": {
+            "ko": "книга",
+            "ru": "книга"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u03.klass-gruppa-uchebnaya.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L536"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.ban.klass-gruppa-uchebnaya"],
+      "prompt": {
+        "ko": "반",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "класс, группа (учебная)",
+            "ru": "класс, группа (учебная)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "студенческий билет",
+            "ru": "студенческий билет"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "экзамен, тест",
+            "ru": "экзамен, тест"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "урок, занятие",
+            "ru": "урок, занятие"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u03.studencheskii-bilet.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L534"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.haksaengjeung.studencheskii-bilet"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «студенческий билет»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "학생증",
+            "ru": "학생증"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "반",
+            "ru": "반"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "시험",
+            "ru": "시험"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "수업",
+            "ru": "수업"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u03.ekzamen-test.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L532"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.siheom.ekzamen-test"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «экзамен, тест»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["시험"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u03.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.sueop.urok-zanyatie",
+        "dict.yeseup.podgotovka-k-uroku-zaranee",
+        "dict.baeu.akter-aktrisa",
+        "dict.byeonhosa.yurist-advokat"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "수업",
+            "ru": "수업"
+          },
+          "right": {
+            "ko": "урок, занятие",
+            "ru": "урок, занятие"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "예습",
+            "ru": "예습"
+          },
+          "right": {
+            "ko": "подготовка к уроку заранее",
+            "ru": "подготовка к уроку заранее"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "배우",
+            "ru": "배우"
+          },
+          "right": {
+            "ko": "актёр, актриса",
+            "ru": "актёр, актриса"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "변호사",
+            "ru": "변호사"
+          },
+          "right": {
+            "ko": "юрист, адвокат",
+            "ru": "юрист, адвокат"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u04.kanikuly-shkolnye-universitetskie.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1193"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u04",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.banghak.kanikuly-shkolnye-universitetskie"],
+      "prompt": {
+        "ko": "방학",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "каникулы (школьные/университетские)",
+            "ru": "каникулы (школьные/университетские)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "следующий месяц",
+            "ru": "следующий месяц"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "следующая неделя",
+            "ru": "следующая неделя"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "месяц",
+            "ru": "месяц"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u04.sleduyuschii-mesyats.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1178"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u04",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.daeum-dal.sleduyuschii-mesyats"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «следующий месяц»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "다음 달",
+            "ru": "다음 달"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "방학",
+            "ru": "방학"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "다음 주",
+            "ru": "다음 주"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "달",
+            "ru": "달"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u04.sleduyuschaya-nedelya.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1172"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u04",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.daeum-ju.sleduyuschaya-nedelya"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «следующая неделя»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["다음 주"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u04.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u04",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.dal.mesyats",
+        "dict.eoje.vchera",
+        "dict.gaehak.nachalo-uchebnogo-semestra-posle-kanikul",
+        "dict.geuje.pozavchera"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "달",
+            "ru": "달"
+          },
+          "right": {
+            "ko": "месяц",
+            "ru": "месяц"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "어제",
+            "ru": "어제"
+          },
+          "right": {
+            "ko": "вчера",
+            "ru": "вчера"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "개학",
+            "ru": "개학"
+          },
+          "right": {
+            "ko": "начало учебного семестра (после каникул)",
+            "ru": "начало учебного семестра (после каникул)"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "그제",
+            "ru": "그제"
+          },
+          "right": {
+            "ko": "позавчера",
+            "ru": "позавчера"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u05.utro.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1204"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u05",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.achim.utro"],
+      "prompt": {
+        "ko": "아침",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "утро",
+            "ru": "утро"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "ночь",
+            "ru": "ночь"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "глубокая ночь",
+            "ru": "глубокая ночь"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "полночь",
+            "ru": "полночь"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u05.noch.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1211"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u05",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.bam.noch"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «ночь»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "밤",
+            "ru": "밤"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "아침",
+            "ru": "아침"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "한밤중",
+            "ru": "한밤중"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "자정",
+            "ru": "자정"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u05.glubokaya-noch.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1215"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u05",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.hanbamjjung.glubokaya-noch"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «глубокая ночь»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["한밤중"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u05.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u05",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.jajeong.polnoch",
+        "dict.jeomsim.obed-polden",
+        "dict.jeongo.polden",
+        "dict.jeonyeok.vecher"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "자정",
+            "ru": "자정"
+          },
+          "right": {
+            "ko": "полночь",
+            "ru": "полночь"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "점심",
+            "ru": "점심"
+          },
+          "right": {
+            "ko": "обед, полдень",
+            "ru": "обед, полдень"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "정오",
+            "ru": "정오"
+          },
+          "right": {
+            "ko": "полдень",
+            "ru": "полдень"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "저녁",
+            "ru": "저녁"
+          },
+          "right": {
+            "ko": "вечер",
+            "ru": "вечер"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u06.badminton.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L691"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u06",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.baedeuminteon.badminton"],
+      "prompt": {
+        "ko": "배드민턴",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "бадминтон",
+            "ru": "бадминтон"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "волейбол",
+            "ru": "волейбол"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "бокс",
+            "ru": "бокс"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "боулинг",
+            "ru": "боулинг"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u06.voleibol.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L677"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u06",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.baegu.voleibol"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «волейбол»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "배구",
+            "ru": "배구"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "배드민턴",
+            "ru": "배드민턴"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "복싱",
+            "ru": "복싱"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "볼링",
+            "ru": "볼링"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u06.boks.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L689"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u06",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.boksing.boks"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «бокс»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["복싱"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u06.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u06",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.bolling.bouling",
+        "dict.chejo.gimnastika",
+        "dict.chukgu.futbol",
+        "dict.dalligi.beg"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "볼링",
+            "ru": "볼링"
+          },
+          "right": {
+            "ko": "боулинг",
+            "ru": "боулинг"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "체조",
+            "ru": "체조"
+          },
+          "right": {
+            "ko": "гимнастика",
+            "ru": "гимнастика"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "축구",
+            "ru": "축구"
+          },
+          "right": {
+            "ko": "футбол",
+            "ru": "футбол"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "달리기",
+            "ru": "달리기"
+          },
+          "right": {
+            "ko": "бег",
+            "ru": "бег"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u07.nasyschennyi-soderzhatelnyi-produktivnyi.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L274"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.alchada.nasyschennyi-soderzhatelnyi-produktivnyi"],
+      "prompt": {
+        "ko": "알차다",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "насыщенный, содержательный, продуктивный",
+            "ru": "насыщенный, содержательный, продуктивный"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "больной, болит",
+            "ru": "больной, болит"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "красивый, прекрасный",
+            "ru": "красивый, прекрасный"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "сытый",
+            "ru": "сытый"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u07.bolnoi-bolit.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L243"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.apeuda.bolnoi-bolit"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «больной, болит»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "아프다",
+            "ru": "아프다"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "알차다",
+            "ru": "알차다"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "아름답다",
+            "ru": "아름답다"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "배부르다",
+            "ru": "배부르다"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u07.krasivyi-prekrasnyi.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L256"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.areumdapda.krasivyi-prekrasnyi"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «красивый, прекрасный»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["아름답다"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u07.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.baebureuda.sytyi",
+        "dict.baegopeuda.golodnyi",
+        "dict.bakda.svetlyi-yarkii",
+        "dict.bangapda.rad-a-vstreche"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "배부르다",
+            "ru": "배부르다"
+          },
+          "right": {
+            "ko": "сытый",
+            "ru": "сытый"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "배고프다",
+            "ru": "배고프다"
+          },
+          "right": {
+            "ko": "голодный",
+            "ru": "голодный"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "밝다",
+            "ru": "밝다"
+          },
+          "right": {
+            "ko": "светлый, яркий",
+            "ru": "светлый, яркий"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "반갑다",
+            "ru": "반갑다"
+          },
+          "right": {
+            "ko": "рад(а) встрече",
+            "ru": "рад(а) встрече"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u08.znat.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L92"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u08",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.alda.znat"],
+      "prompt": {
+        "ko": "알다",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "знать",
+            "ru": "знать"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "сидеть, садиться",
+            "ru": "сидеть, садиться"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "учиться, изучать",
+            "ru": "учиться, изучать"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "менять, изменять",
+            "ru": "менять, изменять"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u08.sidet-saditsya.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L28"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u08",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.anjda.sidet-saditsya"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «сидеть, садиться»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "앉다",
+            "ru": "앉다"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "알다",
+            "ru": "알다"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "배우다",
+            "ru": "배우다"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "바꾸다",
+            "ru": "바꾸다"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u08.uchitsya-izuchat.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L39"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u08",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.baeuda.uchitsya-izuchat"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «учиться, изучать»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["배우다"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u08.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u08",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.bakkuda.menyat-izmenyat",
+        "dict.batda.poluchat",
+        "dict.beolda.zarabatyvat-dengi",
+        "dict.beorida.ustraivat-zatevat-prazdnik-delo"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "바꾸다",
+            "ru": "바꾸다"
+          },
+          "right": {
+            "ko": "менять, изменять",
+            "ru": "менять, изменять"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "받다",
+            "ru": "받다"
+          },
+          "right": {
+            "ko": "получать",
+            "ru": "получать"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "벌다",
+            "ru": "벌다"
+          },
+          "right": {
+            "ko": "зарабатывать (деньги)",
+            "ru": "зарабатывать (деньги)"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "벌이다",
+            "ru": "벌이다"
+          },
+          "right": {
+            "ko": "устраивать, затевать (праздник, дело)",
+            "ru": "устраивать, затевать (праздник, дело)"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u09.hanbok-koreiskii-natsionalnyi-kostyum.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L867"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u09",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.hanbok.hanbok-koreiskii-natsionalnyi-kostyum"],
+      "prompt": {
+        "ko": "한복",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "ханбок (корейский национальный костюм)",
+            "ru": "ханбок (корейский национальный костюм)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "косметика",
+            "ru": "косметика"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "перчатки",
+            "ru": "перчатки"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "галстук",
+            "ru": "галстук"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u09.kosmetika.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L866"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u09",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.hwajangpum.kosmetika"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «косметика»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "화장품",
+            "ru": "화장품"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "한복",
+            "ru": "한복"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "장갑",
+            "ru": "장갑"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "넥타이",
+            "ru": "넥타이"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u09.perchatki.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L869"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u09",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.janggap.perchatki"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «перчатки»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["장갑"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u09.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u09",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.nektai.galstuk",
+        "dict.ot.odezhda",
+        "dict.sinbal.obuv",
+        "dict.sonsugeon.nosovoi-platok"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "넥타이",
+            "ru": "넥타이"
+          },
+          "right": {
+            "ko": "галстук",
+            "ru": "галстук"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "옷",
+            "ru": "옷"
+          },
+          "right": {
+            "ko": "одежда",
+            "ru": "одежда"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "신발",
+            "ru": "신발"
+          },
+          "right": {
+            "ko": "обувь",
+            "ru": "обувь"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "손수건",
+            "ru": "손수건"
+          },
+          "right": {
+            "ko": "носовой платок",
+            "ru": "носовой платок"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u10.varenyi-ris-eda-v-shirokom-smysle.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L476"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.bap.varenyi-ris-eda-v-shirokom-smysle"],
+      "prompt": {
+        "ko": "밥",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "варёный рис, еда (в широком смысле)",
+            "ru": "варёный рис, еда (в широком смысле)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "сливочное масло",
+            "ru": "сливочное масло"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "бибимбап (рис с овощами и мясом, часто с яйцом и острым соусом)",
+            "ru": "бибимбап (рис с овощами и мясом, часто с яйцом и острым соусом)"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "булгоги (маринованное жареное мясо)",
+            "ru": "булгоги (маринованное жареное мясо)"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u10.slivochnoe-maslo.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L486"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.beoteo.slivochnoe-maslo"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «сливочное масло»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "버터",
+            "ru": "버터"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "밥",
+            "ru": "밥"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "비빔밥",
+            "ru": "비빔밥"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "불고기",
+            "ru": "불고기"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u10.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L504"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.bibimbap.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits"
+      ],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «бибимбап (рис с овощами и мясом, часто с яйцом и острым соусом)»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["비빔밥"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u10.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.bulgogi.bulgogi-marinovannoe-zharenoe-myaso",
+        "dict.cha.chai",
+        "dict.chijeu.syr",
+        "dict.dak.kuritsa-zhivaya-ptitsa"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "불고기",
+            "ru": "불고기"
+          },
+          "right": {
+            "ko": "булгоги (маринованное жареное мясо)",
+            "ru": "булгоги (маринованное жареное мясо)"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "차",
+            "ru": "차"
+          },
+          "right": {
+            "ko": "чай",
+            "ru": "чай"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "치즈",
+            "ru": "치즈"
+          },
+          "right": {
+            "ko": "сыр",
+            "ru": "сыр"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "닭",
+            "ru": "닭"
+          },
+          "right": {
+            "ko": "курица (живая птица)",
+            "ru": "курица (живая птица)"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u11.batareya-akkumulyator.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L622"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u11",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.baeteori.batareya-akkumulyator"],
+      "prompt": {
+        "ko": "배터리",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "батарея, аккумулятор",
+            "ru": "батарея, аккумулятор"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "пылесос",
+            "ru": "пылесос"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "зарядное устройство",
+            "ru": "зарядное устройство"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "утюг",
+            "ru": "утюг"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u11.pylesos.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L615"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u11",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.cheongsogi.pylesos"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «пылесос»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "청소기",
+            "ru": "청소기"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "배터리",
+            "ru": "배터리"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "충전기",
+            "ru": "충전기"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "다리미",
+            "ru": "다리미"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u11.zaryadnoe-ustroistvo.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L621"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u11",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.chungjeongi.zaryadnoe-ustroistvo"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «зарядное устройство»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["충전기"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u11.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u11",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.darimi.utyug",
+        "dict.eeokeon-e-eo-keon.konditsioner",
+        "dict.hyudaepon.mobilnyi-telefon",
+        "dict.ieopon.naushniki-vkladyshi"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "다리미",
+            "ru": "다리미"
+          },
+          "right": {
+            "ko": "утюг",
+            "ru": "утюг"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "에어컨",
+            "ru": "에어컨"
+          },
+          "right": {
+            "ko": "кондиционер",
+            "ru": "кондиционер"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "휴대폰",
+            "ru": "휴대폰"
+          },
+          "right": {
+            "ko": "мобильный телефон",
+            "ru": "мобильный телефон"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "이어폰",
+            "ru": "이어폰"
+          },
+          "right": {
+            "ko": "наушники (вкладыши)",
+            "ru": "наушники (вкладыши)"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u12.ili-a-esli-ne.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1274"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u12",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.animyeon.ili-a-esli-ne"],
+      "prompt": {
+        "ko": "아니면",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "или, а если не",
+            "ru": "или, а если не"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "но, однако, при этом (уточнение/оговорка)",
+            "ru": "но, однако, при этом (уточнение/оговорка)"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "всё же, тем не менее",
+            "ru": "всё же, тем не менее"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "поэтому, и поэтому",
+            "ru": "поэтому, и поэтому"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u12.no-odnako-pri-etom-utochnenie-ogovorka.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1277"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u12",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.dan.no-odnako-pri-etom-utochnenie-ogovorka"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «но, однако, при этом (уточнение/оговорка)»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "단",
+            "ru": "단"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "아니면",
+            "ru": "아니면"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "그래도",
+            "ru": "그래도"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "그래서",
+            "ru": "그래서"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u12.vse-zhe-tem-ne-menee.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1269"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u12",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.geuraedo.vse-zhe-tem-ne-menee"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «всё же, тем не менее»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["그래도"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u12.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u12",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.geuraeseo.poetomu-i-poetomu",
+        "dict.geureochiman.no-tem-ne-menee",
+        "dict.geureom.togda-v-takom-sluchae",
+        "dict.geureomyeon.esli-tak-v-takom-sluchae-togda"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "그래서",
+            "ru": "그래서"
+          },
+          "right": {
+            "ko": "поэтому, и поэтому",
+            "ru": "поэтому, и поэтому"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "그렇지만",
+            "ru": "그렇지만"
+          },
+          "right": {
+            "ko": "но, тем не менее",
+            "ru": "но, тем не менее"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "그럼",
+            "ru": "그럼"
+          },
+          "right": {
+            "ko": "тогда, в таком случае",
+            "ru": "тогда, в таком случае"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "그러면",
+            "ru": "그러면"
+          },
+          "right": {
+            "ko": "если так, в таком случае, тогда",
+            "ru": "если так, в таком случае, тогда"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u13.more.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L795"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u13",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.bada.more"],
+      "prompt": {
+        "ko": "바다",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "море",
+            "ru": "море"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "универмаг, торговый центр",
+            "ru": "универмаг, торговый центр"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "музей",
+            "ru": "музей"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "автобусная остановка",
+            "ru": "автобусная остановка"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u13.univermag-torgovyi-tsentr.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L780"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u13",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.baekhwajeom.univermag-torgovyi-tsentr"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «универмаг, торговый центр»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "백화점",
+            "ru": "백화점"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "바다",
+            "ru": "바다"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "박물관",
+            "ru": "박물관"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "버스정류장",
+            "ru": "버스정류장"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u13.muzei.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L783"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u13",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.bakmulgwan.muzei"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «музей»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["박물관"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u13.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u13",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.beoseu-jeongnyujang.avtobusnaya-ostanovka",
+        "dict.bilding.zdanie-obychno-ofisnoe-mnogoetazhnoe",
+        "dict.byeongwon.bolnitsa",
+        "dict.cheyukgwan.sportzal-sportivnyi-zal"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "버스정류장",
+            "ru": "버스정류장"
+          },
+          "right": {
+            "ko": "автобусная остановка",
+            "ru": "автобусная остановка"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "빌딩",
+            "ru": "빌딩"
+          },
+          "right": {
+            "ko": "здание (обычно офисное/многоэтажное)",
+            "ru": "здание (обычно офисное/многоэтажное)"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "병원",
+            "ru": "병원"
+          },
+          "right": {
+            "ko": "больница",
+            "ru": "больница"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "체육관",
+            "ru": "체육관"
+          },
+          "right": {
+            "ko": "спортзал, спортивный зал",
+            "ru": "спортзал, спортивный зал"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u14.magazin-nebolshoi.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L764"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u14",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.gage.magazin-nebolshoi"],
+      "prompt": {
+        "ko": "가게",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "магазин (небольшой)",
+            "ru": "магазин (небольшой)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "театр",
+            "ru": "театр"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "железнодорожная станция",
+            "ru": "железнодорожная станция"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "старшая школа (полная средняя)",
+            "ru": "старшая школа (полная средняя)"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u14.teatr.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L773"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u14",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.geukjang.teatr"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «театр»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "극장",
+            "ru": "극장"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "가게",
+            "ru": "가게"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "기차역",
+            "ru": "기차역"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "고등학교",
+            "ru": "고등학교"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u14.zheleznodorozhnaya-stantsiya.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L787"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u14",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.gichayeok.zheleznodorozhnaya-stantsiya"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «железнодорожная станция»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["기차역"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u14.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u14",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.godeunghakgyo.starshaya-shkola-polnaya-srednyaya",
+        "dict.gonggongjangso.obschestvennoe-mesto",
+        "dict.gonghang.aeroport",
+        "dict.gongwon.park"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "고등학교",
+            "ru": "고등학교"
+          },
+          "right": {
+            "ko": "старшая школа (полная средняя)",
+            "ru": "старшая школа (полная средняя)"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "공공장소",
+            "ru": "공공장소"
+          },
+          "right": {
+            "ko": "общественное место",
+            "ru": "общественное место"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "공항",
+            "ru": "공항"
+          },
+          "right": {
+            "ko": "аэропорт",
+            "ru": "аэропорт"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "공원",
+            "ru": "공원"
+          },
+          "right": {
+            "ko": "парк",
+            "ru": "парк"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u15.zhivot.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L854"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.bae.zhivot"],
+      "prompt": {
+        "ko": "배",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "живот",
+            "ru": "живот"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "стопа",
+            "ru": "стопа"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "палец (на ноге)",
+            "ru": "палец (на ноге)"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "нога (от бедра до стопы)",
+            "ru": "нога (от бедра до стопы)"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u15.stopa.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L848"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.bal.stopa"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «стопа»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "발",
+            "ru": "발"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "배",
+            "ru": "배"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "발가락",
+            "ru": "발가락"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "다리",
+            "ru": "다리"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u15.palets-na-noge.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L849"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.balgarak.palets-na-noge"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «палец (на ноге)»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["발가락"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u15.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.dari.noga-ot-bedra-do-stopy",
+        "dict.deung.spina",
+        "dict.eokkae.plecho",
+        "dict.eolgul.litso"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "다리",
+            "ru": "다리"
+          },
+          "right": {
+            "ko": "нога (от бедра до стопы)",
+            "ru": "нога (от бедра до стопы)"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "등",
+            "ru": "등"
+          },
+          "right": {
+            "ko": "спина",
+            "ru": "спина"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "어깨",
+            "ru": "어깨"
+          },
+          "right": {
+            "ko": "плечо",
+            "ru": "плечо"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "얼굴",
+            "ru": "얼굴"
+          },
+          "right": {
+            "ko": "лицо",
+            "ru": "лицо"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u16.otets.ko-ru",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L633"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.abeoji.otets"],
+      "prompt": {
+        "ko": "아버지",
+        "ru": "Выберите значение слова."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary meaning-choice; not language-approved.",
+        "ru": "Черновой выбор значения слова; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "отец",
+            "ru": "отец"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "сын",
+            "ru": "сын"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "обращение к мужчине среднего возраста",
+            "ru": "обращение к мужчине среднего возраста"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "обращение к женщине среднего возраста",
+            "ru": "обращение к женщине среднего возраста"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u16.syn.ru-ko",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L638"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "meaning-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.adeul.syn"],
+      "prompt": {
+        "ko": "알맞은 한국어 단어를 고르십시오.",
+        "ru": "Выберите корейское слово для значения: «сын»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary reverse meaning-choice; not language-approved.",
+        "ru": "Черновой выбор корейского слова по переводу; язык не утверждён."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "아들",
+            "ru": "아들"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "아버지",
+            "ru": "아버지"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "아저씨",
+            "ru": "아저씨"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "아주머니",
+            "ru": "아주머니"
+          }
+        }
+      ],
+      "pairs": [],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.vocabulary.u16.obraschenie-k-muzhchine-srednego-vozrasta.produce",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "line-range",
+            "value": "L655"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "free-response",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": ["dict.ajeossi.obraschenie-k-muzhchine-srednego-vozrasta"],
+      "prompt": {
+        "ko": "한국어로 쓰십시오.",
+        "ru": "Напишите по-корейски: «обращение к мужчине среднего возраста»."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary free-response; transliteration is not accepted.",
+        "ru": "Черновой ввод слова; транслитерация не принимается."
+      },
+      "difficulty": "practice",
+      "options": [],
+      "pairs": [],
+      "correctOptionId": null,
+      "acceptedAnswers": ["아저씨"]
+    },
+    {
+      "logicalId": "exercise.vocabulary.u16.matching.v01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.matching"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "vocabulary",
+      "exerciseType": "matching-translation",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": null,
+      "dictionaryEntryLogicalIds": [
+        "dict.ajumeoni.obraschenie-k-zhenschine-srednego-vozrasta",
+        "dict.anae.zhena",
+        "dict.appa.papa",
+        "dict.bumonim.roditeli"
+      ],
+      "prompt": {
+        "ko": "단어를 뜻과 연결하십시오.",
+        "ru": "Сопоставьте корейские слова и значения."
+      },
+      "explanation": {
+        "ko": "Draft vocabulary matching; not language-approved.",
+        "ru": "Черновое сопоставление словаря; язык не утверждён."
+      },
+      "difficulty": "intro",
+      "options": [],
+      "pairs": [
+        {
+          "id": "pair1",
+          "left": {
+            "ko": "아주머니",
+            "ru": "아주머니"
+          },
+          "right": {
+            "ko": "обращение к женщине среднего возраста",
+            "ru": "обращение к женщине среднего возраста"
+          }
+        },
+        {
+          "id": "pair2",
+          "left": {
+            "ko": "아내",
+            "ru": "아내"
+          },
+          "right": {
+            "ko": "жена",
+            "ru": "жена"
+          }
+        },
+        {
+          "id": "pair3",
+          "left": {
+            "ko": "아빠",
+            "ru": "아빠"
+          },
+          "right": {
+            "ko": "папа",
+            "ru": "папа"
+          }
+        },
+        {
+          "id": "pair4",
+          "left": {
+            "ko": "부모님",
+            "ru": "부모님"
+          },
+          "right": {
+            "ko": "родители",
+            "ru": "родители"
+          }
+        }
+      ],
+      "correctOptionId": null,
+      "acceptedAnswers": []
+    }
+  ]
 }

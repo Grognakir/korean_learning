@@ -388,6 +388,7 @@ describe("phase-2 content contracts", () => {
         { id: "a", label: { ko: "A", ru: "A" } },
         { id: "b", label: { ko: "B", ru: "B" } },
       ],
+      pairs: [],
       correctOptionId: "missing",
       acceptedAnswers: [],
     });

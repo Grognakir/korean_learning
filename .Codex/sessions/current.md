@@ -4,36 +4,30 @@
 
 ## Чем занимаемся
 
-F1-I32 (mistake review queue) выполнен локально на ветке `feature/error-review`. PERF plan закрыт ранее. Следующий шаг фазы 1 — F1-I33 (стабилизация), без запуска в этой же итерации.
+F1-I33 (стабилизация фазы 1) выполнен локально на ветке `chore/framework-stabilization`. Preview honorifics удалён; три последовательных full gate зелёные. Push / внешний CI / Preview smoke / CP-5 — только после явного разрешения.
 
-## F1-I32 — результат
+## F1-I33 — результат
 
-- Ошибка в practice upsert'ит `review_queue` (`due`, stage 0); practice correct очередь не трогает.
-- Review correct двигает фиксированную цепочку +1d / +3d / +7d → `mastered` (`due_at` null).
-- Review wrong и новая ошибка по mastered возвращают `due` / stage 0.
-- `/review` показывает guest/empty/summary; CTA стартует cloud session `mode: review` через `POST /api/training/review-sessions`.
-- Переходы выполняются в той же транзакции, что `submit_training_attempt` (SECURITY DEFINER).
+- Удалены `src/modules/honorifics/**` и `composeDevelopmentContent.ts`.
+- Composition всегда production/sample; `/training/honorifics-preview` → 404.
+- Static params сессии — только `demo-session`.
+- Регрессионные проверки: unit/route + e2e 404 + production-build exclusion.
 
-## Ключевые файлы
-
-- `supabase/migrations/20260809000009_review_queue_policy.sql`
-- `src/features/review/**`
-- `src/app/review/*`, `src/app/api/training/review-sessions/route.ts`
-- DB helpers: `node_modules/.bin/supabase` вместо `pnpm exec` (PATH без pnpm)
-
-## Gate (локально)
+## Gate (локально, 3× подряд)
 
 - format / lint / typecheck green
-- unit 316, integration 17, e2e 20, db 16, rls 10
-- build + bundle budgets (`/review` 16 KB gzip)
+- unit 309, integration 17, e2e 20, db 16, rls 10
+- build + bundle budgets
+- Node caveat: shell сейчас Node v22.15.0 (wanted 24.18.0); ранее согласовано продолжать с этим предупреждением
 
 ## Открытые задачи
 
-- [ ] Push/merge `feature/error-review` — только по разрешению
-- [ ] Remote migration на Supabase — CP-4 / явное разрешение (локально migration применена)
-- [ ] F1-I33 — стабилизация фазы 1
+- [ ] Push `chore/framework-stabilization` — только по разрешению
+- [ ] Дождаться зелёного внешнего CI (включая DB/RLS)
+- [ ] Preview smoke matrix + CP-5 отчёт
+- [ ] Не начинать production launch / phase 2 без явного решения
 
-## Отклонения от карточки
+## Известные ограничения
 
-- `due_at` сделан nullable (иначе `mastered` + `dueAt = null` невозможно).
-- Починены хрупкие DB helper'ы и progress tests (фиксированный `completed_at` в прошлом, неверный topic id, race fileParallelism).
+- Production catalog в remote Supabase — только published `sample-module`.
+- CP-5 незавершён до push + CI + preview smoke + принятия пользователем.

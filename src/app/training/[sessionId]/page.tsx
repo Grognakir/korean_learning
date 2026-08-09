@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 
 import { CatalogSectionSkeleton } from "@/components/feedback";
-import { PageContainer } from "@/wrappers";
-
-import { HONORIFICS_PREVIEW_SESSION_ID } from "@/modules";
 import { DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
+import { PageContainer } from "@/wrappers";
 
 import { SessionPageContent } from "./SessionExercisePanel";
 import styles from "./page.module.css";
@@ -20,13 +18,7 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-  const params = [{ sessionId: DEMO_TRAINING_SESSION_ID }];
-
-  if (process.env.NODE_ENV === "development") {
-    params.push({ sessionId: HONORIFICS_PREVIEW_SESSION_ID });
-  }
-
-  return params;
+  return [{ sessionId: DEMO_TRAINING_SESSION_ID }];
 }
 
 export default async function SessionPage({ params }: SessionPageProps) {

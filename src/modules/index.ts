@@ -3,10 +3,6 @@ export type { LearningContentComposition } from "./composeProductionContent";
 export { resolveContentSource, isExplicitLocalContentSource } from "./contentSource";
 export type { ContentSource } from "./contentSource";
 export {
-  HONORIFICS_MODULE_SLUG,
-  HONORIFICS_PREVIEW_SESSION_ID,
-} from "./honorifics/previewConstants";
-export {
   getCachedExerciseCountByModuleSlug,
   getCachedExerciseCountsByModuleSlug,
   getCachedExercisesByModuleSlug,

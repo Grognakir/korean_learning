@@ -4,7 +4,6 @@ import { LocalModuleRepository, type ModuleRepository } from "@/features/trainin
 import type { ExerciseRepository } from "@/features/training/data/ExerciseRepository";
 import type { LearningModuleDefinition } from "@/types";
 
-import { composeDevelopmentContent } from "./composeDevelopmentContent";
 import {
   composeProductionContent,
   type LearningContentComposition,
@@ -23,10 +22,7 @@ export class LearningContentError extends Error {
 }
 
 function composeLocalContent(nodeEnv: string): LearningContentComposition {
-  if (nodeEnv === "development") {
-    return composeDevelopmentContent();
-  }
-
+  void nodeEnv;
   return composeProductionContent();
 }
 

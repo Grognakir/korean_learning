@@ -1,4 +1,3 @@
-import { composeDevelopmentContent } from "./composeDevelopmentContent";
 import {
   composeProductionContent,
   type LearningContentComposition,
@@ -6,16 +5,10 @@ import {
 
 export type { LearningContentComposition } from "./composeProductionContent";
 
-/**
- * Server-side content composition.
- * Draft honorifics preview is included only when nodeEnv === "development".
- */
+/** Server-side content composition for local fixtures (sample module only). */
 export function composeLearningContent(
   nodeEnv: string = process.env.NODE_ENV ?? "production",
 ): LearningContentComposition {
-  if (nodeEnv === "development") {
-    return composeDevelopmentContent();
-  }
-
+  void nodeEnv;
   return composeProductionContent();
 }

@@ -30,15 +30,18 @@ function collectPaths(directory: string): string[] {
   return paths;
 }
 
-describe("honorifics production build gate", () => {
-  it("keeps generateStaticParams free of honorifics under the default non-dev registry", async () => {
+describe("production build excludes removed honorifics preview", () => {
+  it("keeps composition and static params free of honorifics", async () => {
     const params = await generateTopicStaticParams();
     const sessionParams = await generateSessionStaticParams();
 
     expect(params.map((entry) => entry.moduleSlug)).not.toContain("honorifics");
     expect(sessionParams.map((entry) => entry.sessionId)).toEqual([DEMO_TRAINING_SESSION_ID]);
     expect(
-      composeLearningContent(process.env.NODE_ENV ?? "test").modules.map((m) => m.slug),
+      composeLearningContent(process.env.NODE_ENV ?? "test").modules.map((module) => module.slug),
+    ).not.toContain("honorifics");
+    expect(
+      composeLearningContent("development").modules.map((module) => module.slug),
     ).not.toContain("honorifics");
   });
 

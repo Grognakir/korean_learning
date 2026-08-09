@@ -49,10 +49,19 @@ describe("content store outage", () => {
     expect(screen.getByRole("heading", { name: "Сервис недоступен" })).toBeInTheDocument();
   });
 
-  it("shows the service unavailable state for a session that cannot be resolved", async () => {
-    const { SessionPageContent } = await import("@/app/training/[sessionId]/SessionExercisePanel");
+  it("shows the service unavailable state when session exercises cannot load", async () => {
+    const { SessionExercisePanel } =
+      await import("@/app/training/[sessionId]/SessionExercisePanel");
 
-    render(await SessionPageContent({ sessionId: "honorifics-preview" }));
+    render(
+      await SessionExercisePanel({
+        session: {
+          sessionId: "demo-session",
+          moduleSlug: "sample-module",
+          description: "Тестовая сессия",
+        },
+      }),
+    );
 
     expect(screen.getByRole("heading", { name: "Сервис недоступен" })).toBeInTheDocument();
   });

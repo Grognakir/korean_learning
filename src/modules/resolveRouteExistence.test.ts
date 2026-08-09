@@ -1,17 +1,12 @@
 import { describe, expect, it } from "vitest";
 
 import {
-  HONORIFICS_MODULE_SLUG,
-  HONORIFICS_PREVIEW_SESSION_ID,
-} from "./honorifics/previewConstants";
-import {
   isKnownContentRoute,
   matchContentRoute,
   PLACEHOLDER_MODULE_SLUG,
 } from "./resolveRouteExistence";
 
 const PUBLISHED = new Set(["sample-module"]);
-const PUBLISHED_WITH_HONORIFICS = new Set(["sample-module", HONORIFICS_MODULE_SLUG]);
 
 describe("matchContentRoute", () => {
   it("matches single-segment module and session routes", () => {
@@ -53,28 +48,18 @@ describe("isKnownContentRoute", () => {
     );
   });
 
-  it("gates the honorifics preview session on the module being published", () => {
-    const route = { kind: "session", sessionId: HONORIFICS_PREVIEW_SESSION_ID } as const;
-
-    expect(isKnownContentRoute(route, PUBLISHED)).toBe(false);
-    expect(isKnownContentRoute(route, PUBLISHED_WITH_HONORIFICS)).toBe(true);
-  });
-
   it("never treats the prerender placeholder slug as a published module", () => {
-    expect(
-      isKnownContentRoute(
-        { kind: "module", slug: PLACEHOLDER_MODULE_SLUG },
-        PUBLISHED_WITH_HONORIFICS,
-      ),
-    ).toBe(false);
+    expect(isKnownContentRoute({ kind: "module", slug: PLACEHOLDER_MODULE_SLUG }, PUBLISHED)).toBe(
+      false,
+    );
   });
 
-  it("rejects unknown session ids", () => {
+  it("rejects unknown session ids including the removed honorifics preview", () => {
+    expect(isKnownContentRoute({ kind: "session", sessionId: "missing-session" }, PUBLISHED)).toBe(
+      false,
+    );
     expect(
-      isKnownContentRoute(
-        { kind: "session", sessionId: "missing-session" },
-        PUBLISHED_WITH_HONORIFICS,
-      ),
+      isKnownContentRoute({ kind: "session", sessionId: "honorifics-preview" }, PUBLISHED),
     ).toBe(false);
   });
 });

@@ -16,7 +16,6 @@ import {
   getCachedExercisesByModuleSlug,
   getCachedPublishedModuleBySlug,
 } from "@/modules/cachedLearningContent";
-import { HONORIFICS_MODULE_SLUG, HONORIFICS_PREVIEW_SESSION_ID } from "@/modules";
 
 export type ResolvedSession = {
   readonly sessionId: string;
@@ -25,9 +24,7 @@ export type ResolvedSession = {
 };
 
 export type SessionResolution =
-  | { readonly status: "ready"; readonly session: ResolvedSession }
-  | { readonly status: "unknown" }
-  | { readonly status: "unavailable" };
+  { readonly status: "ready"; readonly session: ResolvedSession } | { readonly status: "unknown" };
 
 export async function resolveSession(sessionId: string): Promise<SessionResolution> {
   if (sessionId === DEMO_TRAINING_SESSION_ID) {
@@ -41,33 +38,7 @@ export async function resolveSession(sessionId: string): Promise<SessionResoluti
     };
   }
 
-  if (sessionId !== HONORIFICS_PREVIEW_SESSION_ID) {
-    return { status: "unknown" };
-  }
-
-  const honorifics = await getCachedPublishedModuleBySlug(HONORIFICS_MODULE_SLUG);
-
-  if (honorifics.status === "unavailable") {
-    return { status: "unavailable" };
-  }
-
-  if (!honorifics.data) {
-    return { status: "unknown" };
-  }
-
-  return {
-    status: "ready",
-    session: {
-      sessionId: HONORIFICS_PREVIEW_SESSION_ID,
-      moduleSlug: HONORIFICS_MODULE_SLUG,
-      description: (
-        <>
-          Черновой preview <span lang="ko">높임말</span>. Контент не утверждён — сессия нужна только
-          для проверки общего UI.
-        </>
-      ),
-    },
-  };
+  return { status: "unknown" };
 }
 
 type SessionExercisePanelProps = {
@@ -131,15 +102,6 @@ export async function SessionExercisePanel({ session }: SessionExercisePanelProp
 
 export async function SessionPageContent({ sessionId }: { readonly sessionId: string }) {
   const resolution = await resolveSession(sessionId);
-
-  if (resolution.status === "unavailable") {
-    return (
-      <>
-        <PageHeader description="Не удалось загрузить сессию." title="Учебная сессия" />
-        <ServiceUnavailableState />
-      </>
-    );
-  }
 
   if (resolution.status === "unknown") {
     notFound();

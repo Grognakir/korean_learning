@@ -1,10 +1,5 @@
 import { DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
 
-import {
-  HONORIFICS_MODULE_SLUG,
-  HONORIFICS_PREVIEW_SESSION_ID,
-} from "./honorifics/previewConstants";
-
 export type ContentRoute =
   | { readonly kind: "module"; readonly slug: string }
   | { readonly kind: "session"; readonly sessionId: string };
@@ -54,12 +49,5 @@ export function isKnownContentRoute(
     return publishedModuleSlugs.has(route.slug);
   }
 
-  if (route.sessionId === DEMO_TRAINING_SESSION_ID) {
-    return true;
-  }
-
-  return (
-    route.sessionId === HONORIFICS_PREVIEW_SESSION_ID &&
-    publishedModuleSlugs.has(HONORIFICS_MODULE_SLUG)
-  );
+  return route.sessionId === DEMO_TRAINING_SESSION_ID;
 }

@@ -1601,7 +1601,7 @@ Phase 2 создаёт канонический `src/modules/honorifics` зан�
 - [ ] Review queue соответствует политике F1-I32 и защищена RLS.
 - [ ] Anon, owner и other-user сценарии подтверждены DB/RLS tests.
 - [ ] Draft/rejected/unpublished content недоступен в production path.
-- [ ] Временный dev-only preview 높임말 из F1-I17A удалён до завершения F1-I33.
+- [x] Временный dev-only preview 높임말 из F1-I17A удалён до завершения F1-I33.
 - [ ] Loading, empty, not-found, error и retry states существуют на затронутых routes.
 - [ ] Mobile/desktop не имеют критических layout defects, скачков action buttons и horizontal scroll.
 - [ ] Format, lint, typecheck, unit, component, integration, DB/RLS, E2E и build зелёные.

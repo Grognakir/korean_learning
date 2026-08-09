@@ -358,7 +358,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I04 — 16 тем и 80 grammar topics
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** формализовать полную структуру 1급 без упражнений и без публикации.
 - **Вход:** F2-I03 `done`; `CURRICULUM_TOPICS.md` и `CURRICULUM_GRAMMAR.md`.
 - **Ветка:** `codex/f2-i04-curriculum-catalog`.

@@ -83,7 +83,7 @@ function writeMinimalTree(root: string, overrides: Partial<Record<string, unknow
 }
 
 describe("phase-2 content contracts", () => {
-  it("accepts the repository empty graph with four canonical sources", () => {
+  it("accepts the repository content graph with four canonical sources", () => {
     const manifest = validatePhase2Content(PHASE_2_CONTENT_ROOT);
 
     expect(manifest.schemaVersion).toBe("phase-2.v1");

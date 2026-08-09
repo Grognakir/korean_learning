@@ -31,6 +31,7 @@
     "test:db": "vitest run --config vitest.db.config.mts",
     "test:rls": "vitest run --config vitest.rls.config.mts",
     "content:validate": "tsx scripts/content/validate-content.ts",
+    "content:generate-catalog": "tsx scripts/content/generate-curriculum-catalog.ts",
     "test:content": "vitest run --config vitest.content.config.mts"
   },
   "engines": {

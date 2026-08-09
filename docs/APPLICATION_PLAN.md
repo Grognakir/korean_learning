@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I03 `done` на ветках; I01–I02 в `main`).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I04 `done`; I01–I03 в `main`).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I03 curriculum DB schema — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i03-curriculum-schema`.
-- **Уже сделано:** migration `…00010` (skills, reading_passages, dictionary junctions, provenance/sources, user_skill_progress); seed/types/RLS/DB tests обновлены.
-- **Выполненные проверки:** format/lint/typecheck/310 unit/15 content/17 integration/20 db/13 rls/build/e2e; content:validate green.
-- **Сейчас работает:** sample-module на расширенной схеме (`learning_skill=grammar`, `unit_number=null`).
-- **Пока не работает / ограничения:** 16 тем/80 грамматик ещё не импортированы (F2-I04); Preview SSO как раньше.
-- **Следующий конкретный шаг:** F2-I04 — level-one curriculum catalog.
+- **Текущая итерация:** F2-I04 level-one curriculum catalog — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i04-curriculum-catalog`.
+- **Уже сделано:** authoring draft 16 units + 80 grammar topics + provenance из `CURRICULUM_TOPICS`/`CURRICULUM_GRAMMAR`; generator `content:generate-catalog`.
+- **Выполненные проверки:** content:validate + content coverage; format/lint/typecheck/unit/integration/build (gate итерации).
+- **Сейчас работает:** sample runtime без изменений; canonical catalog только в `content/phase-2` (draft, не published).
+- **Пока не работает / ограничения:** словарь/тексты ещё не импортированы (F2-I05+); seed pipeline не подхватывает catalog; Preview SSO как раньше.
+- **Следующий конкретный шаг:** F2-I05 — dictionary draft и reconciliation.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

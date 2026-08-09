@@ -1,4 +1,405 @@
 {
   "schemaVersion": "phase-2.v1",
-  "items": []
+  "items": [
+    {
+      "logicalId": "unit.u01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 1,
+      "slug": "u01",
+      "title": {
+        "ko": "인사와 소개",
+        "ru": "приветствие и представление"
+      },
+      "summary": {
+        "ko": "1과 인사와 소개",
+        "ru": "Урок 1: приветствие и представление"
+      }
+    },
+    {
+      "logicalId": "unit.u02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 2,
+      "slug": "u02",
+      "title": {
+        "ko": "학교와 집",
+        "ru": "школа и дом"
+      },
+      "summary": {
+        "ko": "2과 학교와 집",
+        "ru": "Урок 2: школа и дом"
+      }
+    },
+    {
+      "logicalId": "unit.u03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 3,
+      "slug": "u03",
+      "title": {
+        "ko": "학교 생활",
+        "ru": "школьная жизнь"
+      },
+      "summary": {
+        "ko": "3과 학교 생활",
+        "ru": "Урок 3: школьная жизнь"
+      }
+    },
+    {
+      "logicalId": "unit.u04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 4,
+      "slug": "u04",
+      "title": {
+        "ko": "일상 생활",
+        "ru": "повседневная жизнь"
+      },
+      "summary": {
+        "ko": "4과 일상 생활",
+        "ru": "Урок 4: повседневная жизнь"
+      }
+    },
+    {
+      "logicalId": "unit.u05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 5,
+      "slug": "u05",
+      "title": {
+        "ko": "하루 일과",
+        "ru": "распорядок дня"
+      },
+      "summary": {
+        "ko": "5과 하루 일과",
+        "ru": "Урок 5: распорядок дня"
+      }
+    },
+    {
+      "logicalId": "unit.u06",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u06"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 6,
+      "slug": "u06",
+      "title": {
+        "ko": "주말",
+        "ru": "выходные"
+      },
+      "summary": {
+        "ko": "6과 주말",
+        "ru": "Урок 6: выходные"
+      }
+    },
+    {
+      "logicalId": "unit.u07",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u07"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 7,
+      "slug": "u07",
+      "title": {
+        "ko": "날씨와 계절",
+        "ru": "погода и времена года"
+      },
+      "summary": {
+        "ko": "7과 날씨와 계절",
+        "ru": "Урок 7: погода и времена года"
+      }
+    },
+    {
+      "logicalId": "unit.u08",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u08"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 8,
+      "slug": "u08",
+      "title": {
+        "ko": "계획",
+        "ru": "планы"
+      },
+      "summary": {
+        "ko": "8과 계획",
+        "ru": "Урок 8: планы"
+      }
+    },
+    {
+      "logicalId": "unit.u09",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u09"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 9,
+      "slug": "u09",
+      "title": {
+        "ko": "물건 사기",
+        "ru": "покупки"
+      },
+      "summary": {
+        "ko": "9과 물건 사기",
+        "ru": "Урок 9: покупки"
+      }
+    },
+    {
+      "logicalId": "unit.u10",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 10,
+      "slug": "u10",
+      "title": {
+        "ko": "음식",
+        "ru": "еда"
+      },
+      "summary": {
+        "ko": "10과 음식",
+        "ru": "Урок 10: еда"
+      }
+    },
+    {
+      "logicalId": "unit.u11",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 11,
+      "slug": "u11",
+      "title": {
+        "ko": "전화",
+        "ru": "телефон"
+      },
+      "summary": {
+        "ko": "11과 전화",
+        "ru": "Урок 11: телефон"
+      }
+    },
+    {
+      "logicalId": "unit.u12",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 12,
+      "slug": "u12",
+      "title": {
+        "ko": "약속",
+        "ru": "договорённости"
+      },
+      "summary": {
+        "ko": "12과 약속",
+        "ru": "Урок 12: договорённости"
+      }
+    },
+    {
+      "logicalId": "unit.u13",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 13,
+      "slug": "u13",
+      "title": {
+        "ko": "교통",
+        "ru": "транспорт"
+      },
+      "summary": {
+        "ko": "13과 교통",
+        "ru": "Урок 13: транспорт"
+      }
+    },
+    {
+      "logicalId": "unit.u14",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 14,
+      "slug": "u14",
+      "title": {
+        "ko": "공공 장소",
+        "ru": "общественные места"
+      },
+      "summary": {
+        "ko": "14과 공공 장소",
+        "ru": "Урок 14: общественные места"
+      }
+    },
+    {
+      "logicalId": "unit.u15",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 15,
+      "slug": "u15",
+      "title": {
+        "ko": "건강",
+        "ru": "здоровье"
+      },
+      "summary": {
+        "ko": "15과 건강",
+        "ru": "Урок 15: здоровье"
+      }
+    },
+    {
+      "logicalId": "unit.u16",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-topics",
+          "locator": {
+            "kind": "section",
+            "value": "u16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitNumber": 16,
+      "slug": "u16",
+      "title": {
+        "ko": "가족",
+        "ru": "семья"
+      },
+      "summary": {
+        "ko": "16과 가족",
+        "ru": "Урок 16: семья"
+      }
+    }
+  ]
 }

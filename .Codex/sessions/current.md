@@ -4,25 +4,28 @@
 
 ## Чем занимаемся
 
-F2-I03 выполнен. F2-I01–I02 уже в `main`. Следующая карточка — F2-I04.
+F2-I04 выполнен. Следующая карточка — F2-I05 (dictionary draft).
 
-## F2-I03 — результат
+## F2-I04 — результат
 
-- Migration `20260809000010_curriculum_skills_schema.sql`
-- Enums: `learning_skill`, `single-choice`, review entity types for passage/source
-- Tables: `reading_passages`, `dictionary_entry_modules`, `exercise_dictionary_entries`, `content_sources`, `content_provenance`, `user_skill_progress`
-- Sample backfill via seed: topic `logical_id`, exercises `learning_skill=grammar`
-- RLS: published passages public; sources/provenance service-only; skill progress owner-select
+- Generator `scripts/content/generate-curriculum-catalog.ts` + `pnpm content:generate-catalog`
+- `content/phase-2/units.json`: 16 draft units (`u01`…`u16`)
+- `content/phase-2/grammar-topics.json`: 80 draft syllabus topics, counts `5,4,5,5,5,6,5,5,5,5,5,5,5,5,5,5`
+- `content/phase-2/provenance.json`: 96 rows (units + grammar)
+- Coverage tests in `scripts/content/curriculum-catalog.test.ts`
+- Ничего не published; honorifics module не создавался
 
 ## Gate
 
-- db 20, rls 13, unit 310, content 15, integration 17, e2e 20, build green
+- `pnpm content:validate` green
+- `pnpm test:content` includes catalog coverage
+- format/lint/typecheck/unit/integration/build по карточке
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i03-curriculum-schema`
-- Commit: `feat: extend database for curriculum skills`
+- Branch: `codex/f2-i04-curriculum-catalog`
+- Commit: `feat: add level one curriculum catalog`
 
 ## Следующий шаг
 
-F2-I04 — 16 units + 80 grammar topics. Push/merge по указанию пользователя.
+F2-I05 — reconcile canonical Korean dictionary. Push/merge без ожидания CI по указанию пользователя.

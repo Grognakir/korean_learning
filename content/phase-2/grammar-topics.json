@@ -1,4 +1,2165 @@
 {
   "schemaVersion": "phase-2.v1",
-  "items": []
+  "items": [
+    {
+      "logicalId": "grammar.u01.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u01",
+      "patternKo": "N입니다/입니까?",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N입니다/입니까?",
+        "ru": "формальная утвердительная и вопросительная форма связки «быть/являться»."
+      },
+      "summary": {
+        "ko": "N입니다/입니까?",
+        "ru": "формальная утвердительная и вопросительная форма связки «быть/являться»."
+      }
+    },
+    {
+      "logicalId": "grammar.u01.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u01",
+      "patternKo": "N이/가",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N이/가",
+        "ru": "маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной."
+      },
+      "summary": {
+        "ko": "N이/가",
+        "ru": "маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной."
+      }
+    },
+    {
+      "logicalId": "grammar.u01.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u01",
+      "patternKo": "N은/는①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "N은/는①",
+        "ru": "задаёт тему высказывания или уже известный предмет разговора."
+      },
+      "summary": {
+        "ko": "N은/는①",
+        "ru": "задаёт тему высказывания или уже известный предмет разговора."
+      }
+    },
+    {
+      "logicalId": "grammar.u01.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u01",
+      "patternKo": "N이/가 아니다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N이/가 아니다",
+        "ru": "отрицает принадлежность к классу: «не является N»."
+      },
+      "summary": {
+        "ko": "N이/가 아니다",
+        "ru": "отрицает принадлежность к классу: «не является N»."
+      }
+    },
+    {
+      "logicalId": "grammar.u01.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u01",
+      "patternKo": "N도",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N도",
+        "ru": "добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`."
+      },
+      "summary": {
+        "ko": "N도",
+        "ru": "добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`."
+      }
+    },
+    {
+      "logicalId": "grammar.u02.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u02",
+      "patternKo": "이/그/저",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "이/그/저",
+        "ru": "указательные определители «этот/тот/вон тот» по положению относительно участников разговора."
+      },
+      "summary": {
+        "ko": "이/그/저",
+        "ru": "указательные определители «этот/тот/вон тот» по положению относительно участников разговора."
+      }
+    },
+    {
+      "logicalId": "grammar.u02.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u02",
+      "patternKo": "N의",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N의",
+        "ru": "выражает принадлежность или отношение между существительными."
+      },
+      "summary": {
+        "ko": "N의",
+        "ru": "выражает принадлежность или отношение между существительными."
+      }
+    },
+    {
+      "logicalId": "grammar.u02.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u02",
+      "patternKo": "N에①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "N에①",
+        "ru": "указывает место существования, нахождения или направление движения."
+      },
+      "summary": {
+        "ko": "N에①",
+        "ru": "указывает место существования, нахождения или направление движения."
+      }
+    },
+    {
+      "logicalId": "grammar.u02.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u02",
+      "patternKo": "N이/가 있다/없다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N이/가 있다/없다",
+        "ru": "сообщает о наличии, отсутствии или местонахождении предмета/лица."
+      },
+      "summary": {
+        "ko": "N이/가 있다/없다",
+        "ru": "сообщает о наличии, отсутствии или местонахождении предмета/лица."
+      }
+    },
+    {
+      "logicalId": "grammar.u03.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u03",
+      "patternKo": "V-(스)ㅂ니다/-(스)ㅂ니까?",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-(스)ㅂ니다/-(스)ㅂ니까?",
+        "ru": "формальный вежливый стиль утверждения и вопроса."
+      },
+      "summary": {
+        "ko": "V-(스)ㅂ니다/-(스)ㅂ니까?",
+        "ru": "формальный вежливый стиль утверждения и вопроса."
+      }
+    },
+    {
+      "logicalId": "grammar.u03.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u03",
+      "patternKo": "N을/를",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N을/를",
+        "ru": "маркирует прямое дополнение; `을` после 받침, `를` после гласной."
+      },
+      "summary": {
+        "ko": "N을/를",
+        "ru": "маркирует прямое дополнение; `을` после 받침, `를` после гласной."
+      }
+    },
+    {
+      "logicalId": "grammar.u03.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u03",
+      "patternKo": "N만",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N만",
+        "ru": "ограничивает значение: «только N»."
+      },
+      "summary": {
+        "ko": "N만",
+        "ru": "ограничивает значение: «только N»."
+      }
+    },
+    {
+      "logicalId": "grammar.u03.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u03",
+      "patternKo": "N에 가다/오다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N에 가다/오다",
+        "ru": "выражает движение к месту: «идти/приходить в N»."
+      },
+      "summary": {
+        "ko": "N에 가다/오다",
+        "ru": "выражает движение к месту: «идти/приходить в N»."
+      }
+    },
+    {
+      "logicalId": "grammar.u03.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u03",
+      "patternKo": "수①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "수①",
+        "ru": "базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами."
+      },
+      "summary": {
+        "ko": "수①",
+        "ru": "базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами."
+      }
+    },
+    {
+      "logicalId": "grammar.u04.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u04",
+      "patternKo": "N와/과 N",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N와/과 N",
+        "ru": "нейтрально-письменно соединяет существительные значением «и/с»."
+      },
+      "summary": {
+        "ko": "N와/과 N",
+        "ru": "нейтрально-письменно соединяет существительные значением «и/с»."
+      }
+    },
+    {
+      "logicalId": "grammar.u04.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u04",
+      "patternKo": "N하고 N",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N하고 N",
+        "ru": "разговорно соединяет существительные значением «и/с»."
+      },
+      "summary": {
+        "ko": "N하고 N",
+        "ru": "разговорно соединяет существительные значением «и/с»."
+      }
+    },
+    {
+      "logicalId": "grammar.u04.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u04",
+      "patternKo": "N에서",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N에서",
+        "ru": "обозначает место действия или исходную точку движения."
+      },
+      "summary": {
+        "ko": "N에서",
+        "ru": "обозначает место действия или исходную точку движения."
+      }
+    },
+    {
+      "logicalId": "grammar.u04.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u04",
+      "patternKo": "수②",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "수②",
+        "ru": "даты, календарные числа, месяцы, дни недели и чтение календаря."
+      },
+      "summary": {
+        "ko": "수②",
+        "ru": "даты, календарные числа, месяцы, дни недели и чтение календаря."
+      }
+    },
+    {
+      "logicalId": "grammar.u04.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u04",
+      "patternKo": "N에②",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "N에②",
+        "ru": "обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится."
+      },
+      "summary": {
+        "ko": "N에②",
+        "ru": "обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится."
+      }
+    },
+    {
+      "logicalId": "grammar.u05.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u05",
+      "patternKo": "V-아/어/여요①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "V-아/어/여요①",
+        "ru": "базовая разговорно-вежливая форма настоящего времени."
+      },
+      "summary": {
+        "ko": "V-아/어/여요①",
+        "ru": "базовая разговорно-вежливая форма настоящего времени."
+      }
+    },
+    {
+      "logicalId": "grammar.u05.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u05",
+      "patternKo": "N이에요/예요",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N이에요/예요",
+        "ru": "разговорно-вежливая связка после существительного."
+      },
+      "summary": {
+        "ko": "N이에요/예요",
+        "ru": "разговорно-вежливая связка после существительного."
+      }
+    },
+    {
+      "logicalId": "grammar.u05.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u05",
+      "patternKo": "수③",
+      "category": "syllabus",
+      "usageKey": "③",
+      "title": {
+        "ko": "수③",
+        "ru": "время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения."
+      },
+      "summary": {
+        "ko": "수③",
+        "ru": "время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения."
+      }
+    },
+    {
+      "logicalId": "grammar.u05.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u05",
+      "patternKo": "N부터 N까지",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N부터 N까지",
+        "ru": "задаёт начало и конец временного или пространственного диапазона."
+      },
+      "summary": {
+        "ko": "N부터 N까지",
+        "ru": "задаёт начало и конец временного или пространственного диапазона."
+      }
+    },
+    {
+      "logicalId": "grammar.u05.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u05",
+      "patternKo": "안 V/V-지 않다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "안 V/V-지 않다",
+        "ru": "краткое и полное отрицание действия или состояния."
+      },
+      "summary": {
+        "ko": "안 V/V-지 않다",
+        "ru": "краткое и полное отрицание действия или состояния."
+      }
+    },
+    {
+      "logicalId": "grammar.u06.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u06",
+      "patternKo": "V-았/었/였-",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-았/었/였-",
+        "ru": "образует прошедшее время глагола или прилагательного."
+      },
+      "summary": {
+        "ko": "V-았/었/였-",
+        "ru": "образует прошедшее время глагола или прилагательного."
+      }
+    },
+    {
+      "logicalId": "grammar.u06.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u06",
+      "patternKo": "N이었/였-",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N이었/였-",
+        "ru": "прошедшая форма связки после существительного."
+      },
+      "summary": {
+        "ko": "N이었/였-",
+        "ru": "прошедшая форма связки после существительного."
+      }
+    },
+    {
+      "logicalId": "grammar.u06.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u06",
+      "patternKo": "V-고①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "V-고①",
+        "ru": "перечисляет действия или состояния без обязательной причинной связи."
+      },
+      "summary": {
+        "ko": "V-고①",
+        "ru": "перечисляет действия или состояния без обязательной причинной связи."
+      }
+    },
+    {
+      "logicalId": "grammar.u06.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u06",
+      "patternKo": "N(이)고",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N(이)고",
+        "ru": "соединяет существительные или именные характеристики значением «и»."
+      },
+      "summary": {
+        "ko": "N(이)고",
+        "ru": "соединяет существительные или именные характеристики значением «и»."
+      }
+    },
+    {
+      "logicalId": "grammar.u06.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u06",
+      "patternKo": "AV-아/어/여 보다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-아/어/여 보다",
+        "ru": "выражает опыт или попытку «попробовать сделать»."
+      },
+      "summary": {
+        "ko": "AV-아/어/여 보다",
+        "ru": "выражает опыт или попытку «попробовать сделать»."
+      }
+    },
+    {
+      "logicalId": "grammar.u06.n06",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n06"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u06",
+      "patternKo": "ㅡ 동사",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "ㅡ 동사",
+        "ru": "описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной."
+      },
+      "summary": {
+        "ko": "ㅡ 동사",
+        "ru": "описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной."
+      }
+    },
+    {
+      "logicalId": "grammar.u07.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u07",
+      "patternKo": "N은/는②",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "N은/는②",
+        "ru": "подчёркивает контраст или сравнение двух тем."
+      },
+      "summary": {
+        "ko": "N은/는②",
+        "ru": "подчёркивает контраст или сравнение двух тем."
+      }
+    },
+    {
+      "logicalId": "grammar.u07.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u07",
+      "patternKo": "ㅂ 동사",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "ㅂ 동사",
+        "ru": "описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ."
+      },
+      "summary": {
+        "ko": "ㅂ 동사",
+        "ru": "описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ."
+      }
+    },
+    {
+      "logicalId": "grammar.u07.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u07",
+      "patternKo": "AV-아/어/여서①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "AV-아/어/여서①",
+        "ru": "соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем»."
+      },
+      "summary": {
+        "ko": "AV-아/어/여서①",
+        "ru": "соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем»."
+      }
+    },
+    {
+      "logicalId": "grammar.u07.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u07",
+      "patternKo": "N(으)로①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "N(으)로①",
+        "ru": "указывает направление движения; после гласной и `ㄹ` используется `로`."
+      },
+      "summary": {
+        "ko": "N(으)로①",
+        "ru": "указывает направление движения; после гласной и `ㄹ` используется `로`."
+      }
+    },
+    {
+      "logicalId": "grammar.u07.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u07",
+      "patternKo": "AV-(으)러 가다/오다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-(으)러 가다/오다",
+        "ru": "выражает цель движения: «идти/приходить, чтобы сделать»."
+      },
+      "summary": {
+        "ko": "AV-(으)러 가다/오다",
+        "ru": "выражает цель движения: «идти/приходить, чтобы сделать»."
+      }
+    },
+    {
+      "logicalId": "grammar.u08.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u08",
+      "patternKo": "AV-(으)ㄹ 거예요①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "AV-(으)ㄹ 거예요①",
+        "ru": "выражает собственный план, намерение или ожидаемое будущее действие."
+      },
+      "summary": {
+        "ko": "AV-(으)ㄹ 거예요①",
+        "ru": "выражает собственный план, намерение или ожидаемое будущее действие."
+      }
+    },
+    {
+      "logicalId": "grammar.u08.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u08",
+      "patternKo": "AV-고②",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "AV-고②",
+        "ru": "соединяет последовательные действия в рассказе о плане или распорядке."
+      },
+      "summary": {
+        "ko": "AV-고②",
+        "ru": "соединяет последовательные действия в рассказе о плане или распорядке."
+      }
+    },
+    {
+      "logicalId": "grammar.u08.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u08",
+      "patternKo": "AV-기 전에/N 전에",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-기 전에/N 전에",
+        "ru": "обозначает действие или момент «до/перед»."
+      },
+      "summary": {
+        "ko": "AV-기 전에/N 전에",
+        "ru": "обозначает действие или момент «до/перед»."
+      }
+    },
+    {
+      "logicalId": "grammar.u08.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u08",
+      "patternKo": "AV-(으)ㄴ 후에/N 후에",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-(으)ㄴ 후에/N 후에",
+        "ru": "обозначает действие или момент «после»."
+      },
+      "summary": {
+        "ko": "AV-(으)ㄴ 후에/N 후에",
+        "ru": "обозначает действие или момент «после»."
+      }
+    },
+    {
+      "logicalId": "grammar.u08.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u08",
+      "patternKo": "N 동안",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N 동안",
+        "ru": "задаёт продолжительность «в течение N»."
+      },
+      "summary": {
+        "ko": "N 동안",
+        "ru": "задаёт продолжительность «в течение N»."
+      }
+    },
+    {
+      "logicalId": "grammar.u09.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u09",
+      "patternKo": "수④",
+      "category": "syllabus",
+      "usageKey": "④",
+      "title": {
+        "ko": "수④",
+        "ru": "счётные слова, количество товаров, цены и денежные единицы."
+      },
+      "summary": {
+        "ko": "수④",
+        "ru": "счётные слова, количество товаров, цены и денежные единицы."
+      }
+    },
+    {
+      "logicalId": "grammar.u09.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u09",
+      "patternKo": "AV-(으)세요/-(으)십시오",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-(으)세요/-(으)십시오",
+        "ru": "вежливая просьба или команда; `-(으)십시오` формальнее."
+      },
+      "summary": {
+        "ko": "AV-(으)세요/-(으)십시오",
+        "ru": "вежливая просьба или команда; `-(으)십시오` формальнее."
+      }
+    },
+    {
+      "logicalId": "grammar.u09.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u09",
+      "patternKo": "N이랑",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N이랑",
+        "ru": "разговорное «и/с» после существительного."
+      },
+      "summary": {
+        "ko": "N이랑",
+        "ru": "разговорное «и/с» после существительного."
+      }
+    },
+    {
+      "logicalId": "grammar.u09.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u09",
+      "patternKo": "AV-고 있다①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "AV-고 있다①",
+        "ru": "действие, продолжающееся в момент речи."
+      },
+      "summary": {
+        "ko": "AV-고 있다①",
+        "ru": "действие, продолжающееся в момент речи."
+      }
+    },
+    {
+      "logicalId": "grammar.u09.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u09",
+      "patternKo": "N에게(서)/한테(서)",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N에게(서)/한테(서)",
+        "ru": "адресат или источник действия: «кому/у кого/от кого»."
+      },
+      "summary": {
+        "ko": "N에게(서)/한테(서)",
+        "ru": "адресат или источник действия: «кому/у кого/от кого»."
+      }
+    },
+    {
+      "logicalId": "grammar.u10.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u10",
+      "patternKo": "AV-(으)ㄹ까요?①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "AV-(으)ㄹ까요?①",
+        "ru": "предлагает совместное действие или спрашивает решение собеседника."
+      },
+      "summary": {
+        "ko": "AV-(으)ㄹ까요?①",
+        "ru": "предлагает совместное действие или спрашивает решение собеседника."
+      }
+    },
+    {
+      "logicalId": "grammar.u10.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u10",
+      "patternKo": "AV-(으)ㅂ시다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-(으)ㅂ시다",
+        "ru": "формальное «давайте сделаем»."
+      },
+      "summary": {
+        "ko": "AV-(으)ㅂ시다",
+        "ru": "формальное «давайте сделаем»."
+      }
+    },
+    {
+      "logicalId": "grammar.u10.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u10",
+      "patternKo": "V-(으)니까①/N(이)니까",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "V-(으)니까①/N(이)니까",
+        "ru": "выражает причину, особенно перед просьбой, предложением или выводом."
+      },
+      "summary": {
+        "ko": "V-(으)니까①/N(이)니까",
+        "ru": "выражает причину, особенно перед просьбой, предложением или выводом."
+      }
+    },
+    {
+      "logicalId": "grammar.u10.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u10",
+      "patternKo": "AV-고 싶다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-고 싶다",
+        "ru": "выражает желание говорящего выполнить действие."
+      },
+      "summary": {
+        "ko": "AV-고 싶다",
+        "ru": "выражает желание говорящего выполнить действие."
+      }
+    },
+    {
+      "logicalId": "grammar.u10.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u10",
+      "patternKo": "AV-겠-①",
+      "category": "syllabus",
+      "usageKey": "①",
+      "title": {
+        "ko": "AV-겠-①",
+        "ru": "выражает решение или намерение говорящего в текущей ситуации."
+      },
+      "summary": {
+        "ko": "AV-겠-①",
+        "ru": "выражает решение или намерение говорящего в текущей ситуации."
+      }
+    },
+    {
+      "logicalId": "grammar.u11.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u11",
+      "patternKo": "V-지요?/N(이)지요?",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-지요?/N(이)지요?",
+        "ru": "просит подтверждение известного или ожидаемого факта."
+      },
+      "summary": {
+        "ko": "V-지요?/N(이)지요?",
+        "ru": "просит подтверждение известного или ожидаемого факта."
+      }
+    },
+    {
+      "logicalId": "grammar.u11.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u11",
+      "patternKo": "V-겠-②/N이겠-",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "V-겠-②/N이겠-",
+        "ru": "выражает предположение по имеющимся признакам."
+      },
+      "summary": {
+        "ko": "V-겠-②/N이겠-",
+        "ru": "выражает предположение по имеющимся признакам."
+      }
+    },
+    {
+      "logicalId": "grammar.u11.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u11",
+      "patternKo": "AV-아/어/여 주다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-아/어/여 주다",
+        "ru": "действие, выполненное для другого человека."
+      },
+      "summary": {
+        "ko": "AV-아/어/여 주다",
+        "ru": "действие, выполненное для другого человека."
+      }
+    },
+    {
+      "logicalId": "grammar.u11.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u11",
+      "patternKo": "V-(으)면/N이면",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-(으)면/N이면",
+        "ru": "условие или повторяющаяся ситуация «если/когда»."
+      },
+      "summary": {
+        "ko": "V-(으)면/N이면",
+        "ru": "условие или повторяющаяся ситуация «если/когда»."
+      }
+    },
+    {
+      "logicalId": "grammar.u11.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u11",
+      "patternKo": "ㄷ 동사",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "ㄷ 동사",
+        "ru": "описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов."
+      },
+      "summary": {
+        "ko": "ㄷ 동사",
+        "ru": "описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов."
+      }
+    },
+    {
+      "logicalId": "grammar.u12.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u12",
+      "patternKo": "V-아/어/여서②/N이어/여서",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "V-아/어/여서②/N이어/여서",
+        "ru": "выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному."
+      },
+      "summary": {
+        "ko": "V-아/어/여서②/N이어/여서",
+        "ru": "выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному."
+      }
+    },
+    {
+      "logicalId": "grammar.u12.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u12",
+      "patternKo": "AV-(으)ㄹ 수 있다/없다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-(으)ㄹ 수 있다/없다",
+        "ru": "возможность, способность или невозможность выполнить действие."
+      },
+      "summary": {
+        "ko": "AV-(으)ㄹ 수 있다/없다",
+        "ru": "возможность, способность или невозможность выполнить действие."
+      }
+    },
+    {
+      "logicalId": "grammar.u12.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u12",
+      "patternKo": "V-(으)ㄹ까요?②/N일까요?",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "V-(으)ㄹ까요?②/N일까요?",
+        "ru": "вопрос-предположение о будущем или неизвестном факте."
+      },
+      "summary": {
+        "ko": "V-(으)ㄹ까요?②/N일까요?",
+        "ru": "вопрос-предположение о будущем или неизвестном факте."
+      }
+    },
+    {
+      "logicalId": "grammar.u12.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u12",
+      "patternKo": "AV-(으)ㄹ 거예요②/N일 거예요",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "AV-(으)ㄹ 거예요②/N일 거예요",
+        "ru": "предположение о чужом действии или неподконтрольном факте."
+      },
+      "summary": {
+        "ko": "AV-(으)ㄹ 거예요②/N일 거예요",
+        "ru": "предположение о чужом действии или неподконтрольном факте."
+      }
+    },
+    {
+      "logicalId": "grammar.u12.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u12",
+      "patternKo": "AV-(으)ㄹ게요",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-(으)ㄹ게요",
+        "ru": "обещание или решение говорящего, принятое с учётом собеседника."
+      },
+      "summary": {
+        "ko": "AV-(으)ㄹ게요",
+        "ru": "обещание или решение говорящего, принятое с учётом собеседника."
+      }
+    },
+    {
+      "logicalId": "grammar.u13.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u13",
+      "patternKo": "AV-아/어/여요②",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "AV-아/어/여요②",
+        "ru": "та же вежливая форма используется как мягкая просьба, команда или предложение по контексту."
+      },
+      "summary": {
+        "ko": "AV-아/어/여요②",
+        "ru": "та же вежливая форма используется как мягкая просьба, команда или предложение по контексту."
+      }
+    },
+    {
+      "logicalId": "grammar.u13.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u13",
+      "patternKo": "N(으)로②",
+      "category": "syllabus",
+      "usageKey": "②",
+      "title": {
+        "ko": "N(으)로②",
+        "ru": "обозначает средство, инструмент или способ передвижения."
+      },
+      "summary": {
+        "ko": "N(으)로②",
+        "ru": "обозначает средство, инструмент или способ передвижения."
+      }
+    },
+    {
+      "logicalId": "grammar.u13.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u13",
+      "patternKo": "ㄹ 동사",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "ㄹ 동사",
+        "ru": "описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях."
+      },
+      "summary": {
+        "ko": "ㄹ 동사",
+        "ru": "описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях."
+      }
+    },
+    {
+      "logicalId": "grammar.u13.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u13",
+      "patternKo": "V-거나/N이나",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-거나/N이나",
+        "ru": "соединяет альтернативы значением «или»."
+      },
+      "summary": {
+        "ko": "V-거나/N이나",
+        "ru": "соединяет альтернативы значением «или»."
+      }
+    },
+    {
+      "logicalId": "grammar.u13.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u13",
+      "patternKo": "못 AV/AV-지 못하다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "못 AV/AV-지 못하다",
+        "ru": "выражает объективную невозможность или отсутствие умения."
+      },
+      "summary": {
+        "ko": "못 AV/AV-지 못하다",
+        "ru": "выражает объективную невозможность или отсутствие умения."
+      }
+    },
+    {
+      "logicalId": "grammar.u14.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u14",
+      "patternKo": "AV-(으)려고 하다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-(으)려고 하다",
+        "ru": "выражает намерение или подготовленный план выполнить действие."
+      },
+      "summary": {
+        "ko": "AV-(으)려고 하다",
+        "ru": "выражает намерение или подготовленный план выполнить действие."
+      }
+    },
+    {
+      "logicalId": "grammar.u14.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u14",
+      "patternKo": "N께서/N께서는",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N께서/N께서는",
+        "ru": "почтительные аналоги маркеров подлежащего и темы."
+      },
+      "summary": {
+        "ko": "N께서/N께서는",
+        "ru": "почтительные аналоги маркеров подлежащего и темы."
+      }
+    },
+    {
+      "logicalId": "grammar.u14.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u14",
+      "patternKo": "V-(으)시-/N이시-",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-(으)시-/N이시-",
+        "ru": "почтительно маркирует действие, состояние или статус уважаемого лица."
+      },
+      "summary": {
+        "ko": "V-(으)시-/N이시-",
+        "ru": "почтительно маркирует действие, состояние или статус уважаемого лица."
+      }
+    },
+    {
+      "logicalId": "grammar.u14.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u14",
+      "patternKo": "V-아/어/야 되다/하다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-아/어/야 되다/하다",
+        "ru": "выражает обязанность или необходимость."
+      },
+      "summary": {
+        "ko": "V-아/어/야 되다/하다",
+        "ru": "выражает обязанность или необходимость."
+      }
+    },
+    {
+      "logicalId": "grammar.u14.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u14",
+      "patternKo": "AV-지 말다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-지 말다",
+        "ru": "запрещает или просит не выполнять действие."
+      },
+      "summary": {
+        "ko": "AV-지 말다",
+        "ru": "запрещает или просит не выполнять действие."
+      }
+    },
+    {
+      "logicalId": "grammar.u15.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u15",
+      "patternKo": "N보다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N보다",
+        "ru": "вводит объект сравнения: «чем N»."
+      },
+      "summary": {
+        "ko": "N보다",
+        "ru": "вводит объект сравнения: «чем N»."
+      }
+    },
+    {
+      "logicalId": "grammar.u15.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u15",
+      "patternKo": "V-지만/N(이)지만",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-지만/N(이)지만",
+        "ru": "соединяет противопоставленные части значением «но/хотя»."
+      },
+      "summary": {
+        "ko": "V-지만/N(이)지만",
+        "ru": "соединяет противопоставленные части значением «но/хотя»."
+      }
+    },
+    {
+      "logicalId": "grammar.u15.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u15",
+      "patternKo": "DV-(으)ㄴ N",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "DV-(으)ㄴ N",
+        "ru": "превращает описательный глагол в определение перед существительным."
+      },
+      "summary": {
+        "ko": "DV-(으)ㄴ N",
+        "ru": "превращает описательный глагол в определение перед существительным."
+      }
+    },
+    {
+      "logicalId": "grammar.u15.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u15",
+      "patternKo": "V-아/어/여도 되다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-아/어/여도 되다",
+        "ru": "запрашивает или даёт разрешение: «можно»."
+      },
+      "summary": {
+        "ko": "V-아/어/여도 되다",
+        "ru": "запрашивает или даёт разрешение: «можно»."
+      }
+    },
+    {
+      "logicalId": "grammar.u15.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u15",
+      "patternKo": "AV-(으)면 안 되다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-(으)면 안 되다",
+        "ru": "выражает запрет: «нельзя»."
+      },
+      "summary": {
+        "ko": "AV-(으)면 안 되다",
+        "ru": "выражает запрет: «нельзя»."
+      }
+    },
+    {
+      "logicalId": "grammar.u16.n01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u16",
+      "patternKo": "AV-(으)ㄴ/는/(으)ㄹ N",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-(으)ㄴ/는/(으)ㄹ N",
+        "ru": "образует определительные формы действия в прошедшем, настоящем и будущем времени."
+      },
+      "summary": {
+        "ko": "AV-(으)ㄴ/는/(으)ㄹ N",
+        "ru": "образует определительные формы действия в прошедшем, настоящем и будущем времени."
+      }
+    },
+    {
+      "logicalId": "grammar.u16.n02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u16",
+      "patternKo": "N인 N",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N인 N",
+        "ru": "определяет существительное через другое существительное: «N, являющийся N»."
+      },
+      "summary": {
+        "ko": "N인 N",
+        "ru": "определяет существительное через другое существительное: «N, являющийся N»."
+      }
+    },
+    {
+      "logicalId": "grammar.u16.n03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u16",
+      "patternKo": "V-(으)ㄴ/는데/N인데",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "V-(으)ㄴ/는데/N인데",
+        "ru": "вводит фон, пояснение, мягкое противопоставление или переход к просьбе."
+      },
+      "summary": {
+        "ko": "V-(으)ㄴ/는데/N인데",
+        "ru": "вводит фон, пояснение, мягкое противопоставление или переход к просьбе."
+      }
+    },
+    {
+      "logicalId": "grammar.u16.n04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u16",
+      "patternKo": "N께",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "N께",
+        "ru": "почтительный показатель адресата «кому»."
+      },
+      "summary": {
+        "ko": "N께",
+        "ru": "почтительный показатель адресата «кому»."
+      }
+    },
+    {
+      "logicalId": "grammar.u16.n05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "unitLogicalId": "unit.u16",
+      "patternKo": "AV-아/어/여 드리다/주다",
+      "category": "syllabus",
+      "usageKey": null,
+      "title": {
+        "ko": "AV-아/어/여 드리다/주다",
+        "ru": "действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем."
+      },
+      "summary": {
+        "ko": "AV-아/어/여 드리다/주다",
+        "ru": "действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем."
+      }
+    }
+  ]
 }

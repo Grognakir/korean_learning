@@ -8,9 +8,9 @@ import {
   expectSelectCount,
 } from "./rlsHelpers";
 
-const SAMPLE_MODULE_ID = "ad66b9f8-61b6-4fd0-9e98-6ec426547dd0";
-const SAMPLE_EXERCISE_ID = "0f6808ba-3ce6-4c94-8d29-e2d52ca2c65a";
-const SAMPLE_TOPIC_ID = "4ded8be2-7e86-4d25-80d0-c0f0e277324f";
+const U01_MODULE_ID = "e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1";
+const U01_EXERCISE_ID = "e680cccf-f429-4166-acef-54aadfda5330";
+const U01_TOPIC_ID = "2f299044-c8a6-43c6-a4d8-4cc7693a2d1e";
 
 function completedAtAfterNow(): string {
   return new Date(Date.now() + 60_000).toISOString();
@@ -25,7 +25,7 @@ describe("learning progress aggregates", () => {
       .from("training_sessions")
       .insert({
         user_id: user.id,
-        module_id: SAMPLE_MODULE_ID,
+        module_id: U01_MODULE_ID,
         mode: "practice",
         content_version: "1.0.0",
         random_seed: "seed-progress",
@@ -38,14 +38,14 @@ describe("learning progress aggregates", () => {
 
     await client.from("session_exercises").insert({
       session_id: session!.id,
-      exercise_id: SAMPLE_EXERCISE_ID,
+      exercise_id: U01_EXERCISE_ID,
       position: 0,
       exercise_version: "1.0.0",
     });
 
     const { error: attemptError } = await client.rpc("submit_training_attempt", {
       p_session_id: session!.id,
-      p_exercise_id: SAMPLE_EXERCISE_ID,
+      p_exercise_id: U01_EXERCISE_ID,
       p_idempotency_key: "progress-attempt-1",
       p_raw_answer: { optionId: "a" },
       p_normalized_answer: { optionId: "a" },
@@ -68,7 +68,7 @@ describe("learning progress aggregates", () => {
       .from("user_topic_progress")
       .select("*")
       .eq("user_id", user.id)
-      .eq("topic_id", SAMPLE_TOPIC_ID)
+      .eq("topic_id", U01_TOPIC_ID)
       .single();
 
     expect(topicProgress?.attempts_count).toBe(1);
@@ -79,7 +79,7 @@ describe("learning progress aggregates", () => {
       .from("user_module_progress")
       .select("*")
       .eq("user_id", user.id)
-      .eq("module_id", SAMPLE_MODULE_ID)
+      .eq("module_id", U01_MODULE_ID)
       .single();
 
     expect(moduleProgress?.completed_sessions).toBe(1);
@@ -94,7 +94,7 @@ describe("learning progress aggregates", () => {
       .from("training_sessions")
       .insert({
         user_id: user.id,
-        module_id: SAMPLE_MODULE_ID,
+        module_id: U01_MODULE_ID,
         mode: "practice",
         content_version: "1.0.0",
         random_seed: "seed-idempotent",
@@ -105,14 +105,14 @@ describe("learning progress aggregates", () => {
 
     await client.from("session_exercises").insert({
       session_id: session!.id,
-      exercise_id: SAMPLE_EXERCISE_ID,
+      exercise_id: U01_EXERCISE_ID,
       position: 0,
       exercise_version: "1.0.0",
     });
 
     await client.rpc("submit_training_attempt", {
       p_session_id: session!.id,
-      p_exercise_id: SAMPLE_EXERCISE_ID,
+      p_exercise_id: U01_EXERCISE_ID,
       p_idempotency_key: "progress-idempotent-attempt",
       p_raw_answer: { optionId: "a" },
       p_normalized_answer: { optionId: "a" },
@@ -153,7 +153,7 @@ describe("learning progress aggregates", () => {
       .from("training_sessions")
       .insert({
         user_id: user.id,
-        module_id: SAMPLE_MODULE_ID,
+        module_id: U01_MODULE_ID,
         mode: "practice",
         content_version: "1.0.0",
         random_seed: "seed-rebuild",
@@ -164,14 +164,14 @@ describe("learning progress aggregates", () => {
 
     await client.from("session_exercises").insert({
       session_id: session!.id,
-      exercise_id: SAMPLE_EXERCISE_ID,
+      exercise_id: U01_EXERCISE_ID,
       position: 0,
       exercise_version: "1.0.0",
     });
 
     await client.rpc("submit_training_attempt", {
       p_session_id: session!.id,
-      p_exercise_id: SAMPLE_EXERCISE_ID,
+      p_exercise_id: U01_EXERCISE_ID,
       p_idempotency_key: "progress-rebuild-attempt",
       p_raw_answer: { optionId: "a" },
       p_normalized_answer: { optionId: "a" },
@@ -218,7 +218,7 @@ describe("learning progress aggregates", () => {
     await expectMutationDenied(() =>
       client.from("user_topic_progress").insert({
         user_id: user.id,
-        topic_id: SAMPLE_TOPIC_ID,
+        topic_id: U01_TOPIC_ID,
         content_version: "1.0.0",
         attempts_count: 99,
         correct_count: 99,

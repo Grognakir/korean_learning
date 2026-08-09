@@ -4,26 +4,26 @@
 
 ## Чем занимаемся
 
-F2-I22 выполнен. **Остановка на CP-8** — без подтверждения пользователя F2-I23 не начинать.
+F2-I23 in progress. CP-8 accepted. Local release stabilization done; **remote import / preview / tag blocked on explicit permission + CP-9**.
 
-## F2-I22 — результат
+## F2-I23 — локально сделано
 
-- Manifest: `content/phase-2/language-review-decisions.json` (576 individual decisions)
-- Apply: `scripts/content/apply-language-review.ts` (`pnpm content:language-review`)
-- Approved §3.2 minimum: 16 units, 80 grammar, 192 primary senses, 16 passages, 160/64/48 exercises
-- Contested explicit (10): `-아/어서` ①/②, `-(으)러`, `-(으)십시오`, blank passages u02/u07/u09, homonyms 다리/배/저
-- Left draft: 899 dictionary senses, 162 non-canonical passages, 100 exam reading exercises, 쪽/쭉 lemmas
-- Seed regenerated; coverage tests require `approved`
+- `sample-module` archived (TS + seed); curriculum is published baseline
+- Removed demo link / `demo-session` compat route
+- E2E/perf smoke retargeted to filtered curriculum sessions (`filt__*`)
+- DB/RLS progress tests use published `u01` ids
+- Audit checkpoint → CP-9 pending
 
-## Коммит / ветка
+## Нужно от пользователя
 
-- Branch: `codex/f2-i22-language-review`
-- Commit: `chore: approve baseline level one content`
+1. Явное разрешение: remote Supabase migrations (если pending) + curriculum import на linked project
+2. Явное разрешение: Vercel preview deploy / smoke
+3. После preview — **CP-9** и tag `v0.1.0`
 
-## Checkpoint
+## Ветка
 
-**CP-8:** пользователь подтверждает языковой минимум. После принятия — F2-I23.
+`codex/f2-i23-release-stabilization`
 
-## Следующий шаг
+## Коммит (карточка)
 
-После CP-8 — F2-I23 preview/release / CP-9 / tag `v0.1.0`.
+`chore: release level one learning curriculum` (после remote/preview или локальный partial — по согласованию)

@@ -2,10 +2,10 @@ import { describe, expect, it } from "vitest";
 
 import { asUserClient, createTestAuthUser } from "./rlsHelpers";
 
-const SAMPLE_MODULE_ID = "ad66b9f8-61b6-4fd0-9e98-6ec426547dd0";
-const SAMPLE_EXERCISE_ID = "0f6808ba-3ce6-4c94-8d29-e2d52ca2c65a";
-const SAMPLE_TOPIC_ID = "4ded8be2-7e86-4d25-80d0-c0f0e277324f";
-const CONCEPT_KEY = "write-greeting";
+const U01_MODULE_ID = "e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1";
+const U01_EXERCISE_ID = "e680cccf-f429-4166-acef-54aadfda5330";
+const U01_TOPIC_ID = "2f299044-c8a6-43c6-a4d8-4cc7693a2d1e";
+const CONCEPT_KEY = "exercise.grammar.u01.n01.recognition";
 const NOW = "2026-08-09T12:00:00.000Z";
 
 async function startSession(
@@ -17,7 +17,7 @@ async function startSession(
     .from("training_sessions")
     .insert({
       user_id: userId,
-      module_id: SAMPLE_MODULE_ID,
+      module_id: U01_MODULE_ID,
       mode: input.mode,
       content_version: "1.0.0",
       random_seed: `seed-${input.key}`,
@@ -30,7 +30,7 @@ async function startSession(
 
   await client.from("session_exercises").insert({
     session_id: session!.id,
-    exercise_id: SAMPLE_EXERCISE_ID,
+    exercise_id: U01_EXERCISE_ID,
     position: 0,
     exercise_version: "1.0.0",
   });
@@ -49,7 +49,7 @@ async function submitAttempt(
 ) {
   const { error } = await client.rpc("submit_training_attempt", {
     p_session_id: input.sessionId,
-    p_exercise_id: SAMPLE_EXERCISE_ID,
+    p_exercise_id: U01_EXERCISE_ID,
     p_idempotency_key: input.key,
     p_raw_answer: { text: "x" },
     p_normalized_answer: { text: "x" },
@@ -60,8 +60,8 @@ async function submitAttempt(
     ...(input.isCorrect
       ? {}
       : {
-          p_mistake_module_id: SAMPLE_MODULE_ID,
-          p_mistake_primary_topic_id: SAMPLE_TOPIC_ID,
+          p_mistake_module_id: U01_MODULE_ID,
+          p_mistake_primary_topic_id: U01_TOPIC_ID,
           p_mistake_concept_key: CONCEPT_KEY,
           p_mistake_error_type: "incorrect",
         }),

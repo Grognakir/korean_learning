@@ -100,38 +100,35 @@ describe("application routes", () => {
       "true",
     );
     expect(screen.getByTestId("training-setup-request")).toHaveTextContent('"unitSlug": "u01"');
-    expect(screen.getByRole("link", { name: "Демо sample-module" })).toHaveAttribute(
+    expect(screen.queryByRole("link", { name: /Демо sample-module/ })).not.toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Начать тренировку" })).toHaveAttribute(
       "href",
-      "/training/demo-session",
+      expect.stringMatching(/^\/training\/filt__grammar__/),
     );
   });
 
-  it("renders a module detail route", async () => {
+  it("renders a curriculum unit detail route", async () => {
     render(
       await ModuleDetailPanel({
-        moduleSlug: "sample-module",
+        moduleSlug: "u01",
         searchParams: Promise.resolve({}),
       }),
     );
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "Первые шаги в корейском" }),
+      screen.getByRole("heading", { level: 1, name: "приветствие и представление" }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Основы хангыля" })).toBeInTheDocument();
-    expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
+    expect(screen.getByText("N입니다/입니까?")).toBeInTheDocument();
   });
 
-  it("keeps a demo session escape hatch from training setup", async () => {
+  it("does not expose the archived sample demo from training setup", async () => {
     render(await TrainingModulesPanel({ searchParams: Promise.resolve({}) }));
 
-    expect(screen.getByRole("link", { name: "Демо sample-module" })).toHaveAttribute(
-      "href",
-      "/training/demo-session",
-    );
+    expect(screen.queryByRole("link", { name: /Демо sample-module/ })).not.toBeInTheDocument();
   });
 
-  it("renders the demo training session route", async () => {
-    const resolution = await resolveSession("demo-session");
+  it("renders a filtered curriculum training session route", async () => {
+    const resolution = await resolveSession("filt__grammar__u01__grammar.u01.n01__none__2__17");
     expect(resolution.status).toBe("ready");
     render(
       await SessionExercisePanel({

@@ -10,7 +10,8 @@ describe("getPublishedModuleSlugs", () => {
   it("returns published slugs from the local content source", async () => {
     const slugs = await getPublishedModuleSlugs();
 
-    expect(slugs.has("sample-module")).toBe(true);
+    expect(slugs.has("sample-module")).toBe(false);
+    expect(slugs.has("u01")).toBe(true);
     expect(slugs.has("missing-module")).toBe(false);
   });
 

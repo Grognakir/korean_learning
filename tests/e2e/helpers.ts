@@ -2,8 +2,10 @@ import { expect, type Page } from "@playwright/test";
 
 export const TRAINING_SESSION_STORAGE_KEY = "korean-learning:training-session:v2";
 
-export const SAMPLE_CHOICE_HOME_ID = "39c0c607-38a1-4a70-8e2a-e14061871ded";
-export const SAMPLE_CHOICE_SCHOOL_ID = "eaaf766c-82f8-4a41-b89a-9a275b8148ec";
+/** Local curriculum fixture grammar choices (u01). */
+export const FIXTURE_GRAMMAR_Q01_ID = "55555555-5555-4555-8555-555555555502";
+export const FIXTURE_GRAMMAR_Q02_ID = "55555555-5555-4555-8555-555555555505";
+export const FILTERED_GRAMMAR_SESSION_ID = "filt__grammar__u01__grammar.u01.n01__none__2__17";
 
 export const VIEWPORT_CHECKPOINTS = [320, 375, 768, 1024, 1440, 2560] as const;
 
@@ -94,7 +96,7 @@ export async function assertSessionProgressBar(
 function shortChoiceSessionRecord() {
   const now = "2026-08-08T12:00:00.000Z";
   const expiresAt = "2026-08-15T12:00:00.000Z";
-  const queue = [SAMPLE_CHOICE_HOME_ID, SAMPLE_CHOICE_SCHOOL_ID];
+  const queue = [FIXTURE_GRAMMAR_Q01_ID, FIXTURE_GRAMMAR_Q02_ID];
 
   return {
     storageVersion: 2,
@@ -102,10 +104,10 @@ function shortChoiceSessionRecord() {
     expiresAt,
     sessionState: {
       schemaVersion: 1,
-      sessionId: "demo-session",
-      moduleSlug: "sample-module",
+      sessionId: FILTERED_GRAMMAR_SESSION_ID,
+      moduleSlug: "u01",
       mode: "practice" as const,
-      seed: 1,
+      seed: 17,
       status: "active" as const,
       queue,
       currentIndex: 0,

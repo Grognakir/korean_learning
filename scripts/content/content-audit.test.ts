@@ -8,7 +8,7 @@ import { PHASE_2_CONTENT_ROOT } from "./contentValidation";
 const REPORT_PATH = path.join(PHASE_2_CONTENT_ROOT, "content-audit-report.json");
 
 describe("phase-2 content audit gate", () => {
-  it("has a CP-8-pending audit report with approved minimum correspondence", () => {
+  it("has a CP-9-pending audit report with approved minimum correspondence", () => {
     expect(existsSync(REPORT_PATH)).toBe(true);
     const report = JSON.parse(readFileSync(REPORT_PATH, "utf8")) as {
       checkpoint: { id: string; status: string };
@@ -31,11 +31,11 @@ describe("phase-2 content audit gate", () => {
       };
       security: { absoluteLocalPathHits: unknown[] };
       vocabularyBoundary: { approved: number; businessDraft: number };
-      openQuestionsForCp8: string[];
+      openQuestionsForCp9: string[];
       auditDoc: string;
     };
 
-    expect(report.checkpoint.id).toBe("CP-8");
+    expect(report.checkpoint.id).toBe("CP-9");
     expect(report.checkpoint.status).toBe("pending_user_acceptance");
     expect(report.auditDoc).toBe("docs/PHASE_2_CONTENT_AUDIT.md");
     expect(report.correspondence.topicsUnits).toBe(true);
@@ -54,6 +54,6 @@ describe("phase-2 content audit gate", () => {
     expect(report.security.absoluteLocalPathHits).toEqual([]);
     expect(report.vocabularyBoundary.approved).toBeGreaterThanOrEqual(192);
     expect(report.vocabularyBoundary.businessDraft).toBeGreaterThan(0);
-    expect(report.openQuestionsForCp8.length).toBeGreaterThanOrEqual(3);
+    expect(report.openQuestionsForCp9.length).toBeGreaterThanOrEqual(3);
   });
 });

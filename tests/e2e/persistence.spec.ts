@@ -1,15 +1,20 @@
 import { expect, test } from "@playwright/test";
 
-import { goNext, seedShortChoiceSession, TRAINING_SESSION_STORAGE_KEY } from "./helpers";
+import {
+  FILTERED_GRAMMAR_SESSION_ID,
+  goNext,
+  seedShortChoiceSession,
+  TRAINING_SESSION_STORAGE_KEY,
+} from "./helpers";
 
 test.describe("persistence", () => {
   test.describe.configure({ mode: "serial" });
 
   test("resumes after refresh on the answered question", async ({ page }) => {
     await seedShortChoiceSession(page);
-    await page.goto("/training/demo-session");
+    await page.goto(`/training/${FILTERED_GRAMMAR_SESSION_ID}`);
 
-    await page.getByRole("radio", { name: "дом" }).click();
+    await page.getByRole("radio", { name: "입니다" }).click();
     await page.getByRole("button", { name: "Ответить" }).click();
     await expect(page.getByText("Верно")).toBeVisible();
     await expect(page.getByRole("button", { name: "Дальше" })).toBeVisible();
@@ -31,8 +36,8 @@ test.describe("persistence", () => {
 
   test("offers continue or restart from the training index", async ({ page }) => {
     await seedShortChoiceSession(page);
-    await page.goto("/training/demo-session");
-    await page.getByRole("radio", { name: "дом" }).click();
+    await page.goto(`/training/${FILTERED_GRAMMAR_SESSION_ID}`);
+    await page.getByRole("radio", { name: "입니다" }).click();
     await page.getByRole("button", { name: "Ответить" }).click();
     await expect(page.getByText("Верно")).toBeVisible();
 

@@ -1,36 +1,26 @@
-# Current session — F1-I30
+# Current session — F1-I31
 
-**Branch:** `feature/persist-training-attempts`  
-**Iteration:** F1-I30 — persist training sessions and attempts  
-**Status:** done (awaiting commit)
+**Branch:** `feature/learning-progress`  
+**Iteration:** F1-I31 — add learning progress tracking  
+**Status:** done (awaiting commit/push)
 
 ## Summary
 
-Implemented server-backed training session persistence for authenticated users:
-
-- Migration `20260809000007_training_persistence_rpcs.sql` with `submit_training_attempt` and `complete_training_session` SECURITY DEFINER RPCs
-- API routes: `POST /api/training/sessions`, `.../attempts`, `.../complete`, `POST /api/training/import`
-- Application layer + `SupabaseTrainingSessionRepository`
-- Cloud sync hook (`useCloudTrainingPersistence`) wired into `TrainingSession` for logged-in users
-- `GuestSessionImportPrompt` for explicit guest→account import after login
-- Guest local persistence unchanged; no silent merge
+- Migration `20260809000008_learning_progress_refresh.sql`:
+  - `compute_topic_mastery_status`, `compute_module_mastery_status`
+  - `refresh_user_progress_for_session` on session completion
+  - `rebuild_user_progress` (service_role only)
+  - extended `complete_training_session` to refresh aggregates
+- Progress feature: domain formula, Supabase repository, `/progress` page
+- UI: `ProgressOverview`, `ModuleProgressCard`, `TopicProgressList`, guest/empty states
 
 ## Gate
 
-- format:check ✅
-- lint ✅
-- typecheck ✅
-- test:run 257 ✅
-- test:integration 17 ✅
-- build ✅
-- test:rls — not run (Supabase CLI unavailable in agent env; new RPC test added)
+- format / lint / typecheck / 267 unit / 17 integration / build ✅
+- test:db progress tests added (require local Supabase)
 
 ## Next
 
-- Commit: `feat: persist training sessions and attempts`
-- Then F1-I31 learning progress tracking
-
-## Notes
-
-- Remote Supabase still needs migration apply before cloud sync works in production.
-- Node gate run on 22.15.0 locally; project expects 24.18.0.
+- Commit: `feat: add learning progress tracking`
+- Push migration to remote Supabase
+- Then F1-I32 mistake review queue

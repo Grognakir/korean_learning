@@ -1,27 +1,81 @@
 import type { Metadata } from "next";
 
-import { GuestFeatureEmptyState } from "@/components/feedback";
+import { ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
+import { getServerAuthUser } from "@/features/authentication/server/getServerAuthUser";
+import {
+  createSupabaseProgressRepository,
+  hasAnyRecordedProgress,
+  ProgressEmptyState,
+  ProgressGuestEmptyState,
+  ProgressOverview,
+  ProgressRepositoryError,
+  type LearningProgressOverview,
+} from "@/features/progress";
+import { createServerSupabaseClient } from "@/lib/supabase/serverClient";
 import { PageContainer } from "@/wrappers";
 
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Прогресс",
-  description: "Статистика регулярности и освоенных тем после облачной синхронизации.",
+  description: "Статистика освоенных тем после завершения облачных тренировок.",
 };
 
-export default function ProgressPage() {
+async function loadProgressOverview(userId: string): Promise<LearningProgressOverview> {
+  const client = await createServerSupabaseClient();
+  const repository = createSupabaseProgressRepository(client);
+  return repository.getOverviewForUser(userId);
+}
+
+export default async function ProgressPage() {
+  const user = await getServerAuthUser();
+
+  if (!user) {
+    return (
+      <PageContainer className={styles.page}>
+        <PageHeader
+          description="После входа здесь появится прогресс по модулям и темам из завершённых облачных сессий."
+          title="Прогресс"
+        />
+        <ProgressGuestEmptyState />
+      </PageContainer>
+    );
+  }
+
+  let overview: LearningProgressOverview | undefined;
+  let unavailable = false;
+
+  try {
+    overview = await loadProgressOverview(user.id);
+  } catch (error) {
+    if (error instanceof ProgressRepositoryError) {
+      unavailable = true;
+    } else {
+      throw error;
+    }
+  }
+
+  if (unavailable || !overview) {
+    return (
+      <PageContainer className={styles.page}>
+        <PageHeader description="Не удалось загрузить прогресс." title="Прогресс" />
+        <ServiceUnavailableState />
+      </PageContainer>
+    );
+  }
+
   return (
     <PageContainer className={styles.page}>
       <PageHeader
-        description="Статистика регулярности и освоенных тем появится после облачной синхронизации."
+        description="Статус по модулям и темам считается только из завершённых облачных тренировок."
         title="Прогресс"
       />
-      <GuestFeatureEmptyState
-        description="Пока доступна только локальная тренировка. Облачный прогресс гостя появится после подключения аккаунта."
-        title="Прогресс пока недоступен"
-      />
+      {hasAnyRecordedProgress(overview) ? (
+        <ProgressOverview overview={overview} />
+      ) : (
+        <ProgressEmptyState />
+      )}
     </PageContainer>
   );
 }

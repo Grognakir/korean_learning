@@ -1,0 +1,69 @@
+.card {
+  display: grid;
+  gap: var(--space-5);
+  min-width: 0;
+  padding: clamp(var(--space-5), 4vw, var(--space-7));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.header {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.copy {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.koreanTitle {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  line-height: 1.3;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin: 0;
+}
+
+.stats div {
+  display: grid;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.stats dt {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+}
+
+.stats dd {
+  margin: 0;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+@media (max-width: 30rem) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

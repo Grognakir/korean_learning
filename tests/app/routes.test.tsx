@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import DictionaryPage from "@/app/dictionary/page";
 import LoginPage from "@/app/login/page";
@@ -10,6 +10,10 @@ import TopicsPage from "@/app/topics/page";
 import SessionPage from "@/app/training/[sessionId]/page";
 import TrainingPage from "@/app/training/page";
 
+vi.mock("@/features/authentication/server/getServerAuthUser", () => ({
+  getServerAuthUser: vi.fn(async () => null),
+}));
+
 const ASYNC_STATIC_ROUTES = [
   ["Темы", TopicsPage],
   ["Тренировка", TrainingPage],
@@ -17,7 +21,6 @@ const ASYNC_STATIC_ROUTES = [
 
 const SYNC_STATIC_ROUTES = [
   ["Повторение", ReviewPage],
-  ["Прогресс", ProgressPage],
   ["Словарь", DictionaryPage],
 ] as const;
 
@@ -30,6 +33,15 @@ describe("application routes", () => {
       expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
     },
   );
+
+  it("renders the progress route for guests", async () => {
+    render(await ProgressPage());
+
+    expect(screen.getByRole("heading", { level: 1, name: "Прогресс" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Войдите, чтобы видеть прогресс" }),
+    ).toBeInTheDocument();
+  });
 
   it.each(SYNC_STATIC_ROUTES)("renders the %s route with one page heading", (title, Page) => {
     render(<Page />);

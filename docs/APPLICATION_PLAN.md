@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I30 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
+- **Общее состояние:** F1-I01–F1-I31 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I30 persist training sessions and attempts — `done`.
+- **Текущая итерация:** F1-I31 add learning progress tracking — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** training API routes (start/attempt/complete/import); SECURITY DEFINER RPCs; Supabase session repository; cloud sync hook; guest import prompt; authenticated session persistence.
-- **Выполненные проверки:** format/lint/typecheck/257 unit/17 integration/build.
-- **Сейчас работает:** авторизованные сессии синхронизируются через `/api/training/*`; guest flow локальный; явный import guest→account; server-only evaluation + idempotency.
-- **Пока не работает:** progress UI и aggregates (F1-I31).
-- **Следующий конкретный шаг:** F1-I31 add learning progress tracking — без дополнительного CP.
+- **Уже сделано:** progress aggregates refresh on session completion; rebuild RPC; progress domain/repository; `/progress` page with module/topic cards; guest/auth empty states.
+- **Выполненные проверки:** format/lint/typecheck/267 unit/17 integration/build.
+- **Сейчас работает:** завершённые облачные сессии обновляют `user_topic_progress` и `user_module_progress`; страница progress показывает реальные aggregates.
+- **Пока не работает:** review queue (F1-I32).
+- **Следующий конкретный шаг:** F1-I32 add mistake review queue — без дополнительного CP.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed.
 - **Последнее обновление:** 2026-08-09.
@@ -759,7 +759,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I31 — Система прогресса
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** показать освоение модулей и грамматических тем.
 - **Входные зависимости:** F1-I30.
 - **Задачи:** progress calculation policy; per-module/topic counts, accuracy, last activity, mastery threshold; incremental update or query; progress page/cards; empty/guest state.

@@ -1026,6 +1026,21 @@ export type Database = {
         };
         Returns: Database["public"]["Tables"]["training_sessions"]["Row"];
       };
+      compute_module_mastery_status: {
+        Args: {
+          p_module_attempts_count: number;
+          p_module_id: string;
+          p_user_id: string;
+        };
+        Returns: Database["public"]["Enums"]["mastery_status"];
+      };
+      compute_topic_mastery_status: {
+        Args: {
+          p_attempts_count: number;
+          p_correct_count: number;
+        };
+        Returns: Database["public"]["Enums"]["mastery_status"];
+      };
       is_public_exercise: { Args: { p_exercise_id: string }; Returns: boolean };
       is_published_module: { Args: { p_module_id: string }; Returns: boolean };
       is_published_topic: { Args: { p_topic_id: string }; Returns: boolean };
@@ -1033,6 +1048,18 @@ export type Database = {
       owns_training_session: {
         Args: { p_session_id: string };
         Returns: boolean;
+      };
+      rebuild_user_progress: {
+        Args: { p_user_id: string };
+        Returns: undefined;
+      };
+      refresh_user_progress_for_session: {
+        Args: {
+          p_completed_at: string;
+          p_session_id: string;
+          p_user_id: string;
+        };
+        Returns: undefined;
       };
       submit_training_attempt: {
         Args: {

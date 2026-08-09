@@ -6,8 +6,8 @@
 - **Текущая фаза:** фаза 1 закрыта; ожидание явного решения по merge/`main`, production launch или phase 2.
 - **Текущая итерация:** F1-I33 stabilize learning application framework — `done`; CP-5 принят 2026-08-09.
 - **Статус текущей итерации:** `done` (ветка `chore/framework-stabilization`; merge в `main` не выполнен).
-- **Уже сделано:** удалён preview 높임말; 3× local full gate; внешний CI checkpoint зелёный; CI e2e с local placeholders.
-- **Выполненные проверки:** local 3× 309 unit/17 integration/20 e2e/16 db/10 rls/build/bundles; CI run `31312096968` success.
+- **Уже сделано:** удалён preview 높임말 и устаревший UI-текст о нём; 3× local full gate; внешний CI checkpoint зелёный; CI e2e с local placeholders.
+- **Выполненные проверки:** local 3× 309 unit/17 integration/20 e2e/16 db/10 rls/build/bundles; post-CP-5 copy fix — 310 unit/17 integration/typecheck/lint/format/build/bundles; CI run `31312490157` success.
 - **Сейчас работает:** каркас фазы 1 без draft honorifics; review/progress/training на sample + demo-session.
 - **Пока не работает / ограничения:** Preview Deployment Protection (Vercel SSO) блокирует unauthenticated HTTP smoke — принято в CP-5 как известное ограничение; ветка стабилизации ещё не в `main`.
 - **Следующий конкретный шаг:** только по явному решению — merge `chore/framework-stabilization` → `main`, production launch или F2-I01.

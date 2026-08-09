@@ -16,10 +16,7 @@ export const metadata: Metadata = {
 export default function TrainingPage() {
   return (
     <PageContainer className={styles.page}>
-      <PageHeader
-        description="Короткая практика на локальных модулях. Draft preview появляется только в development."
-        title="Тренировка"
-      />
+      <PageHeader description="Выберите модуль и начните короткую тренировку." title="Тренировка" />
       <Suspense fallback={<CatalogSectionSkeleton label="Загрузка модулей…" />}>
         <TrainingModulesPanel />
       </Suspense>

@@ -4,24 +4,21 @@
 
 ## Чем занимаемся
 
-Фаза 1 закрыта по CP-5 (принято пользователем 2026-08-09). Работа остановлена до следующего явного указания. Production launch и phase 2 не начинать без решения.
+Перед фазой 2 исправлен последний устаревший пользовательский текст о development-only Draft preview. Фаза 2 ещё не начата; её объём — полноценный модуль 높임말 уровня 1급.
 
-## F1-I33 / CP-5 — итог
+## Принятые решения
 
-- Preview honorifics и development composition удалены.
-- Три локальных full gate зелёные; внешний CI checkpoint-ветки зелёный.
-- Preview Ready; unauthenticated HTTP smoke блокирован Vercel SSO (принято как известное ограничение, аналогично F1-I24).
-- CP-5 принят пользователем.
+- CP-5 и фаза 1 были закрыты в ветке `chore/framework-stabilization` коммитом `1d45cca`; текущая правка дополняет закрытие перед фазой 2.
+- Финальный CI `31312490157` зелёный: 309 unit/component, 17 integration, 20 e2e, 16 DB и 10 RLS тестов; format, lint, typecheck, build и bundle budgets также прошли.
+- Временный модуль honorifics удалён, а Production доступен с HTTP 200; Preview остаётся за Vercel SSO по принятому исключению CP-5.
+- Устаревшее описание страницы тренировки удалено и защищено регрессионным тестом; локально зелёные 310 unit/component, 17 integration, format, lint, typecheck, build и bundle budgets.
+- Merge в `main` и начало F2-I01 не выполнялись.
 
-## Коммиты / ссылки
+## Открытые задачи
 
-- `9586d4f` — `chore: stabilize learning application framework`
-- `3f1f63c` — `fix: supply local Supabase placeholders for CI e2e`
-- `3a4dcee` — docs CI/SSO status
-- Branch: `chore/framework-stabilization`
-- CI: https://github.com/Grognakir/korean_learning/actions/runs/31312096968
-- Preview: https://korean-learning-jbzevla4e-grognakirs-projects.vercel.app
+- [ ] По отдельному указанию слить `chore/framework-stabilization` в `main`.
+- [ ] По отдельному указанию начать F2-I01 — формализацию правил модуля 높임말.
 
-## Следующий шаг
+## Контекст для следующей сессии
 
-Только по явному решению пользователя: merge в `main`, production launch, или phase 2 (F2-I01).
+Фаза 2 состоит из F2-I01–F2-I22: правила и словарь, проверенный банк контента, девять режимов практики, нормализация и варианты ответов, объяснения, смешанные тренировки, уровни сложности, повторение ошибок, статистика, полное тестирование, языковая приёмка и выпуск v0.1.0. Контрольные точки: CP-6 после F2-I05, CP-7 после F2-I18, CP-8 после F2-I21 и CP-9 перед выпуском.

@@ -34,6 +34,13 @@ describe("application routes", () => {
     expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
   });
 
+  it("describes the training route without the removed development preview", () => {
+    render(<TrainingPage />);
+
+    expect(screen.getByText("Выберите модуль и начните короткую тренировку.")).toBeInTheDocument();
+    expect(screen.queryByText(/Draft preview|development/i)).not.toBeInTheDocument();
+  });
+
   it("renders the progress route for guests", async () => {
     render(<ProgressPage />);
     render(await ProgressDataPanel());

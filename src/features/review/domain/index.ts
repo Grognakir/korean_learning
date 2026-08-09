@@ -1,4 +1,12 @@
 export {
+  buildSkillConceptKey,
+  conceptKeysMatch,
+  parseConceptKey,
+  type LearningSkill,
+  type ParsedConceptKey,
+} from "./conceptKey";
+export { filterReviewQueueItems } from "./filterReviewItems";
+export {
   REVIEW_MAX_STAGE,
   REVIEW_QUEUE_STATUSES,
   REVIEW_SESSION_MODES,

@@ -1,20 +1,18 @@
 import "server-only";
 
-import type { SupabaseClient } from "@supabase/supabase-js";
-
-import type { Database } from "@/types/database";
 import type { LearningModuleDefinition, LearningTopicDefinition } from "@/types";
 
 import {
   computeAccuracy,
   computeModuleMasteryStatus,
   computeTopicMasteryStatus,
-  type LearningProgressOverview,
+  LEARNING_SKILLS,
+  type LearningSkillId,
   type MasteryStatus,
   type ModuleProgressSnapshot,
+  type SkillProgressSnapshot,
   type TopicProgressSnapshot,
 } from "../domain/progress";
-import type { ProgressRepository } from "./ProgressRepository";
 
 export class ProgressRepositoryError extends Error {
   readonly code = "PROGRESS_REPOSITORY_ERROR" as const;
@@ -55,11 +53,29 @@ export function buildModuleProgressSnapshot(input: {
       }
     >
   >;
+  readonly skillRowsBySkill?: Readonly<
+    Partial<
+      Record<
+        LearningSkillId,
+        {
+          readonly attempts: number;
+          readonly correct: number;
+          readonly accuracy: number;
+          readonly mastery: string;
+          readonly last_practiced_at: string | null;
+        }
+      >
+    >
+  >;
 }): ModuleProgressSnapshot {
   const publishedTopics = input.module.topics.filter((topic) => topic.status === "published");
 
   const topics: TopicProgressSnapshot[] = publishedTopics.map((topic) =>
     mapTopicProgress(topic, input.topicRowsByTopicId[topic.id]),
+  );
+
+  const skills = LEARNING_SKILLS.map((skill) =>
+    mapSkillProgress(skill, input.skillRowsBySkill?.[skill]),
   );
 
   const practicedTopicCount = topics.filter((topic) => topic.masteryStatus === "practiced").length;
@@ -84,6 +100,7 @@ export function buildModuleProgressSnapshot(input: {
           practicedTopicCount,
         }),
     lastPracticedAt: input.moduleRow?.last_practiced_at ?? null,
+    skills,
     topics,
   };
 }
@@ -115,31 +132,27 @@ function mapTopicProgress(
   };
 }
 
-export function createSupabaseProgressRepository(
-  client: SupabaseClient<Database>,
-): ProgressRepository {
+function mapSkillProgress(
+  skill: LearningSkillId,
+  row?: {
+    readonly attempts: number;
+    readonly correct: number;
+    readonly accuracy: number;
+    readonly mastery: string;
+    readonly last_practiced_at: string | null;
+  },
+): SkillProgressSnapshot {
+  const attemptsCount = row?.attempts ?? 0;
+  const correctCount = row?.correct ?? 0;
+
   return {
-    async getOverviewForUser(userId) {
-      const [
-        { data: moduleRows, error: moduleProgressError },
-        { data: topicRows, error: topicProgressError },
-      ] = await Promise.all([
-        client.from("user_module_progress").select("*").eq("user_id", userId),
-        client.from("user_topic_progress").select("*").eq("user_id", userId),
-      ]);
-
-      if (moduleProgressError || topicProgressError) {
-        throw new ProgressRepositoryError(
-          moduleProgressError?.message ??
-            topicProgressError?.message ??
-            "Failed to load learning progress.",
-        );
-      }
-
-      return {
-        moduleRows: moduleRows ?? [],
-        topicRows: topicRows ?? [],
-      } as unknown as LearningProgressOverview;
-    },
+    skill,
+    attemptsCount,
+    correctCount,
+    accuracy: row?.accuracy ?? computeAccuracy(correctCount, attemptsCount),
+    masteryStatus: row
+      ? mapMasteryStatus(row.mastery)
+      : computeTopicMasteryStatus(attemptsCount, correctCount),
+    lastPracticedAt: row?.last_practiced_at ?? null,
   };
 }

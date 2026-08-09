@@ -19,6 +19,32 @@ describe("ModuleProgressCard", () => {
           completedSessions: 1,
           masteryStatus: "learning",
           lastPracticedAt: "2026-08-09T10:00:00.000Z",
+          skills: [
+            {
+              skill: "grammar",
+              attemptsCount: 4,
+              correctCount: 3,
+              accuracy: 0.75,
+              masteryStatus: "learning",
+              lastPracticedAt: "2026-08-09T10:00:00.000Z",
+            },
+            {
+              skill: "vocabulary",
+              attemptsCount: 0,
+              correctCount: 0,
+              accuracy: 0,
+              masteryStatus: "not_started",
+              lastPracticedAt: null,
+            },
+            {
+              skill: "reading",
+              attemptsCount: 0,
+              correctCount: 0,
+              accuracy: 0,
+              masteryStatus: "not_started",
+              lastPracticedAt: null,
+            },
+          ],
           topics: [
             {
               topicId: "topic-a",
@@ -37,6 +63,8 @@ describe("ModuleProgressCard", () => {
 
     expect(screen.getByRole("article", { name: /Первые шаги/i })).toBeInTheDocument();
     expect(screen.getByText("75%")).toBeInTheDocument();
+    expect(screen.getByRole("region", { name: "Прогресс по навыкам" })).toBeInTheDocument();
+    expect(screen.getByText("Грамматика")).toBeInTheDocument();
     expect(screen.getByText("Основы хангыля")).toBeInTheDocument();
     expect(screen.getByText("Практиковано")).toBeInTheDocument();
   });

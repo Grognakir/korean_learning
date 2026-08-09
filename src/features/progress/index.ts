@@ -6,11 +6,13 @@ export {
   ProgressEmptyState,
   ProgressGuestEmptyState,
   ProgressOverview,
+  SkillProgressList,
   TopicProgressList,
 } from "./components";
 export type {
   ModuleProgressCardProps,
   ProgressOverviewProps,
+  SkillProgressListProps,
   TopicProgressListProps,
 } from "./components";
 export {
@@ -19,12 +21,16 @@ export {
   computeTopicMasteryStatus,
   formatAccuracyPercent,
   hasAnyRecordedProgress,
+  learningSkillLabel,
   masteryStatusLabel,
+  LEARNING_SKILLS,
   MASTERY_STATUSES,
 } from "./domain";
 export type {
   LearningProgressOverview,
+  LearningSkillId,
   MasteryStatus,
   ModuleProgressSnapshot,
+  SkillProgressSnapshot,
   TopicProgressSnapshot,
 } from "./domain";

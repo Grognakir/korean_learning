@@ -48,6 +48,8 @@ describe("buildModuleProgressSnapshot", () => {
     expect(snapshot.masteryStatus).toBe("not_started");
     expect(snapshot.topics).toHaveLength(2);
     expect(snapshot.topics.every((topic) => topic.masteryStatus === "not_started")).toBe(true);
+    expect(snapshot.skills).toHaveLength(3);
+    expect(snapshot.skills.every((skill) => skill.masteryStatus === "not_started")).toBe(true);
   });
 
   it("maps stored module and topic rows", () => {
@@ -70,10 +72,25 @@ describe("buildModuleProgressSnapshot", () => {
           last_practiced_at: "2026-08-09T10:00:00.000Z",
         },
       },
+      skillRowsBySkill: {
+        grammar: {
+          attempts: 4,
+          correct: 3,
+          accuracy: 0.75,
+          mastery: "learning",
+          last_practiced_at: "2026-08-09T10:00:00.000Z",
+        },
+      },
     });
 
     expect(snapshot.completedSessions).toBe(1);
     expect(snapshot.topics[0]?.masteryStatus).toBe("practiced");
     expect(snapshot.topics[1]?.masteryStatus).toBe("not_started");
+    expect(snapshot.skills.find((skill) => skill.skill === "grammar")?.masteryStatus).toBe(
+      "learning",
+    );
+    expect(snapshot.skills.find((skill) => skill.skill === "vocabulary")?.masteryStatus).toBe(
+      "not_started",
+    );
   });
 });

@@ -1,0 +1,70 @@
+.listSection {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.heading {
+  margin: 0;
+  font-size: var(--font-size-md);
+}
+
+.list {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+.copy {
+  display: grid;
+  gap: var(--space-1);
+  min-width: 0;
+  flex: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.meta {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.barTrack {
+  width: min(100%, 16rem);
+  height: 0.5rem;
+  margin-top: var(--space-1);
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--color-border);
+}
+
+.barFill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--color-accent);
+}
+
+@media (max-width: 30rem) {
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .barTrack {
+    width: 100%;
+  }
+}

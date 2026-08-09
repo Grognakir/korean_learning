@@ -829,7 +829,7 @@ export type Database = {
           exercise_id: string;
           id: string;
           module_id: string;
-          primary_topic_id: string;
+          primary_topic_id: string | null;
           user_id: string;
         };
         Insert: {
@@ -840,7 +840,7 @@ export type Database = {
           exercise_id: string;
           id?: string;
           module_id: string;
-          primary_topic_id: string;
+          primary_topic_id?: string | null;
           user_id: string;
         };
         Update: {
@@ -851,7 +851,7 @@ export type Database = {
           exercise_id?: string;
           id?: string;
           module_id?: string;
-          primary_topic_id?: string;
+          primary_topic_id?: string | null;
           user_id?: string;
         };
         Relationships: [
@@ -1396,6 +1396,14 @@ export type Database = {
         };
         Returns: undefined;
       };
+      resolve_approved_exercises_for_concepts: {
+        Args: { p_concept_keys: string[]; p_module_id: string };
+        Returns: {
+          concept_key: string;
+          content_version: string;
+          exercise_id: string;
+        }[];
+      };
       submit_training_attempt: {
         Args: {
           p_answer_version: string;
@@ -1406,7 +1414,7 @@ export type Database = {
           p_mistake_concept_key?: string;
           p_mistake_error_type?: string;
           p_mistake_module_id?: string;
-          p_mistake_primary_topic_id?: string;
+          p_mistake_primary_topic_id?: string | null;
           p_normalized_answer: Json;
           p_now?: string;
           p_raw_answer: Json;

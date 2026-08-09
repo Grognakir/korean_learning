@@ -600,7 +600,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I19 — Review queue и прогресс по навыкам
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** сделать ошибки и статистику осмысленными для новой программы.
 - **Вход:** F2-I18 `done`.
 - **Ветка:** `codex/f2-i19-skill-progress-review`.

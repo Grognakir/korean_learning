@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I18 `done`; CP-6 принят).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I19 `done`; CP-6 принят).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I18 filtered learning sessions — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i18-filtered-training-sessions`.
-- **Уже сделано:** filtered guest sessions via `filt__*` ids; deterministic approved selection; setup CTA; API filter create + active-session guard; local fixture skills for u01.
+- **Текущая итерация:** F2-I19 skill progress and review — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i19-skill-progress-review`.
+- **Уже сделано:** skill-prefixed concept keys; `user_skill_progress` refresh; progress UI by skill/topic/module; review filters skill/unit; nullable mistake topics for vocab/reading.
 - **Выполненные проверки:** unit/lint/typecheck/build (gate итерации).
-- **Сейчас работает:** local filtered sessions for grammar/vocabulary/reading на fixture u01; demo sample-module сохранён.
-- **Пока не работает / ограничения:** curriculum banks remain draft in Supabase until F2-I22; a11y/adaptivity (F2-I20).
-- **Следующий конкретный шаг:** F2-I19 — review queue and progress by skill/topic/module.
+- **Сейчас работает:** cloud mistakes/review/progress объясняют skill + target; legacy concept keys остаются валидными.
+- **Пока не работает / ограничения:** curriculum banks remain draft in Supabase until F2-I22; a11y/adaptivity (F2-I20 / CP-7).
+- **Следующий конкретный шаг:** F2-I20 — responsive/a11y gate и CP-7.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

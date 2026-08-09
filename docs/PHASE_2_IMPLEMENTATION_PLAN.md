@@ -568,7 +568,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I17 — Минимальный reading exercise bank
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** дать каждой теме хотя бы один текст и три проверяемых вопроса.
 - **Вход:** F2-I16 `done`.
 - **Ветка:** `codex/f2-i17-reading-exercises`.

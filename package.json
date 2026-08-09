@@ -38,6 +38,7 @@
     "content:generate-reading": "tsx scripts/content/generate-reading-corpus.ts",
     "content:generate-grammar-exercises": "tsx scripts/content/generate-grammar-exercises.ts",
     "content:generate-vocabulary-exercises": "tsx scripts/content/generate-vocabulary-exercises.ts",
+    "content:generate-reading-bank": "tsx scripts/content/generate-reading-exercise-bank.ts",
     "content:audit": "tsx scripts/content/audit-content.ts",
     "test:content": "vitest run --config vitest.content.config.mts"
   },

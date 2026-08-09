@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I16 `done`; CP-6 принят).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I17 `done`; CP-6 принят).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I16 minimal vocabulary exercise bank — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i16-vocabulary-exercises`.
-- **Уже сделано:** 192 reviewed senses + unit links; 64 draft vocabulary exercises (meaning-choice KO↔RU, free-response, matching-translation) по 4 на unit.
+- **Текущая итерация:** F2-I17 minimal reading exercise bank — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i17-reading-exercises`.
+- **Уже сделано:** 16 canonical reading passages + 48 bank single-choice questions; 100 exam imports remain draft.
 - **Выполненные проверки:** content validate/tests + unit/lint/typecheck/build (gate итерации).
-- **Сейчас работает:** structural vocab coverage 16/16 в authoring JSON; draft/reviewed rows в seed; public lists по-прежнему только approved sample.
-- **Пока не работает / ограничения:** reading bank cleanup (F2-I17); filtered session creation (F2-I18); curriculum draft → Supabase public lists пустые до publish/review.
-- **Следующий конкретный шаг:** F2-I17 — minimal reading exercise bank.
+- **Сейчас работает:** structural reading coverage 16/16 в authoring JSON; draft/reviewed rows в seed; public lists по-прежнему только approved sample.
+- **Пока не работает / ограничения:** filtered session creation (F2-I18); curriculum draft → Supabase public lists пустые до publish/review.
+- **Следующий конкретный шаг:** F2-I18 — create filtered learning sessions.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

@@ -70,7 +70,7 @@
     {
       "logicalId": "passage.u01.section.s004",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -87,7 +87,11 @@
         "ru": "자기소개에 대한 글을 읽고 말하기"
       },
       "bodyKo": "안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.\n아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.\n모두 우리 반 친구입니다.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u01.section.s005",
@@ -192,7 +196,8 @@
         }
       ],
       "review": {
-        "note": "Passage contains blank markers; verify before approval."
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17; blank markers require language review."
       },
       "unitLogicalId": "unit.u02",
       "title": {
@@ -271,7 +276,7 @@
     {
       "logicalId": "passage.u03.section.s013",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -288,7 +293,11 @@
         "ru": "학교생활을 설명하는 글을 읽고 말하기"
       },
       "bodyKo": "저는 인하대학교에 다닙니다.\n저는 한국어를 배웁니다. 우리 교실은 405호입니다. 파하드 씨, 아멜리 씨는 우리 반 학생입니다. 파하드 씨는 친절합니다. 아멜리 씨는 똑똑합니다. 한국어는 재미있습니다. 우리는 열심히 한국어를 배웁니다. 수업이 끝납니다. 우리는 도서관에 갑니다. 공부를 합니다. 그리고 운동장에 갑니다. 운동을 합니다.\n학교생활이 매우 즐겁습니다.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u03.section.track-112",
@@ -381,7 +390,7 @@
     {
       "logicalId": "passage.u04.section.s018",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -398,7 +407,11 @@
         "ru": "한국에서의 일상생활에 대한 글을 읽고 말하기"
       },
       "bodyKo": "저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.\n토요일에는 친구와 같이 도서관에 갑니다. 도서관에서 책을 봅니다. 그리고 숙제도 합니다. 일요일에는 운동장에 갑니다. 운동장에서 친구와 같이 야구와 농구를 합니다. 저는 운동을 아주 좋아합니다.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u04.section.70",
@@ -491,7 +504,7 @@
     {
       "logicalId": "passage.u05.section.s023",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -508,7 +521,11 @@
         "ru": "하루 일과에 대한 글을 읽고 말하기"
       },
       "bodyKo": "저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u06.section.1-121-track-121",
@@ -579,7 +596,7 @@
     {
       "logicalId": "passage.u06.section.100",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -596,7 +613,11 @@
         "ru": "주말 이야기에 대한 글을 읽고 말하기"
       },
       "bodyKo": "7월 8일 토요일\n\n어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 차이나타운에도 가고 공원에도 갔습니다.\n1시에 점심을 먹었습니다. 그리고 바다에 갔습니다. 우리는 바다에서 사진도 찍고 배도 탔습니다. 바람이 시원하고 좋았습니다. 그리고 배에서 한국 사람들과 이야기도 해 봤습니다.\n저녁에 한식당에서 한국 음식을 먹었습니다. 친구는 불고기를 먹고 저는 비빔밥을 먹었습니다. 음식이 정말 맛있었습니다.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u07.section.1-125-track-125",
@@ -679,7 +700,8 @@
         }
       ],
       "review": {
-        "note": "Passage contains blank markers; verify before approval."
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17; blank markers require language review."
       },
       "unitLogicalId": "unit.u07",
       "title": {
@@ -780,7 +802,7 @@
     {
       "logicalId": "passage.u08.section.s036",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -797,7 +819,11 @@
         "ru": "방학 계획에 대한 글을 읽고 말하기"
       },
       "bodyKo": "저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.\n고향에 가서 부모님과 함께 바다로 여행을 갈 겁니다. 우리는 사흘 동안 바다에서 수영도 하고 고향 음식도 먹을 겁니다. 그리고 친척들을 만나고 집으로 돌아올 겁니다. 집으로 돌아온 후에 친구의 생일 파티에 갈 겁니다. 생일 파티에 가서 한국의 전통 물건을 선물할 겁니다.\n그래서 저는 방학을 기다립니다.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u08.section.track-132",
@@ -936,7 +962,8 @@
         }
       ],
       "review": {
-        "note": "Preserve blank markers and 이 꽃 until manual verification."
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17; blank markers require language review."
       },
       "unitLogicalId": "unit.u09",
       "title": {
@@ -1015,7 +1042,7 @@
     {
       "logicalId": "passage.u10.section.s046",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -1032,7 +1059,11 @@
         "ru": "좋아하는 음식에 대한 글을 읽고 말하기"
       },
       "bodyKo": "저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.\n지난 주말에는 집에서 친구들과 파티를 했습니다. 친구들은 고향의 음식을 만들고 저는 떡볶이를 만들었습니다. 저는 떡볶이를 처음 만들어 봤습니다. 그런데 친구들이 제 떡볶이를 아주 좋아했습니다. 기분이 정말 좋았습니다. 그래서 한국 요리를 많이 배우고 싶습니다.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u10.section.track-140",
@@ -1081,7 +1112,7 @@
     {
       "logicalId": "passage.u11.section.2-177-track-142",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -1098,7 +1129,11 @@
         "ru": "전화를 바꿔 주기"
       },
       "bodyKo": "흐 엉: 여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?\n친 구: 네, 잠깐만 기다려 주세요. 파하드 씨, 전화 받으세요.\n(잠시 후)\n파하드: 여보세요? 전화 바꿨습니다.\n흐 엉: 파하드 씨, 저 흐엉이에요.\n파하드: 아, 흐엉 씨. 무슨 일이에요?\n흐 엉: 지성 씨 얘기 들었어요?\n파하드: 네? 무슨 얘기요?\n흐 엉: 지성 씨가 다리를 다쳤어요. 그래서 지금 병원에 있어요. 파하드 씨, 시간이 있으면 같이 병원에 가 볼까요?\n파하드: 네, 좋아요. 내일 수업이 끝나면 같이 병원에 갑시다.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u11.section.181",
@@ -1213,7 +1248,7 @@
     {
       "logicalId": "passage.u12.section.s055",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -1230,7 +1265,11 @@
         "ru": "이메일로 약속하는 글을 읽고 말하기"
       },
       "bodyKo": "보내는 사람: 오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr\n제목: 왕루 씨, 잘 지내요?\n\n왕루 씨, 잘 지내고 있어요?\n저는 잘 지내요. 요즘 대학원 공부가 어려워서 조금 힘들어요. 하지만 재미있어요. 왕루 씨는 한국어 공부가 어때요?\n다음 주 금요일 저녁 7시에 예술회관에서 난타 공연을 해요. 저는 왕루 씨랑 같이 공연을 보러 가고 싶어요. 다음 주 금요일 저녁에 시간이 있어요?\n왕루 씨가 같이 갈 수 있으면 제가 미리 입장권을 예매할게요. 답장 기다릴게요.\n\n오위노 씨, 이메일 잘 받았어요. 연락해 줘서 정말 고마워요.\n저는 요즘 한국어를 열심히 공부하고 있어요. 반 친구들이 도와줘서 한국어 공부가 많이 어렵지 않아요. 재미있어요.\n다음 주 금요일에 오위노 씨와 함께 공연을 보러 갈 수 있어요. 금요일 저녁이어서 공연장에 사람들이 많고 복잡할 거예요. 그러니까 공연이 시작되기 전에 좀 일찍 만날까요? 6시에 예술회관 앞에서 만납시다. 그럼 연락 기다릴게요.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u12.section.s056",
@@ -1354,7 +1393,7 @@
     {
       "logicalId": "passage.u13.section.s061",
       "contentVersion": "1.0.0",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -1366,7 +1405,8 @@
         }
       ],
       "review": {
-        "note": "Preserve 앞으로 쭉 가면 until manual verification."
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
       },
       "unitLogicalId": "unit.u13",
       "title": {
@@ -1470,7 +1510,7 @@
     {
       "logicalId": "passage.u14.section.233",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -1487,7 +1527,11 @@
         "ru": "도서관 이용 안내문을 읽고 말하기"
       },
       "bodyKo": "**도서관 이용 안내**\n\n1. 이용 시간\n   평일: 오전 9:00 ~ 오후 9:00 (방학: 오전 9:00 ~ 오후 5:00)\n   토요일: 오전 9:00 ~ 오후 5:00 (방학: 오전 9:00 ~ 오후 1:00)\n2. 도서관은 우리 학교 학생이면 사용할 수 있습니다. (단, 휴학생은 도서관 안의 열람실만 이용할 수 있습니다.)\n3. 도서관 유의 사항\n   1. 도서관 안에서 떠들지 마십시오.\n   2. 도서관 안에서 음식을 먹지 마십시오.\n   3. 도서관 안에서 전화를 하지 마십시오.\n   4. 도서관 안에서 담배를 피우지 마십시오.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u14.section.14-track-156",
@@ -1580,7 +1624,7 @@
     {
       "logicalId": "passage.u15.section.249",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -1597,7 +1641,11 @@
         "ru": "약을 먹는 방법을 읽고 말하기"
       },
       "bodyKo": "약\n왕루 씨 (21세, 여)\n하루에 세 번\n☑ 식후 30분 (варианты: 식전 30분 / 식후 30분 / 6시간마다)\n※ 주의 사항: 어린이와 임산부는 이 약을 먹지 마십시오.",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u15.section.15-track-160",
@@ -1690,7 +1738,7 @@
     {
       "logicalId": "passage.u16.section.266",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -1707,7 +1755,11 @@
         "ru": "부모님께 쓴 편지를 읽고 말하기"
       },
       "bodyKo": "부모님께\n\n아버지, 어머니 잘 지내고 계시지요?\n저는 한국에서 잘 지내고 있어요. 처음에는 한국 생활이 조금 힘들었는데 지금은 친구들이 많이 도와줘서 힘들지 않아요. 한국어 공부도 열심히 하고 있어요. 수업 시간에 배운 문법을 친구들과 사용해서 말하는 시간이 가장 재미있어요.\n지난주에는 학교에서 세계음식축제를 했어요. 저도 친구들과 함께 중국 음식을 만들었어요. 많은 사람들에게 중국의 음식을 소개할 수 있었고 다른 나라의 음식도 맛볼 수 있어서 정말 즐거웠어요.\n아버지, 어머니! 저는 한국에서 잘 생활하고 있으니까 걱정하지 마세요. 이번 방학에는 고향에 못 가지만 다음 방학에는 꼭 갈게요.\n그럼 안녕히 계세요.\n\n왕루 드림",
-      "bodyRu": null
+      "bodyRu": null,
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected as unit canonical reading passage for F2-I17 structural bank."
+      }
     },
     {
       "logicalId": "passage.u16.section.268",

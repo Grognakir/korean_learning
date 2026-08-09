@@ -25880,7 +25880,7 @@ insert into public.reading_passages (
 모두 우리 반 친구입니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -26072,7 +26072,7 @@ insert into public.reading_passages (
 학교생활이 매우 즐겁습니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -26171,7 +26171,7 @@ insert into public.reading_passages (
 토요일에는 친구와 같이 도서관에 갑니다. 도서관에서 책을 봅니다. 그리고 숙제도 합니다. 일요일에는 운동장에 갑니다. 운동장에서 친구와 같이 야구와 농구를 합니다. 저는 운동을 아주 좋아합니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -26277,7 +26277,7 @@ insert into public.reading_passages (
   '저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -26355,7 +26355,7 @@ insert into public.reading_passages (
 저녁에 한식당에서 한국 음식을 먹었습니다. 친구는 불고기를 먹고 저는 비빔밥을 먹었습니다. 음식이 정말 맛있었습니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -26535,7 +26535,7 @@ insert into public.reading_passages (
 그래서 저는 방학을 기다립니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -26755,7 +26755,7 @@ insert into public.reading_passages (
 지난 주말에는 집에서 친구들과 파티를 했습니다. 친구들은 고향의 음식을 만들고 저는 떡볶이를 만들었습니다. 저는 떡볶이를 처음 만들어 봤습니다. 그런데 친구들이 제 떡볶이를 아주 좋아했습니다. 기분이 정말 좋았습니다. 그래서 한국 요리를 많이 배우고 싶습니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -26830,7 +26830,7 @@ insert into public.reading_passages (
 파하드: 네, 좋아요. 내일 수업이 끝나면 같이 병원에 갑시다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -26969,7 +26969,7 @@ insert into public.reading_passages (
 다음 주 금요일에 오위노 씨와 함께 공연을 보러 갈 수 있어요. 금요일 저녁이어서 공연장에 사람들이 많고 복잡할 거예요. 그러니까 공연이 시작되기 전에 좀 일찍 만날까요? 6시에 예술회관 앞에서 만납시다. 그럼 연락 기다릴게요.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -27099,7 +27099,7 @@ insert into public.reading_passages (
 광화문역에서 종로 방향으로 직진합니다. 걸어서 간 후에 첫 번째 사거리에서 횡단보도를 건넙니다. 거기에 인하빌딩이 있습니다. 인하빌딩 옆에 세종문화회관이 있습니다. 광화문역에서 세종문화회관까지 걸어서 10분쯤 걸립니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -27211,7 +27211,7 @@ insert into public.reading_passages (
    4. 도서관 안에서 담배를 피우지 마십시오.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -27321,7 +27321,7 @@ insert into public.reading_passages (
 ※ 주의 사항: 어린이와 임산부는 이 약을 먹지 마십시오.',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -27433,7 +27433,7 @@ insert into public.reading_passages (
 왕루 드림',
   null,
   '{}'::jsonb,
-  'draft',
+  'reviewed',
   '1.0.0'
 )
 ;
@@ -49963,6 +49963,3590 @@ insert into public.exercise_options (
   3
 );
 
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  'exercise.reading.bank.u01.q01',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  null,
+  'reading',
+  'c6a6d4f2-14e2-47e1-8be4-cd19a135416c',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b52ea13b-7728-4f5e-b0f5-96a0e04eaf41',
+  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  'opt1',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '46392ab8-75ba-412a-9bca-300afcbceba5',
+  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  'opt2',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f5887af3-0b48-4f29-8da0-fed85c641aba',
+  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  'opt3',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '02901403-c6f6-4685-91dd-83865c05a43d',
+  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  'opt4',
+  '한국에서의 일상생활에 대한 글을 읽고 말하기',
+  '한국에서의 일상생활에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  'exercise.reading.bank.u01.q02',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  null,
+  'reading',
+  'c6a6d4f2-14e2-47e1-8be4-cd19a135416c',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f789472c-9b0d-4d13-81e8-42f7c225fe3e',
+  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  'opt1',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3e490a0f-1ed7-4bad-96b1-1afef9f65ca3',
+  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  'opt2',
+  '저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.',
+  '저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'fbb65f7a-72f3-46b7-85bf-863bc58d12c9',
+  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  'opt3',
+  '위층에는 제 방, 위층 화장실이 있습니다. 제 방에 침대, 책상, 옷장이 있습니다. 책상 위에 책, 공책, 컴퓨터가 있습니다. 화장실은 제 방의 오른쪽에 있습니다.',
+  '위층에는 제 방, 위층 화장실이 있습니다. 제 방에 침대, 책상, 옷장이 있습니다. 책상 위에 책, 공책, 컴퓨터가 있습니다. 화장실은 제 방의 오른쪽에 있습니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '975b442e-20b2-4931-b855-234352dc2e20',
+  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  'opt4',
+  '저는 인하대학교에 다닙니다.',
+  '저는 인하대학교에 다닙니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  'exercise.reading.bank.u01.q03',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  null,
+  'reading',
+  'c6a6d4f2-14e2-47e1-8be4-cd19a135416c',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+____? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  'Выберите слово для пропуска.
+____? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e9a12573-18d1-436f-8d19-e638e1382f74',
+  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  'opt1',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'dc0f2dfd-d422-4f19-b494-973109a42abb',
+  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  'opt2',
+  '로빈입니다',
+  '로빈입니다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ff2163ba-19e0-4d87-981a-1e2219975c9e',
+  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  'opt3',
+  '고향집은',
+  '고향집은',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3146a268-56bf-4db7-b59c-191eec3a83c5',
+  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  'opt4',
+  '미국의',
+  '미국의',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  'exercise.reading.bank.u02.q01',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  null,
+  'reading',
+  'e55c309e-1bfc-41fc-9fc0-afed3e07a60c',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '420846c8-e3a9-4c7e-9515-15676c05470d',
+  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  'opt1',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9f3c7349-1748-4312-86c1-c5d7946a14b8',
+  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '55ee2f0b-7b58-4c15-bad2-3d0deac58cad',
+  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  'opt3',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '48f2371c-be5e-4c2c-a189-84325ead369b',
+  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  'opt4',
+  '한국에서의 일상생활에 대한 글을 읽고 말하기',
+  '한국에서의 일상생활에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  'exercise.reading.bank.u02.q02',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  null,
+  'reading',
+  'e55c309e-1bfc-41fc-9fc0-afed3e07a60c',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '82d4789a-c07f-479a-98b6-a35c429aacfc',
+  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  'opt1',
+  '저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.',
+  '저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '29ddc88e-ae14-4748-b8ee-f56af790a7c6',
+  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '73c0bb3b-ad94-49bd-ad2c-5d01e148cf4f',
+  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bf3984c3-2462-4115-9260-90e8cc5071fe',
+  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'exercise.reading.bank.u02.q03',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  null,
+  'reading',
+  'e55c309e-1bfc-41fc-9fc0-afed3e07a60c',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 ____.',
+  'Выберите слово для пропуска.
+저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 ____.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b3ff7c7b-3787-4a43-a4f4-b5959037d824',
+  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'opt1',
+  '이층집입니다',
+  '이층집입니다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b147589c-9472-4c40-8829-e6557d41c63e',
+  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '63165174-1eaf-4615-97fc-8078a8b84610',
+  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '301d23e4-2e2c-4542-a684-f9959f8c10d8',
+  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  'exercise.reading.bank.u03.q01',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  null,
+  'reading',
+  '926f2fca-bd56-482d-abde-13eb43848891',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «저는 인하대학교에 다닙니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0c204d3b-d4ea-4eba-841b-bc956258b4e0',
+  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  'opt1',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9d7c9505-d401-4cba-a673-c97612972883',
+  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '930a9db8-9a29-4122-93c3-43c8b88d06fa',
+  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '72a553fc-e45f-4f87-a728-6e3e363345f8',
+  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  'opt4',
+  '한국에서의 일상생활에 대한 글을 읽고 말하기',
+  '한국에서의 일상생활에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  'exercise.reading.bank.u03.q02',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  null,
+  'reading',
+  '926f2fca-bd56-482d-abde-13eb43848891',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «저는 인하대학교에 다닙니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '00eeb8d6-0652-4ef6-a84c-f3bc5918ebc8',
+  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  'opt1',
+  '저는 인하대학교에 다닙니다.',
+  '저는 인하대학교에 다닙니다.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a1406b76-6bf9-4dfb-83f2-59281fb2ffb4',
+  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '98f811ed-71c8-453e-864d-f61af8d65c8b',
+  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a9c6b378-526e-4c85-8964-d5392b9d7483',
+  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  'exercise.reading.bank.u03.q03',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  null,
+  'reading',
+  '926f2fca-bd56-482d-abde-13eb43848891',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+저는 ____ 다닙니다.',
+  'Выберите слово для пропуска.
+저는 ____ 다닙니다.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «저는 인하대학교에 다닙니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '761d0470-3acb-4f11-b978-7bafad92812d',
+  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  'opt1',
+  '인하대학교에',
+  '인하대학교에',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0feb10cf-dbcc-4819-b31d-38cdfbe473ab',
+  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1fb44885-36d4-4039-837d-dff0e8071329',
+  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f5f0ab95-a36d-42eb-83a8-4726d835290d',
+  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  'exercise.reading.bank.u04.q01',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  null,
+  'reading',
+  '5a9a4627-da25-428b-bc15-a36394da9f3c',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '11e1a902-248c-4e17-8f7e-7fade07af4fd',
+  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  'opt1',
+  '한국에서의 일상생활에 대한 글을 읽고 말하기',
+  '한국에서의 일상생활에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6d553667-761e-49a0-8e66-fa758c8d438a',
+  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8f3497c3-f311-4124-ba79-4405e817ec57',
+  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bfdb7e53-b6eb-46eb-9ea9-d816394a8ffc',
+  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'exercise.reading.bank.u04.q02',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  null,
+  'reading',
+  '5a9a4627-da25-428b-bc15-a36394da9f3c',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'aeb1d4f4-3093-4d41-8345-0dc313b35c01',
+  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'opt1',
+  '저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.',
+  '저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '65dc2f67-3a2d-43f2-908c-d1c2a6c0a0f3',
+  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd7620bf2-bd92-4710-bb3c-c216e9736871',
+  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '421f1ea3-8ad1-4d8f-8fbd-3992cfad18b9',
+  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd6f60646-6872-43de-bc2e-548377d28232',
+  'exercise.reading.bank.u04.q03',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  null,
+  'reading',
+  '5a9a4627-da25-428b-bc15-a36394da9f3c',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 ____. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.',
+  'Выберите слово для пропуска.
+저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 ____. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e253cb9f-35dd-4dfa-8ee8-592bf4e05e99',
+  'd6f60646-6872-43de-bc2e-548377d28232',
+  'opt1',
+  '재미있습니다',
+  '재미있습니다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7eaace9e-cbd8-4b26-9e9d-062d09539b20',
+  'd6f60646-6872-43de-bc2e-548377d28232',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7bba2269-2b0d-4b60-aa87-433c0ac8eba3',
+  'd6f60646-6872-43de-bc2e-548377d28232',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b4c190ba-e2fb-4685-a0d5-fca5ad498a3f',
+  'd6f60646-6872-43de-bc2e-548377d28232',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  'exercise.reading.bank.u05.q01',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  null,
+  'reading',
+  '21818049-3ea5-4d69-bcdf-6c15ca42ae0d',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8dff2b90-5c4c-4269-b50f-693dd860263d',
+  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  'opt1',
+  '하루 일과에 대한 글을 읽고 말하기',
+  '하루 일과에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9d2dd4c5-3cb3-41a8-a160-5ff39cab3f73',
+  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5bbeacab-9b8d-46d3-ab2e-0068e4846a90',
+  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0ac0581a-e98b-409f-a4f4-710b41fe3052',
+  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  'exercise.reading.bank.u05.q02',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  null,
+  'reading',
+  '21818049-3ea5-4d69-bcdf-6c15ca42ae0d',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b79da5aa-a6a2-4903-a059-c5da2b5c6685',
+  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  'opt1',
+  '저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.',
+  '저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a67b8d60-0068-40d4-ab93-b06461a9af77',
+  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1cef7206-c4e3-4987-b7ec-bd7a43b4f4f6',
+  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f6d278f4-7e94-4ef7-b37f-211d5fad8f92',
+  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'exercise.reading.bank.u05.q03',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  null,
+  'reading',
+  '21818049-3ea5-4d69-bcdf-6c15ca42ae0d',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 ____ 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.',
+  'Выберите слово для пропуска.
+저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 ____ 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1207e90c-7220-4a5d-b1ac-0322f40d36f2',
+  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'opt1',
+  '도서관에서',
+  '도서관에서',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0c833eb4-3fbc-48b8-9560-2fc7f58a12a3',
+  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '131037c1-499b-462a-a4af-f710e77fd1ea',
+  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9d7a70a6-aafe-4d95-93ad-cf5d192b8e95',
+  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  'exercise.reading.bank.u06.q01',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  null,
+  'reading',
+  '69815e4a-ceb7-483d-ac53-556c8e6a0b1f',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «7월 8일 토요일»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c3d6bc4c-672c-4cb3-82fc-76fbe99d2d17',
+  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  'opt1',
+  '주말 이야기에 대한 글을 읽고 말하기',
+  '주말 이야기에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b5c093a4-70b5-4ed7-950e-174c13154643',
+  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a0da2876-1ac7-4062-af47-84bca7f5a8ae',
+  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'dfe44f96-19b0-4fa8-8b4e-2f170ae70c84',
+  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  'exercise.reading.bank.u06.q02',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  null,
+  'reading',
+  '69815e4a-ceb7-483d-ac53-556c8e6a0b1f',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «7월 8일 토요일»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a1b1f26c-cc5b-4460-9ce0-a8c299354e4d',
+  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  'opt1',
+  '7월 8일 토요일',
+  '7월 8일 토요일',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '32e6f4f6-f7e2-4145-a383-e34c74851d48',
+  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '292005e0-c0c6-4254-b9c5-f76639753b32',
+  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '48020ee5-4802-44b7-ab1c-328ee9628be6',
+  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  'exercise.reading.bank.u06.q03',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  null,
+  'reading',
+  '69815e4a-ceb7-483d-ac53-556c8e6a0b1f',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 ____ 가고 공원에도 갔습니다.',
+  'Выберите слово для пропуска.
+어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 ____ 가고 공원에도 갔습니다.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 차이나타운에도 가고 공원에도 갔습니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ce8445fd-6ed7-4a9b-81bb-d817e6d5a52a',
+  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  'opt1',
+  '차이나타운에도',
+  '차이나타운에도',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'dfc1a0c9-1d88-4cea-8524-e6d7f2f71bb3',
+  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ce981692-5258-4fe6-8003-43f91774e209',
+  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2a90230d-52ba-4cbd-9c42-fb9a324c77e8',
+  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'exercise.reading.bank.u07.q01',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  null,
+  'reading',
+  'ef1884f4-f4fe-4f19-aa84-6ad868e40342',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '39953308-cec5-49cf-a30c-6233a5d4c133',
+  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'opt1',
+  '좋아하는 계절에 대한 글을 읽고 말하기',
+  '좋아하는 계절에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '21859174-d2c8-445e-a2a0-9b193e68877c',
+  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7ea22bd3-17b7-453c-add0-0d46cbe09f4c',
+  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '73cdcda8-e17b-4147-a1fe-3ec5e7f451b4',
+  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  'exercise.reading.bank.u07.q02',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  null,
+  'reading',
+  'ef1884f4-f4fe-4f19-aa84-6ad868e40342',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '72ff1c63-5d33-4a3d-b4ea-8913e301a2ce',
+  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  'opt1',
+  '한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.',
+  '한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '239eae18-ab5f-40e8-a07f-f24ec369a0fc',
+  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ba67e3fd-d805-443e-b70e-f5b0ad90b37b',
+  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '71c7d0fd-a790-447e-9918-e50553580b7c',
+  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'exercise.reading.bank.u07.q03',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  null,
+  'reading',
+  'ef1884f4-f4fe-4f19-aa84-6ad868e40342',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+한국의 가을은 날씨가 맑고 바람도 ____. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.',
+  'Выберите слово для пропуска.
+한국의 가을은 날씨가 맑고 바람도 ____. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b764c0bc-8ef9-41c3-ba53-cff6b46cd2d0',
+  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'opt1',
+  '시원합니다',
+  '시원합니다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c9b52336-4165-40d3-b027-79e345fe1ad6',
+  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6be85b21-e4a5-4169-b494-baede9847ba6',
+  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f36cb20b-e08c-41da-a32c-11534f77546d',
+  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'exercise.reading.bank.u08.q01',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  null,
+  'reading',
+  'f865a87f-d36c-481a-986d-78e90122a3f9',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ce80483b-e801-459d-afcd-edf822226952',
+  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'opt1',
+  '방학 계획에 대한 글을 읽고 말하기',
+  '방학 계획에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2370641c-51eb-49fc-8e55-9ebdc53a0ef1',
+  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6d7f666e-05a8-4a3f-a4f8-f355cf4bb23f',
+  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '23f5810c-4afc-4e9d-8013-a3a4cac9abd8',
+  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  'exercise.reading.bank.u08.q02',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  null,
+  'reading',
+  'f865a87f-d36c-481a-986d-78e90122a3f9',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b3dcca05-e53c-4943-b602-b7334a96ac7a',
+  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  'opt1',
+  '저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.',
+  '저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '39a44790-2863-48e1-ad16-2cf3937d9e56',
+  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6120e5fb-847c-4a0a-9414-b2f2cd58aca5',
+  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a69eec95-c30b-4e53-a87e-be537fb7633c',
+  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  'exercise.reading.bank.u08.q03',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  null,
+  'reading',
+  'f865a87f-d36c-481a-986d-78e90122a3f9',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. ____ 부모님과 친구의 선물을 살 겁니다.',
+  'Выберите слово для пропуска.
+저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. ____ 부모님과 친구의 선물을 살 겁니다.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '889068b2-0d45-4454-b019-385d131d5877',
+  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  'opt1',
+  '백화점에서',
+  '백화점에서',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ea6ad764-c723-49d8-b707-7cc21774644c',
+  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd1efbd08-631a-4c31-bdb8-f68cb13854e4',
+  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '76cb772b-a7c5-4884-a04b-10cdbb535091',
+  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '314115c3-9325-467b-9b56-52c6228c31bc',
+  'exercise.reading.bank.u09.q01',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  null,
+  'reading',
+  '5467c14e-37a0-4dd1-89de-20cee3b4cfee',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '75d3a594-cb05-4f55-8108-5d806dbbb6d0',
+  '314115c3-9325-467b-9b56-52c6228c31bc',
+  'opt1',
+  '특별한 날에 주는 선물에 대한 글을 읽고 말하기',
+  '특별한 날에 주는 선물에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4cbc0be8-5630-4070-970b-bc0821929649',
+  '314115c3-9325-467b-9b56-52c6228c31bc',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a09f8eef-c334-4631-a6b2-c78bb751e3f2',
+  '314115c3-9325-467b-9b56-52c6228c31bc',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd691a766-0d73-454e-b60f-70357473ea4f',
+  '314115c3-9325-467b-9b56-52c6228c31bc',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  'exercise.reading.bank.u09.q02',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  null,
+  'reading',
+  '5467c14e-37a0-4dd1-89de-20cee3b4cfee',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b1f28668-4ea3-4adc-a5b7-355c8b770f31',
+  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  'opt1',
+  '내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.',
+  '내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a5cc1a72-3d13-4104-a74b-a52d296c6255',
+  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '406d04db-b25e-44b5-9785-09248cf18693',
+  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c7947d11-0ce2-4c4d-b765-e8bd9141ff6d',
+  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  'exercise.reading.bank.u09.q03',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  null,
+  'reading',
+  '5467c14e-37a0-4dd1-89de-20cee3b4cfee',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+내일은 5월 8일 ____. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.',
+  'Выберите слово для пропуска.
+내일은 5월 8일 ____. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'cd5286d9-96bb-4370-9112-48ca19b71f16',
+  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  'opt1',
+  '어버이날입니다',
+  '어버이날입니다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6b9a8351-7b2f-43c8-914e-c0c2f1867732',
+  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0cb6db4f-3df2-4910-90b0-ee23942de970',
+  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '94c0077a-06cc-4975-88a1-55775bea5026',
+  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  'exercise.reading.bank.u10.q01',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  null,
+  'reading',
+  'eedb7c7f-5300-40b0-abc4-f4312e8b1a56',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c2b7a226-da6c-4eca-acc2-5a3460710ecf',
+  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  'opt1',
+  '좋아하는 음식에 대한 글을 읽고 말하기',
+  '좋아하는 음식에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd4c8ae80-d8c9-4b4a-8173-6e8748ef3873',
+  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '03362ca6-91ae-406d-858c-2c52bcbbee09',
+  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '62c5942a-5f38-40a7-a8fe-76465569930c',
+  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  'exercise.reading.bank.u10.q02',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  null,
+  'reading',
+  'eedb7c7f-5300-40b0-abc4-f4312e8b1a56',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0c9e33aa-36db-483e-a7f3-54a846b4db48',
+  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  'opt1',
+  '저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.',
+  '저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '411104a4-92a4-4100-87dd-f2f3947ad3e1',
+  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '168376f6-152c-42b5-9871-cb1b754af12d',
+  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '60aea580-6ae0-4882-b137-aed41b9eb6a4',
+  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  'exercise.reading.bank.u10.q03',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  null,
+  'reading',
+  'eedb7c7f-5300-40b0-abc4-f4312e8b1a56',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 ____. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.',
+  'Выберите слово для пропуска.
+저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 ____. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3677c584-fba7-4617-8694-d7ff5f9614aa',
+  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  'opt1',
+  '맛있었습니다',
+  '맛있었습니다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '62db45a9-6ad0-449b-8e7c-f85ce8149b8a',
+  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '383f788c-cccd-4b7e-bb99-c0870a765f31',
+  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '930a60fa-4b97-43f6-943c-51e7748cc147',
+  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  'exercise.reading.bank.u11.q01',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  null,
+  'reading',
+  'f212810e-451a-4991-8009-da52bf2a7682',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '94331efb-5e12-4f83-a700-c9da3505a604',
+  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  'opt1',
+  '전화를 바꿔 주기',
+  '전화를 바꿔 주기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e3dabefb-b7f4-4075-b079-4bf69955c916',
+  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6bf2a692-5063-44cd-a343-801eb08dc896',
+  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a2e12c61-f030-4140-a370-fe48796fef9d',
+  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'exercise.reading.bank.u11.q02',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  null,
+  'reading',
+  'f212810e-451a-4991-8009-da52bf2a7682',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a58bc778-f557-4aa0-85a5-2d268c7fcf6e',
+  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'opt1',
+  '여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?',
+  '여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '069371cd-c50a-4b7f-a58e-08304f44ab9f',
+  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5f6ace4c-73b7-47f7-9193-dca55a78dc23',
+  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '78376edf-3720-406d-a3de-4680933c2be8',
+  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'exercise.reading.bank.u11.q03',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  null,
+  'reading',
+  'f212810e-451a-4991-8009-da52bf2a7682',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+____? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?',
+  'Выберите слово для пропуска.
+____? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3a32121d-89cb-4401-b51a-42ddcf1b2264',
+  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'opt1',
+  '여보세요',
+  '여보세요',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4ed75536-5f1b-42ec-a9c3-582f5d11c99f',
+  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd3147964-17f0-4cad-843f-2b0d237d664a',
+  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2d2590ba-ab80-4627-ae4e-97d327b974f9',
+  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'exercise.reading.bank.u12.q01',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  null,
+  'reading',
+  '28f04077-e1c5-4a13-a8d5-96646e9e9125',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4154d068-191c-49f7-9b1b-fa275fc15c39',
+  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'opt1',
+  '이메일로 약속하는 글을 읽고 말하기',
+  '이메일로 약속하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b4294936-40f0-4705-aa3c-9f4cc0d0d2ce',
+  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ab4f4748-020f-438c-918b-a6488678edb1',
+  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6ebe9905-860b-4b80-b488-efcbf9f174d2',
+  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'exercise.reading.bank.u12.q02',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  null,
+  'reading',
+  '28f04077-e1c5-4a13-a8d5-96646e9e9125',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '576332ea-17a1-42a6-abea-6c08f364a1f2',
+  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'opt1',
+  '오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr',
+  '오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd4afba16-3def-480a-8851-122ff1a345f4',
+  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4ec9382d-3ae3-4d5f-9520-38bb45d76609',
+  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9a00fb2d-972d-4e0d-850f-c98ef02e9d87',
+  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'exercise.reading.bank.u12.q03',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  null,
+  'reading',
+  '28f04077-e1c5-4a13-a8d5-96646e9e9125',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+____ owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr',
+  'Выберите слово для пропуска.
+____ owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c6dafbfe-214b-4a2d-bfbd-6a5bfb2fb820',
+  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'opt1',
+  '오위노',
+  '오위노',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2caa9c67-465f-47be-976c-b587d3dec4ae',
+  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1e0f1c20-0fb7-4dc2-90e3-a53aabf47c3a',
+  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'add0fa2f-0540-49f1-917b-cd8223d46717',
+  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  'exercise.reading.bank.u13.q01',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  null,
+  'reading',
+  'c42ce28f-a6cb-41c1-a5a9-80ef12d5940d',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '36e6f9ce-5f6e-4a7e-adf9-25015db9797f',
+  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  'opt1',
+  '목적지에 가는 글을 읽고 말하기',
+  '목적지에 가는 글을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '36cc251f-fc11-4964-87d0-4ebc1eda75e0',
+  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1fdb3afc-e580-40c2-a55c-2ed79abb324d',
+  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bcc6e3bc-f434-4473-9132-0cfd1d5140e3',
+  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  'exercise.reading.bank.u13.q02',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  null,
+  'reading',
+  'c42ce28f-a6cb-41c1-a5a9-80ef12d5940d',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '10652eff-f8eb-4cf7-b62e-30262793a19f',
+  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  'opt1',
+  '오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.',
+  '오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '44507672-02c6-4609-a8b6-cd03b20c1217',
+  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9463a065-7ef5-4fb4-b76f-faea7cb4fd1b',
+  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bffdf607-f3ef-4862-a29c-716dc0403a20',
+  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  'exercise.reading.bank.u13.q03',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  null,
+  'reading',
+  'c42ce28f-a6cb-41c1-a5a9-80ef12d5940d',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+오늘 난타 공연을 보러 ____ 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.',
+  'Выберите слово для пропуска.
+오늘 난타 공연을 보러 ____ 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '994e5f77-7ac1-4342-abfc-fe9a72d93b30',
+  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  'opt1',
+  '세종문화회관에',
+  '세종문화회관에',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ee948f35-e5cf-419e-9a4d-f5005dc8a801',
+  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '18940367-4065-495c-af06-d48b0cf83deb',
+  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6e12f346-813d-400b-af4c-c8e39b2c1b34',
+  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'exercise.reading.bank.u14.q01',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  null,
+  'reading',
+  '8246e284-12ab-46c6-97f9-875486b6a715',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «**도서관 이용 안내**»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3a710277-3005-47db-a757-263c7146f16d',
+  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'opt1',
+  '도서관 이용 안내문을 읽고 말하기',
+  '도서관 이용 안내문을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4506855b-9a16-4ae5-bc62-3793bb03d98b',
+  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '425c2614-f30c-4a87-98df-6836f5de177c',
+  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '12fa5f8d-1c34-4189-9f93-4678bff5d7f1',
+  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  'exercise.reading.bank.u14.q02',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  null,
+  'reading',
+  '8246e284-12ab-46c6-97f9-875486b6a715',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «**도서관 이용 안내**»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'abfb46f0-398b-4ab1-b41e-ca9bb854c371',
+  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  'opt1',
+  '**도서관 이용 안내**',
+  '**도서관 이용 안내**',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '22c36360-7fff-4d3b-b53d-316491e1befa',
+  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a6188ba4-fc32-49d8-b666-a7dbc66652c0',
+  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '47fd0d23-035c-4df2-b65b-abb0a375a884',
+  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  'exercise.reading.bank.u14.q03',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  null,
+  'reading',
+  '8246e284-12ab-46c6-97f9-875486b6a715',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+**____ 이용 안내**',
+  'Выберите слово для пропуска.
+**____ 이용 안내**',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «**도서관 이용 안내**»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f0bcf12c-8e6a-40fa-b027-297072527e0f',
+  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  'opt1',
+  '도서관',
+  '도서관',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5b35c64e-8e37-4191-9b5a-1edd94280b16',
+  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '347c7641-08f2-407e-a555-5e6e50f03fcf',
+  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8804af64-a95d-4b03-9108-aa9775050e9e',
+  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'exercise.reading.bank.u15.q01',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  null,
+  'reading',
+  'f2540723-4ad2-450f-9279-c1e5fd5f262a',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «왕루 씨 (21세, 여)»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8ba1b33a-4590-466b-8b9c-4150cfa058dc',
+  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'opt1',
+  '약을 먹는 방법을 읽고 말하기',
+  '약을 먹는 방법을 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b39d8036-10b9-4196-ad54-b8508cea756c',
+  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '26247f8c-0951-4290-85a1-3b520f64e0aa',
+  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '02aacf86-b08d-4ffa-b711-d71a08a2df18',
+  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  'exercise.reading.bank.u15.q02',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  null,
+  'reading',
+  'f2540723-4ad2-450f-9279-c1e5fd5f262a',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «왕루 씨 (21세, 여)»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'def28a2b-7839-4406-9f82-2f854b73e1e4',
+  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  'opt1',
+  '왕루 씨 (21세, 여)',
+  '왕루 씨 (21세, 여)',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f6a85abd-202c-4b52-863b-fab4f5a47456',
+  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e525b379-9a7d-4dfa-94a2-76cb4980135b',
+  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a814946d-08cf-4d5c-9621-3ffe410f2d47',
+  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'exercise.reading.bank.u15.q03',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  null,
+  'reading',
+  'f2540723-4ad2-450f-9279-c1e5fd5f262a',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+식전 30분 / 식후 30분 / 6____)',
+  'Выберите слово для пропуска.
+식전 30분 / 식후 30분 / 6____)',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «식전 30분 / 식후 30분 / 6시간마다)»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a4b0f722-fd89-4173-afdc-aef0f0e9c55e',
+  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'opt1',
+  '시간마다',
+  '시간마다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a71f101d-f610-4410-8a0e-270eb984df98',
+  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9ab52f02-d45c-48b5-bb19-74bfb0b33db2',
+  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3a1f65f6-e288-4b7d-9958-29df6e9dcf83',
+  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  'exercise.reading.bank.u16.q01',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  null,
+  'reading',
+  '3e62b402-0029-4786-b42f-a405a93231d9',
+  'single-choice',
+  'easy',
+  '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
+  'О чём этот текст? Выберите подходящий вариант.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на главную мысль. Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '31852b78-33e1-4044-b00c-c30890db1571',
+  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  'opt1',
+  '부모님께 쓴 편지를 읽고 말하기',
+  '부모님께 쓴 편지를 읽고 말하기',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7743f35f-d7c5-48f5-9f52-7f20895a9ddd',
+  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  'opt2',
+  '자기소개에 대한 글을 읽고 말하기',
+  '자기소개에 대한 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2326bd80-85ba-4d54-af2c-c34866ca8dfb',
+  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  'opt3',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '고향집을 소개하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '28b84748-e09c-4d73-ba32-0ed73a84449e',
+  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  'opt4',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '학교생활을 설명하는 글을 읽고 말하기',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  'exercise.reading.bank.u16.q02',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  null,
+  'reading',
+  '3e62b402-0029-4786-b42f-a405a93231d9',
+  'single-choice',
+  'medium',
+  '다음 중 글의 내용과 같은 것을 고르십시오.',
+  'Выберите утверждение, которое соответствует тексту.',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на соответствие. Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3750e95a-c250-4eb3-9ab1-e6a59a82cff5',
+  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  'opt1',
+  '아버지, 어머니 잘 지내고 계시지요?',
+  '아버지, 어머니 잘 지내고 계시지요?',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f2b4c7f4-b2c8-4981-bee3-f375262b6bd7',
+  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  'opt2',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '78684ed0-7f26-458f-aa1f-2b6fd7c2857f',
+  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  'opt3',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ce9b8517-baa4-4f2a-8363-e58232534059',
+  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  'opt4',
+  '모두 우리 반 친구입니다.',
+  '모두 우리 반 친구입니다.',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  'exercise.reading.bank.u16.q03',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  null,
+  'reading',
+  '3e62b402-0029-4786-b42f-a405a93231d9',
+  'single-choice',
+  'medium',
+  '빈칸에 들어갈 말로 알맞은 것을 고르십시오.
+아버지, 어머니 잘 지내고 ____?',
+  'Выберите слово для пропуска.
+아버지, 어머니 잘 지내고 ____?',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновой вопрос на заполнение. Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6511a463-bb7f-401c-a5c1-0641e31ec47a',
+  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  'opt1',
+  '계시지요',
+  '계시지요',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bbdc0a0b-e57b-4b79-95ba-d9fee398158f',
+  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  'opt2',
+  '안녕하십니까',
+  '안녕하십니까',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '69ddc0fc-d286-458d-9035-b0c7623ed9fe',
+  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  'opt3',
+  '만나서',
+  '만나서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c119b9ab-b455-45a8-b857-3800ca50f304',
+  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  'opt4',
+  '반갑습니다',
+  '반갑습니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
 insert into public.content_provenance (
   id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
 ) values (
@@ -51401,4176 +54985,6 @@ insert into public.content_provenance (
   'high',
   'draft',
   'Imported from CURRICULUM_GRAMMAR.md short catalog as draft.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '1a56240f-fa09-42ca-8a3d-d5b2dd806192',
-  'reading_passage',
-  'passage.u01.section.1-10-track-101',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L23',
-  '5c5dd3242e12e0c94bbfccfbe31723616efdcb7e1d594e36365b124ea42f590c',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '900a15a9-df0d-46e7-82f7-6b8e0fff8a6f',
-  'reading_passage',
-  'passage.u01.section.2-102-track-102',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L38',
-  '929b1d4175f37bfc779e976e0079c6ea0f8349e1ddc3486862e87b3f415eda01',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'cab1516d-beaa-4cd9-805b-639f9ba1d685',
-  'reading_passage',
-  'passage.u01.section.s003',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L51',
-  '65772fb679eb4509e39f7cac75d8a7dd3cf325bad761edf590a12e4e7293cfa2',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '802358ea-2e25-4a01-8ca6-32e8d9b8e8a6',
-  'reading_passage',
-  'passage.u01.section.s004',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L71',
-  '63f3a407ed56227032228d7702a8a36973a9cb7d38ff3eae3ca29a5278f04026',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'df4de941-546c-4a7b-b679-41c3e20412b7',
-  'reading_passage',
-  'passage.u01.section.s005',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L87',
-  '324ad1d5738573780b235bc33b6f6aae4d863a2bb58598373a0a4f171250a44b',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd563b15b-66ae-44fe-bbe8-ab1e9a4d077f',
-  'reading_passage',
-  'passage.u02.section.1-track-105',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L100',
-  'c796d3a622374898f91f932c2f6f82094d02a2d96db714aab2e4ca849c7cf695',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'cbfcd446-9a0d-4a14-aebb-028b1ca7b21f',
-  'reading_passage',
-  'passage.u02.section.2-track-106',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L117',
-  'a9418c78b5c30a049d20cc5044f4925cdcd6886f6f8bacd385fdeb2995177bfc',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '97a6372f-700a-461a-8217-bd827b1c5fff',
-  'reading_passage',
-  'passage.u02.section.35',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L132',
-  'db4bb4a313baea490f15cbfb63fc922eb991c09d0f58c21c0647bebb2f84c9ab',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '5504b998-9534-483d-a3ad-9a7f657d39a7',
-  'reading_passage',
-  'passage.u02.section.37',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L154',
-  '695eb7767ccd600fe622428c2aa7fb2e92327beb287a88ec8f1b03c77b65e962',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ccfacdc0-6b2c-4e5e-a07a-4de48eef6feb',
-  'reading_passage',
-  'passage.u03.section.1-109-track-109',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L174',
-  'effd389ca25b365ebf36a01a3eac93795e3b4c0d4d3bfeed4a3643a60839efb3',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '23485a25-7977-4a38-9bbc-ff7353cac036',
-  'reading_passage',
-  'passage.u03.section.2-track-110',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L190',
-  '4ef576956f0bfaef8acf19a0b7b01fa5dc0ea9b1dad986373233ef2e5b05c97d',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '1a55ab73-3e6b-42fc-8ff6-4c99140c952d',
-  'reading_passage',
-  'passage.u03.section.s012',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L207',
-  '918c2fd210d218a0794d28a9e1c38f162d5efb2066f85d2e566e49f5ba8e1c65',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a067b3cf-0c90-4316-9e93-d934ea19b63f',
-  'reading_passage',
-  'passage.u03.section.s013',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L229',
-  '6bd39121595d4bcda35ba6169fa28ff39c6c695059e87a78e19a3ca37d660e67',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c64f21ee-2207-4f6c-a79c-9e0f61a9c331',
-  'reading_passage',
-  'passage.u03.section.track-112',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L244',
-  'a05734aa67173eda2c27862b0da806df407aece676cc83d85a38ad43a1203546',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'bdcd803a-5b2a-4f2e-8376-a6e8ccc15217',
-  'reading_passage',
-  'passage.u04.section.1-113-track-113',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L261',
-  'dae45e8b738a7ebb2f7190167077a42eb47ac2b7151e276db81489a6a0dd50fa',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '77e74af9-3bf5-4be2-8bdc-ea7c46eeb54d',
-  'reading_passage',
-  'passage.u04.section.2-114-track-114',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L274',
-  '70e9d434138344910f3af61cb12e04a714c2e8d7100a5f75dc60abc464419168',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '129f37c4-eec9-4e1e-a154-3416bc09daa5',
-  'reading_passage',
-  'passage.u04.section.s017',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L290',
-  '3e3d7aaaede27213e425dfb14ff747d9e501889ba499264b727c4dd2f78185b7',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2e1a79f7-b7f9-420e-a83a-2b3dc3bdc838',
-  'reading_passage',
-  'passage.u04.section.s018',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L310',
-  '0ef6089a5f58ada01aaaff48b0be56f3107f4cdb8b41d22bbff0c023a339fd53',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '051641b8-76aa-4b01-89cf-de32436f4e3d',
-  'reading_passage',
-  'passage.u04.section.70',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L324',
-  '14ae460729963e83a37889655ceea72a7b276b8e9e4f1c3f6dda4df9c8ee778f',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd1603dbf-4eab-42ba-9181-512e13566a7c',
-  'reading_passage',
-  'passage.u05.section.1-117-track-117',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L339',
-  '1dc5d5c6a5f62ede34bca3e2cab1a8f709ea5e2736d43497871e0b576203be3d',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '7322f01f-1ba3-4ad0-84ba-868b3af0dba0',
-  'reading_passage',
-  'passage.u05.section.2-118-track-118',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L352',
-  '107910bb6f5cb742c540edcd3fc708b46165dd4bcb31c7ccfd6c137cfb445858',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'b2f0507a-eff5-460f-b02c-cde76ce13a74',
-  'reading_passage',
-  'passage.u05.section.s022',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L363',
-  'a7d59f2e93f98d92fcde38e1ba56b4a78acd557ee414a2303f98d83a901fbc68',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c60ca6fa-be79-417c-bfa4-9d37cf4d5163',
-  'reading_passage',
-  'passage.u05.section.s023',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L382',
-  'dbf2ca3d00e3da5d45a9228b57de34b9d1ecb0987dad6d57d70cf2495b46ce4d',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4ac78673-b999-4faf-8b17-b650735da375',
-  'reading_passage',
-  'passage.u06.section.1-121-track-121',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L400',
-  'c311e7cd241e8b7228da7d1e6b68fe161ecab97faf7fa996ed51c6ef0c9e1c49',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'b5845d71-2292-40ec-bf11-4b80e74d70c5',
-  'reading_passage',
-  'passage.u06.section.2-94-track-122',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L410',
-  '759a611c07be4a86db6d26f62ec6d145a19c7d199f9d6d6c00bd8a47a5c15e28',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9af564cf-a944-48b1-88a6-d0b678e5fbcb',
-  'reading_passage',
-  'passage.u06.section.98',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L424',
-  'b9111695f5c92306b01a2c3ba95c1c466a0a1b8de804180d772f011545154c56',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a48f0c91-c7dd-4529-b67c-f53193fca73e',
-  'reading_passage',
-  'passage.u06.section.100',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L440',
-  '09db7639e125d89c02e947d6b589b907b90e595229385a49eff3d4e59f517c55',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'b26e29ae-efd7-4e7d-a828-b5b862c2872b',
-  'reading_passage',
-  'passage.u07.section.1-125-track-125',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L462',
-  '163ac1bf8f4b029d2c2ad5f45e5bfdfff93cae40b903ce806ab7e7e697259992',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'af82d41d-6b54-4fec-b1a0-bcccef1aa3e9',
-  'reading_passage',
-  'passage.u07.section.2-track-126',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L479',
-  'cc4b4daf9f46e738c452d3ce49cf5968294ad85bcbc0dec410e19f0450d9f780',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c8a15fbd-fe65-4797-855c-7f880c14f95e',
-  'reading_passage',
-  'passage.u07.section.s030',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L493',
-  'd29914f066f8ad4f9486bfb1d16c3f584fcdace6c1ad614ef7bb3cd09a1993ad',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f3bc16c3-862c-4377-98e9-a3b10fcad7a7',
-  'reading_passage',
-  'passage.u07.section.s031',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L508',
-  '764bb68e67cc36eed15f5bc939016916e088a70b68d5bc686a2309acd20e46ba',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '3514bb65-6041-4e08-8d03-5de203ab03f1',
-  'reading_passage',
-  'passage.u07.section.track-128',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L522',
-  'e0d00d11d9a5cf2d0018b46ecf39b2dbc53066aa042bdf78f37737a432e02592',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '59e7755c-725c-45b8-82b1-b1742001bf83',
-  'reading_passage',
-  'passage.u08.section.1-129-track-129',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L544',
-  'cea81559172e7b13bf5ee3f8c7fd597d2c713cdf7b37dbea9458209e87566b0c',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '63d1488e-c6db-428c-8e91-8f48f7683940',
-  'reading_passage',
-  'passage.u08.section.2-126-track-130',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L554',
-  'c02a4e521dc413804a9331616fdf2535b61ce3e7b1252862e6f20d9106c6a796',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '919e8091-66cf-44cb-95db-6018fdb06ead',
-  'reading_passage',
-  'passage.u08.section.s035',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L568',
-  '168851f22b7b74c375052c86b98ca137caebfeb7fe3f8864eb630895cc4a2077',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '66742b58-e620-4c36-9436-e0c4b362e0bc',
-  'reading_passage',
-  'passage.u08.section.s036',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L583',
-  '6073d9a79f7446a6af88c1464fc949ef4bbf690ed6d26cc3faaa87c442ea1bf2',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '5079db15-1046-417f-aa6c-84ae1d7f6758',
-  'reading_passage',
-  'passage.u08.section.track-132',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L599',
-  'a35d8ad1bf1f52a3d990d3952fbe564fe0b475589294fcd63cb434f23625ee89',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '5cfef722-234e-461a-bbe8-24f8d985b22c',
-  'reading_passage',
-  'passage.u09.section.1-9-track-133',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L620',
-  '35652f3e6ea74ed7b59778fc2e80c4a1d17efa2491edca9efde9cbade54020c4',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2230f5bb-5820-455f-aa82-0bf2c6c370ec',
-  'reading_passage',
-  'passage.u09.section.2-track-134',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L640',
-  '981a1beff82eb4e8d18fe35cb0494fb54645028da847a51a20234f279ba6e407',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '34f089f6-a16d-4881-a3f2-cbc755c4ffba',
-  'reading_passage',
-  'passage.u09.section.s040',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L656',
-  'af949db7797bdbaa19554374194e26612ac1209ae416c5769d835395ad2684c5',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c8b2eef2-4dfc-41a8-baf0-1e6dd6dfa8e5',
-  'reading_passage',
-  'passage.u09.section.track-136',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L677',
-  '28a2dc5d78094ae86c1156dd3a5fc7e688cef343699659abac62ff4dfe964c6a',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '0c0ac5d2-3e1a-4eb2-a0df-4c3cf0f5d6f3',
-  'reading_passage',
-  'passage.u09.section.149',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L694',
-  'e612a698342ff77432ed670619e1eeb218e7fc9b893f905ba76412e425e70fff',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '8e6627d5-6ab8-44a1-96a1-d70481f2fdee',
-  'reading_passage',
-  'passage.u10.section.1-10-track-137',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L716',
-  'a31aa8bbaf60e977dfdfa29c8958f539f722ddf50f444eab0e8f1bfa49c0444d',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '81cc6ab0-3bc9-472e-a04c-0559c0d2bdc6',
-  'reading_passage',
-  'passage.u10.section.2-159-track-138',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L731',
-  '82ccbc7fda648483347ee03fb0b14ecd08c4d13a8a7d96dfcff56eeeb6c6ddfc',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '73c07faf-152f-47f1-a2c2-f6c90a745008',
-  'reading_passage',
-  'passage.u10.section.s045',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L754',
-  '8cd2171e242466f339f41e7581e75db0234432de36dcec5bac3a28640a7e3de9',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2b121c98-1f66-42b8-b054-d9181cd8f351',
-  'reading_passage',
-  'passage.u10.section.s046',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L772',
-  'b4db054be5c6176eeec55b08dd98dfdcb42ec32680d4a4e247f35308cca1aab2',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '87a3f12d-0c77-4048-a55e-fa664ff8f905',
-  'reading_passage',
-  'passage.u10.section.track-140',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L785',
-  'e2bf9edc075853b36881398aad507f4f11ca401b3bddd91fa3051777a23350fd',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '3a98d1ab-6fee-4afb-b362-b018d9d52e4e',
-  'reading_passage',
-  'passage.u11.section.1-11-track-141',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L814',
-  '8342ce6d146d4e0662e2952cdb00ce744b27e990a7068e47ac465a3c2fca0b33',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'b4ef4afb-9407-4247-a4e9-f1717cfaacab',
-  'reading_passage',
-  'passage.u11.section.2-177-track-142',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L832',
-  '8023964d5c82e65a3f7522f8e0a3624b638327a88d5c998275c61ffbfdf89412',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2688e114-3796-4771-92a3-d0d94c9b8e44',
-  'reading_passage',
-  'passage.u11.section.181',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L851',
-  '0d16d98d2a1c6c860bc208b4d58a581864d8a5615df12f66c712b62873568ade',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'fddeabc8-3373-4543-9b5c-2b51b6b9a82b',
-  'reading_passage',
-  'passage.u11.section.185',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L872',
-  '90a664dac0ffb9c7d3406a22f669be474614df470929b5fb62044196a1607079',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '102f8774-fcf7-4246-bb44-f7ac5920fbe4',
-  'reading_passage',
-  'passage.u12.section.1-12-track-145',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L893',
-  'c742d5abd535aad994114e42d6e09205de5e4146bad18703df56caf9b4714221',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '951f9c56-7666-47b7-999e-51b0bab2392a',
-  'reading_passage',
-  'passage.u12.section.2-track-146',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L907',
-  'b751fd12bb2fc1725d25d8b3e1bcfbea385d98ed8ecda59d550ff8b1d94e3ed6',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '74719f57-c6b4-4408-9c2d-97057e9828a6',
-  'reading_passage',
-  'passage.u12.section.198',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L923',
-  'a73325ef4f250cb31236bbd10fc629677a8ef819e3d5241460c33cc0be6752c1',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '75ec650d-ea05-4479-a098-d011172b04a2',
-  'reading_passage',
-  'passage.u12.section.s055',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L945',
-  '2ff7e9649d48d278bf172ae2e4e499aa33fda623dc404a28655d1c4032174ff8',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd6246b72-7ec9-4fc2-b015-92aeabf4e112',
-  'reading_passage',
-  'passage.u12.section.s056',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L971',
-  '87cd20948b485e3daf58da01c7814dc5324da088e116e510ba133defae179f75',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '8c019c0a-8598-43cf-a88e-518eee766465',
-  'reading_passage',
-  'passage.u12.section.203',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L992',
-  '5cae76e718d1a342c3de5429f9a48cef7e79f0a5db4d75bfdad68474bc0c54f1',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '7d212a45-0fc4-4d29-a497-213cb74446a9',
-  'reading_passage',
-  'passage.u13.section.1-13-track-149',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1018',
-  '51d7e45016c27008fd471f2ea91e7c64981ac32660637f645bc974eef8130abd',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '7ba0c576-b55f-4f93-a578-110504845615',
-  'reading_passage',
-  'passage.u13.section.2-211-track-150',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1034',
-  '3db42daf5955afe7f7893d872695bbb82d2a4586beea2eb13d082af9e45bc292',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '128cf057-b9b7-49ab-b635-44dedee8a9e4',
-  'reading_passage',
-  'passage.u13.section.215',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1052',
-  '59999be5680d4a646e7d48bd4922f5141df86f50adf95b471783cbec586b9552',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9a1ce9b2-4647-4d71-8434-abefadae783a',
-  'reading_passage',
-  'passage.u13.section.s061',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1071',
-  'cb9df94ec67e181ff776559473e0cc113500cf7d7de4546651184427db069df0',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'eadcff23-7ac8-4c7b-a237-c63f7247a795',
-  'reading_passage',
-  'passage.u13.section.13-track-152',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1095',
-  '369eddf58f6a5c5d0012488953dc4a0fc080d5dc6fbe5f31c36ea7da5b73d5d8',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '75d7a136-aab0-48cd-bd3c-ae8f4a49ae3f',
-  'reading_passage',
-  'passage.u14.section.1-14-track-152-153',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1114',
-  '20f3774217972ced4100310fcc14134aa8f23d37a07f1a08fcb1cccba9defdb9',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '0b2f941e-3454-4f37-8480-90fb48a0adf0',
-  'reading_passage',
-  'passage.u14.section.2-track-154',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1131',
-  'f52fbea8906482794cdfcbef1732ed6c1bc9acdafc322a07aace27ea882992bf',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '78d4ccec-8142-435a-bf90-43504d840d9f',
-  'reading_passage',
-  'passage.u14.section.231',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1146',
-  '12a88741dd12add451936e62428f809e8583842af754a9a7d1c01cb73865d614',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f038af38-ba35-4198-90ac-4c95fe2a8046',
-  'reading_passage',
-  'passage.u14.section.233',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1166',
-  '85491303a92c01f4113cc34ec29a44fb09e5b8e51e2f969be321b42c0f54ec9f',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '7a13faa9-86b6-47b3-9763-cd989a36b5a3',
-  'reading_passage',
-  'passage.u14.section.14-track-156',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1194',
-  '0d4747ed9b199b298d998e45a67d3f9ccb8a534df198e099629e245e4db2257c',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '78df937e-3f41-444a-b4be-30a5dd063e73',
-  'reading_passage',
-  'passage.u15.section.1-238-track-157',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1215',
-  'e55e2237e0d24c5014a72ac2e91f0a8e71ddf3b4b9b1b01d2b8bb7f517dd2821',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a430a18c-d1a1-4ffc-bbb4-5805ce7d469e',
-  'reading_passage',
-  'passage.u15.section.2-243-track-158',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1232',
-  '1d0a9e07c90fe0df60072f59bfb20938fdd4623124c2afff1e7aa4a09cdcc912',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '6606ec3b-8474-4a6b-a3c4-81d52ae7b171',
-  'reading_passage',
-  'passage.u15.section.247',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1249',
-  '0d331fa1c42b7a55611b42d6df8257352acc9de15f0d156466b288a050c095b5',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '010dd83a-f368-4a75-8ca3-a60c7ac714da',
-  'reading_passage',
-  'passage.u15.section.249',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1271',
-  '20672683eaf453f22440c603a4b3ba38146fdc6f44848b4d0ff4a00c6f596086',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9545c074-31df-4362-9c5d-a89cbbc58160',
-  'reading_passage',
-  'passage.u15.section.15-track-160',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1291',
-  '687cdef8daa987ec1c722af9c86fc8dd9ac3e81948ba9e1e4f486ee35a59f9f3',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'cbb59342-d1cb-4d82-b0bf-e7feb3dbdd02',
-  'reading_passage',
-  'passage.u16.section.1-16-track-161',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1311',
-  '28547e5045bd0aeabcc8255a17e6c2f6b4dfe898cba14315a6a5b97fbb62c87e',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e3b231d3-599a-42d7-b454-304a098e259f',
-  'reading_passage',
-  'passage.u16.section.2-259-track-162',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1328',
-  'b14bd3d1e7461e815c390b9bc24173ab4983be5560d0a85cecbebdcd99813114',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ef62ee20-a0d3-4224-801d-2eb47c0a057f',
-  'reading_passage',
-  'passage.u16.section.s075',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1343',
-  '39c216c19fd8579b1e6ce54e37f30e42eeb954ea32e54650fb23c8afdf927945',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4fd53887-f802-4090-99f8-283221f22647',
-  'reading_passage',
-  'passage.u16.section.266',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1366',
-  '3d7d2d8498d44cd06df967dfedf71b67f6b05a36d432f4f05a7fb8b1ab6d0505',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c1758a16-5a3d-4fa3-9d03-af3ea9b9da61',
-  'reading_passage',
-  'passage.u16.section.268',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1392',
-  'e99b590b21bd4f16a380be85c8b5e5183354b2ead3ad126958e5642450d1add0',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '3f7f0b04-15be-4284-b162-ca168c1510c9',
-  'reading_passage',
-  'passage.u01.appendix.1-272-track-103',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1406',
-  'a0c2c210abf7019c407b4b47f8a07350e9d30afed95a77f066d1a3fa423742bc',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a67f8356-e2cf-4514-80ba-e6b800c08e72',
-  'reading_passage',
-  'passage.u02.appendix.2-272-track-107',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1417',
-  '2a90164ffae796b239cb343e65e85fd84b44fcf78dabdd398ec83f9d1910b09a',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '788c78c9-34df-438c-9987-27655eeab924',
-  'reading_passage',
-  'passage.u03.appendix.3-273-track-111',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1425',
-  '3960b9fbdcc1c55719fac34be953e32c28582c40fc2d51e855c7dbab9254f501',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'bc7543d8-9727-4cae-9139-c9587964bef7',
-  'reading_passage',
-  'passage.u04.appendix.4-273-track-115',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1439',
-  '43f7710ff96a847c94a22a96d83521ec684b5670c6a4507f4c10031ef652c5ac',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '26529d5e-417f-44dc-a0bb-4d94756e3ff8',
-  'reading_passage',
-  'passage.u05.appendix.5-274-track-119',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1450',
-  '8911b8164a4d104e65f73e8370ffb8c372250863ce8cfea75466eac3119b2b9e',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'dedf0b73-f8b3-4df1-b1ac-ae9668954663',
-  'reading_passage',
-  'passage.u06.appendix.6-274-track-123',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1464',
-  'c8ec846a961506460458f978216603cbe7503eb8a70ee4bd2fc274bf5d8b96e3',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '3bb348d8-e354-4fdf-a778-31fa31c5977b',
-  'reading_passage',
-  'passage.u07.appendix.7-275-track-127',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1474',
-  'fff99b0f11c85a2b6c66b059b5905a826778b30d22d3ed2b753c5c1b5ac997a7',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ef53c88b-b596-4330-baf0-98b03cbd9b64',
-  'reading_passage',
-  'passage.u08.appendix.8-275-track-131',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1483',
-  'e498e46d73f0cb789e5ce786b8c64b59aa01ad67305d1d426f3cd3d86d53d4e0',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4152c2a4-c1cd-4930-ac0a-bfc90b1a5d1e',
-  'reading_passage',
-  'passage.u09.appendix.9-276-track-135',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1494',
-  'ba181c77465d68badfcb64d1d1f597ad351a1bd978d9ba3176173127c26207bd',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '52200648-097b-4f89-b96f-bdae8d5aa91e',
-  'reading_passage',
-  'passage.u10.appendix.10-276-track-139',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1508',
-  '82a2cf2fcbbc46492ce0f0102b059ff50fb8d4b38e43e5888663825887090e31',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '5fd6b89e-5ae8-46c6-bd6b-d03666ecfd82',
-  'reading_passage',
-  'passage.u11.appendix.11-277-track-143',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1522',
-  '7e5b9de624dd5bb03153f93c820656291450d22f7d075908c39a15898e5a456b',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'fe14caa5-bba0-4fca-9d67-d5c39b564a86',
-  'reading_passage',
-  'passage.u12.appendix.12-277-track-147',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1535',
-  '0539f57e59694ec6271bc9021deec587a8182f06e11cfdb5a0e65f87e6a07d0d',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '92bad59a-55c5-4940-b442-4496ea587938',
-  'reading_passage',
-  'passage.u13.appendix.13-278-track-151',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1549',
-  '72bf4c534c9b6e9392f1539748e4fb7a1f9081e5b1367e2d2117ad6d6c83d2d3',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e562601d-b9be-4cc7-ae46-0d271b86db46',
-  'reading_passage',
-  'passage.u14.appendix.14-278-track-155',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1561',
-  'cc14ecb85f5aebad5663fb0853129c980845b4c0a6017b5eb0afdef93968850c',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '88ad82ea-dfd0-4838-8dd7-8c0d9fa02487',
-  'reading_passage',
-  'passage.u15.appendix.15-279-track-159',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1571',
-  '5b92dcbfffd5b51276b27f5b98eb6d1a6fcf04881dcc003dbb7c5bb883e20c41',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '539252ec-5e5f-4e5b-bf75-70a6f979a852',
-  'reading_passage',
-  'passage.u16.appendix.16-279-track-163',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'line-range:L1585',
-  '48f7a126c485415ff400f4f979e67b386849d5748dcfbf18bd5a3e1567aa337b',
-  'high',
-  'draft',
-  'Imported from CURRICULUM_TEXTS.md.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '7acad0c4-da40-43b1-afe1-70bec80d4e4f',
-  'reading_passage',
-  'passage.exam.v01.v1-s1-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  '1560d715ac761359bd6982c3026899a93f9c02dd6ceb0270b89c4b3a95eac0f4',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '668ccf0d-1224-4641-9722-84805f6c960b',
-  'reading_passage',
-  'passage.exam.v01.v1-s1-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  'c1d591679b80a0abee07dceb9fc9c26d1f593929271aecca797bcc7a5ba6f2fe',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '705fd125-209d-4717-87f4-ecaae7eff31c',
-  'reading_passage',
-  'passage.exam.v01.v1-s2-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  'f0736e5d546e48b300328c76884fc411cee82479766c1b27c871934268129978',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '59c6e208-efab-494a-bae1-0bb54f5698b3',
-  'reading_passage',
-  'passage.exam.v01.v1-s2-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  '50e0012bca7613a13a33b0799cc6262c7fa11207a6b7d5603e1a8073799e9b61',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f1d319bb-ebda-4589-a6d6-372bd0a48757',
-  'reading_passage',
-  'passage.exam.v01.v1-s3-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  '0815b0ffa09d333a462af70648f6728d572e2f914c71654ba396acabd321633a',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '0da16177-7420-4d0f-ab0b-c31b1314a88d',
-  'reading_passage',
-  'passage.exam.v01.v1-s3-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  '2dd733c07c9579a15b9240f889704477c96ce14f695c5b246da72d793818351f',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '0e9b5f45-1895-4d23-9801-ad0a96b84729',
-  'reading_passage',
-  'passage.exam.v01.v1-s3-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  'a20e264dc5094bd07c09ddc705323d9a3026892371290dbe48bcbed43cf70d33',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '063e41f5-33bf-451c-b181-c103f21f1302',
-  'reading_passage',
-  'passage.exam.v01.v1-s4-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  'ad5ddde1366af1ea2c9e0ab2e731567b1f02d33022df909a8b223869994e3095',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '1a3dc36c-1fe1-4e6a-9d42-a47bdb040ea5',
-  'reading_passage',
-  'passage.exam.v01.v1-s4-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  '54656a992c25a79112c945a1ce6bd1efd8b4bc639fc7bdd3f0364fb33ad0c7bf',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a860d74b-1939-41a5-94c4-29cb6c1922fe',
-  'reading_passage',
-  'passage.exam.v01.v1-s4-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  'c34a0c5c7a23f917f7b457c4bbdc7685dc5b2f610b7c466c0b140b740bb6d22f',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '934b217d-a3cc-4d1a-a186-8bc798535fde',
-  'reading_passage',
-  'passage.exam.v01.v1-s5-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  'bc0b04e2d6cb440c2a65deafc2763d28a470afb7e9a7f2be3b46ed79d2635e4d',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '3daadd8c-9408-42b9-b0cb-4bbd9bed3b1f',
-  'reading_passage',
-  'passage.exam.v01.v1-s5-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  'c6a2ee4227ba2528e86be47dea289d14946dea71b3735cb725c93279576e6c87',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a07006ab-9ee8-48a0-994a-3451d773299f',
-  'reading_passage',
-  'passage.exam.v01.v1-s5-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  '8c85cf87ccd46be8a1ea35f1749afa3ef26b513e1b237106629b4b6353a64c63',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9cca9cb0-4094-4cf9-921d-9ae59bb7b341',
-  'reading_passage',
-  'passage.exam.v01.v1-s6-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  '2901510432f785220dad15020f43e05076afa22bf439d7276a6f19f9cc4bbe0b',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '975b5d61-5299-461f-b9f1-9797367a5998',
-  'reading_passage',
-  'passage.exam.v01.v1-s7-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  '5b10575dc4ac4d743121e51776e2195c9fe956708ff80c14128aac805759b06b',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '14e4701e-2a4c-48a0-a45b-c84bdccce8ae',
-  'reading_passage',
-  'passage.exam.v01.v1-s8-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  '611a6cb109c8ad6ac93e82becf1cf8e048d360bdab41745db3b92ad5af618e42',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c736fdc5-cf09-4245-997a-ed1e955bf8e8',
-  'reading_passage',
-  'passage.exam.v01.v1-s9-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1',
-  'e15a49de478331f8f389e8cb985a6f5847422939a2f15b006d8900b274c385fe',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '0fbc91ca-30d2-48ad-a328-dccae40e9238',
-  'reading_passage',
-  'passage.exam.v02.v2-s1-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'e076af2478857288b050f30dafd5f9ed3bdd137f91aae070a1e62b4939715576',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4f0d6e90-95b4-4c41-bb26-314b8876ce8a',
-  'reading_passage',
-  'passage.exam.v02.v2-s1-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'f64233efa96c3a7ca07a8d0156b0240695a8e368203f06e0ddcc48c517673413',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '6897bb8a-7ce1-4b4f-8544-6955157037a5',
-  'reading_passage',
-  'passage.exam.v02.v2-s2-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'b01f46620a2194cb84f9928383ee0f155834642e368c84cf5134d31de13ac9f9',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd33d571f-5ebc-441b-9461-fae868bb665c',
-  'reading_passage',
-  'passage.exam.v02.v2-s2-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  '913d3c5a824ed92035276e07530caea7cf94c38dae93f263618ef39dd2c448c9',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '0211e227-e167-4f99-b765-2777be60c547',
-  'reading_passage',
-  'passage.exam.v02.v2-s3-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  '7b6a1f5aadbdd5f165aa1d5f2b82fd6919ed30b78a821bb0007549cdadf55086',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '65821a17-07ce-4b97-8ba2-cc5316309362',
-  'reading_passage',
-  'passage.exam.v02.v2-s3-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'ab0311f85b0ec1bf6f496e3351a0634fec0dbf617cde2980748036881c2daf16',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'cae94d89-0558-4fca-8acd-93f72b3deade',
-  'reading_passage',
-  'passage.exam.v02.v2-s3-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  '31b533e356462723aaa9568c59e1c96d7f70c6e0d363e6bf1ff231662737abce',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'bdf609f3-c846-4ba2-9b4b-7042e0fd99d3',
-  'reading_passage',
-  'passage.exam.v02.v2-s4-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'cdcf541ee0744654a0e4cf9d320faa407c5230bc0d3e5975cc94bccce2f0e54f',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '620d1f47-3ecc-44ab-80e8-4eb5bd291c32',
-  'reading_passage',
-  'passage.exam.v02.v2-s4-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'd738ae00851c0af813cfaf6d65cd8e9fe08c8d99d0252575055a4d741658c98a',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '471bfea8-8e41-44e0-9235-8173e548e2c9',
-  'reading_passage',
-  'passage.exam.v02.v2-s4-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'a33c742a41a9dcdcbf8bfb2a48b7daa24e64c3c667af1599755542295c0a1ae2',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '3d08e278-cab2-485e-a020-c412759f0387',
-  'reading_passage',
-  'passage.exam.v02.v2-s5-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'ba930ae973dea5b09d227db6cf2e444a41131b57107bbb03d02a4e1c3f6dfd6c',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c49a0e03-3b13-4d8f-9727-520e1df86ad9',
-  'reading_passage',
-  'passage.exam.v02.v2-s5-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  '8686a9380507b046320d322155e7831738d52105cf41b2c9c7b010d130dec3f0',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ef8d5976-9cec-4713-bec4-6204a360c104',
-  'reading_passage',
-  'passage.exam.v02.v2-s5-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  '04ddc5d45fdd0f6e50500e28948562dba008c5b60f0e76a744bfd6b33e7d8056',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '1c817ae8-5743-40ff-8c39-71fcf2ed3b4d',
-  'reading_passage',
-  'passage.exam.v02.v2-s6-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'b698937c0ef7b90861b169a0944180f0645239831e296f4d097af4d550f911f4',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'b7913959-23e3-463c-8b5a-cfab3d1aed51',
-  'reading_passage',
-  'passage.exam.v02.v2-s7-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  '53cfc08e3d149e9247827cc28e50ff855fb85a18c7aa32eba710df85b53d4ca6',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2d5fdd0e-6385-4918-b99c-8c8a27ee1d4c',
-  'reading_passage',
-  'passage.exam.v02.v2-s8-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  'd4b2b8c2a052b9e5076d5d8a088c892cb410514b1227fcb92e1d2a93b9ac792e',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '59ba05d8-2943-4d10-bdae-1db61bc53193',
-  'reading_passage',
-  'passage.exam.v02.v2-s9-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2',
-  '0a79752fbf16f9524e97eeaa46bef3d862a0c1d2165226e88e49c2be2bb85564',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'dae55f18-6221-4985-a081-df1d21b0e204',
-  'reading_passage',
-  'passage.exam.v03.v3-s1-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  'a054daf7c69e177db821f321359e1462e93d2392e6217dfff3741b090f040f2d',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ad9d32b6-0db0-4e9a-8a05-ab674d90b3d3',
-  'reading_passage',
-  'passage.exam.v03.v3-s1-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  'b1f6211998cbac9cc1a37f6632d88839974f7a44c3dfce0df8dccf291387aae1',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'fc95a07e-f3c1-4f86-91e3-ec586b65fa75',
-  'reading_passage',
-  'passage.exam.v03.v3-s2-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  'bf0ea4bd6a32daf2b98a6139f188190e26c7c0f9b305f2a2d79fb359a6509aea',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '76837ca5-31a5-4e69-9381-901bb1a0201f',
-  'reading_passage',
-  'passage.exam.v03.v3-s2-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  '2989a128767cfbd2cfa34312722a7453ee0ae8a4b9eb4207bb089bc838a1b1b0',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'b43e1cd6-3de0-48fa-855a-d9e8a79bf77d',
-  'reading_passage',
-  'passage.exam.v03.v3-s3-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  'e25711990c7ffe97eba8b7602c1473edb4627ddb0642d73ace027f5cb914652a',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9a63849a-4fd8-4482-ae8f-d97a9b5ef725',
-  'reading_passage',
-  'passage.exam.v03.v3-s3-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  'db18d68ec81338b8d2df63ecc7050be2037b0ce8a5f6e6b0c6db5a9a3ce3dde6',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c733d9d1-bfd8-433c-ad8d-d8c09d3ac979',
-  'reading_passage',
-  'passage.exam.v03.v3-s3-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  '5033c535db65f18b765a97e2ead1da3eb8c05e0cf9c95d0d0e76364b772851eb',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4ed1bbb0-8f74-40d0-8bea-852f2c81f510',
-  'reading_passage',
-  'passage.exam.v03.v3-s4-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  '05eba63737b67f02ef9323b49285a2dac4c23604a748ea6fb5e34bbe2502e487',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'b7a8ff99-cde7-49be-b835-80f60e3440d4',
-  'reading_passage',
-  'passage.exam.v03.v3-s4-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  '516e4decac94efcfd41196f62dee0431892b3fed1c22b76d8cf02451e1c30859',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '6533c452-b5bf-4dca-886a-8a59772aaf0b',
-  'reading_passage',
-  'passage.exam.v03.v3-s4-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  'b4d79b7cc19f419fba4058f4a0442ec893b7b4cc6a118971726accb7bd44b27a',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'acaee7aa-2391-485b-9b54-401dea3a3fb1',
-  'reading_passage',
-  'passage.exam.v03.v3-s5-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  '9b6b14e18cd927f00daf44cdadd00faa2127097223501b007f6f26f70dd630f8',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '754ffb88-6f92-4188-8b04-2e8b4bd6f7fd',
-  'reading_passage',
-  'passage.exam.v03.v3-s5-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  '5c00245b96874511599928f62402289f3aecd5cab7748a477cace0d98ace6fc1',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a961a25c-3ba1-4eb2-a928-30ac46d45b33',
-  'reading_passage',
-  'passage.exam.v03.v3-s5-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  'a3d5775fa5d87521dd53e120f274651fbb80846d0de80459e1df062fe687c791',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '6567fbb1-080f-408c-8405-2f90bc154939',
-  'reading_passage',
-  'passage.exam.v03.v3-s6-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  '87c425576153dbd45b55b48d09da35913d11c8edfe934bc06106f667b556a5af',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ecda9720-e1be-40bb-82db-fe65f8acd188',
-  'reading_passage',
-  'passage.exam.v03.v3-s7-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  '96e65e6f6b6e0ee49f274df235397ff70988428cb08c312590eb30b199f54c6e',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '08a5ee8b-3e31-42d1-8a3c-2d041069e215',
-  'reading_passage',
-  'passage.exam.v03.v3-s8-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  '45df3009e2cb77e1aedf13f6644911d4b2b74f3b8f0d4891bfd1fcf16dd2d86e',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2e2510b7-a978-43c5-9608-e791b98533d7',
-  'reading_passage',
-  'passage.exam.v03.v3-s9-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3',
-  'c3cc87df891e351126d52ddb1a79ef22e3122151b47855fc86a106719db41f1a',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '731c56a3-fc69-4af3-9fb0-447f9785d641',
-  'reading_passage',
-  'passage.exam.v04.v4-s1-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  'a1f68777a64762fdcdb8094076875f4c160e0c3e96012cde6f93e8ad7181e5ab',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ae87ef67-9d1c-4ab6-b486-449e34da0e9f',
-  'reading_passage',
-  'passage.exam.v04.v4-s1-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '4fcdae758baf6a8005dd584c43b9f3b37a27a4ddba4809623c81c7dedc1730dd',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f8d6bc6a-62e1-422b-af28-d0e7d54c1c11',
-  'reading_passage',
-  'passage.exam.v04.v4-s2-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '0f4d5eb205d98929cd62b48d7afa70a24f627478dd8a1c8868a28bb63439a960',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '37cc7e88-7d68-468c-aa7d-732059cbac13',
-  'reading_passage',
-  'passage.exam.v04.v4-s2-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  'ef7d0550aba0b582751f12381a338a89a793e75c2e04f68c0b17d1ae60017ef7',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e0691df2-5bcd-4424-b952-67b318f1c935',
-  'reading_passage',
-  'passage.exam.v04.v4-s3-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  'b4cbe6ed52dd667e11d8d7fbd976863a6da1dba7a4248b6a380d66ed70e98dca',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'cdf95388-a1e6-45bc-a4a6-02860e471aa5',
-  'reading_passage',
-  'passage.exam.v04.v4-s3-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  'd706a5b324b0612ded2b16494328c97c326bd4a78dd43d4aa2f66a8402376741',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4f8e064d-d81e-4ff4-8d33-cc18aa320d26',
-  'reading_passage',
-  'passage.exam.v04.v4-s3-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '262ae525f8a85f98a5ee4e7d6358462b4d71636f989e84e8c2e2aa4153bc6db8',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c6c736af-f42b-48a5-a8f1-f46e9abe2c4d',
-  'reading_passage',
-  'passage.exam.v04.v4-s4-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '00dff020f746fb258b6ca6043d046a61b7816ef15d802dfe8857e2573b954a3e',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '88c66fd5-d086-48b6-bf26-d12851b7ad21',
-  'reading_passage',
-  'passage.exam.v04.v4-s4-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '63c1a438d8b6728d2fbef2ed33bb3b7e4c69029c965394da76d4c171912899d7',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f72c14b0-f605-4723-b873-3b0e416b3225',
-  'reading_passage',
-  'passage.exam.v04.v4-s4-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  'f0e85ed82832198f0aa67bbbc07af30d4e6fd21edc0a818c85849a457f1490be',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd964e724-2927-4094-88b4-889e9908e79e',
-  'reading_passage',
-  'passage.exam.v04.v4-s5-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '70166b35cd5cf1fe708a08068aea317ff0ea3f6a08d38175920f550c0c13cbf6',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e21db75f-550c-40ea-a34f-f058e7312d21',
-  'reading_passage',
-  'passage.exam.v04.v4-s5-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  'ce68605f1f0b180c81188225e266c131f0ff6cd7803e60ca4961a8797c2b97e0',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '10bf133c-4c6c-4a9e-9c8f-5d36fbdaa47e',
-  'reading_passage',
-  'passage.exam.v04.v4-s5-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '1b4735550c93c215f7511cbd1ae06dc45a799df99c82fbd75618e6104e073b08',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '1eebddb0-8774-44a0-ba3e-4e8f3bf6b4ca',
-  'reading_passage',
-  'passage.exam.v04.v4-s6-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '9169349b72410ca3c2cd407adb85a67b20f36c9a4bbae54939029401eac1f447',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '12a0bb02-79c7-452b-a948-8772f70991ed',
-  'reading_passage',
-  'passage.exam.v04.v4-s7-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  'b19d80098d20c0614afce7a956d87439cc3cb6e21afc241e2eaab4ed617f6859',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '452f5e3f-7ac0-4733-87ab-7b4a099444aa',
-  'reading_passage',
-  'passage.exam.v04.v4-s8-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '8a1a358b5dbfaaf318d027c8e9772ca73efc1cc20ca3d1d359052abb66f585d2',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '81978894-5437-46e0-8ba7-f863441afb4d',
-  'reading_passage',
-  'passage.exam.v04.v4-s9-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4',
-  '5f7e8e57a68ab430628d61978c6bf31f2e8a7b39f260b1dae36b22776b572a68',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2faa13da-1750-40b8-9b99-e5047dfe0998',
-  'reading_passage',
-  'passage.exam.v05.v5-s1-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '17b09415b27a6c8074fc59d4ce7c3f45a741761f3aa1b1bd520a6eb0c1ad178f',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f6f1537b-53ec-440e-b529-763fd10d8485',
-  'reading_passage',
-  'passage.exam.v05.v5-s1-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  'a220bda756a145126cbf169f70bc7d4d73589ef20727a447754912c8896ada3b',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ee89b16d-6f1d-40b1-a3da-c5b6b4ffd9ae',
-  'reading_passage',
-  'passage.exam.v05.v5-s2-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  'a378dd4ac96f91e3f0173ac70aa85cc5e792232255655d80a1b1cf16573b9cdd',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '6d92d278-63ce-4e5a-9097-6e2ae9c70ef7',
-  'reading_passage',
-  'passage.exam.v05.v5-s2-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '7e0d291b09916fc8e049833e29dfbdc92634a5eb8852c868533151a9a3a76370',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '463d248d-1919-4259-9c4a-792165c8f2cc',
-  'reading_passage',
-  'passage.exam.v05.v5-s3-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  'd7b0b310804799b822b3a27fceba88c642f2739e19ff4f7c3d5feb3267a2e276',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'db3e1828-ac26-48d8-9f03-cf26908d735d',
-  'reading_passage',
-  'passage.exam.v05.v5-s3-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '184f03505bee0641d11a641baffd2801f23ed4965b4a3122240332678a0940d7',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ece606d5-c8ef-4ab8-a8ec-e1bb88e430a8',
-  'reading_passage',
-  'passage.exam.v05.v5-s3-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  'ca39f35c4a7050a8a5445e084efce040ea6e37b48690330020ab9acf93be52e8',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'da4fa779-e810-49f5-bbde-2f861c42c354',
-  'reading_passage',
-  'passage.exam.v05.v5-s4-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  'f1956daf8e6998a891fe2b2bd58907dbfff12be5c20f85f59483a6af2b0b7992',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '56088fe2-4794-4f2e-9a2a-7ad329c12b93',
-  'reading_passage',
-  'passage.exam.v05.v5-s4-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  'd8bcf2ece355f68013406f4e790bc5abbb3a445b92b06dd64fea61f8b2061063',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '813b665b-3c8d-4387-8ab8-c7d0424f7b4d',
-  'reading_passage',
-  'passage.exam.v05.v5-s4-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '018cfdd804814b0303d00cf6e6295dccb80725a7b8484310290969466c78ee6b',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'fadf64de-30eb-4c5b-8037-4bdcb0f13b76',
-  'reading_passage',
-  'passage.exam.v05.v5-s5-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '37d0a81323ec641ac5347c4ee983ae1d2fc77808ce8a245f74dca5d763f38059',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'bb41e894-ba45-4fdb-9a2b-7468504baa7b',
-  'reading_passage',
-  'passage.exam.v05.v5-s5-i2',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '4d9788673a49e6473eaa4e2b4e1555b41d583f6bc5e7c11bc1ffd674205060a4',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '8638169d-8055-4b46-87ce-93384895a7b8',
-  'reading_passage',
-  'passage.exam.v05.v5-s5-i3',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '0159966c509c3a8967f080ad102ceb328a02b06ee57b70bcd096b820e00569fd',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '578b0ff0-cd2d-4ca1-b99a-7593de2f8212',
-  'reading_passage',
-  'passage.exam.v05.v5-s6-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '6a81caaf504e28266c76899d768f7f16ab9fa715df661cf9aa210c77fd03b339',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'fa23f927-039e-414e-9098-0f320f5b3c9a',
-  'reading_passage',
-  'passage.exam.v05.v5-s7-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '3844e0028427d1a075259ee2b1036f2449281296e8258270f681d9d3dc2fa23e',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd4c64722-43bb-48f6-8519-595571dd8f28',
-  'reading_passage',
-  'passage.exam.v05.v5-s8-i1',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '454e4d42687f61f26152657732505978a033757b9d0a48514304185d87d30d0c',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '6af61115-05e0-4b82-8d78-6bbd9ec765d2',
-  'reading_passage',
-  'passage.exam.v05.v5-s9-shared',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5',
-  '7fbf22fa86776c0802f7424dfdedd981a48d2c885a097ae9c742968e9f77d033',
-  'high',
-  'draft',
-  'Draft exam-bank passage extracted from derived reading HTML.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f350270a-1b97-497b-aa54-2874c693927f',
-  'exercise',
-  'exercise.reading.exam.v01.q01',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q1',
-  '4eb0dec6a0a0cc4d7265b2867deae4a9ede44aad65190f6f78d3c33890d91cd9',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'cc9c07d2-ceec-49cd-bfa6-43e65993f864',
-  'exercise',
-  'exercise.reading.exam.v01.q02',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q2',
-  '34b239844ea6e04e07f01ffac49081c6ebbea17cc34905d04a57ef87ec9f016d',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '5b2f681c-15e5-4732-af31-d210c05a211c',
-  'exercise',
-  'exercise.reading.exam.v01.q03',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q3',
-  '8c06f40eaf9ab201c93322d61eb10ceca4df07c959678466de87e6ab49051534',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9597af01-641d-455d-8b16-3e3f2044b0e3',
-  'exercise',
-  'exercise.reading.exam.v01.q04',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q4',
-  '18bf55daa6a1e6800d8112a0082694e0da062d0f158a3b4786125b412a7e23c3',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '3dca1d4a-c84d-4b51-9f60-1253bcf3bbbc',
-  'exercise',
-  'exercise.reading.exam.v01.q05',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q5',
-  'f0d9220e76cafa5117049c3888d9a766da2b7216640144bed3e78403b87fc331',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a8edb135-e66c-40b5-a672-b211df602af1',
-  'exercise',
-  'exercise.reading.exam.v01.q06',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q6',
-  '1bc54ba3564bfa7ffb7d3cb7c4eedc9b39fe21c5a32552ffe41b73becd57a8a1',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '03a7ad3d-539e-43ca-98e3-2ba38a00ae1c',
-  'exercise',
-  'exercise.reading.exam.v01.q07',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q7',
-  '762e53a332b538845b990142e6c967d1600a28d86d68544bb25f59cf34a623e6',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ad9dd6c9-5a7a-497c-b2c0-99667de4a3f2',
-  'exercise',
-  'exercise.reading.exam.v01.q08',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q8',
-  'dd27ef92e7e3213bc1480fe0e9dff028631fb6dc47fa9f80224a2f40fb931fac',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a946cce5-48f5-417a-a039-8d103cd8d37f',
-  'exercise',
-  'exercise.reading.exam.v01.q09',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q9',
-  '906b9671bf89323fa12af99336e9536efe7b7a24e85bd2c829941f66e15060c4',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f3a5cc2e-9380-4434-822c-151752d3e7f1',
-  'exercise',
-  'exercise.reading.exam.v01.q10',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q10',
-  'c0d1c0d6752dc57dd5866107740e5f54a960b0dbb417a7ad9e4216fbf86a5df6',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '67cfb423-f84d-4d18-8787-9b41e0e9be66',
-  'exercise',
-  'exercise.reading.exam.v01.q11',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q11',
-  'bf7618b615d282b6101200adee6881e89bc92b21250f163691d2c78b213ec9be',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '3893a5a9-686e-48d0-a55f-d835bea1891e',
-  'exercise',
-  'exercise.reading.exam.v01.q12',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q12',
-  'b9c5afecc6442540a8f3ef48e491f3b6ff0d87c9500824d7ee81b90554597395',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a047d0f9-7e9f-4732-8348-d05af0802af2',
-  'exercise',
-  'exercise.reading.exam.v01.q13',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q13',
-  '602082a322cf6b8b58b61e19e3c8a3831c5b9411ab9cc972f53236791dfef12e',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ef5dec8e-66ad-4439-b577-5f3347438106',
-  'exercise',
-  'exercise.reading.exam.v01.q14',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q14',
-  'f9e23243346ee26d0da2afccfa76ed1426fb3b1d765665492311e3505b893763',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '39929d7b-364e-49ae-a458-bc9283727e84',
-  'exercise',
-  'exercise.reading.exam.v01.q15',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q15',
-  'a88b62fcbffc2ce4dd3682d588928b262a7d7428c006caa08139753c1d9a4785',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e2eb9851-31e6-462c-bdb6-57504f67cbf6',
-  'exercise',
-  'exercise.reading.exam.v01.q16',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q16',
-  '343c7c5046a3b93243cc3c72eb03776670b4b409d0daac47c1db23ad21676361',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9f9d9938-2b46-46f1-bd09-5b57a2c74f95',
-  'exercise',
-  'exercise.reading.exam.v01.q17',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q17',
-  '282adc1c751a20f31d2e643b0d8d3df07ae69164d4cce6957604a94ae22cf6d4',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '6a330ca3-a62b-4d23-9cfa-71a7852fd997',
-  'exercise',
-  'exercise.reading.exam.v01.q18',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q18',
-  'd6d57d2d1ef5d60924e87ebf3c9cefaecb33d0ca8238592fe8fea1ebe0afce61',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '67dd9d55-67c2-4847-ac23-1c534c1fcca1',
-  'exercise',
-  'exercise.reading.exam.v01.q19',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q19',
-  'cca3bb4bb108afc4a2a9d2a82de03d665709140049905339126956b701fd6407',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '23c7efee-1faa-4fdc-9caf-6a40fedf7bce',
-  'exercise',
-  'exercise.reading.exam.v01.q20',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v1.q20',
-  'a69d58f5fa2311aeb5364e9ffed6eed11a430e0da1b5dc030c1339271151abb9',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '59683c87-138a-464f-830c-24936de841d6',
-  'exercise',
-  'exercise.reading.exam.v02.q01',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q1',
-  'ac3a4fa3b90f594b793ed331e92cc6e315f08dad2c6f7208c0b2c916adb09f7a',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a83b2b53-4ade-4e28-bfa7-19fc765b8c48',
-  'exercise',
-  'exercise.reading.exam.v02.q02',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q2',
-  '61b0ed6bdae58e6d2e27e749fc8b995ad7d7de45652caa784217bee9c956bcca',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a365d93a-c6aa-4ff7-9f71-2530891f35dd',
-  'exercise',
-  'exercise.reading.exam.v02.q03',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q3',
-  '23b0c5577b63aaaed1f91e6902081fd9b21dd84f00aa51c7d36ca7e017134ac3',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2285f70b-5abb-459b-8f7c-9ba2948fef98',
-  'exercise',
-  'exercise.reading.exam.v02.q04',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q4',
-  '81ae37c600d55863e893b2932f51678501e94d8d2b62847e903285d2cb34e26a',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '94a70f72-abe4-4a64-be26-f9a41a4905a2',
-  'exercise',
-  'exercise.reading.exam.v02.q05',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q5',
-  'a7d98263e12f4ec2d002041fe43661c36659c363e70fd7126f33e454d7943536',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a8c6bac8-0c7d-445a-ab94-230a6078e22e',
-  'exercise',
-  'exercise.reading.exam.v02.q06',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q6',
-  '93650662dd6535432f38ba658b5481300aa2b17a55a2189ef372ffdfa6bb2964',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4dabae54-c3b8-450a-940a-f8b3790aeb7f',
-  'exercise',
-  'exercise.reading.exam.v02.q07',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q7',
-  '4c5c3b2e6e9daefe49d77b2fff033f778bf9bc1806aeef821fabd7b7708db317',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '58f976f5-c811-4291-8f48-57d48521ebde',
-  'exercise',
-  'exercise.reading.exam.v02.q08',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q8',
-  '77c5465695e935c78a8c006caa94ff736ef5088aedc86a9807fa4e4d65562935',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '688c4315-89bc-4d20-9e64-7367e3976edd',
-  'exercise',
-  'exercise.reading.exam.v02.q09',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q9',
-  'a5926c477644bcab3916103bcc537be1c6d79cad3bcf407733d6e69abf83764e',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2b277b65-d3ac-4fcc-a0a7-7f18ff660d73',
-  'exercise',
-  'exercise.reading.exam.v02.q10',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q10',
-  'f8696649386eeae0b27484db69c1137d91194514654c31765bd8b8e782d56285',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd9c93964-66ef-47e0-afd1-f05619ea864b',
-  'exercise',
-  'exercise.reading.exam.v02.q11',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q11',
-  'c0acbf45c2ae0ebb8efcb4d5806222ae83989c64227f62c3247ff19c0531b7fd',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f88bf363-2df0-4a74-b253-72b0f48d95f3',
-  'exercise',
-  'exercise.reading.exam.v02.q12',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q12',
-  'd9c88c969197dceb94d10b3c26a177097f8860c9777a58595c8e8e27cc775873',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '7c1aacb8-c6b3-4596-8b59-3f2fed86b6bc',
-  'exercise',
-  'exercise.reading.exam.v02.q13',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q13',
-  'fe723fd1c80b292590603bd5bde0d75d4102b593de936237916e9b22ef1eb129',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'dd804ce4-2adb-4c04-9100-44c9c06bc5fc',
-  'exercise',
-  'exercise.reading.exam.v02.q14',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q14',
-  'bc0114e189d34f1d33282fc99c763d96d53c71ec005c95229cc90480c512aada',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a5bba463-0249-43a9-85ad-20a7e6e3482e',
-  'exercise',
-  'exercise.reading.exam.v02.q15',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q15',
-  '3e64ef9a38dbce3d748f84b9082d82732051ca35b9116960f3d428a57027ba00',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4215d18e-006a-440c-97e5-7ea200ba3f94',
-  'exercise',
-  'exercise.reading.exam.v02.q16',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q16',
-  '5fb0658f6e4bb826bac6f26ce57af2d3dd257cc2adda84a45d9550385c4691a0',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '8f336559-46fa-4ed7-8c6f-66c2a7f66384',
-  'exercise',
-  'exercise.reading.exam.v02.q17',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q17',
-  '2278d7e4082e6b44055b0706fbcd0f3ab76204c4408db4c7daf3e21ae375c72c',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '59392afb-76cf-423d-89ea-6c91cdf32254',
-  'exercise',
-  'exercise.reading.exam.v02.q18',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q18',
-  '8c9fb9d81a0e1ca570aabeca3e9a952ec2d74161c84fb995bd3e357d81969e56',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '010402df-ea83-4a2d-a946-ed2c0ce9e940',
-  'exercise',
-  'exercise.reading.exam.v02.q19',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q19',
-  '68fbeca6f6636f8589b1ab5cc25219c55c85ce79bf9026e6d707dfd5b40d5157',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '8e749c24-2004-4155-8bc1-52b1ff9ccd99',
-  'exercise',
-  'exercise.reading.exam.v02.q20',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v2.q20',
-  '561c2591d3cbb16eb85ab15d26c8da6f2ed75a9948f7171052aaf75b92375f53',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '842105f3-aa0c-4d5c-ab1c-ce42cd693166',
-  'exercise',
-  'exercise.reading.exam.v03.q01',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q1',
-  '004ab8ec5c65b23e0d1731532b0c84116f5078f13c1087781bb866d6c7f58ce0',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '8c2e84d8-468f-438a-ac9e-92a828b5dfa9',
-  'exercise',
-  'exercise.reading.exam.v03.q02',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q2',
-  '6015425359917c654990a4ca1a9bfb0faeaab94f28b06bba81223a243e85d172',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2891132a-432b-4ecc-ba72-dbfc005756f9',
-  'exercise',
-  'exercise.reading.exam.v03.q03',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q3',
-  'a1262d27a13f09c6c71ba3c9de6241e3eb08f93b7c4ab34f105cb64eaf8b0553',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '8ea0c709-959a-401e-b008-8add0ae5c040',
-  'exercise',
-  'exercise.reading.exam.v03.q04',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q4',
-  'fe254e7233010698736667cee5a997977e454b01cf602804c27b8cd8620f0b57',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '976dd1f1-79aa-43e0-9998-a5841b8f62e9',
-  'exercise',
-  'exercise.reading.exam.v03.q05',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q5',
-  'a51951b327b248162667ea7374e94d970b08efd46942ae201146454803df77db',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'b5ba55c3-449f-4424-bd68-2126ac783cdc',
-  'exercise',
-  'exercise.reading.exam.v03.q06',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q6',
-  'a4b4ac3f954dcf51006982ce96235de2059da8a4af9d893c77bc6efa5ff9e1f9',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '7a15834b-d1bb-46d6-b80c-0fa9d7bfd163',
-  'exercise',
-  'exercise.reading.exam.v03.q07',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q7',
-  '305c6fdbe026a5e60136002188e1c4d459c5655fead2b6a059552d2f2c60e598',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '90406a36-d235-481f-aef7-c538cee15329',
-  'exercise',
-  'exercise.reading.exam.v03.q08',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q8',
-  '3034f268200bc20c2f471c7197e1ff7963cf045653548940a9e701ae85372f6c',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'ddcd9d31-215b-454e-8edf-ca3c750f5aae',
-  'exercise',
-  'exercise.reading.exam.v03.q09',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q9',
-  '5f87d3a25e68536940811c24eb55ecc2d850e034320c4346f6c05b1e14c339d8',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '27240fa3-7f4a-46d8-ac9e-3a42efab3782',
-  'exercise',
-  'exercise.reading.exam.v03.q10',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q10',
-  'c8cc19b56b142b4927d4de52ae86fe6f8cb139efa228e60b3e0cd557d605097b',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e7f378ce-8f9f-4b9b-8b83-7d0509dc93ad',
-  'exercise',
-  'exercise.reading.exam.v03.q11',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q11',
-  '0da1d3d934a29ff916c7feb72fc71bea4ce59e42bbad7bc91e1abacd10ea759b',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'bccfd29c-8b3c-4128-87bb-0609adce2120',
-  'exercise',
-  'exercise.reading.exam.v03.q12',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q12',
-  'fc1970587a82686568770c11d73810ba1ffa95037b0a8eceebc99ee493b06a40',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'f2c2782f-3fbd-4320-96d8-9055c3615c8a',
-  'exercise',
-  'exercise.reading.exam.v03.q13',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q13',
-  '264b9ecb2394a29631aae3425a45f15b239b2ec4eee06f5e9ed94c52cbf41b8c',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a225aeb2-cc25-4270-a1df-077dd1db6bbc',
-  'exercise',
-  'exercise.reading.exam.v03.q14',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q14',
-  '2103d934d77ce064ac675445fcff46ed08af0cc8284f7ba4685ccf6fce654111',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'dba0ec13-13e4-47c7-8bbe-6631691831ca',
-  'exercise',
-  'exercise.reading.exam.v03.q15',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q15',
-  '6dc352a8e54fb8553b60e3b711f09a513b7ebc9102453a5537b31fa6f3becc61',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '5f029c9e-53e6-4b4a-b9ed-9150d4f4e836',
-  'exercise',
-  'exercise.reading.exam.v03.q16',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q16',
-  'ae3330b43d0f50d97c7d79146c131110edc60cddf4c2b1f69bb393961e79a434',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'cd599b0a-1b56-4f28-b6cf-40ce6de86929',
-  'exercise',
-  'exercise.reading.exam.v03.q17',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q17',
-  '1c0ff7dca9f856dbb1eacc079ea3b051fdb222079d6380e73df701070fe30e70',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'b5ddc1a6-26a3-420f-ad63-9a66322e26f3',
-  'exercise',
-  'exercise.reading.exam.v03.q18',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q18',
-  '2f2f679527c6b7ed811e31399aaf358dda8ce6ec811e85a7753d25a65701331a',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '641882cc-dab1-478c-b92b-dae0ff9d3f9a',
-  'exercise',
-  'exercise.reading.exam.v03.q19',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q19',
-  'fcb1de74e2fa6044c8bc467ab4a68bdca5038856b3bd9478551a078aa178b0be',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '8f6c8f4e-5de5-4253-b806-ace92c2ac6bd',
-  'exercise',
-  'exercise.reading.exam.v03.q20',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v3.q20',
-  '68a90b6dc46c9e1c3f67050609bbb5e28143ecad6b222c80ea9119dea8887a9b',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9617b575-e5ca-4b4c-b021-cd69cd5b4766',
-  'exercise',
-  'exercise.reading.exam.v04.q01',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q1',
-  '31a86244e5054ca66ea68d75fcf0a969a84e667d329d9eb213f29edd7ba7b387',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a1722209-f5a0-4a1a-ae72-f45d7e506116',
-  'exercise',
-  'exercise.reading.exam.v04.q02',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q2',
-  '8e97594945e4e7b103d3b793e367a8dbbb6cc0908d34ea72081e151b0af8f64d',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '1b90d50f-fe50-47db-b947-85c376544a28',
-  'exercise',
-  'exercise.reading.exam.v04.q03',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q3',
-  '1911c6b90ef6f75e74162e2e74a4c60694afbb6c08df643a1120d54eb7594f00',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '48910f25-3df6-47af-8aec-85e2f0a03880',
-  'exercise',
-  'exercise.reading.exam.v04.q04',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q4',
-  'f06fa436843b4c17786110b7d4cbb1489f1dcdd0eb049e3cccdf6fb4da445967',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '68d82f56-a6ba-4637-97c5-3132c4313b56',
-  'exercise',
-  'exercise.reading.exam.v04.q05',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q5',
-  '0d493243274d3276942c780f43a9e6306908a44ef9f58ed09c0ecefec42242e4',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '8b750845-a3a3-424d-accb-4358f8974772',
-  'exercise',
-  'exercise.reading.exam.v04.q06',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q6',
-  '7048bcb54ac92f574429c98af7510fd7e1f9aeef04eaa7927db1edd03c512c62',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '2c6afde5-4d29-409f-9ec2-f831af58dd7b',
-  'exercise',
-  'exercise.reading.exam.v04.q07',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q7',
-  '126932267c7414e418509f7b146ddc761802df765de2cb29c1bb8dc344047f1a',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'a02d3b71-ad07-434f-a3ad-d0a0e0b1df65',
-  'exercise',
-  'exercise.reading.exam.v04.q08',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q8',
-  '981e49b890113fe284f38ded2d30bb9a8ed19339b5c18036b88921bb671975ff',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'cfb35673-2a9c-493e-b6b6-415e7e9888e8',
-  'exercise',
-  'exercise.reading.exam.v04.q09',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q9',
-  '82920611382bfdc28631a8a5062c9ccc373ffc07e7d0e760f4bdfc341b730d33',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '972021f1-09d9-428a-8d37-b2af1c2ca659',
-  'exercise',
-  'exercise.reading.exam.v04.q10',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q10',
-  '1959ae85f30bb3b9e381e35dcddaca7f7a814dccb69ba3c4c7fd7a9dc137669a',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd97c1cd3-3321-48de-9e8f-d6756919dbc1',
-  'exercise',
-  'exercise.reading.exam.v04.q11',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q11',
-  '1494bcc970d5af41760fc85d0faedc09f72256431876f6e494e9c664d31fadd5',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c17cb9f4-51a3-48aa-8564-7699af3a0417',
-  'exercise',
-  'exercise.reading.exam.v04.q12',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q12',
-  '0f389029dbdc9bc202e9abcc6bd07b57a3b03ba03c2602880713d4bef8ebf4f4',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'de26ad87-5056-4746-a0f7-52f74775d80d',
-  'exercise',
-  'exercise.reading.exam.v04.q13',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q13',
-  '120926e04e2e7ad92ba5882b5560b293751db91acae939b9b7b2014db2fa8f49',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '994061ff-9684-4185-baba-6262c39e50a4',
-  'exercise',
-  'exercise.reading.exam.v04.q14',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q14',
-  '7aba2eadf3085ef48b9dde5a0786eb9bcdef26783710d8dde0e1980fb3b7097b',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd061b49f-a970-495b-992d-0ac5749c6a97',
-  'exercise',
-  'exercise.reading.exam.v04.q15',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q15',
-  'b34358e709e8aac80cde28e7cf64190225ea921ae93e9f089d4570b9fad13a58',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4c276bd4-01bc-49ed-b285-4bf9303d6044',
-  'exercise',
-  'exercise.reading.exam.v04.q16',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q16',
-  '27f0b140919011f4b21e65828d88808f60adcd51a6ebd0ea7ac92c7f488f21cd',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9fef70cc-450a-4983-9f6c-3b3f26928bd3',
-  'exercise',
-  'exercise.reading.exam.v04.q17',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q17',
-  '158d34179578232160869182b68339d62a6508799cd6221cf6d338f13554fc64',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '51e224ca-3ca8-4e44-ac2a-5a8a06005e7a',
-  'exercise',
-  'exercise.reading.exam.v04.q18',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q18',
-  '579118fcd236cdfaad48a1658af27b1b7c0aa58053757c7641ea1616c9c8399b',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'd4f89650-b529-47d2-a5d4-b4e90e6c123d',
-  'exercise',
-  'exercise.reading.exam.v04.q19',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q19',
-  'd14a8103eba94c32fc45a2a3ee1ecd9796ca88c5442c37383254f143274629ad',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c25f42b9-1038-453d-9ce4-9a35962c64e9',
-  'exercise',
-  'exercise.reading.exam.v04.q20',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v4.q20',
-  '2f9497afc3071f3f9501f80fff36838b82f91736707e5928dd51d80945fa2b70',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '4430a718-0722-4105-8c4e-b2c5e7994bfd',
-  'exercise',
-  'exercise.reading.exam.v05.q01',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q1',
-  '13631c4297de8e2d182d8ce22ecc6ea91eb203fb11d687a9dc33d15ac2f0d77a',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c84c57bb-1d1a-42d2-ade3-f909aa9af093',
-  'exercise',
-  'exercise.reading.exam.v05.q02',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q2',
-  '45f7c8d4cd91511d17afb8410ea77e44235cbb11320b9a989c947f8379f97be3',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e9bb085f-0569-4aca-839f-5364b48eb4fd',
-  'exercise',
-  'exercise.reading.exam.v05.q03',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q3',
-  'bbd7cfa1bd6c659ebb864639fe5b4f1d2a793c4021fd5d2c97f72263790c79ed',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '5cfa3fd1-e9b7-4623-a93b-da94882426f3',
-  'exercise',
-  'exercise.reading.exam.v05.q04',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q4',
-  'c580868ab8ba562e89f4019f71f46cbf634cc2678f2b75441fc56ef2315e1afa',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e95272ac-262e-4c5f-bb05-5c58f2cb64b2',
-  'exercise',
-  'exercise.reading.exam.v05.q05',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q5',
-  '82ba5e22de973627ff19111a6da2b0cd3114783826b595dc6cffe25f14bde8f7',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'cd1b324c-93d8-4491-90ef-811519ba6711',
-  'exercise',
-  'exercise.reading.exam.v05.q06',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q6',
-  '457a4243c71540951fd3036837f8aaec23c179582115b02ee5fef2f802f405ee',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e8ef7fa9-b41b-4a73-bf6c-2f82a3e7ee4e',
-  'exercise',
-  'exercise.reading.exam.v05.q07',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q7',
-  'fb84dc3dae5801481b66de001a4631d7d76822b1bd01dc0ee97eaff62de20eff',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '6452cbbd-3e1a-4725-b71b-21a030cad855',
-  'exercise',
-  'exercise.reading.exam.v05.q08',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q8',
-  'b5902841dec699d5cfd18540ec56e532e27471c493e17f8b61c07f6f3fe42108',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '32d5dbb6-e78a-484a-9f76-8748b08df5c6',
-  'exercise',
-  'exercise.reading.exam.v05.q09',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q9',
-  '2736bf397aaa4211a2ab07c546a6ac06e20fe5bab514e856f960f5d859221e72',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '66e20ea5-d43a-4e39-bd21-428a696dbbb5',
-  'exercise',
-  'exercise.reading.exam.v05.q10',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q10',
-  '7e6ec3d0d8370684687667726c609c6eca96e6e3f9e20619801dc49049db67a9',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '3cfd88c1-288e-48bb-8e9e-c5170534ea54',
-  'exercise',
-  'exercise.reading.exam.v05.q11',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q11',
-  '39c888a08c6b4f98b04e6983f60da1f511e241ec762396220f6b1f7b3f4913d8',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '05a824b3-6e99-42da-9ed4-bb18be9404ca',
-  'exercise',
-  'exercise.reading.exam.v05.q12',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q12',
-  'd6106eb6e7d0c57d6c65039a1e5e33787c6220ec9e291a75c9d2aa0f5327e7e5',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '81cb567c-ea76-4a81-88b4-2fb00cb1bb75',
-  'exercise',
-  'exercise.reading.exam.v05.q13',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q13',
-  '38eb79ba6f2e6817ae42699b1c2e9966db53692af71abcd77e1181220838fe31',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '386213f5-9f56-4ffe-b6da-b4a1f772eb0a',
-  'exercise',
-  'exercise.reading.exam.v05.q14',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q14',
-  '5fd78dc2d9a67d1bdb5dc8e38c2fb4f086955aebc633fb74b67564c2c031d290',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'c28cc500-7bf3-42a3-906f-6acc62c795ca',
-  'exercise',
-  'exercise.reading.exam.v05.q15',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q15',
-  '61d3ee16c0ef59b83c436269c0cbc404cd287bfaa56e2030d43737d35ec94923',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '168c24ef-ab6b-4256-8edc-959794c00b25',
-  'exercise',
-  'exercise.reading.exam.v05.q16',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q16',
-  '316d4f1c444359922266bddf776fa8b9af330703f40c94487ec7e82f28588000',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  'e0484c3d-c100-4e66-86d7-a49a5824ef14',
-  'exercise',
-  'exercise.reading.exam.v05.q17',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q17',
-  '16bd258effc5f7b3d3bfd3383e9a17835d569b79d5bbfe76eead692eb4241fbe',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '53f8bd69-f9b6-41cd-8442-37faa97eb4d1',
-  'exercise',
-  'exercise.reading.exam.v05.q18',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q18',
-  '5182c1c32c5cd9ba4a40ef3bb3edf1036b6644f6e5cf2d623ee4fae16da3695e',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '7e517385-756b-4253-9cff-431a761c37ee',
-  'exercise',
-  'exercise.reading.exam.v05.q19',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q19',
-  'c32e8c6594f21ad0354fbcda0b8500ac0c496b122e17b2bf37eee4b4337c79ad',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
-);
-
-insert into public.content_provenance (
-  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
-) values (
-  '9a191e16-3f76-420b-aa84-48a4214f1ba2',
-  'exercise',
-  'exercise.reading.exam.v05.q20',
-  '1.0.0',
-  (select id from public.content_sources where source_key = 'curriculum-texts'),
-  'section:derived.reading-html.v5.q20',
-  'bfb749f79c684529b57a0c0c0fc053fb57a90743607f15f1c4a6f06f1ba305d6',
-  'high',
-  'draft',
-  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
 );
 
 insert into public.content_provenance (
@@ -75296,6 +74710,4896 @@ insert into public.content_provenance (
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1a56240f-fa09-42ca-8a3d-d5b2dd806192',
+  'reading_passage',
+  'passage.u01.section.1-10-track-101',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L23',
+  '5c5dd3242e12e0c94bbfccfbe31723616efdcb7e1d594e36365b124ea42f590c',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '900a15a9-df0d-46e7-82f7-6b8e0fff8a6f',
+  'reading_passage',
+  'passage.u01.section.2-102-track-102',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L38',
+  '929b1d4175f37bfc779e976e0079c6ea0f8349e1ddc3486862e87b3f415eda01',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cab1516d-beaa-4cd9-805b-639f9ba1d685',
+  'reading_passage',
+  'passage.u01.section.s003',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L51',
+  '65772fb679eb4509e39f7cac75d8a7dd3cf325bad761edf590a12e4e7293cfa2',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '802358ea-2e25-4a01-8ca6-32e8d9b8e8a6',
+  'reading_passage',
+  'passage.u01.section.s004',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L71',
+  '65a8be99ad8d02e6a09468cc788215a2d8dbae0b005df45c5526950f2e6b8755',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'df4de941-546c-4a7b-b679-41c3e20412b7',
+  'reading_passage',
+  'passage.u01.section.s005',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L87',
+  '324ad1d5738573780b235bc33b6f6aae4d863a2bb58598373a0a4f171250a44b',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd563b15b-66ae-44fe-bbe8-ab1e9a4d077f',
+  'reading_passage',
+  'passage.u02.section.1-track-105',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L100',
+  'c796d3a622374898f91f932c2f6f82094d02a2d96db714aab2e4ca849c7cf695',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cbfcd446-9a0d-4a14-aebb-028b1ca7b21f',
+  'reading_passage',
+  'passage.u02.section.2-track-106',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L117',
+  'a9418c78b5c30a049d20cc5044f4925cdcd6886f6f8bacd385fdeb2995177bfc',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '97a6372f-700a-461a-8217-bd827b1c5fff',
+  'reading_passage',
+  'passage.u02.section.35',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L132',
+  'db4bb4a313baea490f15cbfb63fc922eb991c09d0f58c21c0647bebb2f84c9ab',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5504b998-9534-483d-a3ad-9a7f657d39a7',
+  'reading_passage',
+  'passage.u02.section.37',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L154',
+  '87fcd358ecc8f22559a0445416fb776e370dcad9ba873b77c2327939c489e434',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17; blank markers kept for review.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ccfacdc0-6b2c-4e5e-a07a-4de48eef6feb',
+  'reading_passage',
+  'passage.u03.section.1-109-track-109',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L174',
+  'effd389ca25b365ebf36a01a3eac93795e3b4c0d4d3bfeed4a3643a60839efb3',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '23485a25-7977-4a38-9bbc-ff7353cac036',
+  'reading_passage',
+  'passage.u03.section.2-track-110',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L190',
+  '4ef576956f0bfaef8acf19a0b7b01fa5dc0ea9b1dad986373233ef2e5b05c97d',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1a55ab73-3e6b-42fc-8ff6-4c99140c952d',
+  'reading_passage',
+  'passage.u03.section.s012',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L207',
+  '918c2fd210d218a0794d28a9e1c38f162d5efb2066f85d2e566e49f5ba8e1c65',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a067b3cf-0c90-4316-9e93-d934ea19b63f',
+  'reading_passage',
+  'passage.u03.section.s013',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L229',
+  'b101618fde9e01fb2b2a01eaa5c50d90a0f01c4e1790afd937551ddd6b2dbcbc',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c64f21ee-2207-4f6c-a79c-9e0f61a9c331',
+  'reading_passage',
+  'passage.u03.section.track-112',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L244',
+  'a05734aa67173eda2c27862b0da806df407aece676cc83d85a38ad43a1203546',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'bdcd803a-5b2a-4f2e-8376-a6e8ccc15217',
+  'reading_passage',
+  'passage.u04.section.1-113-track-113',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L261',
+  'dae45e8b738a7ebb2f7190167077a42eb47ac2b7151e276db81489a6a0dd50fa',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '77e74af9-3bf5-4be2-8bdc-ea7c46eeb54d',
+  'reading_passage',
+  'passage.u04.section.2-114-track-114',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L274',
+  '70e9d434138344910f3af61cb12e04a714c2e8d7100a5f75dc60abc464419168',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '129f37c4-eec9-4e1e-a154-3416bc09daa5',
+  'reading_passage',
+  'passage.u04.section.s017',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L290',
+  '3e3d7aaaede27213e425dfb14ff747d9e501889ba499264b727c4dd2f78185b7',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2e1a79f7-b7f9-420e-a83a-2b3dc3bdc838',
+  'reading_passage',
+  'passage.u04.section.s018',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L310',
+  '3839b3a1e7f6595aa7e11122d12ff3de39b594836805766f4122bb7dbd737e07',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '051641b8-76aa-4b01-89cf-de32436f4e3d',
+  'reading_passage',
+  'passage.u04.section.70',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L324',
+  '14ae460729963e83a37889655ceea72a7b276b8e9e4f1c3f6dda4df9c8ee778f',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd1603dbf-4eab-42ba-9181-512e13566a7c',
+  'reading_passage',
+  'passage.u05.section.1-117-track-117',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L339',
+  '1dc5d5c6a5f62ede34bca3e2cab1a8f709ea5e2736d43497871e0b576203be3d',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7322f01f-1ba3-4ad0-84ba-868b3af0dba0',
+  'reading_passage',
+  'passage.u05.section.2-118-track-118',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L352',
+  '107910bb6f5cb742c540edcd3fc708b46165dd4bcb31c7ccfd6c137cfb445858',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b2f0507a-eff5-460f-b02c-cde76ce13a74',
+  'reading_passage',
+  'passage.u05.section.s022',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L363',
+  'a7d59f2e93f98d92fcde38e1ba56b4a78acd557ee414a2303f98d83a901fbc68',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c60ca6fa-be79-417c-bfa4-9d37cf4d5163',
+  'reading_passage',
+  'passage.u05.section.s023',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L382',
+  'd9b2764d8f3a2d96dbaac33d60292c7cbaf9d9e27e682fd206a5952f04f01f9d',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4ac78673-b999-4faf-8b17-b650735da375',
+  'reading_passage',
+  'passage.u06.section.1-121-track-121',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L400',
+  'c311e7cd241e8b7228da7d1e6b68fe161ecab97faf7fa996ed51c6ef0c9e1c49',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b5845d71-2292-40ec-bf11-4b80e74d70c5',
+  'reading_passage',
+  'passage.u06.section.2-94-track-122',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L410',
+  '759a611c07be4a86db6d26f62ec6d145a19c7d199f9d6d6c00bd8a47a5c15e28',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9af564cf-a944-48b1-88a6-d0b678e5fbcb',
+  'reading_passage',
+  'passage.u06.section.98',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L424',
+  'b9111695f5c92306b01a2c3ba95c1c466a0a1b8de804180d772f011545154c56',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a48f0c91-c7dd-4529-b67c-f53193fca73e',
+  'reading_passage',
+  'passage.u06.section.100',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L440',
+  'f3d8315ba9a76c1e20fbf73449d948e1a1c7eb60a78fb5c6076d02a6c579aa1e',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b26e29ae-efd7-4e7d-a828-b5b862c2872b',
+  'reading_passage',
+  'passage.u07.section.1-125-track-125',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L462',
+  '163ac1bf8f4b029d2c2ad5f45e5bfdfff93cae40b903ce806ab7e7e697259992',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'af82d41d-6b54-4fec-b1a0-bcccef1aa3e9',
+  'reading_passage',
+  'passage.u07.section.2-track-126',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L479',
+  'cc4b4daf9f46e738c452d3ce49cf5968294ad85bcbc0dec410e19f0450d9f780',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c8a15fbd-fe65-4797-855c-7f880c14f95e',
+  'reading_passage',
+  'passage.u07.section.s030',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L493',
+  'd29914f066f8ad4f9486bfb1d16c3f584fcdace6c1ad614ef7bb3cd09a1993ad',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f3bc16c3-862c-4377-98e9-a3b10fcad7a7',
+  'reading_passage',
+  'passage.u07.section.s031',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L508',
+  '6c4fecd064c34a72035cd36e4f0fc3e007544229569fb571a7d20705493ef1bc',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17; blank markers kept for review.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3514bb65-6041-4e08-8d03-5de203ab03f1',
+  'reading_passage',
+  'passage.u07.section.track-128',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L522',
+  'e0d00d11d9a5cf2d0018b46ecf39b2dbc53066aa042bdf78f37737a432e02592',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '59e7755c-725c-45b8-82b1-b1742001bf83',
+  'reading_passage',
+  'passage.u08.section.1-129-track-129',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L544',
+  'cea81559172e7b13bf5ee3f8c7fd597d2c713cdf7b37dbea9458209e87566b0c',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '63d1488e-c6db-428c-8e91-8f48f7683940',
+  'reading_passage',
+  'passage.u08.section.2-126-track-130',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L554',
+  'c02a4e521dc413804a9331616fdf2535b61ce3e7b1252862e6f20d9106c6a796',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '919e8091-66cf-44cb-95db-6018fdb06ead',
+  'reading_passage',
+  'passage.u08.section.s035',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L568',
+  '168851f22b7b74c375052c86b98ca137caebfeb7fe3f8864eb630895cc4a2077',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '66742b58-e620-4c36-9436-e0c4b362e0bc',
+  'reading_passage',
+  'passage.u08.section.s036',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L583',
+  'b5692dbdf20004c2ef933d4a281d9ef2e0ea24ed73dfde3ba18986f7fc22858d',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5079db15-1046-417f-aa6c-84ae1d7f6758',
+  'reading_passage',
+  'passage.u08.section.track-132',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L599',
+  'a35d8ad1bf1f52a3d990d3952fbe564fe0b475589294fcd63cb434f23625ee89',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5cfef722-234e-461a-bbe8-24f8d985b22c',
+  'reading_passage',
+  'passage.u09.section.1-9-track-133',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L620',
+  '35652f3e6ea74ed7b59778fc2e80c4a1d17efa2491edca9efde9cbade54020c4',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2230f5bb-5820-455f-aa82-0bf2c6c370ec',
+  'reading_passage',
+  'passage.u09.section.2-track-134',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L640',
+  '981a1beff82eb4e8d18fe35cb0494fb54645028da847a51a20234f279ba6e407',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '34f089f6-a16d-4881-a3f2-cbc755c4ffba',
+  'reading_passage',
+  'passage.u09.section.s040',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L656',
+  'af949db7797bdbaa19554374194e26612ac1209ae416c5769d835395ad2684c5',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c8b2eef2-4dfc-41a8-baf0-1e6dd6dfa8e5',
+  'reading_passage',
+  'passage.u09.section.track-136',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L677',
+  '28a2dc5d78094ae86c1156dd3a5fc7e688cef343699659abac62ff4dfe964c6a',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0c0ac5d2-3e1a-4eb2-a0df-4c3cf0f5d6f3',
+  'reading_passage',
+  'passage.u09.section.149',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L694',
+  '402a0a5fffc73a9eb0e6b2df7de3c591d02200f0c4458fddbf08c26782ec00a6',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17; blank markers kept for review.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8e6627d5-6ab8-44a1-96a1-d70481f2fdee',
+  'reading_passage',
+  'passage.u10.section.1-10-track-137',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L716',
+  'a31aa8bbaf60e977dfdfa29c8958f539f722ddf50f444eab0e8f1bfa49c0444d',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '81cc6ab0-3bc9-472e-a04c-0559c0d2bdc6',
+  'reading_passage',
+  'passage.u10.section.2-159-track-138',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L731',
+  '82ccbc7fda648483347ee03fb0b14ecd08c4d13a8a7d96dfcff56eeeb6c6ddfc',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '73c07faf-152f-47f1-a2c2-f6c90a745008',
+  'reading_passage',
+  'passage.u10.section.s045',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L754',
+  '8cd2171e242466f339f41e7581e75db0234432de36dcec5bac3a28640a7e3de9',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2b121c98-1f66-42b8-b054-d9181cd8f351',
+  'reading_passage',
+  'passage.u10.section.s046',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L772',
+  '85033e30a1d0fa0918fcb00d9ccbf9968bf86d05b1e0f8df75dbcdd3499f5617',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '87a3f12d-0c77-4048-a55e-fa664ff8f905',
+  'reading_passage',
+  'passage.u10.section.track-140',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L785',
+  'e2bf9edc075853b36881398aad507f4f11ca401b3bddd91fa3051777a23350fd',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3a98d1ab-6fee-4afb-b362-b018d9d52e4e',
+  'reading_passage',
+  'passage.u11.section.1-11-track-141',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L814',
+  '8342ce6d146d4e0662e2952cdb00ce744b27e990a7068e47ac465a3c2fca0b33',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b4ef4afb-9407-4247-a4e9-f1717cfaacab',
+  'reading_passage',
+  'passage.u11.section.2-177-track-142',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L832',
+  '85aa0cd47828ca78055a1f6d4326e265f854f8ecb2b6d400c03a3f4a42672d94',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2688e114-3796-4771-92a3-d0d94c9b8e44',
+  'reading_passage',
+  'passage.u11.section.181',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L851',
+  '0d16d98d2a1c6c860bc208b4d58a581864d8a5615df12f66c712b62873568ade',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fddeabc8-3373-4543-9b5c-2b51b6b9a82b',
+  'reading_passage',
+  'passage.u11.section.185',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L872',
+  '90a664dac0ffb9c7d3406a22f669be474614df470929b5fb62044196a1607079',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '102f8774-fcf7-4246-bb44-f7ac5920fbe4',
+  'reading_passage',
+  'passage.u12.section.1-12-track-145',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L893',
+  'c742d5abd535aad994114e42d6e09205de5e4146bad18703df56caf9b4714221',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '951f9c56-7666-47b7-999e-51b0bab2392a',
+  'reading_passage',
+  'passage.u12.section.2-track-146',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L907',
+  'b751fd12bb2fc1725d25d8b3e1bcfbea385d98ed8ecda59d550ff8b1d94e3ed6',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '74719f57-c6b4-4408-9c2d-97057e9828a6',
+  'reading_passage',
+  'passage.u12.section.198',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L923',
+  'a73325ef4f250cb31236bbd10fc629677a8ef819e3d5241460c33cc0be6752c1',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '75ec650d-ea05-4479-a098-d011172b04a2',
+  'reading_passage',
+  'passage.u12.section.s055',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L945',
+  '24795227cd1d2551be62a910f122bbecc08fb23cad22894c69a6c93454189692',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd6246b72-7ec9-4fc2-b015-92aeabf4e112',
+  'reading_passage',
+  'passage.u12.section.s056',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L971',
+  '87cd20948b485e3daf58da01c7814dc5324da088e116e510ba133defae179f75',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8c019c0a-8598-43cf-a88e-518eee766465',
+  'reading_passage',
+  'passage.u12.section.203',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L992',
+  '5cae76e718d1a342c3de5429f9a48cef7e79f0a5db4d75bfdad68474bc0c54f1',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7d212a45-0fc4-4d29-a497-213cb74446a9',
+  'reading_passage',
+  'passage.u13.section.1-13-track-149',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1018',
+  '51d7e45016c27008fd471f2ea91e7c64981ac32660637f645bc974eef8130abd',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7ba0c576-b55f-4f93-a578-110504845615',
+  'reading_passage',
+  'passage.u13.section.2-211-track-150',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1034',
+  '3db42daf5955afe7f7893d872695bbb82d2a4586beea2eb13d082af9e45bc292',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '128cf057-b9b7-49ab-b635-44dedee8a9e4',
+  'reading_passage',
+  'passage.u13.section.215',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1052',
+  '59999be5680d4a646e7d48bd4922f5141df86f50adf95b471783cbec586b9552',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9a1ce9b2-4647-4d71-8434-abefadae783a',
+  'reading_passage',
+  'passage.u13.section.s061',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1071',
+  '0bb0593a9a3e0a5b3905ba767877a9ee373cabb15f6a25f0ebed2835e7c750d8',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'eadcff23-7ac8-4c7b-a237-c63f7247a795',
+  'reading_passage',
+  'passage.u13.section.13-track-152',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1095',
+  '369eddf58f6a5c5d0012488953dc4a0fc080d5dc6fbe5f31c36ea7da5b73d5d8',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '75d7a136-aab0-48cd-bd3c-ae8f4a49ae3f',
+  'reading_passage',
+  'passage.u14.section.1-14-track-152-153',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1114',
+  '20f3774217972ced4100310fcc14134aa8f23d37a07f1a08fcb1cccba9defdb9',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0b2f941e-3454-4f37-8480-90fb48a0adf0',
+  'reading_passage',
+  'passage.u14.section.2-track-154',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1131',
+  'f52fbea8906482794cdfcbef1732ed6c1bc9acdafc322a07aace27ea882992bf',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '78d4ccec-8142-435a-bf90-43504d840d9f',
+  'reading_passage',
+  'passage.u14.section.231',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1146',
+  '12a88741dd12add451936e62428f809e8583842af754a9a7d1c01cb73865d614',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f038af38-ba35-4198-90ac-4c95fe2a8046',
+  'reading_passage',
+  'passage.u14.section.233',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1166',
+  '4941a9b250fadb3e4ba385951b64cf2c0e8562271310696c5619e6d70567a137',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7a13faa9-86b6-47b3-9763-cd989a36b5a3',
+  'reading_passage',
+  'passage.u14.section.14-track-156',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1194',
+  '0d4747ed9b199b298d998e45a67d3f9ccb8a534df198e099629e245e4db2257c',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '78df937e-3f41-444a-b4be-30a5dd063e73',
+  'reading_passage',
+  'passage.u15.section.1-238-track-157',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1215',
+  'e55e2237e0d24c5014a72ac2e91f0a8e71ddf3b4b9b1b01d2b8bb7f517dd2821',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a430a18c-d1a1-4ffc-bbb4-5805ce7d469e',
+  'reading_passage',
+  'passage.u15.section.2-243-track-158',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1232',
+  '1d0a9e07c90fe0df60072f59bfb20938fdd4623124c2afff1e7aa4a09cdcc912',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6606ec3b-8474-4a6b-a3c4-81d52ae7b171',
+  'reading_passage',
+  'passage.u15.section.247',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1249',
+  '0d331fa1c42b7a55611b42d6df8257352acc9de15f0d156466b288a050c095b5',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '010dd83a-f368-4a75-8ca3-a60c7ac714da',
+  'reading_passage',
+  'passage.u15.section.249',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1271',
+  'd5c6fc7fadfe7ba168934186e30059cfcd661d2eb3fedb2885544918c6e9688d',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9545c074-31df-4362-9c5d-a89cbbc58160',
+  'reading_passage',
+  'passage.u15.section.15-track-160',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1291',
+  '687cdef8daa987ec1c722af9c86fc8dd9ac3e81948ba9e1e4f486ee35a59f9f3',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cbb59342-d1cb-4d82-b0bf-e7feb3dbdd02',
+  'reading_passage',
+  'passage.u16.section.1-16-track-161',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1311',
+  '28547e5045bd0aeabcc8255a17e6c2f6b4dfe898cba14315a6a5b97fbb62c87e',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e3b231d3-599a-42d7-b454-304a098e259f',
+  'reading_passage',
+  'passage.u16.section.2-259-track-162',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1328',
+  'b14bd3d1e7461e815c390b9bc24173ab4983be5560d0a85cecbebdcd99813114',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ef62ee20-a0d3-4224-801d-2eb47c0a057f',
+  'reading_passage',
+  'passage.u16.section.s075',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1343',
+  '39c216c19fd8579b1e6ce54e37f30e42eeb954ea32e54650fb23c8afdf927945',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4fd53887-f802-4090-99f8-283221f22647',
+  'reading_passage',
+  'passage.u16.section.266',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1366',
+  '123517bc488e69fe7eba2fe248aa176983b51a5aad4dd3557f22f38040e7449c',
+  'high',
+  'draft',
+  'Canonical unit reading passage for F2-I17 structural bank.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c1758a16-5a3d-4fa3-9d03-af3ea9b9da61',
+  'reading_passage',
+  'passage.u16.section.268',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1392',
+  'e99b590b21bd4f16a380be85c8b5e5183354b2ead3ad126958e5642450d1add0',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3f7f0b04-15be-4284-b162-ca168c1510c9',
+  'reading_passage',
+  'passage.u01.appendix.1-272-track-103',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1406',
+  'a0c2c210abf7019c407b4b47f8a07350e9d30afed95a77f066d1a3fa423742bc',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a67f8356-e2cf-4514-80ba-e6b800c08e72',
+  'reading_passage',
+  'passage.u02.appendix.2-272-track-107',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1417',
+  '2a90164ffae796b239cb343e65e85fd84b44fcf78dabdd398ec83f9d1910b09a',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '788c78c9-34df-438c-9987-27655eeab924',
+  'reading_passage',
+  'passage.u03.appendix.3-273-track-111',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1425',
+  '3960b9fbdcc1c55719fac34be953e32c28582c40fc2d51e855c7dbab9254f501',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'bc7543d8-9727-4cae-9139-c9587964bef7',
+  'reading_passage',
+  'passage.u04.appendix.4-273-track-115',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1439',
+  '43f7710ff96a847c94a22a96d83521ec684b5670c6a4507f4c10031ef652c5ac',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '26529d5e-417f-44dc-a0bb-4d94756e3ff8',
+  'reading_passage',
+  'passage.u05.appendix.5-274-track-119',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1450',
+  '8911b8164a4d104e65f73e8370ffb8c372250863ce8cfea75466eac3119b2b9e',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'dedf0b73-f8b3-4df1-b1ac-ae9668954663',
+  'reading_passage',
+  'passage.u06.appendix.6-274-track-123',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1464',
+  'c8ec846a961506460458f978216603cbe7503eb8a70ee4bd2fc274bf5d8b96e3',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3bb348d8-e354-4fdf-a778-31fa31c5977b',
+  'reading_passage',
+  'passage.u07.appendix.7-275-track-127',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1474',
+  'fff99b0f11c85a2b6c66b059b5905a826778b30d22d3ed2b753c5c1b5ac997a7',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ef53c88b-b596-4330-baf0-98b03cbd9b64',
+  'reading_passage',
+  'passage.u08.appendix.8-275-track-131',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1483',
+  'e498e46d73f0cb789e5ce786b8c64b59aa01ad67305d1d426f3cd3d86d53d4e0',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4152c2a4-c1cd-4930-ac0a-bfc90b1a5d1e',
+  'reading_passage',
+  'passage.u09.appendix.9-276-track-135',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1494',
+  'ba181c77465d68badfcb64d1d1f597ad351a1bd978d9ba3176173127c26207bd',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '52200648-097b-4f89-b96f-bdae8d5aa91e',
+  'reading_passage',
+  'passage.u10.appendix.10-276-track-139',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1508',
+  '82a2cf2fcbbc46492ce0f0102b059ff50fb8d4b38e43e5888663825887090e31',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5fd6b89e-5ae8-46c6-bd6b-d03666ecfd82',
+  'reading_passage',
+  'passage.u11.appendix.11-277-track-143',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1522',
+  '7e5b9de624dd5bb03153f93c820656291450d22f7d075908c39a15898e5a456b',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fe14caa5-bba0-4fca-9d67-d5c39b564a86',
+  'reading_passage',
+  'passage.u12.appendix.12-277-track-147',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1535',
+  '0539f57e59694ec6271bc9021deec587a8182f06e11cfdb5a0e65f87e6a07d0d',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '92bad59a-55c5-4940-b442-4496ea587938',
+  'reading_passage',
+  'passage.u13.appendix.13-278-track-151',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1549',
+  '72bf4c534c9b6e9392f1539748e4fb7a1f9081e5b1367e2d2117ad6d6c83d2d3',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e562601d-b9be-4cc7-ae46-0d271b86db46',
+  'reading_passage',
+  'passage.u14.appendix.14-278-track-155',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1561',
+  'cc14ecb85f5aebad5663fb0853129c980845b4c0a6017b5eb0afdef93968850c',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '88ad82ea-dfd0-4838-8dd7-8c0d9fa02487',
+  'reading_passage',
+  'passage.u15.appendix.15-279-track-159',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1571',
+  '5b92dcbfffd5b51276b27f5b98eb6d1a6fcf04881dcc003dbb7c5bb883e20c41',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '539252ec-5e5f-4e5b-bf75-70a6f979a852',
+  'reading_passage',
+  'passage.u16.appendix.16-279-track-163',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1585',
+  '48f7a126c485415ff400f4f979e67b386849d5748dcfbf18bd5a3e1567aa337b',
+  'high',
+  'draft',
+  'Imported from CURRICULUM_TEXTS.md.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7acad0c4-da40-43b1-afe1-70bec80d4e4f',
+  'reading_passage',
+  'passage.exam.v01.v1-s1-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  '1560d715ac761359bd6982c3026899a93f9c02dd6ceb0270b89c4b3a95eac0f4',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '668ccf0d-1224-4641-9722-84805f6c960b',
+  'reading_passage',
+  'passage.exam.v01.v1-s1-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  'c1d591679b80a0abee07dceb9fc9c26d1f593929271aecca797bcc7a5ba6f2fe',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '705fd125-209d-4717-87f4-ecaae7eff31c',
+  'reading_passage',
+  'passage.exam.v01.v1-s2-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  'f0736e5d546e48b300328c76884fc411cee82479766c1b27c871934268129978',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '59c6e208-efab-494a-bae1-0bb54f5698b3',
+  'reading_passage',
+  'passage.exam.v01.v1-s2-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  '50e0012bca7613a13a33b0799cc6262c7fa11207a6b7d5603e1a8073799e9b61',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f1d319bb-ebda-4589-a6d6-372bd0a48757',
+  'reading_passage',
+  'passage.exam.v01.v1-s3-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  '0815b0ffa09d333a462af70648f6728d572e2f914c71654ba396acabd321633a',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0da16177-7420-4d0f-ab0b-c31b1314a88d',
+  'reading_passage',
+  'passage.exam.v01.v1-s3-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  '2dd733c07c9579a15b9240f889704477c96ce14f695c5b246da72d793818351f',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0e9b5f45-1895-4d23-9801-ad0a96b84729',
+  'reading_passage',
+  'passage.exam.v01.v1-s3-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  'a20e264dc5094bd07c09ddc705323d9a3026892371290dbe48bcbed43cf70d33',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '063e41f5-33bf-451c-b181-c103f21f1302',
+  'reading_passage',
+  'passage.exam.v01.v1-s4-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  'ad5ddde1366af1ea2c9e0ab2e731567b1f02d33022df909a8b223869994e3095',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1a3dc36c-1fe1-4e6a-9d42-a47bdb040ea5',
+  'reading_passage',
+  'passage.exam.v01.v1-s4-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  '54656a992c25a79112c945a1ce6bd1efd8b4bc639fc7bdd3f0364fb33ad0c7bf',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a860d74b-1939-41a5-94c4-29cb6c1922fe',
+  'reading_passage',
+  'passage.exam.v01.v1-s4-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  'c34a0c5c7a23f917f7b457c4bbdc7685dc5b2f610b7c466c0b140b740bb6d22f',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '934b217d-a3cc-4d1a-a186-8bc798535fde',
+  'reading_passage',
+  'passage.exam.v01.v1-s5-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  'bc0b04e2d6cb440c2a65deafc2763d28a470afb7e9a7f2be3b46ed79d2635e4d',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3daadd8c-9408-42b9-b0cb-4bbd9bed3b1f',
+  'reading_passage',
+  'passage.exam.v01.v1-s5-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  'c6a2ee4227ba2528e86be47dea289d14946dea71b3735cb725c93279576e6c87',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a07006ab-9ee8-48a0-994a-3451d773299f',
+  'reading_passage',
+  'passage.exam.v01.v1-s5-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  '8c85cf87ccd46be8a1ea35f1749afa3ef26b513e1b237106629b4b6353a64c63',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9cca9cb0-4094-4cf9-921d-9ae59bb7b341',
+  'reading_passage',
+  'passage.exam.v01.v1-s6-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  '2901510432f785220dad15020f43e05076afa22bf439d7276a6f19f9cc4bbe0b',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '975b5d61-5299-461f-b9f1-9797367a5998',
+  'reading_passage',
+  'passage.exam.v01.v1-s7-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  '5b10575dc4ac4d743121e51776e2195c9fe956708ff80c14128aac805759b06b',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '14e4701e-2a4c-48a0-a45b-c84bdccce8ae',
+  'reading_passage',
+  'passage.exam.v01.v1-s8-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  '611a6cb109c8ad6ac93e82becf1cf8e048d360bdab41745db3b92ad5af618e42',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c736fdc5-cf09-4245-997a-ed1e955bf8e8',
+  'reading_passage',
+  'passage.exam.v01.v1-s9-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1',
+  'e15a49de478331f8f389e8cb985a6f5847422939a2f15b006d8900b274c385fe',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0fbc91ca-30d2-48ad-a328-dccae40e9238',
+  'reading_passage',
+  'passage.exam.v02.v2-s1-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'e076af2478857288b050f30dafd5f9ed3bdd137f91aae070a1e62b4939715576',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4f0d6e90-95b4-4c41-bb26-314b8876ce8a',
+  'reading_passage',
+  'passage.exam.v02.v2-s1-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'f64233efa96c3a7ca07a8d0156b0240695a8e368203f06e0ddcc48c517673413',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6897bb8a-7ce1-4b4f-8544-6955157037a5',
+  'reading_passage',
+  'passage.exam.v02.v2-s2-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'b01f46620a2194cb84f9928383ee0f155834642e368c84cf5134d31de13ac9f9',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd33d571f-5ebc-441b-9461-fae868bb665c',
+  'reading_passage',
+  'passage.exam.v02.v2-s2-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  '913d3c5a824ed92035276e07530caea7cf94c38dae93f263618ef39dd2c448c9',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0211e227-e167-4f99-b765-2777be60c547',
+  'reading_passage',
+  'passage.exam.v02.v2-s3-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  '7b6a1f5aadbdd5f165aa1d5f2b82fd6919ed30b78a821bb0007549cdadf55086',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '65821a17-07ce-4b97-8ba2-cc5316309362',
+  'reading_passage',
+  'passage.exam.v02.v2-s3-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'ab0311f85b0ec1bf6f496e3351a0634fec0dbf617cde2980748036881c2daf16',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cae94d89-0558-4fca-8acd-93f72b3deade',
+  'reading_passage',
+  'passage.exam.v02.v2-s3-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  '31b533e356462723aaa9568c59e1c96d7f70c6e0d363e6bf1ff231662737abce',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'bdf609f3-c846-4ba2-9b4b-7042e0fd99d3',
+  'reading_passage',
+  'passage.exam.v02.v2-s4-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'cdcf541ee0744654a0e4cf9d320faa407c5230bc0d3e5975cc94bccce2f0e54f',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '620d1f47-3ecc-44ab-80e8-4eb5bd291c32',
+  'reading_passage',
+  'passage.exam.v02.v2-s4-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'd738ae00851c0af813cfaf6d65cd8e9fe08c8d99d0252575055a4d741658c98a',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '471bfea8-8e41-44e0-9235-8173e548e2c9',
+  'reading_passage',
+  'passage.exam.v02.v2-s4-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'a33c742a41a9dcdcbf8bfb2a48b7daa24e64c3c667af1599755542295c0a1ae2',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3d08e278-cab2-485e-a020-c412759f0387',
+  'reading_passage',
+  'passage.exam.v02.v2-s5-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'ba930ae973dea5b09d227db6cf2e444a41131b57107bbb03d02a4e1c3f6dfd6c',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c49a0e03-3b13-4d8f-9727-520e1df86ad9',
+  'reading_passage',
+  'passage.exam.v02.v2-s5-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  '8686a9380507b046320d322155e7831738d52105cf41b2c9c7b010d130dec3f0',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ef8d5976-9cec-4713-bec4-6204a360c104',
+  'reading_passage',
+  'passage.exam.v02.v2-s5-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  '04ddc5d45fdd0f6e50500e28948562dba008c5b60f0e76a744bfd6b33e7d8056',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1c817ae8-5743-40ff-8c39-71fcf2ed3b4d',
+  'reading_passage',
+  'passage.exam.v02.v2-s6-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'b698937c0ef7b90861b169a0944180f0645239831e296f4d097af4d550f911f4',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b7913959-23e3-463c-8b5a-cfab3d1aed51',
+  'reading_passage',
+  'passage.exam.v02.v2-s7-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  '53cfc08e3d149e9247827cc28e50ff855fb85a18c7aa32eba710df85b53d4ca6',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2d5fdd0e-6385-4918-b99c-8c8a27ee1d4c',
+  'reading_passage',
+  'passage.exam.v02.v2-s8-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  'd4b2b8c2a052b9e5076d5d8a088c892cb410514b1227fcb92e1d2a93b9ac792e',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '59ba05d8-2943-4d10-bdae-1db61bc53193',
+  'reading_passage',
+  'passage.exam.v02.v2-s9-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2',
+  '0a79752fbf16f9524e97eeaa46bef3d862a0c1d2165226e88e49c2be2bb85564',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'dae55f18-6221-4985-a081-df1d21b0e204',
+  'reading_passage',
+  'passage.exam.v03.v3-s1-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  'a054daf7c69e177db821f321359e1462e93d2392e6217dfff3741b090f040f2d',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ad9d32b6-0db0-4e9a-8a05-ab674d90b3d3',
+  'reading_passage',
+  'passage.exam.v03.v3-s1-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  'b1f6211998cbac9cc1a37f6632d88839974f7a44c3dfce0df8dccf291387aae1',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fc95a07e-f3c1-4f86-91e3-ec586b65fa75',
+  'reading_passage',
+  'passage.exam.v03.v3-s2-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  'bf0ea4bd6a32daf2b98a6139f188190e26c7c0f9b305f2a2d79fb359a6509aea',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '76837ca5-31a5-4e69-9381-901bb1a0201f',
+  'reading_passage',
+  'passage.exam.v03.v3-s2-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  '2989a128767cfbd2cfa34312722a7453ee0ae8a4b9eb4207bb089bc838a1b1b0',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b43e1cd6-3de0-48fa-855a-d9e8a79bf77d',
+  'reading_passage',
+  'passage.exam.v03.v3-s3-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  'e25711990c7ffe97eba8b7602c1473edb4627ddb0642d73ace027f5cb914652a',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9a63849a-4fd8-4482-ae8f-d97a9b5ef725',
+  'reading_passage',
+  'passage.exam.v03.v3-s3-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  'db18d68ec81338b8d2df63ecc7050be2037b0ce8a5f6e6b0c6db5a9a3ce3dde6',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c733d9d1-bfd8-433c-ad8d-d8c09d3ac979',
+  'reading_passage',
+  'passage.exam.v03.v3-s3-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  '5033c535db65f18b765a97e2ead1da3eb8c05e0cf9c95d0d0e76364b772851eb',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4ed1bbb0-8f74-40d0-8bea-852f2c81f510',
+  'reading_passage',
+  'passage.exam.v03.v3-s4-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  '05eba63737b67f02ef9323b49285a2dac4c23604a748ea6fb5e34bbe2502e487',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b7a8ff99-cde7-49be-b835-80f60e3440d4',
+  'reading_passage',
+  'passage.exam.v03.v3-s4-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  '516e4decac94efcfd41196f62dee0431892b3fed1c22b76d8cf02451e1c30859',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6533c452-b5bf-4dca-886a-8a59772aaf0b',
+  'reading_passage',
+  'passage.exam.v03.v3-s4-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  'b4d79b7cc19f419fba4058f4a0442ec893b7b4cc6a118971726accb7bd44b27a',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'acaee7aa-2391-485b-9b54-401dea3a3fb1',
+  'reading_passage',
+  'passage.exam.v03.v3-s5-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  '9b6b14e18cd927f00daf44cdadd00faa2127097223501b007f6f26f70dd630f8',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '754ffb88-6f92-4188-8b04-2e8b4bd6f7fd',
+  'reading_passage',
+  'passage.exam.v03.v3-s5-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  '5c00245b96874511599928f62402289f3aecd5cab7748a477cace0d98ace6fc1',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a961a25c-3ba1-4eb2-a928-30ac46d45b33',
+  'reading_passage',
+  'passage.exam.v03.v3-s5-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  'a3d5775fa5d87521dd53e120f274651fbb80846d0de80459e1df062fe687c791',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6567fbb1-080f-408c-8405-2f90bc154939',
+  'reading_passage',
+  'passage.exam.v03.v3-s6-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  '87c425576153dbd45b55b48d09da35913d11c8edfe934bc06106f667b556a5af',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ecda9720-e1be-40bb-82db-fe65f8acd188',
+  'reading_passage',
+  'passage.exam.v03.v3-s7-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  '96e65e6f6b6e0ee49f274df235397ff70988428cb08c312590eb30b199f54c6e',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '08a5ee8b-3e31-42d1-8a3c-2d041069e215',
+  'reading_passage',
+  'passage.exam.v03.v3-s8-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  '45df3009e2cb77e1aedf13f6644911d4b2b74f3b8f0d4891bfd1fcf16dd2d86e',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2e2510b7-a978-43c5-9608-e791b98533d7',
+  'reading_passage',
+  'passage.exam.v03.v3-s9-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3',
+  'c3cc87df891e351126d52ddb1a79ef22e3122151b47855fc86a106719db41f1a',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '731c56a3-fc69-4af3-9fb0-447f9785d641',
+  'reading_passage',
+  'passage.exam.v04.v4-s1-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  'a1f68777a64762fdcdb8094076875f4c160e0c3e96012cde6f93e8ad7181e5ab',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ae87ef67-9d1c-4ab6-b486-449e34da0e9f',
+  'reading_passage',
+  'passage.exam.v04.v4-s1-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '4fcdae758baf6a8005dd584c43b9f3b37a27a4ddba4809623c81c7dedc1730dd',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f8d6bc6a-62e1-422b-af28-d0e7d54c1c11',
+  'reading_passage',
+  'passage.exam.v04.v4-s2-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '0f4d5eb205d98929cd62b48d7afa70a24f627478dd8a1c8868a28bb63439a960',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '37cc7e88-7d68-468c-aa7d-732059cbac13',
+  'reading_passage',
+  'passage.exam.v04.v4-s2-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  'ef7d0550aba0b582751f12381a338a89a793e75c2e04f68c0b17d1ae60017ef7',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e0691df2-5bcd-4424-b952-67b318f1c935',
+  'reading_passage',
+  'passage.exam.v04.v4-s3-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  'b4cbe6ed52dd667e11d8d7fbd976863a6da1dba7a4248b6a380d66ed70e98dca',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cdf95388-a1e6-45bc-a4a6-02860e471aa5',
+  'reading_passage',
+  'passage.exam.v04.v4-s3-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  'd706a5b324b0612ded2b16494328c97c326bd4a78dd43d4aa2f66a8402376741',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4f8e064d-d81e-4ff4-8d33-cc18aa320d26',
+  'reading_passage',
+  'passage.exam.v04.v4-s3-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '262ae525f8a85f98a5ee4e7d6358462b4d71636f989e84e8c2e2aa4153bc6db8',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c6c736af-f42b-48a5-a8f1-f46e9abe2c4d',
+  'reading_passage',
+  'passage.exam.v04.v4-s4-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '00dff020f746fb258b6ca6043d046a61b7816ef15d802dfe8857e2573b954a3e',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '88c66fd5-d086-48b6-bf26-d12851b7ad21',
+  'reading_passage',
+  'passage.exam.v04.v4-s4-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '63c1a438d8b6728d2fbef2ed33bb3b7e4c69029c965394da76d4c171912899d7',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f72c14b0-f605-4723-b873-3b0e416b3225',
+  'reading_passage',
+  'passage.exam.v04.v4-s4-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  'f0e85ed82832198f0aa67bbbc07af30d4e6fd21edc0a818c85849a457f1490be',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd964e724-2927-4094-88b4-889e9908e79e',
+  'reading_passage',
+  'passage.exam.v04.v4-s5-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '70166b35cd5cf1fe708a08068aea317ff0ea3f6a08d38175920f550c0c13cbf6',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e21db75f-550c-40ea-a34f-f058e7312d21',
+  'reading_passage',
+  'passage.exam.v04.v4-s5-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  'ce68605f1f0b180c81188225e266c131f0ff6cd7803e60ca4961a8797c2b97e0',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '10bf133c-4c6c-4a9e-9c8f-5d36fbdaa47e',
+  'reading_passage',
+  'passage.exam.v04.v4-s5-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '1b4735550c93c215f7511cbd1ae06dc45a799df99c82fbd75618e6104e073b08',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1eebddb0-8774-44a0-ba3e-4e8f3bf6b4ca',
+  'reading_passage',
+  'passage.exam.v04.v4-s6-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '9169349b72410ca3c2cd407adb85a67b20f36c9a4bbae54939029401eac1f447',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '12a0bb02-79c7-452b-a948-8772f70991ed',
+  'reading_passage',
+  'passage.exam.v04.v4-s7-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  'b19d80098d20c0614afce7a956d87439cc3cb6e21afc241e2eaab4ed617f6859',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '452f5e3f-7ac0-4733-87ab-7b4a099444aa',
+  'reading_passage',
+  'passage.exam.v04.v4-s8-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '8a1a358b5dbfaaf318d027c8e9772ca73efc1cc20ca3d1d359052abb66f585d2',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '81978894-5437-46e0-8ba7-f863441afb4d',
+  'reading_passage',
+  'passage.exam.v04.v4-s9-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4',
+  '5f7e8e57a68ab430628d61978c6bf31f2e8a7b39f260b1dae36b22776b572a68',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2faa13da-1750-40b8-9b99-e5047dfe0998',
+  'reading_passage',
+  'passage.exam.v05.v5-s1-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '17b09415b27a6c8074fc59d4ce7c3f45a741761f3aa1b1bd520a6eb0c1ad178f',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f6f1537b-53ec-440e-b529-763fd10d8485',
+  'reading_passage',
+  'passage.exam.v05.v5-s1-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  'a220bda756a145126cbf169f70bc7d4d73589ef20727a447754912c8896ada3b',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ee89b16d-6f1d-40b1-a3da-c5b6b4ffd9ae',
+  'reading_passage',
+  'passage.exam.v05.v5-s2-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  'a378dd4ac96f91e3f0173ac70aa85cc5e792232255655d80a1b1cf16573b9cdd',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6d92d278-63ce-4e5a-9097-6e2ae9c70ef7',
+  'reading_passage',
+  'passage.exam.v05.v5-s2-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '7e0d291b09916fc8e049833e29dfbdc92634a5eb8852c868533151a9a3a76370',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '463d248d-1919-4259-9c4a-792165c8f2cc',
+  'reading_passage',
+  'passage.exam.v05.v5-s3-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  'd7b0b310804799b822b3a27fceba88c642f2739e19ff4f7c3d5feb3267a2e276',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'db3e1828-ac26-48d8-9f03-cf26908d735d',
+  'reading_passage',
+  'passage.exam.v05.v5-s3-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '184f03505bee0641d11a641baffd2801f23ed4965b4a3122240332678a0940d7',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ece606d5-c8ef-4ab8-a8ec-e1bb88e430a8',
+  'reading_passage',
+  'passage.exam.v05.v5-s3-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  'ca39f35c4a7050a8a5445e084efce040ea6e37b48690330020ab9acf93be52e8',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'da4fa779-e810-49f5-bbde-2f861c42c354',
+  'reading_passage',
+  'passage.exam.v05.v5-s4-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  'f1956daf8e6998a891fe2b2bd58907dbfff12be5c20f85f59483a6af2b0b7992',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '56088fe2-4794-4f2e-9a2a-7ad329c12b93',
+  'reading_passage',
+  'passage.exam.v05.v5-s4-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  'd8bcf2ece355f68013406f4e790bc5abbb3a445b92b06dd64fea61f8b2061063',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '813b665b-3c8d-4387-8ab8-c7d0424f7b4d',
+  'reading_passage',
+  'passage.exam.v05.v5-s4-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '018cfdd804814b0303d00cf6e6295dccb80725a7b8484310290969466c78ee6b',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fadf64de-30eb-4c5b-8037-4bdcb0f13b76',
+  'reading_passage',
+  'passage.exam.v05.v5-s5-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '37d0a81323ec641ac5347c4ee983ae1d2fc77808ce8a245f74dca5d763f38059',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'bb41e894-ba45-4fdb-9a2b-7468504baa7b',
+  'reading_passage',
+  'passage.exam.v05.v5-s5-i2',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '4d9788673a49e6473eaa4e2b4e1555b41d583f6bc5e7c11bc1ffd674205060a4',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8638169d-8055-4b46-87ce-93384895a7b8',
+  'reading_passage',
+  'passage.exam.v05.v5-s5-i3',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '0159966c509c3a8967f080ad102ceb328a02b06ee57b70bcd096b820e00569fd',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '578b0ff0-cd2d-4ca1-b99a-7593de2f8212',
+  'reading_passage',
+  'passage.exam.v05.v5-s6-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '6a81caaf504e28266c76899d768f7f16ab9fa715df661cf9aa210c77fd03b339',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fa23f927-039e-414e-9098-0f320f5b3c9a',
+  'reading_passage',
+  'passage.exam.v05.v5-s7-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '3844e0028427d1a075259ee2b1036f2449281296e8258270f681d9d3dc2fa23e',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd4c64722-43bb-48f6-8519-595571dd8f28',
+  'reading_passage',
+  'passage.exam.v05.v5-s8-i1',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '454e4d42687f61f26152657732505978a033757b9d0a48514304185d87d30d0c',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6af61115-05e0-4b82-8d78-6bbd9ec765d2',
+  'reading_passage',
+  'passage.exam.v05.v5-s9-shared',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5',
+  '7fbf22fa86776c0802f7424dfdedd981a48d2c885a097ae9c742968e9f77d033',
+  'high',
+  'draft',
+  'Draft exam-bank passage extracted from derived reading HTML.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f350270a-1b97-497b-aa54-2874c693927f',
+  'exercise',
+  'exercise.reading.exam.v01.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q1',
+  '4eb0dec6a0a0cc4d7265b2867deae4a9ede44aad65190f6f78d3c33890d91cd9',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cc9c07d2-ceec-49cd-bfa6-43e65993f864',
+  'exercise',
+  'exercise.reading.exam.v01.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q2',
+  '34b239844ea6e04e07f01ffac49081c6ebbea17cc34905d04a57ef87ec9f016d',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5b2f681c-15e5-4732-af31-d210c05a211c',
+  'exercise',
+  'exercise.reading.exam.v01.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q3',
+  '8c06f40eaf9ab201c93322d61eb10ceca4df07c959678466de87e6ab49051534',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9597af01-641d-455d-8b16-3e3f2044b0e3',
+  'exercise',
+  'exercise.reading.exam.v01.q04',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q4',
+  '18bf55daa6a1e6800d8112a0082694e0da062d0f158a3b4786125b412a7e23c3',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3dca1d4a-c84d-4b51-9f60-1253bcf3bbbc',
+  'exercise',
+  'exercise.reading.exam.v01.q05',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q5',
+  'f0d9220e76cafa5117049c3888d9a766da2b7216640144bed3e78403b87fc331',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a8edb135-e66c-40b5-a672-b211df602af1',
+  'exercise',
+  'exercise.reading.exam.v01.q06',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q6',
+  '1bc54ba3564bfa7ffb7d3cb7c4eedc9b39fe21c5a32552ffe41b73becd57a8a1',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '03a7ad3d-539e-43ca-98e3-2ba38a00ae1c',
+  'exercise',
+  'exercise.reading.exam.v01.q07',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q7',
+  '762e53a332b538845b990142e6c967d1600a28d86d68544bb25f59cf34a623e6',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ad9dd6c9-5a7a-497c-b2c0-99667de4a3f2',
+  'exercise',
+  'exercise.reading.exam.v01.q08',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q8',
+  'dd27ef92e7e3213bc1480fe0e9dff028631fb6dc47fa9f80224a2f40fb931fac',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a946cce5-48f5-417a-a039-8d103cd8d37f',
+  'exercise',
+  'exercise.reading.exam.v01.q09',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q9',
+  '906b9671bf89323fa12af99336e9536efe7b7a24e85bd2c829941f66e15060c4',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f3a5cc2e-9380-4434-822c-151752d3e7f1',
+  'exercise',
+  'exercise.reading.exam.v01.q10',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q10',
+  'c0d1c0d6752dc57dd5866107740e5f54a960b0dbb417a7ad9e4216fbf86a5df6',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '67cfb423-f84d-4d18-8787-9b41e0e9be66',
+  'exercise',
+  'exercise.reading.exam.v01.q11',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q11',
+  'bf7618b615d282b6101200adee6881e89bc92b21250f163691d2c78b213ec9be',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3893a5a9-686e-48d0-a55f-d835bea1891e',
+  'exercise',
+  'exercise.reading.exam.v01.q12',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q12',
+  'b9c5afecc6442540a8f3ef48e491f3b6ff0d87c9500824d7ee81b90554597395',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a047d0f9-7e9f-4732-8348-d05af0802af2',
+  'exercise',
+  'exercise.reading.exam.v01.q13',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q13',
+  '602082a322cf6b8b58b61e19e3c8a3831c5b9411ab9cc972f53236791dfef12e',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ef5dec8e-66ad-4439-b577-5f3347438106',
+  'exercise',
+  'exercise.reading.exam.v01.q14',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q14',
+  'f9e23243346ee26d0da2afccfa76ed1426fb3b1d765665492311e3505b893763',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '39929d7b-364e-49ae-a458-bc9283727e84',
+  'exercise',
+  'exercise.reading.exam.v01.q15',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q15',
+  'a88b62fcbffc2ce4dd3682d588928b262a7d7428c006caa08139753c1d9a4785',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e2eb9851-31e6-462c-bdb6-57504f67cbf6',
+  'exercise',
+  'exercise.reading.exam.v01.q16',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q16',
+  '343c7c5046a3b93243cc3c72eb03776670b4b409d0daac47c1db23ad21676361',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9f9d9938-2b46-46f1-bd09-5b57a2c74f95',
+  'exercise',
+  'exercise.reading.exam.v01.q17',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q17',
+  '282adc1c751a20f31d2e643b0d8d3df07ae69164d4cce6957604a94ae22cf6d4',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6a330ca3-a62b-4d23-9cfa-71a7852fd997',
+  'exercise',
+  'exercise.reading.exam.v01.q18',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q18',
+  'd6d57d2d1ef5d60924e87ebf3c9cefaecb33d0ca8238592fe8fea1ebe0afce61',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '67dd9d55-67c2-4847-ac23-1c534c1fcca1',
+  'exercise',
+  'exercise.reading.exam.v01.q19',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q19',
+  'cca3bb4bb108afc4a2a9d2a82de03d665709140049905339126956b701fd6407',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '23c7efee-1faa-4fdc-9caf-6a40fedf7bce',
+  'exercise',
+  'exercise.reading.exam.v01.q20',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v1.q20',
+  'a69d58f5fa2311aeb5364e9ffed6eed11a430e0da1b5dc030c1339271151abb9',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '59683c87-138a-464f-830c-24936de841d6',
+  'exercise',
+  'exercise.reading.exam.v02.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q1',
+  'ac3a4fa3b90f594b793ed331e92cc6e315f08dad2c6f7208c0b2c916adb09f7a',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a83b2b53-4ade-4e28-bfa7-19fc765b8c48',
+  'exercise',
+  'exercise.reading.exam.v02.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q2',
+  '61b0ed6bdae58e6d2e27e749fc8b995ad7d7de45652caa784217bee9c956bcca',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a365d93a-c6aa-4ff7-9f71-2530891f35dd',
+  'exercise',
+  'exercise.reading.exam.v02.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q3',
+  '23b0c5577b63aaaed1f91e6902081fd9b21dd84f00aa51c7d36ca7e017134ac3',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2285f70b-5abb-459b-8f7c-9ba2948fef98',
+  'exercise',
+  'exercise.reading.exam.v02.q04',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q4',
+  '81ae37c600d55863e893b2932f51678501e94d8d2b62847e903285d2cb34e26a',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '94a70f72-abe4-4a64-be26-f9a41a4905a2',
+  'exercise',
+  'exercise.reading.exam.v02.q05',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q5',
+  'a7d98263e12f4ec2d002041fe43661c36659c363e70fd7126f33e454d7943536',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a8c6bac8-0c7d-445a-ab94-230a6078e22e',
+  'exercise',
+  'exercise.reading.exam.v02.q06',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q6',
+  '93650662dd6535432f38ba658b5481300aa2b17a55a2189ef372ffdfa6bb2964',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4dabae54-c3b8-450a-940a-f8b3790aeb7f',
+  'exercise',
+  'exercise.reading.exam.v02.q07',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q7',
+  '4c5c3b2e6e9daefe49d77b2fff033f778bf9bc1806aeef821fabd7b7708db317',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '58f976f5-c811-4291-8f48-57d48521ebde',
+  'exercise',
+  'exercise.reading.exam.v02.q08',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q8',
+  '77c5465695e935c78a8c006caa94ff736ef5088aedc86a9807fa4e4d65562935',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '688c4315-89bc-4d20-9e64-7367e3976edd',
+  'exercise',
+  'exercise.reading.exam.v02.q09',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q9',
+  'a5926c477644bcab3916103bcc537be1c6d79cad3bcf407733d6e69abf83764e',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2b277b65-d3ac-4fcc-a0a7-7f18ff660d73',
+  'exercise',
+  'exercise.reading.exam.v02.q10',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q10',
+  'f8696649386eeae0b27484db69c1137d91194514654c31765bd8b8e782d56285',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd9c93964-66ef-47e0-afd1-f05619ea864b',
+  'exercise',
+  'exercise.reading.exam.v02.q11',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q11',
+  'c0acbf45c2ae0ebb8efcb4d5806222ae83989c64227f62c3247ff19c0531b7fd',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f88bf363-2df0-4a74-b253-72b0f48d95f3',
+  'exercise',
+  'exercise.reading.exam.v02.q12',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q12',
+  'd9c88c969197dceb94d10b3c26a177097f8860c9777a58595c8e8e27cc775873',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7c1aacb8-c6b3-4596-8b59-3f2fed86b6bc',
+  'exercise',
+  'exercise.reading.exam.v02.q13',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q13',
+  'fe723fd1c80b292590603bd5bde0d75d4102b593de936237916e9b22ef1eb129',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'dd804ce4-2adb-4c04-9100-44c9c06bc5fc',
+  'exercise',
+  'exercise.reading.exam.v02.q14',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q14',
+  'bc0114e189d34f1d33282fc99c763d96d53c71ec005c95229cc90480c512aada',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a5bba463-0249-43a9-85ad-20a7e6e3482e',
+  'exercise',
+  'exercise.reading.exam.v02.q15',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q15',
+  '3e64ef9a38dbce3d748f84b9082d82732051ca35b9116960f3d428a57027ba00',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4215d18e-006a-440c-97e5-7ea200ba3f94',
+  'exercise',
+  'exercise.reading.exam.v02.q16',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q16',
+  '5fb0658f6e4bb826bac6f26ce57af2d3dd257cc2adda84a45d9550385c4691a0',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8f336559-46fa-4ed7-8c6f-66c2a7f66384',
+  'exercise',
+  'exercise.reading.exam.v02.q17',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q17',
+  '2278d7e4082e6b44055b0706fbcd0f3ab76204c4408db4c7daf3e21ae375c72c',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '59392afb-76cf-423d-89ea-6c91cdf32254',
+  'exercise',
+  'exercise.reading.exam.v02.q18',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q18',
+  '8c9fb9d81a0e1ca570aabeca3e9a952ec2d74161c84fb995bd3e357d81969e56',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '010402df-ea83-4a2d-a946-ed2c0ce9e940',
+  'exercise',
+  'exercise.reading.exam.v02.q19',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q19',
+  '68fbeca6f6636f8589b1ab5cc25219c55c85ce79bf9026e6d707dfd5b40d5157',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8e749c24-2004-4155-8bc1-52b1ff9ccd99',
+  'exercise',
+  'exercise.reading.exam.v02.q20',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v2.q20',
+  '561c2591d3cbb16eb85ab15d26c8da6f2ed75a9948f7171052aaf75b92375f53',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '842105f3-aa0c-4d5c-ab1c-ce42cd693166',
+  'exercise',
+  'exercise.reading.exam.v03.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q1',
+  '004ab8ec5c65b23e0d1731532b0c84116f5078f13c1087781bb866d6c7f58ce0',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8c2e84d8-468f-438a-ac9e-92a828b5dfa9',
+  'exercise',
+  'exercise.reading.exam.v03.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q2',
+  '6015425359917c654990a4ca1a9bfb0faeaab94f28b06bba81223a243e85d172',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2891132a-432b-4ecc-ba72-dbfc005756f9',
+  'exercise',
+  'exercise.reading.exam.v03.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q3',
+  'a1262d27a13f09c6c71ba3c9de6241e3eb08f93b7c4ab34f105cb64eaf8b0553',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8ea0c709-959a-401e-b008-8add0ae5c040',
+  'exercise',
+  'exercise.reading.exam.v03.q04',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q4',
+  'fe254e7233010698736667cee5a997977e454b01cf602804c27b8cd8620f0b57',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '976dd1f1-79aa-43e0-9998-a5841b8f62e9',
+  'exercise',
+  'exercise.reading.exam.v03.q05',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q5',
+  'a51951b327b248162667ea7374e94d970b08efd46942ae201146454803df77db',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b5ba55c3-449f-4424-bd68-2126ac783cdc',
+  'exercise',
+  'exercise.reading.exam.v03.q06',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q6',
+  'a4b4ac3f954dcf51006982ce96235de2059da8a4af9d893c77bc6efa5ff9e1f9',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7a15834b-d1bb-46d6-b80c-0fa9d7bfd163',
+  'exercise',
+  'exercise.reading.exam.v03.q07',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q7',
+  '305c6fdbe026a5e60136002188e1c4d459c5655fead2b6a059552d2f2c60e598',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '90406a36-d235-481f-aef7-c538cee15329',
+  'exercise',
+  'exercise.reading.exam.v03.q08',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q8',
+  '3034f268200bc20c2f471c7197e1ff7963cf045653548940a9e701ae85372f6c',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ddcd9d31-215b-454e-8edf-ca3c750f5aae',
+  'exercise',
+  'exercise.reading.exam.v03.q09',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q9',
+  '5f87d3a25e68536940811c24eb55ecc2d850e034320c4346f6c05b1e14c339d8',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '27240fa3-7f4a-46d8-ac9e-3a42efab3782',
+  'exercise',
+  'exercise.reading.exam.v03.q10',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q10',
+  'c8cc19b56b142b4927d4de52ae86fe6f8cb139efa228e60b3e0cd557d605097b',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e7f378ce-8f9f-4b9b-8b83-7d0509dc93ad',
+  'exercise',
+  'exercise.reading.exam.v03.q11',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q11',
+  '0da1d3d934a29ff916c7feb72fc71bea4ce59e42bbad7bc91e1abacd10ea759b',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'bccfd29c-8b3c-4128-87bb-0609adce2120',
+  'exercise',
+  'exercise.reading.exam.v03.q12',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q12',
+  'fc1970587a82686568770c11d73810ba1ffa95037b0a8eceebc99ee493b06a40',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f2c2782f-3fbd-4320-96d8-9055c3615c8a',
+  'exercise',
+  'exercise.reading.exam.v03.q13',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q13',
+  '264b9ecb2394a29631aae3425a45f15b239b2ec4eee06f5e9ed94c52cbf41b8c',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a225aeb2-cc25-4270-a1df-077dd1db6bbc',
+  'exercise',
+  'exercise.reading.exam.v03.q14',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q14',
+  '2103d934d77ce064ac675445fcff46ed08af0cc8284f7ba4685ccf6fce654111',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'dba0ec13-13e4-47c7-8bbe-6631691831ca',
+  'exercise',
+  'exercise.reading.exam.v03.q15',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q15',
+  '6dc352a8e54fb8553b60e3b711f09a513b7ebc9102453a5537b31fa6f3becc61',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5f029c9e-53e6-4b4a-b9ed-9150d4f4e836',
+  'exercise',
+  'exercise.reading.exam.v03.q16',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q16',
+  'ae3330b43d0f50d97c7d79146c131110edc60cddf4c2b1f69bb393961e79a434',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cd599b0a-1b56-4f28-b6cf-40ce6de86929',
+  'exercise',
+  'exercise.reading.exam.v03.q17',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q17',
+  '1c0ff7dca9f856dbb1eacc079ea3b051fdb222079d6380e73df701070fe30e70',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b5ddc1a6-26a3-420f-ad63-9a66322e26f3',
+  'exercise',
+  'exercise.reading.exam.v03.q18',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q18',
+  '2f2f679527c6b7ed811e31399aaf358dda8ce6ec811e85a7753d25a65701331a',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '641882cc-dab1-478c-b92b-dae0ff9d3f9a',
+  'exercise',
+  'exercise.reading.exam.v03.q19',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q19',
+  'fcb1de74e2fa6044c8bc467ab4a68bdca5038856b3bd9478551a078aa178b0be',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8f6c8f4e-5de5-4253-b806-ace92c2ac6bd',
+  'exercise',
+  'exercise.reading.exam.v03.q20',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v3.q20',
+  '68a90b6dc46c9e1c3f67050609bbb5e28143ecad6b222c80ea9119dea8887a9b',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9617b575-e5ca-4b4c-b021-cd69cd5b4766',
+  'exercise',
+  'exercise.reading.exam.v04.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q1',
+  '31a86244e5054ca66ea68d75fcf0a969a84e667d329d9eb213f29edd7ba7b387',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a1722209-f5a0-4a1a-ae72-f45d7e506116',
+  'exercise',
+  'exercise.reading.exam.v04.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q2',
+  '8e97594945e4e7b103d3b793e367a8dbbb6cc0908d34ea72081e151b0af8f64d',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1b90d50f-fe50-47db-b947-85c376544a28',
+  'exercise',
+  'exercise.reading.exam.v04.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q3',
+  '1911c6b90ef6f75e74162e2e74a4c60694afbb6c08df643a1120d54eb7594f00',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '48910f25-3df6-47af-8aec-85e2f0a03880',
+  'exercise',
+  'exercise.reading.exam.v04.q04',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q4',
+  'f06fa436843b4c17786110b7d4cbb1489f1dcdd0eb049e3cccdf6fb4da445967',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '68d82f56-a6ba-4637-97c5-3132c4313b56',
+  'exercise',
+  'exercise.reading.exam.v04.q05',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q5',
+  '0d493243274d3276942c780f43a9e6306908a44ef9f58ed09c0ecefec42242e4',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8b750845-a3a3-424d-accb-4358f8974772',
+  'exercise',
+  'exercise.reading.exam.v04.q06',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q6',
+  '7048bcb54ac92f574429c98af7510fd7e1f9aeef04eaa7927db1edd03c512c62',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2c6afde5-4d29-409f-9ec2-f831af58dd7b',
+  'exercise',
+  'exercise.reading.exam.v04.q07',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q7',
+  '126932267c7414e418509f7b146ddc761802df765de2cb29c1bb8dc344047f1a',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a02d3b71-ad07-434f-a3ad-d0a0e0b1df65',
+  'exercise',
+  'exercise.reading.exam.v04.q08',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q8',
+  '981e49b890113fe284f38ded2d30bb9a8ed19339b5c18036b88921bb671975ff',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cfb35673-2a9c-493e-b6b6-415e7e9888e8',
+  'exercise',
+  'exercise.reading.exam.v04.q09',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q9',
+  '82920611382bfdc28631a8a5062c9ccc373ffc07e7d0e760f4bdfc341b730d33',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '972021f1-09d9-428a-8d37-b2af1c2ca659',
+  'exercise',
+  'exercise.reading.exam.v04.q10',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q10',
+  '1959ae85f30bb3b9e381e35dcddaca7f7a814dccb69ba3c4c7fd7a9dc137669a',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd97c1cd3-3321-48de-9e8f-d6756919dbc1',
+  'exercise',
+  'exercise.reading.exam.v04.q11',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q11',
+  '1494bcc970d5af41760fc85d0faedc09f72256431876f6e494e9c664d31fadd5',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c17cb9f4-51a3-48aa-8564-7699af3a0417',
+  'exercise',
+  'exercise.reading.exam.v04.q12',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q12',
+  '0f389029dbdc9bc202e9abcc6bd07b57a3b03ba03c2602880713d4bef8ebf4f4',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'de26ad87-5056-4746-a0f7-52f74775d80d',
+  'exercise',
+  'exercise.reading.exam.v04.q13',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q13',
+  '120926e04e2e7ad92ba5882b5560b293751db91acae939b9b7b2014db2fa8f49',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '994061ff-9684-4185-baba-6262c39e50a4',
+  'exercise',
+  'exercise.reading.exam.v04.q14',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q14',
+  '7aba2eadf3085ef48b9dde5a0786eb9bcdef26783710d8dde0e1980fb3b7097b',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd061b49f-a970-495b-992d-0ac5749c6a97',
+  'exercise',
+  'exercise.reading.exam.v04.q15',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q15',
+  'b34358e709e8aac80cde28e7cf64190225ea921ae93e9f089d4570b9fad13a58',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4c276bd4-01bc-49ed-b285-4bf9303d6044',
+  'exercise',
+  'exercise.reading.exam.v04.q16',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q16',
+  '27f0b140919011f4b21e65828d88808f60adcd51a6ebd0ea7ac92c7f488f21cd',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9fef70cc-450a-4983-9f6c-3b3f26928bd3',
+  'exercise',
+  'exercise.reading.exam.v04.q17',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q17',
+  '158d34179578232160869182b68339d62a6508799cd6221cf6d338f13554fc64',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '51e224ca-3ca8-4e44-ac2a-5a8a06005e7a',
+  'exercise',
+  'exercise.reading.exam.v04.q18',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q18',
+  '579118fcd236cdfaad48a1658af27b1b7c0aa58053757c7641ea1616c9c8399b',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd4f89650-b529-47d2-a5d4-b4e90e6c123d',
+  'exercise',
+  'exercise.reading.exam.v04.q19',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q19',
+  'd14a8103eba94c32fc45a2a3ee1ecd9796ca88c5442c37383254f143274629ad',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c25f42b9-1038-453d-9ce4-9a35962c64e9',
+  'exercise',
+  'exercise.reading.exam.v04.q20',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v4.q20',
+  '2f9497afc3071f3f9501f80fff36838b82f91736707e5928dd51d80945fa2b70',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4430a718-0722-4105-8c4e-b2c5e7994bfd',
+  'exercise',
+  'exercise.reading.exam.v05.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q1',
+  '13631c4297de8e2d182d8ce22ecc6ea91eb203fb11d687a9dc33d15ac2f0d77a',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c84c57bb-1d1a-42d2-ade3-f909aa9af093',
+  'exercise',
+  'exercise.reading.exam.v05.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q2',
+  '45f7c8d4cd91511d17afb8410ea77e44235cbb11320b9a989c947f8379f97be3',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e9bb085f-0569-4aca-839f-5364b48eb4fd',
+  'exercise',
+  'exercise.reading.exam.v05.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q3',
+  'bbd7cfa1bd6c659ebb864639fe5b4f1d2a793c4021fd5d2c97f72263790c79ed',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5cfa3fd1-e9b7-4623-a93b-da94882426f3',
+  'exercise',
+  'exercise.reading.exam.v05.q04',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q4',
+  'c580868ab8ba562e89f4019f71f46cbf634cc2678f2b75441fc56ef2315e1afa',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e95272ac-262e-4c5f-bb05-5c58f2cb64b2',
+  'exercise',
+  'exercise.reading.exam.v05.q05',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q5',
+  '82ba5e22de973627ff19111a6da2b0cd3114783826b595dc6cffe25f14bde8f7',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cd1b324c-93d8-4491-90ef-811519ba6711',
+  'exercise',
+  'exercise.reading.exam.v05.q06',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q6',
+  '457a4243c71540951fd3036837f8aaec23c179582115b02ee5fef2f802f405ee',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e8ef7fa9-b41b-4a73-bf6c-2f82a3e7ee4e',
+  'exercise',
+  'exercise.reading.exam.v05.q07',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q7',
+  'fb84dc3dae5801481b66de001a4631d7d76822b1bd01dc0ee97eaff62de20eff',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6452cbbd-3e1a-4725-b71b-21a030cad855',
+  'exercise',
+  'exercise.reading.exam.v05.q08',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q8',
+  'b5902841dec699d5cfd18540ec56e532e27471c493e17f8b61c07f6f3fe42108',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '32d5dbb6-e78a-484a-9f76-8748b08df5c6',
+  'exercise',
+  'exercise.reading.exam.v05.q09',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q9',
+  '2736bf397aaa4211a2ab07c546a6ac06e20fe5bab514e856f960f5d859221e72',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '66e20ea5-d43a-4e39-bd21-428a696dbbb5',
+  'exercise',
+  'exercise.reading.exam.v05.q10',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q10',
+  '7e6ec3d0d8370684687667726c609c6eca96e6e3f9e20619801dc49049db67a9',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3cfd88c1-288e-48bb-8e9e-c5170534ea54',
+  'exercise',
+  'exercise.reading.exam.v05.q11',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q11',
+  '39c888a08c6b4f98b04e6983f60da1f511e241ec762396220f6b1f7b3f4913d8',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '05a824b3-6e99-42da-9ed4-bb18be9404ca',
+  'exercise',
+  'exercise.reading.exam.v05.q12',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q12',
+  'd6106eb6e7d0c57d6c65039a1e5e33787c6220ec9e291a75c9d2aa0f5327e7e5',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '81cb567c-ea76-4a81-88b4-2fb00cb1bb75',
+  'exercise',
+  'exercise.reading.exam.v05.q13',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q13',
+  '38eb79ba6f2e6817ae42699b1c2e9966db53692af71abcd77e1181220838fe31',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '386213f5-9f56-4ffe-b6da-b4a1f772eb0a',
+  'exercise',
+  'exercise.reading.exam.v05.q14',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q14',
+  '5fd78dc2d9a67d1bdb5dc8e38c2fb4f086955aebc633fb74b67564c2c031d290',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c28cc500-7bf3-42a3-906f-6acc62c795ca',
+  'exercise',
+  'exercise.reading.exam.v05.q15',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q15',
+  '61d3ee16c0ef59b83c436269c0cbc404cd287bfaa56e2030d43737d35ec94923',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '168c24ef-ab6b-4256-8edc-959794c00b25',
+  'exercise',
+  'exercise.reading.exam.v05.q16',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q16',
+  '316d4f1c444359922266bddf776fa8b9af330703f40c94487ec7e82f28588000',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e0484c3d-c100-4e66-86d7-a49a5824ef14',
+  'exercise',
+  'exercise.reading.exam.v05.q17',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q17',
+  '16bd258effc5f7b3d3bfd3383e9a17835d569b79d5bbfe76eead692eb4241fbe',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '53f8bd69-f9b6-41cd-8442-37faa97eb4d1',
+  'exercise',
+  'exercise.reading.exam.v05.q18',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q18',
+  '5182c1c32c5cd9ba4a40ef3bb3edf1036b6644f6e5cf2d623ee4fae16da3695e',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7e517385-756b-4253-9cff-431a761c37ee',
+  'exercise',
+  'exercise.reading.exam.v05.q19',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q19',
+  'c32e8c6594f21ad0354fbcda0b8500ac0c496b122e17b2bf37eee4b4337c79ad',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9a191e16-3f76-420b-aa84-48a4214f1ba2',
+  'exercise',
+  'exercise.reading.exam.v05.q20',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'section:derived.reading-html.v5.q20',
+  'bfb749f79c684529b57a0c0c0fc053fb57a90743607f15f1c4a6f06f1ba305d6',
+  'high',
+  'draft',
+  'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '026dd856-0988-4c0c-85c2-4fa1eb179b70',
+  'exercise',
+  'exercise.reading.bank.u01.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L71',
+  '86a7a6a30edab26d54d398fad7469f061a62eac4ca2e00ba499bc137dfb96819',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8130799e-2541-424b-8320-7a3d1e0f548a',
+  'exercise',
+  'exercise.reading.bank.u01.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L71',
+  'cdaab99502ba377c094c1c3304b5bef28b59a6d930ffa80c4601ee6faf25cb32',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cae77a0d-8b74-4799-92c6-6b315b230687',
+  'exercise',
+  'exercise.reading.bank.u01.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L71',
+  'f75613d5d71655e6a950f1daed76d6a959799dabcbf4578db03250648b371a81',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1d5a0737-d0ac-4dc9-8d93-ef7ea673036f',
+  'exercise',
+  'exercise.reading.bank.u02.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L154',
+  'ca0fcb5ecdc8811c081a15bd00177b7ebe72991f8b6560bd8fde6248f2258ba9',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c9058e10-4d4e-472e-8e62-e1aad5958abc',
+  'exercise',
+  'exercise.reading.bank.u02.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L154',
+  'c8a01845bd695812ec22a2819ba4fb262622d35d77f661c447b1b4f18952484f',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a4f1d2b3-2037-4b62-ac99-b8019064c120',
+  'exercise',
+  'exercise.reading.bank.u02.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L154',
+  '124405aa4ae960240d407b5853badebf4a829e7a678887e68e5d9d4d3d1cabcb',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd17883d9-59d9-47d8-9d52-2f32cc0ad033',
+  'exercise',
+  'exercise.reading.bank.u03.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L229',
+  'e8f55d7d66873ed005269a37af4dc28ffaf55c30cbfece8b070dd22b0b27f65c',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1cb01c11-4644-47ef-94ab-eee2598efbd7',
+  'exercise',
+  'exercise.reading.bank.u03.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L229',
+  '90817fbfe3c4b9e14b20a9c5fdc66b4e1ba912d10277c2bbd821c70a3f6df924',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7cc81f03-1bce-4eff-8ded-7a214d15136a',
+  'exercise',
+  'exercise.reading.bank.u03.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L229',
+  '6ffacf3a9b7ce8f5da02c61b01db24c55ec9cbb59c1ae883af314ff729cce1f3',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2184b2bb-c84b-4b79-91d4-4f0221e07dc5',
+  'exercise',
+  'exercise.reading.bank.u04.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L310',
+  '774863d47292ef45f6993e431ca442b3a08a3dd155e613b6194ec6ec4aa77ecb',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6cb958e9-acae-4cd1-bf25-239a88a3e0c4',
+  'exercise',
+  'exercise.reading.bank.u04.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L310',
+  '26f6895eaa0b36493d706e99e48c02923b37e68bccff8d9f68a0f41e2f4b123a',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd280edcc-f1b4-4617-8d7e-a00d5d94cd42',
+  'exercise',
+  'exercise.reading.bank.u04.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L310',
+  'cb183861c481c0a7c56ecd85e14d1ecfb0b5af4602be110925ee1f1393779efa',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '26014c94-237f-4dca-a347-6ddfb1409024',
+  'exercise',
+  'exercise.reading.bank.u05.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L382',
+  '6081367be5a880203048e07528f105ed4a62f707a9395e132df0ab4b30c55bb9',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '48a2e572-1ee9-4f21-b405-e20decfa8d12',
+  'exercise',
+  'exercise.reading.bank.u05.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L382',
+  '2cb70552542d2f7a3366436369d4e07af5d8e389abc873e27417d837504a487d',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '12d6a8fc-756b-469a-ba4a-bd6c7c51118d',
+  'exercise',
+  'exercise.reading.bank.u05.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L382',
+  '0cec6475d0194bc7170674c215e5ccb43929ed9651b20f8fc650dafc6d8c4116',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '106efc59-64c0-42c6-8f1c-9b7e4cc8fe9e',
+  'exercise',
+  'exercise.reading.bank.u06.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L440',
+  'd138c448f1d28ef001c8f04a44097a962cb94def059b58997524a547c9f47c95',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '92380864-2d3c-413b-ab71-c789b72129c6',
+  'exercise',
+  'exercise.reading.bank.u06.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L440',
+  '39df8153f1fbf79054efaaacdea05c133f4febe139d3ab24eab5768f56ee2e48',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '411408aa-37f1-4e69-b456-1a0f564e01cc',
+  'exercise',
+  'exercise.reading.bank.u06.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L440',
+  '28740c6ee67efe733e9f93febffcb009ce942c5d59cb3602bd9f7520c2ee2a14',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b2629f92-0376-4e7a-bc0b-80bffb43c832',
+  'exercise',
+  'exercise.reading.bank.u07.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L508',
+  '5894347dfd36ebe900ab77a3b97768dd1c5ce3e4525792d2ed1945ba28093b44',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f867b96d-c0d1-4f1c-9b77-8b599d0e9a16',
+  'exercise',
+  'exercise.reading.bank.u07.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L508',
+  'f468a7189fb4cc0d660d032df61c382dc2d5ea06b06ecc6c270db2607c6c4bc4',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5a691324-2a32-4ce3-bfdb-5f4d7d736e56',
+  'exercise',
+  'exercise.reading.bank.u07.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L508',
+  'ecd6786277ca571fe3740ffe3625d173020f3501c08d15c7adca4ae3c7ab301f',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4665c417-46d5-43c0-a186-36c49582cac7',
+  'exercise',
+  'exercise.reading.bank.u08.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L583',
+  'cb9fe1b28f564bbc6471f6b76eee19266a65abda1f3308eaa4722ba1493d831c',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b155bebe-7de2-4e88-905e-64734d2c3461',
+  'exercise',
+  'exercise.reading.bank.u08.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L583',
+  'ca47125934cb8b252c3ab94267cd0b00028c790977442bbabf42cf9cf2f45f6e',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '08bc4d5b-9b25-43d5-98c3-5bcd6e31f550',
+  'exercise',
+  'exercise.reading.bank.u08.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L583',
+  '376f6d4042912391a9e8f562d15426ecc1715b9ed61f25550f1bf81956bbf22c',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f9e84996-c697-49af-a846-55d7453be203',
+  'exercise',
+  'exercise.reading.bank.u09.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L694',
+  '323c889b90ab5de8ad057781f99d53796f364eb7f811ea03d5f0c073af1e6771',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '99f1a87b-160e-4afb-9099-b770dc39ee02',
+  'exercise',
+  'exercise.reading.bank.u09.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L694',
+  'f987bab6216e7b3e4803590747f76f5304879af4da4250d8fd88fab8369529c9',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '703ef394-8030-4881-a27e-9f37052ba7f8',
+  'exercise',
+  'exercise.reading.bank.u09.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L694',
+  '42fc180fbe0bccd743df0d7c940765f0bd99788692c07ab6823eca2127383045',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9a748a5f-cd4a-48fe-8264-7610e4637b6b',
+  'exercise',
+  'exercise.reading.bank.u10.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L772',
+  '311ffd0245c535c1e2420ba4de67e2cbefa0311d6f8cd845671f6b949c8b5b31',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '29a6062f-4631-485c-a299-1e297bc88d79',
+  'exercise',
+  'exercise.reading.bank.u10.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L772',
+  '824dfb255f63319365ddf9cf7a40dd17bc7d915beb8749a7bb0903b3c1603a37',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7ea97c08-c10b-41a7-976c-189ad76e2b72',
+  'exercise',
+  'exercise.reading.bank.u10.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L772',
+  '5d6a5ce3de657dd9aba0e8b3fd721affaeae1ee174ec4588c03e5a79d8e4a1b4',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '90a44b7c-7daf-4e0f-bfef-dcb46a0a4a02',
+  'exercise',
+  'exercise.reading.bank.u11.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L832',
+  'de629b56ac775893ba97211db1b78f8904f3f8c3ffe2c0945a771e077052d20f',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '26c18e51-5eac-471e-9505-2a9e0d982e67',
+  'exercise',
+  'exercise.reading.bank.u11.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L832',
+  '2b5a7dea2db4939dc839933437fbaa0cfeda2e15a4204ead2f9befcbd8b60260',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7b77d016-9a98-47a9-8f95-cd8247f04bfc',
+  'exercise',
+  'exercise.reading.bank.u11.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L832',
+  '104f39201101703ca8470c59bd6ebe561f8a0f2c00275f8452bfe32d1b40ff23',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '13afb537-3ee0-401f-b405-cd60e1b6c5b7',
+  'exercise',
+  'exercise.reading.bank.u12.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L945',
+  '382c68ed2ed0d271b336c91de3c93e5c4fe9086282913fe4dd23663330f21134',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c18c0171-8180-4a59-9a53-4af201e7c0d7',
+  'exercise',
+  'exercise.reading.bank.u12.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L945',
+  'f4970d43ccd9a550ed20a31935ca343260741cd8280ccbc0f2d9e72e592c0910',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'da920f72-8a54-4072-ba05-b86bb74111c8',
+  'exercise',
+  'exercise.reading.bank.u12.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L945',
+  '677120e4f345c992b95cfa98b616feee8ca5848ad343f3041705813db2b49de7',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'bbe32e89-401c-410b-8825-bf18616776ff',
+  'exercise',
+  'exercise.reading.bank.u13.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1071',
+  '85ed42f781362187c80d94c9b91f3d6a9b1eaeb7685e30b6f1f525ba560dd6a1',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2cbd5999-c22d-4810-bbbb-83173f4cc321',
+  'exercise',
+  'exercise.reading.bank.u13.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1071',
+  '248548a905db1afd8e162218859df025e1822b69fe2c113fd282046108eb8984',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'abbfc466-0b65-4786-b3ba-e7241da465b4',
+  'exercise',
+  'exercise.reading.bank.u13.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1071',
+  '7d489637819aab1f31acd36f01c912727c346fd9d7419ad2f5bfca0dfce2dda9',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e332b617-a1f9-4e37-b1da-80d4d2d29a3c',
+  'exercise',
+  'exercise.reading.bank.u14.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1166',
+  '9cc8a05c970d80a63e1ab426dcc4cdc7a2d6825e2bbcf53faa061c79aa69ad82',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '81676854-7839-4667-adda-69864a2a9c85',
+  'exercise',
+  'exercise.reading.bank.u14.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1166',
+  '333faa81422dffb925953b0a013fb53744b0d344dd79d35b60ddeb8f69c86e91',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a9043b66-f4e1-462e-b81b-e4f00511693c',
+  'exercise',
+  'exercise.reading.bank.u14.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1166',
+  '62fe5dccd4303aa3a690a0ce54e59fab3c0fbf05b7ffb03fc85d193084dcab29',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '056447c6-c4b9-4b1a-8b8d-4aa07c6b90e4',
+  'exercise',
+  'exercise.reading.bank.u15.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1271',
+  '4438078db633ca55d49916e8b39638f3addfd4ae0ae7ab31562cabc7a8900606',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd27bd40d-c1db-40a9-8e68-195e1979899c',
+  'exercise',
+  'exercise.reading.bank.u15.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1271',
+  '003b02c2e23d323bb6da6c5c98b3d71a0b8477db3f74ff10bf5b8baac73e946c',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '479e767b-a475-412c-894c-db8f382afc4d',
+  'exercise',
+  'exercise.reading.bank.u15.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1271',
+  '18bf4eaf331621102166f59d25b9b0392254247563bfd3dce2ae89dc369a5c92',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8613e7bf-2a42-4330-8ca7-256a4a831e40',
+  'exercise',
+  'exercise.reading.bank.u16.q01',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1366',
+  '75364fccbccc602330e0e985fc57438879b01cd583ea59ae8212d8106143110d',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'dc92e782-d4ac-457c-b425-5e93becb9181',
+  'exercise',
+  'exercise.reading.bank.u16.q02',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1366',
+  '9415526fd216ea38542206e4abc7178e03c5b5953d8c0295be17d5d94baa9728',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c57114ac-24fe-4659-9083-845791c5e409',
+  'exercise',
+  'exercise.reading.bank.u16.q03',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-texts'),
+  'line-range:L1366',
+  '1b27ceeef5a32cc818f4614d1e76ff2556d793dd784f2b3607859a563e3da9dc',
+  'high',
+  'draft',
+  'manual-derived draft reading bank question; explanation cites a passage fragment.'
 );
 
 commit;

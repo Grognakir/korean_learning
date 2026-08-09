@@ -40,6 +40,35 @@ export function resolveContentSource(
   return "local";
 }
 
+function supabaseHost(rawUrl: string | undefined): string {
+  if (!rawUrl?.trim()) {
+    return "no url";
+  }
+
+  try {
+    return new URL(rawUrl).host;
+  } catch {
+    return "invalid url";
+  }
+}
+
+/**
+ * Local fixtures and Supabase can publish identical slugs, so neither the build route table nor
+ * the rendered pages reveal which store a deployment reads. This line is that evidence; it must
+ * stay free of credentials.
+ */
+export function describeContentSource(
+  env: NodeJS.ProcessEnv | Record<string, string | undefined> = process.env,
+): string {
+  if (resolveContentSource(env) === "supabase") {
+    return `Content source: supabase (${supabaseHost(env.NEXT_PUBLIC_SUPABASE_URL)})`;
+  }
+
+  const explicit = env.CONTENT_SOURCE?.trim();
+
+  return `Content source: local fixtures (CONTENT_SOURCE=${explicit ? explicit : "unset"})`;
+}
+
 export function isExplicitLocalContentSource(
   env: NodeJS.ProcessEnv | Record<string, string | undefined> = process.env,
 ): boolean {

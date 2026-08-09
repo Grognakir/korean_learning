@@ -100,6 +100,9 @@ async function readContent<T>(read: () => Promise<T>): Promise<ContentResult<T>>
     return { status: "ready", data: await read() };
   } catch (error) {
     if (error instanceof LearningContentError) {
+      // Reporting the outage as a value hides it from every log, so the cause is recorded here.
+      console.error(`Learning content unavailable: ${error.message}`);
+
       return { status: "unavailable" };
     }
 

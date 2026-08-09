@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { LearningContentError } from "./resolveLearningContent";
 
@@ -26,6 +26,11 @@ function breakContentStore(): void {
 describe("cached learning content", () => {
   beforeEach(() => {
     getLocalLearningContentMock.mockImplementation(original.current);
+    vi.spyOn(console, "error").mockImplementation(() => {});
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
   });
 
   it("reports published content as ready", async () => {
@@ -63,6 +68,18 @@ describe("cached learning content", () => {
     await expect(getCachedExercisesByModuleSlug("sample-module")).resolves.toEqual({
       status: "unavailable",
     });
+  });
+
+  it("records why the content store degraded", async () => {
+    const { getCachedPublishedModules } = await import("./cachedLearningContent");
+
+    breakContentStore();
+
+    await getCachedPublishedModules();
+
+    expect(vi.mocked(console.error)).toHaveBeenCalledWith(
+      "Learning content unavailable: content store is down",
+    );
   });
 
   it("rethrows failures that are not content-store failures", async () => {

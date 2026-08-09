@@ -406,7 +406,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I07 — Content audit gate и CP-6
 
-- **Статус:** `planned`.
+- **Статус:** `blocked` (ожидает принятия CP-6).
 - **Цель:** доказать, что структура и импорт полны, прежде чем строить пользовательский UI.
 - **Вход:** F2-I06 `done`.
 - **Ветка:** `codex/f2-i07-content-audit-gate`.

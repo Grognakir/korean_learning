@@ -34,6 +34,7 @@
     "content:generate-catalog": "tsx scripts/content/generate-curriculum-catalog.ts",
     "content:generate-dictionary": "tsx scripts/content/generate-dictionary.ts",
     "content:generate-reading": "tsx scripts/content/generate-reading-corpus.ts",
+    "content:audit": "tsx scripts/content/audit-content.ts",
     "test:content": "vitest run --config vitest.content.config.mts"
   },
   "engines": {

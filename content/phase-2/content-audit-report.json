@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "phase-2.content-audit.v1",
+  "generatedAt": "2026-08-09T14:27:05.338Z",
+  "auditDoc": "docs/PHASE_2_CONTENT_AUDIT.md",
+  "canonicalDocuments": [
+    "docs/CURRICULUM_TOPICS.md",
+    "docs/CURRICULUM_GRAMMAR.md",
+    "docs/CURRICULUM_VOCABULARY.md",
+    "docs/CURRICULUM_TEXTS.md"
+  ],
+  "checkpoint": {
+    "id": "CP-6",
+    "status": "pending_user_acceptance",
+    "blocks": [
+      "F2-I08 seed/import pipeline",
+      "UI on canonical content",
+      "status promotions to reviewed/approved without decision"
+    ]
+  },
+  "counts": {
+    "units": {
+      "total": 16,
+      "byStatus": {
+        "draft": 16
+      }
+    },
+    "grammarTopics": {
+      "total": 80,
+      "byStatus": {
+        "draft": 80
+      },
+      "perUnit": [
+        {
+          "unitLogicalId": "unit.u01",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u02",
+          "expected": 4,
+          "actual": 4,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u03",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u04",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u05",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u06",
+          "expected": 6,
+          "actual": 6,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u07",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u08",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u09",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u10",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u11",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u12",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u13",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u14",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u15",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        },
+        {
+          "unitLogicalId": "unit.u16",
+          "expected": 5,
+          "actual": 5,
+          "ok": true
+        }
+      ]
+    },
+    "dictionaryEntries": {
+      "total": 1091,
+      "byStatus": {
+        "draft": 1091
+      },
+      "unitLinks": 0
+    },
+    "readingPassages": {
+      "total": 178,
+      "byStatus": {
+        "draft": 150,
+        "needs_review": 28
+      },
+      "textbookOrAppendix": 93,
+      "exam": 85
+    },
+    "exercises": {
+      "grammar": 0,
+      "vocabulary": 0,
+      "reading": 100,
+      "readingByStatus": {
+        "draft": 100
+      }
+    }
+  },
+  "correspondence": {
+    "topicsUnits": true,
+    "grammarTopics": true,
+    "grammarPerUnitExact": true,
+    "dictionarySenses": true,
+    "readingExamQuestions": true,
+    "readingRegressions": {
+      "unit1Culture": true,
+      "unit3HasTableNote": true,
+      "unit7Blank": true,
+      "unit9FlowerAndMarkers": true,
+      "unit10Present": true,
+      "unit11BusyLine": true,
+      "unit13Straight": true,
+      "unit14Present": true,
+      "unit15Present": true,
+      "appendixPresent": true
+    }
+  },
+  "notApprovedSummary": {
+    "units": 16,
+    "grammarTopics": 80,
+    "dictionaryEntries": 1091,
+    "readingPassages": 178,
+    "exercisesReading": 100,
+    "exercisesGrammar": 0,
+    "exercisesVocabulary": 0
+  },
+  "vocabularyBoundary": {
+    "totalSenses": 1091,
+    "approved": 0,
+    "businessDraft": 22,
+    "knownHomonyms": [
+      {
+        "lemma": "눈",
+        "senseCount": 2
+      },
+      {
+        "lemma": "다리",
+        "senseCount": 2
+      },
+      {
+        "lemma": "만",
+        "senseCount": 2
+      },
+      {
+        "lemma": "배",
+        "senseCount": 3
+      },
+      {
+        "lemma": "이",
+        "senseCount": 3
+      },
+      {
+        "lemma": "저",
+        "senseCount": 2
+      },
+      {
+        "lemma": "팔",
+        "senseCount": 2
+      },
+      {
+        "lemma": "풀",
+        "senseCount": 2
+      }
+    ],
+    "note": "No dictionary senses are approved yet. Business lexicon remains draft (level=business-draft)."
+  },
+  "security": {
+    "absoluteLocalPathHits": [],
+    "appContentImportScan": "passed"
+  },
+  "openQuestionsForCp6": [
+    "Confirm 16 units / 80 grammar catalog structure against CURRICULUM_TOPICS.md and CURRICULUM_GRAMMAR.md.",
+    "Confirm dictionary homonyms and business-draft boundary before any approval.",
+    "Confirm reading merge decisions and exam bank remain draft until language review.",
+    "Decide which metadata (if any) may move to reviewed after CP-6; none are approved yet."
+  ],
+  "derivedReportsPresent": {
+    "dictionaryReconciliation": true,
+    "readingReconciliation": true
+  }
+}

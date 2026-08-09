@@ -4,27 +4,28 @@
 
 ## Чем занимаемся
 
-F2-I06 выполнен. Следующая карточка — F2-I07 (content audit gate / CP-6).
+F2-I07 audit gate выполнен. **Остановка на CP-6** — ждём решения пользователя.
 
-## F2-I06 — результат
+## F2-I07 — результат
 
-- Parser `parse-curriculum-texts.ts` / `parse-reading-html.ts`
-- Generator `pnpm content:generate-reading` (HTML via `tmp/korean_reading_test.html` или `READING_HTML_PATH`)
-- `reading-passages.json`: 93 textbook/appendix + 85 exam passages
-- `exercises-reading.json`: 5×20 = 100 draft single-choice
-- `reading-reconciliation.json`: merge decisions + regression flags
-- HTML UI не копировался в приложение; answers только в authoring JSON
+- `pnpm content:audit` → `content/phase-2/content-audit-report.json`
+- Structural gates green: 16 units, 80 grammar (exact per-unit), 1091 dictionary senses, 100 reading exercises
+- Absolute-path scan clean; app must not import `content/phase-2`
+- CP-6 status: `pending_user_acceptance`
+- Not approved: all new content remains draft/needs_review
 
-## Gate
+## CP-6 вопросы
 
-- content:validate / test:content
-- format/lint/typecheck/unit/integration/build
+1. Подтвердить 16 тем / 80 грамматик
+2. Подтвердить омонимы и business-draft границу словаря
+3. Подтвердить reading merge decisions + exam bank как draft
+4. Решить, что (если что-то) можно перевести в reviewed после CP-6
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i06-reading-corpus`
-- Commit: `feat: reconcile reading source corpus`
+- Branch: `codex/f2-i07-content-audit-gate`
+- Commit: `test: enforce phase two content audit gate`
 
 ## Следующий шаг
 
-F2-I07 — audit gate и остановка на CP-6.
+Только после принятия CP-6 — F2-I08.

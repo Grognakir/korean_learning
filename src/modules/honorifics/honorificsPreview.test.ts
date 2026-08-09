@@ -5,7 +5,7 @@ import {
   selectCurrentExercise,
   selectProgress,
   selectResultSummary,
-  submitTrainingAnswer,
+  submitTrainingAnswerForExercise,
   trainingSessionReducer,
   type Exercise,
 } from "@/features/training";
@@ -141,7 +141,7 @@ describe("honorifics draft preview dataset", () => {
       const exercise = selectCurrentExercise(state, exercisesById);
       expect(exercise).toBeTruthy();
 
-      state = submitTrainingAnswer(state, {
+      state = submitTrainingAnswerForExercise(state, {
         exercise: exercise!,
         submission: correctSubmission(exercise!),
         submissionId: `submission-${index}`,
@@ -161,19 +161,19 @@ describe("honorifics draft preview dataset", () => {
 });
 
 describe("learning content composition gates", () => {
-  it("keeps production composition free of honorifics", () => {
+  it("keeps production composition free of honorifics", async () => {
     const composition = composeLearningContent("production");
     const slugs = composition.learningModuleRegistry.getAll().map((module) => module.slug);
 
     expect(slugs).toEqual(["sample-module"]);
     expect(composition.learningModuleRegistry.getBySlug("honorifics")).toBeUndefined();
-    expect(composition.exerciseRepository.list({ moduleSlug: "honorifics" })).toHaveLength(0);
+    expect(await composition.exerciseRepository.list({ moduleSlug: "honorifics" })).toHaveLength(0);
     expect(
       composition.learningModuleRegistry.getPublished().map((module) => module.slug),
     ).not.toContain("honorifics");
   });
 
-  it("includes draft honorifics in development but hides it from published selectors", () => {
+  it("includes draft honorifics in development but hides it from published selectors", async () => {
     const composition = composeLearningContent("development");
     const allSlugs = composition.learningModuleRegistry.getAll().map((module) => module.slug);
     const publishedSlugs = composition.learningModuleRegistry
@@ -184,7 +184,7 @@ describe("learning content composition gates", () => {
     expect(publishedSlugs).toEqual(["sample-module"]);
     expect(publishedSlugs).not.toContain("honorifics");
     expect(composition.learningModuleRegistry.getPublishedBySlug("honorifics")).toBeUndefined();
-    expect(composition.exerciseRepository.list({ moduleSlug: "honorifics" })).toHaveLength(
+    expect(await composition.exerciseRepository.list({ moduleSlug: "honorifics" })).toHaveLength(
       honorificsPreviewExercises.length,
     );
 

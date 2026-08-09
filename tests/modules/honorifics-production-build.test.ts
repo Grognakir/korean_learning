@@ -37,9 +37,9 @@ function collectPaths(directory: string): string[] {
 }
 
 describe("honorifics production build gate", () => {
-  it("keeps generateStaticParams free of honorifics under the default non-dev registry", () => {
-    const params = generateTopicStaticParams();
-    const sessionParams = generateSessionStaticParams();
+  it("keeps generateStaticParams free of honorifics under the default non-dev registry", async () => {
+    const params = await generateTopicStaticParams();
+    const sessionParams = await generateSessionStaticParams();
 
     expect(topicDynamicParams).toBe(false);
     expect(sessionDynamicParams).toBe(false);

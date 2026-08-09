@@ -25,8 +25,13 @@ export type {
   TrainingResultProps,
   TrainingSessionProps,
 } from "./components";
-export { ExerciseRepositoryError, LocalExerciseRepository } from "./data";
-export type { ExerciseQuery, ExerciseRepository, ExerciseRepositoryErrorCode } from "./data";
+export { ExerciseRepositoryError, LocalExerciseRepository, LocalModuleRepository } from "./data";
+export type {
+  ExerciseQuery,
+  ExerciseRepository,
+  ExerciseRepositoryErrorCode,
+  ModuleRepository,
+} from "./data";
 export {
   ANSWER_REASON_CODES,
   CheckerRegistry,
@@ -58,6 +63,7 @@ export {
   selectResultSummary,
   selectScoreSummary,
   submitTrainingAnswer,
+  submitTrainingAnswerForExercise,
   trainingSessionReducer,
 } from "./domain";
 export type {
@@ -159,6 +165,8 @@ export {
   parseFillBlankTemplate,
   toExerciseTextView,
   toExerciseView,
+  toPublicExercise,
+  toPublicExercises,
 } from "./presentation";
 export type {
   ChoiceExerciseView,
@@ -172,4 +180,5 @@ export type {
   MatchingLeftItemView,
   MatchingRightOptionView,
   ToExerciseViewOptions,
+  PublicExercise,
 } from "./presentation";

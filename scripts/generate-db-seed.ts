@@ -46,7 +46,7 @@ for (const topic of sampleModule.topics) {
     `  '${topic.code}',`,
     `  ${sqlString(topic.title.ru)},`,
     `  ${sqlString(topic.summary.ru)},`,
-    `  '{}'::jsonb,`,
+    `  ${sqlJson({ titleKo: topic.title.ko, summaryKo: topic.summary.ko })},`,
     `  ${sqlString(topic.level)},`,
     `  'published',`,
     `  ${topic.sortOrder},`,

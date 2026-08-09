@@ -4,7 +4,6 @@ import { useMemo, useState } from "react";
 
 import type {
   AnswerSubmission,
-  Exercise,
   TrainingAttemptSnapshot,
   TrainingSessionProgress,
   TrainingSessionResultSummary,
@@ -13,7 +12,6 @@ import type {
 import {
   createTrainingSession,
   selectCurrentAttempt,
-  selectCurrentExercise,
   selectCurrentExerciseId,
   selectHasAnsweredCurrent,
   selectProgress,
@@ -21,7 +19,8 @@ import {
   submitTrainingAnswer,
   trainingSessionReducer,
 } from "../domain";
-import { toExerciseView, type ExerciseView } from "../presentation";
+import type { PublicExercise } from "../presentation";
+import type { EvaluateSubmissionFn } from "../testing/createLocalEvaluateSubmission";
 import {
   DEMO_TRAINING_MODULE_SLUG,
   DEMO_TRAINING_SEED,
@@ -58,7 +57,8 @@ export type AnswerDraft =
   ChoiceAnswerDraft | FreeResponseAnswerDraft | FillBlankAnswerDraft | MatchingAnswerDraft;
 
 export type UseTrainingSessionOptions = {
-  readonly exercises: readonly Exercise[];
+  readonly publicExercises: readonly PublicExercise[];
+  readonly evaluateSubmission: EvaluateSubmissionFn;
   readonly sessionId?: string;
   readonly moduleSlug?: string;
   readonly mode?: "practice" | "review";
@@ -73,8 +73,8 @@ export type UseTrainingSessionOptions = {
 
 export type UseTrainingSessionResult = {
   readonly state: TrainingSessionState;
-  readonly currentExercise: Exercise | null;
-  readonly currentExerciseView: ExerciseView | null;
+  readonly currentExercise: PublicExercise | null;
+  readonly currentExerciseView: PublicExercise | null;
   readonly currentExerciseId: string | null;
   readonly progress: TrainingSessionProgress;
   readonly hasAnsweredCurrent: boolean;
@@ -88,11 +88,23 @@ export type UseTrainingSessionResult = {
   readonly setFreeResponseAnswer: (answer: string) => void;
   readonly setFillBlankAnswer: (blankId: string, answer: string) => void;
   readonly setMatchingPair: (leftPairId: string, rightPairId: string) => void;
-  readonly submit: () => void;
+  readonly submit: () => Promise<void>;
   readonly next: () => void;
 };
 
-function createInitialDraft(exercise: Exercise | null): AnswerDraft | null {
+function selectCurrentPublicExercise(
+  state: TrainingSessionState,
+  exercisesById: ReadonlyMap<string, PublicExercise>,
+): PublicExercise | null {
+  const exerciseId = selectCurrentExerciseId(state);
+  if (!exerciseId) {
+    return null;
+  }
+
+  return exercisesById.get(exerciseId) ?? null;
+}
+
+function createInitialDraft(exercise: PublicExercise | null): AnswerDraft | null {
   if (!exercise) {
     return null;
   }
@@ -107,13 +119,13 @@ function createInitialDraft(exercise: Exercise | null): AnswerDraft | null {
     case "fill-blank":
       return {
         kind: "fill-blank",
-        answers: Object.fromEntries(exercise.blanks.map((blank) => [blank.id, ""])),
+        answers: Object.fromEntries(exercise.blankIds.map((blankId) => [blankId, ""])),
       };
     case "matching-translation":
     case "matching-honorific":
       return {
         kind: "matching",
-        matches: Object.fromEntries(exercise.pairs.map((pair) => [pair.id, ""])),
+        matches: Object.fromEntries(exercise.leftItems.map((item) => [item.pairId, ""])),
       };
   }
 }
@@ -135,7 +147,7 @@ function isDraftComplete(draft: AnswerDraft | null): boolean {
   }
 }
 
-function buildSubmission(exercise: Exercise, draft: AnswerDraft): AnswerSubmission | null {
+function buildSubmission(exercise: PublicExercise, draft: AnswerDraft): AnswerSubmission | null {
   switch (exercise.type) {
     case "free-response": {
       if (draft.kind !== "free-response") {
@@ -169,9 +181,9 @@ function buildSubmission(exercise: Exercise, draft: AnswerDraft): AnswerSubmissi
       return {
         exerciseId: exercise.id,
         type: exercise.type,
-        answers: exercise.blanks.map((blank) => ({
-          blankId: blank.id,
-          answer: draft.answers[blank.id] ?? "",
+        answers: exercise.blankIds.map((blankId) => ({
+          blankId,
+          answer: draft.answers[blankId] ?? "",
         })),
       };
     }
@@ -184,9 +196,9 @@ function buildSubmission(exercise: Exercise, draft: AnswerDraft): AnswerSubmissi
       return {
         exerciseId: exercise.id,
         type: exercise.type,
-        matches: exercise.pairs.map((pair) => ({
-          leftPairId: pair.id,
-          rightPairId: draft.matches[pair.id] ?? "",
+        matches: exercise.leftItems.map((item) => ({
+          leftPairId: item.pairId,
+          rightPairId: draft.matches[item.pairId] ?? "",
         })),
       };
     }
@@ -197,7 +209,7 @@ function createSessionState(
   options: UseTrainingSessionOptions,
   now: () => string,
 ): TrainingSessionState {
-  const exerciseIds = options.exercises.map((exercise) => exercise.id);
+  const exerciseIds = options.publicExercises.map((exercise) => exercise.id);
   const startedAt = now();
 
   return createTrainingSession({
@@ -218,12 +230,12 @@ function createSessionState(
 export function useTrainingSession(options: UseTrainingSessionOptions): UseTrainingSessionResult {
   const now = options.now ?? (() => new Date().toISOString());
   const createSubmissionId = options.createSubmissionId ?? (() => crypto.randomUUID());
-  const seed = options.seed ?? DEMO_TRAINING_SEED;
   const onStateChange = options.onStateChange;
+  const contentVersion = options.contentVersion ?? "1.0.0";
 
   const exercisesById = useMemo(() => {
-    return new Map(options.exercises.map((exercise) => [exercise.id, exercise]));
-  }, [options.exercises]);
+    return new Map(options.publicExercises.map((exercise) => [exercise.id, exercise]));
+  }, [options.publicExercises]);
 
   const [state, setState] = useState(
     () => options.initialState ?? createSessionState(options, now),
@@ -241,7 +253,7 @@ export function useTrainingSession(options: UseTrainingSessionOptions): UseTrain
   };
 
   const currentExerciseId = selectCurrentExerciseId(state);
-  const currentExercise = selectCurrentExercise(state, exercisesById);
+  const currentExercise = selectCurrentPublicExercise(state, exercisesById);
   const hasAnsweredCurrent = selectHasAnsweredCurrent(state);
   const currentAttempt = selectCurrentAttempt(state);
   const progress = selectProgress(state);
@@ -267,14 +279,6 @@ export function useTrainingSession(options: UseTrainingSessionOptions): UseTrain
     draftState.exerciseId === currentExerciseId
       ? draftState.draft
       : createInitialDraft(currentExercise);
-
-  const currentExerciseView = useMemo(() => {
-    if (!currentExercise) {
-      return null;
-    }
-
-    return toExerciseView(currentExercise, { seed });
-  }, [currentExercise, seed]);
 
   const canSubmit =
     !isCompleted &&
@@ -334,7 +338,7 @@ export function useTrainingSession(options: UseTrainingSessionOptions): UseTrain
     });
   };
 
-  const submit = () => {
+  const submit = async () => {
     if (!canSubmit || !currentExercise || !draft) {
       return;
     }
@@ -344,21 +348,26 @@ export function useTrainingSession(options: UseTrainingSessionOptions): UseTrain
       return;
     }
 
-    const exercise = currentExercise;
     const submissionId = createSubmissionId();
     const occurredAt = now();
 
     setIsSubmitting(true);
 
     try {
+      const evaluation = await options.evaluateSubmission({
+        exerciseId: currentExercise.id,
+        contentVersion,
+        submission,
+      });
+
       commitState((currentState) => {
         if (selectHasAnsweredCurrent(currentState) || currentState.status !== "active") {
           return currentState;
         }
 
         return submitTrainingAnswer(currentState, {
-          exercise,
           submission,
+          evaluation,
           submissionId,
           occurredAt,
         });
@@ -390,7 +399,7 @@ export function useTrainingSession(options: UseTrainingSessionOptions): UseTrain
   return {
     state,
     currentExercise,
-    currentExerciseView,
+    currentExerciseView: currentExercise,
     currentExerciseId,
     progress,
     hasAnsweredCurrent,

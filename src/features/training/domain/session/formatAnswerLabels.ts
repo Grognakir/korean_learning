@@ -1,5 +1,11 @@
 import type { CorrectAnswerSnapshot, AnswerSubmission } from "../evaluation";
-import type { Exercise, ExerciseText } from "../exercise";
+import type { ExerciseText } from "../exercise";
+import type { PublicExercise } from "../../presentation/PublicExercise";
+import type {
+  ChoiceOptionView,
+  MatchingLeftItemView,
+  MatchingRightOptionView,
+} from "../../presentation/toExerciseView";
 
 function formatExerciseText(text: ExerciseText): string {
   if (text.ko && text.ru) {
@@ -9,7 +15,7 @@ function formatExerciseText(text: ExerciseText): string {
   return text.ko ?? text.ru ?? "—";
 }
 
-function choiceLabel(exercise: Exercise, optionId: string): string {
+function choiceLabel(exercise: PublicExercise, optionId: string): string {
   if (
     exercise.type !== "meaning-choice" &&
     exercise.type !== "honorific-choice" &&
@@ -18,30 +24,32 @@ function choiceLabel(exercise: Exercise, optionId: string): string {
     return optionId;
   }
 
-  const option = exercise.options.find((item) => item.id === optionId);
+  const option = exercise.options.find((item: ChoiceOptionView) => item.id === optionId);
   return option ? formatExerciseText(option.label) : optionId;
 }
 
-function matchingLeftLabel(exercise: Exercise, leftPairId: string): string {
+function matchingLeftLabel(exercise: PublicExercise, leftPairId: string): string {
   if (exercise.type !== "matching-translation" && exercise.type !== "matching-honorific") {
     return leftPairId;
   }
 
-  const pair = exercise.pairs.find((item) => item.id === leftPairId);
-  return pair ? formatExerciseText(pair.left) : leftPairId;
+  const pair = exercise.leftItems.find((item: MatchingLeftItemView) => item.pairId === leftPairId);
+  return pair ? formatExerciseText(pair.label) : leftPairId;
 }
 
-function matchingRightLabel(exercise: Exercise, rightPairId: string): string {
+function matchingRightLabel(exercise: PublicExercise, rightPairId: string): string {
   if (exercise.type !== "matching-translation" && exercise.type !== "matching-honorific") {
     return rightPairId;
   }
 
-  const pair = exercise.pairs.find((item) => item.id === rightPairId);
-  return pair ? formatExerciseText(pair.right) : rightPairId;
+  const pair = exercise.rightOptions.find(
+    (item: MatchingRightOptionView) => item.pairId === rightPairId,
+  );
+  return pair ? formatExerciseText(pair.label) : rightPairId;
 }
 
 export function formatSubmittedAnswerLabel(
-  exercise: Exercise,
+  exercise: PublicExercise,
   submission: AnswerSubmission,
 ): string {
   switch (submission.type) {
@@ -72,7 +80,7 @@ export function formatSubmittedAnswerLabel(
 }
 
 export function formatCanonicalAnswerLabel(
-  exercise: Exercise,
+  exercise: PublicExercise,
   correctAnswer: CorrectAnswerSnapshot,
 ): string {
   switch (correctAnswer.kind) {

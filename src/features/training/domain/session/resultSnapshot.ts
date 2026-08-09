@@ -1,7 +1,8 @@
 import type { LearningTopicDefinition, LocalizedText } from "@/types";
 
 import type { AnswerReasonCode } from "../evaluation";
-import type { Exercise, ExerciseText } from "../exercise";
+import type { ExerciseText } from "../exercise";
+import type { PublicExercise } from "../../presentation/PublicExercise";
 
 import { formatCanonicalAnswerLabel, formatSubmittedAnswerLabel } from "./formatAnswerLabels";
 import { selectMistakeExerciseIds, selectScoreSummary } from "./selectors";
@@ -50,13 +51,13 @@ export type BuildTrainingResultSnapshotOptions = {
   readonly topics?: readonly LearningTopicDefinition[];
 };
 
-function resolveTopicId(exercise: Exercise | undefined): string {
+function resolveTopicId(exercise: PublicExercise | undefined): string {
   return exercise?.topicIds[0] ?? UNKNOWN_TOPIC_ID;
 }
 
 function buildTopicBreakdown(
   state: TrainingSessionState,
-  exercisesById: ReadonlyMap<string, Exercise>,
+  exercisesById: ReadonlyMap<string, PublicExercise>,
   topicsById: ReadonlyMap<string, LearningTopicDefinition>,
 ): readonly TrainingResultTopicBreakdown[] {
   const buckets = new Map<
@@ -109,7 +110,7 @@ function buildTopicBreakdown(
 
 function buildMistakes(
   state: TrainingSessionState,
-  exercisesById: ReadonlyMap<string, Exercise>,
+  exercisesById: ReadonlyMap<string, PublicExercise>,
 ): readonly TrainingResultMistake[] {
   const mistakes: TrainingResultMistake[] = [];
   const seen = new Set<string>();
@@ -148,7 +149,7 @@ function buildMistakes(
 
 export function buildTrainingResultSnapshot(
   state: TrainingSessionState,
-  exercisesById: ReadonlyMap<string, Exercise>,
+  exercisesById: ReadonlyMap<string, PublicExercise>,
   options: BuildTrainingResultSnapshotOptions = {},
 ): TrainingResultSnapshot {
   if (state.status !== "completed") {

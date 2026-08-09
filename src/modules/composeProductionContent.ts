@@ -1,8 +1,10 @@
 import {
   LocalExerciseRepository,
+  LocalModuleRepository,
   ModuleRegistry,
   type Exercise,
   type ExerciseRepository,
+  type ModuleRepository,
 } from "@/features/training";
 import type { LearningModuleDefinition } from "@/types";
 
@@ -10,6 +12,7 @@ import { sampleExercises, sampleModule } from "./sample";
 
 export type LearningContentComposition = {
   readonly learningModuleRegistry: ModuleRegistry;
+  readonly moduleRepository: ModuleRepository;
   readonly exerciseRepository: ExerciseRepository;
   readonly modules: readonly LearningModuleDefinition[];
   readonly exercises: readonly Exercise[];
@@ -24,6 +27,7 @@ export function composeProductionContent(): LearningContentComposition {
 
   return {
     learningModuleRegistry,
+    moduleRepository: new LocalModuleRepository(learningModuleRegistry),
     exerciseRepository,
     modules,
     exercises,

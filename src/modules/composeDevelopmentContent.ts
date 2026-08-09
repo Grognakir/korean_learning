@@ -1,4 +1,9 @@
-import { LocalExerciseRepository, ModuleRegistry, type Exercise } from "@/features/training";
+import {
+  LocalExerciseRepository,
+  LocalModuleRepository,
+  ModuleRegistry,
+  type Exercise,
+} from "@/features/training";
 import type { LearningModuleDefinition } from "@/types";
 
 import type { LearningContentComposition } from "./composeProductionContent";
@@ -14,6 +19,7 @@ export function composeDevelopmentContent(): LearningContentComposition {
 
   return {
     learningModuleRegistry,
+    moduleRepository: new LocalModuleRepository(learningModuleRegistry),
     exerciseRepository,
     modules,
     exercises,

@@ -10,10 +10,12 @@ import {
   createTrainingSession,
   selectCurrentExerciseId,
   selectMistakeExerciseIds,
-  submitTrainingAnswer,
+  submitTrainingAnswerForExercise,
+  toPublicExercises,
   trainingSessionReducer,
   type Exercise,
 } from "@/features/training";
+import { createLocalEvaluateSubmission } from "@/features/training/testing/createLocalEvaluateSubmission";
 
 import { createChoiceExercise, createExercisePair } from "../factories/exerciseFactory";
 import { createTestModule } from "../factories/moduleFactory";
@@ -50,7 +52,7 @@ describe("training lifecycle integration", () => {
 
     const firstId = selectCurrentExerciseId(state)!;
     const first = firstId === home.id ? home : school;
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise: first,
       submission: incorrectChoice(first),
       submissionId: createSubmissionId(),
@@ -63,7 +65,7 @@ describe("training lifecycle integration", () => {
 
     const secondId = selectCurrentExerciseId(state)!;
     const second = secondId === home.id ? home : school;
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise: second,
       submission: correctChoice(second),
       submissionId: createSubmissionId(),
@@ -77,10 +79,9 @@ describe("training lifecycle integration", () => {
     expect(state.status).toBe("completed");
     const snapshot = buildTrainingResultSnapshot(
       state,
-      new Map([
-        [home.id, home],
-        [school.id, school],
-      ]),
+      new Map(
+        toPublicExercises([home, school], { seed: 1 }).map((exercise) => [exercise.id, exercise]),
+      ),
       { topics: learningModule.topics },
     );
 
@@ -99,7 +100,7 @@ describe("training lifecycle integration", () => {
     while (state.status === "active") {
       const currentId = selectCurrentExerciseId(state)!;
       const exercise = currentId === home.id ? home : school;
-      state = submitTrainingAnswer(state, {
+      state = submitTrainingAnswerForExercise(state, {
         exercise,
         submission: incorrectChoice(exercise),
         submissionId: createSubmissionId(),
@@ -131,7 +132,7 @@ describe("training lifecycle integration", () => {
     while (retry.status === "active") {
       const currentId = selectCurrentExerciseId(retry)!;
       const exercise = currentId === home.id ? home : school;
-      retry = submitTrainingAnswer(retry, {
+      retry = submitTrainingAnswerForExercise(retry, {
         exercise,
         submission: correctChoice(exercise),
         submissionId: createSubmissionId(),
@@ -145,10 +146,9 @@ describe("training lifecycle integration", () => {
 
     const snapshot = buildTrainingResultSnapshot(
       retry,
-      new Map([
-        [home.id, home],
-        [school.id, school],
-      ]),
+      new Map(
+        toPublicExercises([home, school], { seed: 1 }).map((exercise) => [exercise.id, exercise]),
+      ),
     );
     expect(snapshot.correctCount).toBe(2);
     expect(snapshot.mistakeExerciseIds).toEqual([]);
@@ -164,10 +164,11 @@ describe("training lifecycle integration", () => {
       <TrainingSession
         contentVersion="1.0.0"
         createSubmissionId={createSubmissionId}
-        exercises={[home]}
+        evaluateSubmission={createLocalEvaluateSubmission([home])}
         moduleSlug={home.moduleSlug}
         now={() => "2026-08-08T12:00:00.000Z"}
         persist={false}
+        publicExercises={toPublicExercises([home], { seed: 1 })}
         seed={1}
         sessionId="ui-lifecycle"
         topics={learningModule.topics}
@@ -225,10 +226,11 @@ describe("training persistence boundary", () => {
       <TrainingSession
         contentVersion="1.0.0"
         createSubmissionId={createSubmissionId}
-        exercises={[home]}
+        evaluateSubmission={createLocalEvaluateSubmission([home])}
         moduleSlug={home.moduleSlug}
         now={() => "2026-08-08T12:00:00.000Z"}
         persist
+        publicExercises={toPublicExercises([home], { seed: 1 })}
         seed={1}
         sessionId="persist-complete"
         store={store}

@@ -1,4 +1,11 @@
 export {
+  assertPublicExerciseShape,
+  createPublicExerciseLookup,
+  toPublicExercise,
+  toPublicExercises,
+} from "./PublicExercise";
+export type { PublicExercise } from "./PublicExercise";
+export {
   describeFillBlankTemplate,
   parseFillBlankTemplate,
   toExerciseTextView,

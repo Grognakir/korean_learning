@@ -32,33 +32,35 @@ export class LocalExerciseRepository implements ExerciseRepository {
     definitions.forEach((definition) => this.register(definition));
   }
 
-  getById(id: string): Exercise | undefined {
-    return this.#exercisesById.get(id);
+  getById(id: string): Promise<Exercise | undefined> {
+    return Promise.resolve(this.#exercisesById.get(id));
   }
 
-  list(query: ExerciseQuery = {}): readonly Exercise[] {
-    return this.#exercises.filter((exercise) => {
-      if (query.moduleSlug !== undefined && exercise.moduleSlug !== query.moduleSlug) {
-        return false;
-      }
+  list(query: ExerciseQuery = {}): Promise<readonly Exercise[]> {
+    return Promise.resolve(
+      this.#exercises.filter((exercise) => {
+        if (query.moduleSlug !== undefined && exercise.moduleSlug !== query.moduleSlug) {
+          return false;
+        }
 
-      if (
-        query.topicIds !== undefined &&
-        !query.topicIds.some((topicId) => exercise.topicIds.includes(topicId))
-      ) {
-        return false;
-      }
+        if (
+          query.topicIds !== undefined &&
+          !query.topicIds.some((topicId) => exercise.topicIds.includes(topicId))
+        ) {
+          return false;
+        }
 
-      if (query.types !== undefined && !query.types.includes(exercise.type)) {
-        return false;
-      }
+        if (query.types !== undefined && !query.types.includes(exercise.type)) {
+          return false;
+        }
 
-      if (query.difficulties !== undefined && !query.difficulties.includes(exercise.difficulty)) {
-        return false;
-      }
+        if (query.difficulties !== undefined && !query.difficulties.includes(exercise.difficulty)) {
+          return false;
+        }
 
-      return true;
-    });
+        return true;
+      }),
+    );
   }
 
   private register(definition: unknown) {

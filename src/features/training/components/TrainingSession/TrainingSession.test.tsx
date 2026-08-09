@@ -4,6 +4,8 @@ import { describe, expect, it } from "vitest";
 
 import { sampleExercises } from "@/modules/sample";
 import type { Exercise, FillBlankExercise, FreeResponseExercise } from "../../domain";
+import { toPublicExercises } from "../../presentation";
+import { createLocalEvaluateSubmission } from "../../testing/createLocalEvaluateSubmission";
 
 import { TrainingSession } from "./TrainingSession";
 
@@ -29,7 +31,8 @@ function renderSession(exercises: readonly Exercise[], limit?: number) {
     <TrainingSession
       persist={false}
       createSubmissionId={createSubmissionId}
-      exercises={exercises}
+      evaluateSubmission={createLocalEvaluateSubmission(exercises)}
+      publicExercises={toPublicExercises(exercises, { seed: 1 })}
       {...(limit === undefined ? {} : { limit })}
       now={fixedNow}
       seed={1}

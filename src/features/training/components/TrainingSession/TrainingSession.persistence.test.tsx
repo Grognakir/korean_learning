@@ -5,6 +5,8 @@ import { sampleExercises } from "@/modules/sample";
 
 import { createTrainingSession, evaluateAnswer, trainingSessionReducer } from "../../domain";
 import { LocalTrainingSessionStore } from "../../persistence";
+import { toPublicExercises } from "../../presentation";
+import { createLocalEvaluateSubmission } from "../../testing/createLocalEvaluateSubmission";
 import { TrainingSession } from "../TrainingSession";
 
 function createMemoryStorage() {
@@ -82,8 +84,9 @@ describe("TrainingSession persistence", () => {
     render(
       <TrainingSession
         contentVersion="1.0.0"
-        exercises={exercises}
+        evaluateSubmission={createLocalEvaluateSubmission(exercises)}
         moduleSlug="sample-module"
+        publicExercises={toPublicExercises(exercises, { seed: 1 })}
         seed={1}
         sessionId="demo-session"
         store={store}
@@ -106,8 +109,9 @@ describe("TrainingSession persistence", () => {
 
     render(
       <TrainingSession
-        exercises={sampleExercises.slice(0, 1)}
+        evaluateSubmission={createLocalEvaluateSubmission(sampleExercises.slice(0, 1))}
         persist={false}
+        publicExercises={toPublicExercises(sampleExercises.slice(0, 1), { seed: 1 })}
         seed={1}
         store={store}
       />,

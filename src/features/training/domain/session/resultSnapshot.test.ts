@@ -2,11 +2,17 @@ import { describe, expect, it } from "vitest";
 
 import { sampleExercises, sampleModule } from "@/modules/sample";
 import type { Exercise } from "../exercise";
+import { toPublicExercise } from "../../presentation";
+import type { PublicExercise } from "../../presentation";
 import { createTrainingSession } from "./createTrainingSession";
 import { buildTrainingResultSnapshot, createMistakeRetrySessionConfig } from "./resultSnapshot";
-import { submitTrainingAnswer } from "./submitTrainingAnswer";
+import { submitTrainingAnswerForExercise } from "./submitTrainingAnswer";
 import { trainingSessionReducer } from "./trainingSessionReducer";
 import type { TrainingSessionConfig } from "./types";
+
+function publicExercisesById(exercises: readonly Exercise[]): Map<string, PublicExercise> {
+  return new Map(exercises.map((exercise) => [exercise.id, toPublicExercise(exercise)]));
+}
 
 function exerciseByLogicalId(logicalId: string): Exercise {
   const exercise = sampleExercises.find((item) => item.logicalId === logicalId);
@@ -132,7 +138,7 @@ function completeSession(
     const currentId = state.queue[state.currentIndex]!;
     const exercise = exercises.find((item) => item.id === currentId)!;
     const kind = answers.get(exercise.id) ?? "correct";
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise,
       submission: kind === "correct" ? correctSubmission(exercise) : incorrectSubmission(exercise),
       submissionId: `sub-${step}`,
@@ -161,10 +167,7 @@ describe("buildTrainingResultSnapshot", () => {
         [school.id, "correct"],
       ]),
     );
-    const exercisesById = new Map([
-      [home.id, home],
-      [school.id, school],
-    ]);
+    const exercisesById = publicExercisesById([home, school]);
 
     const snapshot = buildTrainingResultSnapshot(state, exercisesById, {
       topics: sampleModule.topics,
@@ -188,11 +191,7 @@ describe("buildTrainingResultSnapshot", () => {
         [greeting.id, "incorrect"],
       ]),
     );
-    const exercisesById = new Map([
-      [home.id, home],
-      [school.id, school],
-      [greeting.id, greeting],
-    ]);
+    const exercisesById = publicExercisesById([home, school, greeting]);
 
     const snapshot = buildTrainingResultSnapshot(state, exercisesById, {
       topics: sampleModule.topics,
@@ -216,7 +215,7 @@ describe("buildTrainingResultSnapshot", () => {
       topicIds: ["missing-topic-id"],
     } satisfies Exercise;
     const state = completeSession([orphan], new Map([[orphan.id, "incorrect"]]));
-    const snapshot = buildTrainingResultSnapshot(state, new Map([[orphan.id, orphan]]), {
+    const snapshot = buildTrainingResultSnapshot(state, publicExercisesById([orphan]), {
       topics: sampleModule.topics,
     });
 
@@ -239,7 +238,7 @@ describe("buildTrainingResultSnapshot", () => {
       }),
     );
 
-    expect(() => buildTrainingResultSnapshot(state, new Map([[home.id, home]]))).toThrow(
+    expect(() => buildTrainingResultSnapshot(state, publicExercisesById([home]))).toThrow(
       /completed session/,
     );
   });
@@ -275,7 +274,7 @@ describe("buildTrainingResultSnapshot", () => {
       })),
     };
 
-    const snapshot = buildTrainingResultSnapshot(zeroScoreState, new Map([[home.id, home]]));
+    const snapshot = buildTrainingResultSnapshot(zeroScoreState, publicExercisesById([home]));
     expect(snapshot.percentage).toBe(0);
     expect(snapshot.maxScore).toBe(0);
   });

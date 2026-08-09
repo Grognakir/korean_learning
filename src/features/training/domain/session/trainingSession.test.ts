@@ -13,7 +13,7 @@ import {
   selectScoreSummary,
 } from "./selectors";
 import { seededShuffle } from "./seededShuffle";
-import { submitTrainingAnswer } from "./submitTrainingAnswer";
+import { submitTrainingAnswerForExercise } from "./submitTrainingAnswer";
 import { trainingSessionReducer } from "./trainingSessionReducer";
 import type { TrainingSessionConfig, TrainingSessionState } from "./types";
 
@@ -290,7 +290,7 @@ describe("training session transitions", () => {
 
     const firstId = selectCurrentExerciseId(state)!;
     const firstExercise = firstId === greeting.id ? greeting : home;
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise: firstExercise,
       submission: correctSubmission(firstExercise),
       submissionId: "sub-1",
@@ -307,7 +307,7 @@ describe("training session transitions", () => {
 
     const secondId = selectCurrentExerciseId(state)!;
     const secondExercise = secondId === greeting.id ? greeting : home;
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise: secondExercise,
       submission: incorrectSubmission(secondExercise),
       submissionId: "sub-2",
@@ -324,7 +324,7 @@ describe("training session transitions", () => {
     const other = currentId === greeting.id ? thanks : greeting;
 
     expect(() =>
-      submitTrainingAnswer(state, {
+      submitTrainingAnswerForExercise(state, {
         exercise: other,
         submission: correctSubmission(other),
         submissionId: "sub-other",
@@ -342,7 +342,7 @@ describe("training session transitions", () => {
     const currentId = selectCurrentExerciseId(state)!;
     const exercise = currentId === greeting.id ? greeting : thanks;
 
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise,
       submission: correctSubmission(exercise),
       submissionId: "dup",
@@ -350,7 +350,7 @@ describe("training session transitions", () => {
     });
     const snapshot = clone(state);
 
-    const again = submitTrainingAnswer(state, {
+    const again = submitTrainingAnswerForExercise(state, {
       exercise,
       submission: incorrectSubmission(exercise),
       submissionId: "dup",
@@ -366,7 +366,7 @@ describe("training session transitions", () => {
     const currentId = selectCurrentExerciseId(state)!;
     const exercise = currentId === greeting.id ? greeting : thanks;
 
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise,
       submission: correctSubmission(exercise),
       submissionId: "first",
@@ -374,7 +374,7 @@ describe("training session transitions", () => {
     });
 
     expect(() =>
-      submitTrainingAnswer(state, {
+      submitTrainingAnswerForExercise(state, {
         exercise,
         submission: incorrectSubmission(exercise),
         submissionId: "second",
@@ -410,7 +410,7 @@ describe("training session transitions", () => {
       }),
     );
 
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise: greeting,
       submission: correctSubmission(greeting),
       submissionId: "only",
@@ -454,7 +454,7 @@ describe("training session transitions", () => {
     const currentId = selectCurrentExerciseId(state)!;
     const exercise = currentId === greeting.id ? greeting : thanks;
 
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise,
       submission: correctSubmission(exercise),
       submissionId: "json-1",
@@ -473,7 +473,7 @@ describe("training session transitions", () => {
     const currentId = selectCurrentExerciseId(state)!;
     const exercise = currentId === greeting.id ? greeting : thanks;
 
-    submitTrainingAnswer(state, {
+    submitTrainingAnswerForExercise(state, {
       exercise,
       submission: correctSubmission(exercise),
       submissionId: "immut",
@@ -493,7 +493,7 @@ describe("training session transitions", () => {
 
     const currentId = selectCurrentExerciseId(state)!;
     const exercise = currentId === greeting.id ? greeting : thanks;
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise,
       submission: correctSubmission(exercise),
       submissionId: "progress-1",
@@ -519,7 +519,7 @@ describe("training session transitions", () => {
     while (state.status === "active") {
       const exerciseId = selectCurrentExerciseId(state)!;
       const exercise = byId.get(exerciseId)!;
-      state = submitTrainingAnswer(state, {
+      state = submitTrainingAnswerForExercise(state, {
         exercise,
         submission: correctSubmission(exercise),
         submissionId: `script-${step}`,

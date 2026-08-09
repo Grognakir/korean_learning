@@ -25,7 +25,7 @@ export type {
 } from "./resultSnapshot";
 export { formatCanonicalAnswerLabel, formatSubmittedAnswerLabel } from "./formatAnswerLabels";
 export { seededShuffle } from "./seededShuffle";
-export { submitTrainingAnswer } from "./submitTrainingAnswer";
+export { submitTrainingAnswer, submitTrainingAnswerForExercise } from "./submitTrainingAnswer";
 export { trainingSessionReducer } from "./trainingSessionReducer";
 export {
   TRAINING_SESSION_MODES,

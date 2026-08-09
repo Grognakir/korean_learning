@@ -14,7 +14,7 @@ import { Button, ProgressBar } from "@/components/ui";
 import type { LearningTopicDefinition } from "@/types";
 import { TrainingShell } from "@/wrappers";
 
-import type { Exercise, TrainingSessionState } from "../../domain";
+import type { TrainingSessionState } from "../../domain";
 import {
   buildTrainingResultSnapshot,
   createMistakeRetrySessionConfig,
@@ -26,7 +26,8 @@ import {
 } from "../../hooks/usePersistedTrainingSession";
 import { useTrainingSession, type UseTrainingSessionOptions } from "../../hooks/useTrainingSession";
 import { LocalTrainingSessionStore } from "../../persistence";
-import type { ExerciseView } from "../../presentation";
+import type { PublicExercise } from "../../presentation";
+import type { EvaluateSubmissionFn } from "../../testing/createLocalEvaluateSubmission";
 import { ExerciseFeedback } from "../ExerciseFeedback";
 import { ExerciseRenderer } from "../ExerciseRenderer";
 import { ExerciseText } from "../ExerciseText";
@@ -35,7 +36,8 @@ import { TrainingResult } from "../TrainingResult";
 import styles from "./TrainingSession.module.css";
 
 export type TrainingSessionProps = {
-  readonly exercises: readonly Exercise[];
+  readonly publicExercises: readonly PublicExercise[];
+  readonly evaluateSubmission: EvaluateSubmissionFn;
   readonly sessionId?: string;
   readonly moduleSlug?: string;
   readonly seed?: number;
@@ -49,7 +51,7 @@ export type TrainingSessionProps = {
   readonly store?: LocalTrainingSessionStore;
 };
 
-function exerciseInstruction(exercise: ExerciseView): string | null {
+function exerciseInstruction(exercise: PublicExercise): string | null {
   switch (exercise.type) {
     case "matching-translation":
     case "matching-honorific":
@@ -73,7 +75,7 @@ function isSingleLineTextField(target: EventTarget | null): target is HTMLInputE
 function TrainingSessionRuntime({
   contentVersion,
   createSubmissionId,
-  exercises,
+  evaluateSubmission,
   initialState,
   limit,
   moduleSlug,
@@ -82,6 +84,7 @@ function TrainingSessionRuntime({
   onRetryMistakes,
   persist,
   persistCreate,
+  publicExercises,
   seed,
   sessionId,
   store,
@@ -102,12 +105,13 @@ function TrainingSessionRuntime({
   const previousExerciseIdRef = useRef<string | null>(null);
 
   const exercisesById = useMemo(
-    () => new Map(exercises.map((exercise) => [exercise.id, exercise])),
-    [exercises],
+    () => new Map(publicExercises.map((exercise) => [exercise.id, exercise])),
+    [publicExercises],
   );
 
   const session = useTrainingSession({
-    exercises,
+    publicExercises,
+    evaluateSubmission,
     ...(sessionId === undefined ? {} : { sessionId }),
     moduleSlug,
     ...(seed === undefined ? {} : { seed }),
@@ -299,11 +303,12 @@ function TrainingSessionRuntime({
 export function TrainingSession({
   contentVersion = "1.0.0",
   createSubmissionId,
-  exercises,
+  evaluateSubmission,
   limit,
   moduleSlug = "sample-module",
   now,
   persist = true,
+  publicExercises,
   seed,
   sessionId,
   store: storeProp,
@@ -363,7 +368,8 @@ export function TrainingSession({
     <TrainingSessionRuntime
       key={runtimeKey}
       contentVersion={contentVersion}
-      exercises={exercises}
+      evaluateSubmission={evaluateSubmission}
+      publicExercises={publicExercises}
       moduleSlug={moduleSlug}
       notice={notice}
       onRetryMistakes={handleRetryMistakes}

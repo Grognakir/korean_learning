@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { CatalogEmptyState } from "@/components/feedback";
+import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import { Badge } from "@/components/ui";
 import { DEMO_TRAINING_SESSION_ID, ResumeTrainingPrompt } from "@/features/training";
 import {
+  getLearningContent,
   HONORIFICS_MODULE_SLUG,
   HONORIFICS_PREVIEW_SESSION_ID,
-  exerciseRepository,
-  learningModuleRegistry,
+  LearningContentError,
 } from "@/modules";
+import type { LearningModuleDefinition } from "@/types";
 import { PageContainer } from "@/wrappers";
 
 import styles from "./page.module.css";
@@ -20,13 +21,38 @@ export const metadata: Metadata = {
   description: "Короткая практика на локальных модулях с активным вспоминанием.",
 };
 
-export default function TrainingPage() {
-  const sampleModule = learningModuleRegistry.getBySlug("sample-module");
-  const sampleExerciseCount = exerciseRepository.list({ moduleSlug: "sample-module" }).length;
-  const honorificsModule = learningModuleRegistry.getBySlug(HONORIFICS_MODULE_SLUG);
-  const honorificsExerciseCount = honorificsModule
-    ? exerciseRepository.list({ moduleSlug: HONORIFICS_MODULE_SLUG }).length
-    : 0;
+export default async function TrainingPage() {
+  let sampleModule: LearningModuleDefinition | undefined;
+  let sampleExerciseCount = 0;
+  let honorificsModule: LearningModuleDefinition | undefined;
+  let honorificsExerciseCount = 0;
+
+  try {
+    const { moduleRepository, exerciseRepository } = await getLearningContent();
+    sampleModule = await moduleRepository.getBySlug("sample-module");
+    sampleExerciseCount = sampleModule
+      ? (await exerciseRepository.list({ moduleSlug: "sample-module" })).length
+      : 0;
+    honorificsModule = await moduleRepository.getBySlug(HONORIFICS_MODULE_SLUG);
+    honorificsExerciseCount = honorificsModule
+      ? (await exerciseRepository.list({ moduleSlug: HONORIFICS_MODULE_SLUG })).length
+      : 0;
+  } catch (error) {
+    if (error instanceof LearningContentError) {
+      return (
+        <PageContainer className={styles.page}>
+          <PageHeader
+            description="Не удалось загрузить модули для тренировки."
+            title="Тренировка"
+          />
+          <ServiceUnavailableState />
+        </PageContainer>
+      );
+    }
+
+    throw error;
+  }
+
   const hasModules = Boolean(sampleModule) || Boolean(honorificsModule);
 
   return (

@@ -5,7 +5,7 @@ import {
   TRAINING_SESSION_STORAGE_KEY,
   TRAINING_SESSION_STORAGE_VERSION,
   selectCurrentExerciseId,
-  submitTrainingAnswer,
+  submitTrainingAnswerForExercise,
   trainingSessionReducer,
 } from "@/features/training";
 
@@ -29,7 +29,7 @@ describe("session recovery integration", () => {
     const currentId = selectCurrentExerciseId(state)!;
     const current = currentId === home.id ? home : school;
 
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise: current,
       submission: {
         exerciseId: current.id,
@@ -58,7 +58,7 @@ describe("session recovery integration", () => {
     });
     const nextId = selectCurrentExerciseId(continued)!;
     const next = nextId === home.id ? home : school;
-    continued = submitTrainingAnswer(continued, {
+    continued = submitTrainingAnswerForExercise(continued, {
       exercise: next,
       submission: {
         exerciseId: next.id,
@@ -132,7 +132,7 @@ describe("session recovery integration", () => {
   it("does not invent a second completion when completed state is saved", () => {
     const [home] = createExercisePair();
     let state = createActiveSession([home], { seed: 1 });
-    state = submitTrainingAnswer(state, {
+    state = submitTrainingAnswerForExercise(state, {
       exercise: home,
       submission: {
         exerciseId: home.id,

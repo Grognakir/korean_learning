@@ -10,16 +10,28 @@ import TopicsPage from "@/app/topics/page";
 import SessionPage from "@/app/training/[sessionId]/page";
 import TrainingPage from "@/app/training/page";
 
-const STATIC_ROUTES = [
+const ASYNC_STATIC_ROUTES = [
   ["Темы", TopicsPage],
   ["Тренировка", TrainingPage],
+] as const;
+
+const SYNC_STATIC_ROUTES = [
   ["Повторение", ReviewPage],
   ["Прогресс", ProgressPage],
   ["Словарь", DictionaryPage],
 ] as const;
 
 describe("application routes", () => {
-  it.each(STATIC_ROUTES)("renders the %s route with one page heading", (title, Page) => {
+  it.each(ASYNC_STATIC_ROUTES)(
+    "renders the %s route with one page heading",
+    async (title, Page) => {
+      render(await Page());
+
+      expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
+    },
+  );
+
+  it.each(SYNC_STATIC_ROUTES)("renders the %s route with one page heading", (title, Page) => {
     render(<Page />);
 
     expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
@@ -31,8 +43,8 @@ describe("application routes", () => {
     expect(screen.getByRole("heading", { level: 1, name: "Вход" })).toBeInTheDocument();
   });
 
-  it("loads the validated local exercise set on the training route", () => {
-    render(<TrainingPage />);
+  it("loads the validated local exercise set on the training route", async () => {
+    render(await TrainingPage());
 
     expect(screen.getByText(/доступно 14 заданий/)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Начать тренировку" })).toHaveAttribute(
@@ -51,8 +63,8 @@ describe("application routes", () => {
     expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
   });
 
-  it("marks the training module level badge with lang=ko", () => {
-    render(<TrainingPage />);
+  it("marks the training module level badge with lang=ko", async () => {
+    render(await TrainingPage());
 
     expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
   });

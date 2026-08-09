@@ -71,6 +71,7 @@ export {
   selectResultSummary,
   selectScoreSummary,
   submitTrainingAnswer,
+  submitTrainingAnswerForExercise,
   trainingSessionReducer,
 } from "./session";
 export type {

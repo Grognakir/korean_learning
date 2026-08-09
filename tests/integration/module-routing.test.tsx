@@ -20,16 +20,16 @@ import { createChoiceExercise } from "../factories/exerciseFactory";
 import { createTestModule } from "../factories/moduleFactory";
 
 describe("module routing integration", () => {
-  it("generates module routes from the published registry", () => {
-    const params = generateModuleParams();
-    const published = learningModuleRegistry.getPublished().map((entry) => entry.slug);
+  it("generates module routes from the published registry", async () => {
+    const params = await generateModuleParams();
+    const published = (await learningModuleRegistry.getPublished()).map((entry) => entry.slug);
 
     expect(params.map((entry) => entry.moduleSlug).sort()).toEqual([...published].sort());
     expect(params.some((entry) => entry.moduleSlug === "sample-module")).toBe(true);
   });
 
   it("renders catalog and module pages from the live registry", async () => {
-    render(<TopicsPage />);
+    render(await TopicsPage());
     expect(screen.getByRole("heading", { level: 1, name: "Темы" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Первые шаги в корейском" })).toBeInTheDocument();
 
@@ -83,7 +83,7 @@ describe("module routing integration", () => {
     expect(screen.getByRole("link", { name: "К тренировке" })).toHaveAttribute("href", "/training");
   });
 
-  it("lists zero exercises for an unmatched filter without throwing", () => {
+  it("lists zero exercises for an unmatched filter without throwing", async () => {
     const learningModule = createTestModule();
     const registry = new ModuleRegistry([learningModule]);
     const exercise = createChoiceExercise({
@@ -94,7 +94,7 @@ describe("module routing integration", () => {
     });
     const repository = new LocalExerciseRepository([exercise], registry);
 
-    expect(repository.list({ moduleSlug: "no-such-module" })).toEqual([]);
-    expect(repository.list({ moduleSlug: learningModule.slug })).toHaveLength(1);
+    expect(await repository.list({ moduleSlug: "no-such-module" })).toEqual([]);
+    expect(await repository.list({ moduleSlug: learningModule.slug })).toHaveLength(1);
   });
 });

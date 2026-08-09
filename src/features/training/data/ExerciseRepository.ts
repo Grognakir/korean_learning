@@ -9,6 +9,6 @@ export type ExerciseQuery = {
 };
 
 export interface ExerciseRepository {
-  getById(id: string): Exercise | undefined;
-  list(query?: ExerciseQuery): readonly Exercise[];
+  getById(id: string): Promise<Exercise | undefined>;
+  list(query?: ExerciseQuery): Promise<readonly Exercise[]>;
 }

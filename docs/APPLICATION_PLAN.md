@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I28 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
+- **Общее состояние:** F1-I01–F1-I29 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I28 Supabase Auth — `done`.
+- **Текущая итерация:** F1-I29 load learning content from Supabase — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** magic-link login form; `/auth/callback`; session refresh proxy; UserMenu/logout; profile bootstrap trigger.
-- **Выполненные проверки:** format/lint/typecheck/248 unit/17 integration/6 db/9 rls/build на Node 24.18.0.
-- **Сейчас работает:** email OTP/magic link вход; guest training без login; auth state в Header/AuthBoundary; безопасные redirect targets.
-- **Пока не работает:** Supabase content repository (F1-I29); cloud session/attempt sync (F1-I30).
-- **Следующий конкретный шаг:** F1-I29 load learning content from Supabase — без дополнительного CP.
+- **Уже сделано:** async repositories; Supabase module/exercise repos + mappers; PublicExercise DTO; server evaluate action; content source selector (local vs Vercel+Supabase).
+- **Выполненные проверки:** format/lint/typecheck/251 unit/17 integration/build на Node 24.18.0.
+- **Сейчас работает:** topics/training pages через `getLearningContent()`; client получает только PublicExercise; оценка ответов на server path; local/test/dev fallback явный.
+- **Пока не работает:** cloud session/attempt sync (F1-I30).
+- **Следующий конкретный шаг:** F1-I30 persist training sessions and attempts — без дополнительного CP.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed.
 - **Последнее обновление:** 2026-08-09.
@@ -721,11 +721,11 @@ MVP включает каталог тем, прохождение и возоб
 - **Ожидаемый результат:** рабочая авторизация.
 - **Риски:** email delivery/redirect config; предусмотреть local test user.
 - **Ветка / коммит:** `feature/supabase-auth` / `feat: add Supabase authentication`.
-- **Следующий шаг:** F1-I29.
+- **Следующий шаг:** F1-I30.
 
 ### F1-I29 — Перенос учебных данных в Supabase
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** заменить sample/local production source на БД, сохранив offline test fixtures.
 - **Входные зависимости:** F1-I28.
 - **Задачи:** map local domain↔rows; import validated modules/topics/exercises/options/answers; Supabase repository; cache/revalidation strategy; fallback только для test/dev, не скрывающий production errors.

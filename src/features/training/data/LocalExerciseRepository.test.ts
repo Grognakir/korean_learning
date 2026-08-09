@@ -11,26 +11,26 @@ function createRepository(definitions: readonly unknown[] = sampleExercises) {
 }
 
 describe("LocalExerciseRepository", () => {
-  it("loads two validated exercises for every supported type", () => {
+  it("loads two validated exercises for every supported type", async () => {
     const repository = createRepository();
-    const exercises = repository.list();
+    const exercises = await repository.list();
 
     expect(exercises).toHaveLength(14);
     expect(new Set(exercises.map((exercise) => exercise.id))).toHaveLength(14);
 
-    EXERCISE_TYPE_IDS.forEach((type) => {
-      expect(repository.list({ types: [type] })).toHaveLength(2);
-    });
+    for (const type of EXERCISE_TYPE_IDS) {
+      expect(await repository.list({ types: [type] })).toHaveLength(2);
+    }
   });
 
-  it("looks up exercises and filters them without exposing storage details", () => {
+  it("looks up exercises and filters them without exposing storage details", async () => {
     const repository = createRepository();
     const firstExercise = sampleExercises[0];
 
-    expect(repository.getById(firstExercise.id)?.logicalId).toBe(firstExercise.logicalId);
-    expect(repository.list({ moduleSlug: sampleModule.slug })).toHaveLength(14);
-    expect(repository.list({ topicIds: [sampleModule.topics[0].id] })).toHaveLength(4);
-    expect(repository.list({ difficulties: ["hard"] })).toHaveLength(0);
+    expect((await repository.getById(firstExercise.id))?.logicalId).toBe(firstExercise.logicalId);
+    expect(await repository.list({ moduleSlug: sampleModule.slug })).toHaveLength(14);
+    expect(await repository.list({ topicIds: [sampleModule.topics[0].id] })).toHaveLength(4);
+    expect(await repository.list({ difficulties: ["hard"] })).toHaveLength(0);
   });
 
   it("rejects duplicate exercise identifiers", () => {
@@ -58,7 +58,8 @@ describe("LocalExerciseRepository", () => {
     const unknownModule = { ...sampleExercises[0], moduleSlug: "missing-module" };
     const unknownTopic = {
       ...sampleExercises[0],
-      topicIds: ["fdcf5492-d319-491c-9f89-6e730499a7e4"],
+      id: "1905fc8d-3d90-45df-8b17-ab8c9d6110ba",
+      topicIds: ["00000000-0000-4000-8000-000000000099"],
     };
 
     expect(() => createRepository([unknownModule])).toThrowError(

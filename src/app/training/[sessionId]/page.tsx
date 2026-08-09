@@ -2,19 +2,23 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 
-import { ExercisesEmptyState } from "@/components/feedback";
+import { ExercisesEmptyState, ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import {
   DEMO_TRAINING_MODULE_SLUG,
+  DEMO_TRAINING_SEED,
   DEMO_TRAINING_SESSION_ID,
   TrainingSession,
 } from "@/features/training";
+import { evaluateTrainingSubmissionAction } from "@/features/training/actions/evaluateTrainingSubmissionAction";
+import { toPublicExercises, type PublicExercise } from "@/features/training/presentation";
 import {
+  getLearningContent,
   HONORIFICS_MODULE_SLUG,
   HONORIFICS_PREVIEW_SESSION_ID,
-  exerciseRepository,
-  learningModuleRegistry,
+  LearningContentError,
 } from "@/modules";
+import type { LearningModuleDefinition, LearningTopicDefinition } from "@/types";
 import { PageContainer } from "@/wrappers";
 
 import styles from "./page.module.css";
@@ -31,7 +35,7 @@ export const metadata: Metadata = {
 /** Unknown session ids must 404 at the routing layer (avoids soft-200 under streaming). */
 export const dynamicParams = false;
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const params = [{ sessionId: DEMO_TRAINING_SESSION_ID }];
 
   if (process.env.NODE_ENV === "development") {
@@ -41,11 +45,13 @@ export function generateStaticParams() {
   return params;
 }
 
-function resolveSession(sessionId: string): {
+async function resolveSession(sessionId: string): Promise<{
   readonly sessionId: string;
   readonly moduleSlug: string;
   readonly description: ReactNode;
-} | null {
+} | null> {
+  const { moduleRepository } = await getLearningContent();
+
   if (sessionId === DEMO_TRAINING_SESSION_ID) {
     return {
       sessionId: DEMO_TRAINING_SESSION_ID,
@@ -55,7 +61,7 @@ function resolveSession(sessionId: string): {
   }
 
   const honorificsAvailable =
-    learningModuleRegistry.getBySlug(HONORIFICS_MODULE_SLUG) !== undefined;
+    (await moduleRepository.getBySlug(HONORIFICS_MODULE_SLUG)) !== undefined;
 
   if (sessionId === HONORIFICS_PREVIEW_SESSION_ID && honorificsAvailable) {
     return {
@@ -75,16 +81,42 @@ function resolveSession(sessionId: string): {
 
 export default async function SessionPage({ params }: SessionPageProps) {
   const { sessionId } = await params;
-  const session = resolveSession(sessionId);
 
-  if (!session) {
+  let session: Awaited<ReturnType<typeof resolveSession>> | undefined;
+  let publicExercises: readonly PublicExercise[] | null = null;
+  let learningModule: LearningModuleDefinition | undefined;
+  let topics: readonly LearningTopicDefinition[] = [];
+
+  try {
+    session = await resolveSession(sessionId);
+
+    if (!session) {
+      notFound();
+    }
+
+    const { exerciseRepository, moduleRepository } = await getLearningContent();
+    const exercises = await exerciseRepository.list({ moduleSlug: session.moduleSlug });
+    learningModule = await moduleRepository.getBySlug(session.moduleSlug);
+    publicExercises = toPublicExercises(exercises, { seed: DEMO_TRAINING_SEED });
+    topics = learningModule?.topics ?? [];
+  } catch (error) {
+    if (error instanceof LearningContentError) {
+      return (
+        <PageContainer className={styles.page} width="narrow">
+          <PageHeader description="Не удалось загрузить задания сессии." title="Учебная сессия" />
+          <ServiceUnavailableState />
+        </PageContainer>
+      );
+    }
+
+    throw error;
+  }
+
+  if (!session || publicExercises === null) {
     notFound();
   }
 
-  const exercises = exerciseRepository.list({ moduleSlug: session.moduleSlug });
-  const learningModule = learningModuleRegistry.getBySlug(session.moduleSlug);
-
-  if (exercises.length === 0) {
+  if (publicExercises.length === 0) {
     return (
       <PageContainer className={styles.page} width="narrow">
         <PageHeader description="Для выбранной сессии сейчас нет заданий." title="Учебная сессия" />
@@ -98,10 +130,12 @@ export default async function SessionPage({ params }: SessionPageProps) {
       <PageHeader description={session.description} title="Учебная сессия" />
       <TrainingSession
         contentVersion={learningModule?.contentVersion ?? "1.0.0"}
-        exercises={exercises}
+        evaluateSubmission={evaluateTrainingSubmissionAction}
         moduleSlug={session.moduleSlug}
+        publicExercises={publicExercises}
+        seed={DEMO_TRAINING_SEED}
         sessionId={session.sessionId}
-        topics={learningModule?.topics ?? []}
+        topics={topics}
       />
     </PageContainer>
   );

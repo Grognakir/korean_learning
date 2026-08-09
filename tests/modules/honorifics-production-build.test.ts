@@ -4,11 +4,9 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 import {
-  dynamicParams as topicDynamicParams,
   generateStaticParams as generateTopicStaticParams,
 } from "@/app/topics/[moduleSlug]/page";
 import {
-  dynamicParams as sessionDynamicParams,
   generateStaticParams as generateSessionStaticParams,
 } from "@/app/training/[sessionId]/page";
 import { DEMO_TRAINING_SESSION_ID } from "@/features/training";
@@ -41,8 +39,6 @@ describe("honorifics production build gate", () => {
     const params = await generateTopicStaticParams();
     const sessionParams = await generateSessionStaticParams();
 
-    expect(topicDynamicParams).toBe(false);
-    expect(sessionDynamicParams).toBe(false);
     expect(params.map((entry) => entry.moduleSlug)).not.toContain("honorifics");
     expect(sessionParams.map((entry) => entry.sessionId)).toEqual([DEMO_TRAINING_SESSION_ID]);
     expect(

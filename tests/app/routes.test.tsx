@@ -3,18 +3,20 @@ import { describe, expect, it, vi } from "vitest";
 
 import DictionaryPage from "@/app/dictionary/page";
 import LoginPage from "@/app/login/page";
+import { ProgressDataPanel } from "@/app/progress/ProgressDataPanel";
 import ProgressPage from "@/app/progress/page";
 import ReviewPage from "@/app/review/page";
-import ModulePage from "@/app/topics/[moduleSlug]/page";
+import { ModuleDetailPanel } from "@/app/topics/[moduleSlug]/ModuleDetailPanel";
 import TopicsPage from "@/app/topics/page";
-import SessionPage from "@/app/training/[sessionId]/page";
+import { SessionExercisePanel, resolveSession } from "@/app/training/[sessionId]/SessionExercisePanel";
+import { TrainingModulesPanel } from "@/app/training/TrainingModulesPanel";
 import TrainingPage from "@/app/training/page";
 
 vi.mock("@/features/authentication/server/getServerAuthUser", () => ({
   getServerAuthUser: vi.fn(async () => null),
 }));
 
-const ASYNC_STATIC_ROUTES = [
+const STATIC_SHELL_ROUTES = [
   ["Темы", TopicsPage],
   ["Тренировка", TrainingPage],
 ] as const;
@@ -25,17 +27,18 @@ const SYNC_STATIC_ROUTES = [
 ] as const;
 
 describe("application routes", () => {
-  it.each(ASYNC_STATIC_ROUTES)(
+  it.each(STATIC_SHELL_ROUTES)(
     "renders the %s route with one page heading",
-    async (title, Page) => {
-      render(await Page());
+    (title, Page) => {
+      render(<Page />);
 
       expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
     },
   );
 
   it("renders the progress route for guests", async () => {
-    render(await ProgressPage());
+    render(<ProgressPage />);
+    render(await ProgressDataPanel());
 
     expect(screen.getByRole("heading", { level: 1, name: "Прогресс" })).toBeInTheDocument();
     expect(
@@ -56,7 +59,7 @@ describe("application routes", () => {
   });
 
   it("loads the validated local exercise set on the training route", async () => {
-    render(await TrainingPage());
+    render(await TrainingModulesPanel());
 
     expect(screen.getByText(/доступно 14 заданий/)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Начать тренировку" })).toHaveAttribute(
@@ -66,7 +69,7 @@ describe("application routes", () => {
   });
 
   it("renders a module detail route", async () => {
-    render(await ModulePage({ params: Promise.resolve({ moduleSlug: "sample-module" }) }));
+    render(await ModuleDetailPanel({ moduleSlug: "sample-module" }));
 
     expect(
       screen.getByRole("heading", { level: 1, name: "Первые шаги в корейском" }),
@@ -76,13 +79,15 @@ describe("application routes", () => {
   });
 
   it("marks the training module level badge with lang=ko", async () => {
-    render(await TrainingPage());
+    render(await TrainingModulesPanel());
 
     expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
   });
 
   it("renders the demo training session route", async () => {
-    render(await SessionPage({ params: Promise.resolve({ sessionId: "demo-session" }) }));
+    const session = await resolveSession("demo-session");
+    expect(session).not.toBeNull();
+    render(await SessionExercisePanel({ session: session! }));
 
     expect(screen.getByRole("heading", { level: 1, name: "Учебная сессия" })).toBeInTheDocument();
     expect(screen.getByRole("progressbar")).toBeInTheDocument();

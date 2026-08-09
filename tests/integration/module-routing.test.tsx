@@ -1,11 +1,13 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
-import ModulePage, {
+import {
   generateStaticParams as generateModuleParams,
 } from "@/app/topics/[moduleSlug]/page";
+import { ModuleDetailPanel } from "@/app/topics/[moduleSlug]/ModuleDetailPanel";
 import TopicsPage from "@/app/topics/page";
-import SessionPage from "@/app/training/[sessionId]/page";
+import { TopicsCatalog } from "@/app/topics/TopicsCatalog";
+import { SessionPageContent } from "@/app/training/[sessionId]/SessionExercisePanel";
 import { ExercisesEmptyState } from "@/components/feedback";
 import {
   ExerciseRepositoryError,
@@ -29,25 +31,27 @@ describe("module routing integration", () => {
   });
 
   it("renders catalog and module pages from the live registry", async () => {
-    render(await TopicsPage());
+    render(<TopicsPage />);
     expect(screen.getByRole("heading", { level: 1, name: "Темы" })).toBeInTheDocument();
+
+    render(await TopicsCatalog());
     expect(screen.getByRole("heading", { name: "Первые шаги в корейском" })).toBeInTheDocument();
 
-    render(await ModulePage({ params: Promise.resolve({ moduleSlug: "sample-module" }) }));
+    render(await ModuleDetailPanel({ moduleSlug: "sample-module" }));
     expect(
-      screen.getByRole("heading", { level: 1, name: "Первые шаги в корейском" }),
+      await screen.findByRole("heading", { level: 1, name: "Первые шаги в корейском" }),
     ).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Основы хангыля" })).toBeInTheDocument();
   });
 
   it("calls notFound for unknown module and session ids", async () => {
-    await expect(
-      ModulePage({ params: Promise.resolve({ moduleSlug: "missing-module" }) }),
-    ).rejects.toMatchObject({ digest: expect.stringContaining("404") });
+    await expect(ModuleDetailPanel({ moduleSlug: "missing-module" })).rejects.toMatchObject({
+      digest: expect.stringContaining("404"),
+    });
 
-    await expect(
-      SessionPage({ params: Promise.resolve({ sessionId: "missing-session" }) }),
-    ).rejects.toMatchObject({ digest: expect.stringContaining("404") });
+    await expect(SessionPageContent({ sessionId: "missing-session" })).rejects.toMatchObject({
+      digest: expect.stringContaining("404"),
+    });
   });
 
   it("rejects unknown module refs before exercises reach the UI", () => {

@@ -3,16 +3,10 @@ import { describe, expect, it, vi } from "vitest";
 
 import NotFoundPage from "@/app/not-found";
 import AppError from "@/app/error";
-import Loading from "@/app/loading";
-import ModulePage from "@/app/topics/[moduleSlug]/page";
-import SessionPage from "@/app/training/[sessionId]/page";
+import { ModuleDetailPanel } from "@/app/topics/[moduleSlug]/ModuleDetailPanel";
+import { SessionPageContent } from "@/app/training/[sessionId]/SessionExercisePanel";
 
 describe("application state routes", () => {
-  it("renders global loading UI", () => {
-    render(<Loading />);
-    expect(screen.getByRole("status", { name: "Загрузка страницы…" })).toBeInTheDocument();
-  });
-
   it("renders not-found actions to home and catalog", () => {
     render(<NotFoundPage />);
 
@@ -41,12 +35,12 @@ describe("application state routes", () => {
   });
 
   it("calls notFound for unknown module and session ids", async () => {
-    await expect(
-      ModulePage({ params: Promise.resolve({ moduleSlug: "missing-module" }) }),
-    ).rejects.toMatchObject({ digest: expect.stringContaining("404") });
+    await expect(ModuleDetailPanel({ moduleSlug: "missing-module" })).rejects.toMatchObject({
+      digest: expect.stringContaining("404"),
+    });
 
-    await expect(
-      SessionPage({ params: Promise.resolve({ sessionId: "missing-session" }) }),
-    ).rejects.toMatchObject({ digest: expect.stringContaining("404") });
+    await expect(SessionPageContent({ sessionId: "missing-session" })).rejects.toMatchObject({
+      digest: expect.stringContaining("404"),
+    });
   });
 });

@@ -7,6 +7,13 @@ export {
   HONORIFICS_PREVIEW_SESSION_ID,
 } from "./honorifics/previewConstants";
 export {
+  getCachedExerciseCountByModuleSlug,
+  getCachedExerciseCountsByModuleSlug,
+  getCachedExercisesByModuleSlug,
+  getCachedPublishedModuleBySlug,
+  getCachedPublishedModules,
+} from "./cachedLearningContent";
+export {
   getExerciseContent,
   getExerciseCountByModuleSlug,
   getLearningContent,

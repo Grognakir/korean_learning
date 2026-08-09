@@ -9,6 +9,7 @@ export {
   ServiceUnavailableState,
   TopicsEmptyState,
 } from "./FeatureEmptyStates";
+export { CatalogSectionSkeleton } from "./CatalogSectionSkeleton";
 export { LoadingView } from "./LoadingView";
 export type { LoadingViewProps } from "./LoadingView";
 export { RouteError } from "./RouteError";

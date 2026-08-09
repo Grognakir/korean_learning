@@ -2,9 +2,11 @@
 
 Последнее обновление: 2026-08-09
 
-Статус: PERF-I00 (Production env) выполнен частично; PERF-I01—I08 реализованы в ветке `feature/performance-vercel-fixes`.
+Статус: PERF-I00 выполнен частично (Production env настроен; redeploy после merge PERF-I09); PERF-I01—I03 и PERF-I05—I07 в commit `5f716e9`; PERF-I09 реализован локально на ветке `feature/perf-i09-cache-navigation` — локальный gate (build, 278 tests, e2e navigation-repeat, bundle budgets) пройден; удалённая приёмка Preview/Production и PERF-I08 smoke — в ожидании deploy.
 
 Базовый commit: `1d6fd9af5a21d85d5b115e9a83e7c14b984d1002`.
+
+База корректирующей итерации: `5f716e9167a3db59f7e1ca967fac4335247fa41e`.
 
 ## 1. Цель и границы
 
@@ -87,18 +89,51 @@ Production runtime logs содержат `EnvValidationError` с кодом `ENV
 
 Отдельно требуется проверить наличие `SUPABASE_SECRET_KEY` в Production scope. Текущая ошибка ещё не доказывает его отсутствие, но этот ключ необходим server-side Supabase content path. Значения всех переменных должны оставаться скрытыми.
 
+### 2.6 Повторная загрузка уже посещённых разделов
+
+После реализации commit `5f716e9` проведена отдельная удалённая проверка цикла навигации. Указанный пользователем Preview `korean-learning-cd8rhfvj9...` относится к исходному commit `1d6fd9a`. Актуальный Preview commit `5f716e9` — `https://korean-learning-i1yc48naj-grognakirs-projects.vercel.app`. Дефект воспроизводится на обоих deployment.
+
+Повторный переход показывает корневую плашку `Загрузка страницы…`:
+
+| Повторный переход           | Появление loading | Появление целевого заголовка | Видимый loading |
+| --------------------------- | ----------------: | ---------------------------: | --------------: |
+| `/topics` → `/training`     |             64 ms |                       501 ms |    около 437 ms |
+| `/training` → `/topics`     |             89 ms |                       531 ms |    около 442 ms |
+| `/dictionary` → `/review`   |             79 ms |                       479 ms |    около 400 ms |
+| `/review` → `/progress`     |             99 ms |                       528 ms |    около 429 ms |
+| `/progress` → `/dictionary` |             63 ms |                       498 ms |    около 435 ms |
+
+На актуальном Preview повторные `/topics` и `/training` также показывали корневой loading примерно 410 ms. Значит, это не cold start первого посещения и не проблема только старого deployment.
+
+Локальный `next build --debug` на commit `5f716e9` подтвердил:
+
+- каждый UI-маршрут остаётся `ƒ Dynamic`;
+- статическая генерация каждого публичного маршрута отклонена с `reason: cookies`;
+- источник dynamic usage: `HeaderAuthSection` → `getServerAuthUser` → `createServerSupabaseClient` → `cookies()`;
+- `Suspense` вокруг `HeaderAuthSection` без включённых Cache Components не изолирует динамичность корневого layout.
+
+Правило установленного Next.js 16.3.0 без Cache Components:
+
+- dynamic route с обычным `<Link>` предварительно загружает только layout до ближайшего `loading.tsx`;
+- dynamic client cache TTL по умолчанию равен `0`;
+- содержимое leaf page повторно запрашивается с сервера при каждом клике;
+- корневой `src/app/loading.tsx` поэтому заменяет содержимое всего раздела при каждом переходе.
+
+На актуальном Preview дополнительно обнаружено отдельное функциональное отклонение: `/topics` и `/training` показывали `Сервис недоступен`. Его необходимо устранить и повторить navigation baseline, но оно не объясняет сам механизм повторной loading-плашки.
+
 ## 3. Причины медленной загрузки
 
-| Приоритет | Причина                                                          | Подтверждение                                                                                                                                             |
-| --------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| P0        | Production опубликован без обязательных переменных окружения     | Публичный alias отвечает `500`, runtime logs содержат точный `EnvValidationError`                                                                         |
-| P1        | Слишком большой initial JavaScript                               | Простые страницы получают около 139,7 KB gzip, а topics/training/progress/login — около 270–286,9 KB gzip                                                 |
-| P1        | Клиентские barrel exports смешивают UI, domain и server/data код | `src/features/training/index.ts` и `src/components/ui/index.ts` расширяют client manifests; общий route chunk около 130,8 KB gzip включает Supabase и Zod |
-| P1        | Корневой layout делает все страницы зависимыми от cookies/auth   | `src/app/layout.tsx` вызывает `getServerAuthUser()`, все маршруты собираются как динамические и отвечают с private/no-store semantics                     |
-| P1        | Авторизация читается несколько раз в одном запросе               | Proxy вызывает `getClaims`, layout вызывает `getUser`, а `/progress` и `/training/[sessionId]` снова вызывают `getServerAuthUser()`                       |
-| P1        | Supabase composition загружает больше данных, чем нужно маршруту | `composeSupabaseContent()` заранее создаёт module и exercise repositories и ожидает обе части даже для страниц, которым нужны только модули               |
-| P2        | Cloud session блокирует экран упражнения                         | `useCloudTrainingPersistence` сначала создаёт удалённую сессию, а `TrainingSession` заменяет содержимое экраном «Синхронизация сессии»                    |
-| P2        | Toolchain Vercel не соответствует заявленному engine             | Node `24.15.0` против `>=24.18.0 <25`; это build hygiene, но не доказанная причина медленного runtime                                                     |
+| Приоритет | Причина                                                          | Подтверждение                                                                                                       | Статус после `5f716e9`                                                                            |
+| --------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| P0        | Production опубликован без обязательных переменных окружения     | Публичный alias отвечал `500`, runtime logs содержали точный `EnvValidationError`                                   | Конфигурация изменена; требуется повторная удалённая проверка нового deployment                   |
+| P1        | Слишком большой initial JavaScript                               | Исходно topics/training/progress/login получали около 270–286,9 KB gzip                                             | Локально уменьшено примерно до 160 KB; bundle gate реализован                                     |
+| P1        | Клиентские barrel exports смешивали UI, domain и server/data код | Общий route chunk включал Supabase, Zod и весь training graph                                                       | Узкие entry points реализованы; оставить regression gate                                          |
+| P1        | Корневой layout делает все страницы зависимыми от cookies/auth   | `HeaderAuthSection` из root layout доходит до `cookies()`; build отклоняет static generation каждого маршрута       | Не исправлено: `Suspense` без Cache Components недостаточен                                       |
+| P1        | Авторизация читалась несколько раз в одном render request        | Layout, `/progress` и `/training/[sessionId]` вызывали один helper                                                  | Исправлено через `React.cache()`; Proxy `getClaims()` остаётся отдельной проверкой                |
+| P1        | Supabase composition загружала больше данных, чем нужно маршруту | Исходно module и exercise repositories загружались вместе                                                           | Узкие loaders реализованы; новый Preview показывает `Сервис недоступен`, нужна отдельная проверка |
+| P1        | Уже посещённые разделы не сохраняются в client route cache       | Все страницы остаются dynamic, `staleTimes.dynamic=0`, корневой `loading.tsx` показывается при каждом RSC roundtrip | Не исправлено; предмет PERF-I09                                                                   |
+| P2        | Cloud session блокировала экран упражнения                       | Экран заменялся статусом «Синхронизация сессии»                                                                     | Исправлено локально; требуется сохранить e2e gate                                                 |
+| P2        | Toolchain Vercel не соответствовал заявленному engine            | Node `24.15.0` против прежнего требования `>=24.18.0 <25`                                                           | Нижняя граница engine согласована с Vercel                                                        |
 
 Proxy нельзя считать основной причиной текущей задержки: на проверенном Preview его работа занимала 6–7 ms. Удалять его ради ускорения запрещено без отдельного профилирования и security review.
 
@@ -221,6 +256,8 @@ Proxy нельзя считать основной причиной текуще
 Критерий готовности: один `getUser()` на server render request; auth semantics не изменились.
 
 ### PERF-I04 — изолировать auth от публичного route shell
+
+Статус: локально выполнено в PERF-I09. Включены Cache Components + Partial Prefetching; `next build` показывает `◐ Partial Prerender` для `/`, `/topics`, `/training`, `/progress`, `/review`, `/dictionary`, `/login` вместо полностью `ƒ Dynamic`. Auth island (`HeaderAuthSection`) остаётся в `Suspense` с placeholder фиксированного размера. Удалённая приёмка — после deploy Preview.
 
 Цель — перестать делать все публичные страницы полностью динамическими только из-за UserMenu в корневом layout.
 
@@ -354,13 +391,173 @@ Proxy нельзя считать основной причиной текуще
 
 Критерий готовности: одна команда формирует воспроизводимый отчёт и возвращает ненулевой exit code при нарушении status, error или bundle budget.
 
+### PERF-I09 — устранить повторный root loading при навигации
+
+Статус: локально выполнено. Реализовано: `cacheComponents` + `partialPrefetching` + `cacheLife.learningContent`; `src/modules/cachedLearningContent.ts` с `"use cache"`; static shell + локальные `Suspense` на `/topics`, `/training`, `/progress`, `/topics/[moduleSlug]`, `/training/[sessionId]`, `/login`; удалён корневой `src/app/loading.tsx`; `revalidatePath("/progress")` после complete session; Playwright `tests/e2e/navigation-repeat.spec.ts` (desktop + mobile) — 4/4 passed локально. `dynamicParams` снят (несовместим с Cache Components); 404 через `notFound()` в panel-компонентах. Остаётся: deploy Preview, устранить «Сервис недоступен» на `/topics`/`/training`, удалённый gate median/p95.
+
+Цель — первое посещение динамического содержимого может показывать локальный skeleton, но повторное посещение уже загруженного раздела не должно заменять весь экран плашкой `Загрузка страницы…` и блокироваться новым foreground RSC roundtrip.
+
+#### 1. Сначала закрепить дефект тестом
+
+До изменения реализации добавить Playwright-сценарий, который падает на commit `5f716e9`:
+
+1. Открыть `/training` и дождаться заголовка.
+2. Перейти в `/topics` и дождаться заголовка.
+3. Вернуться в `/training`.
+4. Зафиксировать, появлялся ли `status` с именем `Загрузка страницы…`, время до заголовка и navigation RSC requests.
+5. Повторить цикл `/review` → `/progress` → `/dictionary` → `/review`.
+6. Выполнить оба цикла для desktop и mobile navigation.
+
+Тест обязан различать:
+
+- первый переход в ещё не загруженный раздел;
+- повторное посещение;
+- foreground navigation request;
+- допустимую background revalidation, которая не скрывает уже показанный экран.
+
+Baseline теста должен содержать текущие удалённые значения из раздела 2.6. Нельзя сначала изменить код, а потом написать тест только под новое поведение.
+
+#### 2. Включить модель Cache Components Next.js 16.3
+
+Перед реализацией исполнитель обязан прочитать локальные руководства установленной версии:
+
+- `node_modules/next/dist/docs/01-app/03-api-reference/05-config/01-next-config-js/cacheComponents.md`;
+- `node_modules/next/dist/docs/01-app/03-api-reference/05-config/01-next-config-js/partialPrefetching.md`;
+- `node_modules/next/dist/docs/01-app/02-guides/migrating-to-cache-components.md`;
+- `node_modules/next/dist/docs/01-app/02-guides/instant-navigation.md`;
+- `node_modules/next/dist/docs/01-app/02-guides/preserving-ui-state.md`.
+
+Действия:
+
+1. В `next.config.ts` включить `cacheComponents: true`.
+2. После прохождения instant navigation validation включить `partialPrefetching: true`.
+3. Не использовать `experimental.staleTimes.dynamic` как основное исправление. Эта настройка допустима только как отдельно измеренный временный fallback, если миграция Cache Components заблокирована подтверждённой несовместимостью.
+4. Не добавлять `instant = false` ко всем маршрутам и не считать это исправлением. Такой opt-out разрешён только временно для локализации конкретного blocking subtree и должен быть удалён до приёмки.
+5. Исправить все build/dev insights через один из двух механизмов:
+   - стабильные данные — узкая cached function/component;
+   - request-specific данные — отдельный компонент под локальным `Suspense`.
+
+Критерий подшага: `next build --debug` больше не сообщает `reason: cookies` для полного дерева публичных маршрутов; каждый публичный маршрут имеет prerendered App Shell.
+
+#### 3. Реально изолировать auth island
+
+Действия:
+
+1. Сохранить `HeaderAuthSection` серверным и request-specific.
+2. Оставить его под `Suspense` в `src/app/layout.tsx`, но проверить поведение уже при включённых Cache Components.
+3. `UserMenuPlaceholder` должен иметь те же размеры, что гостевая и авторизованная область, чтобы header не менял высоту и ширину.
+4. `AuthProvider` не должен заставлять весь shell ожидать пользователя.
+5. Серверная защита `/progress`, cloud session и API routes остаётся серверной. Нельзя подменять её только клиентским auth state.
+
+Тесты:
+
+- guest header;
+- authenticated header;
+- медленный `getServerAuthUser()` показывает только placeholder в header, а не root loading;
+- logout/login обновляет auth island без устаревшего меню;
+- CLS header равен 0 в сценарии появления пользователя.
+
+#### 4. Разделить маршруты по политике кэширования
+
+Исполнитель должен реализовать и приложить к отчёту такую матрицу:
+
+| Маршрут                  | Требуемая политика                                           | Допустимый loading                                                    |
+| ------------------------ | ------------------------------------------------------------ | --------------------------------------------------------------------- |
+| `/`                      | полностью static App Shell                                   | отсутствует при client navigation                                     |
+| `/review`, `/dictionary` | полностью static до появления реальных данных                | отсутствует при client navigation                                     |
+| `/topics`                | static shell + cached published module content               | только локальный skeleton каталога при реальном cache miss            |
+| `/topics/[moduleSlug]`   | static shell + cached content по `moduleSlug`                | локальный skeleton модуля на первом miss                              |
+| `/training`              | static shell + cached module metadata/counts                 | локальный skeleton списка модулей на первом miss                      |
+| `/training/[sessionId]`  | cached exercise content + отдельные auth/persistence islands | локальный skeleton упражнения на первом miss; header и shell остаются |
+| `/progress`              | static page shell + request-specific progress subtree        | локальный progress skeleton; root loading запрещён                    |
+| `/login`                 | static form shell + локальная обработка `searchParams`       | локальный form/status fallback                                        |
+
+Для опубликованного учебного контента:
+
+1. Добавить узкие cached loaders, совместимые с Cache Components, рядом с `getModuleContent`, `getExerciseContent` и `getExerciseCountByModuleSlug`.
+2. Использовать явный `cacheLife`, соответствующий частоте обновления контента, и `cacheTag` для будущей адресной инвалидации.
+3. Не кэшировать Supabase client, cookie store, repository с request-specific auth либо объект ошибки; кэшировать только сериализуемый результат чтения опубликованного контента.
+4. Не выполнять полный module + exercise composition для страницы, которой нужна одна часть.
+5. Ошибка Supabase не должна кэшироваться как постоянный `Сервис недоступен`.
+
+Для `/progress`:
+
+1. Вынести статический `PageHeader` и shell из request-specific компонента.
+2. Обернуть только чтение пользователя и progress data локальным `Suspense`.
+3. Если применяется `'use cache: private'`, задать ограниченный `cacheLife` и доказать свежесть после завершения тренировки.
+4. После записи попытки/завершения сессии инвалидировать progress data подходящим механизмом Route Handler и обновить клиентский route state.
+5. Нельзя принимать мгновенный повторный переход ценой показа устаревшего прогресса.
+
+#### 5. Исправить loading boundaries
+
+Действия выполняются только после появления prerendered shells:
+
+1. Удалить либо перестать использовать корневой `src/app/loading.tsx` как fallback всех разделов.
+2. Создать локальные skeleton/status рядом с действительно асинхронными subtrees: каталог, упражнение, progress data, login status.
+3. Skeleton сохраняет размеры конечного блока и не сдвигает header/navigation.
+4. При повторном посещении ранее загруженный экран сохраняется до готовности background refresh.
+5. Навигация остаётся interruptible: пользователь может перейти в третий раздел, не дожидаясь предыдущего запроса.
+
+Удаление `src/app/loading.tsx` до выполнения подшагов 2–4 запрещено: это лишь скрывает задержку и оставляет серверный roundtrip.
+
+#### 6. Настроить prefetch без массовых запросов
+
+1. Для основных ссылок `/`, `/topics`, `/training`, `/review`, `/dictionary` сохранить стандартный `<Link>` после включения Partial Prefetching: он должен загружать один переиспользуемый App Shell на маршрут.
+2. Не ставить blanket `prefetch={true}` всем пунктам desktop/mobile navigation. На dynamic routes это создаёт runtime server invocation для каждой видимой ссылки.
+3. Для `/topics/[moduleSlug]` и `/training/[sessionId]` разрешить `prefetch={true}` только после кэширования URL-dependent content и отдельного сравнения числа запросов/байтов.
+4. Для `/progress` не выполнять Supabase progress query при каждом показе навигации. Если первого клика недостаточно, использовать intent prefetch по hover/focus/touch и доказать отсутствие лишних запросов.
+5. Desktop и mobile navigation должны использовать одну политику, чтобы дефект не зависел от viewport.
+
+#### 7. Проверки и критерии готовности
+
+Локальный gate:
+
+1. ESLint, TypeScript, unit и integration tests.
+2. Production build с `--debug`.
+3. Playwright desktop: 1280×800.
+4. Playwright mobile: 390×844.
+5. Playwright tablet: 768×1024.
+6. Проверка authenticated и guest states.
+7. Bundle budgets PERF-I02 не ухудшены.
+
+Обязательные navigation assertions:
+
+- на первом переходе загружается только локальная асинхронная область, header/navigation и page shell остаются видимыми;
+- на повторном посещении `/`, `/topics`, `/training`, `/review`, `/dictionary` корневой `Загрузка страницы…` не появляется;
+- median до целевого `h1` на повторном переходе ≤ 150 ms, p95 ≤ 250 ms минимум по 10 циклам;
+- повторный переход к cacheable route не блокируется foreground RSC request;
+- background prefetch/revalidation не заменяет уже показанный контент;
+- повторный `/progress` не показывает root loading, а после завершения тренировки отображает свежие данные;
+- смена гостя на авторизованного пользователя не показывает чужой cached progress или UserMenu;
+- быстрые последовательные клики не оставляют интерфейс на промежуточном loading state;
+- console errors/warnings и новые Vercel runtime errors равны нулю.
+
+Дополнительный локальный cache test:
+
+1. Посетить все cacheable public routes и дождаться их готовности.
+2. Заблокировать foreground RSC navigation requests.
+3. Повторно пройти эти маршруты.
+4. Заголовок и ранее загруженный контент должны появиться без root loading. Если Next.js выполняет фоновую проверку свежести, она не должна блокировать экран.
+
+Удалённая приёмка:
+
+1. Deploy отдельного Preview commit.
+2. Проверить фактический commit SHA и не использовать URL предыдущего deployment.
+3. Сначала устранить `Сервис недоступен` на `/topics` и `/training`.
+4. Повторить по 10 циклов desktop и mobile на защищённом Preview.
+5. Приложить таблицу `до/после`: loading duration, heading median/p95, foreground RSC count, transferred RSC bytes.
+6. Проверить Vercel runtime logs после теста.
+7. Только после прохождения Preview выполнить Production smoke.
+
+Критерий готовности PERF-I09: все navigation assertions проходят локально и на актуальном Preview, а PERF-I04 route-shell criterion подтверждён build output. После этого статусы PERF-I04, PERF-I08 и PERF-I09 можно одновременно перевести в «выполнено».
+
 ## 5. Обязательная матрица проверок
 
 После каждой кодовой итерации выполняются только релевантные быстрые тесты, затем полный gate перед merge:
 
 1. ESLint.
 2. TypeScript без emit.
-3. Все unit и integration tests — текущий baseline: 267 тестов.
+3. Все unit и integration tests — текущий baseline после commit `5f716e9`: 277 тестов.
 4. Production build.
 5. E2E:
    - все девять маршрутов;
@@ -409,6 +606,8 @@ Cursor или Claude обязан приложить:
 - обязательные deployment variables проверяются до публикации;
 - client bundles укладываются в budgets;
 - публичный route shell больше не становится полностью dynamic только из-за header auth;
+- повторное посещение cacheable разделов не показывает корневой loading и не блокируется новым foreground RSC roundtrip;
+- `/progress` использует локальную динамическую границу и остаётся свежим после завершения тренировки;
 - повторные auth reads и лишние content reads устранены;
 - cloud bootstrap не скрывает учебный экран и не теряет ответы;
 - Vercel toolchain соответствует заявленному contract;

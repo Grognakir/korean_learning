@@ -1,55 +1,28 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
-import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedback";
+import { CatalogSectionSkeleton } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
-import { ModuleCard } from "@/features/training/components/ModuleCard";
-import { getModuleContent, LearningContentError } from "@/modules";
-import type { LearningModuleDefinition } from "@/types";
 import { PageContainer } from "@/wrappers";
 
 import styles from "./page.module.css";
+import { TopicsCatalog } from "./TopicsCatalog";
 
 export const metadata: Metadata = {
   title: "Темы",
   description: "Выберите модуль и двигайтесь по коротким темам в своём темпе.",
 };
 
-export default async function TopicsPage() {
-  let modules: readonly LearningModuleDefinition[] | null = null;
-
-  try {
-    const { moduleRepository } = await getModuleContent();
-    modules = await moduleRepository.getPublished();
-  } catch (error) {
-    if (!(error instanceof LearningContentError)) {
-      throw error;
-    }
-  }
-
-  if (modules === null) {
-    return (
-      <PageContainer className={styles.page}>
-        <PageHeader description="Не удалось загрузить каталог модулей." title="Темы" />
-        <ServiceUnavailableState />
-      </PageContainer>
-    );
-  }
-
+export default function TopicsPage() {
   return (
     <PageContainer className={styles.page}>
       <PageHeader
         description="Выберите модуль и двигайтесь по коротким темам в своём темпе."
         title="Темы"
       />
-      {modules.length === 0 ? (
-        <CatalogEmptyState />
-      ) : (
-        <section aria-label="Доступные учебные модули" className={styles.grid}>
-          {modules.map((module) => (
-            <ModuleCard key={module.id} module={module} />
-          ))}
-        </section>
-      )}
+      <Suspense fallback={<CatalogSectionSkeleton label="Загрузка каталога…" />}>
+        <TopicsCatalog />
+      </Suspense>
     </PageContainer>
   );
 }

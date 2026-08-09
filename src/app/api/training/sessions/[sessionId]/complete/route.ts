@@ -1,4 +1,5 @@
 import type { NextRequest } from "next/server";
+import { revalidatePath } from "next/cache";
 
 import { trainingApiSuccessResponse } from "@/features/training/api/responses";
 import { handleTrainingRoute, parseJsonBody } from "@/features/training/api/routeContext";
@@ -20,6 +21,8 @@ export async function POST(request: NextRequest, context: CompleteRouteContext) 
       sessionId,
       request: body,
     });
+
+    revalidatePath("/progress");
 
     return trainingApiSuccessResponse({ session });
   }, request);

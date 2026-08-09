@@ -4,26 +4,33 @@
 
 ## Чем занимаемся
 
-Реализован план `docs/PERFORMANCE_AND_VERCEL_FIX_PLAN.md` (PERF-I00—I08) в ветке `feature/performance-vercel-fixes`.
+Реализована PERF-I09 (Cache Components + cached loaders + static shell + локальные Suspense) на ветке `feature/perf-i09-cache-navigation`. Локальный gate пройден; deploy и удалённая приёмка — следующий шаг.
 
 ## Принятые решения
 
-- Production Vercel env дополнен: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY`, `CONTENT_SOURCE=supabase`.
-- Prebuild `scripts/validate-deployment-env.ts` валидирует Supabase env на Vercel/CI до `next build`.
-- Auth вынесен в `HeaderAuthSection` + `Suspense`; root layout больше не блокирует весь shell на `getServerAuthUser()`.
-- `getServerAuthUser()` memoized через `React.cache()`.
-- Узкие loaders: `getModuleContent`, `getExerciseContent`, `getExerciseCountByModuleSlug`.
-- Barrel imports на catalog/training/progress страницах заменены на прямые entry points; добавлены `training/client.ts`, `training/server.ts`, `training/domain-public.ts`.
-- Cloud bootstrap больше не заменяет экран упражнения — показывает Alert и блокирует submit до ready.
-- `engines.node` согласован с Vercel: `>=24.15.0 <25`.
-- Gate: 277/277 tests, lint, typecheck, build, bundle budgets green.
+- `cacheComponents: true`, `partialPrefetching: true`, `cacheLife.learningContent` в `next.config.ts`.
+- Узкие cached loaders в `src/modules/cachedLearningContent.ts` (`"use cache"` + `cacheTag`).
+- Корневой `src/app/loading.tsx` удалён; локальные skeleton через `CatalogSectionSkeleton`.
+- `dynamicParams = false` снят с `[moduleSlug]` и `[sessionId]` — несовместим с Cache Components; 404 через `notFound()` в panel-компонентах.
+- `revalidatePath("/progress")` в complete route для свежести прогресса после тренировки.
+- Playwright `tests/e2e/navigation-repeat.spec.ts`: повторная навигация без «Загрузка страницы…» — 4/4 passed (desktop + mobile).
+
+## Локальный gate (2026-08-09)
+
+- `next build`: public routes `◐ Partial Prerender` (не `ƒ Dynamic` целиком из-за cookies).
+- Unit/integration: 278 + 17 tests passed.
+- E2E navigation-repeat: 4 passed.
+- Bundle budgets: green (~159 KB gzip для `/topics`, `/training`).
+- Lint + typecheck: green.
 
 ## Открытые задачи
 
-- [ ] Push ветки и deploy на Vercel (Production redeploy старого commit без нового кода упал на build).
-- [ ] Публичный smoke `PERF_BASE_URL=https://korean-learning-gray.vercel.app pnpm perf:smoke` после deploy.
-- [ ] Commit по запросу пользователя.
+- [ ] Commit + push ветки `feature/perf-i09-cache-navigation`, merge в `main`.
+- [ ] Vercel redeploy; проверить Preview без «Сервис недоступен» на `/topics`, `/training`.
+- [ ] Удалённый navigation gate (10 циклов desktop/mobile, median/p95).
+- [ ] PERF-I08 remote smoke через `scripts/performance-smoke.mts`.
+- [ ] PERF-I00: подтвердить Production 200 после deploy с env + новым кодом.
 
-## Контекст
+## Контекст для следующей сессии
 
-Локальный bundle gzip: `/topics` и `/training` ~160 KB (budget 180 KB). Production alias должен заработать после deploy с env + новым кодом.
+Build matrix после PERF-I09: `/`, `/topics`, `/training`, `/progress`, `/review`, `/dictionary`, `/login` — `◐` с revalidate 5m / expire 1d для content routes. API routes и `/auth/callback` остаются `ƒ Dynamic`. Preview URL для commit `5f716e9`: `korean-learning-i1yc48naj-grognakirs-projects.vercel.app`; после merge нужен новый deployment SHA.

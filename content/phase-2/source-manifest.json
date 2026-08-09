@@ -1,4 +1,37 @@
 {
   "schemaVersion": "phase-2.v1",
-  "sources": []
+  "sources": [
+    {
+      "id": "src.curriculum-topics",
+      "key": "curriculum-topics",
+      "title": "Curriculum topics (1급)",
+      "kind": "canonical-authoring",
+      "documentRef": "docs/CURRICULUM_TOPICS.md",
+      "lineageKeys": ["textbook-outline-photo"]
+    },
+    {
+      "id": "src.curriculum-grammar",
+      "key": "curriculum-grammar",
+      "title": "Curriculum grammar (1급)",
+      "kind": "canonical-authoring",
+      "documentRef": "docs/CURRICULUM_GRAMMAR.md",
+      "lineageKeys": ["grammar-notes"]
+    },
+    {
+      "id": "src.curriculum-vocabulary",
+      "key": "curriculum-vocabulary",
+      "title": "Curriculum vocabulary (1급)",
+      "kind": "canonical-authoring",
+      "documentRef": "docs/CURRICULUM_VOCABULARY.md",
+      "lineageKeys": ["korean-words"]
+    },
+    {
+      "id": "src.curriculum-texts",
+      "key": "curriculum-texts",
+      "title": "Curriculum reading texts (1급)",
+      "kind": "canonical-authoring",
+      "documentRef": "docs/CURRICULUM_TEXTS.md",
+      "lineageKeys": ["inha-texts-claude", "inha-texts-gpt"]
+    }
+  ]
 }

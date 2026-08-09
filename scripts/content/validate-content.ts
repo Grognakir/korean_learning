@@ -8,7 +8,7 @@ try {
   const manifest = validatePhase2Content();
   assertNoAppContentImports();
   console.log(
-    `Content validation passed (schemaVersion=${manifest.schemaVersion}, sources=${manifest.sources.length}).`,
+    `Content validation passed (schemaVersion=${manifest.schemaVersion}, canonicalSources=${manifest.sources.length}).`,
   );
 } catch (error) {
   if (error instanceof ContentValidationError) {

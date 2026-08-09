@@ -4,27 +4,25 @@
 
 ## Чем занимаемся
 
-F2-I01 выполнен: baseline content validation для фазы 2. Следующая карточка — только F2-I02, отдельной веткой.
+F2-I02 выполнен: canonical Zod contracts и provenance graph validation. Следующая карточка — только F2-I03.
 
-## F2-I01 — результат
+## F2-I02 — результат
 
-- `content/phase-2/source-manifest.json` — минимальный manifest (`schemaVersion=phase-2.v1`, `sources=[]`).
-- `pnpm content:validate` — JSON + schema version + запрет импорта `content/phase-2` из `src/`.
-- `pnpm test:content` — 5 integrity tests.
-- ESLint `no-restricted-imports` для app graph.
-- CI checks: `content:validate && test:content`.
+- `scripts/content/schemas.ts` — manifest/unit/grammar/dictionary/links/passage/exercise/provenance.
+- `content/phase-2/source-manifest.json` — 4 canonical sources (`curriculum-*`) без приватных путей.
+- Пустые collection JSON (`items: []`) для всех целевых файлов.
+- Graph checks: duplicate IDs, dangling refs, lifecycle transitions, approved→provenance, senseKey/homonyms, absolute paths.
 
 ## Gate
 
-- format / lint / typecheck green
-- unit 310, content 5, integration 17, e2e 20, db 16, rls 10, build green
-- sample-module без изменений
+- content:validate + test:content (15) green
+- format / lint / typecheck / unit 310 / integration 17 / build green
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i01-content-baseline`
-- Commit message: `chore: prepare phase two content validation`
+- Branch: `codex/f2-i02-content-contracts`
+- Commit message: `feat: define canonical learning content contracts`
 
 ## Следующий шаг
 
-F2-I02 — canonical content contracts. Не начинать без отдельного шага; push/merge только по разрешению.
+F2-I03 — extend database for curriculum skills. Push/merge только по разрешению.

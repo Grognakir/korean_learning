@@ -1,26 +1,46 @@
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 
+import { ContentValidationError } from "./contentValidationError";
+import {
+  dictionaryEntriesFileSchema,
+  dictionaryUnitLinksFileSchema,
+  exercisesFileSchema,
+  grammarTopicsFileSchema,
+  provenanceFileSchema,
+  readingPassagesFileSchema,
+  sourceManifestSchema,
+  unitsFileSchema,
+  type SourceManifest,
+} from "./schemas";
+import {
+  assertContentGraphIntegrity,
+  parseWithSchema,
+  type Phase2ContentGraph,
+} from "./validateGraph";
+
+export { ContentValidationError } from "./contentValidationError";
+export { KNOWN_SCHEMA_VERSIONS, PHASE_2_SCHEMA_VERSION } from "./schemas";
+
 export const PHASE_2_CONTENT_ROOT = path.join(process.cwd(), "content", "phase-2");
-export const KNOWN_SCHEMA_VERSIONS: ReadonlySet<string> = new Set(["phase-2.v1"]);
 export const SOURCE_MANIFEST_FILE = "source-manifest.json";
 
-export class ContentValidationError extends Error {
-  readonly code = "CONTENT_VALIDATION_FAILED" as const;
-
-  constructor(message: string) {
-    super(message);
-    this.name = "ContentValidationError";
-  }
-}
-
-export type SourceManifest = {
-  readonly schemaVersion: string;
-  readonly sources: readonly unknown[];
-};
+const CONTENT_FILES = {
+  units: "units.json",
+  grammarTopics: "grammar-topics.json",
+  dictionaryEntries: "dictionary-entries.json",
+  dictionaryUnitLinks: "dictionary-unit-links.json",
+  readingPassages: "reading-passages.json",
+  exercisesGrammar: "exercises-grammar.json",
+  exercisesVocabulary: "exercises-vocabulary.json",
+  exercisesReading: "exercises-reading.json",
+  provenance: "provenance.json",
+} as const;
 
 const FORBIDDEN_CONTENT_IMPORT =
   /(?:from\s+|import\s*\(\s*|require\s*\(\s*)['"](?:\.?\.?\/)*(?:content\/phase-2|@\/\.\.\/content\/phase-2)/;
+
+export type { SourceManifest };
 
 export function loadJsonFile(filePath: string): unknown {
   const raw = readFileSync(filePath, "utf8");
@@ -33,55 +53,89 @@ export function loadJsonFile(filePath: string): unknown {
 }
 
 export function validateSourceManifest(value: unknown, filePath: string): SourceManifest {
-  const relativePath = path.relative(process.cwd(), filePath);
+  return parseWithSchema(sourceManifestSchema, value, path.relative(process.cwd(), filePath));
+}
 
-  if (value === null || typeof value !== "object" || Array.isArray(value)) {
-    throw new ContentValidationError(`Source manifest must be an object: ${relativePath}`);
-  }
+function requireFile(rootDirectory: string, fileName: string): string {
+  const filePath = path.join(rootDirectory, fileName);
 
-  const record = value as Record<string, unknown>;
-  const schemaVersion = record.schemaVersion;
-
-  if (typeof schemaVersion !== "string" || schemaVersion.trim().length === 0) {
-    throw new ContentValidationError(`Missing schemaVersion: ${relativePath}`);
-  }
-
-  if (!KNOWN_SCHEMA_VERSIONS.has(schemaVersion)) {
+  if (!existsSync(filePath)) {
     throw new ContentValidationError(
-      `Unknown schema version "${schemaVersion}" in ${relativePath}. Known: ${[
-        ...KNOWN_SCHEMA_VERSIONS,
-      ].join(", ")}`,
+      `Missing ${fileName} in ${path.relative(process.cwd(), rootDirectory)}`,
     );
   }
 
-  if (!Array.isArray(record.sources)) {
-    throw new ContentValidationError(`Source manifest "sources" must be an array: ${relativePath}`);
-  }
-
-  return {
-    schemaVersion,
-    sources: record.sources,
-  };
+  return filePath;
 }
 
-export function validatePhase2Content(
+export function loadPhase2ContentGraph(
   rootDirectory: string = PHASE_2_CONTENT_ROOT,
-): SourceManifest {
+): Phase2ContentGraph {
   if (!existsSync(rootDirectory) || !statSync(rootDirectory).isDirectory()) {
     throw new ContentValidationError(
       `Missing content directory: ${path.relative(process.cwd(), rootDirectory)}`,
     );
   }
 
-  const manifestPath = path.join(rootDirectory, SOURCE_MANIFEST_FILE);
+  const manifestPath = requireFile(rootDirectory, SOURCE_MANIFEST_FILE);
+  const manifest = validateSourceManifest(loadJsonFile(manifestPath), manifestPath);
 
-  if (!existsSync(manifestPath)) {
-    throw new ContentValidationError(
-      `Missing ${SOURCE_MANIFEST_FILE} in ${path.relative(process.cwd(), rootDirectory)}`,
-    );
-  }
+  return {
+    manifest,
+    units: parseWithSchema(
+      unitsFileSchema,
+      loadJsonFile(requireFile(rootDirectory, CONTENT_FILES.units)),
+      CONTENT_FILES.units,
+    ),
+    grammarTopics: parseWithSchema(
+      grammarTopicsFileSchema,
+      loadJsonFile(requireFile(rootDirectory, CONTENT_FILES.grammarTopics)),
+      CONTENT_FILES.grammarTopics,
+    ),
+    dictionaryEntries: parseWithSchema(
+      dictionaryEntriesFileSchema,
+      loadJsonFile(requireFile(rootDirectory, CONTENT_FILES.dictionaryEntries)),
+      CONTENT_FILES.dictionaryEntries,
+    ),
+    dictionaryUnitLinks: parseWithSchema(
+      dictionaryUnitLinksFileSchema,
+      loadJsonFile(requireFile(rootDirectory, CONTENT_FILES.dictionaryUnitLinks)),
+      CONTENT_FILES.dictionaryUnitLinks,
+    ),
+    readingPassages: parseWithSchema(
+      readingPassagesFileSchema,
+      loadJsonFile(requireFile(rootDirectory, CONTENT_FILES.readingPassages)),
+      CONTENT_FILES.readingPassages,
+    ),
+    exercisesGrammar: parseWithSchema(
+      exercisesFileSchema,
+      loadJsonFile(requireFile(rootDirectory, CONTENT_FILES.exercisesGrammar)),
+      CONTENT_FILES.exercisesGrammar,
+    ),
+    exercisesVocabulary: parseWithSchema(
+      exercisesFileSchema,
+      loadJsonFile(requireFile(rootDirectory, CONTENT_FILES.exercisesVocabulary)),
+      CONTENT_FILES.exercisesVocabulary,
+    ),
+    exercisesReading: parseWithSchema(
+      exercisesFileSchema,
+      loadJsonFile(requireFile(rootDirectory, CONTENT_FILES.exercisesReading)),
+      CONTENT_FILES.exercisesReading,
+    ),
+    provenance: parseWithSchema(
+      provenanceFileSchema,
+      loadJsonFile(requireFile(rootDirectory, CONTENT_FILES.provenance)),
+      CONTENT_FILES.provenance,
+    ),
+  };
+}
 
-  return validateSourceManifest(loadJsonFile(manifestPath), manifestPath);
+export function validatePhase2Content(
+  rootDirectory: string = PHASE_2_CONTENT_ROOT,
+): SourceManifest {
+  const graph = loadPhase2ContentGraph(rootDirectory);
+  assertContentGraphIntegrity(graph);
+  return graph.manifest;
 }
 
 function collectSourceFiles(directory: string): string[] {

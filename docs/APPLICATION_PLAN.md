@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 начата (F2-I01 `done`).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I02 `done`).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I01 content baseline — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i01-content-baseline` (не слита в `main`).
-- **Уже сделано:** пустой `content/phase-2` + `content:validate` / `test:content`; запрет импорта canonical content в app graph; CI checks включают content validation.
-- **Выполненные проверки:** format/lint/typecheck/310 unit/5 content/17 integration/20 e2e/16 db/10 rls/build.
-- **Сейчас работает:** sample-module каркас фазы 1; content quality tooling без учебных записей.
-- **Пока не работает / ограничения:** канонические схемы/импорт программы ещё не сделаны (F2-I02+); Preview SSO как раньше.
-- **Следующий конкретный шаг:** F2-I02 — canonical schemas и provenance (отдельная ветка после merge/продолжения по указанию).
+- **Текущая итерация:** F2-I02 canonical content contracts — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i02-content-contracts` (не слита в `main`).
+- **Уже сделано:** Zod-контракты phase-2, 4 canonical source records, пустые collection files, graph integrity (dangling refs/duplicates/lifecycle/provenance).
+- **Выполненные проверки:** format/lint/typecheck/310 unit/15 content/17 integration/build; content:validate green.
+- **Сейчас работает:** sample-module; authoring contracts без учебных entity records.
+- **Пока не работает / ограничения:** DB schema для skills ещё не расширена (F2-I03); программа не импортирована; Preview SSO как раньше.
+- **Следующий конкретный шаг:** F2-I03 — Supabase schema для трёх навыков.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

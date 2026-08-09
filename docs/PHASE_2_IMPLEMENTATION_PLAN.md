@@ -2,7 +2,7 @@
 
 Последнее обновление: 2026-08-09
 
-Статус: `in_progress` (F2-I01 `done`). Фаза 1 завершена и слита в `main` коммитом `4fb00b8`.
+Статус: `in_progress` (F2-I01–F2-I02 `done`). Фаза 1 завершена и слита в `main` коммитом `4fb00b8`.
 
 ## 1. Как использовать этот документ
 
@@ -326,7 +326,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I02 — Canonical schemas и provenance
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** определить проверяемый формат authoring data до импорта хотя бы одной записи.
 - **Вход:** F2-I01 `done`.
 - **Ветка:** `codex/f2-i02-content-contracts`.

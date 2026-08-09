@@ -10,15 +10,28 @@ import { TrainingModulesPanel } from "./TrainingModulesPanel";
 
 export const metadata: Metadata = {
   title: "Тренировка",
-  description: "Короткая практика на локальных модулях с активным вспоминанием.",
+  description: "Выберите навык и тему для короткой практики.",
 };
 
-export default function TrainingPage() {
+type TrainingPageProps = {
+  searchParams?: Promise<{
+    skill?: string | string[];
+    unit?: string | string[];
+    grammar?: string | string[];
+    difficulty?: string | string[];
+    size?: string | string[];
+  }>;
+};
+
+export default function TrainingPage({ searchParams = Promise.resolve({}) }: TrainingPageProps) {
   return (
     <PageContainer className={styles.page}>
-      <PageHeader description="Выберите модуль и начните короткую тренировку." title="Тренировка" />
-      <Suspense fallback={<CatalogSectionSkeleton label="Загрузка модулей…" />}>
-        <TrainingModulesPanel />
+      <PageHeader
+        description="Выберите навык, тему и доступные фильтры. Создание отфильтрованной сессии подключится в следующей итерации."
+        title="Тренировка"
+      />
+      <Suspense fallback={<CatalogSectionSkeleton label="Загрузка настройки…" />}>
+        <TrainingModulesPanel searchParams={searchParams} />
       </Suspense>
     </PageContainer>
   );

@@ -179,6 +179,7 @@
 | `UnitDetailView` / `GrammarDetailView` intro       | badge/meta/title stack; pattern `lang=ko`, `overflow-wrap: break-word`                                                                                                    |
 | `DictionaryFilters` `.filters` / `.field`          | label+Select колонка; фильтры в ряду — вертикальный низ/`align-items: end`                                                                                                |
 | `DictionaryEntryList` `.head` / `.pager` / desktop | lemma+sense вертикальный центр; pager links вертикальный центр; desktop card columns `align-items: center`                                                                |
+| `TrainingSetupControls` `.skills` / `.filters`     | skill buttons равной высоты; filter label+Select; CTA slot фиксированной min-height                                                                                       |
 
 **Исключения** перечислять явно в таблице выше; молчаливый «оставил baseline/end потому что красивее» запрещён без записи здесь.
 

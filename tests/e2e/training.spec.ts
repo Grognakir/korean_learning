@@ -72,7 +72,7 @@ test.describe("training session", () => {
 
   test("answers the live demo session first exercise", async ({ page }) => {
     await page.goto("/training");
-    await page.getByRole("link", { name: "Начать тренировку" }).click();
+    await page.getByRole("link", { name: "Демо sample-module" }).click();
     await expect(page).toHaveURL(/\/training\/demo-session/);
     await expect(page.getByText(/Задание 1 из/)).toBeVisible();
     await answerCurrentExercise(page);

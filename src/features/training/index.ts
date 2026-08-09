@@ -130,6 +130,13 @@ export {
   DEMO_TRAINING_SEED,
   DEMO_TRAINING_SESSION_ID,
 } from "./sessionConstants";
+export { buildTrainingSetupHref, parseTrainingSetupQuery } from "./setup/parseTrainingSetupQuery";
+export {
+  parseTrainingSetupRequest,
+  trainingSetupRequestSchema,
+  type TrainingSetupRequest,
+} from "./setup/trainingSetupSchema";
+export { resolveTrainingSetup } from "./setup/resolveTrainingSetup";
 export { useTrainingSession } from "./hooks/useTrainingSession";
 export type {
   AnswerDraft,

@@ -504,7 +504,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I13 — Настройка тренировки
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** убрать hardcoded sample card и дать выбор грамматики, слов или чтения.
 - **Вход:** F2-I12 `done`.
 - **Ветка:** `codex/f2-i13-training-setup`.

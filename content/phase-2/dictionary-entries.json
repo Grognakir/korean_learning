@@ -124,7 +124,7 @@
     {
       "logicalId": "dict.beotda.snimat-odezhdu",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -143,7 +143,11 @@
       },
       "transliteration": "beotda",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.seoda.stoyat-vstat",
@@ -172,7 +176,7 @@
     {
       "logicalId": "dict.anjda.sidet-saditsya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -191,7 +195,11 @@
       },
       "transliteration": "anjda",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jada.spat",
@@ -436,7 +444,7 @@
     {
       "logicalId": "dict.baeuda.uchitsya-izuchat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -455,7 +463,11 @@
       },
       "transliteration": "baeuda",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geurida.risovat",
@@ -1588,7 +1600,7 @@
     {
       "logicalId": "dict.boda.smotret-videt",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -1607,7 +1619,11 @@
       },
       "transliteration": "boda",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.sada.pokupat",
@@ -1684,7 +1700,7 @@
     {
       "logicalId": "dict.batda.poluchat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -1703,12 +1719,16 @@
       },
       "transliteration": "batda",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.alda.znat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -1727,7 +1747,11 @@
       },
       "transliteration": "alda",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.moreuda.ne-znat",
@@ -2524,7 +2548,7 @@
     {
       "logicalId": "dict.bonaeda.otpravlyat-posylat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -2543,7 +2567,11 @@
       },
       "transliteration": "bonaeda",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.yeyakhada.rezervirovat-bronirovat-stolik-nomer",
@@ -3172,7 +3200,7 @@
     {
       "logicalId": "dict.beorida.ustraivat-zatevat-prazdnik-delo",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3191,7 +3219,11 @@
       },
       "transliteration": "beorida",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bupulda.razduvatsya-naduvatsya-perepolnyatsya-chuvstvom",
@@ -3388,7 +3420,7 @@
     {
       "logicalId": "dict.buchida.otpravlyat-posylku-pismo",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3407,7 +3439,11 @@
       },
       "transliteration": "buchida",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jikjinhada.idti-ehat-pryamo",
@@ -3556,7 +3592,7 @@
     {
       "logicalId": "dict.bakkuda.menyat-izmenyat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3575,7 +3611,11 @@
       },
       "transliteration": "bakkuda",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.yeollakhada.svyazyvatsya-vyhodit-na-svyaz",
@@ -3820,7 +3860,7 @@
     {
       "logicalId": "dict.beolda.zarabatyvat-dengi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3839,7 +3879,11 @@
       },
       "transliteration": "beolda",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.noryeokhada.staratsya-prilagat-usiliya",
@@ -3892,7 +3936,7 @@
     {
       "logicalId": "dict.billida.odalzhivat-brat-naprokat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3911,7 +3955,11 @@
       },
       "transliteration": "billida",
       "level": null,
-      "pos": "verb"
+      "pos": "verb",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.malda.svorachivat-zavorachivat-v-rulet",
@@ -4300,7 +4348,7 @@
     {
       "logicalId": "dict.bissada.dorogoi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -4319,7 +4367,11 @@
       },
       "transliteration": "bissada",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ssada.deshevyi",
@@ -4708,7 +4760,7 @@
     {
       "logicalId": "dict.bakda.svetlyi-yarkii",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -4727,7 +4779,11 @@
       },
       "transliteration": "bakda",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.eodupda.temnyi",
@@ -5092,7 +5148,7 @@
     {
       "logicalId": "dict.bokjaphada.slozhnyi-mnogolyudnyi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5111,7 +5167,11 @@
       },
       "transliteration": "bokjaphada",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.gandanhada.prostoi-nezamyslovatyi",
@@ -5212,7 +5272,7 @@
     {
       "logicalId": "dict.apeuda.bolnoi-bolit",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5231,12 +5291,16 @@
       },
       "transliteration": "apeuda",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.baegopeuda.golodnyi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5255,12 +5319,16 @@
       },
       "transliteration": "baegopeuda",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.baebureuda.sytyi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5279,7 +5347,11 @@
       },
       "transliteration": "baebureuda",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.mokmareuda.zhazhduschii-ispytyvayuschii-zhazhdu",
@@ -5524,7 +5596,7 @@
     {
       "logicalId": "dict.areumdapda.krasivyi-prekrasnyi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5543,7 +5615,11 @@
       },
       "transliteration": "areumdapda",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geeureuda.lenivyi",
@@ -5596,7 +5672,7 @@
     {
       "logicalId": "dict.bujireonhada.trudolyubivyi-prilezhnyi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5615,7 +5691,11 @@
       },
       "transliteration": "bujireonhada",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.himdeulda.tyazhelo-trudno-fizicheski-ili-moralno",
@@ -5668,7 +5748,7 @@
     {
       "logicalId": "dict.bappeuda.zanyatoi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5687,7 +5767,11 @@
       },
       "transliteration": "bappeuda",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.hangahada.svobodnyi-nezanyatyi-o-vremeni",
@@ -5764,7 +5848,7 @@
     {
       "logicalId": "dict.bulchinjeolhada.nedruzhelyubnyi-nevezhlivyi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5783,7 +5867,11 @@
       },
       "transliteration": "bulchinjeolhada",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ttokttokhada.umnyi",
@@ -5932,7 +6020,7 @@
     {
       "logicalId": "dict.bangapda.rad-a-vstreche",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5951,12 +6039,16 @@
       },
       "transliteration": "bangapda",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.alchada.nasyschennyi-soderzhatelnyi-produktivnyi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5975,7 +6067,11 @@
       },
       "transliteration": "alchada",
       "level": null,
-      "pos": "adjective"
+      "pos": "adjective",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.singsinghada.svezhii-ob-ovoschah-rybe-zeleni",
@@ -6220,7 +6316,7 @@
     {
       "logicalId": "dict.dangsin.vy",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6239,7 +6335,11 @@
       },
       "transliteration": "dangsin",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.uri.my",
@@ -6292,7 +6392,7 @@
     {
       "logicalId": "dict.geu.on-tot-opredelitel",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6311,12 +6411,16 @@
       },
       "transliteration": "geu",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geunyeo.ona",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6335,12 +6439,16 @@
       },
       "transliteration": "geunyeo",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geudeul.oni",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6359,12 +6467,16 @@
       },
       "transliteration": "geudeul",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.i.etot-opredelitel",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6383,12 +6495,16 @@
       },
       "transliteration": "i",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jeo.tot-ta-to-opredelitel-daleko",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6407,12 +6523,16 @@
       },
       "transliteration": "jeo",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.igeot.eto-predmet-blizko",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6431,12 +6551,16 @@
       },
       "transliteration": "igeot",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geugeot.to-predmet-srednee-rasstoyanie",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6455,7 +6579,11 @@
       },
       "transliteration": "geugeot",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jeogeot.to-predmet-daleko",
@@ -6508,7 +6636,7 @@
     {
       "logicalId": "dict.geogi.tam-srednee-rasstoyanie",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6527,7 +6655,11 @@
       },
       "transliteration": "geogi",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jeogi.tam-daleko",
@@ -6556,7 +6688,7 @@
     {
       "logicalId": "dict.jagi.sam-sebya-svoi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6575,12 +6707,16 @@
       },
       "transliteration": "jagi",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ireon.takoi-kak-etot",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6599,12 +6735,16 @@
       },
       "transliteration": "ireon",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geugot.to-mesto-tam",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6623,7 +6763,11 @@
       },
       "transliteration": "geugot",
       "level": null,
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.eonje.kogda",
@@ -7972,7 +8116,7 @@
     {
       "logicalId": "dict.bap.varenyi-ris-eda-v-shirokom-smysle",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -7991,7 +8135,11 @@
       },
       "transliteration": "bap",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ppang.hleb",
@@ -8092,7 +8240,7 @@
     {
       "logicalId": "dict.dakgogi.kuritsa-myaso",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8111,7 +8259,11 @@
       },
       "transliteration": "dakgogi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.saengseon.ryba-kak-produkt-pitaniya",
@@ -8140,7 +8292,7 @@
     {
       "logicalId": "dict.dalgyal.yaitso",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8159,7 +8311,11 @@
       },
       "transliteration": "dalgyal",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.uyu.moloko",
@@ -8188,7 +8344,7 @@
     {
       "logicalId": "dict.chijeu.syr",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8207,12 +8363,16 @@
       },
       "transliteration": "chijeu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.beoteo.slivochnoe-maslo",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8231,7 +8391,11 @@
       },
       "transliteration": "beoteo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.seoltang.sahar",
@@ -8332,7 +8496,7 @@
     {
       "logicalId": "dict.doenjang.soevaya-pasta",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8351,7 +8515,11 @@
       },
       "transliteration": "doenjang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.gochujang.ostraya-pasta-iz-chili",
@@ -8500,7 +8668,7 @@
     {
       "logicalId": "dict.cha.chai",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8519,7 +8687,11 @@
       },
       "transliteration": "cha",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.keopi.kofe",
@@ -8644,7 +8816,7 @@
     {
       "logicalId": "dict.bibimbap.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8663,12 +8835,16 @@
       },
       "transliteration": "bibimbap",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bulgogi.bulgogi-marinovannoe-zharenoe-myaso",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8687,7 +8863,11 @@
       },
       "transliteration": "bulgogi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.hansik.koreiskaya-kuhnya-koreiskaya-eda",
@@ -8884,7 +9064,7 @@
     {
       "logicalId": "dict.dak.kuritsa-zhivaya-ptitsa",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8903,7 +9083,11 @@
       },
       "transliteration": "dak",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.galbitang.kalbitan-sup-s-govyazhimi-rebrami",
@@ -9076,7 +9260,7 @@
     {
       "logicalId": "dict.doenjangjjigae.tvendyang-tige-ragu-s-soevoi-pastoi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9095,7 +9279,11 @@
       },
       "transliteration": "doenjangjjigae",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.keikeu.tort",
@@ -9172,7 +9360,7 @@
     {
       "logicalId": "dict.danmuji.marinovannaya-zheltaya-redka-dlya-kimbapa",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9191,12 +9379,16 @@
       },
       "transliteration": "danmuji",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.siheom.ekzamen-test",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9215,12 +9407,16 @@
       },
       "transliteration": "siheom",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.sueop.urok-zanyatie",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9239,12 +9435,16 @@
       },
       "transliteration": "sueop",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.haksaengjeung.studencheskii-bilet",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9263,12 +9463,16 @@
       },
       "transliteration": "haksaengjeung",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.yeseup.podgotovka-k-uroku-zaranee",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9287,12 +9491,16 @@
       },
       "transliteration": "yeseup",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ban.klass-gruppa-uchebnaya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9311,7 +9519,11 @@
       },
       "transliteration": "ban",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.mulgeon.vesch-predmet",
@@ -9340,7 +9552,7 @@
     {
       "logicalId": "dict.chimdae.krovat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9359,7 +9571,11 @@
       },
       "transliteration": "chimdae",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.uija.stul",
@@ -9388,7 +9604,7 @@
     {
       "logicalId": "dict.chaeksang.pismennyi-stol-parta",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9407,12 +9623,16 @@
       },
       "transliteration": "chaeksang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.chaekjang.knizhnyi-shkaf",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9431,7 +9651,11 @@
       },
       "transliteration": "chaekjang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.otjang.shkaf-dlya-odezhdy",
@@ -9580,7 +9804,7 @@
     {
       "logicalId": "dict.chaekgabang.shkolnyi-ryukzak",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9599,12 +9823,16 @@
       },
       "transliteration": "chaekgabang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.baenang.ryukzak-pohodnyi-turisticheskii",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9623,7 +9851,11 @@
       },
       "transliteration": "baenang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jigap.koshelek",
@@ -9676,7 +9908,7 @@
     {
       "logicalId": "dict.angyeong.ochki",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9695,12 +9927,16 @@
       },
       "transliteration": "angyeong",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.begae.podushka",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9719,7 +9955,11 @@
       },
       "transliteration": "begae",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ibul.odeyalo",
@@ -9772,7 +10012,7 @@
     {
       "logicalId": "dict.binu.mylo",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9791,12 +10031,16 @@
       },
       "transliteration": "binu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.chitsol.zubnaya-schetka",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9815,7 +10059,11 @@
       },
       "transliteration": "chitsol",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.chiyak.zubnaya-pasta",
@@ -9988,7 +10236,7 @@
     {
       "logicalId": "dict.chaek.kniga",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10007,7 +10255,11 @@
       },
       "transliteration": "chaek",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.gongchaek.tetrad",
@@ -10132,7 +10384,7 @@
     {
       "logicalId": "dict.bolpen.sharikovaya-ruchka",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10151,7 +10403,11 @@
       },
       "transliteration": "bolpen",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jigae.lastik",
@@ -10420,7 +10676,7 @@
     {
       "logicalId": "dict.bongtu.konvert-paketik",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10439,7 +10695,11 @@
       },
       "transliteration": "bongtu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.cheongso.uborka",
@@ -10660,7 +10920,7 @@
     {
       "logicalId": "dict.keompyuteo.kompyuter",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10679,7 +10939,11 @@
       },
       "transliteration": "keompyuteo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.noteubuk.noutbuk",
@@ -10708,7 +10972,7 @@
     {
       "logicalId": "dict.hyudaepon.mobilnyi-telefon",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10727,7 +10991,11 @@
       },
       "transliteration": "hyudaepon",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.seumateupon.smartfon",
@@ -10804,7 +11072,7 @@
     {
       "logicalId": "dict.eeokeon-e-eo-keon.konditsioner",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10823,12 +11091,16 @@
       },
       "transliteration": "eeokeon (e-eo-keon)",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.cheongsogi.pylesos",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10847,12 +11119,16 @@
       },
       "transliteration": "cheongsogi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jeonjareinji.mikrovolnovaya-pech",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10871,7 +11147,11 @@
       },
       "transliteration": "jeonjareinji",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.seonpunggi.ventilyator",
@@ -10900,7 +11180,7 @@
     {
       "logicalId": "dict.darimi.utyug",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10919,12 +11199,16 @@
       },
       "transliteration": "darimi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.kamera.kamera-fotoapparat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10943,12 +11227,16 @@
       },
       "transliteration": "kamera",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ieopon.naushniki-vkladyshi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10967,12 +11255,16 @@
       },
       "transliteration": "ieopon",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.chungjeongi.zaryadnoe-ustroistvo",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10991,12 +11283,16 @@
       },
       "transliteration": "chungjeongi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.baeteori.batareya-akkumulyator",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11015,12 +11311,16 @@
       },
       "transliteration": "baeteori",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.mauseu.kompyuternaya-mysh",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11039,12 +11339,16 @@
       },
       "transliteration": "mauseu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.kibodeu.klaviatura",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11063,7 +11367,11 @@
       },
       "transliteration": "kibodeu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.peurinteo.printer",
@@ -11140,7 +11448,7 @@
     {
       "logicalId": "dict.abeoji.otets",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11159,12 +11467,16 @@
       },
       "transliteration": "abeoji",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.appa.papa",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11183,12 +11495,16 @@
       },
       "transliteration": "appa",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.eomeoni.mat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11207,12 +11523,16 @@
       },
       "transliteration": "eomeoni",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.eomma.mama",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11231,12 +11551,16 @@
       },
       "transliteration": "eomma",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bumonim.roditeli",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11255,12 +11579,16 @@
       },
       "transliteration": "bumonim",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.adeul.syn",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11279,7 +11607,11 @@
       },
       "transliteration": "adeul",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ttal.doch",
@@ -11404,7 +11736,7 @@
     {
       "logicalId": "dict.dongsaeng.mladshii-brat-ili-sestra",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11423,7 +11755,11 @@
       },
       "transliteration": "dongsaeng",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.namdongsaeng.mladshii-brat",
@@ -11644,7 +11980,7 @@
     {
       "logicalId": "dict.anae.zhena",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11663,12 +11999,16 @@
       },
       "transliteration": "anae",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ajeossi.obraschenie-k-muzhchine-srednego-vozrasta",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11687,12 +12027,16 @@
       },
       "transliteration": "ajeossi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ajumeoni.obraschenie-k-zhenschine-srednego-vozrasta",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11711,7 +12055,11 @@
       },
       "transliteration": "ajumeoni",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.seonbae.starshii-po-uchebe-ili-rabote",
@@ -11764,7 +12112,7 @@
     {
       "logicalId": "dict.chingu.drug-podruga",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11783,7 +12131,11 @@
       },
       "transliteration": "chingu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.yeoja.zhenschina-devushka",
@@ -11956,7 +12308,7 @@
     {
       "logicalId": "dict.chincheok.rodstvenniki-rodnya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11975,7 +12327,11 @@
       },
       "transliteration": "chincheok",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.undong.sport-fizicheskaya-aktivnost-uprazhnenie",
@@ -12004,7 +12360,7 @@
     {
       "logicalId": "dict.chukgu.futbol",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12023,7 +12379,11 @@
       },
       "transliteration": "chukgu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.yagu.beisbol",
@@ -12076,7 +12436,7 @@
     {
       "logicalId": "dict.baegu.voleibol",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12095,7 +12455,11 @@
       },
       "transliteration": "baegu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.takgu.nastolnyi-tennis",
@@ -12244,7 +12608,7 @@
     {
       "logicalId": "dict.dalligi.beg",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12263,7 +12627,11 @@
       },
       "transliteration": "dalligi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.seuki.lyzhi",
@@ -12364,7 +12732,7 @@
     {
       "logicalId": "dict.boksing.boks",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12383,12 +12751,16 @@
       },
       "transliteration": "boksing",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.golpeu.golf",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12407,12 +12779,16 @@
       },
       "transliteration": "golpeu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.baedeuminteon.badminton",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12431,12 +12807,16 @@
       },
       "transliteration": "baedeuminteon",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bolling.bouling",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12455,12 +12835,16 @@
       },
       "transliteration": "bolling",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.deungsan.pohod-v-gory-trekking",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12479,7 +12863,11 @@
       },
       "transliteration": "deungsan",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.yoga.ioga",
@@ -12508,7 +12896,7 @@
     {
       "logicalId": "dict.helseu.trenazhernyi-zal-fitnes",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12527,12 +12915,16 @@
       },
       "transliteration": "helseu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jajeongeo-tagi.ezda-na-velosipede",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12551,7 +12943,11 @@
       },
       "transliteration": "jajeongeo tagi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.seungma.konnyi-sport-verhovaya-ezda",
@@ -12628,7 +13024,7 @@
     {
       "logicalId": "dict.chejo.gimnastika",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12647,7 +13043,11 @@
       },
       "transliteration": "chejo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ssireum.koreiskaya-natsionalnaya-borba",
@@ -12676,7 +13076,7 @@
     {
       "logicalId": "dict.joging.dzhogging-beg-trustsoi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12695,7 +13095,11 @@
       },
       "transliteration": "joging",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.uisa.vrach",
@@ -12868,7 +13272,7 @@
     {
       "logicalId": "dict.byeonhosa.yurist-advokat",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12887,7 +13291,11 @@
       },
       "transliteration": "byeonhosa",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.gyeongchalgwan.politseiskii",
@@ -13012,7 +13420,7 @@
     {
       "logicalId": "dict.baeu.akter-aktrisa",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13031,7 +13439,11 @@
       },
       "transliteration": "baeu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.hwaga.hudozhnik",
@@ -13180,7 +13592,7 @@
     {
       "logicalId": "dict.enjinieo.inzhener",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13199,7 +13611,11 @@
       },
       "transliteration": "enjinieo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.peurogeuraemeo.programmist",
@@ -13228,7 +13644,7 @@
     {
       "logicalId": "dict.dijaineo.dizainer",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13247,7 +13663,11 @@
       },
       "transliteration": "dijaineo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.miyongsa.parikmaher-stilist",
@@ -13420,7 +13840,7 @@
     {
       "logicalId": "dict.dongnyo.kollega",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13439,7 +13859,11 @@
       },
       "transliteration": "dongnyo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.saeop.biznes-delo",
@@ -13516,7 +13940,7 @@
     {
       "logicalId": "dict.daehaksaeng.student-universiteta",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13535,7 +13959,11 @@
       },
       "transliteration": "daehaksaeng",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.godeunghaksaeng.starsheklassnik",
@@ -13612,7 +14040,7 @@
     {
       "logicalId": "dict.daehagwon.aspirantura-magistratura",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13631,12 +14059,16 @@
       },
       "transliteration": "daehagwon",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.chodeunghakgyo.nachalnaya-shkola",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13655,7 +14087,11 @@
       },
       "transliteration": "chodeunghakgyo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.junghakgyo.srednyaya-shkola-nepolnaya",
@@ -13684,7 +14120,7 @@
     {
       "logicalId": "dict.godeunghakgyo.starshaya-shkola-polnaya-srednyaya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13703,12 +14139,16 @@
       },
       "transliteration": "godeunghakgyo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.daehakgyo.universitet",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13727,12 +14167,16 @@
       },
       "transliteration": "daehakgyo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bilding.zdanie-obychno-ofisnoe-mnogoetazhnoe",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13751,12 +14195,16 @@
       },
       "transliteration": "bilding",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.byeongwon.bolnitsa",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13775,7 +14223,11 @@
       },
       "transliteration": "byeongwon",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.yakguk.apteka",
@@ -13828,7 +14280,7 @@
     {
       "logicalId": "dict.hakgyo.shkola",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13847,7 +14299,11 @@
       },
       "transliteration": "hakgyo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ucheguk.pochta",
@@ -13924,7 +14380,7 @@
     {
       "logicalId": "dict.gage.magazin-nebolshoi",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13943,7 +14399,11 @@
       },
       "transliteration": "gage",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.pyeonijeom.magazin-u-doma-convenience-store",
@@ -13996,7 +14456,7 @@
     {
       "logicalId": "dict.gonghang.aeroport",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14015,12 +14475,16 @@
       },
       "transliteration": "gonghang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.beoseu-jeongnyujang.avtobusnaya-ostanovka",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14039,7 +14503,11 @@
       },
       "transliteration": "beoseu jeongnyujang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.seojeom.knizhnyi-magazin",
@@ -14092,7 +14560,7 @@
     {
       "logicalId": "dict.eunhaeng.bank",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14111,12 +14579,16 @@
       },
       "transliteration": "eunhaeng",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.gyosil.klass-klassnaya-komnata",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14135,12 +14607,16 @@
       },
       "transliteration": "gyosil",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geukjang.teatr",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14159,7 +14635,11 @@
       },
       "transliteration": "geukjang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.yeonghwagwan.kinoteatr",
@@ -14188,7 +14668,7 @@
     {
       "logicalId": "dict.doseogwan.biblioteka",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14207,12 +14687,16 @@
       },
       "transliteration": "doseogwan",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.cheyukgwan.sportzal-sportivnyi-zal",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14231,7 +14715,11 @@
       },
       "transliteration": "cheyukgwan",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.undongjang.sportploschadka-sportivnaya-ploschadka",
@@ -14308,7 +14796,7 @@
     {
       "logicalId": "dict.baekhwajeom.univermag-torgovyi-tsentr",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14327,12 +14815,16 @@
       },
       "transliteration": "baekhwajeom",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.gongwon.park",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14351,7 +14843,11 @@
       },
       "transliteration": "gongwon",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.noriteo.detskaya-ploschadka",
@@ -14380,7 +14876,7 @@
     {
       "logicalId": "dict.bakmulgwan.muzei",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14399,7 +14895,11 @@
       },
       "transliteration": "bakmulgwan",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.misulgwan.hudozhestvennaya-galereya-muzei-iskusstv",
@@ -14428,7 +14928,7 @@
     {
       "logicalId": "dict.dongmurwon.zoopark",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14447,7 +14947,11 @@
       },
       "transliteration": "dongmurwon",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.norigongwon.park-razvlechenii",
@@ -14476,7 +14980,7 @@
     {
       "logicalId": "dict.gichayeok.zheleznodorozhnaya-stantsiya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14495,7 +14999,11 @@
       },
       "transliteration": "gichayeok",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.juyuso.avtozapravka",
@@ -14644,7 +15152,7 @@
     {
       "logicalId": "dict.haesuyokjang.plyazh-dlya-kupaniya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14663,12 +15171,16 @@
       },
       "transliteration": "haesuyokjang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bada.more",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14687,12 +15199,16 @@
       },
       "transliteration": "bada",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.helseu-jang.fitnes-zal-trenazhernyi-zal",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14711,7 +15227,11 @@
       },
       "transliteration": "helseu-jang",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jungsikdang.kitaiskii-restoran",
@@ -14740,7 +15260,7 @@
     {
       "logicalId": "dict.gonggongjangso.obschestvennoe-mesto",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14759,7 +15279,11 @@
       },
       "transliteration": "gonggongjangso",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.minsokchon.etnograficheskaya-derevnya-derevnya-traditsionno",
@@ -14788,7 +15312,7 @@
     {
       "logicalId": "dict.gungnipjungangbangmulgwan.natsionalnyi-muzei-korei",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14807,7 +15331,11 @@
       },
       "transliteration": "gungnipjungangbangmulgwan",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.yeollamsil.chitalnyi-zal",
@@ -15364,7 +15892,7 @@
     {
       "logicalId": "dict.eolgul.litso",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15383,7 +15911,11 @@
       },
       "transliteration": "eolgul",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.nun.glaz",
@@ -15460,7 +15992,7 @@
     {
       "logicalId": "dict.gwi.uho",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15479,7 +16011,11 @@
       },
       "transliteration": "gwi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.i.zub",
@@ -15508,7 +16044,7 @@
     {
       "logicalId": "dict.hyeo.yazyk-organ",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15527,7 +16063,11 @@
       },
       "transliteration": "hyeo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.mok.sheya-gorlo",
@@ -15556,7 +16096,7 @@
     {
       "logicalId": "dict.eokkae.plecho",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15575,7 +16115,11 @@
       },
       "transliteration": "eokkae",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.pal.ruka-ot-plecha-do-kisti",
@@ -15676,7 +16220,7 @@
     {
       "logicalId": "dict.dari.noga-ot-bedra-do-stopy",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15695,12 +16239,16 @@
       },
       "transliteration": "dari",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bal.stopa",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15719,12 +16267,16 @@
       },
       "transliteration": "bal",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.balgarak.palets-na-noge",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15743,7 +16295,11 @@
       },
       "transliteration": "balgarak",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.mureup.koleno",
@@ -15772,7 +16328,7 @@
     {
       "logicalId": "dict.heori.poyasnitsa-taliya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15791,12 +16347,16 @@
       },
       "transliteration": "heori",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.gaseum.grud",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15815,12 +16375,16 @@
       },
       "transliteration": "gaseum",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.deung.spina",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15839,12 +16403,16 @@
       },
       "transliteration": "deung",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bae.zhivot",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15863,12 +16431,16 @@
       },
       "transliteration": "bae",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.eongdeongi.yagoditsy",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15887,7 +16459,11 @@
       },
       "transliteration": "eongdeongi",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.pibu.kozha",
@@ -15964,7 +16540,7 @@
     {
       "logicalId": "dict.ot.odezhda",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15983,12 +16559,16 @@
       },
       "transliteration": "ot",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.sinbal.obuv",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16007,12 +16587,16 @@
       },
       "transliteration": "sinbal",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.hwajangpum.kosmetika",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16031,12 +16615,16 @@
       },
       "transliteration": "hwajangpum",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.hanbok.hanbok-koreiskii-natsionalnyi-kostyum",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16055,12 +16643,16 @@
       },
       "transliteration": "hanbok",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.suyeongbok.kupalnik-plavki",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16079,12 +16671,16 @@
       },
       "transliteration": "suyeongbok",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.janggap.perchatki",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16103,12 +16699,16 @@
       },
       "transliteration": "janggap",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.nektai.galstuk",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16127,12 +16727,16 @@
       },
       "transliteration": "nektai",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.sonsugeon.nosovoi-platok",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16151,12 +16755,16 @@
       },
       "transliteration": "sonsugeon",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.undonghwa.krossovki-sportivnaya-obuv",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16175,7 +16783,11 @@
       },
       "transliteration": "undonghwa",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bae.korabl-sudno",
@@ -22132,7 +22744,7 @@
     {
       "logicalId": "dict.geumyoil.pyatnitsa",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22151,7 +22763,11 @@
       },
       "transliteration": "geumyoil",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.toyoil.subbota",
@@ -22228,7 +22844,7 @@
     {
       "logicalId": "dict.haru.odin-den-sutki",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22247,12 +22863,16 @@
       },
       "transliteration": "haru",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geujeokke.pozavchera",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22271,12 +22891,16 @@
       },
       "transliteration": "geujeokke",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geuje.pozavchera",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22295,12 +22919,16 @@
       },
       "transliteration": "geuje",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.eoje.vchera",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22319,7 +22947,11 @@
       },
       "transliteration": "eoje",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.oneul.segodnya",
@@ -22492,7 +23124,7 @@
     {
       "logicalId": "dict.daeum-ju.sleduyuschaya-nedelya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22511,7 +23143,11 @@
       },
       "transliteration": "daeum ju",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.maeju.kazhduyu-nedelyu-ezhenedelno",
@@ -22540,7 +23176,7 @@
     {
       "logicalId": "dict.dal.mesyats",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22559,7 +23195,11 @@
       },
       "transliteration": "dal",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.wol.mesyats",
@@ -22636,7 +23276,7 @@
     {
       "logicalId": "dict.daeum-dal.sleduyuschii-mesyats",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22655,7 +23295,11 @@
       },
       "transliteration": "daeum dal",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.maedal.kazhdyi-mesyats-ezhemesyachno",
@@ -22708,7 +23352,7 @@
     {
       "logicalId": "dict.hae.god",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22727,7 +23371,11 @@
       },
       "transliteration": "hae",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.nyeon.god",
@@ -22972,7 +23620,7 @@
     {
       "logicalId": "dict.gonghyuil.gosudarstvennyi-prazdnik",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22991,12 +23639,16 @@
       },
       "transliteration": "gonghyuil",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.banghak.kanikuly-shkolnye-universitetskie",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23015,12 +23667,16 @@
       },
       "transliteration": "banghak",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.gaehak.nachalo-uchebnogo-semestra-posle-kanikul",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23039,7 +23695,11 @@
       },
       "transliteration": "gaehak",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.saengil.den-rozhdeniya",
@@ -23116,7 +23776,7 @@
     {
       "logicalId": "dict.saebyeok.rassvet-rannee-utro",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23135,12 +23795,16 @@
       },
       "transliteration": "saebyeok",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.achim.utro",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23159,12 +23823,16 @@
       },
       "transliteration": "achim",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ojeon.do-poludnya-pervaya-polovina-dnya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23183,12 +23851,16 @@
       },
       "transliteration": "ojeon",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jeongo.polden",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23207,12 +23879,16 @@
       },
       "transliteration": "jeongo",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.nat.den-svetloe-vremya-sutok",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23231,12 +23907,16 @@
       },
       "transliteration": "nat",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jeomsim.obed-polden",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23255,12 +23935,16 @@
       },
       "transliteration": "jeomsim",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ohu.posle-poludnya-vtoraya-polovina-dnya",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23279,12 +23963,16 @@
       },
       "transliteration": "ohu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jeonyeok.vecher",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23303,12 +23991,16 @@
       },
       "transliteration": "jeonyeok",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.bam.noch",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23327,12 +24019,16 @@
       },
       "transliteration": "bam",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jajeong.polnoch",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23351,7 +24047,11 @@
       },
       "transliteration": "jajeong",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.sikjeon.pered-edoi",
@@ -23380,7 +24080,7 @@
     {
       "logicalId": "dict.sikhu.posle-edy",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23399,12 +24099,16 @@
       },
       "transliteration": "sikhu",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.hanbamjjung.glubokaya-noch",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23423,7 +24127,11 @@
       },
       "transliteration": "hanbamjjung",
       "level": null,
-      "pos": "noun"
+      "pos": "noun",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.jigeum.seichas-teper",
@@ -24196,7 +24904,7 @@
     {
       "logicalId": "dict.geurigo.i-a-takzhe-i-potom",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24215,12 +24923,16 @@
       },
       "transliteration": "geurigo",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geuraeseo.poetomu-i-poetomu",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24239,12 +24951,16 @@
       },
       "transliteration": "geuraeseo",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geureonikka.poetomu-tak-chto",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24263,12 +24979,16 @@
       },
       "transliteration": "geureonikka",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geureonde.no-kstati-a-vot",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24287,12 +25007,16 @@
       },
       "transliteration": "geureonde",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.hajiman.no-odnako",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24311,12 +25035,16 @@
       },
       "transliteration": "hajiman",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geureona.no-odnako",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24335,12 +25063,16 @@
       },
       "transliteration": "geureona",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geuraedo.vse-zhe-tem-ne-menee",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24359,12 +25091,16 @@
       },
       "transliteration": "geuraedo",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geureomyeon.esli-tak-v-takom-sluchae-togda",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24383,12 +25119,16 @@
       },
       "transliteration": "geureomyeon",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.geureom.togda-v-takom-sluchae",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24407,7 +25147,11 @@
       },
       "transliteration": "geureom",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ttoneun.ili",
@@ -24460,7 +25204,7 @@
     {
       "logicalId": "dict.animyeon.ili-a-esli-ne",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24479,7 +25223,11 @@
       },
       "transliteration": "animyeon",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.waenyahamyeon.potomu-chto-delo-v-tom-chto",
@@ -24508,7 +25256,7 @@
     {
       "logicalId": "dict.geureochiman.no-tem-ne-menee",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24527,12 +25275,16 @@
       },
       "transliteration": "geureochiman",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.dan.no-odnako-pri-etom-utochnenie-ogovorka",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24551,7 +25303,11 @@
       },
       "transliteration": "dan",
       "level": null,
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.ttohan.takzhe-k-tomu-zhe",
@@ -25660,7 +26416,7 @@
     {
       "logicalId": "dict.ban.polovina-dlya-vremeni-n-n-30",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25679,7 +26435,11 @@
       },
       "transliteration": "ban",
       "level": null,
-      "pos": "counter"
+      "pos": "counter",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.sigan.chas-prodolzhitelnost",
@@ -25780,7 +26540,7 @@
     {
       "logicalId": "dict.beon.raz-nomer",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25799,7 +26559,11 @@
       },
       "transliteration": "beon",
       "level": null,
-      "pos": "counter"
+      "pos": "counter",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.gwon.tom-ekzemplyar-knigi",
@@ -25852,7 +26616,7 @@
     {
       "logicalId": "dict.beol.komplekt-nabor-dlya-odezhdy",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "reviewed",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25871,7 +26635,11 @@
       },
       "transliteration": "beol",
       "level": null,
-      "pos": "counter"
+      "pos": "counter",
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+      }
     },
     {
       "logicalId": "dict.kyeolle.para-dlya-obuvi-noskov-perchatok",

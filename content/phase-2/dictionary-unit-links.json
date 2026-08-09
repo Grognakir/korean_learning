@@ -1,4 +1,4421 @@
 {
   "schemaVersion": "phase-2.v1",
-  "items": []
+  "items": [
+    {
+      "logicalId": "dictlink.u01.dangsin-vy",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dangsin.vy",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.dangsin.vy"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.geogi-tam-srednee-rasstoyanie",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geogi.tam-srednee-rasstoyanie",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.geogi.tam-srednee-rasstoyanie"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.geu-on-tot-opredelitel",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geu.on-tot-opredelitel",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.geu.on-tot-opredelitel"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.geudeul-oni",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geudeul.oni",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.geudeul.oni"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.geugeot-to-predmet-srednee-rasstoyanie",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geugeot.to-predmet-srednee-rasstoyanie",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.geugeot.to-predmet-srednee-rasstoyanie"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.geugot-to-mesto-tam",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geugot.to-mesto-tam",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.geugot.to-mesto-tam"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.geunyeo-ona",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geunyeo.ona",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.geunyeo.ona"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.i-etot-opredelitel",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.i.etot-opredelitel",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.i.etot-opredelitel"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.igeot-eto-predmet-blizko",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.igeot.eto-predmet-blizko",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.igeot.eto-predmet-blizko"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.ireon-takoi-kak-etot",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.ireon.takoi-kak-etot",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.ireon.takoi-kak-etot"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.jagi-sam-sebya-svoi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.jagi.sam-sebya-svoi",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.jagi.sam-sebya-svoi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u01.jeo-tot-ta-to-opredelitel-daleko",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.jeo.tot-ta-to-opredelitel-daleko",
+      "unitLogicalId": "unit.u01",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u01.dict.jeo.tot-ta-to-opredelitel-daleko"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.angyeong-ochki",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.angyeong.ochki",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.angyeong.ochki"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.baenang-ryukzak-pohodnyi-turisticheskii",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.baenang.ryukzak-pohodnyi-turisticheskii",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.baenang.ryukzak-pohodnyi-turisticheskii"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.begae-podushka",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.begae.podushka",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.begae.podushka"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.binu-mylo",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.binu.mylo",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.binu.mylo"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.bolpen-sharikovaya-ruchka",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bolpen.sharikovaya-ruchka",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.bolpen.sharikovaya-ruchka"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.bongtu-konvert-paketik",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bongtu.konvert-paketik",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.bongtu.konvert-paketik"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.chaek-kniga",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chaek.kniga",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.chaek.kniga"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.chaekgabang-shkolnyi-ryukzak",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chaekgabang.shkolnyi-ryukzak",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.chaekgabang.shkolnyi-ryukzak"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.chaekjang-knizhnyi-shkaf",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chaekjang.knizhnyi-shkaf",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.chaekjang.knizhnyi-shkaf"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.chaeksang-pismennyi-stol-parta",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chaeksang.pismennyi-stol-parta",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.chaeksang.pismennyi-stol-parta"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.chimdae-krovat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chimdae.krovat",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.chimdae.krovat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u02.chitsol-zubnaya-schetka",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chitsol.zubnaya-schetka",
+      "unitLogicalId": "unit.u02",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u02.dict.chitsol.zubnaya-schetka"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.ban-klass-gruppa-uchebnaya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.ban.klass-gruppa-uchebnaya",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.ban.klass-gruppa-uchebnaya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.haksaengjeung-studencheskii-bilet",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.haksaengjeung.studencheskii-bilet",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.haksaengjeung.studencheskii-bilet"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.siheom-ekzamen-test",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.siheom.ekzamen-test",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.siheom.ekzamen-test"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.sueop-urok-zanyatie",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.sueop.urok-zanyatie",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.sueop.urok-zanyatie"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.yeseup-podgotovka-k-uroku-zaranee",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.yeseup.podgotovka-k-uroku-zaranee",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.yeseup.podgotovka-k-uroku-zaranee"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.baeu-akter-aktrisa",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.baeu.akter-aktrisa",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.baeu.akter-aktrisa"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.byeonhosa-yurist-advokat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.byeonhosa.yurist-advokat",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.byeonhosa.yurist-advokat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.daehagwon-aspirantura-magistratura",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.daehagwon.aspirantura-magistratura",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.daehagwon.aspirantura-magistratura"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.daehaksaeng-student-universiteta",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.daehaksaeng.student-universiteta",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.daehaksaeng.student-universiteta"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.dijaineo-dizainer",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dijaineo.dizainer",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.dijaineo.dizainer"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.dongnyo-kollega",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dongnyo.kollega",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.dongnyo.kollega"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u03.enjinieo-inzhener",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.enjinieo.inzhener",
+      "unitLogicalId": "unit.u03",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u03.dict.enjinieo.inzhener"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.banghak-kanikuly-shkolnye-universitetskie",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.banghak.kanikuly-shkolnye-universitetskie",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.banghak.kanikuly-shkolnye-universitetskie"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.daeum-dal-sleduyuschii-mesyats",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.daeum-dal.sleduyuschii-mesyats",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.daeum-dal.sleduyuschii-mesyats"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.daeum-ju-sleduyuschaya-nedelya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.daeum-ju.sleduyuschaya-nedelya",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.daeum-ju.sleduyuschaya-nedelya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.dal-mesyats",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dal.mesyats",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.dal.mesyats"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.eoje-vchera",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.eoje.vchera",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.eoje.vchera"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.gaehak-nachalo-uchebnogo-semestra-posle-kanikul",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gaehak.nachalo-uchebnogo-semestra-posle-kanikul",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.gaehak.nachalo-uchebnogo-semestra-posle-kanikul"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.geuje-pozavchera",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geuje.pozavchera",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.geuje.pozavchera"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.geujeokke-pozavchera",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geujeokke.pozavchera",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.geujeokke.pozavchera"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.geumyoil-pyatnitsa",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geumyoil.pyatnitsa",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.geumyoil.pyatnitsa"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.gonghyuil-gosudarstvennyi-prazdnik",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gonghyuil.gosudarstvennyi-prazdnik",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.gonghyuil.gosudarstvennyi-prazdnik"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.hae-god",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.hae.god",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.hae.god"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u04.haru-odin-den-sutki",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.haru.odin-den-sutki",
+      "unitLogicalId": "unit.u04",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u04.dict.haru.odin-den-sutki"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.achim-utro",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.achim.utro",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.achim.utro"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.bam-noch",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bam.noch",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.bam.noch"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.hanbamjjung-glubokaya-noch",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.hanbamjjung.glubokaya-noch",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.hanbamjjung.glubokaya-noch"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.jajeong-polnoch",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.jajeong.polnoch",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.jajeong.polnoch"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.jeomsim-obed-polden",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.jeomsim.obed-polden",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.jeomsim.obed-polden"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.jeongo-polden",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.jeongo.polden",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.jeongo.polden"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.jeonyeok-vecher",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.jeonyeok.vecher",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.jeonyeok.vecher"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.nat-den-svetloe-vremya-sutok",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.nat.den-svetloe-vremya-sutok",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.nat.den-svetloe-vremya-sutok"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.ohu-posle-poludnya-vtoraya-polovina-dnya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.ohu.posle-poludnya-vtoraya-polovina-dnya",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.ohu.posle-poludnya-vtoraya-polovina-dnya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.ojeon-do-poludnya-pervaya-polovina-dnya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.ojeon.do-poludnya-pervaya-polovina-dnya",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.ojeon.do-poludnya-pervaya-polovina-dnya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.saebyeok-rassvet-rannee-utro",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.saebyeok.rassvet-rannee-utro",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.saebyeok.rassvet-rannee-utro"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u05.sikhu-posle-edy",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.sikhu.posle-edy",
+      "unitLogicalId": "unit.u05",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u05.dict.sikhu.posle-edy"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.baedeuminteon-badminton",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.baedeuminteon.badminton",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.baedeuminteon.badminton"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.baegu-voleibol",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.baegu.voleibol",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.baegu.voleibol"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.boksing-boks",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.boksing.boks",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.boksing.boks"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.bolling-bouling",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bolling.bouling",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.bolling.bouling"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.chejo-gimnastika",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chejo.gimnastika",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.chejo.gimnastika"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.chukgu-futbol",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chukgu.futbol",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.chukgu.futbol"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.dalligi-beg",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dalligi.beg",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.dalligi.beg"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.deungsan-pohod-v-gory-trekking",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.deungsan.pohod-v-gory-trekking",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.deungsan.pohod-v-gory-trekking"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.golpeu-golf",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.golpeu.golf",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.golpeu.golf"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.helseu-trenazhernyi-zal-fitnes",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.helseu.trenazhernyi-zal-fitnes",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.helseu.trenazhernyi-zal-fitnes"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.jajeongeo-tagi-ezda-na-velosipede",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.jajeongeo-tagi.ezda-na-velosipede",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.jajeongeo-tagi.ezda-na-velosipede"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u06.joging-dzhogging-beg-trustsoi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.joging.dzhogging-beg-trustsoi",
+      "unitLogicalId": "unit.u06",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u06.dict.joging.dzhogging-beg-trustsoi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.alchada-nasyschennyi-soderzhatelnyi-produktivnyi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.alchada.nasyschennyi-soderzhatelnyi-produktivnyi",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.alchada.nasyschennyi-soderzhatelnyi-produktivnyi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.apeuda-bolnoi-bolit",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.apeuda.bolnoi-bolit",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.apeuda.bolnoi-bolit"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.areumdapda-krasivyi-prekrasnyi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.areumdapda.krasivyi-prekrasnyi",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.areumdapda.krasivyi-prekrasnyi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.baebureuda-sytyi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.baebureuda.sytyi",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.baebureuda.sytyi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.baegopeuda-golodnyi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.baegopeuda.golodnyi",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.baegopeuda.golodnyi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.bakda-svetlyi-yarkii",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bakda.svetlyi-yarkii",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.bakda.svetlyi-yarkii"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.bangapda-rad-a-vstreche",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bangapda.rad-a-vstreche",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.bangapda.rad-a-vstreche"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.bappeuda-zanyatoi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bappeuda.zanyatoi",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.bappeuda.zanyatoi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.bissada-dorogoi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bissada.dorogoi",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.bissada.dorogoi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.bokjaphada-slozhnyi-mnogolyudnyi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bokjaphada.slozhnyi-mnogolyudnyi",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.bokjaphada.slozhnyi-mnogolyudnyi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.bujireonhada-trudolyubivyi-prilezhnyi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bujireonhada.trudolyubivyi-prilezhnyi",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.bujireonhada.trudolyubivyi-prilezhnyi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u07.bulchinjeolhada-nedruzhelyubnyi-nevezhlivyi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bulchinjeolhada.nedruzhelyubnyi-nevezhlivyi",
+      "unitLogicalId": "unit.u07",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u07.dict.bulchinjeolhada.nedruzhelyubnyi-nevezhlivyi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.alda-znat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.alda.znat",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.alda.znat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.anjda-sidet-saditsya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.anjda.sidet-saditsya",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.anjda.sidet-saditsya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.baeuda-uchitsya-izuchat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.baeuda.uchitsya-izuchat",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.baeuda.uchitsya-izuchat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.bakkuda-menyat-izmenyat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bakkuda.menyat-izmenyat",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.bakkuda.menyat-izmenyat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.batda-poluchat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.batda.poluchat",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.batda.poluchat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.beolda-zarabatyvat-dengi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.beolda.zarabatyvat-dengi",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.beolda.zarabatyvat-dengi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.beorida-ustraivat-zatevat-prazdnik-delo",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.beorida.ustraivat-zatevat-prazdnik-delo",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.beorida.ustraivat-zatevat-prazdnik-delo"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.beotda-snimat-odezhdu",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.beotda.snimat-odezhdu",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.beotda.snimat-odezhdu"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.billida-odalzhivat-brat-naprokat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.billida.odalzhivat-brat-naprokat",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.billida.odalzhivat-brat-naprokat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.boda-smotret-videt",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.boda.smotret-videt",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.boda.smotret-videt"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.bonaeda-otpravlyat-posylat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bonaeda.otpravlyat-posylat",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.bonaeda.otpravlyat-posylat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u08.buchida-otpravlyat-posylku-pismo",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.buchida.otpravlyat-posylku-pismo",
+      "unitLogicalId": "unit.u08",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u08.dict.buchida.otpravlyat-posylku-pismo"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.hanbok-hanbok-koreiskii-natsionalnyi-kostyum",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.hanbok.hanbok-koreiskii-natsionalnyi-kostyum",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.hanbok.hanbok-koreiskii-natsionalnyi-kostyum"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.hwajangpum-kosmetika",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.hwajangpum.kosmetika",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.hwajangpum.kosmetika"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.janggap-perchatki",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.janggap.perchatki",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.janggap.perchatki"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.nektai-galstuk",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.nektai.galstuk",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.nektai.galstuk"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.ot-odezhda",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.ot.odezhda",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.ot.odezhda"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.sinbal-obuv",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.sinbal.obuv",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.sinbal.obuv"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.sonsugeon-nosovoi-platok",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.sonsugeon.nosovoi-platok",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.sonsugeon.nosovoi-platok"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.suyeongbok-kupalnik-plavki",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.suyeongbok.kupalnik-plavki",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.suyeongbok.kupalnik-plavki"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.undonghwa-krossovki-sportivnaya-obuv",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.undonghwa.krossovki-sportivnaya-obuv",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.undonghwa.krossovki-sportivnaya-obuv"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.ban-polovina-dlya-vremeni-n-n-30",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.ban.polovina-dlya-vremeni-n-n-30",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.ban.polovina-dlya-vremeni-n-n-30"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.beol-komplekt-nabor-dlya-odezhdy",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.beol.komplekt-nabor-dlya-odezhdy",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.beol.komplekt-nabor-dlya-odezhdy"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u09.beon-raz-nomer",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.beon.raz-nomer",
+      "unitLogicalId": "unit.u09",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u09.dict.beon.raz-nomer"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.bap-varenyi-ris-eda-v-shirokom-smysle",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bap.varenyi-ris-eda-v-shirokom-smysle",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.bap.varenyi-ris-eda-v-shirokom-smysle"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.beoteo-slivochnoe-maslo",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.beoteo.slivochnoe-maslo",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.beoteo.slivochnoe-maslo"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.bibimbap-bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bibimbap.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.bibimbap.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.bulgogi-bulgogi-marinovannoe-zharenoe-myaso",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bulgogi.bulgogi-marinovannoe-zharenoe-myaso",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.bulgogi.bulgogi-marinovannoe-zharenoe-myaso"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.cha-chai",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.cha.chai",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.cha.chai"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.chijeu-syr",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chijeu.syr",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.chijeu.syr"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.dak-kuritsa-zhivaya-ptitsa",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dak.kuritsa-zhivaya-ptitsa",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.dak.kuritsa-zhivaya-ptitsa"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.dakgogi-kuritsa-myaso",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dakgogi.kuritsa-myaso",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.dakgogi.kuritsa-myaso"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.dalgyal-yaitso",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dalgyal.yaitso",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.dalgyal.yaitso"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.danmuji-marinovannaya-zheltaya-redka-dlya-kimbapa",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.danmuji.marinovannaya-zheltaya-redka-dlya-kimbapa",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.danmuji.marinovannaya-zheltaya-redka-dlya-kimbapa"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.doenjang-soevaya-pasta",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.doenjang.soevaya-pasta",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.doenjang.soevaya-pasta"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u10.doenjangjjigae-tvendyang-tige-ragu-s-soevoi-pastoi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.doenjangjjigae.tvendyang-tige-ragu-s-soevoi-pastoi",
+      "unitLogicalId": "unit.u10",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u10.dict.doenjangjjigae.tvendyang-tige-ragu-s-soevoi-pastoi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.baeteori-batareya-akkumulyator",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.baeteori.batareya-akkumulyator",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.baeteori.batareya-akkumulyator"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.cheongsogi-pylesos",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.cheongsogi.pylesos",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.cheongsogi.pylesos"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.chungjeongi-zaryadnoe-ustroistvo",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chungjeongi.zaryadnoe-ustroistvo",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.chungjeongi.zaryadnoe-ustroistvo"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.darimi-utyug",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.darimi.utyug",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.darimi.utyug"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.eeokeon-e-eo-keon-konditsioner",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.eeokeon-e-eo-keon.konditsioner",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.eeokeon-e-eo-keon.konditsioner"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.hyudaepon-mobilnyi-telefon",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.hyudaepon.mobilnyi-telefon",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.hyudaepon.mobilnyi-telefon"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.ieopon-naushniki-vkladyshi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.ieopon.naushniki-vkladyshi",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.ieopon.naushniki-vkladyshi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.jeonjareinji-mikrovolnovaya-pech",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.jeonjareinji.mikrovolnovaya-pech",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.jeonjareinji.mikrovolnovaya-pech"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.kamera-kamera-fotoapparat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.kamera.kamera-fotoapparat",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.kamera.kamera-fotoapparat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.keompyuteo-kompyuter",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.keompyuteo.kompyuter",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.keompyuteo.kompyuter"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.kibodeu-klaviatura",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.kibodeu.klaviatura",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.kibodeu.klaviatura"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u11.mauseu-kompyuternaya-mysh",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.mauseu.kompyuternaya-mysh",
+      "unitLogicalId": "unit.u11",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u11.dict.mauseu.kompyuternaya-mysh"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.animyeon-ili-a-esli-ne",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.animyeon.ili-a-esli-ne",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.animyeon.ili-a-esli-ne"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.dan-no-odnako-pri-etom-utochnenie-ogovorka",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dan.no-odnako-pri-etom-utochnenie-ogovorka",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.dan.no-odnako-pri-etom-utochnenie-ogovorka"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.geuraedo-vse-zhe-tem-ne-menee",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geuraedo.vse-zhe-tem-ne-menee",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.geuraedo.vse-zhe-tem-ne-menee"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.geuraeseo-poetomu-i-poetomu",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geuraeseo.poetomu-i-poetomu",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.geuraeseo.poetomu-i-poetomu"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.geureochiman-no-tem-ne-menee",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geureochiman.no-tem-ne-menee",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.geureochiman.no-tem-ne-menee"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.geureom-togda-v-takom-sluchae",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geureom.togda-v-takom-sluchae",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.geureom.togda-v-takom-sluchae"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.geureomyeon-esli-tak-v-takom-sluchae-togda",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geureomyeon.esli-tak-v-takom-sluchae-togda",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.geureomyeon.esli-tak-v-takom-sluchae-togda"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.geureona-no-odnako",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geureona.no-odnako",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.geureona.no-odnako"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.geureonde-no-kstati-a-vot",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geureonde.no-kstati-a-vot",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.geureonde.no-kstati-a-vot"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.geureonikka-poetomu-tak-chto",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geureonikka.poetomu-tak-chto",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.geureonikka.poetomu-tak-chto"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.geurigo-i-a-takzhe-i-potom",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geurigo.i-a-takzhe-i-potom",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.geurigo.i-a-takzhe-i-potom"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u12.hajiman-no-odnako",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.hajiman.no-odnako",
+      "unitLogicalId": "unit.u12",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u12.dict.hajiman.no-odnako"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.bada-more",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bada.more",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.bada.more"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.baekhwajeom-univermag-torgovyi-tsentr",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.baekhwajeom.univermag-torgovyi-tsentr",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.baekhwajeom.univermag-torgovyi-tsentr"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.bakmulgwan-muzei",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bakmulgwan.muzei",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.bakmulgwan.muzei"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.beoseu-jeongnyujang-avtobusnaya-ostanovka",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.beoseu-jeongnyujang.avtobusnaya-ostanovka",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.beoseu-jeongnyujang.avtobusnaya-ostanovka"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.bilding-zdanie-obychno-ofisnoe-mnogoetazhnoe",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bilding.zdanie-obychno-ofisnoe-mnogoetazhnoe",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.bilding.zdanie-obychno-ofisnoe-mnogoetazhnoe"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.byeongwon-bolnitsa",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.byeongwon.bolnitsa",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.byeongwon.bolnitsa"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.cheyukgwan-sportzal-sportivnyi-zal",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.cheyukgwan.sportzal-sportivnyi-zal",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.cheyukgwan.sportzal-sportivnyi-zal"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.chodeunghakgyo-nachalnaya-shkola",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chodeunghakgyo.nachalnaya-shkola",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.chodeunghakgyo.nachalnaya-shkola"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.daehakgyo-universitet",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.daehakgyo.universitet",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.daehakgyo.universitet"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.dongmurwon-zoopark",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dongmurwon.zoopark",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.dongmurwon.zoopark"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.doseogwan-biblioteka",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.doseogwan.biblioteka",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.doseogwan.biblioteka"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u13.eunhaeng-bank",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.eunhaeng.bank",
+      "unitLogicalId": "unit.u13",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u13.dict.eunhaeng.bank"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.gage-magazin-nebolshoi",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gage.magazin-nebolshoi",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.gage.magazin-nebolshoi"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.geukjang-teatr",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.geukjang.teatr",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.geukjang.teatr"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.gichayeok-zheleznodorozhnaya-stantsiya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gichayeok.zheleznodorozhnaya-stantsiya",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.gichayeok.zheleznodorozhnaya-stantsiya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.godeunghakgyo-starshaya-shkola-polnaya-srednyaya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.godeunghakgyo.starshaya-shkola-polnaya-srednyaya",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.godeunghakgyo.starshaya-shkola-polnaya-srednyaya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.gonggongjangso-obschestvennoe-mesto",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gonggongjangso.obschestvennoe-mesto",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.gonggongjangso.obschestvennoe-mesto"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.gonghang-aeroport",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gonghang.aeroport",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.gonghang.aeroport"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.gongwon-park",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gongwon.park",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.gongwon.park"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.gungnipjungangbangmulgwan-natsionalnyi-muzei-korei",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gungnipjungangbangmulgwan.natsionalnyi-muzei-korei",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.gungnipjungangbangmulgwan.natsionalnyi-muzei-korei"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.gyosil-klass-klassnaya-komnata",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gyosil.klass-klassnaya-komnata",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.gyosil.klass-klassnaya-komnata"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.haesuyokjang-plyazh-dlya-kupaniya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.haesuyokjang.plyazh-dlya-kupaniya",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.haesuyokjang.plyazh-dlya-kupaniya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.hakgyo-shkola",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.hakgyo.shkola",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.hakgyo.shkola"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u14.helseu-jang-fitnes-zal-trenazhernyi-zal",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.helseu-jang.fitnes-zal-trenazhernyi-zal",
+      "unitLogicalId": "unit.u14",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u14.dict.helseu-jang.fitnes-zal-trenazhernyi-zal"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.bae-zhivot",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bae.zhivot",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.bae.zhivot"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.bal-stopa",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bal.stopa",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.bal.stopa"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.balgarak-palets-na-noge",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.balgarak.palets-na-noge",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.balgarak.palets-na-noge"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.dari-noga-ot-bedra-do-stopy",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dari.noga-ot-bedra-do-stopy",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.dari.noga-ot-bedra-do-stopy"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.deung-spina",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.deung.spina",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.deung.spina"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.eokkae-plecho",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.eokkae.plecho",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.eokkae.plecho"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.eolgul-litso",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.eolgul.litso",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.eolgul.litso"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.eongdeongi-yagoditsy",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.eongdeongi.yagoditsy",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.eongdeongi.yagoditsy"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.gaseum-grud",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gaseum.grud",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.gaseum.grud"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.gwi-uho",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.gwi.uho",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.gwi.uho"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.heori-poyasnitsa-taliya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.heori.poyasnitsa-taliya",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.heori.poyasnitsa-taliya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u15.hyeo-yazyk-organ",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.hyeo.yazyk-organ",
+      "unitLogicalId": "unit.u15",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u15.dict.hyeo.yazyk-organ"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.abeoji-otets",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.abeoji.otets",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 0,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.abeoji.otets"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.adeul-syn",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.adeul.syn",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 1,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.adeul.syn"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.ajeossi-obraschenie-k-muzhchine-srednego-vozrasta",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.ajeossi.obraschenie-k-muzhchine-srednego-vozrasta",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 2,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.ajeossi.obraschenie-k-muzhchine-srednego-vozrasta"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.ajumeoni-obraschenie-k-zhenschine-srednego-vozrasta",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.ajumeoni.obraschenie-k-zhenschine-srednego-vozrasta",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 3,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.ajumeoni.obraschenie-k-zhenschine-srednego-vozrasta"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.anae-zhena",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.anae.zhena",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 4,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.anae.zhena"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.appa-papa",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.appa.papa",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 5,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.appa.papa"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.bumonim-roditeli",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.bumonim.roditeli",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 6,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.bumonim.roditeli"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.chincheok-rodstvenniki-rodnya",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chincheok.rodstvenniki-rodnya",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 7,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.chincheok.rodstvenniki-rodnya"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.chingu-drug-podruga",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.chingu.drug-podruga",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 8,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.chingu.drug-podruga"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.dongsaeng-mladshii-brat-ili-sestra",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.dongsaeng.mladshii-brat-ili-sestra",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 9,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.dongsaeng.mladshii-brat-ili-sestra"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.eomeoni-mat",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.eomeoni.mat",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 10,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.eomeoni.mat"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    },
+    {
+      "logicalId": "dictlink.u16.eomma-mama",
+      "contentVersion": "1.0.0",
+      "entryLogicalId": "dict.eomma.mama",
+      "unitLogicalId": "unit.u16",
+      "role": "primary",
+      "sortOrder": 11,
+      "status": "reviewed",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-vocabulary",
+          "locator": {
+            "kind": "section",
+            "value": "unit.u16.dict.eomma.mama"
+          },
+          "confidence": "high"
+        }
+      ],
+      "review": {
+        "reviewedAt": "2026-08-10T00:00:00.000Z",
+        "note": "Primary unit link for minimal vocabulary bank."
+      }
+    }
+  ]
 }

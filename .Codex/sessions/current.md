@@ -4,22 +4,21 @@
 
 ## Чем занимаемся
 
-F2-I15 выполнен. Следующая карточка — F2-I16 (minimal vocabulary exercise bank).
+F2-I16 выполнен. Следующая карточка — F2-I17 (minimal reading exercise bank).
 
-## F2-I15 — результат
+## F2-I16 — результат
 
-- Generator `content:generate-grammar-exercises` → 160 draft items in `exercises-grammar.json`
-- Per topic: recognition (`single-choice`, same-unit distractors) + application (`free-response`, accepted pattern variants)
-- Provenance `manual-derived`; statuses stay `draft` (no auto-approved)
-- Curriculum seed: free-response payload + `accepted_answers` (`pending`); secondary `exercise_topics` for pattern families
-- Coverage/ambiguity/public-leak tests in `scripts/content/grammar-exercises.test.ts`
-- Seed regenerated: exercises 276, options 736, accepted_answers 108
+- Generator `content:generate-vocabulary-exercises`
+- 12 reviewed senses + primary unit links per unit (192 total)
+- 64 draft exercises: KO→RU meaning-choice, RU→KO meaning-choice, free-response (lemma only), matching-translation
+- Same-POS distractors; transliteration never accepted; no `добавлено`
+- Seed: matching payload mapping; exercises 340 / options 864 / accepted_answers 124 / dict links 192
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i15-grammar-exercises`
-- Commit: `feat: add baseline grammar exercise bank`
+- Branch: `codex/f2-i16-vocabulary-exercises`
+- Commit: `feat: add baseline vocabulary exercise bank`
 
 ## Следующий шаг
 
-F2-I16 — minimal vocabulary exercise bank.
+F2-I17 — minimal reading exercise bank.

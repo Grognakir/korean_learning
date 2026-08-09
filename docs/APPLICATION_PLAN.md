@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I15 `done`; CP-6 принят).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I16 `done`; CP-6 принят).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I15 minimal grammar exercise bank — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i15-grammar-exercises`.
-- **Уже сделано:** 160 draft grammar exercises (80 recognition `single-choice` + 80 application `free-response`); provenance; seed с accepted answers и secondary topic links.
-- **Выполненные проверки:** content validate/tests + unit/integration/lint/typecheck/build (gate итерации).
-- **Сейчас работает:** structural grammar coverage 80/80 в authoring JSON; draft rows в seed; public lists по-прежнему только approved sample.
-- **Пока не работает / ограничения:** vocabulary bank (F2-I16); filtered session creation (F2-I18); curriculum draft → Supabase public lists пустые до publish/review.
-- **Следующий конкретный шаг:** F2-I16 — minimal vocabulary exercise bank.
+- **Текущая итерация:** F2-I16 minimal vocabulary exercise bank — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i16-vocabulary-exercises`.
+- **Уже сделано:** 192 reviewed senses + unit links; 64 draft vocabulary exercises (meaning-choice KO↔RU, free-response, matching-translation) по 4 на unit.
+- **Выполненные проверки:** content validate/tests + unit/lint/typecheck/build (gate итерации).
+- **Сейчас работает:** structural vocab coverage 16/16 в authoring JSON; draft/reviewed rows в seed; public lists по-прежнему только approved sample.
+- **Пока не работает / ограничения:** reading bank cleanup (F2-I17); filtered session creation (F2-I18); curriculum draft → Supabase public lists пустые до publish/review.
+- **Следующий конкретный шаг:** F2-I17 — minimal reading exercise bank.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

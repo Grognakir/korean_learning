@@ -197,9 +197,9 @@ describe("RLS user isolation", () => {
 describe("RLS trusted server access", () => {
   it("allows service role to read protected tables", async () => {
     const admin = createLocalAdminClient();
-    await expectSelectCount(admin, "exercise_options", 416);
-    await expectSelectCount(admin, "accepted_answers", 4);
-    await expectSelectCount(admin, "content_reviews", 15);
+    await expectSelectCount(admin, "exercise_options", 736);
+    await expectSelectCount(admin, "accepted_answers", 108);
+    await expectSelectCount(admin, "content_reviews", 17);
     await expectSelectCount(admin, "content_sources", 4);
   });
 });

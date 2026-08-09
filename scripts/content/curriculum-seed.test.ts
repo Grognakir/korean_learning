@@ -30,7 +30,10 @@ describe("curriculum seed SQL builder", () => {
     expect(first.stats.grammarTopics).toBe(80);
     expect(first.stats.dictionaryEntries).toBe(1091);
     expect(first.stats.readingPassages).toBe(178);
-    expect(first.stats.exercises).toBe(100);
+    expect(first.stats.exercises).toBe(260);
+    expect(first.sql).toContain("'grammar'");
+    expect(first.sql).toContain("accepted_answers");
+    expect(first.sql).toContain("'secondary'");
     expect(uuidFromKey("module:unit.u01@1.0.0")).toBe(uuidFromKey("module:unit.u01@1.0.0"));
     expect(first.sql).toContain("learning_skill");
     expect(first.sql).toContain("'reading'");

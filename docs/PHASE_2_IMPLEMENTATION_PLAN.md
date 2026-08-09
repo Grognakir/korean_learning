@@ -536,7 +536,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I15 — Минимальный grammar exercise bank
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** создать небольшой, но полный draft-банк по всем 80 элементам.
 - **Вход:** F2-I14 `done`; CP-6 решения применены.
 - **Ветка:** `codex/f2-i15-grammar-exercises`.

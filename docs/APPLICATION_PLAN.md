@@ -2,19 +2,19 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I14 `done`; CP-6 принят).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I15 `done`; CP-6 принят).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I14 single-choice + reading presentation — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i14-single-choice-reading`.
-- **Уже сделано:** domain/Zod/checker/public DTO/renderer для `single-choice`; `ReadingPassage` над prompt; sample reading exercise + seed.
-- **Выполненные проверки:** unit/integration/lint/typecheck/build (gate итерации).
-- **Сейчас работает:** reading single-choice с пассажем в demo/local; shuffle options по seed.
-- **Пока не работает / ограничения:** grammar exercise bank (F2-I15); filtered session creation (F2-I18); curriculum draft → Supabase public lists пустые до publish.
-- **Следующий конкретный шаг:** F2-I15 — minimal grammar exercise bank.
+- **Текущая итерация:** F2-I15 minimal grammar exercise bank — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i15-grammar-exercises`.
+- **Уже сделано:** 160 draft grammar exercises (80 recognition `single-choice` + 80 application `free-response`); provenance; seed с accepted answers и secondary topic links.
+- **Выполненные проверки:** content validate/tests + unit/integration/lint/typecheck/build (gate итерации).
+- **Сейчас работает:** structural grammar coverage 80/80 в authoring JSON; draft rows в seed; public lists по-прежнему только approved sample.
+- **Пока не работает / ограничения:** vocabulary bank (F2-I16); filtered session creation (F2-I18); curriculum draft → Supabase public lists пустые до publish/review.
+- **Следующий конкретный шаг:** F2-I16 — minimal vocabulary exercise bank.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.
-- **Последнее обновление:** 2026-08-09.
+- **Последнее обновление:** 2026-08-10.
 
 ## 1. Цель, результат и границы
 

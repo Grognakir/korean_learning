@@ -28111,6 +28111,9614 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
+  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'exercise.grammar.u01.n01.recognition',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «формальная утвердительная и вопросительная форма связки «быть/являться».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('bb0fead0-fff2-4d16-84fb-ddb82c94f4f3', '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5ab84d77-64f9-41ed-919c-696d60e42e83',
+  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'opt1',
+  'N입니다/입니까?',
+  'N입니다/입니까?',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'db58f52f-a643-4a02-a331-ba2e6877f662',
+  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'opt2',
+  'N이/가',
+  'N이/가',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0751e432-1180-46da-b382-7ec346e15933',
+  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'opt3',
+  'N은/는①',
+  'N은/는①',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '41687171-8d6e-497d-aef6-edf4df5aab48',
+  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'opt4',
+  'N이/가 아니다',
+  'N이/가 아니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '580b5f2b-09cf-4fd2-84eb-8901ce56e8f1',
+  'exercise.grammar.u01.n01.application',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «формальная утвердительная и вопросительная форма связки «быть/являться».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('580b5f2b-09cf-4fd2-84eb-8901ce56e8f1', '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'cf153cca-aa70-4fb8-a182-4c3b0eb170e4',
+  '580b5f2b-09cf-4fd2-84eb-8901ce56e8f1',
+  'N입니다/입니까?',
+  'N입니다/입니까?',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  'exercise.grammar.u01.n02.recognition',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  '30c3c3b4-03f5-4f2e-a10d-8680d417674a',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('799b9965-ee73-4060-8a02-10d26cbcbcaa', '30c3c3b4-03f5-4f2e-a10d-8680d417674a', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '09255103-27c1-4754-a420-c3ab67d0b15a',
+  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  'opt1',
+  'N이/가',
+  'N이/가',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e6be22dc-d290-4132-9985-0b27450e2d47',
+  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  'opt2',
+  'N입니다/입니까?',
+  'N입니다/입니까?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '60fbb6cb-ba1f-463c-9ee8-b5c3c21d9e02',
+  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  'opt3',
+  'N은/는①',
+  'N은/는①',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'db40431c-f77a-4897-9df0-3930e053aeef',
+  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  'opt4',
+  'N이/가 아니다',
+  'N이/가 아니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '582dee3c-160f-4d3c-8263-f7931d31ea20',
+  'exercise.grammar.u01.n02.application',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  '30c3c3b4-03f5-4f2e-a10d-8680d417674a',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('582dee3c-160f-4d3c-8263-f7931d31ea20', '30c3c3b4-03f5-4f2e-a10d-8680d417674a', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'ba633cf8-5084-4f50-83de-f6a19fb0846d',
+  '582dee3c-160f-4d3c-8263-f7931d31ea20',
+  'N이/가',
+  'N이/가',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  'exercise.grammar.u01.n03.recognition',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  '8a80682b-a6e1-4455-9837-56d128b281d0',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «задаёт тему высказывания или уже известный предмет разговора.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('fb504003-0fbe-4f25-9866-6ee636a8005b', '8a80682b-a6e1-4455-9837-56d128b281d0', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('fb504003-0fbe-4f25-9866-6ee636a8005b', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '594663e9-c4c9-4379-8454-33302376aa1f',
+  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  'opt1',
+  'N은/는①',
+  'N은/는①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '656bd433-fa6d-40e5-bd6d-1f626ac1df12',
+  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  'opt2',
+  'N입니다/입니까?',
+  'N입니다/입니까?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1187a654-b485-4847-92e7-2f4cf78025c8',
+  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  'opt3',
+  'N이/가',
+  'N이/가',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd2cc9307-d988-4189-9f1c-164c9c29cbb0',
+  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  'opt4',
+  'N이/가 아니다',
+  'N이/가 아니다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '495d6501-62d7-471a-b404-e6e5c63efdb8',
+  'exercise.grammar.u01.n03.application',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  '8a80682b-a6e1-4455-9837-56d128b281d0',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «задаёт тему высказывания или уже известный предмет разговора.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('495d6501-62d7-471a-b404-e6e5c63efdb8', '8a80682b-a6e1-4455-9837-56d128b281d0', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('495d6501-62d7-471a-b404-e6e5c63efdb8', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'cd16da3f-fab8-4919-960a-246089521c3f',
+  '495d6501-62d7-471a-b404-e6e5c63efdb8',
+  'N은/는①',
+  'N은/는①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'ac9e9fa2-73aa-4e82-8f68-77d1548009e7',
+  '495d6501-62d7-471a-b404-e6e5c63efdb8',
+  'N은/는',
+  'N은/는',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'exercise.grammar.u01.n04.recognition',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  '7c375169-839f-4e9f-8589-1b53585aed01',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «отрицает принадлежность к классу: «не является N».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('a8e82a67-0afd-4b7d-bba1-8177a2a04e1e', '7c375169-839f-4e9f-8589-1b53585aed01', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '60ca545c-d171-4835-8bc8-15ea7f27114e',
+  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'opt1',
+  'N이/가 아니다',
+  'N이/가 아니다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b08750aa-48c6-4fbe-ab82-32a7f86c34ad',
+  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'opt2',
+  'N입니다/입니까?',
+  'N입니다/입니까?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4918d523-bd57-4b2c-91e1-4b3357f4eb41',
+  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'opt3',
+  'N이/가',
+  'N이/가',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '258fd069-ab41-4d6a-b1b5-d4bfb14f2753',
+  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'opt4',
+  'N은/는①',
+  'N은/는①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'c4f31a98-da2a-4c62-82ec-8e7c195f47fe',
+  'exercise.grammar.u01.n04.application',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  '7c375169-839f-4e9f-8589-1b53585aed01',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «отрицает принадлежность к классу: «не является N».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('c4f31a98-da2a-4c62-82ec-8e7c195f47fe', '7c375169-839f-4e9f-8589-1b53585aed01', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '37eb44b9-fbe4-4fa7-a18b-29df2442aada',
+  'c4f31a98-da2a-4c62-82ec-8e7c195f47fe',
+  'N이/가 아니다',
+  'N이/가 아니다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  'exercise.grammar.u01.n05.recognition',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  'f0e4e545-1d7d-4e11-9226-9500759baa43',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131', 'f0e4e545-1d7d-4e11-9226-9500759baa43', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '79f51be5-2592-4ef5-b46b-ed743c7ed74d',
+  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  'opt1',
+  'N도',
+  'N도',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '40097438-4301-495a-84af-129ed41de8d2',
+  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  'opt2',
+  'N입니다/입니까?',
+  'N입니다/입니까?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1de472cb-ebda-4853-bbc9-ecab64698db2',
+  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  'opt3',
+  'N이/가',
+  'N이/가',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3e0b9d16-8401-4e80-95da-660e8a875a95',
+  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  'opt4',
+  'N은/는①',
+  'N은/는①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '4bd1eadf-7af4-45e7-8b11-3f4563f750f9',
+  'exercise.grammar.u01.n05.application',
+  'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
+  'f0e4e545-1d7d-4e11-9226-9500759baa43',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4bd1eadf-7af4-45e7-8b11-3f4563f750f9', 'f0e4e545-1d7d-4e11-9226-9500759baa43', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '9b754924-7b45-41e0-959d-0b8a6fa555e0',
+  '4bd1eadf-7af4-45e7-8b11-3f4563f750f9',
+  'N도',
+  'N도',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'exercise.grammar.u02.n01.recognition',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «указательные определители «этот/тот/вон тот» по положению относительно участников разговора.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('c966931b-9e3e-4506-a96a-b84d0611d5e8', 'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e3bd4795-3c23-4953-859e-56805c7f2bff',
+  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'opt1',
+  '이/그/저',
+  '이/그/저',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '00a10c42-ed53-4a4b-a098-d0e226c1eb92',
+  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'opt2',
+  'N의',
+  'N의',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '081c331d-0650-48e7-85ba-44302ee33248',
+  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'opt3',
+  'N에①',
+  'N에①',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9f57451f-2861-4e44-b431-d696032a6bee',
+  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'opt4',
+  'N이/가 있다/없다',
+  'N이/가 있다/없다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '2b153b3d-4f8e-41eb-83cf-7681b9ce9c0a',
+  'exercise.grammar.u02.n01.application',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «указательные определители «этот/тот/вон тот» по положению относительно участников разговора.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('2b153b3d-4f8e-41eb-83cf-7681b9ce9c0a', 'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '035d8f77-3f20-4f1f-acf3-b7f0b5677766',
+  '2b153b3d-4f8e-41eb-83cf-7681b9ce9c0a',
+  '이/그/저',
+  '이/그/저',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'exercise.grammar.u02.n02.recognition',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  '49051a92-1504-4992-aae2-a63f45b9de2c',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает принадлежность или отношение между существительными.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('99333d51-d736-4200-927c-ee7bf2afd2aa', '49051a92-1504-4992-aae2-a63f45b9de2c', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '117effb0-072c-4e44-bb6c-e6621de92b85',
+  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'opt1',
+  'N의',
+  'N의',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c757ec5f-6ee1-42cc-88de-58edd433776e',
+  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'opt2',
+  '이/그/저',
+  '이/그/저',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7cb0c679-8b52-4efe-a840-1cee6bc0222a',
+  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'opt3',
+  'N에①',
+  'N에①',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7a3940ed-5624-452d-9741-d9fd123bd1eb',
+  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'opt4',
+  'N이/가 있다/없다',
+  'N이/가 있다/없다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '6352baeb-c3e2-45f1-b2e1-45d336e54e40',
+  'exercise.grammar.u02.n02.application',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  '49051a92-1504-4992-aae2-a63f45b9de2c',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает принадлежность или отношение между существительными.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('6352baeb-c3e2-45f1-b2e1-45d336e54e40', '49051a92-1504-4992-aae2-a63f45b9de2c', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'c61b353d-f8eb-4ba0-9daf-5ac1cf6892b5',
+  '6352baeb-c3e2-45f1-b2e1-45d336e54e40',
+  'N의',
+  'N의',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'exercise.grammar.u02.n03.recognition',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  '8a1109c4-571f-4b3a-9e32-7897bd43c8f5',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «указывает место существования, нахождения или направление движения.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('d99b63a7-c6b1-4751-946d-0263c2c04448', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('d99b63a7-c6b1-4751-946d-0263c2c04448', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b2966b94-9d68-4e63-b685-31e521cae044',
+  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'opt1',
+  'N에①',
+  'N에①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6bcc8646-0054-4b59-8de3-ca0523bdb479',
+  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'opt2',
+  '이/그/저',
+  '이/그/저',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '40a654a4-cee0-4840-b327-3f647b11e8bf',
+  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'opt3',
+  'N의',
+  'N의',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6ae43067-73d0-419a-b2a3-29feebf08518',
+  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'opt4',
+  'N이/가 있다/없다',
+  'N이/가 있다/없다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'b5c16713-f9b2-4784-b540-7210910c52d6',
+  'exercise.grammar.u02.n03.application',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  '8a1109c4-571f-4b3a-9e32-7897bd43c8f5',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «указывает место существования, нахождения или направление движения.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('b5c16713-f9b2-4784-b540-7210910c52d6', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('b5c16713-f9b2-4784-b540-7210910c52d6', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'c9d8e5aa-cfb9-4c25-af75-d1ac6e2abec7',
+  'b5c16713-f9b2-4784-b540-7210910c52d6',
+  'N에①',
+  'N에①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'b2b10cda-4383-4ce2-8da5-fa58732898c2',
+  'b5c16713-f9b2-4784-b540-7210910c52d6',
+  'N에',
+  'N에',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  'exercise.grammar.u02.n04.recognition',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «сообщает о наличии, отсутствии или местонахождении предмета/лица.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('51e0e037-a35b-4665-80b4-f780297a32d6', '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3268a1ff-b0f6-48db-bf67-984b8768890d',
+  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  'opt1',
+  'N이/가 있다/없다',
+  'N이/가 있다/없다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e82bc071-96c4-4398-80ea-000dcc9844e2',
+  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  'opt2',
+  '이/그/저',
+  '이/그/저',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2cba1766-c5e3-45d6-9018-82988b9125f1',
+  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  'opt3',
+  'N의',
+  'N의',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '99551d4b-ac00-4ec0-8950-c7fbbb3cdc49',
+  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  'opt4',
+  'N에①',
+  'N에①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0f24667e-2c7c-4803-b482-5574900a8053',
+  'exercise.grammar.u02.n04.application',
+  '706d624f-aefd-42e9-a146-d7b88ae10f4d',
+  '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «сообщает о наличии, отсутствии или местонахождении предмета/лица.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('0f24667e-2c7c-4803-b482-5574900a8053', '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'c4457e4d-8321-4974-be6f-18b2bf000521',
+  '0f24667e-2c7c-4803-b482-5574900a8053',
+  'N이/가 있다/없다',
+  'N이/가 있다/없다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  'exercise.grammar.u03.n01.recognition',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  '753818d8-088e-4852-8892-a6be1fa91c7e',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «формальный вежливый стиль утверждения и вопроса.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('1e3d5b68-6593-4ace-ba5d-4cd52be020b4', '753818d8-088e-4852-8892-a6be1fa91c7e', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9c0abf4d-e4ef-40c3-a065-3b38c835d02f',
+  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  'opt1',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '686ace3f-71e0-4f60-97e7-d8b52d2c1f22',
+  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  'opt2',
+  'N을/를',
+  'N을/를',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '37a822d6-8578-447d-8103-2a1bb7775489',
+  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  'opt3',
+  'N만',
+  'N만',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '723dda30-8eca-4e88-80c1-4df6f6db4ef5',
+  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  'opt4',
+  'N에 가다/오다',
+  'N에 가다/오다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '03ea5556-cfe7-4656-a3dc-6c6bfdaa3d06',
+  'exercise.grammar.u03.n01.application',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  '753818d8-088e-4852-8892-a6be1fa91c7e',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «формальный вежливый стиль утверждения и вопроса.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('03ea5556-cfe7-4656-a3dc-6c6bfdaa3d06', '753818d8-088e-4852-8892-a6be1fa91c7e', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'fa8fc627-5aba-43e9-a38c-b76d9a842c61',
+  '03ea5556-cfe7-4656-a3dc-6c6bfdaa3d06',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  'exercise.grammar.u03.n02.recognition',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  '00bb8c98-c877-468e-868e-51f356a55b06',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «маркирует прямое дополнение; `을` после 받침, `를` после гласной.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72', '00bb8c98-c877-468e-868e-51f356a55b06', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ecc6dc14-48c6-45e2-8ad9-9946378f898e',
+  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  'opt1',
+  'N을/를',
+  'N을/를',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f3ad7960-6bf9-4174-bf27-51174d135494',
+  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  'opt2',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f5f5b026-d664-4009-a42d-afee2a4d6078',
+  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  'opt3',
+  'N만',
+  'N만',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd0f2235e-7a7e-4908-aaab-faf346eb8b90',
+  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  'opt4',
+  'N에 가다/오다',
+  'N에 가다/오다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8254f615-97a3-4d68-b06e-8905c28c034a',
+  'exercise.grammar.u03.n02.application',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  '00bb8c98-c877-468e-868e-51f356a55b06',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «маркирует прямое дополнение; `을` после 받침, `를` после гласной.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('8254f615-97a3-4d68-b06e-8905c28c034a', '00bb8c98-c877-468e-868e-51f356a55b06', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '5f976d9a-6a5c-4e75-b6fd-3fdd827b6b68',
+  '8254f615-97a3-4d68-b06e-8905c28c034a',
+  'N을/를',
+  'N을/를',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  'exercise.grammar.u03.n03.recognition',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  '275400bf-a5c2-42f5-bb7f-b19ff372a569',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «ограничивает значение: «только N».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('dc4537bb-6ac6-4883-bd2a-435a4afd6ee1', '275400bf-a5c2-42f5-bb7f-b19ff372a569', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9b189c09-9b1d-4b96-9691-182f63596178',
+  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  'opt1',
+  'N만',
+  'N만',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '91cc5a1d-692b-4123-a31c-ce594a0345f0',
+  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  'opt2',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e944cd8c-b274-4ccc-984c-460effaed8fc',
+  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  'opt3',
+  'N을/를',
+  'N을/를',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '92ea9c0d-01fd-4464-97b4-7dfd49f62b63',
+  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  'opt4',
+  'N에 가다/오다',
+  'N에 가다/오다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '1c395eb4-5b08-4c6f-821e-cc49b7d375f0',
+  'exercise.grammar.u03.n03.application',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  '275400bf-a5c2-42f5-bb7f-b19ff372a569',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «ограничивает значение: «только N».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('1c395eb4-5b08-4c6f-821e-cc49b7d375f0', '275400bf-a5c2-42f5-bb7f-b19ff372a569', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'a455dbbe-048a-4591-98d4-80aba31fd187',
+  '1c395eb4-5b08-4c6f-821e-cc49b7d375f0',
+  'N만',
+  'N만',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  'exercise.grammar.u03.n04.recognition',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  'fa62b1f0-61ca-4e68-90a9-4270a7881003',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает движение к месту: «идти/приходить в N».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('8f6d590e-c1ec-4925-a394-07bfa031aa47', 'fa62b1f0-61ca-4e68-90a9-4270a7881003', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2b6b6490-bfd5-4de0-8713-690c87dda964',
+  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  'opt1',
+  'N에 가다/오다',
+  'N에 가다/오다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6365ec53-5c73-4e4b-b07c-68191aef9bd7',
+  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  'opt2',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f901d07d-39a9-46f9-84d7-0fbeafaf6cdd',
+  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  'opt3',
+  'N을/를',
+  'N을/를',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a69664af-2237-4808-ae56-88a58faf5464',
+  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  'opt4',
+  'N만',
+  'N만',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0c5cbeb9-7d1a-4559-b2d9-122d062a5d3d',
+  'exercise.grammar.u03.n04.application',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  'fa62b1f0-61ca-4e68-90a9-4270a7881003',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает движение к месту: «идти/приходить в N».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('0c5cbeb9-7d1a-4559-b2d9-122d062a5d3d', 'fa62b1f0-61ca-4e68-90a9-4270a7881003', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '3a8a933a-3f01-4555-a463-0b7dd70a53db',
+  '0c5cbeb9-7d1a-4559-b2d9-122d062a5d3d',
+  'N에 가다/오다',
+  'N에 가다/오다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  'exercise.grammar.u03.n05.recognition',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  '05c93655-e1d7-494a-9971-7f3b3f08270b',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('5867671b-fe5e-4d59-9fde-b31eb8f6227d', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('5867671b-fe5e-4d59-9fde-b31eb8f6227d', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('5867671b-fe5e-4d59-9fde-b31eb8f6227d', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('5867671b-fe5e-4d59-9fde-b31eb8f6227d', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8b9472e4-8a42-419e-8200-31e44913614e',
+  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  'opt1',
+  '수①',
+  '수①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f8908b1f-126e-4264-867d-15892819422c',
+  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  'opt2',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  'V-(스)ㅂ니다/-(스)ㅂ니까?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '90feb5a0-2a15-4b56-ac77-3a301aa88351',
+  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  'opt3',
+  'N을/를',
+  'N을/를',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '140dc484-6bbc-4dd9-99d6-5eb18bb662d9',
+  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  'opt4',
+  'N만',
+  'N만',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'bffd8114-10e8-4a9e-b486-091fa80c54d9',
+  'exercise.grammar.u03.n05.application',
+  '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
+  '05c93655-e1d7-494a-9971-7f3b3f08270b',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('bffd8114-10e8-4a9e-b486-091fa80c54d9', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('bffd8114-10e8-4a9e-b486-091fa80c54d9', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('bffd8114-10e8-4a9e-b486-091fa80c54d9', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('bffd8114-10e8-4a9e-b486-091fa80c54d9', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '1916962d-7ed5-45e5-8e22-cd476c005df5',
+  'bffd8114-10e8-4a9e-b486-091fa80c54d9',
+  '수①',
+  '수①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'c549b81f-d793-4922-b117-bba135cefcbc',
+  'bffd8114-10e8-4a9e-b486-091fa80c54d9',
+  '수',
+  '수',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'exercise.grammar.u04.n01.recognition',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  'ece80569-38fc-4b3a-bf4a-c587ff14ea63',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «нейтрально-письменно соединяет существительные значением «и/с».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('0cdcf564-1a92-4aa2-aafe-3a98d91f685e', 'ece80569-38fc-4b3a-bf4a-c587ff14ea63', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e908ffd4-3f24-4db6-8bd1-492328c5cd9f',
+  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'opt1',
+  'N와/과 N',
+  'N와/과 N',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'dff3bbe9-466e-40c0-81b5-e900895d763d',
+  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'opt2',
+  'N하고 N',
+  'N하고 N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a375a742-24b9-4fce-b433-4524a4fb96ec',
+  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'opt3',
+  'N에서',
+  'N에서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bff4c1dc-1117-40f2-8af8-ab01d3c95321',
+  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'opt4',
+  '수②',
+  '수②',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'b8924e69-a8dd-482e-bf26-079a75d77e59',
+  'exercise.grammar.u04.n01.application',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  'ece80569-38fc-4b3a-bf4a-c587ff14ea63',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «нейтрально-письменно соединяет существительные значением «и/с».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('b8924e69-a8dd-482e-bf26-079a75d77e59', 'ece80569-38fc-4b3a-bf4a-c587ff14ea63', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'b5e5f03a-1f0b-4d47-bbbf-d02eb1d6b114',
+  'b8924e69-a8dd-482e-bf26-079a75d77e59',
+  'N와/과 N',
+  'N와/과 N',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  'exercise.grammar.u04.n02.recognition',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  '74e26dec-da2c-4709-8953-1dd49a02569c',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «разговорно соединяет существительные значением «и/с».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01', '74e26dec-da2c-4709-8953-1dd49a02569c', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f335fc30-5c68-405b-9c59-9d7435d0d6b0',
+  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  'opt1',
+  'N하고 N',
+  'N하고 N',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '65e02629-f77b-42d6-907d-65e2e41787c3',
+  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  'opt2',
+  'N와/과 N',
+  'N와/과 N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '25b96c3b-8589-435c-b3da-633f48185dd9',
+  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  'opt3',
+  'N에서',
+  'N에서',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd87eb2ab-e94c-41d4-a9eb-e42347a2c7f6',
+  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  'opt4',
+  '수②',
+  '수②',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'bf0acc59-9989-4a3b-91c9-53aeb14564f1',
+  'exercise.grammar.u04.n02.application',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  '74e26dec-da2c-4709-8953-1dd49a02569c',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «разговорно соединяет существительные значением «и/с».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('bf0acc59-9989-4a3b-91c9-53aeb14564f1', '74e26dec-da2c-4709-8953-1dd49a02569c', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'b07bfad5-b2d7-4f20-9ef5-135d1a008fe1',
+  'bf0acc59-9989-4a3b-91c9-53aeb14564f1',
+  'N하고 N',
+  'N하고 N',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  'exercise.grammar.u04.n03.recognition',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  '312ec2b7-5d62-4e8e-bcd4-de828e1805a1',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «обозначает место действия или исходную точку движения.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('499ef943-d8dc-490a-91c2-17b58f208f3f', '312ec2b7-5d62-4e8e-bcd4-de828e1805a1', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '868d68b5-5089-4bdd-bcf1-47022f579488',
+  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  'opt1',
+  'N에서',
+  'N에서',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ef766bfa-c6df-4b74-b071-75ed5c62ae12',
+  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  'opt2',
+  'N와/과 N',
+  'N와/과 N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '11190a28-5deb-402e-b384-df59bed63b28',
+  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  'opt3',
+  'N하고 N',
+  'N하고 N',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '718a5f10-dacc-4675-a5fd-b877e9d0de90',
+  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  'opt4',
+  '수②',
+  '수②',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'ff34e5db-1742-4640-9ac9-e18e00917022',
+  'exercise.grammar.u04.n03.application',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  '312ec2b7-5d62-4e8e-bcd4-de828e1805a1',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «обозначает место действия или исходную точку движения.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('ff34e5db-1742-4640-9ac9-e18e00917022', '312ec2b7-5d62-4e8e-bcd4-de828e1805a1', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'ffa75433-0a88-4174-b1aa-626cdf27d745',
+  'ff34e5db-1742-4640-9ac9-e18e00917022',
+  'N에서',
+  'N에서',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  'exercise.grammar.u04.n04.recognition',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «даты, календарные числа, месяцы, дни недели и чтение календаря.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('618480d2-2773-4aa4-b252-559ca4c6a962', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('618480d2-2773-4aa4-b252-559ca4c6a962', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('618480d2-2773-4aa4-b252-559ca4c6a962', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('618480d2-2773-4aa4-b252-559ca4c6a962', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f0b383af-3bec-4084-90bc-ca433aba3408',
+  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  'opt1',
+  '수②',
+  '수②',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e47a570b-02f1-465d-b7d0-0369aa692033',
+  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  'opt2',
+  'N와/과 N',
+  'N와/과 N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1d0280f3-66aa-48a7-bc46-ba9a7628841f',
+  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  'opt3',
+  'N하고 N',
+  'N하고 N',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '62bdf92b-deba-45ef-99b8-defbc212f5d9',
+  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  'opt4',
+  'N에서',
+  'N에서',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7092340f-118f-46a6-a463-f8df003e2933',
+  'exercise.grammar.u04.n04.application',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «даты, календарные числа, месяцы, дни недели и чтение календаря.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7092340f-118f-46a6-a463-f8df003e2933', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7092340f-118f-46a6-a463-f8df003e2933', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7092340f-118f-46a6-a463-f8df003e2933', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7092340f-118f-46a6-a463-f8df003e2933', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '733ac8c4-bf2a-4692-b8b1-a354fbec17e8',
+  '7092340f-118f-46a6-a463-f8df003e2933',
+  '수②',
+  '수②',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '1ddefa84-64c6-4a4a-9e88-36123fe93fd1',
+  '7092340f-118f-46a6-a463-f8df003e2933',
+  '수',
+  '수',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  'exercise.grammar.u04.n05.recognition',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('c6611342-e9bb-463c-bd9e-e757824b2721', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('c6611342-e9bb-463c-bd9e-e757824b2721', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '261a0398-23a9-4833-8581-bf20c54389cd',
+  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  'opt1',
+  'N에②',
+  'N에②',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '089c1c01-5ecf-4b2d-ae04-80a66edc2724',
+  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  'opt2',
+  'N와/과 N',
+  'N와/과 N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '14dfde64-71fd-470f-8713-2cd2c2de50bb',
+  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  'opt3',
+  'N하고 N',
+  'N하고 N',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '89c853ad-33c5-4d99-9b9a-84d13c7f110b',
+  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  'opt4',
+  'N에서',
+  'N에서',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8b2e1786-b0d4-443c-8be5-3127c17fc6be',
+  'exercise.grammar.u04.n05.application',
+  'eee407f3-7185-4524-9e59-d79769238530',
+  '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('8b2e1786-b0d4-443c-8be5-3127c17fc6be', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('8b2e1786-b0d4-443c-8be5-3127c17fc6be', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '38ab27f1-a9b5-465e-a287-a343f904dd81',
+  '8b2e1786-b0d4-443c-8be5-3127c17fc6be',
+  'N에②',
+  'N에②',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '2cd98006-7e25-4d4c-938e-76a55ef25b66',
+  '8b2e1786-b0d4-443c-8be5-3127c17fc6be',
+  'N에',
+  'N에',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  'exercise.grammar.u05.n01.recognition',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  '5d69471d-eaad-4e32-ab21-bf3abd158f52',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «базовая разговорно-вежливая форма настоящего времени.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7', '5d69471d-eaad-4e32-ab21-bf3abd158f52', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '59c7399c-66eb-4e96-85ff-6bbe32f40261',
+  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  'opt1',
+  'V-아/어/여요①',
+  'V-아/어/여요①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '082cce8b-0c54-4249-99d4-54dd6b26f630',
+  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  'opt2',
+  'N이에요/예요',
+  'N이에요/예요',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9f448916-6f0e-4341-ae96-aa12e271459f',
+  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  'opt3',
+  '수③',
+  '수③',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'df801209-9f61-4581-aba2-5973c6c90d40',
+  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  'opt4',
+  'N부터 N까지',
+  'N부터 N까지',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8f57e570-f1f6-4c72-a941-5770e29a400b',
+  'exercise.grammar.u05.n01.application',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  '5d69471d-eaad-4e32-ab21-bf3abd158f52',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «базовая разговорно-вежливая форма настоящего времени.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('8f57e570-f1f6-4c72-a941-5770e29a400b', '5d69471d-eaad-4e32-ab21-bf3abd158f52', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'e1051cd0-f739-4733-af29-a41af3442ef4',
+  '8f57e570-f1f6-4c72-a941-5770e29a400b',
+  'V-아/어/여요①',
+  'V-아/어/여요①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '3d196058-1c5e-4da0-8a86-235fb4f20e8f',
+  '8f57e570-f1f6-4c72-a941-5770e29a400b',
+  'V-아/어/여요',
+  'V-아/어/여요',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '022e5581-24b2-4bed-b838-3858aa674867',
+  'exercise.grammar.u05.n02.recognition',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  '126c5f04-3282-47f1-8a15-acd1f7b188c0',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «разговорно-вежливая связка после существительного.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('022e5581-24b2-4bed-b838-3858aa674867', '126c5f04-3282-47f1-8a15-acd1f7b188c0', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4bf2313c-bbe3-44f9-a16c-dbe029c5936f',
+  '022e5581-24b2-4bed-b838-3858aa674867',
+  'opt1',
+  'N이에요/예요',
+  'N이에요/예요',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '72b94abd-ca1b-45ab-b7c8-79ed55bd732f',
+  '022e5581-24b2-4bed-b838-3858aa674867',
+  'opt2',
+  'V-아/어/여요①',
+  'V-아/어/여요①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '97a37ce2-8f82-42c2-9dda-4ca148b255fa',
+  '022e5581-24b2-4bed-b838-3858aa674867',
+  'opt3',
+  '수③',
+  '수③',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '24ae5ee2-0c30-41c3-8c63-e6e7b2401c09',
+  '022e5581-24b2-4bed-b838-3858aa674867',
+  'opt4',
+  'N부터 N까지',
+  'N부터 N까지',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '74e83acc-9edd-492a-86ea-34316e1bb63b',
+  'exercise.grammar.u05.n02.application',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  '126c5f04-3282-47f1-8a15-acd1f7b188c0',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «разговорно-вежливая связка после существительного.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('74e83acc-9edd-492a-86ea-34316e1bb63b', '126c5f04-3282-47f1-8a15-acd1f7b188c0', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '0cdbd8b1-5f15-42b4-ac06-44f7df06df77',
+  '74e83acc-9edd-492a-86ea-34316e1bb63b',
+  'N이에요/예요',
+  'N이에요/예요',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  'exercise.grammar.u05.n03.recognition',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  '71c150f9-8d5d-4b9f-a864-37b59deb0136',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7a94b245-4efb-4a5a-89b5-3a68facc10a9', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7a94b245-4efb-4a5a-89b5-3a68facc10a9', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7a94b245-4efb-4a5a-89b5-3a68facc10a9', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7a94b245-4efb-4a5a-89b5-3a68facc10a9', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'cc4e1a8e-45a5-4507-bce3-c2dbce360de1',
+  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  'opt1',
+  '수③',
+  '수③',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '796a1be1-ad42-48dd-b914-5d5bb170a52c',
+  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  'opt2',
+  'V-아/어/여요①',
+  'V-아/어/여요①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'fed10bbf-e94a-479d-9c61-8fb654294a12',
+  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  'opt3',
+  'N이에요/예요',
+  'N이에요/예요',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a12a1262-9801-4ab6-b617-0a484faa4e96',
+  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  'opt4',
+  'N부터 N까지',
+  'N부터 N까지',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '101965ab-5e04-45e9-97da-28b297cefc12',
+  'exercise.grammar.u05.n03.application',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  '71c150f9-8d5d-4b9f-a864-37b59deb0136',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('101965ab-5e04-45e9-97da-28b297cefc12', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('101965ab-5e04-45e9-97da-28b297cefc12', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('101965ab-5e04-45e9-97da-28b297cefc12', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('101965ab-5e04-45e9-97da-28b297cefc12', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'ab3bc108-956b-4c34-bbad-8dbe48432a60',
+  '101965ab-5e04-45e9-97da-28b297cefc12',
+  '수③',
+  '수③',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'd57748e5-26b8-473c-adf1-34891d6922fb',
+  '101965ab-5e04-45e9-97da-28b297cefc12',
+  '수',
+  '수',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  'exercise.grammar.u05.n04.recognition',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «задаёт начало и конец временного или пространственного диапазона.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('f8b7cb50-2972-4f3a-b766-78154278d39b', 'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7275e9c0-dc86-4446-bf13-8d9865b177e6',
+  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  'opt1',
+  'N부터 N까지',
+  'N부터 N까지',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'dc7520c8-43a5-415c-ac36-f2e2cb5db7ad',
+  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  'opt2',
+  'V-아/어/여요①',
+  'V-아/어/여요①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '207e40d7-d605-472a-93ee-76ae2b19b8d8',
+  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  'opt3',
+  'N이에요/예요',
+  'N이에요/예요',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd937ed4b-9767-4852-8424-5fcd54edf2d3',
+  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  'opt4',
+  '수③',
+  '수③',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '935f9e30-0ea1-492f-be25-7ad15a4279d6',
+  'exercise.grammar.u05.n04.application',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «задаёт начало и конец временного или пространственного диапазона.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('935f9e30-0ea1-492f-be25-7ad15a4279d6', 'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '04207ca4-cb82-48cd-88f6-b3a576aa3ed6',
+  '935f9e30-0ea1-492f-be25-7ad15a4279d6',
+  'N부터 N까지',
+  'N부터 N까지',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'exercise.grammar.u05.n05.recognition',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  '8c39255c-13da-493a-9598-8679ab7a59e7',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «краткое и полное отрицание действия или состояния.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('cafc56ce-4461-4df2-afad-a743d51eaf5d', '8c39255c-13da-493a-9598-8679ab7a59e7', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a5671eeb-1b6f-40e9-869c-2f018407973d',
+  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'opt1',
+  '안 V/V-지 않다',
+  '안 V/V-지 않다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5f83e263-3237-46d6-8706-72a0331d111a',
+  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'opt2',
+  'V-아/어/여요①',
+  'V-아/어/여요①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '32c09a1c-09e8-4c1c-a412-a2bb5600f218',
+  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'opt3',
+  'N이에요/예요',
+  'N이에요/예요',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '07d0482b-7ace-4c9a-b45a-4ea00c67db20',
+  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'opt4',
+  '수③',
+  '수③',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a1382165-113c-49be-9b5d-711fd0558531',
+  'exercise.grammar.u05.n05.application',
+  'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
+  '8c39255c-13da-493a-9598-8679ab7a59e7',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «краткое и полное отрицание действия или состояния.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('a1382165-113c-49be-9b5d-711fd0558531', '8c39255c-13da-493a-9598-8679ab7a59e7', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '301c3f59-b7b0-4a79-ac4c-fd512f9e4aa9',
+  'a1382165-113c-49be-9b5d-711fd0558531',
+  '안 V/V-지 않다',
+  '안 V/V-지 않다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  'exercise.grammar.u06.n01.recognition',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  '5837b05d-94c5-4844-a413-e945b4344d4f',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «образует прошедшее время глагола или прилагательного.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('8d1c443d-1bdc-4669-8750-6841848b0e57', '5837b05d-94c5-4844-a413-e945b4344d4f', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '78ea3d2f-5dba-432a-bcec-0639413a2943',
+  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  'opt1',
+  'V-았/었/였-',
+  'V-았/었/였-',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b7ec5bc6-22f2-47b4-843a-bb0a192b86fe',
+  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  'opt2',
+  'N이었/였-',
+  'N이었/였-',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '91e11720-3209-489e-b5dd-936a8262b747',
+  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  'opt3',
+  'V-고①',
+  'V-고①',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '293f3c3f-568e-4e0e-83d8-9fd6701e855b',
+  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  'opt4',
+  'N(이)고',
+  'N(이)고',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '89f0892a-908c-499c-9d08-22e09defcf7f',
+  'exercise.grammar.u06.n01.application',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  '5837b05d-94c5-4844-a413-e945b4344d4f',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «образует прошедшее время глагола или прилагательного.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('89f0892a-908c-499c-9d08-22e09defcf7f', '5837b05d-94c5-4844-a413-e945b4344d4f', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'c80e3adb-f3ac-4efb-9d55-76b1f4352a7b',
+  '89f0892a-908c-499c-9d08-22e09defcf7f',
+  'V-았/었/였-',
+  'V-았/었/였-',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'exercise.grammar.u06.n02.recognition',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  'ba4806cd-2a3a-48a4-8f39-170acb3f2def',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «прошедшая форма связки после существительного.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('932dcd4d-6b40-448b-9096-666e2d7ced80', 'ba4806cd-2a3a-48a4-8f39-170acb3f2def', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e1738e0a-98b8-4ad5-b686-38d2ffd53a54',
+  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'opt1',
+  'N이었/였-',
+  'N이었/였-',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6ae59a2e-8040-40ff-bae7-f9e534b713e2',
+  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'opt2',
+  'V-았/었/였-',
+  'V-았/었/였-',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '071ec15b-9ffa-42fb-b033-62a4d52888e5',
+  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'opt3',
+  'V-고①',
+  'V-고①',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f27d5dae-8944-47fd-856e-320c85eccd0c',
+  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'opt4',
+  'N(이)고',
+  'N(이)고',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'af9f3df8-d62a-4569-be4d-7223156172b7',
+  'exercise.grammar.u06.n02.application',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  'ba4806cd-2a3a-48a4-8f39-170acb3f2def',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «прошедшая форма связки после существительного.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('af9f3df8-d62a-4569-be4d-7223156172b7', 'ba4806cd-2a3a-48a4-8f39-170acb3f2def', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '704b5662-953b-436a-a16a-7a544b066261',
+  'af9f3df8-d62a-4569-be4d-7223156172b7',
+  'N이었/였-',
+  'N이었/였-',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  'exercise.grammar.u06.n03.recognition',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  'fbc7140a-f6a0-4dcb-996c-730ddbed58d3',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «перечисляет действия или состояния без обязательной причинной связи.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('acf23dd4-6bd9-4e11-bfeb-ffd8696aa518', 'fbc7140a-f6a0-4dcb-996c-730ddbed58d3', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c2265dd4-b421-4720-aed0-2fcc3c117450',
+  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  'opt1',
+  'V-고①',
+  'V-고①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6c3b753f-0786-4d9e-adc2-ae7cdd84e5da',
+  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  'opt2',
+  'V-았/었/였-',
+  'V-았/었/였-',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f16b8e4d-0b2d-48af-93d0-8e78a4113c60',
+  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  'opt3',
+  'N이었/였-',
+  'N이었/였-',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7dbafd61-4fae-42af-a4a2-bacaf1b7e16b',
+  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  'opt4',
+  'N(이)고',
+  'N(이)고',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'e6590270-3858-493e-892f-f3d767c5b6c1',
+  'exercise.grammar.u06.n03.application',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  'fbc7140a-f6a0-4dcb-996c-730ddbed58d3',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «перечисляет действия или состояния без обязательной причинной связи.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('e6590270-3858-493e-892f-f3d767c5b6c1', 'fbc7140a-f6a0-4dcb-996c-730ddbed58d3', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'd632bebc-996f-4b87-97d9-bac3437a0f52',
+  'e6590270-3858-493e-892f-f3d767c5b6c1',
+  'V-고①',
+  'V-고①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '26bae33e-a374-441b-8cd1-59ccd4365b2d',
+  'e6590270-3858-493e-892f-f3d767c5b6c1',
+  'V-고',
+  'V-고',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  'exercise.grammar.u06.n04.recognition',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  'ce20b2f3-9f2c-47c5-aba2-13dc19da118d',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «соединяет существительные или именные характеристики значением «и».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('98ca25cc-5988-427a-b379-1d44bfdb2454', 'ce20b2f3-9f2c-47c5-aba2-13dc19da118d', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd90163d7-cc26-433e-b79a-42acea767c16',
+  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  'opt1',
+  'N(이)고',
+  'N(이)고',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6c3f77a4-4a36-4c8d-b0b8-7d06ba78d5f5',
+  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  'opt2',
+  'V-았/었/였-',
+  'V-았/었/였-',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ad774e79-0ced-473c-b80c-bc3ad9927497',
+  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  'opt3',
+  'N이었/였-',
+  'N이었/였-',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '140e9b82-7042-41aa-b1b8-d687d6cce8b5',
+  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  'opt4',
+  'V-고①',
+  'V-고①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '22fdcf35-b709-4c59-8c11-eb83838dad47',
+  'exercise.grammar.u06.n04.application',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  'ce20b2f3-9f2c-47c5-aba2-13dc19da118d',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «соединяет существительные или именные характеристики значением «и».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('22fdcf35-b709-4c59-8c11-eb83838dad47', 'ce20b2f3-9f2c-47c5-aba2-13dc19da118d', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '6a879d20-30a3-41fc-b34c-d0e577458f15',
+  '22fdcf35-b709-4c59-8c11-eb83838dad47',
+  'N(이)고',
+  'N(이)고',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'exercise.grammar.u06.n05.recognition',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  '79e28405-616c-41de-8b9b-cbbfca67e1aa',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает опыт или попытку «попробовать сделать».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('554f7c63-c45a-4cb2-9b5a-a21be11850d2', '79e28405-616c-41de-8b9b-cbbfca67e1aa', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1074cecc-1e30-49fb-ab05-cf11707396ed',
+  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'opt1',
+  'AV-아/어/여 보다',
+  'AV-아/어/여 보다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c91839a1-7d77-4fb5-a79c-999768a2288f',
+  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'opt2',
+  'V-았/었/였-',
+  'V-았/었/였-',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '79898fc6-8691-4b7b-b7cd-02a6d8023e79',
+  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'opt3',
+  'N이었/였-',
+  'N이었/였-',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '67e74f0b-a775-400b-9604-63aa28dd1af5',
+  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'opt4',
+  'V-고①',
+  'V-고①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a83d931d-0042-4caf-b1fc-89b861db2741',
+  'exercise.grammar.u06.n05.application',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  '79e28405-616c-41de-8b9b-cbbfca67e1aa',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает опыт или попытку «попробовать сделать».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('a83d931d-0042-4caf-b1fc-89b861db2741', '79e28405-616c-41de-8b9b-cbbfca67e1aa', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'e33f65a4-d628-4d74-aa90-2066ef7f3de6',
+  'a83d931d-0042-4caf-b1fc-89b861db2741',
+  'AV-아/어/여 보다',
+  'AV-아/어/여 보다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  'exercise.grammar.u06.n06.recognition',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('46cedfbb-5a07-4aab-9a75-bcc43ca2bd36', '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0b84c8c7-7f73-4d93-896d-4c4698bb3b6e',
+  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  'opt1',
+  'ㅡ 동사',
+  'ㅡ 동사',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4d1fd769-f8ac-4ef5-b0e3-3ae297317c1c',
+  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  'opt2',
+  'V-았/었/였-',
+  'V-았/었/였-',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '84f2d525-5cb7-4dda-bd61-3ca344b6915f',
+  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  'opt3',
+  'N이었/였-',
+  'N이었/였-',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9b2cf22f-f318-4bd5-84bb-40afcc0362fa',
+  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  'opt4',
+  'V-고①',
+  'V-고①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'f86835f4-a6a8-4b1b-9881-1af60703ae93',
+  'exercise.grammar.u06.n06.application',
+  'bc38c906-b83d-406b-9960-1a21b3efff72',
+  '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('f86835f4-a6a8-4b1b-9881-1af60703ae93', '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '9de7de7e-2588-4771-b9b9-1501f9831dd9',
+  'f86835f4-a6a8-4b1b-9881-1af60703ae93',
+  'ㅡ 동사',
+  'ㅡ 동사',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'exercise.grammar.u07.n01.recognition',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '1e8467c9-ff54-4a37-bb24-aa475e2f9e45',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «подчёркивает контраст или сравнение двух тем.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('5aef05a5-c92a-4e1a-b046-db2fa704b137', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('5aef05a5-c92a-4e1a-b046-db2fa704b137', '8a80682b-a6e1-4455-9837-56d128b281d0', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f0ae20bf-0e0f-4503-92e8-f3678c6ddb27',
+  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'opt1',
+  'N은/는②',
+  'N은/는②',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '93940fe0-aebf-4bd8-8d71-3e6b438d5c29',
+  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'opt2',
+  'ㅂ 동사',
+  'ㅂ 동사',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '117d5dcf-f55c-4273-bd52-be92d0595bf0',
+  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'opt3',
+  'AV-아/어/여서①',
+  'AV-아/어/여서①',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '91f6efca-eef5-49ee-845b-e7834910f2bf',
+  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'opt4',
+  'N(으)로①',
+  'N(으)로①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'e3d32091-63cd-4abf-af93-001a312184c7',
+  'exercise.grammar.u07.n01.application',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '1e8467c9-ff54-4a37-bb24-aa475e2f9e45',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «подчёркивает контраст или сравнение двух тем.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('e3d32091-63cd-4abf-af93-001a312184c7', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('e3d32091-63cd-4abf-af93-001a312184c7', '8a80682b-a6e1-4455-9837-56d128b281d0', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'eea68b07-9662-4afb-9ff7-1a82026d49e5',
+  'e3d32091-63cd-4abf-af93-001a312184c7',
+  'N은/는②',
+  'N은/는②',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '3bb5aca5-5abe-43d8-8c02-635bd9d49435',
+  'e3d32091-63cd-4abf-af93-001a312184c7',
+  'N은/는',
+  'N은/는',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  'exercise.grammar.u07.n02.recognition',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('2932b1bd-eaa8-49d3-8871-1fe7f05fc645', '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '03b344b4-f2c5-4c88-aca9-1dd62e8f3a48',
+  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  'opt1',
+  'ㅂ 동사',
+  'ㅂ 동사',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e06efdc7-b83f-4c67-928a-9ee3d134d7d7',
+  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  'opt2',
+  'N은/는②',
+  'N은/는②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ef61e759-bc58-415a-8077-5741ed1a1823',
+  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  'opt3',
+  'AV-아/어/여서①',
+  'AV-아/어/여서①',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '30a39bcc-c341-4dd9-a492-c41650786867',
+  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  'opt4',
+  'N(으)로①',
+  'N(으)로①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'bbff31ce-77be-4222-b306-426de8f84cb3',
+  'exercise.grammar.u07.n02.application',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('bbff31ce-77be-4222-b306-426de8f84cb3', '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '443f22bb-5553-4fdb-9261-cfaeb054b39e',
+  'bbff31ce-77be-4222-b306-426de8f84cb3',
+  'ㅂ 동사',
+  'ㅂ 동사',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'exercise.grammar.u07.n03.recognition',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '7854c9ff-14a3-442f-b737-2b93c4c4046d',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('0c685eeb-5114-48e5-90df-7e72e98362ad', '7854c9ff-14a3-442f-b737-2b93c4c4046d', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f36fc80d-fa8f-47c9-9c32-2b75d27debf9',
+  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'opt1',
+  'AV-아/어/여서①',
+  'AV-아/어/여서①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a48d20b4-6799-4be8-8964-5baab385589c',
+  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'opt2',
+  'N은/는②',
+  'N은/는②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0e4c7bcf-2b50-4c94-b214-dca8ac08bec0',
+  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'opt3',
+  'ㅂ 동사',
+  'ㅂ 동사',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '00d4b296-f6e1-467b-9179-8a8376d0f394',
+  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'opt4',
+  'N(으)로①',
+  'N(으)로①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '38de0248-b406-4fe1-b556-450654d129ec',
+  'exercise.grammar.u07.n03.application',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '7854c9ff-14a3-442f-b737-2b93c4c4046d',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('38de0248-b406-4fe1-b556-450654d129ec', '7854c9ff-14a3-442f-b737-2b93c4c4046d', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'b4538f9c-2348-4b70-a54a-24e9ffa050f6',
+  '38de0248-b406-4fe1-b556-450654d129ec',
+  'AV-아/어/여서①',
+  'AV-아/어/여서①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '635d6670-bffd-4298-b679-b97558f60897',
+  '38de0248-b406-4fe1-b556-450654d129ec',
+  'AV-아/어/여서',
+  'AV-아/어/여서',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'exercise.grammar.u07.n04.recognition',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '214132fd-fdc0-43dd-a962-e42ff1c23fcb',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «указывает направление движения; после гласной и `ㄹ` используется `로`.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('347bbd30-a44b-47e0-b4c0-80f0c36ae5d3', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('347bbd30-a44b-47e0-b4c0-80f0c36ae5d3', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '31dbae67-d480-4a01-9dbd-211c6e59fa23',
+  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'opt1',
+  'N(으)로①',
+  'N(으)로①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e942601e-1eb2-4179-97d8-9202688e2ea1',
+  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'opt2',
+  'N은/는②',
+  'N은/는②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2f67199d-d024-42e3-b05f-fc65a85a172e',
+  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'opt3',
+  'ㅂ 동사',
+  'ㅂ 동사',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e9da46b6-43d7-4ff4-a3c9-d0f1559d53ad',
+  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'opt4',
+  'AV-아/어/여서①',
+  'AV-아/어/여서①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '9e79d8e3-3076-41b7-af0c-5fe15c7b7139',
+  'exercise.grammar.u07.n04.application',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '214132fd-fdc0-43dd-a962-e42ff1c23fcb',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «указывает направление движения; после гласной и `ㄹ` используется `로`.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('9e79d8e3-3076-41b7-af0c-5fe15c7b7139', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('9e79d8e3-3076-41b7-af0c-5fe15c7b7139', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '9fc6b0e6-f1f4-4fab-be38-7879338da47b',
+  '9e79d8e3-3076-41b7-af0c-5fe15c7b7139',
+  'N(으)로①',
+  'N(으)로①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '01484e7c-4cd1-4370-a673-f5450bb8243a',
+  '9e79d8e3-3076-41b7-af0c-5fe15c7b7139',
+  'N(으)로',
+  'N(으)로',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'exercise.grammar.u07.n05.recognition',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '08602f93-e9c4-43ec-af68-8275e3373035',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает цель движения: «идти/приходить, чтобы сделать».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('f383e78c-45b4-438f-b098-b7cd7fd7fa53', '08602f93-e9c4-43ec-af68-8275e3373035', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '553c55f1-65f8-4fbc-9ad1-52525aba451b',
+  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'opt1',
+  'AV-(으)러 가다/오다',
+  'AV-(으)러 가다/오다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'cc9ee0f2-ad60-4174-96aa-776059c53bc6',
+  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'opt2',
+  'N은/는②',
+  'N은/는②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b2022f2c-7c4c-4450-9dca-47c0345b7e80',
+  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'opt3',
+  'ㅂ 동사',
+  'ㅂ 동사',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '576fbe5c-6a58-4948-8cb4-83a8327e0fd2',
+  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'opt4',
+  'AV-아/어/여서①',
+  'AV-아/어/여서①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '4d2244e1-6127-4e4a-83c9-250df97683ae',
+  'exercise.grammar.u07.n05.application',
+  '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
+  '08602f93-e9c4-43ec-af68-8275e3373035',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает цель движения: «идти/приходить, чтобы сделать».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4d2244e1-6127-4e4a-83c9-250df97683ae', '08602f93-e9c4-43ec-af68-8275e3373035', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'c484e563-110c-4e5a-ba74-5f7fdd537c11',
+  '4d2244e1-6127-4e4a-83c9-250df97683ae',
+  'AV-(으)러 가다/오다',
+  'AV-(으)러 가다/오다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  'exercise.grammar.u08.n01.recognition',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  '7b58d124-1351-4775-bd05-392d3de9681a',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает собственный план, намерение или ожидаемое будущее действие.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb', '7b58d124-1351-4775-bd05-392d3de9681a', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9813978d-03ca-4aee-b132-f679bc49e7a4',
+  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  'opt1',
+  'AV-(으)ㄹ 거예요①',
+  'AV-(으)ㄹ 거예요①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3f9b94a9-bc38-46b0-99a4-9023bdcaca26',
+  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  'opt2',
+  'AV-고②',
+  'AV-고②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'cf81f8d0-bff9-49ba-9f0e-c5b3c7483a1c',
+  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  'opt3',
+  'AV-기 전에/N 전에',
+  'AV-기 전에/N 전에',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8350de71-529b-4d2d-b0dd-9256f1b14f28',
+  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  'opt4',
+  'AV-(으)ㄴ 후에/N 후에',
+  'AV-(으)ㄴ 후에/N 후에',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a09960a1-55a6-415d-83b2-4a57f8cb3ca5',
+  'exercise.grammar.u08.n01.application',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  '7b58d124-1351-4775-bd05-392d3de9681a',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает собственный план, намерение или ожидаемое будущее действие.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('a09960a1-55a6-415d-83b2-4a57f8cb3ca5', '7b58d124-1351-4775-bd05-392d3de9681a', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'fd7f781a-efc8-40ae-a8fe-25d0677dbc0e',
+  'a09960a1-55a6-415d-83b2-4a57f8cb3ca5',
+  'AV-(으)ㄹ 거예요①',
+  'AV-(으)ㄹ 거예요①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'cd73fdf4-96d3-49bb-9891-66dbc9a5dc5d',
+  'a09960a1-55a6-415d-83b2-4a57f8cb3ca5',
+  'AV-(으)ㄹ 거예요',
+  'AV-(으)ㄹ 거예요',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '96e40798-4751-4e45-9e31-7193731c35db',
+  'exercise.grammar.u08.n02.recognition',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  '4f221acf-3db5-4160-a85f-3614688a1c97',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «соединяет последовательные действия в рассказе о плане или распорядке.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('96e40798-4751-4e45-9e31-7193731c35db', '4f221acf-3db5-4160-a85f-3614688a1c97', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '14fe4072-983f-4cd2-b7bd-10f34c5a248f',
+  '96e40798-4751-4e45-9e31-7193731c35db',
+  'opt1',
+  'AV-고②',
+  'AV-고②',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '24c97ffc-f84b-492f-98a6-98a739a7597a',
+  '96e40798-4751-4e45-9e31-7193731c35db',
+  'opt2',
+  'AV-(으)ㄹ 거예요①',
+  'AV-(으)ㄹ 거예요①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '49ccefef-d672-41fb-9539-4208d5711830',
+  '96e40798-4751-4e45-9e31-7193731c35db',
+  'opt3',
+  'AV-기 전에/N 전에',
+  'AV-기 전에/N 전에',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '653fe848-4a9e-4a13-b5c1-6ff97068e83e',
+  '96e40798-4751-4e45-9e31-7193731c35db',
+  'opt4',
+  'AV-(으)ㄴ 후에/N 후에',
+  'AV-(으)ㄴ 후에/N 후에',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'c76aa70a-be6b-4c73-a936-c7ef2838e153',
+  'exercise.grammar.u08.n02.application',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  '4f221acf-3db5-4160-a85f-3614688a1c97',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «соединяет последовательные действия в рассказе о плане или распорядке.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('c76aa70a-be6b-4c73-a936-c7ef2838e153', '4f221acf-3db5-4160-a85f-3614688a1c97', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'd68f1c4a-aaff-4e5c-ad73-42905a23dc63',
+  'c76aa70a-be6b-4c73-a936-c7ef2838e153',
+  'AV-고②',
+  'AV-고②',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '003ac914-5c9f-4481-88d6-cb7ee156c077',
+  'c76aa70a-be6b-4c73-a936-c7ef2838e153',
+  'AV-고',
+  'AV-고',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  'exercise.grammar.u08.n03.recognition',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «обозначает действие или момент «до/перед».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('36c192e3-0d7b-4385-bb9c-21312cd4fc43', 'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '00ed56f5-5ebb-4e0c-8043-f1fe9b3da06d',
+  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  'opt1',
+  'AV-기 전에/N 전에',
+  'AV-기 전에/N 전에',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e6a5eda9-7693-4072-9e9f-650b69ee990b',
+  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  'opt2',
+  'AV-(으)ㄹ 거예요①',
+  'AV-(으)ㄹ 거예요①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '359598e4-9efc-40dc-81ed-980c7c53d1e7',
+  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  'opt3',
+  'AV-고②',
+  'AV-고②',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9224ecc8-320b-442a-ac14-248ddfbe9971',
+  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  'opt4',
+  'AV-(으)ㄴ 후에/N 후에',
+  'AV-(으)ㄴ 후에/N 후에',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '2d832590-aef0-42bd-93e0-3adfb45d8814',
+  'exercise.grammar.u08.n03.application',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «обозначает действие или момент «до/перед».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('2d832590-aef0-42bd-93e0-3adfb45d8814', 'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'f773b8eb-b502-4d23-8119-22e4de0e75e8',
+  '2d832590-aef0-42bd-93e0-3adfb45d8814',
+  'AV-기 전에/N 전에',
+  'AV-기 전에/N 전에',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  'exercise.grammar.u08.n04.recognition',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  '72b9edd3-5a56-4c25-a35a-5fd9b601dc61',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «обозначает действие или момент «после».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('503cba10-c815-4a0b-9f15-bfa6ea5ed9c4', '72b9edd3-5a56-4c25-a35a-5fd9b601dc61', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b00b1723-4867-4856-8a47-bcd20d61e18c',
+  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  'opt1',
+  'AV-(으)ㄴ 후에/N 후에',
+  'AV-(으)ㄴ 후에/N 후에',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd307af62-a970-417a-b3a9-2513ee1d8950',
+  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  'opt2',
+  'AV-(으)ㄹ 거예요①',
+  'AV-(으)ㄹ 거예요①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8443e171-dfd8-4956-bb70-eb5b7ee6c8d1',
+  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  'opt3',
+  'AV-고②',
+  'AV-고②',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a0773bec-9dbd-4e53-a613-4909113b6d6b',
+  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  'opt4',
+  'AV-기 전에/N 전에',
+  'AV-기 전에/N 전에',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'fe6c9544-6d7f-4e40-aa33-0be530964bcb',
+  'exercise.grammar.u08.n04.application',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  '72b9edd3-5a56-4c25-a35a-5fd9b601dc61',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «обозначает действие или момент «после».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('fe6c9544-6d7f-4e40-aa33-0be530964bcb', '72b9edd3-5a56-4c25-a35a-5fd9b601dc61', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '23b0f3f6-4ff4-42e1-8007-67d7bb0e29fe',
+  'fe6c9544-6d7f-4e40-aa33-0be530964bcb',
+  'AV-(으)ㄴ 후에/N 후에',
+  'AV-(으)ㄴ 후에/N 후에',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'exercise.grammar.u08.n05.recognition',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  'b8628ae8-c518-43b8-8b9a-9333850c2d52',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «задаёт продолжительность «в течение N».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3', 'b8628ae8-c518-43b8-8b9a-9333850c2d52', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2c008171-871f-412a-a7b6-d8d301223b75',
+  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'opt1',
+  'N 동안',
+  'N 동안',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '39233f5a-06ed-4c4c-a210-106a4a5b860c',
+  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'opt2',
+  'AV-(으)ㄹ 거예요①',
+  'AV-(으)ㄹ 거예요①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'dad1f50f-e448-4d13-be30-e1ca38c01f18',
+  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'opt3',
+  'AV-고②',
+  'AV-고②',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2247de13-c9d4-4c66-8e44-66a52711e4d3',
+  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'opt4',
+  'AV-기 전에/N 전에',
+  'AV-기 전에/N 전에',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '9a7fd59a-a3ae-4b6c-9c59-089d0e337ff5',
+  'exercise.grammar.u08.n05.application',
+  '3d238cd9-9420-42f4-9432-3790c4bcb12f',
+  'b8628ae8-c518-43b8-8b9a-9333850c2d52',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «задаёт продолжительность «в течение N».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('9a7fd59a-a3ae-4b6c-9c59-089d0e337ff5', 'b8628ae8-c518-43b8-8b9a-9333850c2d52', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '52fccfb8-1041-43fb-a6b1-03686a20df94',
+  '9a7fd59a-a3ae-4b6c-9c59-089d0e337ff5',
+  'N 동안',
+  'N 동안',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  'exercise.grammar.u09.n01.recognition',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  '23c5932e-f49e-4a6e-9823-12eb063ac064',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «счётные слова, количество товаров, цены и денежные единицы.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('2958861e-5305-4c52-94eb-9d1a1825ebd5', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('2958861e-5305-4c52-94eb-9d1a1825ebd5', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('2958861e-5305-4c52-94eb-9d1a1825ebd5', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('2958861e-5305-4c52-94eb-9d1a1825ebd5', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'adeeaba6-76f6-4ebd-906b-6faa93b07b58',
+  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  'opt1',
+  '수④',
+  '수④',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ea3dff57-8fd2-4a9e-ad1a-143c9a249431',
+  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  'opt2',
+  'AV-(으)세요/-(으)십시오',
+  'AV-(으)세요/-(으)십시오',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '179f0bed-9807-4cc4-8161-a91d89144464',
+  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  'opt3',
+  'N이랑',
+  'N이랑',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2a9f633c-9e66-41c8-b86a-936649aa24f0',
+  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  'opt4',
+  'AV-고 있다①',
+  'AV-고 있다①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '4e6a5417-f862-4a6c-a967-9ab2a2e035f4',
+  'exercise.grammar.u09.n01.application',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  '23c5932e-f49e-4a6e-9823-12eb063ac064',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «счётные слова, количество товаров, цены и денежные единицы.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4e6a5417-f862-4a6c-a967-9ab2a2e035f4', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4e6a5417-f862-4a6c-a967-9ab2a2e035f4', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4e6a5417-f862-4a6c-a967-9ab2a2e035f4', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4e6a5417-f862-4a6c-a967-9ab2a2e035f4', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '39158e6d-9cd6-4488-93f5-38ec5fdfeb8b',
+  '4e6a5417-f862-4a6c-a967-9ab2a2e035f4',
+  '수④',
+  '수④',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '6becc5b8-dd0e-4ee8-8b7c-adb740ee341e',
+  '4e6a5417-f862-4a6c-a967-9ab2a2e035f4',
+  '수',
+  '수',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  'exercise.grammar.u09.n02.recognition',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  'd34e895f-8378-4c0e-a775-fac2418cf4cc',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «вежливая просьба или команда; `-(으)십시오` формальнее.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('357a7073-bf95-4f9a-82e7-ba1659d5ce9c', 'd34e895f-8378-4c0e-a775-fac2418cf4cc', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd2e1c612-c05a-4048-bfed-d5901195a051',
+  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  'opt1',
+  'AV-(으)세요/-(으)십시오',
+  'AV-(으)세요/-(으)십시오',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a1c71720-6e9f-4409-aa66-c002fcc53ee1',
+  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  'opt2',
+  '수④',
+  '수④',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '809e3bb7-c7f9-4b8b-b1d4-45cdb6321b67',
+  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  'opt3',
+  'N이랑',
+  'N이랑',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3837b24f-8969-4afc-b160-7444654a3703',
+  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  'opt4',
+  'AV-고 있다①',
+  'AV-고 있다①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '35e95ca6-361e-4916-aa61-6d51eae54b9f',
+  'exercise.grammar.u09.n02.application',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  'd34e895f-8378-4c0e-a775-fac2418cf4cc',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «вежливая просьба или команда; `-(으)십시오` формальнее.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('35e95ca6-361e-4916-aa61-6d51eae54b9f', 'd34e895f-8378-4c0e-a775-fac2418cf4cc', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '30dd1faf-ea96-4592-aaa8-81971b84f3d5',
+  '35e95ca6-361e-4916-aa61-6d51eae54b9f',
+  'AV-(으)세요/-(으)십시오',
+  'AV-(으)세요/-(으)십시오',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  'exercise.grammar.u09.n03.recognition',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «разговорное «и/с» после существительного.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7c0edecb-8bf2-4ba7-a2b3-5e623676fea8', 'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c6a04b84-f123-4d8a-aec8-fe819cb9ccdb',
+  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  'opt1',
+  'N이랑',
+  'N이랑',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c7531e9c-fdf9-4a20-b477-0b69dc06c169',
+  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  'opt2',
+  '수④',
+  '수④',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '97542b72-3be7-43d0-bb32-9e0449946682',
+  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  'opt3',
+  'AV-(으)세요/-(으)십시오',
+  'AV-(으)세요/-(으)십시오',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c48ea3d2-d05f-496d-b5e9-4589367c9304',
+  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  'opt4',
+  'AV-고 있다①',
+  'AV-고 있다①',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '268d44e7-18d5-4656-b004-890711d78533',
+  'exercise.grammar.u09.n03.application',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «разговорное «и/с» после существительного.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('268d44e7-18d5-4656-b004-890711d78533', 'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'f8beb614-db32-4173-b09a-063d071d30b8',
+  '268d44e7-18d5-4656-b004-890711d78533',
+  'N이랑',
+  'N이랑',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  'exercise.grammar.u09.n04.recognition',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  '7a58f58a-c03c-42b0-afeb-c08ba1b01171',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «действие, продолжающееся в момент речи.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('887fa2ba-2d5b-4282-8266-af7bfa104dfe', '7a58f58a-c03c-42b0-afeb-c08ba1b01171', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0c2e1c6e-27e3-4fb4-a1ea-f82711a78750',
+  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  'opt1',
+  'AV-고 있다①',
+  'AV-고 있다①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b8f2d634-25aa-4cff-a1bc-ffef8757dcc4',
+  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  'opt2',
+  '수④',
+  '수④',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c9b77792-ca55-4c84-8d1c-c98a9b36f98b',
+  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  'opt3',
+  'AV-(으)세요/-(으)십시오',
+  'AV-(으)세요/-(으)십시오',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f1ea8cef-ef6a-4eae-8fdb-0752ed3e9da0',
+  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  'opt4',
+  'N이랑',
+  'N이랑',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0fe61894-899b-48ce-a9c5-784b1824513c',
+  'exercise.grammar.u09.n04.application',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  '7a58f58a-c03c-42b0-afeb-c08ba1b01171',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «действие, продолжающееся в момент речи.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('0fe61894-899b-48ce-a9c5-784b1824513c', '7a58f58a-c03c-42b0-afeb-c08ba1b01171', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '2981a589-fb04-4587-a989-60790714a9cf',
+  '0fe61894-899b-48ce-a9c5-784b1824513c',
+  'AV-고 있다①',
+  'AV-고 있다①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'f12b016b-d644-4421-b5dc-ab6b848fa81e',
+  '0fe61894-899b-48ce-a9c5-784b1824513c',
+  'AV-고 있다',
+  'AV-고 있다',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'exercise.grammar.u09.n05.recognition',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  '07191fe0-9b53-4189-b9c5-6024d35fc792',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «адресат или источник действия: «кому/у кого/от кого».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('04d92d78-9461-4aa6-973b-7134ce794577', '07191fe0-9b53-4189-b9c5-6024d35fc792', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7e309f7f-a299-4a6d-8aea-ec2f13ee8329',
+  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'opt1',
+  'N에게(서)/한테(서)',
+  'N에게(서)/한테(서)',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f515a179-8287-4210-91e7-08fa050645d0',
+  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'opt2',
+  '수④',
+  '수④',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '57ca0ada-7c1b-4138-8e1d-a30bb597472b',
+  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'opt3',
+  'AV-(으)세요/-(으)십시오',
+  'AV-(으)세요/-(으)십시오',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '89b5a93f-7069-464a-8187-35884fb5a36a',
+  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'opt4',
+  'N이랑',
+  'N이랑',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0c54b46e-cd69-48a9-8c26-0df1d6c6a3fb',
+  'exercise.grammar.u09.n05.application',
+  '4b66ae56-55a6-4590-bca7-2f3f201ff969',
+  '07191fe0-9b53-4189-b9c5-6024d35fc792',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «адресат или источник действия: «кому/у кого/от кого».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('0c54b46e-cd69-48a9-8c26-0df1d6c6a3fb', '07191fe0-9b53-4189-b9c5-6024d35fc792', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '0fd6eb53-0d41-4fb8-bad2-1a5c2b3f835e',
+  '0c54b46e-cd69-48a9-8c26-0df1d6c6a3fb',
+  'N에게(서)/한테(서)',
+  'N에게(서)/한테(서)',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  'exercise.grammar.u10.n01.recognition',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '3abf4efa-6f21-4cd7-aefe-1707f822b409',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «предлагает совместное действие или спрашивает решение собеседника.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('190a00fb-d07a-49ec-a8cd-29d00150f859', '3abf4efa-6f21-4cd7-aefe-1707f822b409', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '857ea55e-4a0f-4d49-9223-692792b2a14c',
+  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  'opt1',
+  'AV-(으)ㄹ까요?①',
+  'AV-(으)ㄹ까요?①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '00448b77-44b7-4ab5-97b2-5066c152db20',
+  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  'opt2',
+  'AV-(으)ㅂ시다',
+  'AV-(으)ㅂ시다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9125bf5c-9d30-417f-b27e-d93a9339aecf',
+  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  'opt3',
+  'V-(으)니까①/N(이)니까',
+  'V-(으)니까①/N(이)니까',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '072e7285-a563-45a7-a470-9f28f07bb21b',
+  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  'opt4',
+  'AV-고 싶다',
+  'AV-고 싶다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'b8505ed9-b1c9-4c89-ae1b-d10607a66559',
+  'exercise.grammar.u10.n01.application',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '3abf4efa-6f21-4cd7-aefe-1707f822b409',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «предлагает совместное действие или спрашивает решение собеседника.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('b8505ed9-b1c9-4c89-ae1b-d10607a66559', '3abf4efa-6f21-4cd7-aefe-1707f822b409', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'b3abdad7-fe05-4904-b3a4-6714040cdd7b',
+  'b8505ed9-b1c9-4c89-ae1b-d10607a66559',
+  'AV-(으)ㄹ까요?①',
+  'AV-(으)ㄹ까요?①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '5730e1a2-7a57-4f38-b45c-28f6063608e8',
+  'b8505ed9-b1c9-4c89-ae1b-d10607a66559',
+  'AV-(으)ㄹ까요?',
+  'AV-(으)ㄹ까요?',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  'exercise.grammar.u10.n02.recognition',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '061ecaf0-518b-488a-903e-fafff4b0e7b0',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «формальное «давайте сделаем».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('07c2458b-ce7a-480c-b8d2-5832438ceb26', '061ecaf0-518b-488a-903e-fafff4b0e7b0', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9fdfdde2-41ac-4862-ba01-bd02d40f7021',
+  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  'opt1',
+  'AV-(으)ㅂ시다',
+  'AV-(으)ㅂ시다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e68547ad-f5c7-43fb-9c34-d541d922b99b',
+  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  'opt2',
+  'AV-(으)ㄹ까요?①',
+  'AV-(으)ㄹ까요?①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8abdd8ae-8f84-4fa0-9cea-de99317f6721',
+  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  'opt3',
+  'V-(으)니까①/N(이)니까',
+  'V-(으)니까①/N(이)니까',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f973e378-70d0-47b5-97b0-08c588e74608',
+  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  'opt4',
+  'AV-고 싶다',
+  'AV-고 싶다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '6b6844d7-b42c-4b90-8fa7-15449ba40b97',
+  'exercise.grammar.u10.n02.application',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '061ecaf0-518b-488a-903e-fafff4b0e7b0',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «формальное «давайте сделаем».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('6b6844d7-b42c-4b90-8fa7-15449ba40b97', '061ecaf0-518b-488a-903e-fafff4b0e7b0', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '760bd223-d0fd-4e09-836c-1eca9efd9aa2',
+  '6b6844d7-b42c-4b90-8fa7-15449ba40b97',
+  'AV-(으)ㅂ시다',
+  'AV-(으)ㅂ시다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  'exercise.grammar.u10.n03.recognition',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает причину, особенно перед просьбой, предложением или выводом.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('b10fc43b-9305-49a7-8069-94e5fb415fbc', '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '005a15ec-3cc1-4917-814c-58a07bd8956c',
+  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  'opt1',
+  'V-(으)니까①/N(이)니까',
+  'V-(으)니까①/N(이)니까',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6f7e5532-1e0a-4f31-b2a5-516ef47ea2ca',
+  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  'opt2',
+  'AV-(으)ㄹ까요?①',
+  'AV-(으)ㄹ까요?①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5034a4e6-933e-462b-be0d-15d84499f060',
+  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  'opt3',
+  'AV-(으)ㅂ시다',
+  'AV-(으)ㅂ시다',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'eb44c712-8e49-4d6c-a567-21a626b3503d',
+  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  'opt4',
+  'AV-고 싶다',
+  'AV-고 싶다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '767ab4bb-4272-4be8-ac60-b4398060b3c3',
+  'exercise.grammar.u10.n03.application',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает причину, особенно перед просьбой, предложением или выводом.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('767ab4bb-4272-4be8-ac60-b4398060b3c3', '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'bfafc9fc-2842-4997-89ca-03611373a1a8',
+  '767ab4bb-4272-4be8-ac60-b4398060b3c3',
+  'V-(으)니까①/N(이)니까',
+  'V-(으)니까①/N(이)니까',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'e4da9c10-bbb8-4684-aa80-dc5bbe7781af',
+  '767ab4bb-4272-4be8-ac60-b4398060b3c3',
+  'V-(으)니까/N(이)니까',
+  'V-(으)니까/N(이)니까',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'exercise.grammar.u10.n04.recognition',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '41adbad8-eebc-47ec-b4ea-caeaf78d5b90',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает желание говорящего выполнить действие.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099', '41adbad8-eebc-47ec-b4ea-caeaf78d5b90', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '07601b0f-2d17-4ac0-b1ec-bc82cc681ed7',
+  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'opt1',
+  'AV-고 싶다',
+  'AV-고 싶다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '69cc8b6a-fe9f-4094-9a3d-034a07463824',
+  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'opt2',
+  'AV-(으)ㄹ까요?①',
+  'AV-(으)ㄹ까요?①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5de6ff1f-aef6-4e04-a98a-192d5b6c1ce3',
+  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'opt3',
+  'AV-(으)ㅂ시다',
+  'AV-(으)ㅂ시다',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f12d1f3c-e43c-4274-ba55-7566e1fe311f',
+  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'opt4',
+  'V-(으)니까①/N(이)니까',
+  'V-(으)니까①/N(이)니까',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '1cdcd6bc-2f90-4e3e-adcc-621ce38def8a',
+  'exercise.grammar.u10.n04.application',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '41adbad8-eebc-47ec-b4ea-caeaf78d5b90',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает желание говорящего выполнить действие.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('1cdcd6bc-2f90-4e3e-adcc-621ce38def8a', '41adbad8-eebc-47ec-b4ea-caeaf78d5b90', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '04c3ef62-38cb-46b8-922c-8ccb8c498806',
+  '1cdcd6bc-2f90-4e3e-adcc-621ce38def8a',
+  'AV-고 싶다',
+  'AV-고 싶다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'exercise.grammar.u10.n05.recognition',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает решение или намерение говорящего в текущей ситуации.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4', '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a083ffe5-7ec9-488e-a3ab-2ec602724754',
+  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'opt1',
+  'AV-겠-①',
+  'AV-겠-①',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7ab0bea9-aa32-482f-a90c-0ae79383d005',
+  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'opt2',
+  'AV-(으)ㄹ까요?①',
+  'AV-(으)ㄹ까요?①',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd6caed87-ec9d-42ef-a76e-b4d4fbf0fbd7',
+  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'opt3',
+  'AV-(으)ㅂ시다',
+  'AV-(으)ㅂ시다',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '16c32eda-3347-49ab-b3b7-61ece9410618',
+  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'opt4',
+  'V-(으)니까①/N(이)니까',
+  'V-(으)니까①/N(이)니까',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '900aea8c-7fea-472d-98cf-379dec1cdb80',
+  'exercise.grammar.u10.n05.application',
+  '24c1c977-7856-452f-b835-3a420faeb9fb',
+  '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает решение или намерение говорящего в текущей ситуации.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('900aea8c-7fea-472d-98cf-379dec1cdb80', '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '76fb2fae-913f-4d9b-bcf5-4d6083b29c18',
+  '900aea8c-7fea-472d-98cf-379dec1cdb80',
+  'AV-겠-①',
+  'AV-겠-①',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '94b43ff5-3956-43d9-9d5b-6c47098de0a6',
+  '900aea8c-7fea-472d-98cf-379dec1cdb80',
+  'AV-겠-',
+  'AV-겠-',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  'exercise.grammar.u11.n01.recognition',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  '89fc27d6-28c0-426d-8b59-bd14e3efa1a5',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «просит подтверждение известного или ожидаемого факта.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('ab09d396-850e-4e8f-b1e8-a6148b1bc739', '89fc27d6-28c0-426d-8b59-bd14e3efa1a5', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bb27ebe1-6d08-45d7-8986-f8a7395a16bc',
+  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  'opt1',
+  'V-지요?/N(이)지요?',
+  'V-지요?/N(이)지요?',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '32530d25-e3cd-4107-8454-ac21055022ed',
+  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  'opt2',
+  'V-겠-②/N이겠-',
+  'V-겠-②/N이겠-',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '159eece3-581d-46f7-8a03-73d75e80c4aa',
+  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  'opt3',
+  'AV-아/어/여 주다',
+  'AV-아/어/여 주다',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c591f3ca-1fd7-4f35-ab6b-ab14dc4d1f03',
+  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  'opt4',
+  'V-(으)면/N이면',
+  'V-(으)면/N이면',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'aee9b0b4-362f-4880-a7fe-298eb54fe401',
+  'exercise.grammar.u11.n01.application',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  '89fc27d6-28c0-426d-8b59-bd14e3efa1a5',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «просит подтверждение известного или ожидаемого факта.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('aee9b0b4-362f-4880-a7fe-298eb54fe401', '89fc27d6-28c0-426d-8b59-bd14e3efa1a5', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'a3e9e2a4-c53d-49c7-97f1-1f0402aa50a4',
+  'aee9b0b4-362f-4880-a7fe-298eb54fe401',
+  'V-지요?/N(이)지요?',
+  'V-지요?/N(이)지요?',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  'exercise.grammar.u11.n02.recognition',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  '565a91c3-0493-4077-b4e9-5c1a9ddb1451',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает предположение по имеющимся признакам.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('3eacb830-9124-4e92-b6e5-7bd2415ab2e2', '565a91c3-0493-4077-b4e9-5c1a9ddb1451', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b094c997-0cf6-4085-a0d7-49bcd7c7fbe3',
+  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  'opt1',
+  'V-겠-②/N이겠-',
+  'V-겠-②/N이겠-',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bcaa3d12-4f68-4808-a3ca-d0645638fb58',
+  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  'opt2',
+  'V-지요?/N(이)지요?',
+  'V-지요?/N(이)지요?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b8c5a568-c2c5-43da-8c63-d05045533fc2',
+  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  'opt3',
+  'AV-아/어/여 주다',
+  'AV-아/어/여 주다',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a116a060-681b-4435-aac9-d19eb244b208',
+  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  'opt4',
+  'V-(으)면/N이면',
+  'V-(으)면/N이면',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'e78726bb-1027-4ec4-ad41-52220f2ba726',
+  'exercise.grammar.u11.n02.application',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  '565a91c3-0493-4077-b4e9-5c1a9ddb1451',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает предположение по имеющимся признакам.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('e78726bb-1027-4ec4-ad41-52220f2ba726', '565a91c3-0493-4077-b4e9-5c1a9ddb1451', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'e737a7c6-4497-43e8-9bff-784542a28d2c',
+  'e78726bb-1027-4ec4-ad41-52220f2ba726',
+  'V-겠-②/N이겠-',
+  'V-겠-②/N이겠-',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'b704a770-bae7-44ec-bcec-f047176900ee',
+  'e78726bb-1027-4ec4-ad41-52220f2ba726',
+  'V-겠-/N이겠-',
+  'V-겠-/N이겠-',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  'exercise.grammar.u11.n03.recognition',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  '430fd2d3-a80d-407c-9e35-d312829dba68',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «действие, выполненное для другого человека.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('61ffcb91-bf41-486d-8703-f190e3ab69ac', '430fd2d3-a80d-407c-9e35-d312829dba68', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3696221a-ce6d-4bd4-8d79-43fc33002cc4',
+  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  'opt1',
+  'AV-아/어/여 주다',
+  'AV-아/어/여 주다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ba4c5caa-4b24-4d5e-ab58-b67aa97aceab',
+  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  'opt2',
+  'V-지요?/N(이)지요?',
+  'V-지요?/N(이)지요?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3393782a-c003-4ae8-ba6f-c50b9ff52a02',
+  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  'opt3',
+  'V-겠-②/N이겠-',
+  'V-겠-②/N이겠-',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4939b2f4-9d1c-4940-87a0-aa8440224c89',
+  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  'opt4',
+  'V-(으)면/N이면',
+  'V-(으)면/N이면',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '9cbae4c1-89d3-408c-9efc-85f8a38a9f24',
+  'exercise.grammar.u11.n03.application',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  '430fd2d3-a80d-407c-9e35-d312829dba68',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «действие, выполненное для другого человека.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('9cbae4c1-89d3-408c-9efc-85f8a38a9f24', '430fd2d3-a80d-407c-9e35-d312829dba68', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '279e4119-98f3-46d5-bf39-fc5d9224d83e',
+  '9cbae4c1-89d3-408c-9efc-85f8a38a9f24',
+  'AV-아/어/여 주다',
+  'AV-아/어/여 주다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'exercise.grammar.u11.n04.recognition',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  'c0005fb3-26c0-4541-98ea-5bc63b5476da',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «условие или повторяющаяся ситуация «если/когда».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('33847de7-e1fa-41c4-adf1-75b370270f37', 'c0005fb3-26c0-4541-98ea-5bc63b5476da', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '168c90cc-8afa-46e7-8b13-448c4b6122bc',
+  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'opt1',
+  'V-(으)면/N이면',
+  'V-(으)면/N이면',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b96c9b74-4f65-4200-b49d-cb55d5926498',
+  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'opt2',
+  'V-지요?/N(이)지요?',
+  'V-지요?/N(이)지요?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '65bcaffe-2cc1-46af-8b12-6349a1a8c680',
+  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'opt3',
+  'V-겠-②/N이겠-',
+  'V-겠-②/N이겠-',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9b0b32e1-33cc-41d6-965a-10a3bf10e4f6',
+  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'opt4',
+  'AV-아/어/여 주다',
+  'AV-아/어/여 주다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd063d2f6-e266-4358-a0f3-bd492beaf6ea',
+  'exercise.grammar.u11.n04.application',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  'c0005fb3-26c0-4541-98ea-5bc63b5476da',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «условие или повторяющаяся ситуация «если/когда».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('d063d2f6-e266-4358-a0f3-bd492beaf6ea', 'c0005fb3-26c0-4541-98ea-5bc63b5476da', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'b6d12a06-fba1-4721-9905-fbc6f8541a2b',
+  'd063d2f6-e266-4358-a0f3-bd492beaf6ea',
+  'V-(으)면/N이면',
+  'V-(으)면/N이면',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'exercise.grammar.u11.n05.recognition',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  '02211b82-623d-4b85-8780-3683370a7752',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8', '02211b82-623d-4b85-8780-3683370a7752', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2897d0c6-da23-446c-806a-c0e8c77cc8ae',
+  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'opt1',
+  'ㄷ 동사',
+  'ㄷ 동사',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '454afa5d-ee07-4dac-abcf-f8eaaf5658f3',
+  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'opt2',
+  'V-지요?/N(이)지요?',
+  'V-지요?/N(이)지요?',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c7044f6a-f9ec-47a7-94de-32903c6474aa',
+  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'opt3',
+  'V-겠-②/N이겠-',
+  'V-겠-②/N이겠-',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bd0f9415-7044-4d20-a770-7a1b8553fd11',
+  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'opt4',
+  'AV-아/어/여 주다',
+  'AV-아/어/여 주다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '9dc5d21f-4e45-4e0b-95d2-c1c5cf163d7a',
+  'exercise.grammar.u11.n05.application',
+  'df512da8-8f48-486f-801d-5260291b8d89',
+  '02211b82-623d-4b85-8780-3683370a7752',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('9dc5d21f-4e45-4e0b-95d2-c1c5cf163d7a', '02211b82-623d-4b85-8780-3683370a7752', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '9dc9f7e9-f61e-4291-b759-d2bb7aa03ed8',
+  '9dc5d21f-4e45-4e0b-95d2-c1c5cf163d7a',
+  'ㄷ 동사',
+  'ㄷ 동사',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  'exercise.grammar.u12.n01.recognition',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  '002f5586-a1f8-4b97-bc23-f4505d7d3806',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('096b191f-b28e-4f4c-8656-22bcf0ec92ab', '002f5586-a1f8-4b97-bc23-f4505d7d3806', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f5b1a0a9-9e3f-41ad-860c-0a29cccec760',
+  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  'opt1',
+  'V-아/어/여서②/N이어/여서',
+  'V-아/어/여서②/N이어/여서',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c971ae45-da88-4ebd-a8d8-1cb70447bffe',
+  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  'opt2',
+  'AV-(으)ㄹ 수 있다/없다',
+  'AV-(으)ㄹ 수 있다/없다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5961196f-ef40-4f95-a832-4304025ef3a3',
+  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  'opt3',
+  'V-(으)ㄹ까요?②/N일까요?',
+  'V-(으)ㄹ까요?②/N일까요?',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a363173f-0e0c-4d43-933a-fafc2ff79cff',
+  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  'opt4',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0ebd19d2-1369-4845-83f1-ac2e777810df',
+  'exercise.grammar.u12.n01.application',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  '002f5586-a1f8-4b97-bc23-f4505d7d3806',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('0ebd19d2-1369-4845-83f1-ac2e777810df', '002f5586-a1f8-4b97-bc23-f4505d7d3806', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'eebe9271-f473-4dfa-9afe-dbbdd9d7b915',
+  '0ebd19d2-1369-4845-83f1-ac2e777810df',
+  'V-아/어/여서②/N이어/여서',
+  'V-아/어/여서②/N이어/여서',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '499e5d43-5581-4dcb-973b-0bb2cfcf95f6',
+  '0ebd19d2-1369-4845-83f1-ac2e777810df',
+  'V-아/어/여서/N이어/여서',
+  'V-아/어/여서/N이어/여서',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  'exercise.grammar.u12.n02.recognition',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  '4c859c1a-69e4-4006-a14f-36b2ba02c220',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «возможность, способность или невозможность выполнить действие.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('d961e44c-3e2f-4142-a85c-394b297c5118', '4c859c1a-69e4-4006-a14f-36b2ba02c220', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7e1d3d97-b692-44bb-b12c-1b0ac019c0e7',
+  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  'opt1',
+  'AV-(으)ㄹ 수 있다/없다',
+  'AV-(으)ㄹ 수 있다/없다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'be428ef0-63c1-42df-b9de-7b2cb7976f43',
+  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  'opt2',
+  'V-아/어/여서②/N이어/여서',
+  'V-아/어/여서②/N이어/여서',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8293de9a-e7a0-40e5-905b-2c4847f2cb9f',
+  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  'opt3',
+  'V-(으)ㄹ까요?②/N일까요?',
+  'V-(으)ㄹ까요?②/N일까요?',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c41cf3d5-5d12-48bc-bfa4-72c8ac89ec9a',
+  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  'opt4',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'b0b82627-d935-42cc-8df2-fdf1e2dcc39b',
+  'exercise.grammar.u12.n02.application',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  '4c859c1a-69e4-4006-a14f-36b2ba02c220',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «возможность, способность или невозможность выполнить действие.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('b0b82627-d935-42cc-8df2-fdf1e2dcc39b', '4c859c1a-69e4-4006-a14f-36b2ba02c220', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'ef9b68e9-05e1-4ea8-a2e2-f8961cd1889d',
+  'b0b82627-d935-42cc-8df2-fdf1e2dcc39b',
+  'AV-(으)ㄹ 수 있다/없다',
+  'AV-(으)ㄹ 수 있다/없다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  'exercise.grammar.u12.n03.recognition',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  'e5cca2ff-779a-4aee-acb0-26d487b93ec0',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «вопрос-предположение о будущем или неизвестном факте.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('1a2603a0-dd6a-4d07-b193-dc33432f2b9e', 'e5cca2ff-779a-4aee-acb0-26d487b93ec0', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2398fc98-702d-4ebf-a550-8cf56cf7bc95',
+  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  'opt1',
+  'V-(으)ㄹ까요?②/N일까요?',
+  'V-(으)ㄹ까요?②/N일까요?',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd547f40f-bb3d-48dc-97f0-ab37afb1da48',
+  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  'opt2',
+  'V-아/어/여서②/N이어/여서',
+  'V-아/어/여서②/N이어/여서',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e4b651b5-eb97-4506-a38f-b3d9faeda603',
+  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  'opt3',
+  'AV-(으)ㄹ 수 있다/없다',
+  'AV-(으)ㄹ 수 있다/없다',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '01900236-349b-4915-b220-d9cfebe7f25e',
+  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  'opt4',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '18018682-38f1-4232-a354-b930247cc30a',
+  'exercise.grammar.u12.n03.application',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  'e5cca2ff-779a-4aee-acb0-26d487b93ec0',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «вопрос-предположение о будущем или неизвестном факте.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('18018682-38f1-4232-a354-b930247cc30a', 'e5cca2ff-779a-4aee-acb0-26d487b93ec0', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '59f98335-4f8a-47d2-a3f9-47e4a62fede0',
+  '18018682-38f1-4232-a354-b930247cc30a',
+  'V-(으)ㄹ까요?②/N일까요?',
+  'V-(으)ㄹ까요?②/N일까요?',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '3450cd70-8432-4182-ae68-1081f2d632c1',
+  '18018682-38f1-4232-a354-b930247cc30a',
+  'V-(으)ㄹ까요?/N일까요?',
+  'V-(으)ㄹ까요?/N일까요?',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  'exercise.grammar.u12.n04.recognition',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  '05cd47b1-ee91-44e0-89d4-1c7f018e831c',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «предположение о чужом действии или неподконтрольном факте.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7425f839-b55f-4ef3-9ecc-88183de85fc0', '05cd47b1-ee91-44e0-89d4-1c7f018e831c', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'abf01629-f614-47f1-ab0a-52e6f2ff44b8',
+  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  'opt1',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a0085e65-c362-4f59-a872-55f3008992e5',
+  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  'opt2',
+  'V-아/어/여서②/N이어/여서',
+  'V-아/어/여서②/N이어/여서',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '61d225ed-3825-46ad-af12-7b3671cec055',
+  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  'opt3',
+  'AV-(으)ㄹ 수 있다/없다',
+  'AV-(으)ㄹ 수 있다/없다',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7a588c6f-f385-409e-81dd-97f40a6ef551',
+  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  'opt4',
+  'V-(으)ㄹ까요?②/N일까요?',
+  'V-(으)ㄹ까요?②/N일까요?',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '40b4e9c7-3174-458c-8ca0-87f2896a4841',
+  'exercise.grammar.u12.n04.application',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  '05cd47b1-ee91-44e0-89d4-1c7f018e831c',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «предположение о чужом действии или неподконтрольном факте.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('40b4e9c7-3174-458c-8ca0-87f2896a4841', '05cd47b1-ee91-44e0-89d4-1c7f018e831c', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'f6e98754-19a1-4e14-88be-02552cceed56',
+  '40b4e9c7-3174-458c-8ca0-87f2896a4841',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  'AV-(으)ㄹ 거예요②/N일 거예요',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'ff587aa5-3d52-4374-9a53-f39dd3e801a4',
+  '40b4e9c7-3174-458c-8ca0-87f2896a4841',
+  'AV-(으)ㄹ 거예요/N일 거예요',
+  'AV-(으)ㄹ 거예요/N일 거예요',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  'exercise.grammar.u12.n05.recognition',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «обещание или решение говорящего, принятое с учётом собеседника.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('62a17542-406b-497f-bef6-f2cafbfbd478', '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c2c0e95d-4a35-4ace-af76-539597e07323',
+  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  'opt1',
+  'AV-(으)ㄹ게요',
+  'AV-(으)ㄹ게요',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e5c56757-e9ba-4528-8dff-a2b483b85c2a',
+  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  'opt2',
+  'V-아/어/여서②/N이어/여서',
+  'V-아/어/여서②/N이어/여서',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '724d0899-ed64-467d-a374-687eff11330c',
+  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  'opt3',
+  'AV-(으)ㄹ 수 있다/없다',
+  'AV-(으)ㄹ 수 있다/없다',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2554d31c-bd92-4bb3-a197-2d60573b426a',
+  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  'opt4',
+  'V-(으)ㄹ까요?②/N일까요?',
+  'V-(으)ㄹ까요?②/N일까요?',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '0b8e32e6-7d7f-4d3f-a17c-ee0a857e863c',
+  'exercise.grammar.u12.n05.application',
+  '4a217933-add4-41e9-9840-f77bb5baa1f4',
+  '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «обещание или решение говорящего, принятое с учётом собеседника.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('0b8e32e6-7d7f-4d3f-a17c-ee0a857e863c', '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '5195191a-55a8-4fd2-91a3-a10533184742',
+  '0b8e32e6-7d7f-4d3f-a17c-ee0a857e863c',
+  'AV-(으)ㄹ게요',
+  'AV-(으)ㄹ게요',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  'exercise.grammar.u13.n01.recognition',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  '97dbcbc3-8066-455a-a1ef-a39fd478e8fd',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «та же вежливая форма используется как мягкая просьба, команда или предложение по контексту.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7c5bb49b-e983-4adc-846e-9e8397bf70a4', '97dbcbc3-8066-455a-a1ef-a39fd478e8fd', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ad7f3c5e-b1cd-4c7c-8854-f97a2c06a4fb',
+  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  'opt1',
+  'AV-아/어/여요②',
+  'AV-아/어/여요②',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9f23e0e2-346f-4d82-9ca1-60fa781d8a96',
+  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  'opt2',
+  'N(으)로②',
+  'N(으)로②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ee8f8149-530f-4c9c-9267-0a001508957f',
+  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  'opt3',
+  'ㄹ 동사',
+  'ㄹ 동사',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4df5030c-fe66-46b9-a026-df59c5665d39',
+  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  'opt4',
+  'V-거나/N이나',
+  'V-거나/N이나',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '1685d36a-4023-40bf-83e0-107ca1956db1',
+  'exercise.grammar.u13.n01.application',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  '97dbcbc3-8066-455a-a1ef-a39fd478e8fd',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «та же вежливая форма используется как мягкая просьба, команда или предложение по контексту.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('1685d36a-4023-40bf-83e0-107ca1956db1', '97dbcbc3-8066-455a-a1ef-a39fd478e8fd', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '0eb63bbb-5adf-488c-83c0-6a3113cce76f',
+  '1685d36a-4023-40bf-83e0-107ca1956db1',
+  'AV-아/어/여요②',
+  'AV-아/어/여요②',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '0332456c-b06b-4d67-aa9a-f1b1e8bc4c9d',
+  '1685d36a-4023-40bf-83e0-107ca1956db1',
+  'AV-아/어/여요',
+  'AV-아/어/여요',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'exercise.grammar.u13.n02.recognition',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  'e5e7f5ee-764b-4288-85a0-42ade11f8d7d',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «обозначает средство, инструмент или способ передвижения.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('01531d83-a6c9-4536-8ba8-1f5b0d6d4728', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('01531d83-a6c9-4536-8ba8-1f5b0d6d4728', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'secondary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '71e6674a-4bef-48d9-b90c-f34f424ecc6a',
+  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'opt1',
+  'N(으)로②',
+  'N(으)로②',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2318404d-98d6-4582-9fb3-1dd10afba373',
+  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'opt2',
+  'AV-아/어/여요②',
+  'AV-아/어/여요②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b631e81d-7983-4bbe-8f30-72ad548e3387',
+  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'opt3',
+  'ㄹ 동사',
+  'ㄹ 동사',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f97eea30-1548-4d4d-a558-cfdfa9775371',
+  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'opt4',
+  'V-거나/N이나',
+  'V-거나/N이나',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'fa1ba7f8-7b62-4d13-90e5-e4265902b835',
+  'exercise.grammar.u13.n02.application',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  'e5e7f5ee-764b-4288-85a0-42ade11f8d7d',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «обозначает средство, инструмент или способ передвижения.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('fa1ba7f8-7b62-4d13-90e5-e4265902b835', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('fa1ba7f8-7b62-4d13-90e5-e4265902b835', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'secondary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '3d7ba355-4e31-428d-9402-faeb3691d7fc',
+  'fa1ba7f8-7b62-4d13-90e5-e4265902b835',
+  'N(으)로②',
+  'N(으)로②',
+  true,
+  'pending'
+);
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '15745382-9891-424f-a28e-3ee45051856b',
+  'fa1ba7f8-7b62-4d13-90e5-e4265902b835',
+  'N(으)로',
+  'N(으)로',
+  false,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '91488265-408e-4b76-a803-8b4273dd5111',
+  'exercise.grammar.u13.n03.recognition',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  'cfdc61fd-7dbc-4629-8174-04724cab75de',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('91488265-408e-4b76-a803-8b4273dd5111', 'cfdc61fd-7dbc-4629-8174-04724cab75de', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0e8ccd8b-0786-4a88-bcf0-7aa47408e0a2',
+  '91488265-408e-4b76-a803-8b4273dd5111',
+  'opt1',
+  'ㄹ 동사',
+  'ㄹ 동사',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '274d2e93-2a4b-4087-b598-9ea16113c6e2',
+  '91488265-408e-4b76-a803-8b4273dd5111',
+  'opt2',
+  'AV-아/어/여요②',
+  'AV-아/어/여요②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '29cd2f5b-bc4a-48ff-8057-bedebd4a7f4b',
+  '91488265-408e-4b76-a803-8b4273dd5111',
+  'opt3',
+  'N(으)로②',
+  'N(으)로②',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f620cbce-274e-4775-8b6b-981682c17a2f',
+  '91488265-408e-4b76-a803-8b4273dd5111',
+  'opt4',
+  'V-거나/N이나',
+  'V-거나/N이나',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '353b9c8e-b672-441c-8f5d-9441b9d0f314',
+  'exercise.grammar.u13.n03.application',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  'cfdc61fd-7dbc-4629-8174-04724cab75de',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('353b9c8e-b672-441c-8f5d-9441b9d0f314', 'cfdc61fd-7dbc-4629-8174-04724cab75de', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'def03c97-32dc-4450-bddf-f981a54e5e90',
+  '353b9c8e-b672-441c-8f5d-9441b9d0f314',
+  'ㄹ 동사',
+  'ㄹ 동사',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  'exercise.grammar.u13.n04.recognition',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  'f893a08f-9d51-414b-89cf-4e2ee2d6db28',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «соединяет альтернативы значением «или».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('a4553fb3-180e-4fed-8a1f-ccabe8348653', 'f893a08f-9d51-414b-89cf-4e2ee2d6db28', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6fad275a-f18d-40f2-a29d-9fd9b65968fe',
+  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  'opt1',
+  'V-거나/N이나',
+  'V-거나/N이나',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b163e863-2ddc-4e86-8293-2d2a336afa80',
+  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  'opt2',
+  'AV-아/어/여요②',
+  'AV-아/어/여요②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'b201c267-1f7b-4f40-a913-803783e98e32',
+  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  'opt3',
+  'N(으)로②',
+  'N(으)로②',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '529d31b4-7b52-40f3-9d90-8bda16a2f723',
+  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  'opt4',
+  'ㄹ 동사',
+  'ㄹ 동사',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '149c7eb1-8639-4d8e-a5a3-fbe169cb9efa',
+  'exercise.grammar.u13.n04.application',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  'f893a08f-9d51-414b-89cf-4e2ee2d6db28',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «соединяет альтернативы значением «или».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('149c7eb1-8639-4d8e-a5a3-fbe169cb9efa', 'f893a08f-9d51-414b-89cf-4e2ee2d6db28', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'b7103556-36f0-4ee7-9942-89284de3fdc7',
+  '149c7eb1-8639-4d8e-a5a3-fbe169cb9efa',
+  'V-거나/N이나',
+  'V-거나/N이나',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  'exercise.grammar.u13.n05.recognition',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  '6f412792-8b46-433a-a8e8-d1b23f47256a',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает объективную невозможность или отсутствие умения.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('8f359f01-ee14-4b00-99fb-b18c8edff517', '6f412792-8b46-433a-a8e8-d1b23f47256a', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5e6b7ecb-82b2-446b-aeed-6f7356727b43',
+  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  'opt1',
+  '못 AV/AV-지 못하다',
+  '못 AV/AV-지 못하다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'acaeb640-c48d-4f9a-b68e-948628721975',
+  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  'opt2',
+  'AV-아/어/여요②',
+  'AV-아/어/여요②',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c2a80538-8190-433d-8561-4f493809bb1d',
+  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  'opt3',
+  'N(으)로②',
+  'N(으)로②',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '74bd5788-531c-4793-87dd-811b76d7704e',
+  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  'opt4',
+  'ㄹ 동사',
+  'ㄹ 동사',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd2ca06a3-cad9-43b1-ad2a-91c52abc6a3c',
+  'exercise.grammar.u13.n05.application',
+  'b5fe446c-99fa-4aa5-85d0-7806760c484c',
+  '6f412792-8b46-433a-a8e8-d1b23f47256a',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает объективную невозможность или отсутствие умения.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('d2ca06a3-cad9-43b1-ad2a-91c52abc6a3c', '6f412792-8b46-433a-a8e8-d1b23f47256a', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '26f442ad-0556-481e-92b7-9d9cbdd215cd',
+  'd2ca06a3-cad9-43b1-ad2a-91c52abc6a3c',
+  '못 AV/AV-지 못하다',
+  '못 AV/AV-지 못하다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '3943c5ab-a815-4760-af36-437b53240178',
+  'exercise.grammar.u14.n01.recognition',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  '3b09c8d4-883e-4aa2-a69b-965dc62066f4',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает намерение или подготовленный план выполнить действие.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('3943c5ab-a815-4760-af36-437b53240178', '3b09c8d4-883e-4aa2-a69b-965dc62066f4', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '02bbc7bf-d573-4a6f-96da-70c9bd68597c',
+  '3943c5ab-a815-4760-af36-437b53240178',
+  'opt1',
+  'AV-(으)려고 하다',
+  'AV-(으)려고 하다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e793a6c0-6f28-48fa-ac00-df64d1700a48',
+  '3943c5ab-a815-4760-af36-437b53240178',
+  'opt2',
+  'N께서/N께서는',
+  'N께서/N께서는',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8575e8db-21cf-495c-8255-2c59fa3941d1',
+  '3943c5ab-a815-4760-af36-437b53240178',
+  'opt3',
+  'V-(으)시-/N이시-',
+  'V-(으)시-/N이시-',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6eb8c52b-603e-48c7-a7fd-07c59d9ef626',
+  '3943c5ab-a815-4760-af36-437b53240178',
+  'opt4',
+  'V-아/어/야 되다/하다',
+  'V-아/어/야 되다/하다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7ed7340b-5c6b-45ca-a576-f76c81f13f78',
+  'exercise.grammar.u14.n01.application',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  '3b09c8d4-883e-4aa2-a69b-965dc62066f4',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает намерение или подготовленный план выполнить действие.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7ed7340b-5c6b-45ca-a576-f76c81f13f78', '3b09c8d4-883e-4aa2-a69b-965dc62066f4', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '808a54aa-9e78-4392-86f7-5b956ee9b676',
+  '7ed7340b-5c6b-45ca-a576-f76c81f13f78',
+  'AV-(으)려고 하다',
+  'AV-(으)려고 하다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  'exercise.grammar.u14.n02.recognition',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  'c81d1630-7bb1-4b5a-8018-c16e9133a58f',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «почтительные аналоги маркеров подлежащего и темы.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('6407bd94-c8b5-4e22-92cc-98b03331d9e3', 'c81d1630-7bb1-4b5a-8018-c16e9133a58f', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '13bdf5c9-279a-4555-bd87-b47b9c71d404',
+  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  'opt1',
+  'N께서/N께서는',
+  'N께서/N께서는',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '6cc62247-e52d-4686-b55a-ef59d383300d',
+  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  'opt2',
+  'AV-(으)려고 하다',
+  'AV-(으)려고 하다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '812a5e3a-d0bb-4f52-b339-cb81cc2f247f',
+  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  'opt3',
+  'V-(으)시-/N이시-',
+  'V-(으)시-/N이시-',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7745004d-2382-49b2-984a-b0a86c96e0e6',
+  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  'opt4',
+  'V-아/어/야 되다/하다',
+  'V-아/어/야 되다/하다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a2c25dc3-b6c3-4044-99a0-8849ee39b948',
+  'exercise.grammar.u14.n02.application',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  'c81d1630-7bb1-4b5a-8018-c16e9133a58f',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «почтительные аналоги маркеров подлежащего и темы.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('a2c25dc3-b6c3-4044-99a0-8849ee39b948', 'c81d1630-7bb1-4b5a-8018-c16e9133a58f', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '0e821f83-ae38-46a8-8c24-3ba2cff7cc36',
+  'a2c25dc3-b6c3-4044-99a0-8849ee39b948',
+  'N께서/N께서는',
+  'N께서/N께서는',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'exercise.grammar.u14.n03.recognition',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  '288c870d-e9cb-4980-9d2d-9cd8d93f11a2',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «почтительно маркирует действие, состояние или статус уважаемого лица.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('f2029ec6-14a9-4f15-aceb-c893e3366d97', '288c870d-e9cb-4980-9d2d-9cd8d93f11a2', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '92cbcfc0-8ffc-42dd-b8c3-85104d5ce4a2',
+  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'opt1',
+  'V-(으)시-/N이시-',
+  'V-(으)시-/N이시-',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'f62e055c-c7ec-47b0-921d-102d5e5962d7',
+  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'opt2',
+  'AV-(으)려고 하다',
+  'AV-(으)려고 하다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '39d7b906-f075-4d31-a8e2-2acc9bd103f7',
+  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'opt3',
+  'N께서/N께서는',
+  'N께서/N께서는',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'd73c0696-6e91-477a-af1d-61e1cd7ef33f',
+  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'opt4',
+  'V-아/어/야 되다/하다',
+  'V-아/어/야 되다/하다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '1df7a844-c89f-40d5-b717-9c1669ef34b4',
+  'exercise.grammar.u14.n03.application',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  '288c870d-e9cb-4980-9d2d-9cd8d93f11a2',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «почтительно маркирует действие, состояние или статус уважаемого лица.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('1df7a844-c89f-40d5-b717-9c1669ef34b4', '288c870d-e9cb-4980-9d2d-9cd8d93f11a2', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '95c24b5f-27c5-4968-82f0-7cd5ca272d11',
+  '1df7a844-c89f-40d5-b717-9c1669ef34b4',
+  'V-(으)시-/N이시-',
+  'V-(으)시-/N이시-',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'exercise.grammar.u14.n04.recognition',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  '9a9bf96f-67a2-48f8-be0f-a932c0af853e',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает обязанность или необходимость.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a', '9a9bf96f-67a2-48f8-be0f-a932c0af853e', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c1c6222a-eedb-4d7a-97be-c458450f7055',
+  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'opt1',
+  'V-아/어/야 되다/하다',
+  'V-아/어/야 되다/하다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a331103a-6184-4511-9374-302c616a35b4',
+  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'opt2',
+  'AV-(으)려고 하다',
+  'AV-(으)려고 하다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '3316bab6-6aa5-4af3-9b70-a9cb1ee649f1',
+  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'opt3',
+  'N께서/N께서는',
+  'N께서/N께서는',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c9df0839-bb04-4e8c-bb5d-123c11f0c6da',
+  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'opt4',
+  'V-(으)시-/N이시-',
+  'V-(으)시-/N이시-',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'f24754d7-38b5-4ee2-89ae-0d9483a5e4a2',
+  'exercise.grammar.u14.n04.application',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  '9a9bf96f-67a2-48f8-be0f-a932c0af853e',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает обязанность или необходимость.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('f24754d7-38b5-4ee2-89ae-0d9483a5e4a2', '9a9bf96f-67a2-48f8-be0f-a932c0af853e', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '057cf5ed-e8a6-4e56-9ea5-af38b489b399',
+  'f24754d7-38b5-4ee2-89ae-0d9483a5e4a2',
+  'V-아/어/야 되다/하다',
+  'V-아/어/야 되다/하다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'exercise.grammar.u14.n05.recognition',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  'd2af41d0-d70a-4af1-a936-f198e7af7897',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «запрещает или просит не выполнять действие.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('3f2d3c67-db27-4a8a-9df1-bd2c9239b7db', 'd2af41d0-d70a-4af1-a936-f198e7af7897', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '520e12c6-919e-46fb-bd7d-817631c80a2c',
+  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'opt1',
+  'AV-지 말다',
+  'AV-지 말다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0b7c2425-8a1e-47cf-af84-9986b926f2fc',
+  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'opt2',
+  'AV-(으)려고 하다',
+  'AV-(으)려고 하다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c89dc840-643a-4579-bcad-a6eaab5638ec',
+  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'opt3',
+  'N께서/N께서는',
+  'N께서/N께서는',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9f6d5ce5-7a42-4cc5-8487-0f0d90d5398b',
+  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'opt4',
+  'V-(으)시-/N이시-',
+  'V-(으)시-/N이시-',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'aefd44a3-509e-42c3-9dcd-9d3bd6bde83b',
+  'exercise.grammar.u14.n05.application',
+  '48a55ccf-76e5-42c4-b581-00e86f614a50',
+  'd2af41d0-d70a-4af1-a936-f198e7af7897',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «запрещает или просит не выполнять действие.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('aefd44a3-509e-42c3-9dcd-9d3bd6bde83b', 'd2af41d0-d70a-4af1-a936-f198e7af7897', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '55110fba-09fc-4ae2-bbb1-509f8a3ca0e5',
+  'aefd44a3-509e-42c3-9dcd-9d3bd6bde83b',
+  'AV-지 말다',
+  'AV-지 말다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  'exercise.grammar.u15.n01.recognition',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  '497f924d-5dc0-4e16-9ea2-9694ea742b7c',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «вводит объект сравнения: «чем N».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('76087dd1-b976-43c1-8cd8-110d6df8f907', '497f924d-5dc0-4e16-9ea2-9694ea742b7c', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '936709d4-c4ce-45b7-9e4d-db98ecd7c396',
+  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  'opt1',
+  'N보다',
+  'N보다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8e3f920a-97c9-4a99-b3a5-c8f704040e0a',
+  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  'opt2',
+  'V-지만/N(이)지만',
+  'V-지만/N(이)지만',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '4cb4170b-7b5d-4740-9610-be76b14c7e83',
+  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  'opt3',
+  'DV-(으)ㄴ N',
+  'DV-(으)ㄴ N',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c9166801-bd4e-4cd2-99fe-dd3182239932',
+  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  'opt4',
+  'V-아/어/여도 되다',
+  'V-아/어/여도 되다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'bf82eb52-cce5-455f-a2f9-863e4ff6eb80',
+  'exercise.grammar.u15.n01.application',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  '497f924d-5dc0-4e16-9ea2-9694ea742b7c',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «вводит объект сравнения: «чем N».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('bf82eb52-cce5-455f-a2f9-863e4ff6eb80', '497f924d-5dc0-4e16-9ea2-9694ea742b7c', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'f4e7ab8e-41ff-4c44-be71-7cee5d4a64ee',
+  'bf82eb52-cce5-455f-a2f9-863e4ff6eb80',
+  'N보다',
+  'N보다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  'exercise.grammar.u15.n02.recognition',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  'ed637696-9842-4420-827d-99a8f926450b',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «соединяет противопоставленные части значением «но/хотя».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('f303ce7c-39db-498d-b5fb-c151e6377c1c', 'ed637696-9842-4420-827d-99a8f926450b', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1fe84504-ad2d-4b62-b8d5-403adc056f54',
+  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  'opt1',
+  'V-지만/N(이)지만',
+  'V-지만/N(이)지만',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0d0b4e3d-7cec-402e-9cf9-8d7fb0f15f93',
+  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  'opt2',
+  'N보다',
+  'N보다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9116678f-289c-470e-8532-cb8e726e6819',
+  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  'opt3',
+  'DV-(으)ㄴ N',
+  'DV-(으)ㄴ N',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bd433086-0410-477e-bf0e-31e59735fa22',
+  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  'opt4',
+  'V-아/어/여도 되다',
+  'V-아/어/여도 되다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7311bfe5-7c34-459e-80ce-f340a676509f',
+  'exercise.grammar.u15.n02.application',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  'ed637696-9842-4420-827d-99a8f926450b',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «соединяет противопоставленные части значением «но/хотя».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7311bfe5-7c34-459e-80ce-f340a676509f', 'ed637696-9842-4420-827d-99a8f926450b', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '8d028c46-ddcd-4a36-b97c-ec93f82788ae',
+  '7311bfe5-7c34-459e-80ce-f340a676509f',
+  'V-지만/N(이)지만',
+  'V-지만/N(이)지만',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  'exercise.grammar.u15.n03.recognition',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  '9c99de38-5225-4aa5-979a-13d727a9ded9',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «превращает описательный глагол в определение перед существительным.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('d8e92220-3a43-484e-abd8-40f7d850425c', '9c99de38-5225-4aa5-979a-13d727a9ded9', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a360054e-e395-4344-b625-9a6d0309b9c4',
+  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  'opt1',
+  'DV-(으)ㄴ N',
+  'DV-(으)ㄴ N',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'a1d6958c-8ad9-49b3-af13-a4bba518ec91',
+  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  'opt2',
+  'N보다',
+  'N보다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0108c29d-0fd5-41e0-8885-270578655adc',
+  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  'opt3',
+  'V-지만/N(이)지만',
+  'V-지만/N(이)지만',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'ec500cc9-f591-43da-9acf-fc4dd6dab54d',
+  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  'opt4',
+  'V-아/어/여도 되다',
+  'V-아/어/여도 되다',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '8be350c7-6298-4a9e-aacf-d191f0cfe0f0',
+  'exercise.grammar.u15.n03.application',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  '9c99de38-5225-4aa5-979a-13d727a9ded9',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «превращает описательный глагол в определение перед существительным.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('8be350c7-6298-4a9e-aacf-d191f0cfe0f0', '9c99de38-5225-4aa5-979a-13d727a9ded9', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '487f9dad-7c5f-420c-bff4-d3df3772556f',
+  '8be350c7-6298-4a9e-aacf-d191f0cfe0f0',
+  'DV-(으)ㄴ N',
+  'DV-(으)ㄴ N',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'exercise.grammar.u15.n04.recognition',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  '83a4a2f0-403e-40ed-8b14-3eacb2045e3f',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «запрашивает или даёт разрешение: «можно».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('e88bec25-00a5-4338-bf55-33feb1665126', '83a4a2f0-403e-40ed-8b14-3eacb2045e3f', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '77a89ff6-2082-4660-a1a9-1f7fe758e30f',
+  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'opt1',
+  'V-아/어/여도 되다',
+  'V-아/어/여도 되다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'df4606f3-a461-433f-a0db-298a019381fe',
+  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'opt2',
+  'N보다',
+  'N보다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'aac6c02b-b476-4d4f-a871-fece246585d5',
+  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'opt3',
+  'V-지만/N(이)지만',
+  'V-지만/N(이)지만',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '0491d2bc-361d-439c-b1e8-fb30f907fdc4',
+  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'opt4',
+  'DV-(으)ㄴ N',
+  'DV-(으)ㄴ N',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'a668916c-ce37-408e-99bd-1ac19afd0499',
+  'exercise.grammar.u15.n04.application',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  '83a4a2f0-403e-40ed-8b14-3eacb2045e3f',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «запрашивает или даёт разрешение: «можно».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('a668916c-ce37-408e-99bd-1ac19afd0499', '83a4a2f0-403e-40ed-8b14-3eacb2045e3f', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'e33d61b3-3f29-47a0-8c67-62a0de0986fe',
+  'a668916c-ce37-408e-99bd-1ac19afd0499',
+  'V-아/어/여도 되다',
+  'V-아/어/여도 되다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  'exercise.grammar.u15.n05.recognition',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  '481a9706-bb03-4137-adc3-4c200890794a',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «выражает запрет: «нельзя».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('5f90632a-1c1e-46f6-8296-6553c0355d50', '481a9706-bb03-4137-adc3-4c200890794a', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7b32a607-9973-4ebb-a42e-cd09bc2cf5a7',
+  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  'opt1',
+  'AV-(으)면 안 되다',
+  'AV-(으)면 안 되다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'caf53109-9a7a-4e38-9746-0ba401a8f348',
+  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  'opt2',
+  'N보다',
+  'N보다',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2df08570-1670-46a9-ac42-7930a17a0d6d',
+  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  'opt3',
+  'V-지만/N(이)지만',
+  'V-지만/N(이)지만',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8e8ef5bb-64b8-45f4-a304-7045a4b8f68f',
+  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  'opt4',
+  'DV-(으)ㄴ N',
+  'DV-(으)ㄴ N',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '78f73664-08bb-474d-b8a5-e9a116fac048',
+  'exercise.grammar.u15.n05.application',
+  '3209c69a-a864-4968-99d2-ec3ed803dab1',
+  '481a9706-bb03-4137-adc3-4c200890794a',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «выражает запрет: «нельзя».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('78f73664-08bb-474d-b8a5-e9a116fac048', '481a9706-bb03-4137-adc3-4c200890794a', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'e3e0cb84-fd54-44b0-9ec1-af781495ee91',
+  '78f73664-08bb-474d-b8a5-e9a116fac048',
+  'AV-(으)면 안 되다',
+  'AV-(으)면 안 되다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'exercise.grammar.u16.n01.recognition',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «образует определительные формы действия в прошедшем, настоящем и будущем времени.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('c1cf200d-f72e-434a-a59a-71e5a517f2bb', 'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8a149f06-0310-4090-82e0-1069a2f7e921',
+  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'opt1',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '19cc099b-922c-4543-a07e-ede013a15770',
+  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'opt2',
+  'N인 N',
+  'N인 N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '5aaba3b7-2c55-410d-b832-1f24138f8903',
+  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'opt3',
+  'V-(으)ㄴ/는데/N인데',
+  'V-(으)ㄴ/는데/N인데',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '1679c6a8-a963-4cc8-b787-f1b00ae713ff',
+  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'opt4',
+  'N께',
+  'N께',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '3014465e-7560-434b-b868-8f688f8c22c1',
+  'exercise.grammar.u16.n01.application',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «образует определительные формы действия в прошедшем, настоящем и будущем времени.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('3014465e-7560-434b-b868-8f688f8c22c1', 'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '8b346c9b-3b5d-459e-a994-0ffd7f322434',
+  '3014465e-7560-434b-b868-8f688f8c22c1',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  'exercise.grammar.u16.n02.recognition',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  '3dac5866-b5c5-4978-8fa6-9b965144975c',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «определяет существительное через другое существительное: «N, являющийся N».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('022ea07e-b803-4f5c-bfa1-87da5b98a7c3', '3dac5866-b5c5-4978-8fa6-9b965144975c', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '2e905118-24ef-447b-942c-950374e67f9e',
+  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  'opt1',
+  'N인 N',
+  'N인 N',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '57a09842-6b7b-4cee-a6ae-2aa7aa7582c1',
+  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  'opt2',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'bba3300f-3099-4e69-ae50-5cdac6ba3f0a',
+  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  'opt3',
+  'V-(으)ㄴ/는데/N인데',
+  'V-(으)ㄴ/는데/N인데',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'c8f7bf31-a289-497c-95eb-e1754c7b9317',
+  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  'opt4',
+  'N께',
+  'N께',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '909d1e01-fe4c-49bb-aca0-609b680babb6',
+  'exercise.grammar.u16.n02.application',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  '3dac5866-b5c5-4978-8fa6-9b965144975c',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «определяет существительное через другое существительное: «N, являющийся N».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('909d1e01-fe4c-49bb-aca0-609b680babb6', '3dac5866-b5c5-4978-8fa6-9b965144975c', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '7dfe5817-a0ce-40bb-af06-2bc4cc879ef2',
+  '909d1e01-fe4c-49bb-aca0-609b680babb6',
+  'N인 N',
+  'N인 N',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  'exercise.grammar.u16.n03.recognition',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  '98771e63-13b4-47f2-9e16-ec1f35e4f99d',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «вводит фон, пояснение, мягкое противопоставление или переход к просьбе.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07', '98771e63-13b4-47f2-9e16-ec1f35e4f99d', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '91272a10-af57-4903-9709-6def2e79f16a',
+  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  'opt1',
+  'V-(으)ㄴ/는데/N인데',
+  'V-(으)ㄴ/는데/N인데',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9e8f1c8b-6120-46de-8878-a8107511eb33',
+  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  'opt2',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '31873de8-9e5c-434a-9121-2f4a7ba322df',
+  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  'opt3',
+  'N인 N',
+  'N인 N',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '886faca6-df52-4386-9a7d-8ec8e509319c',
+  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  'opt4',
+  'N께',
+  'N께',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'd08eb323-a22c-4905-a591-88ed3662b320',
+  'exercise.grammar.u16.n03.application',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  '98771e63-13b4-47f2-9e16-ec1f35e4f99d',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «вводит фон, пояснение, мягкое противопоставление или переход к просьбе.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('d08eb323-a22c-4905-a591-88ed3662b320', '98771e63-13b4-47f2-9e16-ec1f35e4f99d', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '73170122-2318-4e51-a754-ecb9f68225c3',
+  'd08eb323-a22c-4905-a591-88ed3662b320',
+  'V-(으)ㄴ/는데/N인데',
+  'V-(으)ㄴ/는데/N인데',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'c363b323-de87-4add-9df6-9867a3d46127',
+  'exercise.grammar.u16.n04.recognition',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  '7afa0122-df8b-41e1-9903-a7efffc56474',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «почтительный показатель адресата «кому».»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('c363b323-de87-4add-9df6-9867a3d46127', '7afa0122-df8b-41e1-9903-a7efffc56474', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'e6119f83-ef98-43d2-858f-516e51bce0f1',
+  'c363b323-de87-4add-9df6-9867a3d46127',
+  'opt1',
+  'N께',
+  'N께',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7dae1df4-81b5-4fcc-8d90-10ee2a3285a6',
+  'c363b323-de87-4add-9df6-9867a3d46127',
+  'opt2',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  'fb690f87-2d0d-4127-b2cf-c8715fd792dc',
+  'c363b323-de87-4add-9df6-9867a3d46127',
+  'opt3',
+  'N인 N',
+  'N인 N',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '7185d02a-0dea-4a65-b0b7-18d8381f55d9',
+  'c363b323-de87-4add-9df6-9867a3d46127',
+  'opt4',
+  'V-(으)ㄴ/는데/N인데',
+  'V-(으)ㄴ/는데/N인데',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '412e7385-bf47-4585-a012-6eb280f36439',
+  'exercise.grammar.u16.n04.application',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  '7afa0122-df8b-41e1-9903-a7efffc56474',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «почтительный показатель адресата «кому».»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('412e7385-bf47-4585-a012-6eb280f36439', '7afa0122-df8b-41e1-9903-a7efffc56474', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  '53871a26-caad-4a3e-9762-0da66fb2cb20',
+  '412e7385-bf47-4585-a012-6eb280f36439',
+  'N께',
+  'N께',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  'exercise.grammar.u16.n05.recognition',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  '5b46cf40-c18d-49f6-a472-f4045d111dca',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 문법 패턴을 고르십시오.',
+  'Выберите корейский паттерн для правила: «действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.»',
+  '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
+  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('75f56bad-005d-4868-8a3e-faafce9096c8', '5b46cf40-c18d-49f6-a472-f4045d111dca', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9cc675d9-9882-4758-ac4c-525cdca155d7',
+  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  'opt1',
+  'AV-아/어/여 드리다/주다',
+  'AV-아/어/여 드리다/주다',
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '68edf7fe-ce55-4c7f-b24c-6cc37ce848c6',
+  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  'opt2',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  'AV-(으)ㄴ/는/(으)ㄹ N',
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '8e3bf50a-22ef-471b-b0fc-a054de7a814e',
+  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  'opt3',
+  'N인 N',
+  'N인 N',
+  '{}'::jsonb,
+  false,
+  2
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  '9e4efc69-62ad-4619-9bfc-1f212250da58',
+  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  'opt4',
+  'V-(으)ㄴ/는데/N인데',
+  'V-(으)ㄴ/는데/N인데',
+  '{}'::jsonb,
+  false,
+  3
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  'b60c1188-3fa9-444a-ba9a-59a8c4b47789',
+  'exercise.grammar.u16.n05.application',
+  '9d93adf1-8eca-4864-b209-f5a50b2776bb',
+  '5b46cf40-c18d-49f6-a472-f4045d111dca',
+  'grammar',
+  null,
+  'free-response',
+  'medium',
+  '설명에 맞는 문법 패턴을 쓰십시오.',
+  'Напишите корейский паттерн для правила: «действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.»',
+  '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
+  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
+  'draft',
+  '1.0.0',
+  'manual'
+)
+;
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('b60c1188-3fa9-444a-ba9a-59a8c4b47789', '5b46cf40-c18d-49f6-a472-f4045d111dca', 'primary')
+on conflict do nothing;
+
+insert into public.accepted_answers (
+  id, exercise_id, raw_value, normalized_value, is_canonical, review_status
+) values (
+  'f17a5a4a-213f-4daf-9140-a5afdb0881df',
+  'b60c1188-3fa9-444a-ba9a-59a8c4b47789',
+  'AV-아/어/여 드리다/주다',
+  'AV-아/어/여 드리다/주다',
+  true,
+  'pending'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
   '98eca8dc-8406-42a5-af4c-e9d72c96b7af',
   'exercise.reading.exam.v01.q01',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
@@ -57480,6 +67088,2406 @@ insert into public.content_provenance (
   'high',
   'draft',
   'Draft reading exercise from derived HTML; answers kept in authoring JSON only.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '800f9503-9c65-46b7-b269-f4327e17860f',
+  'exercise',
+  'exercise.grammar.u01.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n01',
+  'feb4062eb90800cb51c14258ebb9304c3c2650c6198ac3761a269e2384baeef4',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8825fa90-0ad2-479f-9c9f-d1322c8ffc3a',
+  'exercise',
+  'exercise.grammar.u01.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n01',
+  'f9a0e049c3b81975a970f5e6cacb21d264c8ef7c8e942667321d67ae0c854434',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '673f431f-5b57-41e7-97b7-4464708a4609',
+  'exercise',
+  'exercise.grammar.u01.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n02',
+  '132ced5efce018130b199191dfdb1dda0e66156badfb85029e168fcee81b3f8f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '33f8b53f-e982-455d-9ed4-29107b2a061e',
+  'exercise',
+  'exercise.grammar.u01.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n02',
+  '264e4663bea3369b1f627b6f8d5b16fa048edacf4cada06101b5f5c932834f19',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '031209dc-0527-4fdf-802c-28c968ae9f1a',
+  'exercise',
+  'exercise.grammar.u01.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n03',
+  '28b07f4266d9bdee14298950f95168f063086cc9aa09dcffdfc1b5f9c5305ec0',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '74656921-5d2a-4978-b940-e960dad76912',
+  'exercise',
+  'exercise.grammar.u01.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n03',
+  '3c9e4b56a889fef4836ce9042a74ce90e0247324ffde23c02bff6411dbc3b2f3',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '583c16c2-13e8-456a-bc75-8ff235f13db5',
+  'exercise',
+  'exercise.grammar.u01.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n04',
+  '535359777ce5ca7af136bdd2f79b8687bf1eb23ee6937eafe83157f9d439ec5e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3fc66b28-2b9a-4189-9333-e1a5a0b768b3',
+  'exercise',
+  'exercise.grammar.u01.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n04',
+  '2935b81d19aedc3e9725b7b78e7a648cbc8ad2429cc09e6f5c389f9dc251fc6d',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '05f58f1f-065e-46e2-b057-dafad58a3f9d',
+  'exercise',
+  'exercise.grammar.u01.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n05',
+  'cfb2cf9e2b5a24361b003397a3f1692ed27ba3b4e85cbe151adddc272609abe3',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '18730a8f-9236-444d-b4e7-75c36ecc8f06',
+  'exercise',
+  'exercise.grammar.u01.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u01.n05',
+  'dfc8f0740e8ff84afb00f72d3a82eb4f526b47616015bf317feeff49a3663b87',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5ef75988-e25b-416a-8d93-0c6c98360d94',
+  'exercise',
+  'exercise.grammar.u02.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u02.n01',
+  '2278d2d38262d346e61e02bf5c3ed8816af1670ca101f6bb94abd4a8793175b0',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c3117791-d9c5-42dd-9281-caeaf2ca8df6',
+  'exercise',
+  'exercise.grammar.u02.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u02.n01',
+  'ad9851421c9b52676f39d5d5ec0e90f3a9ac925fa18e35987492f10ab598e8aa',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1a077615-9731-473f-a9d2-eb84cbc6bbf0',
+  'exercise',
+  'exercise.grammar.u02.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u02.n02',
+  'e43fea0841a9490b040840dbce5ac362a8d1cdea73899b7bd732a367335afd69',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '49b8e333-992b-4029-8a63-def2c17891ea',
+  'exercise',
+  'exercise.grammar.u02.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u02.n02',
+  'eaae569acb50cc4b9edf919622aa2de0d2d7842985f91623a4e7f5bfc410a916',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '87e89fb1-9316-44c3-b89f-f7fa11934eed',
+  'exercise',
+  'exercise.grammar.u02.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u02.n03',
+  '66aca7d8db34015478d70392ca73eb485e6724a732b477e3dfebd3e58f59f447',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b588c772-eb3f-4202-8de7-b85b20e0d4b2',
+  'exercise',
+  'exercise.grammar.u02.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u02.n03',
+  '1b2aada3a97941407878d33af68d56c0c4df27e1d3e43eb5265882c213538d88',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '230ec1f7-5a95-42d9-94f2-9c1c700f34ce',
+  'exercise',
+  'exercise.grammar.u02.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u02.n04',
+  'b65afa2657cbc43b12dd341c9385ab8870363a3c912e55253ae813e3fea6615f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3e6142fc-9817-42d6-9444-64192903fe56',
+  'exercise',
+  'exercise.grammar.u02.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u02.n04',
+  '72c3491ecc546cf05df3658006f7a9efdabd05d24e23df19c5b79cae71c29afe',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '11ba231a-ef24-4b0c-a71a-7775332efe85',
+  'exercise',
+  'exercise.grammar.u03.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n01',
+  'c0bfe80fd035c7f838f2ffb284d09ac37379553feb57ff4553d46d3d4039145e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '39514e34-1e6a-41a3-9151-27da1e440673',
+  'exercise',
+  'exercise.grammar.u03.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n01',
+  '54abc7b459c9cdfab580847d3ec508e6efc8315eb6131ae18c4ea7b5260e7f80',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'dd06a166-8ca7-4cd3-ae04-3cbf1c9e366b',
+  'exercise',
+  'exercise.grammar.u03.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n02',
+  '41ae70d341c6c725fd1fbe65ac81dca178c5cf4730e6b608ef1541a13b88c510',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '97d5113c-7cf4-4661-abf0-313e3cf6e7d9',
+  'exercise',
+  'exercise.grammar.u03.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n02',
+  'e338ff367992adf5b8a43619a8915dd47c39639d1103f2b6459fc55e1ed45267',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ed1d7226-dcf6-4975-8bc9-4e3c61dafe9d',
+  'exercise',
+  'exercise.grammar.u03.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n03',
+  '7c1641bb902886eaf1ecd383a2c68ca5e63a0b187d36a2002cad5a266c456f55',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '73fbe927-e6d5-4e8a-be69-cc4888dd8e07',
+  'exercise',
+  'exercise.grammar.u03.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n03',
+  'e94e1a241abd980aaa86e44d891312d84c70aeee0ac9bcb79e44cc025a509ef9',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7931d044-6d7a-4a78-94af-6c0c23b0593a',
+  'exercise',
+  'exercise.grammar.u03.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n04',
+  '30984fbbcbfe245db0d1a242083af736309f3861b353b50c5c776e5f1998f3f6',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd8b5992e-7719-485e-af9c-ebb4e28d88c0',
+  'exercise',
+  'exercise.grammar.u03.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n04',
+  'b9555c7d2c4b8432547697c60a08821ec735d7380913fa6d004135d145edba4a',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ad67a12d-e872-44fe-a822-4fa4dda0795e',
+  'exercise',
+  'exercise.grammar.u03.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n05',
+  'fefd903bc26bd91a27f0ee7b38663bbd012dd077566399d05c92249cb9b5bb43',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '858cc889-066e-4e0f-9b5a-35c56f8fc670',
+  'exercise',
+  'exercise.grammar.u03.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u03.n05',
+  '5b39a9bc292b70bc3ef19cf1b2a9e4991475af2e1ac26754992133aca84323e5',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '717a0201-79d4-40cd-8e13-aec52dcd7441',
+  'exercise',
+  'exercise.grammar.u04.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n01',
+  '7e858179b17955d26fd887ffd55e23d4711556ae2d07c2d4939e3ec63dcef548',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c0c842fe-df6e-41ac-a672-c596ec65374b',
+  'exercise',
+  'exercise.grammar.u04.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n01',
+  'bfb75a0908858325f861e7acd53dd257f7ec9703148786fb7893f4a5c8915bbe',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a7a80b8d-3e03-42ed-a035-3972fae169b3',
+  'exercise',
+  'exercise.grammar.u04.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n02',
+  'b0fe5d66747222fd484651add4f5ddb395030a71ffa72972f55c414a12d1dd35',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a89273c1-cbd2-45b2-ad5f-6700b8b5292d',
+  'exercise',
+  'exercise.grammar.u04.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n02',
+  'b3285a7ecdc6831e4a4167a273fab458bf058026cc3043fafd09f5bfd681df41',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3553fe71-827c-45c6-b911-ad0628307277',
+  'exercise',
+  'exercise.grammar.u04.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n03',
+  '21f1d1c69c4dfbd07fb7c6331d72ee5ab9cf891ab7b46823f3b73de16be74475',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'dfc7b666-cb42-4c37-8f82-e021a3ab11df',
+  'exercise',
+  'exercise.grammar.u04.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n03',
+  '5a4d0069b5f86286df280d8dad6b760e0175aa3afb1dd2478a9ca0eec650d634',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7f4e8080-d290-4847-8c48-98e34258ce5a',
+  'exercise',
+  'exercise.grammar.u04.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n04',
+  'abb902ffe811af1478cde55a81df0a7dc36311ab77f0414e073de43144347589',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '006f3e14-4f01-4b87-9035-d27b8b6556f6',
+  'exercise',
+  'exercise.grammar.u04.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n04',
+  '3e228db121ce7a147987531a666289476a96c2c234e32d707a8b502d1ce9375a',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3ed345ca-9e38-44fb-bf67-4c44a718578e',
+  'exercise',
+  'exercise.grammar.u04.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n05',
+  '41c349bc50a96cda0bc5cd254a7a0fd11e3ca4252ee21e456d48f5681e767a39',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '15bdcfda-fca2-446d-82ec-27e9412551f2',
+  'exercise',
+  'exercise.grammar.u04.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u04.n05',
+  'd14e06dddb06b3e1ce41eeecc163cd49543cbc11a8ef02bc52edaf484a5716f6',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e3212f4e-ca45-4e84-8c6a-52c37f085756',
+  'exercise',
+  'exercise.grammar.u05.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n01',
+  'ec80d94317ccaf2e14aefb79a0aa82d4948136f1b516a3a6f21e518a4628278b',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '625250dc-bf06-4adb-a44d-db35a1c89b4c',
+  'exercise',
+  'exercise.grammar.u05.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n01',
+  '399191ebf74fe026331834677992209d666ac6a8198cb95fd8de3122a41198ac',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c22bd695-52f6-4900-94e2-d470a4477216',
+  'exercise',
+  'exercise.grammar.u05.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n02',
+  '581af4c172883070cbcf6933316fdfe797e9ed5f83a83b8c5d495d6e7643961c',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f1ba163e-ddfc-4837-b83e-cf0c9178bd69',
+  'exercise',
+  'exercise.grammar.u05.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n02',
+  'dd20100ed81c7a699c555ea1f5861bb0605e2edae71263b9184850cf4893060e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4cbd83d0-e00f-46fc-8e34-6055aec90317',
+  'exercise',
+  'exercise.grammar.u05.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n03',
+  'b8febc2cc11055947966b3a59303351d788a1258af71ea40fef676d9e0bbeb3d',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '66aa01ba-de17-47fa-abf6-734b2ad56730',
+  'exercise',
+  'exercise.grammar.u05.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n03',
+  '1090f4cb663b4c92432ccc5b2f674d8cbe0f92faa48e9cd943e360f8f038b611',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9e0dfc5a-996e-4388-99c6-0d95e96aff47',
+  'exercise',
+  'exercise.grammar.u05.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n04',
+  '0032f5d004d04f1802ae2ea135252d5dc0d262d6e11a1a67524c80792dae2745',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd4725a0f-4775-42de-b41f-fd66ae57a637',
+  'exercise',
+  'exercise.grammar.u05.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n04',
+  'ef6fc60930e96f80f6b87d2fd215f8c83b5e08c91e30e7955a710c3b607de2ad',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b06d7986-210b-4f44-b46b-397efaf03821',
+  'exercise',
+  'exercise.grammar.u05.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n05',
+  'e81a476203f6c9f13a79320349098f4c3bd643aef9185bccc2484a1729abde3d',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2fb0bc98-586d-417a-875f-3df64de002c1',
+  'exercise',
+  'exercise.grammar.u05.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u05.n05',
+  'a00d98a4c3511ca95119a4cd55e3544ce8d914da9a62c2818a0428f48cd1498e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6245f2e5-dc67-4314-ade5-5d72f84f0ffc',
+  'exercise',
+  'exercise.grammar.u06.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n01',
+  'a125dc1d8fe6ac0c3bb43325f789cb92d7ba704e570b0f953cc733166d5696ec',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'cde4c60b-c281-408d-9c8f-982c2b0083b6',
+  'exercise',
+  'exercise.grammar.u06.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n01',
+  '259be6932634e7ef1bf01324174e96b2f550b762c1a679bcd7e59c624815ca37',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '81f1261c-20f3-4073-ae59-77cd40088372',
+  'exercise',
+  'exercise.grammar.u06.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n02',
+  '2ca3bbfcbd78d437c13625e1ae188ac8e7b2d8e8ad0d344854e966650d38cd23',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a9f302fc-2a33-41d7-961b-05b0a840f090',
+  'exercise',
+  'exercise.grammar.u06.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n02',
+  'c25d5900cc555398a937e810afb5b5c1dd576ae9d28d052d4867c1f34b48e078',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0cef48c7-fac5-40e0-a45a-5217216e6ff5',
+  'exercise',
+  'exercise.grammar.u06.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n03',
+  'f30cb39d28cb93ee391858dd3f8edbf30abaaa051a8fb3d490266b2c8a08ef22',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '13ea775f-ff61-443e-bf96-c473ad9973ab',
+  'exercise',
+  'exercise.grammar.u06.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n03',
+  'ae89c6cbb92d3ec641bf0ec3817d2e853cbe74081945998f1082403128a0b110',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7195faef-d934-4c14-bf0a-8b2fa1a05394',
+  'exercise',
+  'exercise.grammar.u06.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n04',
+  '2ad75c542721d2589bdc4581cd1dec2fafef2fe571b907b4b20e40f0f0564159',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '30eaf03e-7c93-4730-8dce-444ec5fa6884',
+  'exercise',
+  'exercise.grammar.u06.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n04',
+  'ee29fe0f71f64da1b306efa1c59016b47037e10d0d0fd5ae91dac9fed3b85673',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7b0f0e31-d101-4ed1-944e-fb5a38338b09',
+  'exercise',
+  'exercise.grammar.u06.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n05',
+  'e61e772d162f0f998033acedffb131b5d6b4d9400c16710ab956829bdef8742f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4247b9f1-ac40-40b7-8f32-c3e305276924',
+  'exercise',
+  'exercise.grammar.u06.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n05',
+  'bf906ee9cfe70f3bdad568f011500b0743c4a87de6e0ab877a67a09bf50a482e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '41605ef8-d5c7-42be-b7ec-a723d7c5032b',
+  'exercise',
+  'exercise.grammar.u06.n06.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n06',
+  'dc55df7b22f3b6c4983107b147661a16961320766e6eb386ca24b57d8e48623a',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1a40afc3-fd54-4db6-bd13-4c02d7774cfb',
+  'exercise',
+  'exercise.grammar.u06.n06.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u06.n06',
+  'cde2a197f324af269ab1560a77da42136d4d35886296268027c8766a272334c5',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f5f859aa-2780-41dd-aae3-e86d2d7755cf',
+  'exercise',
+  'exercise.grammar.u07.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n01',
+  'b008c602bfcc7482af900ffa1c732755ce70a6120c80c6aeb93a15129a7db37f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9485dfa0-681b-49a4-8bfe-0e9eea90618b',
+  'exercise',
+  'exercise.grammar.u07.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n01',
+  '5934f39c774e63bcadf3b2b771eb6c99b919a6fac008948761d085b139d847b0',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '013b6a69-e363-463e-af4b-8a6cae891317',
+  'exercise',
+  'exercise.grammar.u07.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n02',
+  'df80b28381ce9c70b6c8058fa4ebfbe0374c6b30c28d1dd6e22fd66b65425eef',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8d7fe518-80ba-4454-9941-f8dd348d9fd7',
+  'exercise',
+  'exercise.grammar.u07.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n02',
+  'a67758ef3aa8174f60f725a00614bf503862d79d366af63198d21c555079134f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8a3b10f8-f392-4ec8-9661-09edc0c84cbb',
+  'exercise',
+  'exercise.grammar.u07.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n03',
+  'dd831e53395925f1a6944fdd2ddf43701a359176b506b9c54d77b0f890e3e45a',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '58da5232-09eb-43aa-a147-0bc40aa38b18',
+  'exercise',
+  'exercise.grammar.u07.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n03',
+  '6d508b33b0c2753ef14a24b9a50b291c2fcfb1eea2a64a065f2caadd7147728c',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5833e233-bb47-435a-92f7-679ce984336b',
+  'exercise',
+  'exercise.grammar.u07.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n04',
+  '1ddfe72e8fdba6027f6c4a891db62a7047f57be7d99d8a7dfd060c2205121377',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9d240cbc-1bda-425a-9c24-32c6d7f812d1',
+  'exercise',
+  'exercise.grammar.u07.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n04',
+  '3c8560481ebcb17f8cc3871f05fc449b900e937ac4d0186ff92260d74c9b2e1a',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0f1c9453-f442-46e4-9139-9b53ca7bb3af',
+  'exercise',
+  'exercise.grammar.u07.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n05',
+  '3b354cf877b3195504d84936771f5c19cf94b65be80a76b08867695e3812a4b8',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '81fe0345-aa9a-4adc-be9d-96a0ad2c1b00',
+  'exercise',
+  'exercise.grammar.u07.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u07.n05',
+  '43aa1875aa7e94950fcfd35c6586e581f8036545bb10c2036179594f713333d2',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'afe561ef-90ea-4979-bc2b-385a00138dd8',
+  'exercise',
+  'exercise.grammar.u08.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n01',
+  'e6113dcd2f59f25af98338bcbf4fc4aa80ac04cc6094bc0a7516fc1ac0e9fb2e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '229d3632-c6a6-49fb-8913-3abece57385f',
+  'exercise',
+  'exercise.grammar.u08.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n01',
+  '4cd72f96e86a803437964e95befee85cad9bff866a90c1aa382109f54233db6e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fb04cbda-57e5-4ebe-918a-3115b82b782b',
+  'exercise',
+  'exercise.grammar.u08.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n02',
+  'f9b294decb1692692d65511811f0152566628e92cc6753341f05b03413b03f2f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fdc0a534-14a7-4178-ae48-d094a2b85621',
+  'exercise',
+  'exercise.grammar.u08.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n02',
+  'c38adf818d90a2719f03665be98f97f475311b57362e549f61055169c3a5634c',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '590da92b-10b7-4025-86a5-a45346dabd87',
+  'exercise',
+  'exercise.grammar.u08.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n03',
+  '9df9ef8de44699c15074014c8674211b6a8e01891c7b0a17a7621178dfc086e8',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7a9bce83-9931-4c2f-864e-5a99a6e82ba9',
+  'exercise',
+  'exercise.grammar.u08.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n03',
+  '7f70e79dee81717b38bf2a2d6d65dda347610b0de162de6dbad768d3aa19f848',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '265dcc56-cc23-48e1-9aea-0c3f395a2a70',
+  'exercise',
+  'exercise.grammar.u08.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n04',
+  '8d44edb1494bc85da83e21f43619f209d797846376b0182a30f7f8dc982c4b7f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '95711865-181c-4dd4-9117-65ad774e7814',
+  'exercise',
+  'exercise.grammar.u08.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n04',
+  '33d1d261060f9189f5f4d20f4ed48f6b550a36329e713781542db2cc6e86eaa6',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8e6950d3-8ca8-4df8-8ce6-4ab43320fb6e',
+  'exercise',
+  'exercise.grammar.u08.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n05',
+  'fc756b906f056c93c4938f1fa4da7345ba2ac868d38928c5c65913dac3b0a09b',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f9bc22d3-2bc3-47f0-9c03-965cf2771168',
+  'exercise',
+  'exercise.grammar.u08.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u08.n05',
+  'a1ef2b52031c46b5fdc20e9a647ea259894106851040c8855064a3e91a823f60',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'bf6ff8ce-4a22-4971-a1ff-7a759d7d6151',
+  'exercise',
+  'exercise.grammar.u09.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n01',
+  '3d73f88bd05add702db66f57ecef80a367df15df00c8894697b4022ec645271c',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '75619f3b-a363-4ddd-b717-1c782a2c398d',
+  'exercise',
+  'exercise.grammar.u09.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n01',
+  '3d6023bfec2da6676c491f7777d429f64904c35368a8f125dcfa994403e4d652',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8010ac08-7d34-4e76-b2f2-c76f4116942e',
+  'exercise',
+  'exercise.grammar.u09.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n02',
+  '6ca5ec852e83332a10596883e6bb3b969acbae0f5d5bf4a8f6cf02903082d20e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ca8a5192-5036-47f3-8de2-e78cb9ad08ba',
+  'exercise',
+  'exercise.grammar.u09.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n02',
+  '4e089bcc013a07b1d7dbc607c7c3ec02cda9dfb3a84e406cda65647d77a5189f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0cacf90d-f044-40f4-bd4a-bb657b940d50',
+  'exercise',
+  'exercise.grammar.u09.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n03',
+  '82b417c872fed8bc12264664ce0f5878165670e08ff2b591d1420e3e25bf2de4',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '26720107-896f-421f-b1e5-8301c93b0529',
+  'exercise',
+  'exercise.grammar.u09.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n03',
+  'ae88540bbf5e110a26f61abd6cf6f0b88fd7f2ee92c9179387477b0da1863d88',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '594ccdda-8905-43bb-9579-e355002b6310',
+  'exercise',
+  'exercise.grammar.u09.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n04',
+  'f31bbfa890ba57b64a828ce2f68bffd82ecf5f5049b9e1a4c32e4abbc13325d7',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6e6ab40f-a666-4f05-8868-8e44e4e0bb12',
+  'exercise',
+  'exercise.grammar.u09.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n04',
+  'e5699eb5bc738ab6a2ea71190df56f6c821816cab344b849b871f8051fe43b3e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fe2646cb-62d0-4ec8-af1e-262cd2b64571',
+  'exercise',
+  'exercise.grammar.u09.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n05',
+  '8a45d0261cadaf7b049a61d968bdfae1329f17cb4a7baba2e9a498b12e15e028',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a33bfd3e-b4e1-4f68-bc77-32a4a9810b55',
+  'exercise',
+  'exercise.grammar.u09.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u09.n05',
+  'c1d8f71ceefe54102bae231593c9e2bc874e6bd6ffd9de6af6b2fc1e5f6b0d51',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0018431a-81e5-4ed7-8595-71bea7f8e625',
+  'exercise',
+  'exercise.grammar.u10.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n01',
+  'cda2aaa1f6db974c710047f98be83d94b9e5839d56e4e227ac591f2ec0bf7027',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '12cd460c-9bf1-40e4-a6cc-225ea00d9a95',
+  'exercise',
+  'exercise.grammar.u10.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n01',
+  '5702ff9d7c014703328f1eed7e031a58cb61234ff0d9a8c12ad00146cd86e0f6',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3acf2a5d-8d29-43c6-88db-66389ff511d0',
+  'exercise',
+  'exercise.grammar.u10.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n02',
+  '1cc3adc9bd7016b806f011b983d92907bb0e7f0c8ddc2ca4501ecd064bc1427d',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e0f23158-38e5-406b-b3f4-43dabc673290',
+  'exercise',
+  'exercise.grammar.u10.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n02',
+  'c9cda1da0ca0b6fa4f182e64178476920610ec730e8b5b1f184594b6f4af5c99',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8fa1d238-942c-48ea-8517-36017291c985',
+  'exercise',
+  'exercise.grammar.u10.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n03',
+  '88613776c8c8f9fd004a603b7166ff62f8d60468624af461da6c3abd5937d59d',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '55f46c89-5a2a-46fd-8e94-47690ca70c9f',
+  'exercise',
+  'exercise.grammar.u10.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n03',
+  '960a18f230eb1f5da16e34304231d825fa5403581abcf91607995c93f12a1895',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fa621af9-3364-4f45-9d91-a78ed3909de5',
+  'exercise',
+  'exercise.grammar.u10.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n04',
+  'c37cc71e28fef6d0ee02d85c60689b5c90d8bb7af8f2188fd6cacf67126b2b74',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5a01b246-d9f6-460b-a6d3-b5a0eb695f16',
+  'exercise',
+  'exercise.grammar.u10.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n04',
+  'a3a13b6e469373d9b91d3de8cb5434239093610358c3d08e69a888ac45d6b92b',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3c07b47b-4c48-436c-96a4-c632844bd8cb',
+  'exercise',
+  'exercise.grammar.u10.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n05',
+  'e3f6d2a4ed9ba1c47d052defb20c99f9d1dca2b4297041948311df00183e9a8e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5f25aff6-2cfd-4b81-92ac-cd1cb14f2ce1',
+  'exercise',
+  'exercise.grammar.u10.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u10.n05',
+  '8d12ddc194390ce39d1f07eb46ac56c944e93dd35b7e1e46346bf3c38bdda910',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c1292379-81aa-498e-99f6-891a5bc3b8e3',
+  'exercise',
+  'exercise.grammar.u11.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n01',
+  '9123c2a712f1fedfa56059f921a89be2f8503d935a361e9efed66355dcc43a3e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3d4f808e-39c6-46e3-b1be-45249fb9a814',
+  'exercise',
+  'exercise.grammar.u11.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n01',
+  '996077ebdbf1dbbc2cac2b7d69b21bd29e8b9e26786d44072f74a94a9b55231d',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7af22a3b-c900-4680-8f8b-b7d8f5994142',
+  'exercise',
+  'exercise.grammar.u11.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n02',
+  '8758f547658d73f61b9eab3347bebdaf7f8d9d270ab6f8d6b10b47f835e10e2f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ddcc9569-7afe-4714-9327-2044178e8acb',
+  'exercise',
+  'exercise.grammar.u11.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n02',
+  '49894b0c9d4037907b6b2656c01283d755b4848472403afc56b89cd62ced76db',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ed6c72b1-9213-4c12-b918-6ad5c1f1458e',
+  'exercise',
+  'exercise.grammar.u11.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n03',
+  '7dca12031e0b6ff40c5488b57d7215b879bf7d2478a9cedbd94d3186abe966c7',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'bf121294-0dc7-4cd4-8141-fc0612eaaa55',
+  'exercise',
+  'exercise.grammar.u11.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n03',
+  '8556287844564c604b5e931c45c53d44f87fd43f42583f6fe67e4707001cff3f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fa1c0766-178a-4ab1-bf04-69e2fa0bfdd4',
+  'exercise',
+  'exercise.grammar.u11.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n04',
+  '203111c7e32501f42315a107a72f102e7ad26c267e4da824d31f19553f6a66ae',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '3b71c7df-572c-4e94-85df-bac7471dea40',
+  'exercise',
+  'exercise.grammar.u11.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n04',
+  'cb79ed292cdf56def10551b99d57c9f8206e24ddc9d59c3eda03038d9149575b',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1d5f0d81-106d-4907-a7a1-9f9615bd773e',
+  'exercise',
+  'exercise.grammar.u11.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n05',
+  'e2e75f5df8524df0defab81eea1a3ce83d079268d685409d4f76a95d8e75dbd5',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '746a8247-08e4-4bc9-94d1-e65759c4884c',
+  'exercise',
+  'exercise.grammar.u11.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u11.n05',
+  '8f00fb823991bd877f2de8d8a3b63d65edeeeb2b23380505c52cb3913769115a',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '58a3ac02-b228-4f33-a46c-e316119ae20a',
+  'exercise',
+  'exercise.grammar.u12.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n01',
+  '016d92a9c27ebbfa052f9fe9c9709190c89051306d4788387d1e5ac142228129',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c35cd372-aa91-4da9-981f-cb5eb70b8417',
+  'exercise',
+  'exercise.grammar.u12.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n01',
+  '6588d6d6e7be70b7ecd3c32fcb14e0adecd1fed49cc94f368dbc3c5be66f577c',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c2d53838-20cf-4d46-a377-4b2c636d6a37',
+  'exercise',
+  'exercise.grammar.u12.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n02',
+  '2b0975de49d02686fe02dc98b02c665f0c4e29ce2d4e19dfc42ee330d358f719',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '1d625e95-99c2-4b8b-9c92-9fd5f936dec4',
+  'exercise',
+  'exercise.grammar.u12.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n02',
+  'e8cfdb251df0d2999234fbef9441a848b94a2b7dda3a84649e6215349f783cc8',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a13bd1e2-6def-4c21-816a-266447de72e9',
+  'exercise',
+  'exercise.grammar.u12.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n03',
+  '3c5dfab4ac80607dde20d7b06fee422f889e72212788767ebeeb3a3315fe3700',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '6c29b4d3-31f3-4b0f-b803-b8fffc0cf2f1',
+  'exercise',
+  'exercise.grammar.u12.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n03',
+  'ab0c33e59076df77c8a93bd160112185aa7806891154f73942d3ec4e2c1cb8d2',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '63e311dc-88a9-4d60-bb26-364d35d5a460',
+  'exercise',
+  'exercise.grammar.u12.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n04',
+  '35a534edc4c6676f16e40ef4b92f03f4a6ef344f5a3b00408f0121d7f4a6a645',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4cd9d3cf-90f7-4326-9f9f-c6521d5fb43e',
+  'exercise',
+  'exercise.grammar.u12.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n04',
+  '215525bab3d9c33fdc14750e8b62def90351f930357aa5b0e4cc898bbc873eac',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '47f26223-54af-4546-9d51-adb7f848c8da',
+  'exercise',
+  'exercise.grammar.u12.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n05',
+  'bccf9f522baf79eb272a98a969b643a2c167d58ce8a87c81b2cf5566b7f5d7a9',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7b3d60f7-4f81-4704-9502-7379fd615746',
+  'exercise',
+  'exercise.grammar.u12.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u12.n05',
+  '8058ded3e938a734150481490f6e0e9544f9d66e2198b7848a7f963b4a3b41ae',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '8aed2878-fb97-4224-9236-1b1d395b6903',
+  'exercise',
+  'exercise.grammar.u13.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n01',
+  '28caad17e01c0a72c4f1a87d7fd99464be937dd2e34a92d4612e82baa4492d4f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ad9a5134-6649-4591-a176-58f73ff7847b',
+  'exercise',
+  'exercise.grammar.u13.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n01',
+  '193144bd8d5a4b8c606a167826b1df2aceade5d6f7a86ee19e80a5f68dce3d9a',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2f66c8dc-ca16-4322-98d1-7543f1b4412c',
+  'exercise',
+  'exercise.grammar.u13.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n02',
+  '847a13c8c447855dd6bb4fbf91e3aa4baa47309116e1651ac2a13627ec7c66fd',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'e14023bd-1507-40f2-94cf-8a380f63fbbf',
+  'exercise',
+  'exercise.grammar.u13.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n02',
+  '300ecf89938e4d1347cf8fb354bfdd97580896e7cea15a752dbd693e90cbfcaa',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd7e91a83-6883-4149-a78e-81bf3bbd6593',
+  'exercise',
+  'exercise.grammar.u13.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n03',
+  '241eafcc96125c3dfa5e26d87ba77d98dfcbe838ccfc5ece6836e503512b9ff3',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd02dde15-4a33-4d35-b826-522ee62cb0d2',
+  'exercise',
+  'exercise.grammar.u13.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n03',
+  'c3dbda90d33e2378051a56b7626b48305447046741f5ef3620b6a8f162f285b9',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '17896bd6-9d41-44dc-acf6-a621f99fa260',
+  'exercise',
+  'exercise.grammar.u13.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n04',
+  'beec301968dd3af6f22c39d6c267e463e69330bf79c5d684a6c9c855c906325d',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '12393ebf-6d03-4872-b0cb-377756e4ad4b',
+  'exercise',
+  'exercise.grammar.u13.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n04',
+  'e3e0c133f1a3c8100beed400393ff639b7b10b390ff9b86e5abbe62bd65afc97',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'a225c4de-03a2-48ff-9a03-c5e6daa92482',
+  'exercise',
+  'exercise.grammar.u13.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n05',
+  '704081862d1e943926f159e4eb6211672b380d47971ab6af0c20385b218ac06a',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '89735c91-b040-4ef1-9475-ae7f74f213d2',
+  'exercise',
+  'exercise.grammar.u13.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u13.n05',
+  '96c06ff3cb65e33cc579043af14dba798c97bff87c286fbd5bc580889f6a26cb',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '535900e3-5435-4c73-9001-154b921948c5',
+  'exercise',
+  'exercise.grammar.u14.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n01',
+  'f3e8e32166eb27aafd33683ad7e7a9b992fcb19847d5ac378bb45e5db20db627',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0cf75fc4-34e3-4fc1-b2e4-03cc4cb8f8d0',
+  'exercise',
+  'exercise.grammar.u14.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n01',
+  'b376da10e9675cbe019714243eb92de59b7156745b93b9fd1f941f1e1bdbc391',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '22095e78-b7b0-45f1-9c73-df773a670f0b',
+  'exercise',
+  'exercise.grammar.u14.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n02',
+  '114a21467302bd46b32d85f14c258298e6784c280cf27b2ccb16d66bcc2b76bf',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ff28f824-c76c-4181-b319-0f56b89bddc1',
+  'exercise',
+  'exercise.grammar.u14.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n02',
+  '2cda79936f8e47c5917ec5feee6732154a1066055f630f5a7ab57ca5bfcf40e8',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '36b5fb24-123f-4fb7-9385-6225cee065a0',
+  'exercise',
+  'exercise.grammar.u14.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n03',
+  '722acf43cfc2ef451bc45ac934e6c8f8bb9349a7da241672381bc42558018abe',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0bb703a1-07a9-4506-a564-cdf728cb285e',
+  'exercise',
+  'exercise.grammar.u14.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n03',
+  '345dd89f5669893e0a60ae77c1b4142d35b44241e7592d0f8f149243da120728',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5e060a2c-68ec-4d31-a292-2df26f7be7e1',
+  'exercise',
+  'exercise.grammar.u14.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n04',
+  '2db56aaf7eaa9457e6adc91b75155255c0b7cfa5f297c770fe4624935b1cd9bf',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '80267f14-1f20-4310-b9f3-d11c8b39b7aa',
+  'exercise',
+  'exercise.grammar.u14.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n04',
+  '542fd1a0647c73610f3aabf73ceef45c20546e88218ca19d4119e998ca84015e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4520f0ad-33ac-4b6d-9513-51b952daf579',
+  'exercise',
+  'exercise.grammar.u14.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n05',
+  '51c661947b58f2915bea1557def6915e535a0f191ca24dc194033446ca854025',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '0a79f5ed-0eda-432d-9206-f448ff188160',
+  'exercise',
+  'exercise.grammar.u14.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u14.n05',
+  '9764e554288de822dbfb2acdc634c6fef70c1ac6f5f69a8c73febacb52a127d5',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ae30aef7-2631-4d03-9fb1-3fb4275a8f6c',
+  'exercise',
+  'exercise.grammar.u15.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n01',
+  '0e610dd3257390a0c692e413b45145e68b57fd73ad7209b8c9f61b0fd604037f',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'fb384a76-ea62-4ef4-b9e7-860d40294821',
+  'exercise',
+  'exercise.grammar.u15.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n01',
+  '66549d37216c23e9e3e265b4756c763ea2a5fa19279236aed3309aa5f5271094',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '11ddf0c6-cdc0-4464-b2c2-562b5b94caf5',
+  'exercise',
+  'exercise.grammar.u15.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n02',
+  '52c68dc7d049eebda5c2496202fbc45b4e584cb091654122d06db853923bcda2',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '94405c0f-9c3c-4677-b79c-7a813c36e411',
+  'exercise',
+  'exercise.grammar.u15.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n02',
+  'ebf6dbc34b07d13636a2b7f7e240fbde98e2c8a5adcb36791e27b043d8b3b7ec',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'f177590e-da94-4ba8-9022-f641325ed98b',
+  'exercise',
+  'exercise.grammar.u15.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n03',
+  '5c18960233fc23eaa7a262e034c2654e678d66292b137b0e9a14be6db30f49b4',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '2777a24a-070a-4f1e-b05a-a7e470562508',
+  'exercise',
+  'exercise.grammar.u15.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n03',
+  '6b38b899e8d392c638e28a0fe0df1cbf746a328cbc29e91e8a523426894a309e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '9bfc4e8c-b97f-4ea8-8054-4ca32da99f4f',
+  'exercise',
+  'exercise.grammar.u15.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n04',
+  'b58d28c7dee2ab1babdf1489ae2791b0cb0fe59f55e7fa4b85abe3a46778ca6c',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'b718a1a2-103d-4676-b011-e57f3fdcfcd9',
+  'exercise',
+  'exercise.grammar.u15.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n04',
+  '5aa65b7f2b1babeb6d4de3845c25dce282b177dacfece2f102a2b2372b5e1da9',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '7202570a-5d49-4a23-8aca-bde9ee1667c2',
+  'exercise',
+  'exercise.grammar.u15.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n05',
+  'c767255dc1f6c7c30ecdf2ee7152593f994e5d5f49250c247669b5e07ac0b06e',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'ae534d83-90ee-4d24-afb8-efb25a0706e8',
+  'exercise',
+  'exercise.grammar.u15.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u15.n05',
+  '7c4f98449fe012fd43a63be84eeea313b5670587c31237bb1947559cb8ff3f01',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '459c9841-e6ef-465f-8b07-9d8fbfc24058',
+  'exercise',
+  'exercise.grammar.u16.n01.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n01',
+  'e0f54d9f0e31eb3958cd45fd7fb9bd297acfdc451f916f91d5f6e73f66800337',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'd50acdba-caca-494f-8742-fe06bed29ec5',
+  'exercise',
+  'exercise.grammar.u16.n01.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n01',
+  '3dd02e5b516507eac3153fe01c6e7ad1f0ca3789bf8f48602a565334ed873a56',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '4ea2139c-eafd-4240-abda-932f4209caf5',
+  'exercise',
+  'exercise.grammar.u16.n02.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n02',
+  '5923f7e27e5a35fdae36848f4542a3ae4497c0245ba0a17ed9cf851a0cfdd6a9',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '21dbb965-f7f1-41f0-8c3e-486f74f69ef7',
+  'exercise',
+  'exercise.grammar.u16.n02.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n02',
+  'b82c9d69b23818dae05292f342fe4e567737624c6644523f3ce6428a435d8601',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '389cfa37-fa5a-4f1b-bf87-5b69d5828c73',
+  'exercise',
+  'exercise.grammar.u16.n03.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n03',
+  '36a38635c9184be106107eeecfe89806d05c51173fb3b9827f28b219f3232bc8',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  'c7750af6-4edb-4c1f-9c59-f3b78aae90de',
+  'exercise',
+  'exercise.grammar.u16.n03.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n03',
+  '5beeed3a4bbdfe3d8b227a9ccf5dd56d565683da67dc767bb1504e38cf59e51d',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '22ebe6ca-aa7c-4aa6-8148-40ffaa8d0dc1',
+  'exercise',
+  'exercise.grammar.u16.n04.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n04',
+  '3b77657a6ba39364598c5310849347fa79bc812fccef6144a782b8d46ec1b1e6',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '05f277fb-fc7a-4969-8f98-04bc6faf33d6',
+  'exercise',
+  'exercise.grammar.u16.n04.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n04',
+  '776d0e1dd51f7379bd95e167b76510741befab62bf5570958f320338196b9972',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '505d7114-6d14-42f8-afef-b483e6660ad2',
+  'exercise',
+  'exercise.grammar.u16.n05.recognition',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n05',
+  '9d4edf544d7e7b8e6ca7c25b66309b53b29c989bbe5058e11d078edc048f4562',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
+);
+
+insert into public.content_provenance (
+  id, entity_type, entity_logical_id, content_version, source_id, locator, record_hash, confidence, review_state, note
+) values (
+  '5a82b32d-9ea5-4dbc-8651-15c7d9de5cd5',
+  'exercise',
+  'exercise.grammar.u16.n05.application',
+  '1.0.0',
+  (select id from public.content_sources where source_key = 'curriculum-grammar'),
+  'section:u16.n05',
+  'edd0a069b68a2e54f377ee10efd6f021ead498865c1abe29560117bb382972f6',
+  'high',
+  'draft',
+  'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
 );
 
 commit;

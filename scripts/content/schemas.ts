@@ -375,6 +375,14 @@ export const exerciseRecordSchema = z
       }
     }
 
+    if (exercise.exerciseType === "free-response" && exercise.acceptedAnswers.length === 0) {
+      context.addIssue({
+        code: "custom",
+        message: "free-response requires at least one acceptedAnswers entry",
+        path: ["acceptedAnswers"],
+      });
+    }
+
     if (exercise.status === "approved" && (!exercise.explanation.ko || !exercise.explanation.ru)) {
       context.addIssue({
         code: "custom",

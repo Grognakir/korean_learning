@@ -650,7 +650,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I21 — Автоматический content/repository/security gate
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** перед ручным language review исключить структурные, технические и security-дефекты.
 - **Вход:** F2-I20 `done`, CP-7 принят.
 - **Ветка:** `codex/f2-i21-phase-two-quality-gate`.

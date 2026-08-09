@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - "codex/**"
       - chore/framework-quality-gate
       - chore/framework-stabilization
   pull_request:
@@ -22,7 +23,7 @@ jobs:
   checks:
     name: Static checks and build
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
 
     steps:
       - name: Check out repository
@@ -58,14 +59,53 @@ jobs:
       - name: Integration tests
         run: pnpm test:integration
 
-      - name: Content validation
-        run: pnpm content:validate && pnpm test:content
+      - name: Content validation and audit
+        run: pnpm content:validate && pnpm content:audit && pnpm test:content
+
+      - name: Secret and private-path scan
+        run: pnpm scan:secrets
+
+      - name: DTO leak scan
+        run: pnpm scan:dto-leaks
 
       - name: Build
         run: pnpm build
 
       - name: Check route bundle budgets
         run: pnpm check:bundles
+
+      - name: Performance smoke
+        env:
+          PERF_BASE_URL: http://127.0.0.1:3100
+          CONTENT_SOURCE: local
+          NEXT_PUBLIC_SUPABASE_URL: http://127.0.0.1:54321
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: e2e-ci-publishable-key
+        run: |
+          pnpm exec next start --hostname 127.0.0.1 --port 3100 &
+          server_pid=$!
+          trap 'kill $server_pid' EXIT
+          for _ in $(seq 1 60); do
+            if curl -fsS "$PERF_BASE_URL" >/dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          pnpm perf:smoke
+
+      - name: Write quality report snapshot
+        if: always()
+        run: pnpm exec tsx scripts/quality/write-phase-two-quality-report.mts --from-audit-only
+
+      - name: Upload quality artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase-two-quality
+          path: |
+            content/phase-2/content-audit-report.json
+            docs/PHASE_2_QUALITY_REPORT.md
+          if-no-files-found: ignore
+          retention-days: 14
 
   db:
     name: Supabase DB migrations and seed
@@ -114,12 +154,7 @@ jobs:
     if: >
       github.event_name == 'pull_request' ||
       github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'push' && (
-        github.ref == 'refs/heads/chore/framework-quality-gate' ||
-        github.ref == 'refs/heads/chore/framework-stabilization'
-      ))
-    # Guest e2e uses local fixtures. Public Supabase keys are still required at runtime because
-    # auth session refresh parses them on every request; values here are CI placeholders only.
+      github.event_name == 'push'
     env:
       CONTENT_SOURCE: local
       NEXT_PUBLIC_SUPABASE_URL: http://127.0.0.1:54321

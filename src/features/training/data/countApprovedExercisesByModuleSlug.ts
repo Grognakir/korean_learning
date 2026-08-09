@@ -48,6 +48,8 @@ const getCachedExerciseCounts = unstable_cache(
   },
 );
 
-export async function countApprovedExercisesByModuleSlug(): Promise<Readonly<Record<string, number>>> {
+export async function countApprovedExercisesByModuleSlug(): Promise<
+  Readonly<Record<string, number>>
+> {
   return getCachedExerciseCounts();
 }

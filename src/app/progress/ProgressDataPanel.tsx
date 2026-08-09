@@ -1,6 +1,9 @@
 import { ServiceUnavailableState } from "@/components/feedback";
 import { getServerAuthUser } from "@/features/authentication/server/getServerAuthUser";
-import { ProgressEmptyState, ProgressGuestEmptyState } from "@/features/progress/components/ProgressEmptyState";
+import {
+  ProgressEmptyState,
+  ProgressGuestEmptyState,
+} from "@/features/progress/components/ProgressEmptyState";
 import { ProgressOverview } from "@/features/progress/components/ProgressOverview";
 import { createSupabaseProgressRepository } from "@/features/progress/data/SupabaseProgressRepository";
 import { ProgressRepositoryError } from "@/features/progress/data/progressMapper";

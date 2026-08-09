@@ -17,9 +17,8 @@ async function readPublishedModules(): Promise<readonly LearningModuleDefinition
     return moduleRepository.getPublished();
   }
 
-  const { SupabaseModuleRepository } = await import(
-    "@/features/training/data/SupabaseModuleRepository"
-  );
+  const { SupabaseModuleRepository } =
+    await import("@/features/training/data/SupabaseModuleRepository");
   const repository = new SupabaseModuleRepository();
 
   try {
@@ -35,9 +34,8 @@ async function readModuleBySlug(slug: string): Promise<LearningModuleDefinition 
     return moduleRepository.getPublishedBySlug(slug);
   }
 
-  const { SupabaseModuleRepository } = await import(
-    "@/features/training/data/SupabaseModuleRepository"
-  );
+  const { SupabaseModuleRepository } =
+    await import("@/features/training/data/SupabaseModuleRepository");
   const repository = new SupabaseModuleRepository();
 
   try {
@@ -53,16 +51,16 @@ async function readExerciseCountsByModuleSlug(): Promise<Readonly<Record<string,
     const counts: Record<string, number> = {};
 
     for (const learningModule of modules) {
-      counts[learningModule.slug] = (await exerciseRepository.list({ moduleSlug: learningModule.slug }))
-        .length;
+      counts[learningModule.slug] = (
+        await exerciseRepository.list({ moduleSlug: learningModule.slug })
+      ).length;
     }
 
     return counts;
   }
 
-  const { countApprovedExercisesByModuleSlug } = await import(
-    "@/features/training/data/countApprovedExercisesByModuleSlug"
-  );
+  const { countApprovedExercisesByModuleSlug } =
+    await import("@/features/training/data/countApprovedExercisesByModuleSlug");
 
   try {
     return await countApprovedExercisesByModuleSlug();
@@ -77,9 +75,8 @@ async function readExercisesByModuleSlug(moduleSlug: string): Promise<readonly E
     return exerciseRepository.list({ moduleSlug });
   }
 
-  const { SupabaseExerciseRepository } = await import(
-    "@/features/training/data/SupabaseExerciseRepository"
-  );
+  const { SupabaseExerciseRepository } =
+    await import("@/features/training/data/SupabaseExerciseRepository");
   const repository = new SupabaseExerciseRepository();
 
   try {

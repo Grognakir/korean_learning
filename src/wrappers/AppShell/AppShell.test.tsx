@@ -5,9 +5,7 @@ import { AppShell } from "./AppShell";
 
 describe("AppShell", () => {
   it("creates the shared page landmarks", () => {
-    render(
-      <AppShell userMenu={<span>Войти</span>}>Учебное содержимое</AppShell>,
-    );
+    render(<AppShell userMenu={<span>Войти</span>}>Учебное содержимое</AppShell>);
 
     expect(screen.getByRole("banner")).toBeInTheDocument();
     expect(screen.getByRole("main")).toHaveAttribute("id", "main-content");

@@ -3,12 +3,8 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import {
-  generateStaticParams as generateTopicStaticParams,
-} from "@/app/topics/[moduleSlug]/page";
-import {
-  generateStaticParams as generateSessionStaticParams,
-} from "@/app/training/[sessionId]/page";
+import { generateStaticParams as generateTopicStaticParams } from "@/app/topics/[moduleSlug]/page";
+import { generateStaticParams as generateSessionStaticParams } from "@/app/training/[sessionId]/page";
 import { DEMO_TRAINING_SESSION_ID } from "@/features/training";
 import { composeLearningContent } from "@/modules";
 

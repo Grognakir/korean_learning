@@ -19,7 +19,9 @@ test.describe("errors and empty routes", () => {
   test("guest progress and review show safe empty states", async ({ page }) => {
     await page.goto("/progress");
     await expect(page.getByRole("heading", { level: 1, name: "Прогресс" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Войдите, чтобы видеть прогресс" })).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Войдите, чтобы видеть прогресс" }),
+    ).toBeVisible();
 
     await page.goto("/review");
     await expect(page.getByRole("heading", { level: 1, name: "Повторение" })).toBeVisible();

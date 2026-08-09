@@ -1,9 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
-import {
-  generateStaticParams as generateModuleParams,
-} from "@/app/topics/[moduleSlug]/page";
+import { generateStaticParams as generateModuleParams } from "@/app/topics/[moduleSlug]/page";
 import { ModuleDetailPanel } from "@/app/topics/[moduleSlug]/ModuleDetailPanel";
 import TopicsPage from "@/app/topics/page";
 import { TopicsCatalog } from "@/app/topics/TopicsCatalog";

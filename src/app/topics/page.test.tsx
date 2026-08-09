@@ -14,8 +14,6 @@ describe("TopicsPage", () => {
   it("renders modules from the registry", async () => {
     render(await TopicsCatalog());
 
-    expect(
-      screen.getByRole("heading", { name: "Первые шаги в корейском" }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Первые шаги в корейском" })).toBeInTheDocument();
   });
 });

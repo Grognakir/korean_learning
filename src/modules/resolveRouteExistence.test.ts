@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
 
-import { HONORIFICS_MODULE_SLUG, HONORIFICS_PREVIEW_SESSION_ID } from "./honorifics/previewConstants";
+import {
+  HONORIFICS_MODULE_SLUG,
+  HONORIFICS_PREVIEW_SESSION_ID,
+} from "./honorifics/previewConstants";
 import { isKnownContentRoute, matchContentRoute } from "./resolveRouteExistence";
 
 const PUBLISHED = new Set(["sample-module"]);
@@ -55,7 +58,10 @@ describe("isKnownContentRoute", () => {
 
   it("rejects unknown session ids", () => {
     expect(
-      isKnownContentRoute({ kind: "session", sessionId: "missing-session" }, PUBLISHED_WITH_HONORIFICS),
+      isKnownContentRoute(
+        { kind: "session", sessionId: "missing-session" },
+        PUBLISHED_WITH_HONORIFICS,
+      ),
     ).toBe(false);
   });
 });

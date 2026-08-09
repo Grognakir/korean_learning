@@ -8,7 +8,10 @@ import ProgressPage from "@/app/progress/page";
 import ReviewPage from "@/app/review/page";
 import { ModuleDetailPanel } from "@/app/topics/[moduleSlug]/ModuleDetailPanel";
 import TopicsPage from "@/app/topics/page";
-import { SessionExercisePanel, resolveSession } from "@/app/training/[sessionId]/SessionExercisePanel";
+import {
+  SessionExercisePanel,
+  resolveSession,
+} from "@/app/training/[sessionId]/SessionExercisePanel";
 import { TrainingModulesPanel } from "@/app/training/TrainingModulesPanel";
 import TrainingPage from "@/app/training/page";
 
@@ -27,14 +30,11 @@ const SYNC_STATIC_ROUTES = [
 ] as const;
 
 describe("application routes", () => {
-  it.each(STATIC_SHELL_ROUTES)(
-    "renders the %s route with one page heading",
-    (title, Page) => {
-      render(<Page />);
+  it.each(STATIC_SHELL_ROUTES)("renders the %s route with one page heading", (title, Page) => {
+    render(<Page />);
 
-      expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
-    },
-  );
+    expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
+  });
 
   it("renders the progress route for guests", async () => {
     render(<ProgressPage />);

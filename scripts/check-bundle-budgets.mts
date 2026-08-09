@@ -100,7 +100,10 @@ function main(): void {
     }
 
     const chunkNames = chunkNamesFromManifest(manifestPath);
-    const totalGzip = chunkNames.reduce((sum, chunkName) => sum + (chunkSizes.get(chunkName) ?? 0), 0);
+    const totalGzip = chunkNames.reduce(
+      (sum, chunkName) => sum + (chunkSizes.get(chunkName) ?? 0),
+      0,
+    );
     reportLines.push(
       `- ${route}: ${Math.round(totalGzip / 1024)} KB gzip (budget ${Math.round(budget / 1024)} KB)`,
     );

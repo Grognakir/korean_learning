@@ -1,6 +1,9 @@
 import { DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
 
-import { HONORIFICS_MODULE_SLUG, HONORIFICS_PREVIEW_SESSION_ID } from "./honorifics/previewConstants";
+import {
+  HONORIFICS_MODULE_SLUG,
+  HONORIFICS_PREVIEW_SESSION_ID,
+} from "./honorifics/previewConstants";
 
 export type ContentRoute =
   | { readonly kind: "module"; readonly slug: string }

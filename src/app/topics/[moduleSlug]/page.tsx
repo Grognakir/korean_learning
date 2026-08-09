@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 
 import { CatalogSectionSkeleton } from "@/components/feedback";
-import { getCachedPublishedModules, getCachedPublishedModuleBySlug } from "@/modules/cachedLearningContent";
+import {
+  getCachedPublishedModules,
+  getCachedPublishedModuleBySlug,
+} from "@/modules/cachedLearningContent";
 import type { LearningModuleDefinition } from "@/types";
 
 import { ModuleDetailPanel } from "./ModuleDetailPanel";

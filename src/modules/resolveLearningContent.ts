@@ -48,7 +48,8 @@ async function createSupabaseModuleRepository(): Promise<{
   readonly modules: readonly LearningModuleDefinition[];
   readonly learningModuleRegistry: ModuleRegistry;
 }> {
-  const { SupabaseModuleRepository } = await import("@/features/training/data/SupabaseModuleRepository");
+  const { SupabaseModuleRepository } =
+    await import("@/features/training/data/SupabaseModuleRepository");
   const moduleRepository = new SupabaseModuleRepository();
   const modules = await moduleRepository.getAll();
   const learningModuleRegistry = new ModuleRegistry(modules);
@@ -64,9 +65,8 @@ async function createSupabaseExerciseRepository(): Promise<{
   readonly exerciseRepository: ExerciseRepository;
   readonly exercises: readonly Exercise[];
 }> {
-  const { SupabaseExerciseRepository } = await import(
-    "@/features/training/data/SupabaseExerciseRepository"
-  );
+  const { SupabaseExerciseRepository } =
+    await import("@/features/training/data/SupabaseExerciseRepository");
   const exerciseRepository = new SupabaseExerciseRepository();
   const exercises = await exerciseRepository.list();
 
@@ -91,11 +91,9 @@ async function composeSupabaseContent(): Promise<LearningContentComposition> {
 let cachedLocalComposition: LearningContentComposition | undefined;
 let cachedSupabaseComposition: Promise<LearningContentComposition> | undefined;
 let cachedSupabaseModuleContent:
-  | Promise<Awaited<ReturnType<typeof createSupabaseModuleRepository>>>
-  | undefined;
+  Promise<Awaited<ReturnType<typeof createSupabaseModuleRepository>>> | undefined;
 let cachedSupabaseExerciseContent:
-  | Promise<Awaited<ReturnType<typeof createSupabaseExerciseRepository>>>
-  | undefined;
+  Promise<Awaited<ReturnType<typeof createSupabaseExerciseRepository>>> | undefined;
 let cachedSupabaseExerciseCounts: Promise<Readonly<Record<string, number>>> | undefined;
 
 export function composeLearningContent(
@@ -185,9 +183,8 @@ export async function getExerciseContent(
 }
 
 async function loadSupabaseExerciseCounts(): Promise<Readonly<Record<string, number>>> {
-  const { countApprovedExercisesByModuleSlug } = await import(
-    "@/features/training/data/countApprovedExercisesByModuleSlug"
-  );
+  const { countApprovedExercisesByModuleSlug } =
+    await import("@/features/training/data/countApprovedExercisesByModuleSlug");
 
   return countApprovedExercisesByModuleSlug();
 }
@@ -206,7 +203,8 @@ export async function getExerciseCountByModuleSlug(
   if (!cachedSupabaseExerciseCounts) {
     cachedSupabaseExerciseCounts = loadSupabaseExerciseCounts().catch((error: unknown) => {
       cachedSupabaseExerciseCounts = undefined;
-      const message = error instanceof Error ? error.message : "Unknown Supabase exercise count error.";
+      const message =
+        error instanceof Error ? error.message : "Unknown Supabase exercise count error.";
       throw new LearningContentError(message);
     });
   }

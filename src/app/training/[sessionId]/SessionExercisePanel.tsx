@@ -105,10 +105,7 @@ export async function SessionExercisePanel({ session }: SessionExercisePanelProp
   if (publicExercises.length === 0) {
     return (
       <>
-        <PageHeader
-          description="Для выбранной сессии сейчас нет заданий."
-          title="Учебная сессия"
-        />
+        <PageHeader description="Для выбранной сессии сейчас нет заданий." title="Учебная сессия" />
         <ExercisesEmptyState />
       </>
     );

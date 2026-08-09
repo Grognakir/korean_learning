@@ -222,8 +222,7 @@ function TrainingSessionRuntime({
 
   const positionLabel = `Задание ${session.progress.current} из ${session.progress.total}`;
   const completionLabel = `Выполнено заданий: ${session.progress.answeredCount} из ${session.progress.total}`;
-  const inputsDisabled =
-    session.hasAnsweredCurrent || session.isSubmitting || cloudNotReady;
+  const inputsDisabled = session.hasAnsweredCurrent || session.isSubmitting || cloudNotReady;
   const instruction = exerciseInstruction(session.currentExerciseView);
 
   function submitAnswer() {
@@ -322,7 +321,11 @@ function TrainingSessionRuntime({
                 Дальше
               </Button>
             ) : (
-              <Button disabled={!session.canSubmit || cloudNotReady} onClick={submitAnswer} type="button">
+              <Button
+                disabled={!session.canSubmit || cloudNotReady}
+                onClick={submitAnswer}
+                type="button"
+              >
                 Ответить
               </Button>
             )}

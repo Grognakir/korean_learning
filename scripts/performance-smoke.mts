@@ -75,7 +75,12 @@ async function main(): Promise<void> {
         violations.push(`${route.path} returned ${sample.status}`);
       }
 
-      if (!route.expectRedirect && sample.status >= 400 && sample.status !== 401 && sample.status !== 403) {
+      if (
+        !route.expectRedirect &&
+        sample.status >= 400 &&
+        sample.status !== 401 &&
+        sample.status !== 403
+      ) {
         violations.push(`${route.path} returned unexpected status ${sample.status}`);
       }
     }

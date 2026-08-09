@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I33 завершены локально; CP-1A/CP-2/CP-3/CP-4 приняты; CP-5 ждёт push/CI/preview.
+- **Общее состояние:** F1-I01–F1-I33 на ветке стабилизации; CP-1A/CP-2/CP-3/CP-4 приняты; CP-5 открыт (CI зелёный, Preview SSO).
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса (стабилизация).
-- **Текущая итерация:** F1-I33 stabilize learning application framework — локально `done`, CP-5 открыт.
-- **Статус текущей итерации:** локальный DoD выполнен; push `chore/framework-stabilization` только по разрешению.
-- **Уже сделано:** удалён временный preview 높임말 (F1-I17A) и development composition; composition всегда sample/production; три последовательных full gate зелёные.
-- **Выполненные проверки:** 3× format/lint/typecheck/309 unit/17 integration/20 e2e/16 db/10 rls/build/bundles.
-- **Сейчас работает:** каркас фазы 1 без draft honorifics; `/training/honorifics-preview` → 404; review/progress/training на sample + demo-session.
-- **Пока не работает:** внешний CI и Preview smoke этой ветки (нужен push); CP-5 не закрыт.
-- **Следующий конкретный шаг:** после разрешения — push `chore/framework-stabilization` → зелёный CI → Preview smoke → CP-5 отчёт. Production launch / phase 2 не начинать без явного решения.
-- **Блокирующие вопросы:** разрешить ли push ветки `chore/framework-stabilization`?
+- **Текущая итерация:** F1-I33 stabilize learning application framework — push+CI `done`, CP-5 не принят.
+- **Статус текущей итерации:** ветка запушена; внешний CI зелёный; automated Preview smoke блокирован Vercel SSO.
+- **Уже сделано:** удалён preview 높임말; CI e2e получает `CONTENT_SOURCE=local` + placeholder public Supabase env; 3× local full gate.
+- **Выполненные проверки:** local 3× 309 unit/17 integration/20 e2e/16 db/10 rls/build/bundles; CI run `31312096968` (checks+db/rls+e2e) success.
+- **Сейчас работает:** каркас без draft honorifics; checkpoint CI полный; Preview Ready.
+- **Пока не работает:** unauthenticated Preview HTTP smoke (Vercel Deployment Protection → SSO); CP-5 не закрыт.
+- **Следующий конкретный шаг:** ручной Preview smoke после SSO / bypass secret / ослабления Protection → принятие CP-5. Merge/production/phase 2 не начинать без явного решения.
+- **Блокирующие вопросы:** как пройти Preview smoke (ручной SSO / bypass / принять ограничение как в F1-I24)?
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.
 - **Последнее обновление:** 2026-08-09.

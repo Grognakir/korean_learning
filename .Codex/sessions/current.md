@@ -4,30 +4,37 @@
 
 ## Чем занимаемся
 
-F1-I33 (стабилизация фазы 1) выполнен локально на ветке `chore/framework-stabilization`. Preview honorifics удалён; три последовательных full gate зелёные. Push / внешний CI / Preview smoke / CP-5 — только после явного разрешения.
+F1-I33: локально + push + внешний CI зелёные. Preview Ready, но Deployment Protection (Vercel SSO) блокирует автоматизированный HTTP smoke. CP-5 ждёт ручного smoke / bypass / принятия ограничения.
 
-## F1-I33 — результат
+## Коммиты
 
-- Удалены `src/modules/honorifics/**` и `composeDevelopmentContent.ts`.
-- Composition всегда production/sample; `/training/honorifics-preview` → 404.
-- Static params сессии — только `demo-session`.
-- Регрессионные проверки: unit/route + e2e 404 + production-build exclusion.
+- `9586d4f` — `chore: stabilize learning application framework`
+- `3f1f63c` — `fix: supply local Supabase placeholders for CI e2e`
 
-## Gate (локально, 3× подряд)
+Ветка: `chore/framework-stabilization` (pushed).
 
-- format / lint / typecheck green
-- unit 309, integration 17, e2e 20, db 16, rls 10
-- build + bundle budgets
-- Node caveat: shell сейчас Node v22.15.0 (wanted 24.18.0); ранее согласовано продолжать с этим предупреждением
+## Внешний CI
+
+- Run: https://github.com/Grognakir/korean_learning/actions/runs/31312096968
+- Static checks and build ✓
+- Supabase DB migrations and seed ✓
+- Playwright e2e ✓
+
+## Preview
+
+- Deployment: https://korean-learning-jbzevla4e-grognakirs-projects.vercel.app
+- Branch alias: https://korean-learning-git-chore-framework-5aaae0-grognakirs-projects.vercel.app
+- Dashboard: https://vercel.com/grognakirs-projects/korean-learning/32RPX1iiimMNvfBQ2WJgtuQkFYbc
+- Status: Ready; unauthenticated curl → Vercel SSO login
 
 ## Открытые задачи
 
-- [ ] Push `chore/framework-stabilization` — только по разрешению
-- [ ] Дождаться зелёного внешнего CI (включая DB/RLS)
-- [ ] Preview smoke matrix + CP-5 отчёт
-- [ ] Не начинать production launch / phase 2 без явного решения
+- [ ] Preview smoke matrix (нужен browser SSO login, `VERCEL_AUTOMATION_BYPASS_SECRET`, или ослабление Protection)
+- [ ] Принятие CP-5 пользователем
+- [ ] Не merge в `main` / production launch / phase 2 без явного решения
 
 ## Известные ограничения
 
-- Production catalog в remote Supabase — только published `sample-module`.
-- CP-5 незавершён до push + CI + preview smoke + принятия пользователем.
+- Preview SSO как в F1-I24 risk note.
+- Production catalog remote — только `sample-module`.
+- Shell Node v22.15.0 vs wanted 24.18.0 (локальный caveat).

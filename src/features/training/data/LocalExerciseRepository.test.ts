@@ -15,8 +15,8 @@ describe("LocalExerciseRepository", () => {
     const repository = createRepository();
     const exercises = await repository.list();
 
-    expect(exercises).toHaveLength(14);
-    expect(new Set(exercises.map((exercise) => exercise.id))).toHaveLength(14);
+    expect(exercises).toHaveLength(16);
+    expect(new Set(exercises.map((exercise) => exercise.id))).toHaveLength(16);
 
     for (const type of EXERCISE_TYPE_IDS) {
       expect(await repository.list({ types: [type] })).toHaveLength(2);
@@ -28,7 +28,7 @@ describe("LocalExerciseRepository", () => {
     const firstExercise = sampleExercises[0];
 
     expect((await repository.getById(firstExercise.id))?.logicalId).toBe(firstExercise.logicalId);
-    expect(await repository.list({ moduleSlug: sampleModule.slug })).toHaveLength(14);
+    expect(await repository.list({ moduleSlug: sampleModule.slug })).toHaveLength(16);
     expect(await repository.list({ topicIds: [sampleModule.topics[0].id] })).toHaveLength(4);
     expect(await repository.list({ difficulties: ["hard"] })).toHaveLength(0);
   });

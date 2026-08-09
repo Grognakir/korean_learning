@@ -40,6 +40,7 @@ const exerciseTypeSchema = z.enum([
   "meaning-choice",
   "honorific-choice",
   "plain-choice",
+  "single-choice",
   "matching-translation",
   "matching-honorific",
   "fill-blank",
@@ -157,16 +158,24 @@ function distributeBlankAcceptedAnswers(
   }));
 }
 
+export type ExercisePassageRowInput = {
+  readonly logicalId: string;
+  readonly titleKo: string | null;
+  readonly titleRu: string | null;
+  readonly bodyKo: string;
+};
+
 export type MapExerciseRowInput = {
   readonly row: ExerciseRow;
   readonly moduleSlug: string;
   readonly topicRows: readonly ExerciseTopicRow[];
   readonly optionRows: readonly ExerciseOptionRow[];
   readonly acceptedAnswerRows: readonly AcceptedAnswerRow[];
+  readonly passage?: ExercisePassageRowInput | null;
 };
 
 export function mapExerciseRow(input: MapExerciseRowInput): Exercise {
-  const { row, moduleSlug, topicRows, optionRows, acceptedAnswerRows } = input;
+  const { row, moduleSlug, topicRows, optionRows, acceptedAnswerRows, passage = null } = input;
   const exerciseId = row.id;
 
   try {
@@ -222,6 +231,34 @@ export function mapExerciseRow(input: MapExerciseRowInput): Exercise {
           type,
           options,
           correctOptionId: correctOption.option_key,
+        });
+      }
+      case "single-choice": {
+        choicePayloadSchema.parse(payload);
+        const correctOption =
+          optionRows.find((option) => option.exercise_id === exerciseId && option.is_correct) ??
+          null;
+
+        if (!correctOption) {
+          throw new ExerciseMapperError(exerciseId, "Choice exercise is missing a correct option.");
+        }
+
+        if (passage && passage.bodyKo.trim().length === 0) {
+          throw new ExerciseMapperError(exerciseId, "Reading passage body must not be empty.");
+        }
+
+        return parseExerciseDefinition({
+          ...base,
+          type,
+          options,
+          correctOptionId: correctOption.option_key,
+          passage: passage
+            ? {
+                logicalId: passage.logicalId,
+                title: toExerciseText(passage.titleKo, passage.titleRu),
+                bodyKo: passage.bodyKo,
+              }
+            : null,
         });
       }
       case "matching-translation":

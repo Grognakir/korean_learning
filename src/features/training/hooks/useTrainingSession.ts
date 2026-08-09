@@ -115,6 +115,7 @@ function createInitialDraft(exercise: PublicExercise | null): AnswerDraft | null
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return { kind: "choice", optionId: null };
     case "fill-blank":
       return {
@@ -162,7 +163,8 @@ function buildSubmission(exercise: PublicExercise, draft: AnswerDraft): AnswerSu
     }
     case "meaning-choice":
     case "honorific-choice":
-    case "plain-choice": {
+    case "plain-choice":
+    case "single-choice": {
       if (draft.kind !== "choice" || !draft.optionId) {
         return null;
       }

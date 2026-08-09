@@ -14,7 +14,7 @@ const isoDateTimeSchema = z.string().datetime({ offset: true });
 
 const choiceSubmissionSchema = z.strictObject({
   exerciseId: z.uuid(),
-  type: z.enum(["meaning-choice", "honorific-choice", "plain-choice"]),
+  type: z.enum(["meaning-choice", "honorific-choice", "plain-choice", "single-choice"]),
   optionId: z.string().min(1),
 });
 
@@ -95,7 +95,7 @@ const evaluationBaseShape = {
 
 const choiceEvaluationSchema = z.strictObject({
   ...evaluationBaseShape,
-  type: z.enum(["meaning-choice", "honorific-choice", "plain-choice"]),
+  type: z.enum(["meaning-choice", "honorific-choice", "plain-choice", "single-choice"]),
   submission: choiceSubmissionSchema,
 });
 

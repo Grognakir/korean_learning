@@ -1,0 +1,27 @@
+.passage {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+  max-width: 40rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted, #f7f4ee);
+}
+
+.title {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  text-wrap: wrap;
+}
+
+.body {
+  margin: 0;
+  max-width: 38rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}

@@ -180,6 +180,7 @@
 | `DictionaryFilters` `.filters` / `.field`          | label+Select колонка; фильтры в ряду — вертикальный низ/`align-items: end`                                                                                                |
 | `DictionaryEntryList` `.head` / `.pager` / desktop | lemma+sense вертикальный центр; pager links вертикальный центр; desktop card columns `align-items: center`                                                                |
 | `TrainingSetupControls` `.skills` / `.filters`     | skill buttons равной высоты; filter label+Select; CTA slot фиксированной min-height                                                                                       |
+| `ReadingPassage` `.passage` / `.title`             | title+body колонка; Korean body `lang=ko`; без nested scroll                                                                                                              |
 
 **Исключения** перечислять явно в таблице выше; молчаливый «оставил baseline/end потому что красивее» запрещён без записи здесь.
 

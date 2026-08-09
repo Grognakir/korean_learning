@@ -68,6 +68,18 @@ const plainChoiceExercise = {
   correctOptionId: "option-two",
 } as const;
 
+const singleChoiceExercise = {
+  ...baseExercise,
+  type: "single-choice",
+  options,
+  correctOptionId: "option-one",
+  passage: {
+    logicalId: "sample-reading-intro",
+    title: { ko: "자기소개", ru: "Самопредставление" },
+    bodyKo: "안녕하세요? 저는 왕루입니다.",
+  },
+} as const;
+
 const matchingTranslationExercise = {
   ...baseExercise,
   type: "matching-translation",
@@ -95,6 +107,7 @@ const exercisesByType: Record<ExerciseTypeId, unknown> = {
   "meaning-choice": meaningChoiceExercise,
   "honorific-choice": honorificChoiceExercise,
   "plain-choice": plainChoiceExercise,
+  "single-choice": singleChoiceExercise,
   "matching-translation": matchingTranslationExercise,
   "matching-honorific": matchingHonorificExercise,
   "fill-blank": fillBlankExercise,
@@ -109,6 +122,19 @@ describe("exerciseDefinitionSchema", () => {
     const result = exerciseDefinitionSchema.safeParse({
       ...meaningChoiceExercise,
       options: [options[0], { ...options[1], label: options[0].label }],
+    });
+
+    expect(result.success).toBe(false);
+  });
+
+  it("rejects an empty reading passage body on single-choice", () => {
+    const result = exerciseDefinitionSchema.safeParse({
+      ...singleChoiceExercise,
+      passage: {
+        logicalId: "sample-reading-intro",
+        title: { ko: "자기소개", ru: "Самопредставление" },
+        bodyKo: "   ",
+      },
     });
 
     expect(result.success).toBe(false);

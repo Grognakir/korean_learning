@@ -5,7 +5,12 @@ import type { Exercise } from "@/features/training/domain/exercise";
 import { sampleExercises } from "@/modules/sample/sampleExercises";
 import { sampleModule } from "@/modules/sample/sampleModule";
 
-import { buildCurriculumSeedSql, sqlJson, sqlString } from "./content/curriculumSeedSql";
+import {
+  buildCurriculumSeedSql,
+  sqlJson,
+  sqlString,
+  uuidFromKey,
+} from "./content/curriculumSeedSql";
 
 const lines: string[] = [
   "-- Deterministic dev seed: sample module (F1) + phase-2 curriculum authoring (F2-I08).",
@@ -63,6 +68,7 @@ function exercisePayload(exercise: Exercise): Record<string, unknown> {
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return {
         correctOptionId: exercise.correctOptionId,
         optionIds: exercise.options.map((o) => o.id),
@@ -84,8 +90,40 @@ function exercisePayload(exercise: Exercise): Record<string, unknown> {
   }
 }
 
+const samplePassageIds = new Map<string, string>();
+for (const exercise of sampleExercises) {
+  if (exercise.type === "single-choice" && exercise.passage) {
+    const passageId = uuidFromKey(
+      `sample-passage:${exercise.passage.logicalId}@${exercise.contentVersion}`,
+    );
+    if (!samplePassageIds.has(exercise.passage.logicalId)) {
+      samplePassageIds.set(exercise.passage.logicalId, passageId);
+      lines.push(
+        `insert into public.reading_passages (`,
+        `  id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version`,
+        `) values (`,
+        `  '${passageId}',`,
+        `  ${sqlString(exercise.passage.logicalId)},`,
+        `  '${sampleModule.id}',`,
+        `  ${sqlString(exercise.passage.title.ko)},`,
+        `  ${sqlString(exercise.passage.title.ru)},`,
+        `  ${sqlString(exercise.passage.bodyKo)},`,
+        `  'published',`,
+        `  '${exercise.contentVersion}'`,
+        `);`,
+        "",
+      );
+    }
+  }
+}
+
 for (const exercise of sampleExercises) {
   const primaryTopicId = exercise.topicIds[0];
+  const passageId =
+    exercise.type === "single-choice" && exercise.passage
+      ? (samplePassageIds.get(exercise.passage.logicalId) ?? null)
+      : null;
+  const learningSkill = passageId ? "reading" : "grammar";
   lines.push(
     `insert into public.exercises (`,
     `  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,`,
@@ -95,8 +133,8 @@ for (const exercise of sampleExercises) {
     `  '${exercise.logicalId}',`,
     `  '${sampleModule.id}',`,
     `  '${primaryTopicId}',`,
-    `  'grammar',`,
-    `  null,`,
+    `  '${learningSkill}',`,
+    `  ${passageId ? `'${passageId}'` : "null"},`,
     `  '${exercise.type}',`,
     `  '${exercise.difficulty}',`,
     `  ${sqlString(exercise.prompt.ko)},`,

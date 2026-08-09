@@ -56,6 +56,19 @@ insert into public.grammar_topics (
   null
 );
 
+insert into public.reading_passages (
+  id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version
+) values (
+  '3e8c8c07-308c-4e6e-9646-d8084e8b7e6c',
+  'sample-reading-intro',
+  'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
+  '자기소개',
+  'Самопредставление',
+  '안녕하세요? 저는 왕루입니다. 학교에 갑니다.',
+  'published',
+  '1.0.0'
+);
+
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
@@ -754,6 +767,130 @@ insert into public.content_reviews (
 ) values (
   'exercise',
   '9a8f240a-a5ea-4d83-86d2-f9b69fc740d3',
+  '1.0.0',
+  'seed',
+  'approved',
+  'Sample seed approval'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '6c2f0b8e-5d41-4a7a-9f11-2b8f6d9e4a01',
+  'single-choice-copula',
+  'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
+  '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
+  'single-choice',
+  'easy',
+  '알맞은 것을 고르십시오.',
+  'Выберите подходящую форму.',
+  '{"correctOptionId":"imnida","optionIds":["imnida","ieyo"]}'::jsonb,
+  'В формальном стиле используется 입니다.',
+  'approved',
+  '1.0.0',
+  'manual'
+);
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('6c2f0b8e-5d41-4a7a-9f11-2b8f6d9e4a01', '4ded8be2-7e86-4d25-80d0-c0f0e277324f', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  gen_random_uuid(),
+  '6c2f0b8e-5d41-4a7a-9f11-2b8f6d9e4a01',
+  'imnida',
+  '입니다',
+  null,
+  '{}'::jsonb,
+  true,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  gen_random_uuid(),
+  '6c2f0b8e-5d41-4a7a-9f11-2b8f6d9e4a01',
+  'ieyo',
+  '이에요',
+  null,
+  '{}'::jsonb,
+  false,
+  1
+);
+
+insert into public.content_reviews (
+  entity_type, entity_id, content_version, reviewer_label, decision, notes
+) values (
+  'exercise',
+  '6c2f0b8e-5d41-4a7a-9f11-2b8f6d9e4a01',
+  '1.0.0',
+  'seed',
+  'approved',
+  'Sample seed approval'
+);
+
+insert into public.exercises (
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
+  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
+) values (
+  '7d3a1c9f-6e52-4b8b-8012-3c9a7e0f5b12',
+  'single-choice-reading-intro',
+  'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
+  '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'reading',
+  '3e8c8c07-308c-4e6e-9646-d8084e8b7e6c',
+  'single-choice',
+  'medium',
+  '무엇에 대한 이야기입니까?',
+  'О чём этот текст?',
+  '{"correctOptionId":"intro","optionIds":["food","intro"]}'::jsonb,
+  'Текст — короткое самопредставление.',
+  'approved',
+  '1.0.0',
+  'manual'
+);
+
+insert into public.exercise_topics (exercise_id, topic_id, role)
+values ('7d3a1c9f-6e52-4b8b-8012-3c9a7e0f5b12', '4ded8be2-7e86-4d25-80d0-c0f0e277324f', 'primary')
+on conflict do nothing;
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  gen_random_uuid(),
+  '7d3a1c9f-6e52-4b8b-8012-3c9a7e0f5b12',
+  'food',
+  '음식',
+  'еда',
+  '{}'::jsonb,
+  false,
+  0
+);
+
+insert into public.exercise_options (
+  id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
+) values (
+  gen_random_uuid(),
+  '7d3a1c9f-6e52-4b8b-8012-3c9a7e0f5b12',
+  'intro',
+  '자기소개',
+  'самопредставление',
+  '{}'::jsonb,
+  true,
+  1
+);
+
+insert into public.content_reviews (
+  entity_type, entity_id, content_version, reviewer_label, decision, notes
+) values (
+  'exercise',
+  '7d3a1c9f-6e52-4b8b-8012-3c9a7e0f5b12',
   '1.0.0',
   'seed',
   'approved',

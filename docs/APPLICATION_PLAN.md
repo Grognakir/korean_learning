@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I13 `done`; CP-6 принят).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I14 `done`; CP-6 принят).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I13 skill based training setup — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i13-training-setup`.
-- **Уже сделано:** `/training` skill/unit/grammar/difficulty/size setup + validated request DTO; CTA preview disabled до F2-I18; demo escape hatch.
+- **Текущая итерация:** F2-I14 single-choice + reading presentation — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i14-single-choice-reading`.
+- **Уже сделано:** domain/Zod/checker/public DTO/renderer для `single-choice`; `ReadingPassage` над prompt; sample reading exercise + seed.
 - **Выполненные проверки:** unit/integration/lint/typecheck/build (gate итерации).
-- **Сейчас работает:** детерминированный TrainingSetupRequest для grammar/vocabulary/reading.
-- **Пока не работает / ограничения:** создание отфильтрованной сессии (F2-I18); single-choice/reading renderer (F2-I14); curriculum draft → Supabase public lists пустые до publish.
-- **Следующий конкретный шаг:** F2-I14 — single choice + reading presentation.
+- **Сейчас работает:** reading single-choice с пассажем в demo/local; shuffle options по seed.
+- **Пока не работает / ограничения:** grammar exercise bank (F2-I15); filtered session creation (F2-I18); curriculum draft → Supabase public lists пустые до publish.
+- **Следующий конкретный шаг:** F2-I15 — minimal grammar exercise bank.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

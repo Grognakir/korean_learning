@@ -520,7 +520,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I14 — Общий single-choice и чтение в renderer
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** поддержать общие вопросы грамматики/чтения без злоупотребления meaning/honorific types.
 - **Вход:** F2-I13 `done`.
 - **Ветка:** `codex/f2-i14-single-choice-reading`.

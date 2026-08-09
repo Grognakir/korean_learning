@@ -56,7 +56,8 @@ describe("TrainingSession persistence", () => {
     } else if (
       current.type === "meaning-choice" ||
       current.type === "honorific-choice" ||
-      current.type === "plain-choice"
+      current.type === "plain-choice" ||
+      current.type === "single-choice"
     ) {
       submission = {
         exerciseId: current.id,

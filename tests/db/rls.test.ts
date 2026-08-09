@@ -18,8 +18,8 @@ describe("RLS content visibility", () => {
   it("allows anon to read published content tables", async () => {
     await expectSelectCount(anon, "learning_modules", 1);
     await expectSelectCount(anon, "grammar_topics", 2);
-    await expectSelectCount(anon, "exercises", 14);
-    await expectSelectCount(anon, "exercise_topics", 14);
+    await expectSelectCount(anon, "exercises", 16);
+    await expectSelectCount(anon, "exercise_topics", 16);
   });
 
   it("hides draft modules from anon", async () => {
@@ -197,7 +197,7 @@ describe("RLS user isolation", () => {
 describe("RLS trusted server access", () => {
   it("allows service role to read protected tables", async () => {
     const admin = createLocalAdminClient();
-    await expectSelectCount(admin, "exercise_options", 412);
+    await expectSelectCount(admin, "exercise_options", 416);
     await expectSelectCount(admin, "accepted_answers", 4);
     await expectSelectCount(admin, "content_reviews", 15);
     await expectSelectCount(admin, "content_sources", 4);
@@ -212,7 +212,8 @@ describe("RLS curriculum skill tables", () => {
       "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('22222222-2222-4222-8222-222222222222', 'reading.sample.draft', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'draft-ko', 'draft', 'body', 'draft', '1.0.0');",
     );
 
-    await expectSelectCount(anon, "reading_passages", 0);
+    // Seed already includes one published sample passage; drafts stay hidden.
+    await expectSelectCount(anon, "reading_passages", 1);
     await expectSelectDenied(anon, "content_sources");
     await expectSelectDenied(anon, "content_provenance");
   });
@@ -222,7 +223,7 @@ describe("RLS curriculum skill tables", () => {
       "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('33333333-3333-4333-8333-333333333333', 'reading.sample.published', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'title-ko', 'passage', 'hello', 'published', '1.0.0');",
     );
 
-    await expectSelectCount(anon, "reading_passages", 1);
+    await expectSelectCount(anon, "reading_passages", 2);
   });
 
   it("isolates user_skill_progress between users", async () => {

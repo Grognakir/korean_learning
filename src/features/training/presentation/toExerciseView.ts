@@ -34,11 +34,18 @@ export type FreeResponseExerciseView = {
   readonly answerLanguage: SupportedLanguage;
 };
 
+export type ExercisePassageView = {
+  readonly logicalId: string;
+  readonly title: ExerciseTextView;
+  readonly bodyKo: string;
+};
+
 export type ChoiceExerciseView = {
   readonly id: string;
-  readonly type: "meaning-choice" | "honorific-choice" | "plain-choice";
+  readonly type: "meaning-choice" | "honorific-choice" | "plain-choice" | "single-choice";
   readonly prompt: ExerciseTextView;
   readonly options: readonly ChoiceOptionView[];
+  readonly passage: ExercisePassageView | null;
 };
 
 export type FillBlankExerciseView = {
@@ -151,7 +158,28 @@ export function toExerciseView(
           id: option.id,
           label: toExerciseTextView(option.label),
         })),
+        passage: null,
       };
+    case "single-choice": {
+      const seed = options.seed ?? 0;
+      const mappedOptions = exercise.options.map((option) => ({
+        id: option.id,
+        label: toExerciseTextView(option.label),
+      }));
+      return {
+        id: exercise.id,
+        type: exercise.type,
+        prompt,
+        options: seededShuffle(mappedOptions, seed ^ hashString(exercise.id)),
+        passage: exercise.passage
+          ? {
+              logicalId: exercise.passage.logicalId,
+              title: toExerciseTextView(exercise.passage.title),
+              bodyKo: exercise.passage.bodyKo,
+            }
+          : null,
+      };
+    }
     case "fill-blank": {
       const segments = parseFillBlankTemplate(exercise.template);
 

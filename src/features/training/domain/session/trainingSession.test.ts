@@ -41,6 +41,7 @@ function correctSubmission(exercise: Exercise) {
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return {
         exerciseId: exercise.id,
         type: exercise.type,
@@ -78,7 +79,8 @@ function incorrectSubmission(exercise: Exercise) {
       } as const;
     case "meaning-choice":
     case "honorific-choice":
-    case "plain-choice": {
+    case "plain-choice":
+    case "single-choice": {
       const wrong = exercise.options.find((option) => option.id !== exercise.correctOptionId)!;
       return {
         exerciseId: exercise.id,

@@ -72,6 +72,18 @@ export type PlainChoiceExercise = ExerciseBase<"plain-choice"> & {
   readonly correctOptionId: string;
 };
 
+export type ExercisePassageSnapshot = {
+  readonly logicalId: string;
+  readonly title: ExerciseText;
+  readonly bodyKo: string;
+};
+
+export type SingleChoiceExercise = ExerciseBase<"single-choice"> & {
+  readonly options: readonly ExerciseOption[];
+  readonly correctOptionId: string;
+  readonly passage: ExercisePassageSnapshot | null;
+};
+
 export type MatchingTranslationExercise = ExerciseBase<"matching-translation"> & {
   readonly pairs: readonly MatchingPair[];
 };
@@ -86,7 +98,8 @@ export type FillBlankExercise = ExerciseBase<"fill-blank"> & {
   readonly blanks: readonly FillBlankDefinition[];
 };
 
-export type ChoiceExercise = MeaningChoiceExercise | HonorificChoiceExercise | PlainChoiceExercise;
+export type ChoiceExercise =
+  MeaningChoiceExercise | HonorificChoiceExercise | PlainChoiceExercise | SingleChoiceExercise;
 
 export type MatchingExercise = MatchingTranslationExercise | MatchingHonorificExercise;
 

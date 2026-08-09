@@ -90,6 +90,22 @@ export async function getCachedPublicDictionary(
   });
 }
 
+export async function getCachedPublicDictionaryPage(query: {
+  readonly unitSlug?: string;
+  readonly pos?: string;
+  readonly page?: number;
+  readonly pageSize?: number;
+}) {
+  "use cache";
+  cacheTag("curriculum-dictionary");
+  cacheLife("learningContent");
+
+  return readSafe(async () => {
+    const { dictionaryRepository } = await getCurriculumRepositories();
+    return dictionaryRepository.listPage(query);
+  });
+}
+
 export async function getCachedPublicPassages(
   unitSlug?: string,
 ): Promise<ContentResult<readonly PublicReadingPassage[]>> {

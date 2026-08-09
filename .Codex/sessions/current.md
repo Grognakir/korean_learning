@@ -4,21 +4,21 @@
 
 ## Чем занимаемся
 
-F2-I11 выполнен. Следующая карточка — F2-I12 (dictionary catalog).
+F2-I12 выполнен. Следующая карточка — F2-I13 (skill based training setup).
 
-## F2-I11 — результат
+## F2-I12 — результат
 
-- `/topics/[moduleSlug]` показывает curriculum unit detail или sample module
-- Grammar detail через query route `?grammar=<logicalId>` (стабильно с F2-I10)
-- Actions → `/training?skill=&unit=[&grammar=]`; disabled без approved exercises
-- Proxy/slug cache включает published curriculum unit slugs
-- Draft detail скрыт; examples placeholder без review notes
+- `/dictionary` показывает published senses
+- Custom filters: unit + POS (Select), URL `?unit=&pos=&page=`
+- Homonym labels по senseKey; pagination server-side
+- Полнотекстовый поиск не рисуется (отложен)
+- Fixture: второй sense `안녕` для homonym tests
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i11-content-details`
-- Commit: `feat: add curriculum detail pages`
+- Branch: `codex/f2-i12-dictionary-catalog`
+- Commit: `feat: add themed Korean dictionary`
 
 ## Следующий шаг
 
-F2-I12 — themed Korean dictionary.
+F2-I13 — skill based training setup.

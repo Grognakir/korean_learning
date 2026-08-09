@@ -275,6 +275,11 @@ const existingProvenance = JSON.parse(
 const dictionaryProvenance = existingProvenance.items.filter((row) =>
   row.subjectLogicalId.startsWith("dict."),
 );
+const preservedExerciseProvenance = existingProvenance.items.filter(
+  (row) =>
+    row.subjectLogicalId.startsWith("exercise.grammar.") ||
+    row.subjectLogicalId.startsWith("exercise.vocabulary."),
+);
 
 const provenance = {
   schemaVersion: "phase-2.v1",
@@ -310,6 +315,7 @@ const provenance = {
       sourceRefs: exercise.sourceRefs,
       notes: "Draft reading exercise from derived HTML; answers kept in authoring JSON only.",
     })),
+    ...preservedExerciseProvenance,
   ],
 };
 

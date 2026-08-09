@@ -375,10 +375,16 @@ export function buildCurriculumSeedSql(
 
     const status = mapExerciseStatus(exercise.status);
     const difficulty = mapDifficulty(exercise.difficulty);
-    const payload = {
-      correctOptionId: exercise.correctOptionId,
-      optionIds: exercise.options.map((option) => option.id),
-    };
+    const payload =
+      exercise.exerciseType === "free-response"
+        ? {
+            answerLanguage: "ko" as const,
+            acceptedAnswerIds: exercise.acceptedAnswers.map((_, index) => `ans${index + 1}`),
+          }
+        : {
+            correctOptionId: exercise.correctOptionId,
+            optionIds: exercise.options.map((option) => option.id),
+          };
 
     if (mode === "upsert") {
       lines.push(
@@ -439,6 +445,28 @@ export function buildCurriculumSeedSql(
         "on conflict do nothing;",
         "",
       );
+
+      if (exercise.skill === "grammar" && exercise.grammarTopicLogicalId) {
+        const primaryTopic = graph.grammarTopics.items.find(
+          (topic) => topic.logicalId === exercise.grammarTopicLogicalId,
+        );
+        if (primaryTopic) {
+          const familyKey = primaryTopic.patternKo.replace(/[①②③④⑤⑥⑦⑧⑨⑩]/gu, "").trim();
+          for (const sibling of graph.grammarTopics.items) {
+            if (sibling.logicalId === primaryTopic.logicalId) continue;
+            const siblingKey = sibling.patternKo.replace(/[①②③④⑤⑥⑦⑧⑨⑩]/gu, "").trim();
+            if (siblingKey !== familyKey || siblingKey.length === 0) continue;
+            const secondaryId = topicIdByLogical.get(sibling.logicalId);
+            if (!secondaryId) continue;
+            lines.push(
+              "insert into public.exercise_topics (exercise_id, topic_id, role)",
+              `values ('${id}', '${secondaryId}', 'secondary')`,
+              "on conflict do nothing;",
+              "",
+            );
+          }
+        }
+      }
     }
 
     for (const [index, option] of exercise.options.entries()) {
@@ -473,6 +501,25 @@ export function buildCurriculumSeedSql(
         "on conflict do nothing;",
         "",
       );
+    }
+
+    if (exercise.exerciseType === "free-response") {
+      for (const [index, answer] of exercise.acceptedAnswers.entries()) {
+        const answerId = uuidFromKey(`accepted:${exercise.logicalId}:ans${index + 1}`);
+        lines.push(
+          "insert into public.accepted_answers (",
+          "  id, exercise_id, raw_value, normalized_value, is_canonical, review_status",
+          ") values (",
+          `  '${answerId}',`,
+          `  '${id}',`,
+          `  ${sqlString(answer)},`,
+          `  ${sqlString(answer.normalize("NFC").trim().replace(/\s+/gu, " "))},`,
+          `  ${index === 0},`,
+          "  'pending'",
+          ");",
+          "",
+        );
+      }
     }
   }
 

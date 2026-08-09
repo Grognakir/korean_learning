@@ -23440,6 +23440,2566 @@
         }
       ],
       "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u01.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n01.application",
+      "subjectLogicalId": "exercise.grammar.u01.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u01.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n02.application",
+      "subjectLogicalId": "exercise.grammar.u01.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u01.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n03.application",
+      "subjectLogicalId": "exercise.grammar.u01.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u01.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n04.application",
+      "subjectLogicalId": "exercise.grammar.u01.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u01.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u01.n05.application",
+      "subjectLogicalId": "exercise.grammar.u01.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u01.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u02.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u02.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u02.n01.application",
+      "subjectLogicalId": "exercise.grammar.u02.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u02.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u02.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u02.n02.application",
+      "subjectLogicalId": "exercise.grammar.u02.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u02.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u02.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u02.n03.application",
+      "subjectLogicalId": "exercise.grammar.u02.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u02.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u02.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u02.n04.application",
+      "subjectLogicalId": "exercise.grammar.u02.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u02.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u03.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n01.application",
+      "subjectLogicalId": "exercise.grammar.u03.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u03.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n02.application",
+      "subjectLogicalId": "exercise.grammar.u03.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u03.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n03.application",
+      "subjectLogicalId": "exercise.grammar.u03.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u03.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n04.application",
+      "subjectLogicalId": "exercise.grammar.u03.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u03.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u03.n05.application",
+      "subjectLogicalId": "exercise.grammar.u03.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u03.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u04.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n01.application",
+      "subjectLogicalId": "exercise.grammar.u04.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u04.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n02.application",
+      "subjectLogicalId": "exercise.grammar.u04.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u04.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n03.application",
+      "subjectLogicalId": "exercise.grammar.u04.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u04.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n04.application",
+      "subjectLogicalId": "exercise.grammar.u04.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u04.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u04.n05.application",
+      "subjectLogicalId": "exercise.grammar.u04.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u04.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u05.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n01.application",
+      "subjectLogicalId": "exercise.grammar.u05.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u05.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n02.application",
+      "subjectLogicalId": "exercise.grammar.u05.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u05.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n03.application",
+      "subjectLogicalId": "exercise.grammar.u05.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u05.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n04.application",
+      "subjectLogicalId": "exercise.grammar.u05.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u05.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u05.n05.application",
+      "subjectLogicalId": "exercise.grammar.u05.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u05.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u06.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n01.application",
+      "subjectLogicalId": "exercise.grammar.u06.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u06.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n02.application",
+      "subjectLogicalId": "exercise.grammar.u06.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u06.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n03.application",
+      "subjectLogicalId": "exercise.grammar.u06.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u06.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n04.application",
+      "subjectLogicalId": "exercise.grammar.u06.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u06.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n05.application",
+      "subjectLogicalId": "exercise.grammar.u06.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n06.recognition",
+      "subjectLogicalId": "exercise.grammar.u06.n06.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n06"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u06.n06.application",
+      "subjectLogicalId": "exercise.grammar.u06.n06.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u06.n06"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u07.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n01.application",
+      "subjectLogicalId": "exercise.grammar.u07.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u07.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n02.application",
+      "subjectLogicalId": "exercise.grammar.u07.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u07.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n03.application",
+      "subjectLogicalId": "exercise.grammar.u07.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u07.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n04.application",
+      "subjectLogicalId": "exercise.grammar.u07.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u07.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u07.n05.application",
+      "subjectLogicalId": "exercise.grammar.u07.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u07.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u08.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n01.application",
+      "subjectLogicalId": "exercise.grammar.u08.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u08.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n02.application",
+      "subjectLogicalId": "exercise.grammar.u08.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u08.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n03.application",
+      "subjectLogicalId": "exercise.grammar.u08.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u08.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n04.application",
+      "subjectLogicalId": "exercise.grammar.u08.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u08.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u08.n05.application",
+      "subjectLogicalId": "exercise.grammar.u08.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u08.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u09.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n01.application",
+      "subjectLogicalId": "exercise.grammar.u09.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u09.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n02.application",
+      "subjectLogicalId": "exercise.grammar.u09.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u09.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n03.application",
+      "subjectLogicalId": "exercise.grammar.u09.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u09.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n04.application",
+      "subjectLogicalId": "exercise.grammar.u09.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u09.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u09.n05.application",
+      "subjectLogicalId": "exercise.grammar.u09.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u09.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u10.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n01.application",
+      "subjectLogicalId": "exercise.grammar.u10.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u10.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n02.application",
+      "subjectLogicalId": "exercise.grammar.u10.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u10.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n03.application",
+      "subjectLogicalId": "exercise.grammar.u10.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u10.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n04.application",
+      "subjectLogicalId": "exercise.grammar.u10.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u10.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u10.n05.application",
+      "subjectLogicalId": "exercise.grammar.u10.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u10.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u11.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n01.application",
+      "subjectLogicalId": "exercise.grammar.u11.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u11.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n02.application",
+      "subjectLogicalId": "exercise.grammar.u11.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u11.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n03.application",
+      "subjectLogicalId": "exercise.grammar.u11.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u11.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n04.application",
+      "subjectLogicalId": "exercise.grammar.u11.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u11.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u11.n05.application",
+      "subjectLogicalId": "exercise.grammar.u11.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u11.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u12.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n01.application",
+      "subjectLogicalId": "exercise.grammar.u12.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u12.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n02.application",
+      "subjectLogicalId": "exercise.grammar.u12.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u12.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n03.application",
+      "subjectLogicalId": "exercise.grammar.u12.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u12.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n04.application",
+      "subjectLogicalId": "exercise.grammar.u12.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u12.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u12.n05.application",
+      "subjectLogicalId": "exercise.grammar.u12.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u12.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u13.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n01.application",
+      "subjectLogicalId": "exercise.grammar.u13.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u13.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n02.application",
+      "subjectLogicalId": "exercise.grammar.u13.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u13.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n03.application",
+      "subjectLogicalId": "exercise.grammar.u13.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u13.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n04.application",
+      "subjectLogicalId": "exercise.grammar.u13.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u13.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u13.n05.application",
+      "subjectLogicalId": "exercise.grammar.u13.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u13.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u14.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n01.application",
+      "subjectLogicalId": "exercise.grammar.u14.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u14.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n02.application",
+      "subjectLogicalId": "exercise.grammar.u14.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u14.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n03.application",
+      "subjectLogicalId": "exercise.grammar.u14.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u14.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n04.application",
+      "subjectLogicalId": "exercise.grammar.u14.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u14.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u14.n05.application",
+      "subjectLogicalId": "exercise.grammar.u14.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u14.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u15.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n01.application",
+      "subjectLogicalId": "exercise.grammar.u15.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u15.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n02.application",
+      "subjectLogicalId": "exercise.grammar.u15.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u15.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n03.application",
+      "subjectLogicalId": "exercise.grammar.u15.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u15.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n04.application",
+      "subjectLogicalId": "exercise.grammar.u15.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u15.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u15.n05.application",
+      "subjectLogicalId": "exercise.grammar.u15.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u15.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n01.recognition",
+      "subjectLogicalId": "exercise.grammar.u16.n01.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n01.application",
+      "subjectLogicalId": "exercise.grammar.u16.n01.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n01"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n02.recognition",
+      "subjectLogicalId": "exercise.grammar.u16.n02.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n02.application",
+      "subjectLogicalId": "exercise.grammar.u16.n02.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n02"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n03.recognition",
+      "subjectLogicalId": "exercise.grammar.u16.n03.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n03.application",
+      "subjectLogicalId": "exercise.grammar.u16.n03.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n03"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n04.recognition",
+      "subjectLogicalId": "exercise.grammar.u16.n04.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n04.application",
+      "subjectLogicalId": "exercise.grammar.u16.n04.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n04"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n05.recognition",
+      "subjectLogicalId": "exercise.grammar.u16.n05.recognition",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
+    },
+    {
+      "logicalId": "prov.exercise.grammar.u16.n05.application",
+      "subjectLogicalId": "exercise.grammar.u16.n05.application",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-grammar",
+          "locator": {
+            "kind": "section",
+            "value": "u16.n05"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved."
     }
   ]
 }

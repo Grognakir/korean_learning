@@ -35,7 +35,9 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: `pnpm exec next start --hostname 127.0.0.1 --port ${PORT}`,
+    // Playwright spawns this through `/bin/sh`, which does not inherit a shell-managed pnpm, so the
+    // local binary is invoked directly instead of through a package manager.
+    command: `node_modules/.bin/next start --hostname 127.0.0.1 --port ${PORT}`,
     url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

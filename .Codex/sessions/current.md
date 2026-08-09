@@ -57,7 +57,7 @@ Deployment заблокирован ключом Supabase в окружении 
 - [ ] Разблокировать deployment: перезапустить сборку, при повторе сверить `SUPABASE_SECRET_KEY` в окружении Vercel.
 - [ ] Смерджить `fix/format-baseline` и `feature/perf-i10-content-store-resilience` — ветки не запушены, требуется явное разрешение.
 - [ ] Передеплоить Preview с proxy-проверкой 404 и повторить удалённый smoke: подтвердить 404 на неизвестных slug и отсутствие регресса median/p95.
-- [ ] Запускать Playwright через закреплённые Node/pnpm и ставить соответствующий Chromium в CI (локально помогает `PLAYWRIGHT_BROWSERS_PATH=$HOME/Library/Caches/ms-playwright`).
+- [x] `pnpm test:e2e` запускается из коробки: `webServer` в `playwright.config.ts` вызывает `node_modules/.bin/next` вместо `pnpm exec`, потому что Playwright порождает команду через `/bin/sh` без pnpm в PATH. Chromium в CI ставится шагом `playwright install chromium --with-deps`; локально при смене кэша помогает `PLAYWRIGHT_BROWSERS_PATH=$HOME/Library/Caches/ms-playwright`.
 - [ ] При необходимости исследовать первый прямой `/topics`: Production smoke показал median TTFB 374 мс против примерно 100–112 мс у остальных маршрутов.
 
 ## Контекст для следующей сессии

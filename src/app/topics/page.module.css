@@ -5,9 +5,21 @@
   padding-block-end: clamp(var(--space-6), 6vw, var(--space-16));
 }
 
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
 .grid {
   display: grid;
   gap: var(--space-5);
+}
+
+.grammarPanel {
+  min-width: 0;
 }
 
 @media (min-width: 36rem) {

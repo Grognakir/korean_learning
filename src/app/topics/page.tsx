@@ -10,18 +10,24 @@ import { TopicsCatalog } from "./TopicsCatalog";
 
 export const metadata: Metadata = {
   title: "Темы",
-  description: "Выберите модуль и двигайтесь по коротким темам в своём темпе.",
+  description: "Выберите тему или грамматику и двигайтесь по коротким урокам в своём темпе.",
 };
 
-export default function TopicsPage() {
+type TopicsPageProps = {
+  searchParams?: Promise<{
+    view?: string | string[];
+  }>;
+};
+
+export default function TopicsPage({ searchParams = Promise.resolve({}) }: TopicsPageProps) {
   return (
     <PageContainer className={styles.page}>
       <PageHeader
-        description="Выберите модуль и двигайтесь по коротким темам в своём темпе."
+        description="Выберите тему или грамматическую конструкцию и двигайтесь по коротким урокам в своём темпе."
         title="Темы"
       />
       <Suspense fallback={<CatalogSectionSkeleton label="Загрузка каталога…" />}>
-        <TopicsCatalog />
+        <TopicsCatalog searchParams={searchParams} />
       </Suspense>
     </PageContainer>
   );

@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I09 `done`; CP-6 принят).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I10 `done`; CP-6 принят).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I09 curriculum content repositories — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i09-content-repositories`.
-- **Уже сделано:** catalog/dictionary/reading repositories + public DTOs + cached loaders; local published fixture; Supabase adapters filter published/approved only.
-- **Выполненные проверки:** unit/integration/lint/typecheck/build (gate итерации).
-- **Сейчас работает:** server API для каталога без correct answers; UI каталога ещё sample.
-- **Пока не работает / ограничения:** страницы dual-catalog ещё нет (F2-I10); curriculum в seed в основном draft → public lists из Supabase пустые до publish; Preview SSO как раньше.
-- **Следующий конкретный шаг:** F2-I10 — dual catalog themes/grammar.
+- **Текущая итерация:** F2-I10 dual catalog themes/grammar — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i10-dual-catalog`.
+- **Уже сделано:** `/topics` dual view `themes|grammar` с кастомным tab control; compact unit cards; grammar grouping; counts только published/approved.
+- **Выполненные проверки:** unit/integration/lint/typecheck/build (gate итерации); e2e navigation покрывает switch + back.
+- **Сейчас работает:** каталог тем и грамматики из curriculum repositories (local published fixture).
+- **Пока не работает / ограничения:** детали grammar/theme (F2-I11); curriculum в seed в основном draft → public lists из Supabase пустые до publish; Preview SSO как раньше.
+- **Следующий конкретный шаг:** F2-I11 — curriculum detail pages.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

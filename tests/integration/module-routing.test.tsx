@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import { generateStaticParams as generateModuleParams } from "@/app/topics/[moduleSlug]/page";
 import { ModuleDetailPanel } from "@/app/topics/[moduleSlug]/ModuleDetailPanel";
@@ -19,6 +19,11 @@ import { learningModuleRegistry } from "@/modules";
 import { createChoiceExercise } from "../factories/exerciseFactory";
 import { createTestModule } from "../factories/moduleFactory";
 
+vi.mock("next/navigation", () => ({
+  useRouter: () => ({ replace: vi.fn() }),
+  usePathname: () => "/topics",
+}));
+
 describe("module routing integration", () => {
   it("generates module routes from the published registry", async () => {
     const params = await generateModuleParams();
@@ -32,8 +37,9 @@ describe("module routing integration", () => {
     render(<TopicsPage />);
     expect(screen.getByRole("heading", { level: 1, name: "Темы" })).toBeInTheDocument();
 
-    render(await TopicsCatalog());
-    expect(screen.getByRole("heading", { name: "Первые шаги в корейском" })).toBeInTheDocument();
+    render(await TopicsCatalog({ searchParams: Promise.resolve({}) }));
+    expect(screen.getByRole("tab", { name: "По темам" })).toHaveAttribute("aria-selected", "true");
+    expect(screen.getByRole("heading", { name: "인사와 소개" })).toBeInTheDocument();
 
     render(await ModuleDetailPanel({ moduleSlug: "sample-module" }));
     expect(

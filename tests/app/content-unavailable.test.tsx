@@ -13,10 +13,27 @@ const mocks = vi.hoisted(() => ({
   getCachedExercisesByModuleSlug: vi.fn(),
 }));
 
+const curriculumMocks = vi.hoisted(() => ({
+  getCachedPublicUnits: vi.fn(),
+  getCachedPublicGrammarTopics: vi.fn(),
+  getCachedPublicDictionary: vi.fn(),
+  getCachedPublicPassages: vi.fn(),
+  getCachedApprovedCurriculumExercises: vi.fn(),
+}));
+
 vi.mock("@/modules/cachedLearningContent", () => mocks);
+vi.mock("@/modules/curriculum/cachedCurriculumContent", () => curriculumMocks);
+
+vi.mock("next/navigation", () => ({
+  useRouter: () => ({ replace: vi.fn(), push: vi.fn() }),
+  usePathname: () => "/topics",
+}));
 
 beforeEach(() => {
   for (const loader of Object.values(mocks)) {
+    loader.mockResolvedValue(UNAVAILABLE);
+  }
+  for (const loader of Object.values(curriculumMocks)) {
     loader.mockResolvedValue(UNAVAILABLE);
   }
 });
@@ -25,7 +42,7 @@ describe("content store outage", () => {
   it("shows the service unavailable state on the topics catalog", async () => {
     const { TopicsCatalog } = await import("@/app/topics/TopicsCatalog");
 
-    render(await TopicsCatalog());
+    render(await TopicsCatalog({ searchParams: Promise.resolve({}) }));
 
     expect(screen.getByRole("heading", { name: "Сервис недоступен" })).toBeInTheDocument();
   });

@@ -1,25 +1,71 @@
 import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedback";
-import { ModuleCard } from "@/features/training/components/ModuleCard";
-import { getCachedPublishedModules } from "@/modules/cachedLearningContent";
+import { CatalogViewSwitch } from "@/features/catalog/components/CatalogViewSwitch";
+import { GrammarCatalogList } from "@/features/catalog/components/GrammarCatalogList";
+import { UnitSummaryCard } from "@/features/catalog/components/UnitSummaryCard";
+import { parseCatalogView } from "@/features/catalog/presentation/parseCatalogView";
+import {
+  getCachedPublicGrammarTopics,
+  getCachedPublicUnits,
+} from "@/modules/curriculum/cachedCurriculumContent";
 
 import styles from "./page.module.css";
 
-export async function TopicsCatalog() {
-  const modules = await getCachedPublishedModules();
+type TopicsCatalogProps = {
+  readonly searchParams: Promise<{
+    view?: string | string[];
+  }>;
+};
 
-  if (modules.status === "unavailable") {
-    return <ServiceUnavailableState />;
+export async function TopicsCatalog({ searchParams }: TopicsCatalogProps) {
+  const params = await searchParams;
+  const view = parseCatalogView(params.view);
+
+  if (view === "grammar") {
+    const [units, topics] = await Promise.all([
+      getCachedPublicUnits(),
+      getCachedPublicGrammarTopics(),
+    ]);
+
+    return (
+      <>
+        <div className={styles.toolbar}>
+          <CatalogViewSwitch value={view} />
+        </div>
+        {units.status === "unavailable" || topics.status === "unavailable" ? (
+          <ServiceUnavailableState />
+        ) : topics.data.length === 0 ? (
+          <CatalogEmptyState />
+        ) : (
+          <section
+            aria-label="Грамматика по урокам"
+            className={styles.grammarPanel}
+            id="catalog-panel"
+          >
+            <GrammarCatalogList topics={topics.data} units={units.data} />
+          </section>
+        )}
+      </>
+    );
   }
 
-  if (modules.data.length === 0) {
-    return <CatalogEmptyState />;
-  }
+  const units = await getCachedPublicUnits();
 
   return (
-    <section aria-label="Доступные учебные модули" className={styles.grid}>
-      {modules.data.map((module) => (
-        <ModuleCard key={module.id} module={module} />
-      ))}
-    </section>
+    <>
+      <div className={styles.toolbar}>
+        <CatalogViewSwitch value={view} />
+      </div>
+      {units.status === "unavailable" ? (
+        <ServiceUnavailableState />
+      ) : units.data.length === 0 ? (
+        <CatalogEmptyState />
+      ) : (
+        <section aria-label="Темы по урокам" className={styles.grid} id="catalog-panel">
+          {units.data.map((unit) => (
+            <UnitSummaryCard key={unit.id} unit={unit} />
+          ))}
+        </section>
+      )}
+    </>
   );
 }

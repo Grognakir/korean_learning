@@ -20,6 +20,11 @@ vi.mock("@/features/authentication/server/getServerAuthUser", () => ({
   getServerAuthUser: vi.fn(async () => null),
 }));
 
+vi.mock("next/navigation", () => ({
+  useRouter: () => ({ replace: vi.fn(), push: vi.fn() }),
+  usePathname: () => "/topics",
+}));
+
 const STATIC_SHELL_ROUTES = [
   ["Темы", TopicsPage],
   ["Тренировка", TrainingPage],
@@ -32,6 +37,16 @@ describe("application routes", () => {
     render(<Page />);
 
     expect(screen.getByRole("heading", { level: 1, name: title })).toBeInTheDocument();
+  });
+
+  it("renders dual catalog controls on the topics route", async () => {
+    const { TopicsCatalog } = await import("@/app/topics/TopicsCatalog");
+    render(await TopicsCatalog({ searchParams: Promise.resolve({ view: "grammar" }) }));
+
+    expect(screen.getByRole("tab", { name: "По грамматике" })).toHaveAttribute(
+      "aria-selected",
+      "true",
+    );
   });
 
   it("describes the training route without the removed development preview", () => {

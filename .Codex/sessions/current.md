@@ -4,21 +4,21 @@
 
 ## Чем занимаемся
 
-F2-I23 in progress. CP-8 accepted. Remote curriculum imported; Production `CONTENT_SOURCE=supabase` set; fixing cached curriculum reads (service role) after preview smoke found «Сервис недоступен».
+F2-I23 essentially complete pending **CP-9**. Do not tag `v0.1.0` without CP-9.
 
-## F2-I23 — сделано
+## F2-I23 — done
 
-- Local release stabilization merged (#16)
-- Remote: migrations pushed, curriculum chunk-import, `sample-module` archived
-- Remote counts: 16 published modules, 80 grammar, 192 dict, 16 passages, 272 approved exercises
+- Merge #16 release stabilization + #17 curriculum cache fix
+- Remote: migrations, chunked curriculum import, `sample-module` archived
+- Remote counts: 16 modules / 80 grammar / 192 dict / 16 passages / 272 exercises
 - Vercel: `CONTENT_SOURCE=supabase` on Production + Preview
-- Hotfix branch: curriculum catalog/dictionary/reading use service-role client inside cache (cookie client breaks `"use cache"`)
+- Production smoke (`korean-learning-gray.vercel.app`): `/topics` u01–u16, `/topics/u01` OK, sample/demo 404, auth/review/progress/dictionary 200
+- Preview deployment URLs remain behind Vercel SSO (known)
 
-## Нужно
+## Нужно от пользователя
 
-1. Merge cache fix → production redeploy → smoke matrix
-2. **CP-9** then tag `v0.1.0` (do not tag without CP-9)
+**CP-9** — проверить production smoke и явно разрешить tag/release `v0.1.0`.
 
 ## Ветка
 
-`codex/f2-i23-curriculum-cache-fix`
+`main` @ `4cd5036`

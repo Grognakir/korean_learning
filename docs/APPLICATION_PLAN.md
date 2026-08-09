@@ -5,12 +5,12 @@
 - **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I22 и F2-FIX-01 `done`; CP-6–CP-8 приняты; F2-I23 в работе).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
 - **Текущая итерация:** F2-I23 release stabilization.
-- **Статус текущей итерации:** in progress на ветке `codex/f2-i23-curriculum-cache-fix`.
-- **Уже сделано:** CP-8; I23 merge #16; remote migrations + curriculum import + sample archived; `CONTENT_SOURCE=supabase` на Preview/Production.
-- **Выполненные проверки:** remote counts 16/80/192/16/272; production alias показал «Сервис недоступен» до cache fix.
-- **Сейчас работает:** remote published curriculum; local seed baseline.
-- **Пока не работает / ограничения:** production catalog smoke + CP-9 / tag `v0.1.0`.
-- **Следующий конкретный шаг:** ship curriculum cache fix → production smoke → CP-9 / tag.
+- **Статус текущей итерации:** awaiting CP-9 (code/remote/smoke done; tag blocked).
+- **Уже сделано:** CP-8; I23 #16 + cache fix #17; remote import; `CONTENT_SOURCE=supabase`; production smoke green.
+- **Выполненные проверки:** remote 16/80/192/16/272; production `/topics` u01–u16, `/topics/u01`, sample/demo 404.
+- **Сейчас работает:** production curriculum from Supabase.
+- **Пока не работает / ограничения:** tag/release `v0.1.0` без CP-9; Preview SSO для curl.
+- **Следующий конкретный шаг:** CP-9 → tag `v0.1.0`.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

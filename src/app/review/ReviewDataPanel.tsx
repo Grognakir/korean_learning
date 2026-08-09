@@ -9,6 +9,7 @@ import { ReviewRepositoryError } from "@/features/review/data/reviewMapper";
 import { createSupabaseReviewRepository } from "@/features/review/data/SupabaseReviewRepository";
 import type { ReviewQueueSummary as ReviewQueueSummaryData } from "@/features/review/domain";
 import { createServerSupabaseClient } from "@/lib/supabase/serverClient";
+import { getCachedPublishedModules } from "@/modules/cachedLearningContent";
 
 async function loadReviewSummary(userId: string): Promise<ReviewQueueSummaryData> {
   const client = await createServerSupabaseClient();
@@ -35,11 +36,19 @@ export async function ReviewDataPanel() {
     throw error;
   }
 
+  const modulesResult = await getCachedPublishedModules();
+  const publishedModules = modulesResult.status === "ready" ? modulesResult.data : [];
+  const unitOptions = publishedModules.map((module) => ({
+    moduleId: module.id,
+    unitSlug: module.slug,
+    label: module.title.ru,
+  }));
+
   return summary.dueCount > 0 ||
     summary.scheduledCount > 0 ||
     summary.masteredCount > 0 ||
     summary.suspendedCount > 0 ? (
-    <ReviewQueueSummary summary={summary} />
+    <ReviewQueueSummary summary={summary} unitOptions={unitOptions} />
   ) : (
     <ReviewEmptyState />
   );

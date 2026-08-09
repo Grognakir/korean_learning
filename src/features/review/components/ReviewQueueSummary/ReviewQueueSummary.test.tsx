@@ -8,7 +8,7 @@ vi.mock("next/navigation", () => ({
 }));
 
 describe("ReviewQueueSummary", () => {
-  it("shows queue counts and a start action", () => {
+  it("shows queue counts, filters, and a start action", () => {
     render(
       <ReviewQueueSummary
         summary={{
@@ -16,13 +16,43 @@ describe("ReviewQueueSummary", () => {
           scheduledCount: 1,
           masteredCount: 3,
           suspendedCount: 0,
-          dueItems: [],
+          dueItems: [
+            {
+              id: "1",
+              userId: "u",
+              moduleId: "mod-1",
+              conceptKey: "grammar:gt-1",
+              exerciseId: null,
+              status: "due",
+              intervalStage: 0,
+              consecutiveCorrect: 0,
+              dueAt: "2026-08-10T00:00:00.000Z",
+              createdAt: "2026-08-10T00:00:00.000Z",
+              updatedAt: "2026-08-10T00:00:00.000Z",
+            },
+            {
+              id: "2",
+              userId: "u",
+              moduleId: "mod-1",
+              conceptKey: "vocabulary:de-1",
+              exerciseId: null,
+              status: "due",
+              intervalStage: 0,
+              consecutiveCorrect: 0,
+              dueAt: "2026-08-10T00:00:00.000Z",
+              createdAt: "2026-08-10T00:00:00.000Z",
+              updatedAt: "2026-08-10T00:00:00.000Z",
+            },
+          ],
         }}
+        unitOptions={[{ moduleId: "mod-1", unitSlug: "u01", label: "Знакомство" }]}
       />,
     );
 
     expect(screen.getByRole("region", { name: "Очередь повторения" })).toBeInTheDocument();
     expect(screen.getByText("2")).toBeInTheDocument();
+    expect(screen.getByRole("combobox", { name: "Навык для повторения" })).toBeInTheDocument();
+    expect(screen.getByRole("combobox", { name: "Тема для повторения" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Начать повторение" })).toBeEnabled();
   });
 

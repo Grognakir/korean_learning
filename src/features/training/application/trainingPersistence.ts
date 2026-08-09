@@ -1,5 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 
+import { buildSkillConceptKey } from "@/features/review/domain/conceptKey";
 import type { Database } from "@/types/database";
 
 import type { StartTrainingSessionRequest, TrainingSessionResponse } from "../api/schemas";
@@ -270,7 +271,7 @@ export async function submitTrainingAttempt(input: {
 
   const { data: exerciseMeta, error: exerciseError } = await input.client
     .from("exercises")
-    .select("id,logical_id,module_id")
+    .select("id,logical_id,module_id,learning_skill,reading_passage_id,primary_topic_id")
     .eq("id", input.request.exerciseId)
     .maybeSingle();
 
@@ -285,12 +286,46 @@ export async function submitTrainingAttempt(input: {
     .eq("role", "primary")
     .maybeSingle();
 
-  if (topicError || !topicLink) {
-    throw new TrainingPersistenceError(
-      "EXERCISE_NOT_FOUND",
-      "Exercise topic metadata missing.",
-      400,
-    );
+  if (topicError) {
+    throw new TrainingPersistenceError("PERSISTENCE_FAILED", topicError.message, 503);
+  }
+
+  let conceptTarget = exerciseMeta.logical_id;
+  if (exerciseMeta.learning_skill === "grammar" && exerciseMeta.primary_topic_id) {
+    const { data: topic } = await input.client
+      .from("grammar_topics")
+      .select("logical_id")
+      .eq("id", exerciseMeta.primary_topic_id)
+      .maybeSingle();
+    if (topic?.logical_id) {
+      conceptTarget = topic.logical_id;
+    }
+  } else if (exerciseMeta.learning_skill === "reading" && exerciseMeta.reading_passage_id) {
+    const { data: passage } = await input.client
+      .from("reading_passages")
+      .select("logical_id")
+      .eq("id", exerciseMeta.reading_passage_id)
+      .maybeSingle();
+    if (passage?.logical_id) {
+      conceptTarget = passage.logical_id;
+    }
+  } else if (exerciseMeta.learning_skill === "vocabulary") {
+    const { data: dictLink } = await input.client
+      .from("exercise_dictionary_entries")
+      .select("dictionary_entry_id")
+      .eq("exercise_id", input.request.exerciseId)
+      .limit(1)
+      .maybeSingle();
+    if (dictLink?.dictionary_entry_id) {
+      const { data: entry } = await input.client
+        .from("dictionary_entries")
+        .select("logical_id")
+        .eq("id", dictLink.dictionary_entry_id)
+        .maybeSingle();
+      if (entry?.logical_id) {
+        conceptTarget = entry.logical_id;
+      }
+    }
   }
 
   const { attempt, session } = await repository.submitAttempt({
@@ -303,8 +338,8 @@ export async function submitTrainingAttempt(input: {
       ? null
       : {
           moduleId: exerciseMeta.module_id,
-          primaryTopicId: topicLink.topic_id,
-          conceptKey: exerciseMeta.logical_id,
+          primaryTopicId: topicLink?.topic_id ?? exerciseMeta.primary_topic_id ?? null,
+          conceptKey: buildSkillConceptKey(exerciseMeta.learning_skill, conceptTarget),
           errorType: evaluation.reasonCode,
         },
   });

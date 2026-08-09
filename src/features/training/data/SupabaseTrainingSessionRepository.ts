@@ -48,7 +48,7 @@ export type TrainingSessionRepository = {
     readonly answerVersion: string;
     readonly mistake: {
       readonly moduleId: string;
-      readonly primaryTopicId: string;
+      readonly primaryTopicId: string | null;
       readonly conceptKey: string;
       readonly errorType: string;
     } | null;

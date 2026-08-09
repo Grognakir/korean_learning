@@ -7,6 +7,29 @@ import type { Database } from "@/types/database";
 
 import { ReviewRepositoryError } from "../data/reviewMapper";
 import { createSupabaseReviewRepository } from "../data/SupabaseReviewRepository";
+import type { LearningSkill } from "../domain/conceptKey";
+import { filterReviewQueueItems } from "../domain/filterReviewItems";
+
+async function resolveModuleIdBySlug(
+  client: SupabaseClient<Database>,
+  unitSlug: string,
+): Promise<string> {
+  const { data, error } = await client
+    .from("learning_modules")
+    .select("id,status")
+    .eq("slug", unitSlug)
+    .maybeSingle();
+
+  if (error) {
+    throw new TrainingPersistenceError("PERSISTENCE_FAILED", error.message, 503);
+  }
+
+  if (!data || data.status !== "published") {
+    throw new TrainingPersistenceError("MODULE_NOT_FOUND", "Unit is unavailable.", 404);
+  }
+
+  return data.id;
+}
 
 async function resolveApprovedExercisesForConcepts(
   client: SupabaseClient<Database>,
@@ -15,25 +38,22 @@ async function resolveApprovedExercisesForConcepts(
     readonly conceptKeys: readonly string[];
   },
 ) {
-  const { data, error } = await client
-    .from("exercises")
-    .select("id,logical_id,module_id,content_version,status")
-    .eq("module_id", input.moduleId)
-    .eq("status", "approved")
-    .in("logical_id", [...input.conceptKeys]);
+  const { data, error } = await client.rpc("resolve_approved_exercises_for_concepts", {
+    p_module_id: input.moduleId,
+    p_concept_keys: [...input.conceptKeys],
+  });
 
   if (error) {
     throw new TrainingPersistenceError("PERSISTENCE_FAILED", error.message, 503);
   }
 
-  const byConcept = new Map<string, (typeof data)[number]>();
+  const byConcept = new Map<string, { id: string; content_version: string }>();
 
   for (const row of data ?? []) {
-    const existing = byConcept.get(row.logical_id);
-
-    if (!existing || row.content_version > existing.content_version) {
-      byConcept.set(row.logical_id, row);
-    }
+    byConcept.set(row.concept_key, {
+      id: row.exercise_id,
+      content_version: row.content_version,
+    });
   }
 
   return byConcept;
@@ -44,6 +64,8 @@ export async function createReviewSession(input: {
   readonly userId: string;
   readonly now?: string;
   readonly moduleId?: string;
+  readonly unitSlug?: string;
+  readonly skill?: LearningSkill;
   readonly idempotencyKey?: string;
 }): Promise<TrainingSessionResponse> {
   const now = input.now ?? new Date().toISOString();
@@ -69,8 +91,25 @@ export async function createReviewSession(input: {
     );
   }
 
-  const moduleId = input.moduleId ?? dueItems[0]!.moduleId;
-  const moduleDue = dueItems.filter((item) => item.moduleId === moduleId);
+  const moduleId =
+    input.moduleId ??
+    (input.unitSlug ? await resolveModuleIdBySlug(input.client, input.unitSlug) : undefined);
+
+  const filtered = filterReviewQueueItems(dueItems, {
+    skill: input.skill ?? null,
+    moduleId: moduleId ?? null,
+  });
+
+  if (filtered.length === 0) {
+    throw new TrainingPersistenceError(
+      "EXERCISE_NOT_FOUND",
+      "There are no review items due for the selected skill or unit.",
+      400,
+    );
+  }
+
+  const selectedModuleId = moduleId ?? filtered[0]!.moduleId;
+  const moduleDue = filtered.filter((item) => item.moduleId === selectedModuleId);
 
   if (moduleDue.length === 0) {
     throw new TrainingPersistenceError(
@@ -81,7 +120,7 @@ export async function createReviewSession(input: {
   }
 
   const byConcept = await resolveApprovedExercisesForConcepts(input.client, {
-    moduleId,
+    moduleId: selectedModuleId,
     conceptKeys: moduleDue.map((item) => item.conceptKey),
   });
 
@@ -107,17 +146,20 @@ export async function createReviewSession(input: {
     );
   }
 
+  const filterSuffix = [input.skill ?? "all", input.unitSlug ?? selectedModuleId].join(":");
+
   return startTrainingSession({
     client: input.client,
     userId: input.userId,
     request: {
-      moduleId,
+      moduleId: selectedModuleId,
       mode: "review",
       contentVersion,
       exerciseIds,
-      randomSeed: `review:${moduleId}:${now}`,
+      randomSeed: `review:${selectedModuleId}:${filterSuffix}:${now}`,
       idempotencyKey:
-        input.idempotencyKey ?? `review:${input.userId}:${moduleId}:${now.slice(0, 16)}`,
+        input.idempotencyKey ??
+        `review:${input.userId}:${selectedModuleId}:${filterSuffix}:${now.slice(0, 16)}`,
     },
   });
 }

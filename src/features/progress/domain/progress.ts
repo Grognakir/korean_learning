@@ -61,10 +61,23 @@ export function masteryStatusLabel(status: MasteryStatus): string {
   }
 }
 
+export type LearningSkillId = "grammar" | "vocabulary" | "reading";
+
+export const LEARNING_SKILLS = ["grammar", "vocabulary", "reading"] as const;
+
 export type TopicProgressSnapshot = {
   readonly topicId: string;
   readonly code: string;
   readonly titleRu: string;
+  readonly attemptsCount: number;
+  readonly correctCount: number;
+  readonly accuracy: number;
+  readonly masteryStatus: MasteryStatus;
+  readonly lastPracticedAt: string | null;
+};
+
+export type SkillProgressSnapshot = {
+  readonly skill: LearningSkillId;
   readonly attemptsCount: number;
   readonly correctCount: number;
   readonly accuracy: number;
@@ -84,6 +97,7 @@ export type ModuleProgressSnapshot = {
   readonly completedSessions: number;
   readonly masteryStatus: MasteryStatus;
   readonly lastPracticedAt: string | null;
+  readonly skills: readonly SkillProgressSnapshot[];
   readonly topics: readonly TopicProgressSnapshot[];
 };
 
@@ -91,8 +105,22 @@ export type LearningProgressOverview = {
   readonly modules: readonly ModuleProgressSnapshot[];
 };
 
+export function learningSkillLabel(skill: LearningSkillId): string {
+  switch (skill) {
+    case "grammar":
+      return "Грамматика";
+    case "vocabulary":
+      return "Словарь";
+    case "reading":
+      return "Чтение";
+  }
+}
+
 export function hasAnyRecordedProgress(overview: LearningProgressOverview): boolean {
   return overview.modules.some(
-    (module) => module.attemptsCount > 0 || module.topics.some((topic) => topic.attemptsCount > 0),
+    (module) =>
+      module.attemptsCount > 0 ||
+      module.topics.some((topic) => topic.attemptsCount > 0) ||
+      module.skills.some((skill) => skill.attemptsCount > 0),
   );
 }

@@ -9,6 +9,7 @@ import {
 } from "../../domain";
 
 import styles from "./ModuleProgressCard.module.css";
+import { SkillProgressList } from "../SkillProgressList";
 import { TopicProgressList } from "../TopicProgressList";
 
 export type ModuleProgressCardProps = {
@@ -86,6 +87,7 @@ export function ModuleProgressCard({ module }: ModuleProgressCardProps) {
         </div>
       </dl>
 
+      <SkillProgressList skills={module.skills} />
       <TopicProgressList topics={module.topics} />
     </article>
   );

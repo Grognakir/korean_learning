@@ -11,3 +11,5 @@ export { LocalCatalogRepository } from "./data/LocalCatalogRepository";
 export { assertPublicCurriculumShape } from "./data/assertPublicCatalogShape";
 export { parseCatalogView, type CatalogView } from "./presentation/parseCatalogView";
 export { groupGrammarTopics } from "./presentation/groupGrammarTopics";
+export { buildTrainingSetupHref } from "./presentation/buildTrainingSetupHref";
+export { parseGrammarQuery } from "./presentation/parseGrammarQuery";

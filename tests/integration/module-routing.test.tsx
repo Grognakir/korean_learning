@@ -25,12 +25,14 @@ vi.mock("next/navigation", () => ({
 }));
 
 describe("module routing integration", () => {
-  it("generates module routes from the published registry", async () => {
+  it("generates module routes from sample and curriculum catalogs", async () => {
     const params = await generateModuleParams();
     const published = (await learningModuleRegistry.getPublished()).map((entry) => entry.slug);
+    const slugs = params.map((entry) => entry.moduleSlug);
 
-    expect(params.map((entry) => entry.moduleSlug).sort()).toEqual([...published].sort());
+    expect(slugs).toEqual(expect.arrayContaining([...published, "u01", "u02"]));
     expect(params.some((entry) => entry.moduleSlug === "sample-module")).toBe(true);
+    expect(params.some((entry) => entry.moduleSlug === "u16-draft-only")).toBe(false);
   });
 
   it("renders catalog and module pages from the live registry", async () => {
@@ -41,15 +43,45 @@ describe("module routing integration", () => {
     expect(screen.getByRole("tab", { name: "По темам" })).toHaveAttribute("aria-selected", "true");
     expect(screen.getByRole("heading", { name: "인사와 소개" })).toBeInTheDocument();
 
-    render(await ModuleDetailPanel({ moduleSlug: "sample-module" }));
+    render(
+      await ModuleDetailPanel({
+        moduleSlug: "sample-module",
+        searchParams: Promise.resolve({}),
+      }),
+    );
     expect(
       await screen.findByRole("heading", { level: 1, name: "Первые шаги в корейском" }),
     ).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Основы хангыля" })).toBeInTheDocument();
+
+    render(
+      await ModuleDetailPanel({
+        moduleSlug: "u01",
+        searchParams: Promise.resolve({}),
+      }),
+    );
+    expect(
+      screen.getByRole("heading", { level: 1, name: "приветствие и представление" }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("N입니다/입니까?")).toBeInTheDocument();
+
+    render(
+      await ModuleDetailPanel({
+        moduleSlug: "u01",
+        searchParams: Promise.resolve({ grammar: "grammar.u01.n01" }),
+      }),
+    );
+    expect(screen.getByRole("heading", { name: "N입니다/입니까?" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Тренировать конструкцию" })).toHaveAttribute(
+      "href",
+      "/training?skill=grammar&unit=u01&grammar=grammar.u01.n01",
+    );
   });
 
   it("calls notFound for unknown module and session ids", async () => {
-    await expect(ModuleDetailPanel({ moduleSlug: "missing-module" })).rejects.toMatchObject({
+    await expect(
+      ModuleDetailPanel({ moduleSlug: "missing-module", searchParams: Promise.resolve({}) }),
+    ).rejects.toMatchObject({
       digest: expect.stringContaining("404"),
     });
 

@@ -44,6 +44,18 @@ test.describe("navigation", () => {
     await page.getByRole("link", { name: "Начать тренировку" }).click();
     await expect(page).toHaveURL(/\/training/);
 
+    await page.goto("/topics/u01");
+    await expect(
+      page.getByRole("heading", { level: 1, name: "приветствие и представление" }),
+    ).toBeVisible();
+    await page.getByRole("link", { name: /N입니다\/입니까\?/ }).click();
+    await expect(page).toHaveURL(/grammar=grammar\.u01\.n01/);
+    await expect(page.getByRole("heading", { name: "N입니다/입니까?" })).toBeVisible();
+    await expect(page.getByRole("link", { name: "Тренировать конструкцию" })).toHaveAttribute(
+      "href",
+      "/training?skill=grammar&unit=u01&grammar=grammar.u01.n01",
+    );
+
     for (const width of [320, 375, 768, 1280] as const) {
       await page.setViewportSize({ width, height: 800 });
       await assertNoHorizontalOverflow(page);

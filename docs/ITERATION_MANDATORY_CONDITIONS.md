@@ -174,6 +174,9 @@
 | `training/[sessionId]` `.missingActions`           | fallback CTA-ряд                                                                                                                                                          |
 | `RoutePlaceholder` `.actions`                      | CTA-ряд                                                                                                                                                                   |
 | `Modal` `.header`                                  | title+close: допускается `flex-start` (close у верхней линии при переносе заголовка) — зафиксированное исключение                                                         |
+| `CatalogViewSwitch` `.switch`                      | tab-ряд — вертикальный центр                                                                                                                                              |
+| `DetailActionArea` `.area` / `.slot`               | action slots равной высоты; label+reason колонка с единой горизонтальной осью                                                                                             |
+| `UnitDetailView` / `GrammarDetailView` intro       | badge/meta/title stack; pattern `lang=ko`, `overflow-wrap: break-word`                                                                                                    |
 
 **Исключения** перечислять явно в таблице выше; молчаливый «оставил baseline/end потому что красивее» запрещён без записи здесь.
 

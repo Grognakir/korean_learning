@@ -470,7 +470,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I11 — Детали темы и грамматики
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** показать, чему учиться, и дать точный переход к нужной тренировке.
 - **Вход:** F2-I10 `done`.
 - **Ветка:** `codex/f2-i11-content-details`.

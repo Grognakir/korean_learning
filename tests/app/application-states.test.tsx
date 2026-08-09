@@ -35,7 +35,9 @@ describe("application state routes", () => {
   });
 
   it("calls notFound for unknown module and session ids", async () => {
-    await expect(ModuleDetailPanel({ moduleSlug: "missing-module" })).rejects.toMatchObject({
+    await expect(
+      ModuleDetailPanel({ moduleSlug: "missing-module", searchParams: Promise.resolve({}) }),
+    ).rejects.toMatchObject({
       digest: expect.stringContaining("404"),
     });
 

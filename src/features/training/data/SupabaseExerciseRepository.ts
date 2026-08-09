@@ -3,6 +3,7 @@ import "server-only";
 import { unstable_cache } from "next/cache";
 
 import { createServiceRoleSupabaseClient } from "@/lib/supabase/serviceRoleClient";
+import { loadAllSupabaseRows } from "@/lib/supabase/loadAllSupabaseRows";
 import type { ExerciseTypeId } from "@/types";
 
 import type { Exercise, ExerciseDifficulty } from "../domain";
@@ -28,53 +29,42 @@ type LoadedExerciseBundle = {
 async function loadApprovedExercises(): Promise<LoadedExerciseBundle> {
   const client = createServiceRoleSupabaseClient();
 
-  const [
-    { data: moduleRows, error: moduleError },
-    { data: exerciseRows, error: exerciseError },
-    { data: topicLinkRows, error: topicLinkError },
-    { data: optionRows, error: optionError },
-    { data: acceptedAnswerRows, error: acceptedAnswerError },
-    { data: passageRows, error: passageError },
-  ] = await Promise.all([
-    client.from("learning_modules").select("id,slug,status").eq("status", "published"),
-    client.from("exercises").select("*").eq("status", "approved"),
-    client.from("exercise_topics").select("*"),
-    client.from("exercise_options").select("*"),
-    client.from("accepted_answers").select("*"),
-    client
-      .from("reading_passages")
-      .select("id,logical_id,title_ko,title_ru,body_ko,status")
-      .eq("status", "published"),
-  ]);
+  const [moduleRows, exerciseRows, topicLinkRows, optionRows, acceptedAnswerRows, passageRows] =
+    await Promise.all([
+      loadAllSupabaseRows((from, to) =>
+        client
+          .from("learning_modules")
+          .select("id,slug,status")
+          .eq("status", "published")
+          .order("id")
+          .range(from, to),
+      ),
+      loadAllSupabaseRows((from, to) =>
+        client.from("exercises").select("*").eq("status", "approved").order("id").range(from, to),
+      ),
+      loadAllSupabaseRows((from, to) =>
+        client.from("exercise_topics").select("*").order("exercise_id").range(from, to),
+      ),
+      loadAllSupabaseRows((from, to) =>
+        client.from("exercise_options").select("*").order("id").range(from, to),
+      ),
+      loadAllSupabaseRows((from, to) =>
+        client.from("accepted_answers").select("*").order("id").range(from, to),
+      ),
+      loadAllSupabaseRows((from, to) =>
+        client
+          .from("reading_passages")
+          .select("id,logical_id,title_ko,title_ru,body_ko,status")
+          .eq("status", "published")
+          .order("id")
+          .range(from, to),
+      ),
+    ]);
 
-  if (moduleError) {
-    throw new SupabaseExerciseRepositoryError(moduleError.message);
-  }
-
-  if (exerciseError) {
-    throw new SupabaseExerciseRepositoryError(exerciseError.message);
-  }
-
-  if (topicLinkError) {
-    throw new SupabaseExerciseRepositoryError(topicLinkError.message);
-  }
-
-  if (optionError) {
-    throw new SupabaseExerciseRepositoryError(optionError.message);
-  }
-
-  if (acceptedAnswerError) {
-    throw new SupabaseExerciseRepositoryError(acceptedAnswerError.message);
-  }
-
-  if (passageError) {
-    throw new SupabaseExerciseRepositoryError(passageError.message);
-  }
-
-  const moduleSlugById = Object.fromEntries((moduleRows ?? []).map((row) => [row.id, row.slug]));
+  const moduleSlugById = Object.fromEntries(moduleRows.map((row) => [row.id, row.slug]));
   const publishedModuleIds = new Set(Object.keys(moduleSlugById));
   const passageById = new Map(
-    (passageRows ?? []).map((passage) => [
+    passageRows.map((passage) => [
       passage.id,
       {
         logicalId: passage.logical_id,
@@ -85,7 +75,7 @@ async function loadApprovedExercises(): Promise<LoadedExerciseBundle> {
     ]),
   );
 
-  const exercises = sortExerciseRows(exerciseRows ?? [])
+  const exercises = sortExerciseRows(exerciseRows)
     .filter((row) => publishedModuleIds.has(row.module_id))
     .map((row) => {
       const moduleSlug = moduleSlugById[row.module_id];
@@ -105,9 +95,9 @@ async function loadApprovedExercises(): Promise<LoadedExerciseBundle> {
         return mapExerciseRow({
           row,
           moduleSlug,
-          topicRows: topicLinkRows ?? [],
-          optionRows: optionRows ?? [],
-          acceptedAnswerRows: acceptedAnswerRows ?? [],
+          topicRows: topicLinkRows,
+          optionRows,
+          acceptedAnswerRows,
           passage,
         });
       } catch (error) {

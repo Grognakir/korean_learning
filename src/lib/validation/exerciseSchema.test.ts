@@ -118,6 +118,29 @@ describe("exerciseDefinitionSchema", () => {
     expect(exerciseDefinitionSchema.parse(exercisesByType[type])).toMatchObject({ type });
   });
 
+  it("accepts canonical dotted logical ids", () => {
+    expect(
+      exerciseDefinitionSchema.parse({
+        ...meaningChoiceExercise,
+        logicalId: "exercise.grammar.u01.n01.recognition",
+        topicIds: ["grammar.u01.n01"],
+      }),
+    ).toMatchObject({
+      logicalId: "exercise.grammar.u01.n01.recognition",
+      topicIds: ["grammar.u01.n01"],
+    });
+  });
+
+  it("accepts exercises without grammar topics", () => {
+    expect(
+      exerciseDefinitionSchema.parse({
+        ...meaningChoiceExercise,
+        logicalId: "exercise.vocabulary.u01.matching.v01",
+        topicIds: [],
+      }),
+    ).toMatchObject({ topicIds: [] });
+  });
+
   it("rejects duplicate choice options", () => {
     const result = exerciseDefinitionSchema.safeParse({
       ...meaningChoiceExercise,

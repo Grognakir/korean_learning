@@ -35,13 +35,17 @@ export async function generateStaticParams() {
   ];
 }
 
-export default async function SessionPage({ params }: SessionPageProps) {
+async function SessionRouteContent({ params }: SessionPageProps) {
   const { sessionId } = await params;
 
+  return <SessionPageContent sessionId={sessionId} />;
+}
+
+export default function SessionPage({ params }: SessionPageProps) {
   return (
     <PageContainer className={styles.page} width="narrow">
       <Suspense fallback={<CatalogSectionSkeleton label="Загрузка упражнения…" />}>
-        <SessionPageContent sessionId={sessionId} />
+        <SessionRouteContent params={params} />
       </Suspense>
     </PageContainer>
   );

@@ -11,6 +11,7 @@ import {
 import { contentVersionSchema } from "./learningModuleSchema";
 
 const identifierPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const logicalIdentifierPattern = /^[a-z0-9]+(?:[.-][a-z0-9]+)*$/;
 
 export const exerciseTextSchema = z
   .strictObject({
@@ -51,9 +52,9 @@ const scoringSchema = z.strictObject({
 const exerciseBaseShape = {
   schemaVersion: z.literal(EXERCISE_SCHEMA_VERSION),
   id: z.uuid(),
-  logicalId: z.string().trim().regex(identifierPattern),
+  logicalId: z.string().trim().regex(logicalIdentifierPattern),
   moduleSlug: z.string().trim().regex(identifierPattern),
-  topicIds: z.array(z.uuid()).min(1),
+  topicIds: z.array(z.string().trim().regex(logicalIdentifierPattern)),
   difficulty: z.enum(EXERCISE_DIFFICULTIES),
   prompt: exerciseTextSchema,
   explanation: exerciseTextSchema,

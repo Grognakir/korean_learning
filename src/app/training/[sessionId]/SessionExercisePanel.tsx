@@ -10,7 +10,11 @@ import type { Exercise } from "@/features/training/domain";
 import { toPublicExercises } from "@/features/training/presentation";
 import { parseFilteredSessionId } from "@/features/training/setup/filteredSessionId";
 import { selectFilteredSessionExercises } from "@/features/training/setup/selectFilteredSessionExercises";
-import { getCachedPublishedModuleBySlug } from "@/modules/cachedLearningContent";
+import {
+  getCachedExercisesByModuleSlug,
+  getCachedPublishedModuleBySlug,
+  type ContentResult,
+} from "@/modules/cachedLearningContent";
 import { getCachedApprovedCurriculumExercises } from "@/modules/curriculum/cachedCurriculumContent";
 import { listFixtureDomainExercises } from "@/modules/curriculum/mapFixtureExerciseToDomain";
 import { resolveContentSource } from "@/modules/contentSource";
@@ -50,14 +54,17 @@ type SessionExercisePanelProps = {
   readonly session: ResolvedSession;
 };
 
-async function loadFilteredDomainExercises(moduleSlug: string): Promise<readonly Exercise[]> {
+async function loadFilteredDomainExercises(
+  moduleSlug: string,
+): Promise<ContentResult<readonly Exercise[]>> {
   if (resolveContentSource() === "local") {
-    return listFixtureDomainExercises().filter((exercise) => exercise.moduleSlug === moduleSlug);
+    return {
+      status: "ready",
+      data: listFixtureDomainExercises().filter((exercise) => exercise.moduleSlug === moduleSlug),
+    };
   }
 
-  const { getExerciseContent } = await import("@/modules/resolveLearningContent");
-  const { exerciseRepository } = await getExerciseContent();
-  return exerciseRepository.list({ moduleSlug });
+  return getCachedExercisesByModuleSlug(moduleSlug);
 }
 
 export async function SessionExercisePanel({ session }: SessionExercisePanelProps) {
@@ -68,7 +75,7 @@ export async function SessionExercisePanel({ session }: SessionExercisePanelProp
     notFound();
   }
 
-  const [publicListResult, domainExercises, unitModule] = await Promise.all([
+  const [publicListResult, domainResult, unitModule] = await Promise.all([
     getCachedApprovedCurriculumExercises({
       unitSlug: filtered.request.unitSlug,
       learningSkill: filtered.request.skill,
@@ -81,7 +88,11 @@ export async function SessionExercisePanel({ session }: SessionExercisePanelProp
     getCachedPublishedModuleBySlug(filtered.request.unitSlug),
   ]);
 
-  if (publicListResult.status === "unavailable") {
+  if (
+    publicListResult.status === "unavailable" ||
+    domainResult.status === "unavailable" ||
+    unitModule.status === "unavailable"
+  ) {
     return (
       <>
         <PageHeader description="Не удалось загрузить задания сессии." title="Учебная сессия" />
@@ -89,6 +100,8 @@ export async function SessionExercisePanel({ session }: SessionExercisePanelProp
       </>
     );
   }
+
+  const domainExercises = domainResult.data;
 
   let selection;
   try {

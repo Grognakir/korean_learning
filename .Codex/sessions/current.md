@@ -4,21 +4,22 @@
 
 ## Чем занимаемся
 
-F2-I23 essentially complete pending **CP-9**. Do not tag `v0.1.0` without CP-9.
+Corrective stabilization F2-I23 завершена локально. Исправлены связи Supabase, счётчики, кэш недоступности и runtime-контракты учебной сессии; внешняя публикация ещё не выполнялась.
 
-## F2-I23 — done
+## Принятые решения
 
-- Merge #16 release stabilization + #17 curriculum cache fix
-- Remote: migrations, chunked curriculum import, `sample-module` archived
-- Remote counts: 16 modules / 80 grammar / 192 dict / 16 passages / 272 exercises
-- Vercel: `CONTENT_SOURCE=supabase` on Production + Preview
-- Production smoke (`korean-learning-gray.vercel.app`): `/topics` u01–u16, `/topics/u01` OK, sample/demo 404, auth/review/progress/dictionary 200
-- Preview deployment URLs remain behind Vercel SSO (known)
+- CP-9 и тег `v0.1.0` не подтверждать до исправления найденных P1-дефектов.
+- Источник production остаётся Supabase; возврат к локальным фикстурам не использовать как исправление.
+- Supabase-адаптеры проверяются на реальных DB-shaped fixtures; двойной Next cache удалён, оставлен request single-flight.
+- Approved free-response answers получают `approved`; коды грамматик нормализуются в slug-формат и защищены DB constraint.
 
-## Нужно от пользователя
+## Открытые задачи
 
-**CP-9** — проверить production smoke и явно разрешить tag/release `v0.1.0`.
+- [ ] Получить отдельное разрешение на push/merge и внешние изменения.
+- [ ] Применить remote migration `20260810000002` и обновлённый curriculum upsert.
+- [ ] Дождаться Vercel deployment и повторить production smoke.
+- [ ] После успешного smoke запросить CP-9; тег `v0.1.0` без CP-9 не создавать.
 
-## Ветка
+## Контекст для следующей сессии
 
-`main` @ `4cd5036`
+`main` @ `2d3c1ca`, изменения не закоммичены. Gate: format/lint/typecheck; unit 362; content 44; integration 20; DB 24; RLS 13; E2E 34; local и remote-Supabase production builds; bundle/secret/DTO scans — зелёные. Production-like smoke на текущем remote подтверждает после кода: grammar filter 2 задания, dictionary u01 12 слов, counts 32–38. Учебная сессия безопасно деградирует до «Сервис недоступен», пока remote accepted answers остаются pending; migration `20260810000002` и regenerated seed исправляют это локально и должны быть применены remote перед деплоем.

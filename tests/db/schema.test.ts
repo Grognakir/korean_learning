@@ -130,6 +130,17 @@ describe("database schema and seed", () => {
         "select coalesce(unit_number::text, 'null') from public.learning_modules where slug = 'sample-module';",
       ),
     ).toBe("null");
+
+    expect(
+      runSql(
+        "select count(*)::text from public.grammar_topics where code !~ '^[a-z0-9]+(-[a-z0-9]+)*$';",
+      ),
+    ).toBe("0");
+    expect(
+      runSql(
+        "select count(*)::text from public.accepted_answers answer join public.exercises exercise on exercise.id = answer.exercise_id where exercise.status = 'approved' and exercise.type in ('free-response', 'fill-blank') and answer.review_status <> 'approved';",
+      ),
+    ).toBe("0");
   });
 
   it("rejects grammar exercises without a topic and reading without a passage", () => {

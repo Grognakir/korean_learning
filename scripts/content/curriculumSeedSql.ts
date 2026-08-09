@@ -191,7 +191,7 @@ export function buildCurriculumSeedSql(
     }
     const id = uuidFromKey(`topic:${topic.logicalId}@${topic.contentVersion}`);
     topicIdByLogical.set(topic.logicalId, id);
-    const code = topic.logicalId.replace(/^grammar\./, "");
+    const code = topic.logicalId.replace(/^grammar\./, "").replace(/\./g, "-");
     const sortOrder = Number(code.match(/n(\d+)$/)?.[1] ?? 0);
     const status = mapContentStatus(topic.status);
     const conflict =
@@ -529,7 +529,7 @@ export function buildCurriculumSeedSql(
           `  ${sqlString(answer)},`,
           `  ${sqlString(answer.normalize("NFC").trim().replace(/\s+/gu, " "))},`,
           `  ${index === 0},`,
-          "  'pending'",
+          `  '${exercise.status === "approved" ? "approved" : "pending"}'`,
           ");",
           "",
         );

@@ -1,8 +1,10 @@
 import "server-only";
 
-import { unstable_cache } from "next/cache";
-
-import { createServiceRoleSupabaseClient } from "@/lib/supabase/serviceRoleClient";
+import {
+  createServiceRoleSupabaseClient,
+  type ServiceRoleSupabaseClient,
+} from "@/lib/supabase/serviceRoleClient";
+import { CurriculumContentError } from "@/modules/curriculum/CurriculumContentError";
 
 import type { CatalogRepository } from "./CatalogRepository";
 import type {
@@ -35,7 +37,7 @@ type TopicRow = {
   rule_payload: { titleKo?: string; summaryKo?: string } | null;
 };
 
-async function loadPublishedCatalogSnapshot(): Promise<{
+type PublishedCatalogSnapshot = {
   units: PublicUnitSummary[];
   grammarTopics: PublicGrammarTopicSummary[];
   aggregates: {
@@ -45,13 +47,14 @@ async function loadPublishedCatalogSnapshot(): Promise<{
     readingPassages: number;
     approvedExercises: number;
   };
-}> {
-  // Public catalog reads run inside `"use cache"` / `unstable_cache`; cookie-bound
-  // server clients are unavailable there, so use the service-role client (same as modules).
-  const supabase = createServiceRoleSupabaseClient();
+};
 
-  const [modulesResult, topicsResult, dictResult, passagesResult, exercisesResult] =
-    await Promise.all([
+export async function loadPublishedCatalogSnapshot(
+  supabase: ServiceRoleSupabaseClient = createServiceRoleSupabaseClient(),
+): Promise<PublishedCatalogSnapshot> {
+  let results;
+  try {
+    results = await Promise.all([
       supabase
         .from("learning_modules")
         .select("id, slug, unit_number, title_ko, title_ru, description_ru, content_version")
@@ -66,39 +69,74 @@ async function loadPublishedCatalogSnapshot(): Promise<{
         )
         .eq("status", "published")
         .order("sort_order", { ascending: true }),
-      supabase
-        .from("dictionary_entries")
-        .select("id", { count: "exact", head: true })
-        .eq("status", "published"),
-      supabase
-        .from("reading_passages")
-        .select("id", { count: "exact", head: true })
-        .eq("status", "published"),
+      supabase.from("dictionary_entries").select("id").eq("status", "published"),
+      supabase.from("dictionary_entry_modules").select("entry_id, module_id"),
+      supabase.from("reading_passages").select("id, primary_module_id").eq("status", "published"),
       supabase
         .from("exercises")
         .select("id, module_id", { count: "exact" })
         .eq("status", "approved"),
     ]);
+  } catch (error) {
+    throw new CurriculumContentError("Catalog query failed", error);
+  }
 
-  if (modulesResult.error) throw modulesResult.error;
-  if (topicsResult.error) throw topicsResult.error;
-  if (dictResult.error) throw dictResult.error;
-  if (passagesResult.error) throw passagesResult.error;
-  if (exercisesResult.error) throw exercisesResult.error;
+  const [
+    modulesResult,
+    topicsResult,
+    dictionaryEntriesResult,
+    dictionaryLinksResult,
+    passagesResult,
+    exercisesResult,
+  ] = results;
+  const queryError =
+    modulesResult.error ??
+    topicsResult.error ??
+    dictionaryEntriesResult.error ??
+    dictionaryLinksResult.error ??
+    passagesResult.error ??
+    exercisesResult.error;
+  if (queryError) throw new CurriculumContentError("Catalog query failed", queryError);
 
   const modules = (modulesResult.data ?? []) as ModuleRow[];
   const topics = (topicsResult.data ?? []) as TopicRow[];
   const moduleById = new Map(modules.map((module) => [module.id, module]));
+  const publishedDictionaryEntryIds = new Set(
+    (dictionaryEntriesResult.data ?? []).map((entry) => entry.id),
+  );
 
   const exerciseCountByModule = new Map<string, number>();
   for (const exercise of exercisesResult.data ?? []) {
     const moduleId = (exercise as { module_id: string }).module_id;
+    if (!moduleById.has(moduleId)) continue;
     exerciseCountByModule.set(moduleId, (exerciseCountByModule.get(moduleId) ?? 0) + 1);
   }
 
   const grammarCountByModule = new Map<string, number>();
   for (const topic of topics) {
     grammarCountByModule.set(topic.module_id, (grammarCountByModule.get(topic.module_id) ?? 0) + 1);
+  }
+
+  const dictionaryCountByModule = new Map<string, number>();
+  const publicDictionaryEntryIds = new Set<string>();
+  for (const link of dictionaryLinksResult.data ?? []) {
+    if (!publishedDictionaryEntryIds.has(link.entry_id) || !moduleById.has(link.module_id)) {
+      continue;
+    }
+    publicDictionaryEntryIds.add(link.entry_id);
+    dictionaryCountByModule.set(
+      link.module_id,
+      (dictionaryCountByModule.get(link.module_id) ?? 0) + 1,
+    );
+  }
+
+  const passageCountByModule = new Map<string, number>();
+  for (const passage of passagesResult.data ?? []) {
+    if (!moduleById.has(passage.primary_module_id)) continue;
+    passageCountByModule.set(
+      passage.primary_module_id,
+      (passageCountByModule.get(passage.primary_module_id) ?? 0) + 1,
+    );
   }
 
   const units: PublicUnitSummary[] = modules.map((module) => ({
@@ -112,15 +150,21 @@ async function loadPublishedCatalogSnapshot(): Promise<{
     contentVersion: module.content_version as PublicUnitSummary["contentVersion"],
     counts: {
       grammarTopics: grammarCountByModule.get(module.id) ?? 0,
-      dictionaryEntries: 0,
-      readingPassages: 0,
+      dictionaryEntries: dictionaryCountByModule.get(module.id) ?? 0,
+      readingPassages: passageCountByModule.get(module.id) ?? 0,
       approvedExercises: exerciseCountByModule.get(module.id) ?? 0,
     },
   }));
 
-  // One aggregated dictionary/passage count query already done; per-unit links optional later.
-  const dictionaryTotal = dictResult.count ?? 0;
-  const passageTotal = passagesResult.count ?? 0;
+  const dictionaryTotal = publicDictionaryEntryIds.size;
+  const passageTotal = [...passageCountByModule.values()].reduce(
+    (total, count) => total + count,
+    0,
+  );
+  const exerciseTotal = [...exerciseCountByModule.values()].reduce(
+    (total, count) => total + count,
+    0,
+  );
 
   const grammarTopics: PublicGrammarTopicSummary[] = topics.flatMap((topic) => {
     const learningModule = moduleById.get(topic.module_id);
@@ -154,19 +198,27 @@ async function loadPublishedCatalogSnapshot(): Promise<{
       grammarTopics: grammarTopics.length,
       dictionaryEntries: dictionaryTotal,
       readingPassages: passageTotal,
-      approvedExercises: exercisesResult.count ?? 0,
+      approvedExercises: exerciseTotal,
     },
   };
 }
 
-const getCachedSnapshot = unstable_cache(loadPublishedCatalogSnapshot, ["curriculum-catalog"], {
-  tags: ["curriculum-catalog", "learning-modules"],
-  revalidate: 3600,
-});
-
 export class SupabaseCatalogRepository implements CatalogRepository {
+  #inFlight: Promise<PublishedCatalogSnapshot> | undefined;
+
+  async #getSnapshot(): Promise<PublishedCatalogSnapshot> {
+    const promise = this.#inFlight ?? loadPublishedCatalogSnapshot();
+    this.#inFlight = promise;
+
+    try {
+      return await promise;
+    } finally {
+      if (this.#inFlight === promise) this.#inFlight = undefined;
+    }
+  }
+
   async listUnits(): Promise<CatalogListResult<PublicUnitSummary>> {
-    const snapshot = await getCachedSnapshot();
+    const snapshot = await this.#getSnapshot();
     if (snapshot.units.length === 0) {
       return { status: "empty", items: [] };
     }
@@ -174,14 +226,14 @@ export class SupabaseCatalogRepository implements CatalogRepository {
   }
 
   async getUnitBySlug(slug: string): Promise<PublicUnitSummary | undefined> {
-    const snapshot = await getCachedSnapshot();
+    const snapshot = await this.#getSnapshot();
     return snapshot.units.find((unit) => unit.slug === slug);
   }
 
   async listGrammarTopics(
     query: CatalogQuery = {},
   ): Promise<CatalogListResult<PublicGrammarTopicSummary>> {
-    const snapshot = await getCachedSnapshot();
+    const snapshot = await this.#getSnapshot();
 
     if (query.unitSlug && !snapshot.units.some((unit) => unit.slug === query.unitSlug)) {
       return { status: "not_found" };
@@ -215,7 +267,7 @@ export class SupabaseCatalogRepository implements CatalogRepository {
   }
 
   async aggregateCounts() {
-    const snapshot = await getCachedSnapshot();
+    const snapshot = await this.#getSnapshot();
     return snapshot.aggregates;
   }
 }

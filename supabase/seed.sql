@@ -1155,7 +1155,7 @@ insert into public.grammar_topics (
 ) values (
   '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
-  'u01.n01',
+  'u01-n01',
   'формальная утвердительная и вопросительная форма связки «быть/являться».',
   'формальная утвердительная и вопросительная форма связки «быть/являться».',
   '{"titleKo":"N입니다/입니까?","summaryKo":"N입니다/입니까?"}'::jsonb,
@@ -1176,7 +1176,7 @@ insert into public.grammar_topics (
 ) values (
   '30c3c3b4-03f5-4f2e-a10d-8680d417674a',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
-  'u01.n02',
+  'u01-n02',
   'маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной.',
   'маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной.',
   '{"titleKo":"N이/가","summaryKo":"N이/가"}'::jsonb,
@@ -1197,7 +1197,7 @@ insert into public.grammar_topics (
 ) values (
   '8a80682b-a6e1-4455-9837-56d128b281d0',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
-  'u01.n03',
+  'u01-n03',
   'задаёт тему высказывания или уже известный предмет разговора.',
   'задаёт тему высказывания или уже известный предмет разговора.',
   '{"titleKo":"N은/는①","summaryKo":"N은/는①"}'::jsonb,
@@ -1218,7 +1218,7 @@ insert into public.grammar_topics (
 ) values (
   '7c375169-839f-4e9f-8589-1b53585aed01',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
-  'u01.n04',
+  'u01-n04',
   'отрицает принадлежность к классу: «не является N».',
   'отрицает принадлежность к классу: «не является N».',
   '{"titleKo":"N이/가 아니다","summaryKo":"N이/가 아니다"}'::jsonb,
@@ -1239,7 +1239,7 @@ insert into public.grammar_topics (
 ) values (
   'f0e4e545-1d7d-4e11-9226-9500759baa43',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
-  'u01.n05',
+  'u01-n05',
   'добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`.',
   'добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`.',
   '{"titleKo":"N도","summaryKo":"N도"}'::jsonb,
@@ -1260,7 +1260,7 @@ insert into public.grammar_topics (
 ) values (
   'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
-  'u02.n01',
+  'u02-n01',
   'указательные определители «этот/тот/вон тот» по положению относительно участников разговора.',
   'указательные определители «этот/тот/вон тот» по положению относительно участников разговора.',
   '{"titleKo":"이/그/저","summaryKo":"이/그/저"}'::jsonb,
@@ -1281,7 +1281,7 @@ insert into public.grammar_topics (
 ) values (
   '49051a92-1504-4992-aae2-a63f45b9de2c',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
-  'u02.n02',
+  'u02-n02',
   'выражает принадлежность или отношение между существительными.',
   'выражает принадлежность или отношение между существительными.',
   '{"titleKo":"N의","summaryKo":"N의"}'::jsonb,
@@ -1302,7 +1302,7 @@ insert into public.grammar_topics (
 ) values (
   '8a1109c4-571f-4b3a-9e32-7897bd43c8f5',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
-  'u02.n03',
+  'u02-n03',
   'указывает место существования, нахождения или направление движения.',
   'указывает место существования, нахождения или направление движения.',
   '{"titleKo":"N에①","summaryKo":"N에①"}'::jsonb,
@@ -1323,7 +1323,7 @@ insert into public.grammar_topics (
 ) values (
   '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
-  'u02.n04',
+  'u02-n04',
   'сообщает о наличии, отсутствии или местонахождении предмета/лица.',
   'сообщает о наличии, отсутствии или местонахождении предмета/лица.',
   '{"titleKo":"N이/가 있다/없다","summaryKo":"N이/가 있다/없다"}'::jsonb,
@@ -1344,7 +1344,7 @@ insert into public.grammar_topics (
 ) values (
   '753818d8-088e-4852-8892-a6be1fa91c7e',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
-  'u03.n01',
+  'u03-n01',
   'формальный вежливый стиль утверждения и вопроса.',
   'формальный вежливый стиль утверждения и вопроса.',
   '{"titleKo":"V-(스)ㅂ니다/-(스)ㅂ니까?","summaryKo":"V-(스)ㅂ니다/-(스)ㅂ니까?"}'::jsonb,
@@ -1365,7 +1365,7 @@ insert into public.grammar_topics (
 ) values (
   '00bb8c98-c877-468e-868e-51f356a55b06',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
-  'u03.n02',
+  'u03-n02',
   'маркирует прямое дополнение; `을` после 받침, `를` после гласной.',
   'маркирует прямое дополнение; `을` после 받침, `를` после гласной.',
   '{"titleKo":"N을/를","summaryKo":"N을/를"}'::jsonb,
@@ -1386,7 +1386,7 @@ insert into public.grammar_topics (
 ) values (
   '275400bf-a5c2-42f5-bb7f-b19ff372a569',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
-  'u03.n03',
+  'u03-n03',
   'ограничивает значение: «только N».',
   'ограничивает значение: «только N».',
   '{"titleKo":"N만","summaryKo":"N만"}'::jsonb,
@@ -1407,7 +1407,7 @@ insert into public.grammar_topics (
 ) values (
   'fa62b1f0-61ca-4e68-90a9-4270a7881003',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
-  'u03.n04',
+  'u03-n04',
   'выражает движение к месту: «идти/приходить в N».',
   'выражает движение к месту: «идти/приходить в N».',
   '{"titleKo":"N에 가다/오다","summaryKo":"N에 가다/오다"}'::jsonb,
@@ -1428,7 +1428,7 @@ insert into public.grammar_topics (
 ) values (
   '05c93655-e1d7-494a-9971-7f3b3f08270b',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
-  'u03.n05',
+  'u03-n05',
   'базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами.',
   'базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами.',
   '{"titleKo":"수①","summaryKo":"수①"}'::jsonb,
@@ -1449,7 +1449,7 @@ insert into public.grammar_topics (
 ) values (
   'ece80569-38fc-4b3a-bf4a-c587ff14ea63',
   'eee407f3-7185-4524-9e59-d79769238530',
-  'u04.n01',
+  'u04-n01',
   'нейтрально-письменно соединяет существительные значением «и/с».',
   'нейтрально-письменно соединяет существительные значением «и/с».',
   '{"titleKo":"N와/과 N","summaryKo":"N와/과 N"}'::jsonb,
@@ -1470,7 +1470,7 @@ insert into public.grammar_topics (
 ) values (
   '74e26dec-da2c-4709-8953-1dd49a02569c',
   'eee407f3-7185-4524-9e59-d79769238530',
-  'u04.n02',
+  'u04-n02',
   'разговорно соединяет существительные значением «и/с».',
   'разговорно соединяет существительные значением «и/с».',
   '{"titleKo":"N하고 N","summaryKo":"N하고 N"}'::jsonb,
@@ -1491,7 +1491,7 @@ insert into public.grammar_topics (
 ) values (
   '312ec2b7-5d62-4e8e-bcd4-de828e1805a1',
   'eee407f3-7185-4524-9e59-d79769238530',
-  'u04.n03',
+  'u04-n03',
   'обозначает место действия или исходную точку движения.',
   'обозначает место действия или исходную точку движения.',
   '{"titleKo":"N에서","summaryKo":"N에서"}'::jsonb,
@@ -1512,7 +1512,7 @@ insert into public.grammar_topics (
 ) values (
   '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a',
   'eee407f3-7185-4524-9e59-d79769238530',
-  'u04.n04',
+  'u04-n04',
   'даты, календарные числа, месяцы, дни недели и чтение календаря.',
   'даты, календарные числа, месяцы, дни недели и чтение календаря.',
   '{"titleKo":"수②","summaryKo":"수②"}'::jsonb,
@@ -1533,7 +1533,7 @@ insert into public.grammar_topics (
 ) values (
   '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73',
   'eee407f3-7185-4524-9e59-d79769238530',
-  'u04.n05',
+  'u04-n05',
   'обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится.',
   'обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится.',
   '{"titleKo":"N에②","summaryKo":"N에②"}'::jsonb,
@@ -1554,7 +1554,7 @@ insert into public.grammar_topics (
 ) values (
   '5d69471d-eaad-4e32-ab21-bf3abd158f52',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
-  'u05.n01',
+  'u05-n01',
   'базовая разговорно-вежливая форма настоящего времени.',
   'базовая разговорно-вежливая форма настоящего времени.',
   '{"titleKo":"V-아/어/여요①","summaryKo":"V-아/어/여요①"}'::jsonb,
@@ -1575,7 +1575,7 @@ insert into public.grammar_topics (
 ) values (
   '126c5f04-3282-47f1-8a15-acd1f7b188c0',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
-  'u05.n02',
+  'u05-n02',
   'разговорно-вежливая связка после существительного.',
   'разговорно-вежливая связка после существительного.',
   '{"titleKo":"N이에요/예요","summaryKo":"N이에요/예요"}'::jsonb,
@@ -1596,7 +1596,7 @@ insert into public.grammar_topics (
 ) values (
   '71c150f9-8d5d-4b9f-a864-37b59deb0136',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
-  'u05.n03',
+  'u05-n03',
   'время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения.',
   'время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения.',
   '{"titleKo":"수③","summaryKo":"수③"}'::jsonb,
@@ -1617,7 +1617,7 @@ insert into public.grammar_topics (
 ) values (
   'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
-  'u05.n04',
+  'u05-n04',
   'задаёт начало и конец временного или пространственного диапазона.',
   'задаёт начало и конец временного или пространственного диапазона.',
   '{"titleKo":"N부터 N까지","summaryKo":"N부터 N까지"}'::jsonb,
@@ -1638,7 +1638,7 @@ insert into public.grammar_topics (
 ) values (
   '8c39255c-13da-493a-9598-8679ab7a59e7',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
-  'u05.n05',
+  'u05-n05',
   'краткое и полное отрицание действия или состояния.',
   'краткое и полное отрицание действия или состояния.',
   '{"titleKo":"안 V/V-지 않다","summaryKo":"안 V/V-지 않다"}'::jsonb,
@@ -1659,7 +1659,7 @@ insert into public.grammar_topics (
 ) values (
   '5837b05d-94c5-4844-a413-e945b4344d4f',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
-  'u06.n01',
+  'u06-n01',
   'образует прошедшее время глагола или прилагательного.',
   'образует прошедшее время глагола или прилагательного.',
   '{"titleKo":"V-았/었/였-","summaryKo":"V-았/었/였-"}'::jsonb,
@@ -1680,7 +1680,7 @@ insert into public.grammar_topics (
 ) values (
   'ba4806cd-2a3a-48a4-8f39-170acb3f2def',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
-  'u06.n02',
+  'u06-n02',
   'прошедшая форма связки после существительного.',
   'прошедшая форма связки после существительного.',
   '{"titleKo":"N이었/였-","summaryKo":"N이었/였-"}'::jsonb,
@@ -1701,7 +1701,7 @@ insert into public.grammar_topics (
 ) values (
   'fbc7140a-f6a0-4dcb-996c-730ddbed58d3',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
-  'u06.n03',
+  'u06-n03',
   'перечисляет действия или состояния без обязательной причинной связи.',
   'перечисляет действия или состояния без обязательной причинной связи.',
   '{"titleKo":"V-고①","summaryKo":"V-고①"}'::jsonb,
@@ -1722,7 +1722,7 @@ insert into public.grammar_topics (
 ) values (
   'ce20b2f3-9f2c-47c5-aba2-13dc19da118d',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
-  'u06.n04',
+  'u06-n04',
   'соединяет существительные или именные характеристики значением «и».',
   'соединяет существительные или именные характеристики значением «и».',
   '{"titleKo":"N(이)고","summaryKo":"N(이)고"}'::jsonb,
@@ -1743,7 +1743,7 @@ insert into public.grammar_topics (
 ) values (
   '79e28405-616c-41de-8b9b-cbbfca67e1aa',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
-  'u06.n05',
+  'u06-n05',
   'выражает опыт или попытку «попробовать сделать».',
   'выражает опыт или попытку «попробовать сделать».',
   '{"titleKo":"AV-아/어/여 보다","summaryKo":"AV-아/어/여 보다"}'::jsonb,
@@ -1764,7 +1764,7 @@ insert into public.grammar_topics (
 ) values (
   '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
-  'u06.n06',
+  'u06-n06',
   'описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной.',
   'описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной.',
   '{"titleKo":"ㅡ 동사","summaryKo":"ㅡ 동사"}'::jsonb,
@@ -1785,7 +1785,7 @@ insert into public.grammar_topics (
 ) values (
   '1e8467c9-ff54-4a37-bb24-aa475e2f9e45',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
-  'u07.n01',
+  'u07-n01',
   'подчёркивает контраст или сравнение двух тем.',
   'подчёркивает контраст или сравнение двух тем.',
   '{"titleKo":"N은/는②","summaryKo":"N은/는②"}'::jsonb,
@@ -1806,7 +1806,7 @@ insert into public.grammar_topics (
 ) values (
   '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
-  'u07.n02',
+  'u07-n02',
   'описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ.',
   'описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ.',
   '{"titleKo":"ㅂ 동사","summaryKo":"ㅂ 동사"}'::jsonb,
@@ -1827,7 +1827,7 @@ insert into public.grammar_topics (
 ) values (
   '7854c9ff-14a3-442f-b737-2b93c4c4046d',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
-  'u07.n03',
+  'u07-n03',
   'соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем».',
   'соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем».',
   '{"titleKo":"AV-아/어/여서①","summaryKo":"AV-아/어/여서①"}'::jsonb,
@@ -1848,7 +1848,7 @@ insert into public.grammar_topics (
 ) values (
   '214132fd-fdc0-43dd-a962-e42ff1c23fcb',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
-  'u07.n04',
+  'u07-n04',
   'указывает направление движения; после гласной и `ㄹ` используется `로`.',
   'указывает направление движения; после гласной и `ㄹ` используется `로`.',
   '{"titleKo":"N(으)로①","summaryKo":"N(으)로①"}'::jsonb,
@@ -1869,7 +1869,7 @@ insert into public.grammar_topics (
 ) values (
   '08602f93-e9c4-43ec-af68-8275e3373035',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
-  'u07.n05',
+  'u07-n05',
   'выражает цель движения: «идти/приходить, чтобы сделать».',
   'выражает цель движения: «идти/приходить, чтобы сделать».',
   '{"titleKo":"AV-(으)러 가다/오다","summaryKo":"AV-(으)러 가다/오다"}'::jsonb,
@@ -1890,7 +1890,7 @@ insert into public.grammar_topics (
 ) values (
   '7b58d124-1351-4775-bd05-392d3de9681a',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
-  'u08.n01',
+  'u08-n01',
   'выражает собственный план, намерение или ожидаемое будущее действие.',
   'выражает собственный план, намерение или ожидаемое будущее действие.',
   '{"titleKo":"AV-(으)ㄹ 거예요①","summaryKo":"AV-(으)ㄹ 거예요①"}'::jsonb,
@@ -1911,7 +1911,7 @@ insert into public.grammar_topics (
 ) values (
   '4f221acf-3db5-4160-a85f-3614688a1c97',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
-  'u08.n02',
+  'u08-n02',
   'соединяет последовательные действия в рассказе о плане или распорядке.',
   'соединяет последовательные действия в рассказе о плане или распорядке.',
   '{"titleKo":"AV-고②","summaryKo":"AV-고②"}'::jsonb,
@@ -1932,7 +1932,7 @@ insert into public.grammar_topics (
 ) values (
   'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
-  'u08.n03',
+  'u08-n03',
   'обозначает действие или момент «до/перед».',
   'обозначает действие или момент «до/перед».',
   '{"titleKo":"AV-기 전에/N 전에","summaryKo":"AV-기 전에/N 전에"}'::jsonb,
@@ -1953,7 +1953,7 @@ insert into public.grammar_topics (
 ) values (
   '72b9edd3-5a56-4c25-a35a-5fd9b601dc61',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
-  'u08.n04',
+  'u08-n04',
   'обозначает действие или момент «после».',
   'обозначает действие или момент «после».',
   '{"titleKo":"AV-(으)ㄴ 후에/N 후에","summaryKo":"AV-(으)ㄴ 후에/N 후에"}'::jsonb,
@@ -1974,7 +1974,7 @@ insert into public.grammar_topics (
 ) values (
   'b8628ae8-c518-43b8-8b9a-9333850c2d52',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
-  'u08.n05',
+  'u08-n05',
   'задаёт продолжительность «в течение N».',
   'задаёт продолжительность «в течение N».',
   '{"titleKo":"N 동안","summaryKo":"N 동안"}'::jsonb,
@@ -1995,7 +1995,7 @@ insert into public.grammar_topics (
 ) values (
   '23c5932e-f49e-4a6e-9823-12eb063ac064',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
-  'u09.n01',
+  'u09-n01',
   'счётные слова, количество товаров, цены и денежные единицы.',
   'счётные слова, количество товаров, цены и денежные единицы.',
   '{"titleKo":"수④","summaryKo":"수④"}'::jsonb,
@@ -2016,7 +2016,7 @@ insert into public.grammar_topics (
 ) values (
   'd34e895f-8378-4c0e-a775-fac2418cf4cc',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
-  'u09.n02',
+  'u09-n02',
   'вежливая просьба или команда; `-(으)십시오` формальнее.',
   'вежливая просьба или команда; `-(으)십시오` формальнее.',
   '{"titleKo":"AV-(으)세요/-(으)십시오","summaryKo":"AV-(으)세요/-(으)십시오"}'::jsonb,
@@ -2037,7 +2037,7 @@ insert into public.grammar_topics (
 ) values (
   'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
-  'u09.n03',
+  'u09-n03',
   'разговорное «и/с» после существительного.',
   'разговорное «и/с» после существительного.',
   '{"titleKo":"N이랑","summaryKo":"N이랑"}'::jsonb,
@@ -2058,7 +2058,7 @@ insert into public.grammar_topics (
 ) values (
   '7a58f58a-c03c-42b0-afeb-c08ba1b01171',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
-  'u09.n04',
+  'u09-n04',
   'действие, продолжающееся в момент речи.',
   'действие, продолжающееся в момент речи.',
   '{"titleKo":"AV-고 있다①","summaryKo":"AV-고 있다①"}'::jsonb,
@@ -2079,7 +2079,7 @@ insert into public.grammar_topics (
 ) values (
   '07191fe0-9b53-4189-b9c5-6024d35fc792',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
-  'u09.n05',
+  'u09-n05',
   'адресат или источник действия: «кому/у кого/от кого».',
   'адресат или источник действия: «кому/у кого/от кого».',
   '{"titleKo":"N에게(서)/한테(서)","summaryKo":"N에게(서)/한테(서)"}'::jsonb,
@@ -2100,7 +2100,7 @@ insert into public.grammar_topics (
 ) values (
   '3abf4efa-6f21-4cd7-aefe-1707f822b409',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
-  'u10.n01',
+  'u10-n01',
   'предлагает совместное действие или спрашивает решение собеседника.',
   'предлагает совместное действие или спрашивает решение собеседника.',
   '{"titleKo":"AV-(으)ㄹ까요?①","summaryKo":"AV-(으)ㄹ까요?①"}'::jsonb,
@@ -2121,7 +2121,7 @@ insert into public.grammar_topics (
 ) values (
   '061ecaf0-518b-488a-903e-fafff4b0e7b0',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
-  'u10.n02',
+  'u10-n02',
   'формальное «давайте сделаем».',
   'формальное «давайте сделаем».',
   '{"titleKo":"AV-(으)ㅂ시다","summaryKo":"AV-(으)ㅂ시다"}'::jsonb,
@@ -2142,7 +2142,7 @@ insert into public.grammar_topics (
 ) values (
   '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
-  'u10.n03',
+  'u10-n03',
   'выражает причину, особенно перед просьбой, предложением или выводом.',
   'выражает причину, особенно перед просьбой, предложением или выводом.',
   '{"titleKo":"V-(으)니까①/N(이)니까","summaryKo":"V-(으)니까①/N(이)니까"}'::jsonb,
@@ -2163,7 +2163,7 @@ insert into public.grammar_topics (
 ) values (
   '41adbad8-eebc-47ec-b4ea-caeaf78d5b90',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
-  'u10.n04',
+  'u10-n04',
   'выражает желание говорящего выполнить действие.',
   'выражает желание говорящего выполнить действие.',
   '{"titleKo":"AV-고 싶다","summaryKo":"AV-고 싶다"}'::jsonb,
@@ -2184,7 +2184,7 @@ insert into public.grammar_topics (
 ) values (
   '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
-  'u10.n05',
+  'u10-n05',
   'выражает решение или намерение говорящего в текущей ситуации.',
   'выражает решение или намерение говорящего в текущей ситуации.',
   '{"titleKo":"AV-겠-①","summaryKo":"AV-겠-①"}'::jsonb,
@@ -2205,7 +2205,7 @@ insert into public.grammar_topics (
 ) values (
   '89fc27d6-28c0-426d-8b59-bd14e3efa1a5',
   'df512da8-8f48-486f-801d-5260291b8d89',
-  'u11.n01',
+  'u11-n01',
   'просит подтверждение известного или ожидаемого факта.',
   'просит подтверждение известного или ожидаемого факта.',
   '{"titleKo":"V-지요?/N(이)지요?","summaryKo":"V-지요?/N(이)지요?"}'::jsonb,
@@ -2226,7 +2226,7 @@ insert into public.grammar_topics (
 ) values (
   '565a91c3-0493-4077-b4e9-5c1a9ddb1451',
   'df512da8-8f48-486f-801d-5260291b8d89',
-  'u11.n02',
+  'u11-n02',
   'выражает предположение по имеющимся признакам.',
   'выражает предположение по имеющимся признакам.',
   '{"titleKo":"V-겠-②/N이겠-","summaryKo":"V-겠-②/N이겠-"}'::jsonb,
@@ -2247,7 +2247,7 @@ insert into public.grammar_topics (
 ) values (
   '430fd2d3-a80d-407c-9e35-d312829dba68',
   'df512da8-8f48-486f-801d-5260291b8d89',
-  'u11.n03',
+  'u11-n03',
   'действие, выполненное для другого человека.',
   'действие, выполненное для другого человека.',
   '{"titleKo":"AV-아/어/여 주다","summaryKo":"AV-아/어/여 주다"}'::jsonb,
@@ -2268,7 +2268,7 @@ insert into public.grammar_topics (
 ) values (
   'c0005fb3-26c0-4541-98ea-5bc63b5476da',
   'df512da8-8f48-486f-801d-5260291b8d89',
-  'u11.n04',
+  'u11-n04',
   'условие или повторяющаяся ситуация «если/когда».',
   'условие или повторяющаяся ситуация «если/когда».',
   '{"titleKo":"V-(으)면/N이면","summaryKo":"V-(으)면/N이면"}'::jsonb,
@@ -2289,7 +2289,7 @@ insert into public.grammar_topics (
 ) values (
   '02211b82-623d-4b85-8780-3683370a7752',
   'df512da8-8f48-486f-801d-5260291b8d89',
-  'u11.n05',
+  'u11-n05',
   'описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов.',
   'описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов.',
   '{"titleKo":"ㄷ 동사","summaryKo":"ㄷ 동사"}'::jsonb,
@@ -2310,7 +2310,7 @@ insert into public.grammar_topics (
 ) values (
   '002f5586-a1f8-4b97-bc23-f4505d7d3806',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
-  'u12.n01',
+  'u12-n01',
   'выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному.',
   'выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному.',
   '{"titleKo":"V-아/어/여서②/N이어/여서","summaryKo":"V-아/어/여서②/N이어/여서"}'::jsonb,
@@ -2331,7 +2331,7 @@ insert into public.grammar_topics (
 ) values (
   '4c859c1a-69e4-4006-a14f-36b2ba02c220',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
-  'u12.n02',
+  'u12-n02',
   'возможность, способность или невозможность выполнить действие.',
   'возможность, способность или невозможность выполнить действие.',
   '{"titleKo":"AV-(으)ㄹ 수 있다/없다","summaryKo":"AV-(으)ㄹ 수 있다/없다"}'::jsonb,
@@ -2352,7 +2352,7 @@ insert into public.grammar_topics (
 ) values (
   'e5cca2ff-779a-4aee-acb0-26d487b93ec0',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
-  'u12.n03',
+  'u12-n03',
   'вопрос-предположение о будущем или неизвестном факте.',
   'вопрос-предположение о будущем или неизвестном факте.',
   '{"titleKo":"V-(으)ㄹ까요?②/N일까요?","summaryKo":"V-(으)ㄹ까요?②/N일까요?"}'::jsonb,
@@ -2373,7 +2373,7 @@ insert into public.grammar_topics (
 ) values (
   '05cd47b1-ee91-44e0-89d4-1c7f018e831c',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
-  'u12.n04',
+  'u12-n04',
   'предположение о чужом действии или неподконтрольном факте.',
   'предположение о чужом действии или неподконтрольном факте.',
   '{"titleKo":"AV-(으)ㄹ 거예요②/N일 거예요","summaryKo":"AV-(으)ㄹ 거예요②/N일 거예요"}'::jsonb,
@@ -2394,7 +2394,7 @@ insert into public.grammar_topics (
 ) values (
   '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
-  'u12.n05',
+  'u12-n05',
   'обещание или решение говорящего, принятое с учётом собеседника.',
   'обещание или решение говорящего, принятое с учётом собеседника.',
   '{"titleKo":"AV-(으)ㄹ게요","summaryKo":"AV-(으)ㄹ게요"}'::jsonb,
@@ -2415,7 +2415,7 @@ insert into public.grammar_topics (
 ) values (
   '97dbcbc3-8066-455a-a1ef-a39fd478e8fd',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
-  'u13.n01',
+  'u13-n01',
   'та же вежливая форма используется как мягкая просьба, команда или предложение по контексту.',
   'та же вежливая форма используется как мягкая просьба, команда или предложение по контексту.',
   '{"titleKo":"AV-아/어/여요②","summaryKo":"AV-아/어/여요②"}'::jsonb,
@@ -2436,7 +2436,7 @@ insert into public.grammar_topics (
 ) values (
   'e5e7f5ee-764b-4288-85a0-42ade11f8d7d',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
-  'u13.n02',
+  'u13-n02',
   'обозначает средство, инструмент или способ передвижения.',
   'обозначает средство, инструмент или способ передвижения.',
   '{"titleKo":"N(으)로②","summaryKo":"N(으)로②"}'::jsonb,
@@ -2457,7 +2457,7 @@ insert into public.grammar_topics (
 ) values (
   'cfdc61fd-7dbc-4629-8174-04724cab75de',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
-  'u13.n03',
+  'u13-n03',
   'описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях.',
   'описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях.',
   '{"titleKo":"ㄹ 동사","summaryKo":"ㄹ 동사"}'::jsonb,
@@ -2478,7 +2478,7 @@ insert into public.grammar_topics (
 ) values (
   'f893a08f-9d51-414b-89cf-4e2ee2d6db28',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
-  'u13.n04',
+  'u13-n04',
   'соединяет альтернативы значением «или».',
   'соединяет альтернативы значением «или».',
   '{"titleKo":"V-거나/N이나","summaryKo":"V-거나/N이나"}'::jsonb,
@@ -2499,7 +2499,7 @@ insert into public.grammar_topics (
 ) values (
   '6f412792-8b46-433a-a8e8-d1b23f47256a',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
-  'u13.n05',
+  'u13-n05',
   'выражает объективную невозможность или отсутствие умения.',
   'выражает объективную невозможность или отсутствие умения.',
   '{"titleKo":"못 AV/AV-지 못하다","summaryKo":"못 AV/AV-지 못하다"}'::jsonb,
@@ -2520,7 +2520,7 @@ insert into public.grammar_topics (
 ) values (
   '3b09c8d4-883e-4aa2-a69b-965dc62066f4',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
-  'u14.n01',
+  'u14-n01',
   'выражает намерение или подготовленный план выполнить действие.',
   'выражает намерение или подготовленный план выполнить действие.',
   '{"titleKo":"AV-(으)려고 하다","summaryKo":"AV-(으)려고 하다"}'::jsonb,
@@ -2541,7 +2541,7 @@ insert into public.grammar_topics (
 ) values (
   'c81d1630-7bb1-4b5a-8018-c16e9133a58f',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
-  'u14.n02',
+  'u14-n02',
   'почтительные аналоги маркеров подлежащего и темы.',
   'почтительные аналоги маркеров подлежащего и темы.',
   '{"titleKo":"N께서/N께서는","summaryKo":"N께서/N께서는"}'::jsonb,
@@ -2562,7 +2562,7 @@ insert into public.grammar_topics (
 ) values (
   '288c870d-e9cb-4980-9d2d-9cd8d93f11a2',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
-  'u14.n03',
+  'u14-n03',
   'почтительно маркирует действие, состояние или статус уважаемого лица.',
   'почтительно маркирует действие, состояние или статус уважаемого лица.',
   '{"titleKo":"V-(으)시-/N이시-","summaryKo":"V-(으)시-/N이시-"}'::jsonb,
@@ -2583,7 +2583,7 @@ insert into public.grammar_topics (
 ) values (
   '9a9bf96f-67a2-48f8-be0f-a932c0af853e',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
-  'u14.n04',
+  'u14-n04',
   'выражает обязанность или необходимость.',
   'выражает обязанность или необходимость.',
   '{"titleKo":"V-아/어/야 되다/하다","summaryKo":"V-아/어/야 되다/하다"}'::jsonb,
@@ -2604,7 +2604,7 @@ insert into public.grammar_topics (
 ) values (
   'd2af41d0-d70a-4af1-a936-f198e7af7897',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
-  'u14.n05',
+  'u14-n05',
   'запрещает или просит не выполнять действие.',
   'запрещает или просит не выполнять действие.',
   '{"titleKo":"AV-지 말다","summaryKo":"AV-지 말다"}'::jsonb,
@@ -2625,7 +2625,7 @@ insert into public.grammar_topics (
 ) values (
   '497f924d-5dc0-4e16-9ea2-9694ea742b7c',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
-  'u15.n01',
+  'u15-n01',
   'вводит объект сравнения: «чем N».',
   'вводит объект сравнения: «чем N».',
   '{"titleKo":"N보다","summaryKo":"N보다"}'::jsonb,
@@ -2646,7 +2646,7 @@ insert into public.grammar_topics (
 ) values (
   'ed637696-9842-4420-827d-99a8f926450b',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
-  'u15.n02',
+  'u15-n02',
   'соединяет противопоставленные части значением «но/хотя».',
   'соединяет противопоставленные части значением «но/хотя».',
   '{"titleKo":"V-지만/N(이)지만","summaryKo":"V-지만/N(이)지만"}'::jsonb,
@@ -2667,7 +2667,7 @@ insert into public.grammar_topics (
 ) values (
   '9c99de38-5225-4aa5-979a-13d727a9ded9',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
-  'u15.n03',
+  'u15-n03',
   'превращает описательный глагол в определение перед существительным.',
   'превращает описательный глагол в определение перед существительным.',
   '{"titleKo":"DV-(으)ㄴ N","summaryKo":"DV-(으)ㄴ N"}'::jsonb,
@@ -2688,7 +2688,7 @@ insert into public.grammar_topics (
 ) values (
   '83a4a2f0-403e-40ed-8b14-3eacb2045e3f',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
-  'u15.n04',
+  'u15-n04',
   'запрашивает или даёт разрешение: «можно».',
   'запрашивает или даёт разрешение: «можно».',
   '{"titleKo":"V-아/어/여도 되다","summaryKo":"V-아/어/여도 되다"}'::jsonb,
@@ -2709,7 +2709,7 @@ insert into public.grammar_topics (
 ) values (
   '481a9706-bb03-4137-adc3-4c200890794a',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
-  'u15.n05',
+  'u15-n05',
   'выражает запрет: «нельзя».',
   'выражает запрет: «нельзя».',
   '{"titleKo":"AV-(으)면 안 되다","summaryKo":"AV-(으)면 안 되다"}'::jsonb,
@@ -2730,7 +2730,7 @@ insert into public.grammar_topics (
 ) values (
   'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
-  'u16.n01',
+  'u16-n01',
   'образует определительные формы действия в прошедшем, настоящем и будущем времени.',
   'образует определительные формы действия в прошедшем, настоящем и будущем времени.',
   '{"titleKo":"AV-(으)ㄴ/는/(으)ㄹ N","summaryKo":"AV-(으)ㄴ/는/(으)ㄹ N"}'::jsonb,
@@ -2751,7 +2751,7 @@ insert into public.grammar_topics (
 ) values (
   '3dac5866-b5c5-4978-8fa6-9b965144975c',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
-  'u16.n02',
+  'u16-n02',
   'определяет существительное через другое существительное: «N, являющийся N».',
   'определяет существительное через другое существительное: «N, являющийся N».',
   '{"titleKo":"N인 N","summaryKo":"N인 N"}'::jsonb,
@@ -2772,7 +2772,7 @@ insert into public.grammar_topics (
 ) values (
   '98771e63-13b4-47f2-9e16-ec1f35e4f99d',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
-  'u16.n03',
+  'u16-n03',
   'вводит фон, пояснение, мягкое противопоставление или переход к просьбе.',
   'вводит фон, пояснение, мягкое противопоставление или переход к просьбе.',
   '{"titleKo":"V-(으)ㄴ/는데/N인데","summaryKo":"V-(으)ㄴ/는데/N인데"}'::jsonb,
@@ -2793,7 +2793,7 @@ insert into public.grammar_topics (
 ) values (
   '7afa0122-df8b-41e1-9903-a7efffc56474',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
-  'u16.n04',
+  'u16-n04',
   'почтительный показатель адресата «кому».',
   'почтительный показатель адресата «кому».',
   '{"titleKo":"N께","summaryKo":"N께"}'::jsonb,
@@ -2814,7 +2814,7 @@ insert into public.grammar_topics (
 ) values (
   '5b46cf40-c18d-49f6-a472-f4045d111dca',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
-  'u16.n05',
+  'u16-n05',
   'действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.',
   'действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.',
   '{"titleKo":"AV-아/어/여 드리다/주다","summaryKo":"AV-아/어/여 드리다/주다"}'::jsonb,
@@ -29371,7 +29371,7 @@ insert into public.accepted_answers (
   'N입니다/입니까?',
   'N입니다/입니까?',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -29486,7 +29486,7 @@ insert into public.accepted_answers (
   'N이/가',
   'N이/가',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -29609,7 +29609,7 @@ insert into public.accepted_answers (
   'N은/는①',
   'N은/는①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -29620,7 +29620,7 @@ insert into public.accepted_answers (
   'N은/는',
   'N은/는',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -29735,7 +29735,7 @@ insert into public.accepted_answers (
   'N이/가 아니다',
   'N이/가 아니다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -29850,7 +29850,7 @@ insert into public.accepted_answers (
   'N도',
   'N도',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -29965,7 +29965,7 @@ insert into public.accepted_answers (
   '이/그/저',
   '이/그/저',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -30080,7 +30080,7 @@ insert into public.accepted_answers (
   'N의',
   'N의',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -30203,7 +30203,7 @@ insert into public.accepted_answers (
   'N에①',
   'N에①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -30214,7 +30214,7 @@ insert into public.accepted_answers (
   'N에',
   'N에',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -30329,7 +30329,7 @@ insert into public.accepted_answers (
   'N이/가 있다/없다',
   'N이/가 있다/없다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -30444,7 +30444,7 @@ insert into public.accepted_answers (
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -30559,7 +30559,7 @@ insert into public.accepted_answers (
   'N을/를',
   'N을/를',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -30674,7 +30674,7 @@ insert into public.accepted_answers (
   'N만',
   'N만',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -30789,7 +30789,7 @@ insert into public.accepted_answers (
   'N에 가다/오다',
   'N에 가다/오다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -30928,7 +30928,7 @@ insert into public.accepted_answers (
   '수①',
   '수①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -30939,7 +30939,7 @@ insert into public.accepted_answers (
   '수',
   '수',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -31054,7 +31054,7 @@ insert into public.accepted_answers (
   'N와/과 N',
   'N와/과 N',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -31169,7 +31169,7 @@ insert into public.accepted_answers (
   'N하고 N',
   'N하고 N',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -31284,7 +31284,7 @@ insert into public.accepted_answers (
   'N에서',
   'N에서',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -31423,7 +31423,7 @@ insert into public.accepted_answers (
   '수②',
   '수②',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -31434,7 +31434,7 @@ insert into public.accepted_answers (
   '수',
   '수',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -31557,7 +31557,7 @@ insert into public.accepted_answers (
   'N에②',
   'N에②',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -31568,7 +31568,7 @@ insert into public.accepted_answers (
   'N에',
   'N에',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -31683,7 +31683,7 @@ insert into public.accepted_answers (
   'V-아/어/여요①',
   'V-아/어/여요①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -31694,7 +31694,7 @@ insert into public.accepted_answers (
   'V-아/어/여요',
   'V-아/어/여요',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -31809,7 +31809,7 @@ insert into public.accepted_answers (
   'N이에요/예요',
   'N이에요/예요',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -31948,7 +31948,7 @@ insert into public.accepted_answers (
   '수③',
   '수③',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -31959,7 +31959,7 @@ insert into public.accepted_answers (
   '수',
   '수',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -32074,7 +32074,7 @@ insert into public.accepted_answers (
   'N부터 N까지',
   'N부터 N까지',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -32189,7 +32189,7 @@ insert into public.accepted_answers (
   '안 V/V-지 않다',
   '안 V/V-지 않다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -32304,7 +32304,7 @@ insert into public.accepted_answers (
   'V-았/었/였-',
   'V-았/었/였-',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -32419,7 +32419,7 @@ insert into public.accepted_answers (
   'N이었/였-',
   'N이었/였-',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -32534,7 +32534,7 @@ insert into public.accepted_answers (
   'V-고①',
   'V-고①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -32545,7 +32545,7 @@ insert into public.accepted_answers (
   'V-고',
   'V-고',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -32660,7 +32660,7 @@ insert into public.accepted_answers (
   'N(이)고',
   'N(이)고',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -32775,7 +32775,7 @@ insert into public.accepted_answers (
   'AV-아/어/여 보다',
   'AV-아/어/여 보다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -32890,7 +32890,7 @@ insert into public.accepted_answers (
   'ㅡ 동사',
   'ㅡ 동사',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -33013,7 +33013,7 @@ insert into public.accepted_answers (
   'N은/는②',
   'N은/는②',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -33024,7 +33024,7 @@ insert into public.accepted_answers (
   'N은/는',
   'N은/는',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -33139,7 +33139,7 @@ insert into public.accepted_answers (
   'ㅂ 동사',
   'ㅂ 동사',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -33254,7 +33254,7 @@ insert into public.accepted_answers (
   'AV-아/어/여서①',
   'AV-아/어/여서①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -33265,7 +33265,7 @@ insert into public.accepted_answers (
   'AV-아/어/여서',
   'AV-아/어/여서',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -33388,7 +33388,7 @@ insert into public.accepted_answers (
   'N(으)로①',
   'N(으)로①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -33399,7 +33399,7 @@ insert into public.accepted_answers (
   'N(으)로',
   'N(으)로',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -33514,7 +33514,7 @@ insert into public.accepted_answers (
   'AV-(으)러 가다/오다',
   'AV-(으)러 가다/오다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -33629,7 +33629,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄹ 거예요①',
   'AV-(으)ㄹ 거예요①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -33640,7 +33640,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄹ 거예요',
   'AV-(으)ㄹ 거예요',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -33755,7 +33755,7 @@ insert into public.accepted_answers (
   'AV-고②',
   'AV-고②',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -33766,7 +33766,7 @@ insert into public.accepted_answers (
   'AV-고',
   'AV-고',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -33881,7 +33881,7 @@ insert into public.accepted_answers (
   'AV-기 전에/N 전에',
   'AV-기 전에/N 전에',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -33996,7 +33996,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄴ 후에/N 후에',
   'AV-(으)ㄴ 후에/N 후에',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -34111,7 +34111,7 @@ insert into public.accepted_answers (
   'N 동안',
   'N 동안',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -34250,7 +34250,7 @@ insert into public.accepted_answers (
   '수④',
   '수④',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -34261,7 +34261,7 @@ insert into public.accepted_answers (
   '수',
   '수',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -34376,7 +34376,7 @@ insert into public.accepted_answers (
   'AV-(으)세요/-(으)십시오',
   'AV-(으)세요/-(으)십시오',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -34491,7 +34491,7 @@ insert into public.accepted_answers (
   'N이랑',
   'N이랑',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -34606,7 +34606,7 @@ insert into public.accepted_answers (
   'AV-고 있다①',
   'AV-고 있다①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -34617,7 +34617,7 @@ insert into public.accepted_answers (
   'AV-고 있다',
   'AV-고 있다',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -34732,7 +34732,7 @@ insert into public.accepted_answers (
   'N에게(서)/한테(서)',
   'N에게(서)/한테(서)',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -34847,7 +34847,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄹ까요?①',
   'AV-(으)ㄹ까요?①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -34858,7 +34858,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄹ까요?',
   'AV-(으)ㄹ까요?',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -34973,7 +34973,7 @@ insert into public.accepted_answers (
   'AV-(으)ㅂ시다',
   'AV-(으)ㅂ시다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -35088,7 +35088,7 @@ insert into public.accepted_answers (
   'V-(으)니까①/N(이)니까',
   'V-(으)니까①/N(이)니까',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -35099,7 +35099,7 @@ insert into public.accepted_answers (
   'V-(으)니까/N(이)니까',
   'V-(으)니까/N(이)니까',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -35214,7 +35214,7 @@ insert into public.accepted_answers (
   'AV-고 싶다',
   'AV-고 싶다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -35329,7 +35329,7 @@ insert into public.accepted_answers (
   'AV-겠-①',
   'AV-겠-①',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -35340,7 +35340,7 @@ insert into public.accepted_answers (
   'AV-겠-',
   'AV-겠-',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -35455,7 +35455,7 @@ insert into public.accepted_answers (
   'V-지요?/N(이)지요?',
   'V-지요?/N(이)지요?',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -35570,7 +35570,7 @@ insert into public.accepted_answers (
   'V-겠-②/N이겠-',
   'V-겠-②/N이겠-',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -35581,7 +35581,7 @@ insert into public.accepted_answers (
   'V-겠-/N이겠-',
   'V-겠-/N이겠-',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -35696,7 +35696,7 @@ insert into public.accepted_answers (
   'AV-아/어/여 주다',
   'AV-아/어/여 주다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -35811,7 +35811,7 @@ insert into public.accepted_answers (
   'V-(으)면/N이면',
   'V-(으)면/N이면',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -35926,7 +35926,7 @@ insert into public.accepted_answers (
   'ㄷ 동사',
   'ㄷ 동사',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -36041,7 +36041,7 @@ insert into public.accepted_answers (
   'V-아/어/여서②/N이어/여서',
   'V-아/어/여서②/N이어/여서',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -36052,7 +36052,7 @@ insert into public.accepted_answers (
   'V-아/어/여서/N이어/여서',
   'V-아/어/여서/N이어/여서',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -36167,7 +36167,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄹ 수 있다/없다',
   'AV-(으)ㄹ 수 있다/없다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -36282,7 +36282,7 @@ insert into public.accepted_answers (
   'V-(으)ㄹ까요?②/N일까요?',
   'V-(으)ㄹ까요?②/N일까요?',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -36293,7 +36293,7 @@ insert into public.accepted_answers (
   'V-(으)ㄹ까요?/N일까요?',
   'V-(으)ㄹ까요?/N일까요?',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -36408,7 +36408,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄹ 거예요②/N일 거예요',
   'AV-(으)ㄹ 거예요②/N일 거예요',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -36419,7 +36419,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄹ 거예요/N일 거예요',
   'AV-(으)ㄹ 거예요/N일 거예요',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -36534,7 +36534,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄹ게요',
   'AV-(으)ㄹ게요',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -36649,7 +36649,7 @@ insert into public.accepted_answers (
   'AV-아/어/여요②',
   'AV-아/어/여요②',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -36660,7 +36660,7 @@ insert into public.accepted_answers (
   'AV-아/어/여요',
   'AV-아/어/여요',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -36783,7 +36783,7 @@ insert into public.accepted_answers (
   'N(으)로②',
   'N(으)로②',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.accepted_answers (
@@ -36794,7 +36794,7 @@ insert into public.accepted_answers (
   'N(으)로',
   'N(으)로',
   false,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -36909,7 +36909,7 @@ insert into public.accepted_answers (
   'ㄹ 동사',
   'ㄹ 동사',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -37024,7 +37024,7 @@ insert into public.accepted_answers (
   'V-거나/N이나',
   'V-거나/N이나',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -37139,7 +37139,7 @@ insert into public.accepted_answers (
   '못 AV/AV-지 못하다',
   '못 AV/AV-지 못하다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -37254,7 +37254,7 @@ insert into public.accepted_answers (
   'AV-(으)려고 하다',
   'AV-(으)려고 하다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -37369,7 +37369,7 @@ insert into public.accepted_answers (
   'N께서/N께서는',
   'N께서/N께서는',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -37484,7 +37484,7 @@ insert into public.accepted_answers (
   'V-(으)시-/N이시-',
   'V-(으)시-/N이시-',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -37599,7 +37599,7 @@ insert into public.accepted_answers (
   'V-아/어/야 되다/하다',
   'V-아/어/야 되다/하다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -37714,7 +37714,7 @@ insert into public.accepted_answers (
   'AV-지 말다',
   'AV-지 말다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -37829,7 +37829,7 @@ insert into public.accepted_answers (
   'N보다',
   'N보다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -37944,7 +37944,7 @@ insert into public.accepted_answers (
   'V-지만/N(이)지만',
   'V-지만/N(이)지만',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -38059,7 +38059,7 @@ insert into public.accepted_answers (
   'DV-(으)ㄴ N',
   'DV-(으)ㄴ N',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -38174,7 +38174,7 @@ insert into public.accepted_answers (
   'V-아/어/여도 되다',
   'V-아/어/여도 되다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -38289,7 +38289,7 @@ insert into public.accepted_answers (
   'AV-(으)면 안 되다',
   'AV-(으)면 안 되다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -38404,7 +38404,7 @@ insert into public.accepted_answers (
   'AV-(으)ㄴ/는/(으)ㄹ N',
   'AV-(으)ㄴ/는/(으)ㄹ N',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -38519,7 +38519,7 @@ insert into public.accepted_answers (
   'N인 N',
   'N인 N',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -38634,7 +38634,7 @@ insert into public.accepted_answers (
   'V-(으)ㄴ/는데/N인데',
   'V-(으)ㄴ/는데/N인데',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -38749,7 +38749,7 @@ insert into public.accepted_answers (
   'N께',
   'N께',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -38864,7 +38864,7 @@ insert into public.accepted_answers (
   'AV-아/어/여 드리다/주다',
   'AV-아/어/여 드리다/주다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -39057,7 +39057,7 @@ insert into public.accepted_answers (
   '그',
   '그',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -39288,7 +39288,7 @@ insert into public.accepted_answers (
   '베개',
   '베개',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -39519,7 +39519,7 @@ insert into public.accepted_answers (
   '시험',
   '시험',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -39750,7 +39750,7 @@ insert into public.accepted_answers (
   '다음 주',
   '다음 주',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -39981,7 +39981,7 @@ insert into public.accepted_answers (
   '한밤중',
   '한밤중',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -40212,7 +40212,7 @@ insert into public.accepted_answers (
   '복싱',
   '복싱',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -40443,7 +40443,7 @@ insert into public.accepted_answers (
   '아름답다',
   '아름답다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -40674,7 +40674,7 @@ insert into public.accepted_answers (
   '배우다',
   '배우다',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -40905,7 +40905,7 @@ insert into public.accepted_answers (
   '장갑',
   '장갑',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -41136,7 +41136,7 @@ insert into public.accepted_answers (
   '비빔밥',
   '비빔밥',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -41367,7 +41367,7 @@ insert into public.accepted_answers (
   '충전기',
   '충전기',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -41598,7 +41598,7 @@ insert into public.accepted_answers (
   '그래도',
   '그래도',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -41829,7 +41829,7 @@ insert into public.accepted_answers (
   '박물관',
   '박물관',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -42060,7 +42060,7 @@ insert into public.accepted_answers (
   '기차역',
   '기차역',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -42291,7 +42291,7 @@ insert into public.accepted_answers (
   '발가락',
   '발가락',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (
@@ -42522,7 +42522,7 @@ insert into public.accepted_answers (
   '아저씨',
   '아저씨',
   true,
-  'pending'
+  'approved'
 );
 
 insert into public.exercises (

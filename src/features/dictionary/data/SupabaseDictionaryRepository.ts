@@ -1,8 +1,10 @@
 import "server-only";
 
-import { unstable_cache } from "next/cache";
-
-import { createServiceRoleSupabaseClient } from "@/lib/supabase/serviceRoleClient";
+import {
+  createServiceRoleSupabaseClient,
+  type ServiceRoleSupabaseClient,
+} from "@/lib/supabase/serviceRoleClient";
+import { CurriculumContentError } from "@/modules/curriculum/CurriculumContentError";
 
 import type {
   DictionaryPageResult,
@@ -13,43 +15,71 @@ import type { PublicDictionaryEntry } from "../domain/types";
 
 const DEFAULT_PAGE_SIZE = 20;
 
-async function loadPublishedDictionary(): Promise<readonly PublicDictionaryEntry[]> {
-  const supabase = createServiceRoleSupabaseClient();
-  const { data, error } = await supabase
-    .from("dictionary_entries")
-    .select(
-      "id, logical_id, lemma_ko, sense_key, meanings_ru, transliteration, part_of_speech, level, content_version",
-    )
-    .eq("status", "published")
-    .order("lemma_ko", { ascending: true });
-
-  if (error) {
-    throw error;
+export async function loadPublishedDictionary(
+  supabase: ServiceRoleSupabaseClient = createServiceRoleSupabaseClient(),
+): Promise<readonly PublicDictionaryEntry[]> {
+  let results;
+  try {
+    results = await Promise.all([
+      supabase
+        .from("dictionary_entries")
+        .select(
+          "id, logical_id, lemma_ko, sense_key, meanings_ru, transliteration, part_of_speech, level, content_version",
+        )
+        .eq("status", "published")
+        .order("lemma_ko", { ascending: true }),
+      supabase.from("dictionary_entry_modules").select("entry_id, module_id, sort_order"),
+      supabase.from("learning_modules").select("id, slug").eq("status", "published"),
+    ]);
+  } catch (error) {
+    throw new CurriculumContentError("Dictionary query failed", error);
   }
 
-  return (data ?? []).map((row) => {
-    const meanings = Array.isArray(row.meanings_ru) ? row.meanings_ru : [];
-    const firstMeaning = typeof meanings[0] === "string" ? meanings[0] : row.lemma_ko;
-    return {
-      id: row.id,
-      logicalId: row.logical_id,
-      lemma: row.lemma_ko,
-      senseKey: row.sense_key,
-      gloss: { ko: row.lemma_ko, ru: String(firstMeaning) },
-      transliteration: row.transliteration,
-      pos: row.part_of_speech,
-      level: row.level,
-      unitSlugs: [] as string[],
-      contentVersion: row.content_version as PublicDictionaryEntry["contentVersion"],
-      language: { lemma: "ko" as const, gloss: "ru" as const },
-    };
-  });
-}
+  const [entriesResult, linksResult, modulesResult] = results;
+  const queryError = entriesResult.error ?? linksResult.error ?? modulesResult.error;
+  if (queryError) throw new CurriculumContentError("Dictionary query failed", queryError);
 
-const getCachedDictionary = unstable_cache(loadPublishedDictionary, ["curriculum-dictionary"], {
-  tags: ["curriculum-dictionary"],
-  revalidate: 3600,
-});
+  const moduleSlugById = new Map(
+    (modulesResult.data ?? []).map((module) => [module.id, module.slug]),
+  );
+  const unitSlugsByEntryId = new Map<string, string[]>();
+  for (const link of linksResult.data ?? []) {
+    const unitSlug = moduleSlugById.get(link.module_id);
+    if (!unitSlug) continue;
+
+    const unitSlugs = unitSlugsByEntryId.get(link.entry_id) ?? [];
+    unitSlugs.push(unitSlug);
+    unitSlugsByEntryId.set(link.entry_id, unitSlugs);
+  }
+
+  return (entriesResult.data ?? [])
+    .flatMap((row) => {
+      const unitSlugs = unitSlugsByEntryId.get(row.id);
+      if (!unitSlugs || unitSlugs.length === 0) return [];
+
+      const meanings = Array.isArray(row.meanings_ru) ? row.meanings_ru : [];
+      const firstMeaning = typeof meanings[0] === "string" ? meanings[0] : row.lemma_ko;
+      return [
+        {
+          id: row.id,
+          logicalId: row.logical_id,
+          lemma: row.lemma_ko,
+          senseKey: row.sense_key,
+          gloss: { ko: row.lemma_ko, ru: String(firstMeaning) },
+          transliteration: row.transliteration,
+          pos: row.part_of_speech,
+          level: row.level,
+          unitSlugs,
+          contentVersion: row.content_version as PublicDictionaryEntry["contentVersion"],
+          language: { lemma: "ko" as const, gloss: "ru" as const },
+        },
+      ];
+    })
+    .sort((left, right) => {
+      const byLemma = left.lemma.localeCompare(right.lemma, "ko");
+      return byLemma !== 0 ? byLemma : left.senseKey.localeCompare(right.senseKey);
+    });
+}
 
 function paginate(
   items: readonly PublicDictionaryEntry[],
@@ -109,7 +139,7 @@ export class SupabaseDictionaryRepository implements DictionaryRepository {
   }
 
   async listPage(query: DictionaryQuery = {}): Promise<DictionaryPageResult> {
-    return paginate(await getCachedDictionary(), query);
+    return paginate(await loadPublishedDictionary(), query);
   }
 
   async getByLogicalId(logicalId: string): Promise<PublicDictionaryEntry | undefined> {

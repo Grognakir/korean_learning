@@ -18,7 +18,7 @@ export function getLocalSupabaseEnv(): LocalSupabaseEnv {
     return cachedEnv;
   }
 
-  const raw = execSync("pnpm exec supabase status -o env", {
+  const raw = execSync("node_modules/.bin/supabase status -o env", {
     cwd: process.cwd(),
     encoding: "utf8",
     stdio: ["ignore", "pipe", "pipe"],

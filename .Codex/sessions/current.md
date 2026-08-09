@@ -4,46 +4,36 @@
 
 ## Чем занимаемся
 
-План `docs/PERFORMANCE_AND_VERCEL_FIX_PLAN.md` (PERF-I00—I11) закрыт на Production commit `c262230`. Corrective stabilization завершена; следующий шаг фазы 1 основного плана — F1-I32 (mistake review queue), без перенумерации фаз.
+F1-I32 (mistake review queue) выполнен локально на ветке `feature/error-review`. PERF plan закрыт ранее. Следующий шаг фазы 1 — F1-I33 (стабилизация), без запуска в этой же итерации.
 
-## Итог окружений
+## F1-I32 — результат
 
-- Preview и Production: `Content source: supabase (cyoezrdxqncroflgkyry.supabase.co)` в prebuild.
-- Production URL: `https://korean-learning-gray.vercel.app`.
-- `CONTENT_SOURCE=supabase` в Production; Preview без явного `CONTENT_SOURCE` (автоопределение).
-- `VERCEL_FORCE_NO_BUILD_CACHE` убран после проверки.
-- Удалённый каталог: один published модуль `sample-module` (сид). `honorifics` — только local draft для development.
+- Ошибка в practice upsert'ит `review_queue` (`due`, stage 0); practice correct очередь не трогает.
+- Review correct двигает фиксированную цепочку +1d / +3d / +7d → `mastered` (`due_at` null).
+- Review wrong и новая ошибка по mastered возвращают `due` / stage 0.
+- `/review` показывает guest/empty/summary; CTA стартует cloud session `mode: review` через `POST /api/training/review-sessions`.
+- Переходы выполняются в той же транзакции, что `submit_training_attempt` (SECURITY DEFINER).
 
-## Удалённый smoke Production (`c262230`)
+## Ключевые файлы
 
-- Валидные маршруты `200`, контент «Первые шаги в корейском» / `sample-module`, без «Сервис недоступен».
-- `/topics/honorifics`, `/topics/missing-module`, `/training/honorifics-preview`, `/training/missing-session` → `404`.
-- `PERF_REPEATS=10 pnpm perf:smoke`: median TTFB 98–106 мс; `/topics` 104 мс (было 374 мс).
+- `supabase/migrations/20260809000009_review_queue_policy.sql`
+- `src/features/review/**`
+- `src/app/review/*`, `src/app/api/training/review-sessions/route.ts`
+- DB helpers: `node_modules/.bin/supabase` вместо `pnpm exec` (PATH без pnpm)
 
-## PERF-I08 (закрытие)
+## Gate (локально)
 
-- `pnpm perf:smoke` — read-only отчёт по `PERF_BASE_URL`.
-- `pnpm check:bundles` добавлен в GitHub Actions сразу после `pnpm build`.
-- Speed Insights / Web Analytics — только по отдельному разрешению.
-
-## Ключевые решения PERF
-
-- Cache Components + Partial Prefetching; узкие `"use cache"` loaders; без корневого `loading.tsx`.
-- `ContentResult` + короткий `learningContentUnavailable` при сбое хранилища (PERF-I10).
-- `describeContentSource` в prebuild + лог причины деградации (PERF-I11).
-- 404 для неизвестных slug через Proxy rewrite на `/_not-found`.
-
-## Тулчейн агента
-
-- Node на машине агента: `v22.15.0` при требуемом `24.18.0` (согласовано для gate); `corepack pnpm`.
-- Playwright: `PLAYWRIGHT_BROWSERS_PATH=$HOME/Library/Caches/ms-playwright`.
+- format / lint / typecheck green
+- unit 316, integration 17, e2e 20, db 16, rls 10
+- build + bundle budgets (`/review` 16 KB gzip)
 
 ## Открытые задачи
 
-- [ ] F1-I32 — mistake review queue (основной план фазы 1).
-- [ ] Опционально: Vercel Speed Insights / Web Analytics по разрешению.
-- [ ] Опционально: браузерный client-navigation baseline на Production (PERF-I09 уже принят на Preview).
+- [ ] Push/merge `feature/error-review` — только по разрешению
+- [ ] Remote migration на Supabase — CP-4 / явное разрешение (локально migration применена)
+- [ ] F1-I33 — стабилизация фазы 1
 
-## Контекст для следующей сессии
+## Отклонения от карточки
 
-Production: `https://korean-learning-gray.vercel.app`. План PERF считать исполненным по §8, кроме опциональной внешней аналитики. Не начинать F1-I32 в той же итерации, что закрытие PERF, без явного запроса.
+- `due_at` сделан nullable (иначе `mastered` + `dueAt = null` невозможно).
+- Починены хрупкие DB helper'ы и progress tests (фиксированный `completed_at` в прошлом, неверный topic id, race fileParallelism).

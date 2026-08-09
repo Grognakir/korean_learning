@@ -5,6 +5,7 @@ import DictionaryPage from "@/app/dictionary/page";
 import LoginPage from "@/app/login/page";
 import { ProgressDataPanel } from "@/app/progress/ProgressDataPanel";
 import ProgressPage from "@/app/progress/page";
+import { ReviewDataPanel } from "@/app/review/ReviewDataPanel";
 import ReviewPage from "@/app/review/page";
 import { ModuleDetailPanel } from "@/app/topics/[moduleSlug]/ModuleDetailPanel";
 import TopicsPage from "@/app/topics/page";
@@ -24,10 +25,7 @@ const STATIC_SHELL_ROUTES = [
   ["Тренировка", TrainingPage],
 ] as const;
 
-const SYNC_STATIC_ROUTES = [
-  ["Повторение", ReviewPage],
-  ["Словарь", DictionaryPage],
-] as const;
+const SYNC_STATIC_ROUTES = [["Словарь", DictionaryPage]] as const;
 
 describe("application routes", () => {
   it.each(STATIC_SHELL_ROUTES)("renders the %s route with one page heading", (title, Page) => {
@@ -43,6 +41,16 @@ describe("application routes", () => {
     expect(screen.getByRole("heading", { level: 1, name: "Прогресс" })).toBeInTheDocument();
     expect(
       screen.getByRole("heading", { name: "Войдите, чтобы видеть прогресс" }),
+    ).toBeInTheDocument();
+  });
+
+  it("renders the review route for guests", async () => {
+    render(<ReviewPage />);
+    render(await ReviewDataPanel());
+
+    expect(screen.getByRole("heading", { level: 1, name: "Повторение" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Войдите, чтобы видеть повторение" }),
     ).toBeInTheDocument();
   });
 

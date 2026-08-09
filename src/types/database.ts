@@ -725,7 +725,7 @@ export type Database = {
           concept_key: string;
           consecutive_correct: number;
           created_at: string;
-          due_at: string;
+          due_at: string | null;
           exercise_id: string | null;
           id: string;
           interval_stage: number;
@@ -739,7 +739,7 @@ export type Database = {
           concept_key: string;
           consecutive_correct?: number;
           created_at?: string;
-          due_at?: string;
+          due_at?: string | null;
           exercise_id?: string | null;
           id?: string;
           interval_stage?: number;
@@ -753,7 +753,7 @@ export type Database = {
           concept_key?: string;
           consecutive_correct?: number;
           created_at?: string;
-          due_at?: string;
+          due_at?: string | null;
           exercise_id?: string | null;
           id?: string;
           interval_stage?: number;
@@ -1073,12 +1073,17 @@ export type Database = {
           p_mistake_module_id?: string | null;
           p_mistake_primary_topic_id?: string | null;
           p_normalized_answer: Json;
+          p_now?: string;
           p_raw_answer: Json;
           p_reason_code: string;
           p_score: number;
           p_session_id: string;
         };
         Returns: Database["public"]["Tables"]["attempts"]["Row"];
+      };
+      sync_review_queue_availability: {
+        Args: { p_now?: string };
+        Returns: Database["public"]["Tables"]["review_queue"]["Row"][];
       };
     };
     Enums: {

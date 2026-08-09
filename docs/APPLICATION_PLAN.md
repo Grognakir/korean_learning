@@ -2,18 +2,18 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I31 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
+- **Общее состояние:** F1-I01–F1-I32 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I31 add learning progress tracking — `done`.
+- **Текущая итерация:** F1-I32 add mistake review queue — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** progress aggregates refresh on session completion; rebuild RPC; progress domain/repository; `/progress` page with module/topic cards; guest/auth empty states.
-- **Выполненные проверки:** format/lint/typecheck/267 unit/17 integration/build.
-- **Сейчас работает:** завершённые облачные сессии обновляют `user_topic_progress` и `user_module_progress`; страница progress показывает реальные aggregates.
-- **Пока не работает:** review queue (F1-I32).
-- **Следующий конкретный шаг:** F1-I32 add mistake review queue — без дополнительного CP.
+- **Уже сделано:** review queue policy + atomic upsert/transition в `submit_training_attempt`; `/review` с due queue и стартом review session; guest/empty/summary UI.
+- **Выполненные проверки:** format/lint/typecheck/316 unit/17 integration/20 e2e/16 db/10 rls/build/bundles.
+- **Сейчас работает:** ошибки practice создают due items; review session двигает +1d/+3d/+7d → mastered; страница `/review` показывает очередь после входа.
+- **Пока не работает:** удаление preview honorifics и полный clean-env gate (F1-I33).
+- **Следующий конкретный шаг:** F1-I33 stabilize learning application framework — ветка `chore/framework-stabilization`; push/CI/preview только по разрешению.
 - **Блокирующие вопросы:** нет.
-- **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed.
-- **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production `c262230` с источником Supabase; повторная навигация и bundle budgets закреплены; следующий шаг фазы 1 — F1-I32 (без перенумерации фаз).
+- **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed. Миграция F1-I32 применена локально; remote push — отдельно.
+- **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.
 - **Последнее обновление:** 2026-08-09.
 
 ## 1. Цель, результат и границы

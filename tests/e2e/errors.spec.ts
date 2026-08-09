@@ -25,6 +25,8 @@ test.describe("errors and empty routes", () => {
 
     await page.goto("/review");
     await expect(page.getByRole("heading", { level: 1, name: "Повторение" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Повторение пока недоступно" })).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Войдите, чтобы видеть повторение" }),
+    ).toBeVisible();
   });
 });

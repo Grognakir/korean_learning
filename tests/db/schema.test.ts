@@ -95,7 +95,7 @@ describe("database schema and seed", () => {
 describe("database reset repeatability", () => {
   it("matches seed counts after a second reset", async () => {
     runSql("select 1");
-    execSync("pnpm exec supabase db reset", { cwd: process.cwd(), stdio: "inherit" });
+    execSync("node_modules/.bin/supabase db reset", { cwd: process.cwd(), stdio: "inherit" });
     await expect(countRows(createLocalAdminClient(), "learning_modules")).resolves.toBe(1);
     await expect(countRows(createLocalAdminClient(), "exercises")).resolves.toBe(14);
   });

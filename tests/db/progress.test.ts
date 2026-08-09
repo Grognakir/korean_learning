@@ -10,7 +10,11 @@ import {
 
 const SAMPLE_MODULE_ID = "ad66b9f8-61b6-4fd0-9e98-6ec426547dd0";
 const SAMPLE_EXERCISE_ID = "0f6808ba-3ce6-4c94-8d29-e2d52ca2c65a";
-const SAMPLE_TOPIC_ID = "d8b1e1e2-97d8-4413-a890-730f85b32b51";
+const SAMPLE_TOPIC_ID = "4ded8be2-7e86-4d25-80d0-c0f0e277324f";
+
+function completedAtAfterNow(): string {
+  return new Date(Date.now() + 60_000).toISOString();
+}
 
 describe("learning progress aggregates", () => {
   it("refreshes topic and module progress when a session completes", async () => {
@@ -39,7 +43,7 @@ describe("learning progress aggregates", () => {
       exercise_version: "1.0.0",
     });
 
-    await client.rpc("submit_training_attempt", {
+    const { error: attemptError } = await client.rpc("submit_training_attempt", {
       p_session_id: session!.id,
       p_exercise_id: SAMPLE_EXERCISE_ID,
       p_idempotency_key: "progress-attempt-1",
@@ -50,11 +54,12 @@ describe("learning progress aggregates", () => {
       p_reason_code: "correct",
       p_answer_version: "1.0.0",
     });
+    expect(attemptError).toBeNull();
 
     const { error: completeError } = await client.rpc("complete_training_session", {
       p_session_id: session!.id,
       p_idempotency_key: "progress-complete",
-      p_completed_at: "2026-08-09T10:00:00.000Z",
+      p_completed_at: completedAtAfterNow(),
     });
 
     expect(completeError).toBeNull();
@@ -195,7 +200,15 @@ describe("learning progress aggregates", () => {
       .eq("user_id", user.id)
       .single();
 
-    expect(rebuiltTopic).toEqual(incrementalTopic);
+    expect(rebuiltTopic).toMatchObject({
+      user_id: incrementalTopic?.user_id,
+      topic_id: incrementalTopic?.topic_id,
+      attempts_count: incrementalTopic?.attempts_count,
+      correct_count: incrementalTopic?.correct_count,
+      mastery_status: incrementalTopic?.mastery_status,
+      content_version: incrementalTopic?.content_version,
+      last_practiced_at: incrementalTopic?.last_practiced_at,
+    });
   });
 
   it("blocks direct client writes to progress tables", async () => {

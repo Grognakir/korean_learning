@@ -1,27 +1,28 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
-import { GuestFeatureEmptyState } from "@/components/feedback";
+import { CatalogSectionSkeleton } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import { PageContainer } from "@/wrappers";
 
+import { ReviewDataPanel } from "./ReviewDataPanel";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Повторение",
-  description: "Очередь повторения ошибок появится после облачной синхронизации.",
+  description: "Очередь повторения ошибок из облачных тренировок.",
 };
 
 export default function ReviewPage() {
   return (
     <PageContainer className={styles.page}>
       <PageHeader
-        description="Очередь повторения ошибок появится после облачной синхронизации."
+        description="Ошибочные ответы из облачных тренировок попадают сюда и возвращаются по фиксированному расписанию."
         title="Повторение"
       />
-      <GuestFeatureEmptyState
-        description="Сейчас можно тренироваться локально. Персональная очередь повторения станет доступна после подключения аккаунта."
-        title="Повторение пока недоступно"
-      />
+      <Suspense fallback={<CatalogSectionSkeleton label="Загрузка очереди повторения…" />}>
+        <ReviewDataPanel />
+      </Suspense>
     </PageContainer>
   );
 }

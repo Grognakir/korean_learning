@@ -2,7 +2,7 @@
 
 Последнее обновление: 2026-08-09
 
-Статус: PERF-I00 выполнен частично (Production env настроен; redeploy после merge PERF-I09); PERF-I01—I03 и PERF-I05—I07 в commit `5f716e9`; PERF-I09 реализован локально на ветке `feature/perf-i09-cache-navigation` — локальный gate (build, 278 tests, e2e navigation-repeat, bundle budgets) пройден; удалённая приёмка Preview/Production и PERF-I08 smoke — в ожидании deploy.
+Статус: PERF-I01—I03 и PERF-I05—I07 в commit `5f716e9`; PERF-I09 в commit `dcbb774` прошёл локальный gate и удалённую приёмку Preview/Production (Preview desktop median 81,5 мс / p95 109 мс, mobile median 86 мс / p95 95 мс при порогах ≤150/≤250 мс; публичный Production доступен, «Сервис недоступен» устранён). PERF-I04 подтверждён build output. Остаётся передеплоить Preview с proxy-проверкой 404 и повторить удалённый smoke.
 
 Базовый commit: `1d6fd9af5a21d85d5b115e9a83e7c14b984d1002`.
 
@@ -393,7 +393,23 @@ Proxy нельзя считать основной причиной текуще
 
 ### PERF-I09 — устранить повторный root loading при навигации
 
-Статус: локально выполнено. Реализовано: `cacheComponents` + `partialPrefetching` + `cacheLife.learningContent`; `src/modules/cachedLearningContent.ts` с `"use cache"`; static shell + локальные `Suspense` на `/topics`, `/training`, `/progress`, `/topics/[moduleSlug]`, `/training/[sessionId]`, `/login`; удалён корневой `src/app/loading.tsx`; `revalidatePath("/progress")` после complete session; Playwright `tests/e2e/navigation-repeat.spec.ts` (desktop + mobile) — 4/4 passed локально. `dynamicParams` снят (несовместим с Cache Components); 404 через `notFound()` в panel-компонентах. Остаётся: deploy Preview, устранить «Сервис недоступен» на `/topics`/`/training`, удалённый gate median/p95.
+Статус: выполнено. Реализовано: `cacheComponents` + `partialPrefetching` + `cacheLife.learningContent`; `src/modules/cachedLearningContent.ts` с `"use cache"`; static shell + локальные `Suspense` на `/topics`, `/training`, `/progress`, `/topics/[moduleSlug]`, `/training/[sessionId]`, `/login`; удалён корневой `src/app/loading.tsx`; `revalidatePath("/progress")` после complete session.
+
+Удалённая приёмка на commit `dcbb774`: Preview desktop 10 переходов `/topics` ↔ `/training` — median 81,5 мс, p95 109 мс; Preview mobile — median 86 мс, p95 95 мс; root loading 0 в обоих контурах. Пороги `median ≤ 150 мс` и `p95 ≤ 250 мс` выполнены. Публичный Production доступен, все девять smoke-маршрутов без 5xx, «Сервис недоступен» на `/topics` и `/training` устранён, console 0 warnings/errors.
+
+`tests/e2e/navigation-repeat.spec.ts` после приёмки усилен: ставит `MutationObserver` на `aria-busy` до клика и дожидается стабилизации UI, поэтому фиксирует любой loading в течение перехода, а не только состояние после появления `h1`. Стабильность подтверждена 5 последовательными прогонами.
+
+##### Решение по 404 при включённых Cache Components
+
+`dynamicParams = false` недоступен вместе с `cacheComponents` (`next/dist/docs/.../route-segment-config/dynamicParams.md`), а `notFound()` внутри `Suspense` даёт soft-200, потому что static shell уже отправлен. Официальная рекомендация Next.js — проверять существование ресурса в Proxy до начала стриминга.
+
+Реализовано без ослабления инварианта 404:
+
+1. `src/modules/publishedModuleSlugs.ts` — slug-only чтение с in-memory TTL 300 s, совпадающим с `cacheLife.learningContent`; полный контент в Proxy не загружается.
+2. `src/modules/resolveRouteExistence.ts` — разбор `/topics/[moduleSlug]` и `/training/[sessionId]`; правила существования зеркалят `resolveSession`, поэтому Proxy и рендер страницы не могут разойтись.
+3. `src/proxy.ts` — `NextResponse.rewrite("/_not-found", { status: 404 })` для неизвестных slug; при ошибке чтения контента проверка fail-open, чтобы сбой Supabase не скрывал рабочие маршруты.
+
+Проверено на локальном production server: `/topics/missing-module`, `/training/missing-session` и `/training/honorifics-preview` → `404` со штатным not-found UI и `noindex`; `/topics/sample-module`, `/training/demo-session` → `200`.
 
 Цель — первое посещение динамического содержимого может показывать локальный skeleton, но повторное посещение уже загруженного раздела не должно заменять весь экран плашкой `Загрузка страницы…` и блокироваться новым foreground RSC roundtrip.
 
@@ -557,7 +573,7 @@ Baseline теста должен содержать текущие удалён�
 
 1. ESLint.
 2. TypeScript без emit.
-3. Все unit и integration tests — текущий baseline после commit `5f716e9`: 277 тестов.
+3. Все unit и integration tests — текущий baseline после PERF-I09: 287 unit + 17 integration.
 4. Production build.
 5. E2E:
    - все девять маршрутов;

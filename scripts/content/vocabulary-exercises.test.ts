@@ -30,7 +30,7 @@ describe("phase-2 vocabulary exercise bank", () => {
       for (const link of unitLinks) {
         const entry = entriesById.get(link.entryLogicalId);
         expect(entry).toBeTruthy();
-        expect(entry!.status).toBe("reviewed");
+        expect(entry!.status).toBe("approved");
         expect(entry!.status).not.toBe("draft");
       }
 

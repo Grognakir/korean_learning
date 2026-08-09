@@ -918,7 +918,7 @@ insert into public.learning_modules (
   '인사와 소개',
   'приветствие и представление',
   'Урок 1: приветствие и представление',
-  'draft',
+  'published',
   '1.0.0',
   1,
   1
@@ -933,7 +933,7 @@ insert into public.learning_modules (
   '학교와 집',
   'школа и дом',
   'Урок 2: школа и дом',
-  'draft',
+  'published',
   '1.0.0',
   2,
   2
@@ -948,7 +948,7 @@ insert into public.learning_modules (
   '학교 생활',
   'школьная жизнь',
   'Урок 3: школьная жизнь',
-  'draft',
+  'published',
   '1.0.0',
   3,
   3
@@ -963,7 +963,7 @@ insert into public.learning_modules (
   '일상 생활',
   'повседневная жизнь',
   'Урок 4: повседневная жизнь',
-  'draft',
+  'published',
   '1.0.0',
   4,
   4
@@ -978,7 +978,7 @@ insert into public.learning_modules (
   '하루 일과',
   'распорядок дня',
   'Урок 5: распорядок дня',
-  'draft',
+  'published',
   '1.0.0',
   5,
   5
@@ -993,7 +993,7 @@ insert into public.learning_modules (
   '주말',
   'выходные',
   'Урок 6: выходные',
-  'draft',
+  'published',
   '1.0.0',
   6,
   6
@@ -1008,7 +1008,7 @@ insert into public.learning_modules (
   '날씨와 계절',
   'погода и времена года',
   'Урок 7: погода и времена года',
-  'draft',
+  'published',
   '1.0.0',
   7,
   7
@@ -1023,7 +1023,7 @@ insert into public.learning_modules (
   '계획',
   'планы',
   'Урок 8: планы',
-  'draft',
+  'published',
   '1.0.0',
   8,
   8
@@ -1038,7 +1038,7 @@ insert into public.learning_modules (
   '물건 사기',
   'покупки',
   'Урок 9: покупки',
-  'draft',
+  'published',
   '1.0.0',
   9,
   9
@@ -1053,7 +1053,7 @@ insert into public.learning_modules (
   '음식',
   'еда',
   'Урок 10: еда',
-  'draft',
+  'published',
   '1.0.0',
   10,
   10
@@ -1068,7 +1068,7 @@ insert into public.learning_modules (
   '전화',
   'телефон',
   'Урок 11: телефон',
-  'draft',
+  'published',
   '1.0.0',
   11,
   11
@@ -1083,7 +1083,7 @@ insert into public.learning_modules (
   '약속',
   'договорённости',
   'Урок 12: договорённости',
-  'draft',
+  'published',
   '1.0.0',
   12,
   12
@@ -1098,7 +1098,7 @@ insert into public.learning_modules (
   '교통',
   'транспорт',
   'Урок 13: транспорт',
-  'draft',
+  'published',
   '1.0.0',
   13,
   13
@@ -1113,7 +1113,7 @@ insert into public.learning_modules (
   '공공 장소',
   'общественные места',
   'Урок 14: общественные места',
-  'draft',
+  'published',
   '1.0.0',
   14,
   14
@@ -1128,7 +1128,7 @@ insert into public.learning_modules (
   '건강',
   'здоровье',
   'Урок 15: здоровье',
-  'draft',
+  'published',
   '1.0.0',
   15,
   15
@@ -1143,7 +1143,7 @@ insert into public.learning_modules (
   '가족',
   'семья',
   'Урок 16: семья',
-  'draft',
+  'published',
   '1.0.0',
   16,
   16
@@ -1160,7 +1160,7 @@ insert into public.grammar_topics (
   'формальная утвердительная и вопросительная форма связки «быть/являться».',
   '{"titleKo":"N입니다/입니까?","summaryKo":"N입니다/입니까?"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u01.n01',
@@ -1181,7 +1181,7 @@ insert into public.grammar_topics (
   'маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной.',
   '{"titleKo":"N이/가","summaryKo":"N이/가"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u01.n02',
@@ -1202,7 +1202,7 @@ insert into public.grammar_topics (
   'задаёт тему высказывания или уже известный предмет разговора.',
   '{"titleKo":"N은/는①","summaryKo":"N은/는①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u01.n03',
@@ -1223,7 +1223,7 @@ insert into public.grammar_topics (
   'отрицает принадлежность к классу: «не является N».',
   '{"titleKo":"N이/가 아니다","summaryKo":"N이/가 아니다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u01.n04',
@@ -1244,7 +1244,7 @@ insert into public.grammar_topics (
   'добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`.',
   '{"titleKo":"N도","summaryKo":"N도"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u01.n05',
@@ -1265,7 +1265,7 @@ insert into public.grammar_topics (
   'указательные определители «этот/тот/вон тот» по положению относительно участников разговора.',
   '{"titleKo":"이/그/저","summaryKo":"이/그/저"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u02.n01',
@@ -1286,7 +1286,7 @@ insert into public.grammar_topics (
   'выражает принадлежность или отношение между существительными.',
   '{"titleKo":"N의","summaryKo":"N의"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u02.n02',
@@ -1307,7 +1307,7 @@ insert into public.grammar_topics (
   'указывает место существования, нахождения или направление движения.',
   '{"titleKo":"N에①","summaryKo":"N에①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u02.n03',
@@ -1328,7 +1328,7 @@ insert into public.grammar_topics (
   'сообщает о наличии, отсутствии или местонахождении предмета/лица.',
   '{"titleKo":"N이/가 있다/없다","summaryKo":"N이/가 있다/없다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u02.n04',
@@ -1349,7 +1349,7 @@ insert into public.grammar_topics (
   'формальный вежливый стиль утверждения и вопроса.',
   '{"titleKo":"V-(스)ㅂ니다/-(스)ㅂ니까?","summaryKo":"V-(스)ㅂ니다/-(스)ㅂ니까?"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u03.n01',
@@ -1370,7 +1370,7 @@ insert into public.grammar_topics (
   'маркирует прямое дополнение; `을` после 받침, `를` после гласной.',
   '{"titleKo":"N을/를","summaryKo":"N을/를"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u03.n02',
@@ -1391,7 +1391,7 @@ insert into public.grammar_topics (
   'ограничивает значение: «только N».',
   '{"titleKo":"N만","summaryKo":"N만"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u03.n03',
@@ -1412,7 +1412,7 @@ insert into public.grammar_topics (
   'выражает движение к месту: «идти/приходить в N».',
   '{"titleKo":"N에 가다/오다","summaryKo":"N에 가다/오다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u03.n04',
@@ -1433,7 +1433,7 @@ insert into public.grammar_topics (
   'базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами.',
   '{"titleKo":"수①","summaryKo":"수①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u03.n05',
@@ -1454,7 +1454,7 @@ insert into public.grammar_topics (
   'нейтрально-письменно соединяет существительные значением «и/с».',
   '{"titleKo":"N와/과 N","summaryKo":"N와/과 N"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u04.n01',
@@ -1475,7 +1475,7 @@ insert into public.grammar_topics (
   'разговорно соединяет существительные значением «и/с».',
   '{"titleKo":"N하고 N","summaryKo":"N하고 N"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u04.n02',
@@ -1496,7 +1496,7 @@ insert into public.grammar_topics (
   'обозначает место действия или исходную точку движения.',
   '{"titleKo":"N에서","summaryKo":"N에서"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u04.n03',
@@ -1517,7 +1517,7 @@ insert into public.grammar_topics (
   'даты, календарные числа, месяцы, дни недели и чтение календаря.',
   '{"titleKo":"수②","summaryKo":"수②"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u04.n04',
@@ -1538,7 +1538,7 @@ insert into public.grammar_topics (
   'обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится.',
   '{"titleKo":"N에②","summaryKo":"N에②"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u04.n05',
@@ -1559,7 +1559,7 @@ insert into public.grammar_topics (
   'базовая разговорно-вежливая форма настоящего времени.',
   '{"titleKo":"V-아/어/여요①","summaryKo":"V-아/어/여요①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u05.n01',
@@ -1580,7 +1580,7 @@ insert into public.grammar_topics (
   'разговорно-вежливая связка после существительного.',
   '{"titleKo":"N이에요/예요","summaryKo":"N이에요/예요"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u05.n02',
@@ -1601,7 +1601,7 @@ insert into public.grammar_topics (
   'время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения.',
   '{"titleKo":"수③","summaryKo":"수③"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u05.n03',
@@ -1622,7 +1622,7 @@ insert into public.grammar_topics (
   'задаёт начало и конец временного или пространственного диапазона.',
   '{"titleKo":"N부터 N까지","summaryKo":"N부터 N까지"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u05.n04',
@@ -1643,7 +1643,7 @@ insert into public.grammar_topics (
   'краткое и полное отрицание действия или состояния.',
   '{"titleKo":"안 V/V-지 않다","summaryKo":"안 V/V-지 않다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u05.n05',
@@ -1664,7 +1664,7 @@ insert into public.grammar_topics (
   'образует прошедшее время глагола или прилагательного.',
   '{"titleKo":"V-았/었/였-","summaryKo":"V-았/었/였-"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u06.n01',
@@ -1685,7 +1685,7 @@ insert into public.grammar_topics (
   'прошедшая форма связки после существительного.',
   '{"titleKo":"N이었/였-","summaryKo":"N이었/였-"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u06.n02',
@@ -1706,7 +1706,7 @@ insert into public.grammar_topics (
   'перечисляет действия или состояния без обязательной причинной связи.',
   '{"titleKo":"V-고①","summaryKo":"V-고①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u06.n03',
@@ -1727,7 +1727,7 @@ insert into public.grammar_topics (
   'соединяет существительные или именные характеристики значением «и».',
   '{"titleKo":"N(이)고","summaryKo":"N(이)고"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u06.n04',
@@ -1748,7 +1748,7 @@ insert into public.grammar_topics (
   'выражает опыт или попытку «попробовать сделать».',
   '{"titleKo":"AV-아/어/여 보다","summaryKo":"AV-아/어/여 보다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u06.n05',
@@ -1769,7 +1769,7 @@ insert into public.grammar_topics (
   'описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной.',
   '{"titleKo":"ㅡ 동사","summaryKo":"ㅡ 동사"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   6,
   '1.0.0',
   'grammar.u06.n06',
@@ -1790,7 +1790,7 @@ insert into public.grammar_topics (
   'подчёркивает контраст или сравнение двух тем.',
   '{"titleKo":"N은/는②","summaryKo":"N은/는②"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u07.n01',
@@ -1811,7 +1811,7 @@ insert into public.grammar_topics (
   'описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ.',
   '{"titleKo":"ㅂ 동사","summaryKo":"ㅂ 동사"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u07.n02',
@@ -1832,7 +1832,7 @@ insert into public.grammar_topics (
   'соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем».',
   '{"titleKo":"AV-아/어/여서①","summaryKo":"AV-아/어/여서①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u07.n03',
@@ -1853,7 +1853,7 @@ insert into public.grammar_topics (
   'указывает направление движения; после гласной и `ㄹ` используется `로`.',
   '{"titleKo":"N(으)로①","summaryKo":"N(으)로①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u07.n04',
@@ -1874,7 +1874,7 @@ insert into public.grammar_topics (
   'выражает цель движения: «идти/приходить, чтобы сделать».',
   '{"titleKo":"AV-(으)러 가다/오다","summaryKo":"AV-(으)러 가다/오다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u07.n05',
@@ -1895,7 +1895,7 @@ insert into public.grammar_topics (
   'выражает собственный план, намерение или ожидаемое будущее действие.',
   '{"titleKo":"AV-(으)ㄹ 거예요①","summaryKo":"AV-(으)ㄹ 거예요①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u08.n01',
@@ -1916,7 +1916,7 @@ insert into public.grammar_topics (
   'соединяет последовательные действия в рассказе о плане или распорядке.',
   '{"titleKo":"AV-고②","summaryKo":"AV-고②"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u08.n02',
@@ -1937,7 +1937,7 @@ insert into public.grammar_topics (
   'обозначает действие или момент «до/перед».',
   '{"titleKo":"AV-기 전에/N 전에","summaryKo":"AV-기 전에/N 전에"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u08.n03',
@@ -1958,7 +1958,7 @@ insert into public.grammar_topics (
   'обозначает действие или момент «после».',
   '{"titleKo":"AV-(으)ㄴ 후에/N 후에","summaryKo":"AV-(으)ㄴ 후에/N 후에"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u08.n04',
@@ -1979,7 +1979,7 @@ insert into public.grammar_topics (
   'задаёт продолжительность «в течение N».',
   '{"titleKo":"N 동안","summaryKo":"N 동안"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u08.n05',
@@ -2000,7 +2000,7 @@ insert into public.grammar_topics (
   'счётные слова, количество товаров, цены и денежные единицы.',
   '{"titleKo":"수④","summaryKo":"수④"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u09.n01',
@@ -2021,7 +2021,7 @@ insert into public.grammar_topics (
   'вежливая просьба или команда; `-(으)십시오` формальнее.',
   '{"titleKo":"AV-(으)세요/-(으)십시오","summaryKo":"AV-(으)세요/-(으)십시오"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u09.n02',
@@ -2042,7 +2042,7 @@ insert into public.grammar_topics (
   'разговорное «и/с» после существительного.',
   '{"titleKo":"N이랑","summaryKo":"N이랑"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u09.n03',
@@ -2063,7 +2063,7 @@ insert into public.grammar_topics (
   'действие, продолжающееся в момент речи.',
   '{"titleKo":"AV-고 있다①","summaryKo":"AV-고 있다①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u09.n04',
@@ -2084,7 +2084,7 @@ insert into public.grammar_topics (
   'адресат или источник действия: «кому/у кого/от кого».',
   '{"titleKo":"N에게(서)/한테(서)","summaryKo":"N에게(서)/한테(서)"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u09.n05',
@@ -2105,7 +2105,7 @@ insert into public.grammar_topics (
   'предлагает совместное действие или спрашивает решение собеседника.',
   '{"titleKo":"AV-(으)ㄹ까요?①","summaryKo":"AV-(으)ㄹ까요?①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u10.n01',
@@ -2126,7 +2126,7 @@ insert into public.grammar_topics (
   'формальное «давайте сделаем».',
   '{"titleKo":"AV-(으)ㅂ시다","summaryKo":"AV-(으)ㅂ시다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u10.n02',
@@ -2147,7 +2147,7 @@ insert into public.grammar_topics (
   'выражает причину, особенно перед просьбой, предложением или выводом.',
   '{"titleKo":"V-(으)니까①/N(이)니까","summaryKo":"V-(으)니까①/N(이)니까"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u10.n03',
@@ -2168,7 +2168,7 @@ insert into public.grammar_topics (
   'выражает желание говорящего выполнить действие.',
   '{"titleKo":"AV-고 싶다","summaryKo":"AV-고 싶다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u10.n04',
@@ -2189,7 +2189,7 @@ insert into public.grammar_topics (
   'выражает решение или намерение говорящего в текущей ситуации.',
   '{"titleKo":"AV-겠-①","summaryKo":"AV-겠-①"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u10.n05',
@@ -2210,7 +2210,7 @@ insert into public.grammar_topics (
   'просит подтверждение известного или ожидаемого факта.',
   '{"titleKo":"V-지요?/N(이)지요?","summaryKo":"V-지요?/N(이)지요?"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u11.n01',
@@ -2231,7 +2231,7 @@ insert into public.grammar_topics (
   'выражает предположение по имеющимся признакам.',
   '{"titleKo":"V-겠-②/N이겠-","summaryKo":"V-겠-②/N이겠-"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u11.n02',
@@ -2252,7 +2252,7 @@ insert into public.grammar_topics (
   'действие, выполненное для другого человека.',
   '{"titleKo":"AV-아/어/여 주다","summaryKo":"AV-아/어/여 주다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u11.n03',
@@ -2273,7 +2273,7 @@ insert into public.grammar_topics (
   'условие или повторяющаяся ситуация «если/когда».',
   '{"titleKo":"V-(으)면/N이면","summaryKo":"V-(으)면/N이면"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u11.n04',
@@ -2294,7 +2294,7 @@ insert into public.grammar_topics (
   'описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов.',
   '{"titleKo":"ㄷ 동사","summaryKo":"ㄷ 동사"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u11.n05',
@@ -2315,7 +2315,7 @@ insert into public.grammar_topics (
   'выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному.',
   '{"titleKo":"V-아/어/여서②/N이어/여서","summaryKo":"V-아/어/여서②/N이어/여서"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u12.n01',
@@ -2336,7 +2336,7 @@ insert into public.grammar_topics (
   'возможность, способность или невозможность выполнить действие.',
   '{"titleKo":"AV-(으)ㄹ 수 있다/없다","summaryKo":"AV-(으)ㄹ 수 있다/없다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u12.n02',
@@ -2357,7 +2357,7 @@ insert into public.grammar_topics (
   'вопрос-предположение о будущем или неизвестном факте.',
   '{"titleKo":"V-(으)ㄹ까요?②/N일까요?","summaryKo":"V-(으)ㄹ까요?②/N일까요?"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u12.n03',
@@ -2378,7 +2378,7 @@ insert into public.grammar_topics (
   'предположение о чужом действии или неподконтрольном факте.',
   '{"titleKo":"AV-(으)ㄹ 거예요②/N일 거예요","summaryKo":"AV-(으)ㄹ 거예요②/N일 거예요"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u12.n04',
@@ -2399,7 +2399,7 @@ insert into public.grammar_topics (
   'обещание или решение говорящего, принятое с учётом собеседника.',
   '{"titleKo":"AV-(으)ㄹ게요","summaryKo":"AV-(으)ㄹ게요"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u12.n05',
@@ -2420,7 +2420,7 @@ insert into public.grammar_topics (
   'та же вежливая форма используется как мягкая просьба, команда или предложение по контексту.',
   '{"titleKo":"AV-아/어/여요②","summaryKo":"AV-아/어/여요②"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u13.n01',
@@ -2441,7 +2441,7 @@ insert into public.grammar_topics (
   'обозначает средство, инструмент или способ передвижения.',
   '{"titleKo":"N(으)로②","summaryKo":"N(으)로②"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u13.n02',
@@ -2462,7 +2462,7 @@ insert into public.grammar_topics (
   'описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях.',
   '{"titleKo":"ㄹ 동사","summaryKo":"ㄹ 동사"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u13.n03',
@@ -2483,7 +2483,7 @@ insert into public.grammar_topics (
   'соединяет альтернативы значением «или».',
   '{"titleKo":"V-거나/N이나","summaryKo":"V-거나/N이나"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u13.n04',
@@ -2504,7 +2504,7 @@ insert into public.grammar_topics (
   'выражает объективную невозможность или отсутствие умения.',
   '{"titleKo":"못 AV/AV-지 못하다","summaryKo":"못 AV/AV-지 못하다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u13.n05',
@@ -2525,7 +2525,7 @@ insert into public.grammar_topics (
   'выражает намерение или подготовленный план выполнить действие.',
   '{"titleKo":"AV-(으)려고 하다","summaryKo":"AV-(으)려고 하다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u14.n01',
@@ -2546,7 +2546,7 @@ insert into public.grammar_topics (
   'почтительные аналоги маркеров подлежащего и темы.',
   '{"titleKo":"N께서/N께서는","summaryKo":"N께서/N께서는"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u14.n02',
@@ -2567,7 +2567,7 @@ insert into public.grammar_topics (
   'почтительно маркирует действие, состояние или статус уважаемого лица.',
   '{"titleKo":"V-(으)시-/N이시-","summaryKo":"V-(으)시-/N이시-"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u14.n03',
@@ -2588,7 +2588,7 @@ insert into public.grammar_topics (
   'выражает обязанность или необходимость.',
   '{"titleKo":"V-아/어/야 되다/하다","summaryKo":"V-아/어/야 되다/하다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u14.n04',
@@ -2609,7 +2609,7 @@ insert into public.grammar_topics (
   'запрещает или просит не выполнять действие.',
   '{"titleKo":"AV-지 말다","summaryKo":"AV-지 말다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u14.n05',
@@ -2630,7 +2630,7 @@ insert into public.grammar_topics (
   'вводит объект сравнения: «чем N».',
   '{"titleKo":"N보다","summaryKo":"N보다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u15.n01',
@@ -2651,7 +2651,7 @@ insert into public.grammar_topics (
   'соединяет противопоставленные части значением «но/хотя».',
   '{"titleKo":"V-지만/N(이)지만","summaryKo":"V-지만/N(이)지만"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u15.n02',
@@ -2672,7 +2672,7 @@ insert into public.grammar_topics (
   'превращает описательный глагол в определение перед существительным.',
   '{"titleKo":"DV-(으)ㄴ N","summaryKo":"DV-(으)ㄴ N"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u15.n03',
@@ -2693,7 +2693,7 @@ insert into public.grammar_topics (
   'запрашивает или даёт разрешение: «можно».',
   '{"titleKo":"V-아/어/여도 되다","summaryKo":"V-아/어/여도 되다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u15.n04',
@@ -2714,7 +2714,7 @@ insert into public.grammar_topics (
   'выражает запрет: «нельзя».',
   '{"titleKo":"AV-(으)면 안 되다","summaryKo":"AV-(으)면 안 되다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u15.n05',
@@ -2735,7 +2735,7 @@ insert into public.grammar_topics (
   'образует определительные формы действия в прошедшем, настоящем и будущем времени.',
   '{"titleKo":"AV-(으)ㄴ/는/(으)ㄹ N","summaryKo":"AV-(으)ㄴ/는/(으)ㄹ N"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   1,
   '1.0.0',
   'grammar.u16.n01',
@@ -2756,7 +2756,7 @@ insert into public.grammar_topics (
   'определяет существительное через другое существительное: «N, являющийся N».',
   '{"titleKo":"N인 N","summaryKo":"N인 N"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   2,
   '1.0.0',
   'grammar.u16.n02',
@@ -2777,7 +2777,7 @@ insert into public.grammar_topics (
   'вводит фон, пояснение, мягкое противопоставление или переход к просьбе.',
   '{"titleKo":"V-(으)ㄴ/는데/N인데","summaryKo":"V-(으)ㄴ/는데/N인데"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   3,
   '1.0.0',
   'grammar.u16.n03',
@@ -2798,7 +2798,7 @@ insert into public.grammar_topics (
   'почтительный показатель адресата «кому».',
   '{"titleKo":"N께","summaryKo":"N께"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   4,
   '1.0.0',
   'grammar.u16.n04',
@@ -2819,7 +2819,7 @@ insert into public.grammar_topics (
   'действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.',
   '{"titleKo":"AV-아/어/여 드리다/주다","summaryKo":"AV-아/어/여 드리다/주다"}'::jsonb,
   '1급',
-  'draft',
+  'published',
   5,
   '1.0.0',
   'grammar.u16.n05',
@@ -2940,7 +2940,7 @@ insert into public.dictionary_entries (
   'verb',
   '["снимать (одежду)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.beotda.snimat-odezhdu',
   'snimat-odezhdu',
@@ -2980,7 +2980,7 @@ insert into public.dictionary_entries (
   'verb',
   '["сидеть, садиться"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.anjda.sidet-saditsya',
   'sidet-saditsya',
@@ -3200,7 +3200,7 @@ insert into public.dictionary_entries (
   'verb',
   '["учиться, изучать"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.baeuda.uchitsya-izuchat',
   'uchitsya-izuchat',
@@ -4160,7 +4160,7 @@ insert into public.dictionary_entries (
   'verb',
   '["смотреть, видеть"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.boda.smotret-videt',
   'smotret-videt',
@@ -4240,7 +4240,7 @@ insert into public.dictionary_entries (
   'verb',
   '["получать"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.batda.poluchat',
   'poluchat',
@@ -4260,7 +4260,7 @@ insert into public.dictionary_entries (
   'verb',
   '["знать"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.alda.znat',
   'znat',
@@ -4940,7 +4940,7 @@ insert into public.dictionary_entries (
   'verb',
   '["отправлять, посылать"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bonaeda.otpravlyat-posylat',
   'otpravlyat-posylat',
@@ -5480,7 +5480,7 @@ insert into public.dictionary_entries (
   'verb',
   '["устраивать, затевать (праздник, дело)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.beorida.ustraivat-zatevat-prazdnik-delo',
   'ustraivat-zatevat-prazdnik-delo',
@@ -5660,7 +5660,7 @@ insert into public.dictionary_entries (
   'verb',
   '["отправлять (посылку, письмо)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.buchida.otpravlyat-posylku-pismo',
   'otpravlyat-posylku-pismo',
@@ -5800,7 +5800,7 @@ insert into public.dictionary_entries (
   'verb',
   '["менять, изменять"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bakkuda.menyat-izmenyat',
   'menyat-izmenyat',
@@ -6020,7 +6020,7 @@ insert into public.dictionary_entries (
   'verb',
   '["зарабатывать (деньги)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.beolda.zarabatyvat-dengi',
   'zarabatyvat-dengi',
@@ -6080,7 +6080,7 @@ insert into public.dictionary_entries (
   'verb',
   '["одалживать, брать напрокат"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.billida.odalzhivat-brat-naprokat',
   'odalzhivat-brat-naprokat',
@@ -6420,7 +6420,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["дорогой"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bissada.dorogoi',
   'dorogoi',
@@ -6760,7 +6760,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["светлый, яркий"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bakda.svetlyi-yarkii',
   'svetlyi-yarkii',
@@ -7080,7 +7080,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["сложный, многолюдный"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bokjaphada.slozhnyi-mnogolyudnyi',
   'slozhnyi-mnogolyudnyi',
@@ -7180,7 +7180,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["больной, болит"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.apeuda.bolnoi-bolit',
   'bolnoi-bolit',
@@ -7200,7 +7200,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["голодный"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.baegopeuda.golodnyi',
   'golodnyi',
@@ -7220,7 +7220,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["сытый"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.baebureuda.sytyi',
   'sytyi',
@@ -7440,7 +7440,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["красивый, прекрасный"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.areumdapda.krasivyi-prekrasnyi',
   'krasivyi-prekrasnyi',
@@ -7500,7 +7500,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["трудолюбивый, прилежный"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bujireonhada.trudolyubivyi-prilezhnyi',
   'trudolyubivyi-prilezhnyi',
@@ -7560,7 +7560,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["занятой"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bappeuda.zanyatoi',
   'zanyatoi',
@@ -7640,7 +7640,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["недружелюбный, невежливый"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bulchinjeolhada.nedruzhelyubnyi-nevezhlivyi',
   'nedruzhelyubnyi-nevezhlivyi',
@@ -7780,7 +7780,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["рад(а) встрече"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bangapda.rad-a-vstreche',
   'rad-a-vstreche',
@@ -7800,7 +7800,7 @@ insert into public.dictionary_entries (
   'adjective',
   '["насыщенный, содержательный, продуктивный"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.alchada.nasyschennyi-soderzhatelnyi-produktivnyi',
   'nasyschennyi-soderzhatelnyi-produktivnyi',
@@ -8020,7 +8020,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["вы"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dangsin.vy',
   'vy',
@@ -8080,7 +8080,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["он; тот (определитель)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geu.on-tot-opredelitel',
   'on-tot-opredelitel',
@@ -8100,7 +8100,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["она"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geunyeo.ona',
   'ona',
@@ -8120,7 +8120,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["они"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geudeul.oni',
   'oni',
@@ -8140,7 +8140,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["этот (определитель)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.i.etot-opredelitel',
   'etot-opredelitel',
@@ -8160,7 +8160,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["тот, та, то (определитель, далеко)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.jeo.tot-ta-to-opredelitel-daleko',
   'tot-ta-to-opredelitel-daleko',
@@ -8180,7 +8180,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["это (предмет, близко)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.igeot.eto-predmet-blizko',
   'eto-predmet-blizko',
@@ -8200,7 +8200,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["то (предмет, среднее расстояние)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geugeot.to-predmet-srednee-rasstoyanie',
   'to-predmet-srednee-rasstoyanie',
@@ -8260,7 +8260,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["там (среднее расстояние)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geogi.tam-srednee-rasstoyanie',
   'tam-srednee-rasstoyanie',
@@ -8300,7 +8300,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["сам, себя, свой"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.jagi.sam-sebya-svoi',
   'sam-sebya-svoi',
@@ -8320,7 +8320,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["такой (как этот)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.ireon.takoi-kak-etot',
   'takoi-kak-etot',
@@ -8340,7 +8340,7 @@ insert into public.dictionary_entries (
   'pronoun',
   '["то место, там"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geugot.to-mesto-tam',
   'to-mesto-tam',
@@ -9480,7 +9480,7 @@ insert into public.dictionary_entries (
   'noun',
   '["варёный рис, еда (в широком смысле)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bap.varenyi-ris-eda-v-shirokom-smysle',
   'varenyi-ris-eda-v-shirokom-smysle',
@@ -9580,7 +9580,7 @@ insert into public.dictionary_entries (
   'noun',
   '["курица (мясо)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dakgogi.kuritsa-myaso',
   'kuritsa-myaso',
@@ -9620,7 +9620,7 @@ insert into public.dictionary_entries (
   'noun',
   '["яйцо"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dalgyal.yaitso',
   'yaitso',
@@ -9660,7 +9660,7 @@ insert into public.dictionary_entries (
   'noun',
   '["сыр"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chijeu.syr',
   'syr',
@@ -9680,7 +9680,7 @@ insert into public.dictionary_entries (
   'noun',
   '["сливочное масло"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.beoteo.slivochnoe-maslo',
   'slivochnoe-maslo',
@@ -9780,7 +9780,7 @@ insert into public.dictionary_entries (
   'noun',
   '["соевая паста"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.doenjang.soevaya-pasta',
   'soevaya-pasta',
@@ -9920,7 +9920,7 @@ insert into public.dictionary_entries (
   'noun',
   '["чай"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.cha.chai',
   'chai',
@@ -10040,7 +10040,7 @@ insert into public.dictionary_entries (
   'noun',
   '["бибимбап (рис с овощами и мясом, часто с яйцом и острым соусом)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bibimbap.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits',
   'bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits',
@@ -10060,7 +10060,7 @@ insert into public.dictionary_entries (
   'noun',
   '["булгоги (маринованное жареное мясо)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bulgogi.bulgogi-marinovannoe-zharenoe-myaso',
   'bulgogi-marinovannoe-zharenoe-myaso',
@@ -10240,7 +10240,7 @@ insert into public.dictionary_entries (
   'noun',
   '["курица (живая птица)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dak.kuritsa-zhivaya-ptitsa',
   'kuritsa-zhivaya-ptitsa',
@@ -10400,7 +10400,7 @@ insert into public.dictionary_entries (
   'noun',
   '["твендянг-тиге (рагу с соевой пастой)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.doenjangjjigae.tvendyang-tige-ragu-s-soevoi-pastoi',
   'tvendyang-tige-ragu-s-soevoi-pastoi',
@@ -10480,7 +10480,7 @@ insert into public.dictionary_entries (
   'noun',
   '["маринованная жёлтая редька (для кимбапа)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.danmuji.marinovannaya-zheltaya-redka-dlya-kimbapa',
   'marinovannaya-zheltaya-redka-dlya-kimbapa',
@@ -10500,7 +10500,7 @@ insert into public.dictionary_entries (
   'noun',
   '["экзамен, тест"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.siheom.ekzamen-test',
   'ekzamen-test',
@@ -10520,7 +10520,7 @@ insert into public.dictionary_entries (
   'noun',
   '["урок, занятие"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.sueop.urok-zanyatie',
   'urok-zanyatie',
@@ -10540,7 +10540,7 @@ insert into public.dictionary_entries (
   'noun',
   '["студенческий билет"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.haksaengjeung.studencheskii-bilet',
   'studencheskii-bilet',
@@ -10560,7 +10560,7 @@ insert into public.dictionary_entries (
   'noun',
   '["подготовка к уроку заранее"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.yeseup.podgotovka-k-uroku-zaranee',
   'podgotovka-k-uroku-zaranee',
@@ -10580,7 +10580,7 @@ insert into public.dictionary_entries (
   'noun',
   '["класс, группа (учебная)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.ban.klass-gruppa-uchebnaya',
   'klass-gruppa-uchebnaya',
@@ -10620,7 +10620,7 @@ insert into public.dictionary_entries (
   'noun',
   '["кровать"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chimdae.krovat',
   'krovat',
@@ -10660,7 +10660,7 @@ insert into public.dictionary_entries (
   'noun',
   '["письменный стол, парта"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chaeksang.pismennyi-stol-parta',
   'pismennyi-stol-parta',
@@ -10680,7 +10680,7 @@ insert into public.dictionary_entries (
   'noun',
   '["книжный шкаф"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chaekjang.knizhnyi-shkaf',
   'knizhnyi-shkaf',
@@ -10820,7 +10820,7 @@ insert into public.dictionary_entries (
   'noun',
   '["школьный рюкзак"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chaekgabang.shkolnyi-ryukzak',
   'shkolnyi-ryukzak',
@@ -10840,7 +10840,7 @@ insert into public.dictionary_entries (
   'noun',
   '["рюкзак (походный, туристический)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.baenang.ryukzak-pohodnyi-turisticheskii',
   'ryukzak-pohodnyi-turisticheskii',
@@ -10900,7 +10900,7 @@ insert into public.dictionary_entries (
   'noun',
   '["очки"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.angyeong.ochki',
   'ochki',
@@ -10920,7 +10920,7 @@ insert into public.dictionary_entries (
   'noun',
   '["подушка"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.begae.podushka',
   'podushka',
@@ -10980,7 +10980,7 @@ insert into public.dictionary_entries (
   'noun',
   '["мыло"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.binu.mylo',
   'mylo',
@@ -11000,7 +11000,7 @@ insert into public.dictionary_entries (
   'noun',
   '["зубная щётка"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chitsol.zubnaya-schetka',
   'zubnaya-schetka',
@@ -11160,7 +11160,7 @@ insert into public.dictionary_entries (
   'noun',
   '["книга"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chaek.kniga',
   'kniga',
@@ -11280,7 +11280,7 @@ insert into public.dictionary_entries (
   'noun',
   '["шариковая ручка"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bolpen.sharikovaya-ruchka',
   'sharikovaya-ruchka',
@@ -11520,7 +11520,7 @@ insert into public.dictionary_entries (
   'noun',
   '["конверт, пакетик"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bongtu.konvert-paketik',
   'konvert-paketik',
@@ -11720,7 +11720,7 @@ insert into public.dictionary_entries (
   'noun',
   '["компьютер"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.keompyuteo.kompyuter',
   'kompyuter',
@@ -11760,7 +11760,7 @@ insert into public.dictionary_entries (
   'noun',
   '["мобильный телефон"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.hyudaepon.mobilnyi-telefon',
   'mobilnyi-telefon',
@@ -11840,7 +11840,7 @@ insert into public.dictionary_entries (
   'noun',
   '["кондиционер"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.eeokeon-e-eo-keon.konditsioner',
   'konditsioner',
@@ -11860,7 +11860,7 @@ insert into public.dictionary_entries (
   'noun',
   '["пылесос"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.cheongsogi.pylesos',
   'pylesos',
@@ -11880,7 +11880,7 @@ insert into public.dictionary_entries (
   'noun',
   '["микроволновая печь"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.jeonjareinji.mikrovolnovaya-pech',
   'mikrovolnovaya-pech',
@@ -11920,7 +11920,7 @@ insert into public.dictionary_entries (
   'noun',
   '["утюг"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.darimi.utyug',
   'utyug',
@@ -11940,7 +11940,7 @@ insert into public.dictionary_entries (
   'noun',
   '["камера, фотоаппарат"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.kamera.kamera-fotoapparat',
   'kamera-fotoapparat',
@@ -11960,7 +11960,7 @@ insert into public.dictionary_entries (
   'noun',
   '["наушники (вкладыши)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.ieopon.naushniki-vkladyshi',
   'naushniki-vkladyshi',
@@ -11980,7 +11980,7 @@ insert into public.dictionary_entries (
   'noun',
   '["зарядное устройство"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chungjeongi.zaryadnoe-ustroistvo',
   'zaryadnoe-ustroistvo',
@@ -12000,7 +12000,7 @@ insert into public.dictionary_entries (
   'noun',
   '["батарея, аккумулятор"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.baeteori.batareya-akkumulyator',
   'batareya-akkumulyator',
@@ -12020,7 +12020,7 @@ insert into public.dictionary_entries (
   'noun',
   '["компьютерная мышь"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.mauseu.kompyuternaya-mysh',
   'kompyuternaya-mysh',
@@ -12040,7 +12040,7 @@ insert into public.dictionary_entries (
   'noun',
   '["клавиатура"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.kibodeu.klaviatura',
   'klaviatura',
@@ -12120,7 +12120,7 @@ insert into public.dictionary_entries (
   'noun',
   '["отец"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.abeoji.otets',
   'otets',
@@ -12140,7 +12140,7 @@ insert into public.dictionary_entries (
   'noun',
   '["папа"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.appa.papa',
   'papa',
@@ -12160,7 +12160,7 @@ insert into public.dictionary_entries (
   'noun',
   '["мать"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.eomeoni.mat',
   'mat',
@@ -12180,7 +12180,7 @@ insert into public.dictionary_entries (
   'noun',
   '["мама"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.eomma.mama',
   'mama',
@@ -12200,7 +12200,7 @@ insert into public.dictionary_entries (
   'noun',
   '["родители"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bumonim.roditeli',
   'roditeli',
@@ -12220,7 +12220,7 @@ insert into public.dictionary_entries (
   'noun',
   '["сын"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.adeul.syn',
   'syn',
@@ -12340,7 +12340,7 @@ insert into public.dictionary_entries (
   'noun',
   '["младший брат или сестра"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dongsaeng.mladshii-brat-ili-sestra',
   'mladshii-brat-ili-sestra',
@@ -12540,7 +12540,7 @@ insert into public.dictionary_entries (
   'noun',
   '["жена"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.anae.zhena',
   'zhena',
@@ -12560,7 +12560,7 @@ insert into public.dictionary_entries (
   'noun',
   '["обращение к мужчине среднего возраста"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.ajeossi.obraschenie-k-muzhchine-srednego-vozrasta',
   'obraschenie-k-muzhchine-srednego-vozrasta',
@@ -12580,7 +12580,7 @@ insert into public.dictionary_entries (
   'noun',
   '["обращение к женщине среднего возраста"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.ajumeoni.obraschenie-k-zhenschine-srednego-vozrasta',
   'obraschenie-k-zhenschine-srednego-vozrasta',
@@ -12640,7 +12640,7 @@ insert into public.dictionary_entries (
   'noun',
   '["друг, подруга"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chingu.drug-podruga',
   'drug-podruga',
@@ -12800,7 +12800,7 @@ insert into public.dictionary_entries (
   'noun',
   '["родственники, родня"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chincheok.rodstvenniki-rodnya',
   'rodstvenniki-rodnya',
@@ -12840,7 +12840,7 @@ insert into public.dictionary_entries (
   'noun',
   '["футбол"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chukgu.futbol',
   'futbol',
@@ -12900,7 +12900,7 @@ insert into public.dictionary_entries (
   'noun',
   '["волейбол"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.baegu.voleibol',
   'voleibol',
@@ -13040,7 +13040,7 @@ insert into public.dictionary_entries (
   'noun',
   '["бег"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dalligi.beg',
   'beg',
@@ -13140,7 +13140,7 @@ insert into public.dictionary_entries (
   'noun',
   '["бокс"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.boksing.boks',
   'boks',
@@ -13160,7 +13160,7 @@ insert into public.dictionary_entries (
   'noun',
   '["гольф"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.golpeu.golf',
   'golf',
@@ -13180,7 +13180,7 @@ insert into public.dictionary_entries (
   'noun',
   '["бадминтон"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.baedeuminteon.badminton',
   'badminton',
@@ -13200,7 +13200,7 @@ insert into public.dictionary_entries (
   'noun',
   '["боулинг"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bolling.bouling',
   'bouling',
@@ -13220,7 +13220,7 @@ insert into public.dictionary_entries (
   'noun',
   '["поход в горы, треккинг"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.deungsan.pohod-v-gory-trekking',
   'pohod-v-gory-trekking',
@@ -13260,7 +13260,7 @@ insert into public.dictionary_entries (
   'noun',
   '["тренажёрный зал, фитнес"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.helseu.trenazhernyi-zal-fitnes',
   'trenazhernyi-zal-fitnes',
@@ -13280,7 +13280,7 @@ insert into public.dictionary_entries (
   'noun',
   '["езда на велосипеде"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.jajeongeo-tagi.ezda-na-velosipede',
   'ezda-na-velosipede',
@@ -13360,7 +13360,7 @@ insert into public.dictionary_entries (
   'noun',
   '["гимнастика"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chejo.gimnastika',
   'gimnastika',
@@ -13400,7 +13400,7 @@ insert into public.dictionary_entries (
   'noun',
   '["джоггинг, бег трусцой"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.joging.dzhogging-beg-trustsoi',
   'dzhogging-beg-trustsoi',
@@ -13560,7 +13560,7 @@ insert into public.dictionary_entries (
   'noun',
   '["юрист, адвокат"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.byeonhosa.yurist-advokat',
   'yurist-advokat',
@@ -13680,7 +13680,7 @@ insert into public.dictionary_entries (
   'noun',
   '["актёр, актриса"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.baeu.akter-aktrisa',
   'akter-aktrisa',
@@ -13820,7 +13820,7 @@ insert into public.dictionary_entries (
   'noun',
   '["инженер"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.enjinieo.inzhener',
   'inzhener',
@@ -13860,7 +13860,7 @@ insert into public.dictionary_entries (
   'noun',
   '["дизайнер"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dijaineo.dizainer',
   'dizainer',
@@ -14020,7 +14020,7 @@ insert into public.dictionary_entries (
   'noun',
   '["коллега"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dongnyo.kollega',
   'kollega',
@@ -14100,7 +14100,7 @@ insert into public.dictionary_entries (
   'noun',
   '["студент университета"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.daehaksaeng.student-universiteta',
   'student-universiteta',
@@ -14180,7 +14180,7 @@ insert into public.dictionary_entries (
   'noun',
   '["аспирантура, магистратура"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.daehagwon.aspirantura-magistratura',
   'aspirantura-magistratura',
@@ -14200,7 +14200,7 @@ insert into public.dictionary_entries (
   'noun',
   '["начальная школа"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.chodeunghakgyo.nachalnaya-shkola',
   'nachalnaya-shkola',
@@ -14240,7 +14240,7 @@ insert into public.dictionary_entries (
   'noun',
   '["старшая школа (полная средняя)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.godeunghakgyo.starshaya-shkola-polnaya-srednyaya',
   'starshaya-shkola-polnaya-srednyaya',
@@ -14260,7 +14260,7 @@ insert into public.dictionary_entries (
   'noun',
   '["университет"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.daehakgyo.universitet',
   'universitet',
@@ -14280,7 +14280,7 @@ insert into public.dictionary_entries (
   'noun',
   '["здание (обычно офисное/многоэтажное)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bilding.zdanie-obychno-ofisnoe-mnogoetazhnoe',
   'zdanie-obychno-ofisnoe-mnogoetazhnoe',
@@ -14300,7 +14300,7 @@ insert into public.dictionary_entries (
   'noun',
   '["больница"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.byeongwon.bolnitsa',
   'bolnitsa',
@@ -14360,7 +14360,7 @@ insert into public.dictionary_entries (
   'noun',
   '["школа"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.hakgyo.shkola',
   'shkola',
@@ -14440,7 +14440,7 @@ insert into public.dictionary_entries (
   'noun',
   '["магазин (небольшой)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gage.magazin-nebolshoi',
   'magazin-nebolshoi',
@@ -14500,7 +14500,7 @@ insert into public.dictionary_entries (
   'noun',
   '["аэропорт"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gonghang.aeroport',
   'aeroport',
@@ -14520,7 +14520,7 @@ insert into public.dictionary_entries (
   'noun',
   '["автобусная остановка"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.beoseu-jeongnyujang.avtobusnaya-ostanovka',
   'avtobusnaya-ostanovka',
@@ -14580,7 +14580,7 @@ insert into public.dictionary_entries (
   'noun',
   '["банк"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.eunhaeng.bank',
   'bank',
@@ -14600,7 +14600,7 @@ insert into public.dictionary_entries (
   'noun',
   '["класс, классная комната"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gyosil.klass-klassnaya-komnata',
   'klass-klassnaya-komnata',
@@ -14620,7 +14620,7 @@ insert into public.dictionary_entries (
   'noun',
   '["театр"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geukjang.teatr',
   'teatr',
@@ -14660,7 +14660,7 @@ insert into public.dictionary_entries (
   'noun',
   '["библиотека"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.doseogwan.biblioteka',
   'biblioteka',
@@ -14680,7 +14680,7 @@ insert into public.dictionary_entries (
   'noun',
   '["спортзал, спортивный зал"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.cheyukgwan.sportzal-sportivnyi-zal',
   'sportzal-sportivnyi-zal',
@@ -14760,7 +14760,7 @@ insert into public.dictionary_entries (
   'noun',
   '["универмаг, торговый центр"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.baekhwajeom.univermag-torgovyi-tsentr',
   'univermag-torgovyi-tsentr',
@@ -14780,7 +14780,7 @@ insert into public.dictionary_entries (
   'noun',
   '["парк"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gongwon.park',
   'park',
@@ -14820,7 +14820,7 @@ insert into public.dictionary_entries (
   'noun',
   '["музей"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bakmulgwan.muzei',
   'muzei',
@@ -14860,7 +14860,7 @@ insert into public.dictionary_entries (
   'noun',
   '["зоопарк"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dongmurwon.zoopark',
   'zoopark',
@@ -14900,7 +14900,7 @@ insert into public.dictionary_entries (
   'noun',
   '["железнодорожная станция"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gichayeok.zheleznodorozhnaya-stantsiya',
   'zheleznodorozhnaya-stantsiya',
@@ -15040,7 +15040,7 @@ insert into public.dictionary_entries (
   'noun',
   '["пляж (для купания)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.haesuyokjang.plyazh-dlya-kupaniya',
   'plyazh-dlya-kupaniya',
@@ -15060,7 +15060,7 @@ insert into public.dictionary_entries (
   'noun',
   '["море"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bada.more',
   'more',
@@ -15080,7 +15080,7 @@ insert into public.dictionary_entries (
   'noun',
   '["фитнес-зал, тренажёрный зал"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.helseu-jang.fitnes-zal-trenazhernyi-zal',
   'fitnes-zal-trenazhernyi-zal',
@@ -15120,7 +15120,7 @@ insert into public.dictionary_entries (
   'noun',
   '["общественное место"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gonggongjangso.obschestvennoe-mesto',
   'obschestvennoe-mesto',
@@ -15160,7 +15160,7 @@ insert into public.dictionary_entries (
   'noun',
   '["Национальный музей Кореи"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gungnipjungangbangmulgwan.natsionalnyi-muzei-korei',
   'natsionalnyi-muzei-korei',
@@ -15640,7 +15640,7 @@ insert into public.dictionary_entries (
   'noun',
   '["лицо"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.eolgul.litso',
   'litso',
@@ -15720,7 +15720,7 @@ insert into public.dictionary_entries (
   'noun',
   '["ухо"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gwi.uho',
   'uho',
@@ -15760,7 +15760,7 @@ insert into public.dictionary_entries (
   'noun',
   '["язык (орган)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.hyeo.yazyk-organ',
   'yazyk-organ',
@@ -15800,7 +15800,7 @@ insert into public.dictionary_entries (
   'noun',
   '["плечо"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.eokkae.plecho',
   'plecho',
@@ -15900,7 +15900,7 @@ insert into public.dictionary_entries (
   'noun',
   '["нога (от бедра до стопы)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dari.noga-ot-bedra-do-stopy',
   'noga-ot-bedra-do-stopy',
@@ -15920,7 +15920,7 @@ insert into public.dictionary_entries (
   'noun',
   '["стопа"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bal.stopa',
   'stopa',
@@ -15940,7 +15940,7 @@ insert into public.dictionary_entries (
   'noun',
   '["палец (на ноге)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.balgarak.palets-na-noge',
   'palets-na-noge',
@@ -15980,7 +15980,7 @@ insert into public.dictionary_entries (
   'noun',
   '["поясница, талия"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.heori.poyasnitsa-taliya',
   'poyasnitsa-taliya',
@@ -16000,7 +16000,7 @@ insert into public.dictionary_entries (
   'noun',
   '["грудь"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gaseum.grud',
   'grud',
@@ -16020,7 +16020,7 @@ insert into public.dictionary_entries (
   'noun',
   '["спина"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.deung.spina',
   'spina',
@@ -16040,7 +16040,7 @@ insert into public.dictionary_entries (
   'noun',
   '["живот"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bae.zhivot',
   'zhivot',
@@ -16060,7 +16060,7 @@ insert into public.dictionary_entries (
   'noun',
   '["ягодицы"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.eongdeongi.yagoditsy',
   'yagoditsy',
@@ -16140,7 +16140,7 @@ insert into public.dictionary_entries (
   'noun',
   '["одежда"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.ot.odezhda',
   'odezhda',
@@ -16160,7 +16160,7 @@ insert into public.dictionary_entries (
   'noun',
   '["обувь"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.sinbal.obuv',
   'obuv',
@@ -16180,7 +16180,7 @@ insert into public.dictionary_entries (
   'noun',
   '["косметика"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.hwajangpum.kosmetika',
   'kosmetika',
@@ -16200,7 +16200,7 @@ insert into public.dictionary_entries (
   'noun',
   '["ханбок (корейский национальный костюм)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.hanbok.hanbok-koreiskii-natsionalnyi-kostyum',
   'hanbok-koreiskii-natsionalnyi-kostyum',
@@ -16220,7 +16220,7 @@ insert into public.dictionary_entries (
   'noun',
   '["купальник, плавки"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.suyeongbok.kupalnik-plavki',
   'kupalnik-plavki',
@@ -16240,7 +16240,7 @@ insert into public.dictionary_entries (
   'noun',
   '["перчатки"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.janggap.perchatki',
   'perchatki',
@@ -16260,7 +16260,7 @@ insert into public.dictionary_entries (
   'noun',
   '["галстук"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.nektai.galstuk',
   'galstuk',
@@ -16280,7 +16280,7 @@ insert into public.dictionary_entries (
   'noun',
   '["носовой платок"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.sonsugeon.nosovoi-platok',
   'nosovoi-platok',
@@ -16300,7 +16300,7 @@ insert into public.dictionary_entries (
   'noun',
   '["кроссовки, спортивная обувь"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.undonghwa.krossovki-sportivnaya-obuv',
   'krossovki-sportivnaya-obuv',
@@ -21280,7 +21280,7 @@ insert into public.dictionary_entries (
   'noun',
   '["пятница"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geumyoil.pyatnitsa',
   'pyatnitsa',
@@ -21360,7 +21360,7 @@ insert into public.dictionary_entries (
   'noun',
   '["один день, сутки"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.haru.odin-den-sutki',
   'odin-den-sutki',
@@ -21380,7 +21380,7 @@ insert into public.dictionary_entries (
   'noun',
   '["позавчера"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geujeokke.pozavchera',
   'pozavchera',
@@ -21400,7 +21400,7 @@ insert into public.dictionary_entries (
   'noun',
   '["позавчера"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geuje.pozavchera',
   'pozavchera',
@@ -21420,7 +21420,7 @@ insert into public.dictionary_entries (
   'noun',
   '["вчера"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.eoje.vchera',
   'vchera',
@@ -21580,7 +21580,7 @@ insert into public.dictionary_entries (
   'noun',
   '["следующая неделя"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.daeum-ju.sleduyuschaya-nedelya',
   'sleduyuschaya-nedelya',
@@ -21620,7 +21620,7 @@ insert into public.dictionary_entries (
   'noun',
   '["месяц"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dal.mesyats',
   'mesyats',
@@ -21700,7 +21700,7 @@ insert into public.dictionary_entries (
   'noun',
   '["следующий месяц"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.daeum-dal.sleduyuschii-mesyats',
   'sleduyuschii-mesyats',
@@ -21760,7 +21760,7 @@ insert into public.dictionary_entries (
   'noun',
   '["год"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.hae.god',
   'god',
@@ -21980,7 +21980,7 @@ insert into public.dictionary_entries (
   'noun',
   '["государственный праздник"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gonghyuil.gosudarstvennyi-prazdnik',
   'gosudarstvennyi-prazdnik',
@@ -22000,7 +22000,7 @@ insert into public.dictionary_entries (
   'noun',
   '["каникулы (школьные/университетские)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.banghak.kanikuly-shkolnye-universitetskie',
   'kanikuly-shkolnye-universitetskie',
@@ -22020,7 +22020,7 @@ insert into public.dictionary_entries (
   'noun',
   '["начало учебного семестра (после каникул)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.gaehak.nachalo-uchebnogo-semestra-posle-kanikul',
   'nachalo-uchebnogo-semestra-posle-kanikul',
@@ -22100,7 +22100,7 @@ insert into public.dictionary_entries (
   'noun',
   '["рассвет, раннее утро"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.saebyeok.rassvet-rannee-utro',
   'rassvet-rannee-utro',
@@ -22120,7 +22120,7 @@ insert into public.dictionary_entries (
   'noun',
   '["утро"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.achim.utro',
   'utro',
@@ -22140,7 +22140,7 @@ insert into public.dictionary_entries (
   'noun',
   '["до полудня, первая половина дня"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.ojeon.do-poludnya-pervaya-polovina-dnya',
   'do-poludnya-pervaya-polovina-dnya',
@@ -22160,7 +22160,7 @@ insert into public.dictionary_entries (
   'noun',
   '["полдень"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.jeongo.polden',
   'polden',
@@ -22180,7 +22180,7 @@ insert into public.dictionary_entries (
   'noun',
   '["день (светлое время суток)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.nat.den-svetloe-vremya-sutok',
   'den-svetloe-vremya-sutok',
@@ -22200,7 +22200,7 @@ insert into public.dictionary_entries (
   'noun',
   '["обед, полдень"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.jeomsim.obed-polden',
   'obed-polden',
@@ -22220,7 +22220,7 @@ insert into public.dictionary_entries (
   'noun',
   '["после полудня, вторая половина дня"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.ohu.posle-poludnya-vtoraya-polovina-dnya',
   'posle-poludnya-vtoraya-polovina-dnya',
@@ -22240,7 +22240,7 @@ insert into public.dictionary_entries (
   'noun',
   '["вечер"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.jeonyeok.vecher',
   'vecher',
@@ -22260,7 +22260,7 @@ insert into public.dictionary_entries (
   'noun',
   '["ночь"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.bam.noch',
   'noch',
@@ -22280,7 +22280,7 @@ insert into public.dictionary_entries (
   'noun',
   '["полночь"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.jajeong.polnoch',
   'polnoch',
@@ -22320,7 +22320,7 @@ insert into public.dictionary_entries (
   'noun',
   '["после еды"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.sikhu.posle-edy',
   'posle-edy',
@@ -22340,7 +22340,7 @@ insert into public.dictionary_entries (
   'noun',
   '["глубокая ночь"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.hanbamjjung.glubokaya-noch',
   'glubokaya-noch',
@@ -23000,7 +23000,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["и, а также, и потом"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geurigo.i-a-takzhe-i-potom',
   'i-a-takzhe-i-potom',
@@ -23020,7 +23020,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["поэтому, и поэтому"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geuraeseo.poetomu-i-poetomu',
   'poetomu-i-poetomu',
@@ -23040,7 +23040,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["поэтому, так что"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geureonikka.poetomu-tak-chto',
   'poetomu-tak-chto',
@@ -23060,7 +23060,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["но, кстати, а вот"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geureonde.no-kstati-a-vot',
   'no-kstati-a-vot',
@@ -23080,7 +23080,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["но, однако"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.hajiman.no-odnako',
   'no-odnako',
@@ -23100,7 +23100,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["но, однако"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geureona.no-odnako',
   'no-odnako',
@@ -23120,7 +23120,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["всё же, тем не менее"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geuraedo.vse-zhe-tem-ne-menee',
   'vse-zhe-tem-ne-menee',
@@ -23140,7 +23140,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["если так, в таком случае, тогда"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geureomyeon.esli-tak-v-takom-sluchae-togda',
   'esli-tak-v-takom-sluchae-togda',
@@ -23160,7 +23160,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["тогда, в таком случае"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geureom.togda-v-takom-sluchae',
   'togda-v-takom-sluchae',
@@ -23220,7 +23220,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["или, а если не"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.animyeon.ili-a-esli-ne',
   'ili-a-esli-ne',
@@ -23260,7 +23260,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["но, тем не менее"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.geureochiman.no-tem-ne-menee',
   'no-tem-ne-menee',
@@ -23280,7 +23280,7 @@ insert into public.dictionary_entries (
   'conjunction',
   '["но, однако, при этом (уточнение/оговорка)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.dan.no-odnako-pri-etom-utochnenie-ogovorka',
   'no-odnako-pri-etom-utochnenie-ogovorka',
@@ -24220,7 +24220,7 @@ insert into public.dictionary_entries (
   'counter',
   '["половина (для времени: N시 반 = N:30)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.ban.polovina-dlya-vremeni-n-n-30',
   'polovina-dlya-vremeni-n-n-30',
@@ -24320,7 +24320,7 @@ insert into public.dictionary_entries (
   'counter',
   '["раз, номер"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.beon.raz-nomer',
   'raz-nomer',
@@ -24380,7 +24380,7 @@ insert into public.dictionary_entries (
   'counter',
   '["комплект, набор (для одежды)"]'::jsonb,
   null,
-  'reviewed',
+  'published',
   '1.0.0',
   'dict.beol.komplekt-nabor-dlya-odezhdy',
   'komplekt-nabor-dlya-odezhdy',
@@ -25880,7 +25880,7 @@ insert into public.reading_passages (
 모두 우리 반 친구입니다.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -25985,7 +25985,7 @@ insert into public.reading_passages (
 위층에는 제 방, 위층 화장실이 있습니다. 제 방에 침대, 책상, 옷장이 있습니다. 책상 위에 책, 공책, 컴퓨터가 있습니다. 화장실은 제 방의 오른쪽에 있습니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'published',
   '1.0.0'
 )
 ;
@@ -26072,7 +26072,7 @@ insert into public.reading_passages (
 학교생활이 매우 즐겁습니다.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -26171,7 +26171,7 @@ insert into public.reading_passages (
 토요일에는 친구와 같이 도서관에 갑니다. 도서관에서 책을 봅니다. 그리고 숙제도 합니다. 일요일에는 운동장에 갑니다. 운동장에서 친구와 같이 야구와 농구를 합니다. 저는 운동을 아주 좋아합니다.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -26277,7 +26277,7 @@ insert into public.reading_passages (
   '저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -26355,7 +26355,7 @@ insert into public.reading_passages (
 저녁에 한식당에서 한국 음식을 먹었습니다. 친구는 불고기를 먹고 저는 비빔밥을 먹었습니다. 음식이 정말 맛있었습니다.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -26439,7 +26439,7 @@ insert into public.reading_passages (
 저는 한국의 가을을 좋아합니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'published',
   '1.0.0'
 )
 ;
@@ -26535,7 +26535,7 @@ insert into public.reading_passages (
 그래서 저는 방학을 기다립니다.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -26664,7 +26664,7 @@ insert into public.reading_passages (
 내일 부모님에게 카네이션과 카드를 선물할 겁니다.',
   null,
   '{}'::jsonb,
-  'draft',
+  'published',
   '1.0.0'
 )
 ;
@@ -26755,7 +26755,7 @@ insert into public.reading_passages (
 지난 주말에는 집에서 친구들과 파티를 했습니다. 친구들은 고향의 음식을 만들고 저는 떡볶이를 만들었습니다. 저는 떡볶이를 처음 만들어 봤습니다. 그런데 친구들이 제 떡볶이를 아주 좋아했습니다. 기분이 정말 좋았습니다. 그래서 한국 요리를 많이 배우고 싶습니다.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -26830,7 +26830,7 @@ insert into public.reading_passages (
 파하드: 네, 좋아요. 내일 수업이 끝나면 같이 병원에 갑시다.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -26969,7 +26969,7 @@ insert into public.reading_passages (
 다음 주 금요일에 오위노 씨와 함께 공연을 보러 갈 수 있어요. 금요일 저녁이어서 공연장에 사람들이 많고 복잡할 거예요. 그러니까 공연이 시작되기 전에 좀 일찍 만날까요? 6시에 예술회관 앞에서 만납시다. 그럼 연락 기다릴게요.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -27099,7 +27099,7 @@ insert into public.reading_passages (
 광화문역에서 종로 방향으로 직진합니다. 걸어서 간 후에 첫 번째 사거리에서 횡단보도를 건넙니다. 거기에 인하빌딩이 있습니다. 인하빌딩 옆에 세종문화회관이 있습니다. 광화문역에서 세종문화회관까지 걸어서 10분쯤 걸립니다.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -27211,7 +27211,7 @@ insert into public.reading_passages (
    4. 도서관 안에서 담배를 피우지 마십시오.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -27321,7 +27321,7 @@ insert into public.reading_passages (
 ※ 주의 사항: 어린이와 임산부는 이 약을 먹지 마십시오.',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -27433,7 +27433,7 @@ insert into public.reading_passages (
 왕루 드림',
   null,
   '{}'::jsonb,
-  'reviewed',
+  'published',
   '1.0.0'
 )
 ;
@@ -29263,7 +29263,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'e680cccf-f429-4166-acef-54aadfda5330',
   'exercise.grammar.u01.n01.recognition',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e',
@@ -29274,22 +29274,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «формальная утвердительная и вопросительная форма связки «быть/являться».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N입니다/입니까?»: формальная утвердительная и вопросительная форма связки «быть/являться».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('bb0fead0-fff2-4d16-84fb-ddb82c94f4f3', '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e', 'primary')
+values ('e680cccf-f429-4166-acef-54aadfda5330', '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5ab84d77-64f9-41ed-919c-696d60e42e83',
-  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'e680cccf-f429-4166-acef-54aadfda5330',
   'opt1',
   'N입니다/입니까?',
   'N입니다/입니까?',
@@ -29302,7 +29302,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'db58f52f-a643-4a02-a331-ba2e6877f662',
-  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'e680cccf-f429-4166-acef-54aadfda5330',
   'opt2',
   'N이/가',
   'N이/가',
@@ -29315,7 +29315,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0751e432-1180-46da-b382-7ec346e15933',
-  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'e680cccf-f429-4166-acef-54aadfda5330',
   'opt3',
   'N은/는①',
   'N은/는①',
@@ -29328,7 +29328,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '41687171-8d6e-497d-aef6-edf4df5aab48',
-  'bb0fead0-fff2-4d16-84fb-ddb82c94f4f3',
+  'e680cccf-f429-4166-acef-54aadfda5330',
   'opt4',
   'N이/가 아니다',
   'N이/가 아니다',
@@ -29341,7 +29341,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '580b5f2b-09cf-4fd2-84eb-8901ce56e8f1',
+  '493b3d50-7f2c-4857-a522-48d528479b84',
   'exercise.grammar.u01.n01.application',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e',
@@ -29352,22 +29352,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «формальная утвердительная и вопросительная форма связки «быть/являться».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N입니다/입니까?» — формальная утвердительная и вопросительная форма связки «быть/являться».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('580b5f2b-09cf-4fd2-84eb-8901ce56e8f1', '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e', 'primary')
+values ('493b3d50-7f2c-4857-a522-48d528479b84', '2f299044-c8a6-43c6-a4d8-4cc7693a2d1e', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'cf153cca-aa70-4fb8-a182-4c3b0eb170e4',
-  '580b5f2b-09cf-4fd2-84eb-8901ce56e8f1',
+  '493b3d50-7f2c-4857-a522-48d528479b84',
   'N입니다/입니까?',
   'N입니다/입니까?',
   true,
@@ -29378,7 +29378,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  '96f96154-2a2c-4d4f-8a91-8451c80071ca',
   'exercise.grammar.u01.n02.recognition',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   '30c3c3b4-03f5-4f2e-a10d-8680d417674a',
@@ -29389,22 +29389,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N이/가»: маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('799b9965-ee73-4060-8a02-10d26cbcbcaa', '30c3c3b4-03f5-4f2e-a10d-8680d417674a', 'primary')
+values ('96f96154-2a2c-4d4f-8a91-8451c80071ca', '30c3c3b4-03f5-4f2e-a10d-8680d417674a', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '09255103-27c1-4754-a420-c3ab67d0b15a',
-  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  '96f96154-2a2c-4d4f-8a91-8451c80071ca',
   'opt1',
   'N이/가',
   'N이/가',
@@ -29417,7 +29417,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e6be22dc-d290-4132-9985-0b27450e2d47',
-  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  '96f96154-2a2c-4d4f-8a91-8451c80071ca',
   'opt2',
   'N입니다/입니까?',
   'N입니다/입니까?',
@@ -29430,7 +29430,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '60fbb6cb-ba1f-463c-9ee8-b5c3c21d9e02',
-  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  '96f96154-2a2c-4d4f-8a91-8451c80071ca',
   'opt3',
   'N은/는①',
   'N은/는①',
@@ -29443,7 +29443,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'db40431c-f77a-4897-9df0-3930e053aeef',
-  '799b9965-ee73-4060-8a02-10d26cbcbcaa',
+  '96f96154-2a2c-4d4f-8a91-8451c80071ca',
   'opt4',
   'N이/가 아니다',
   'N이/가 아니다',
@@ -29456,7 +29456,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '582dee3c-160f-4d3c-8263-f7931d31ea20',
+  '20bf7b18-3303-47b8-85eb-0a67676a4aea',
   'exercise.grammar.u01.n02.application',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   '30c3c3b4-03f5-4f2e-a10d-8680d417674a',
@@ -29467,22 +29467,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N이/가» — маркирует подлежащее или новую информацию; `이` после 받침, `가` после гласной.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('582dee3c-160f-4d3c-8263-f7931d31ea20', '30c3c3b4-03f5-4f2e-a10d-8680d417674a', 'primary')
+values ('20bf7b18-3303-47b8-85eb-0a67676a4aea', '30c3c3b4-03f5-4f2e-a10d-8680d417674a', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'ba633cf8-5084-4f50-83de-f6a19fb0846d',
-  '582dee3c-160f-4d3c-8263-f7931d31ea20',
+  '20bf7b18-3303-47b8-85eb-0a67676a4aea',
   'N이/가',
   'N이/가',
   true,
@@ -29493,7 +29493,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  '83971445-a673-4f3b-807a-6981fe8d70f2',
   'exercise.grammar.u01.n03.recognition',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   '8a80682b-a6e1-4455-9837-56d128b281d0',
@@ -29504,26 +29504,26 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «задаёт тему высказывания или уже известный предмет разговора.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N은/는①»: задаёт тему высказывания или уже известный предмет разговора.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('fb504003-0fbe-4f25-9866-6ee636a8005b', '8a80682b-a6e1-4455-9837-56d128b281d0', 'primary')
+values ('83971445-a673-4f3b-807a-6981fe8d70f2', '8a80682b-a6e1-4455-9837-56d128b281d0', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('fb504003-0fbe-4f25-9866-6ee636a8005b', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'secondary')
+values ('83971445-a673-4f3b-807a-6981fe8d70f2', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '594663e9-c4c9-4379-8454-33302376aa1f',
-  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  '83971445-a673-4f3b-807a-6981fe8d70f2',
   'opt1',
   'N은/는①',
   'N은/는①',
@@ -29536,7 +29536,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '656bd433-fa6d-40e5-bd6d-1f626ac1df12',
-  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  '83971445-a673-4f3b-807a-6981fe8d70f2',
   'opt2',
   'N입니다/입니까?',
   'N입니다/입니까?',
@@ -29549,7 +29549,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1187a654-b485-4847-92e7-2f4cf78025c8',
-  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  '83971445-a673-4f3b-807a-6981fe8d70f2',
   'opt3',
   'N이/가',
   'N이/가',
@@ -29562,7 +29562,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd2cc9307-d988-4189-9f1c-164c9c29cbb0',
-  'fb504003-0fbe-4f25-9866-6ee636a8005b',
+  '83971445-a673-4f3b-807a-6981fe8d70f2',
   'opt4',
   'N이/가 아니다',
   'N이/가 아니다',
@@ -29575,7 +29575,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '495d6501-62d7-471a-b404-e6e5c63efdb8',
+  '5ee16a28-73a7-4d4e-9146-a3be65b807fc',
   'exercise.grammar.u01.n03.application',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   '8a80682b-a6e1-4455-9837-56d128b281d0',
@@ -29586,26 +29586,26 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «задаёт тему высказывания или уже известный предмет разговора.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N은/는①» — задаёт тему высказывания или уже известный предмет разговора.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('495d6501-62d7-471a-b404-e6e5c63efdb8', '8a80682b-a6e1-4455-9837-56d128b281d0', 'primary')
+values ('5ee16a28-73a7-4d4e-9146-a3be65b807fc', '8a80682b-a6e1-4455-9837-56d128b281d0', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('495d6501-62d7-471a-b404-e6e5c63efdb8', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'secondary')
+values ('5ee16a28-73a7-4d4e-9146-a3be65b807fc', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'cd16da3f-fab8-4919-960a-246089521c3f',
-  '495d6501-62d7-471a-b404-e6e5c63efdb8',
+  '5ee16a28-73a7-4d4e-9146-a3be65b807fc',
   'N은/는①',
   'N은/는①',
   true,
@@ -29616,7 +29616,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'ac9e9fa2-73aa-4e82-8f68-77d1548009e7',
-  '495d6501-62d7-471a-b404-e6e5c63efdb8',
+  '5ee16a28-73a7-4d4e-9146-a3be65b807fc',
   'N은/는',
   'N은/는',
   false,
@@ -29627,7 +29627,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'ad8c7653-a07c-4391-a92d-384530fb176c',
   'exercise.grammar.u01.n04.recognition',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   '7c375169-839f-4e9f-8589-1b53585aed01',
@@ -29638,22 +29638,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «отрицает принадлежность к классу: «не является N».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N이/가 아니다»: отрицает принадлежность к классу: «не является N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('a8e82a67-0afd-4b7d-bba1-8177a2a04e1e', '7c375169-839f-4e9f-8589-1b53585aed01', 'primary')
+values ('ad8c7653-a07c-4391-a92d-384530fb176c', '7c375169-839f-4e9f-8589-1b53585aed01', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '60ca545c-d171-4835-8bc8-15ea7f27114e',
-  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'ad8c7653-a07c-4391-a92d-384530fb176c',
   'opt1',
   'N이/가 아니다',
   'N이/가 아니다',
@@ -29666,7 +29666,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b08750aa-48c6-4fbe-ab82-32a7f86c34ad',
-  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'ad8c7653-a07c-4391-a92d-384530fb176c',
   'opt2',
   'N입니다/입니까?',
   'N입니다/입니까?',
@@ -29679,7 +29679,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4918d523-bd57-4b2c-91e1-4b3357f4eb41',
-  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'ad8c7653-a07c-4391-a92d-384530fb176c',
   'opt3',
   'N이/가',
   'N이/가',
@@ -29692,7 +29692,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '258fd069-ab41-4d6a-b1b5-d4bfb14f2753',
-  'a8e82a67-0afd-4b7d-bba1-8177a2a04e1e',
+  'ad8c7653-a07c-4391-a92d-384530fb176c',
   'opt4',
   'N은/는①',
   'N은/는①',
@@ -29705,7 +29705,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c4f31a98-da2a-4c62-82ec-8e7c195f47fe',
+  '39fbeafd-2136-4bf2-a6c8-c5b0782df35c',
   'exercise.grammar.u01.n04.application',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   '7c375169-839f-4e9f-8589-1b53585aed01',
@@ -29716,22 +29716,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «отрицает принадлежность к классу: «не является N».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N이/가 아니다» — отрицает принадлежность к классу: «не является N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('c4f31a98-da2a-4c62-82ec-8e7c195f47fe', '7c375169-839f-4e9f-8589-1b53585aed01', 'primary')
+values ('39fbeafd-2136-4bf2-a6c8-c5b0782df35c', '7c375169-839f-4e9f-8589-1b53585aed01', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '37eb44b9-fbe4-4fa7-a18b-29df2442aada',
-  'c4f31a98-da2a-4c62-82ec-8e7c195f47fe',
+  '39fbeafd-2136-4bf2-a6c8-c5b0782df35c',
   'N이/가 아니다',
   'N이/가 아니다',
   true,
@@ -29742,7 +29742,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  '17a5fe0d-7f6b-44aa-b36e-698e39d70e6d',
   'exercise.grammar.u01.n05.recognition',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   'f0e4e545-1d7d-4e11-9226-9500759baa43',
@@ -29753,22 +29753,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N도»: добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131', 'f0e4e545-1d7d-4e11-9226-9500759baa43', 'primary')
+values ('17a5fe0d-7f6b-44aa-b36e-698e39d70e6d', 'f0e4e545-1d7d-4e11-9226-9500759baa43', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '79f51be5-2592-4ef5-b46b-ed743c7ed74d',
-  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  '17a5fe0d-7f6b-44aa-b36e-698e39d70e6d',
   'opt1',
   'N도',
   'N도',
@@ -29781,7 +29781,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '40097438-4301-495a-84af-129ed41de8d2',
-  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  '17a5fe0d-7f6b-44aa-b36e-698e39d70e6d',
   'opt2',
   'N입니다/입니까?',
   'N입니다/입니까?',
@@ -29794,7 +29794,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1de472cb-ebda-4853-bbc9-ecab64698db2',
-  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  '17a5fe0d-7f6b-44aa-b36e-698e39d70e6d',
   'opt3',
   'N이/가',
   'N이/가',
@@ -29807,7 +29807,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3e0b9d16-8401-4e80-95da-660e8a875a95',
-  '4e6ad80a-48c0-4b5c-ae9d-74e6b6cdd131',
+  '17a5fe0d-7f6b-44aa-b36e-698e39d70e6d',
   'opt4',
   'N은/는①',
   'N은/는①',
@@ -29820,7 +29820,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4bd1eadf-7af4-45e7-8b11-3f4563f750f9',
+  '30c12c35-5059-4e8e-b870-cdc369dee9e6',
   'exercise.grammar.u01.n05.application',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   'f0e4e545-1d7d-4e11-9226-9500759baa43',
@@ -29831,22 +29831,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N도» — добавляет значение «тоже/также» и обычно заменяет `이/가`, `은/는` или `을/를`.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4bd1eadf-7af4-45e7-8b11-3f4563f750f9', 'f0e4e545-1d7d-4e11-9226-9500759baa43', 'primary')
+values ('30c12c35-5059-4e8e-b870-cdc369dee9e6', 'f0e4e545-1d7d-4e11-9226-9500759baa43', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '9b754924-7b45-41e0-959d-0b8a6fa555e0',
-  '4bd1eadf-7af4-45e7-8b11-3f4563f750f9',
+  '30c12c35-5059-4e8e-b870-cdc369dee9e6',
   'N도',
   'N도',
   true,
@@ -29857,7 +29857,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'a71d605d-e1d1-45a0-88c3-fa1a5ffe8901',
   'exercise.grammar.u02.n01.recognition',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c',
@@ -29868,22 +29868,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «указательные определители «этот/тот/вон тот» по положению относительно участников разговора.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «이/그/저»: указательные определители «этот/тот/вон тот» по положению относительно участников разговора.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('c966931b-9e3e-4506-a96a-b84d0611d5e8', 'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c', 'primary')
+values ('a71d605d-e1d1-45a0-88c3-fa1a5ffe8901', 'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e3bd4795-3c23-4953-859e-56805c7f2bff',
-  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'a71d605d-e1d1-45a0-88c3-fa1a5ffe8901',
   'opt1',
   '이/그/저',
   '이/그/저',
@@ -29896,7 +29896,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '00a10c42-ed53-4a4b-a098-d0e226c1eb92',
-  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'a71d605d-e1d1-45a0-88c3-fa1a5ffe8901',
   'opt2',
   'N의',
   'N의',
@@ -29909,7 +29909,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '081c331d-0650-48e7-85ba-44302ee33248',
-  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'a71d605d-e1d1-45a0-88c3-fa1a5ffe8901',
   'opt3',
   'N에①',
   'N에①',
@@ -29922,7 +29922,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9f57451f-2861-4e44-b431-d696032a6bee',
-  'c966931b-9e3e-4506-a96a-b84d0611d5e8',
+  'a71d605d-e1d1-45a0-88c3-fa1a5ffe8901',
   'opt4',
   'N이/가 있다/없다',
   'N이/가 있다/없다',
@@ -29935,7 +29935,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '2b153b3d-4f8e-41eb-83cf-7681b9ce9c0a',
+  'ba232cc2-bcb5-4bac-a703-78fdfcdb21de',
   'exercise.grammar.u02.n01.application',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c',
@@ -29946,22 +29946,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «указательные определители «этот/тот/вон тот» по положению относительно участников разговора.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «이/그/저» — указательные определители «этот/тот/вон тот» по положению относительно участников разговора.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('2b153b3d-4f8e-41eb-83cf-7681b9ce9c0a', 'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c', 'primary')
+values ('ba232cc2-bcb5-4bac-a703-78fdfcdb21de', 'ca3f755e-5c22-4eb4-b8b0-0fd685a6253c', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '035d8f77-3f20-4f1f-acf3-b7f0b5677766',
-  '2b153b3d-4f8e-41eb-83cf-7681b9ce9c0a',
+  'ba232cc2-bcb5-4bac-a703-78fdfcdb21de',
   '이/그/저',
   '이/그/저',
   true,
@@ -29972,7 +29972,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'fcd92f42-c5b9-4855-8102-adc7516a5f79',
   'exercise.grammar.u02.n02.recognition',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   '49051a92-1504-4992-aae2-a63f45b9de2c',
@@ -29983,22 +29983,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает принадлежность или отношение между существительными.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N의»: выражает принадлежность или отношение между существительными.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('99333d51-d736-4200-927c-ee7bf2afd2aa', '49051a92-1504-4992-aae2-a63f45b9de2c', 'primary')
+values ('fcd92f42-c5b9-4855-8102-adc7516a5f79', '49051a92-1504-4992-aae2-a63f45b9de2c', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '117effb0-072c-4e44-bb6c-e6621de92b85',
-  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'fcd92f42-c5b9-4855-8102-adc7516a5f79',
   'opt1',
   'N의',
   'N의',
@@ -30011,7 +30011,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c757ec5f-6ee1-42cc-88de-58edd433776e',
-  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'fcd92f42-c5b9-4855-8102-adc7516a5f79',
   'opt2',
   '이/그/저',
   '이/그/저',
@@ -30024,7 +30024,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7cb0c679-8b52-4efe-a840-1cee6bc0222a',
-  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'fcd92f42-c5b9-4855-8102-adc7516a5f79',
   'opt3',
   'N에①',
   'N에①',
@@ -30037,7 +30037,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7a3940ed-5624-452d-9741-d9fd123bd1eb',
-  '99333d51-d736-4200-927c-ee7bf2afd2aa',
+  'fcd92f42-c5b9-4855-8102-adc7516a5f79',
   'opt4',
   'N이/가 있다/없다',
   'N이/가 있다/없다',
@@ -30050,7 +30050,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '6352baeb-c3e2-45f1-b2e1-45d336e54e40',
+  '66f4e397-a0fc-42ee-a5a3-92570d55f5b5',
   'exercise.grammar.u02.n02.application',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   '49051a92-1504-4992-aae2-a63f45b9de2c',
@@ -30061,22 +30061,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает принадлежность или отношение между существительными.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N의» — выражает принадлежность или отношение между существительными.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('6352baeb-c3e2-45f1-b2e1-45d336e54e40', '49051a92-1504-4992-aae2-a63f45b9de2c', 'primary')
+values ('66f4e397-a0fc-42ee-a5a3-92570d55f5b5', '49051a92-1504-4992-aae2-a63f45b9de2c', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'c61b353d-f8eb-4ba0-9daf-5ac1cf6892b5',
-  '6352baeb-c3e2-45f1-b2e1-45d336e54e40',
+  '66f4e397-a0fc-42ee-a5a3-92570d55f5b5',
   'N의',
   'N의',
   true,
@@ -30087,7 +30087,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'ee0d0999-f196-4175-b19f-c26592fba52d',
   'exercise.grammar.u02.n03.recognition',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   '8a1109c4-571f-4b3a-9e32-7897bd43c8f5',
@@ -30098,26 +30098,26 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «указывает место существования, нахождения или направление движения.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N에①»: указывает место существования, нахождения или направление движения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('d99b63a7-c6b1-4751-946d-0263c2c04448', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'primary')
+values ('ee0d0999-f196-4175-b19f-c26592fba52d', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('d99b63a7-c6b1-4751-946d-0263c2c04448', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'secondary')
+values ('ee0d0999-f196-4175-b19f-c26592fba52d', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b2966b94-9d68-4e63-b685-31e521cae044',
-  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'ee0d0999-f196-4175-b19f-c26592fba52d',
   'opt1',
   'N에①',
   'N에①',
@@ -30130,7 +30130,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6bcc8646-0054-4b59-8de3-ca0523bdb479',
-  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'ee0d0999-f196-4175-b19f-c26592fba52d',
   'opt2',
   '이/그/저',
   '이/그/저',
@@ -30143,7 +30143,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '40a654a4-cee0-4840-b327-3f647b11e8bf',
-  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'ee0d0999-f196-4175-b19f-c26592fba52d',
   'opt3',
   'N의',
   'N의',
@@ -30156,7 +30156,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6ae43067-73d0-419a-b2a3-29feebf08518',
-  'd99b63a7-c6b1-4751-946d-0263c2c04448',
+  'ee0d0999-f196-4175-b19f-c26592fba52d',
   'opt4',
   'N이/가 있다/없다',
   'N이/가 있다/없다',
@@ -30169,7 +30169,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'b5c16713-f9b2-4784-b540-7210910c52d6',
+  'd83e9df2-ae69-4229-a820-734c3050724c',
   'exercise.grammar.u02.n03.application',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   '8a1109c4-571f-4b3a-9e32-7897bd43c8f5',
@@ -30180,26 +30180,26 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «указывает место существования, нахождения или направление движения.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N에①» — указывает место существования, нахождения или направление движения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('b5c16713-f9b2-4784-b540-7210910c52d6', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'primary')
+values ('d83e9df2-ae69-4229-a820-734c3050724c', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('b5c16713-f9b2-4784-b540-7210910c52d6', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'secondary')
+values ('d83e9df2-ae69-4229-a820-734c3050724c', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'c9d8e5aa-cfb9-4c25-af75-d1ac6e2abec7',
-  'b5c16713-f9b2-4784-b540-7210910c52d6',
+  'd83e9df2-ae69-4229-a820-734c3050724c',
   'N에①',
   'N에①',
   true,
@@ -30210,7 +30210,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'b2b10cda-4383-4ce2-8da5-fa58732898c2',
-  'b5c16713-f9b2-4784-b540-7210910c52d6',
+  'd83e9df2-ae69-4229-a820-734c3050724c',
   'N에',
   'N에',
   false,
@@ -30221,7 +30221,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  '8436c04d-c88e-4cd4-850a-30059a23235a',
   'exercise.grammar.u02.n04.recognition',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9',
@@ -30232,22 +30232,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «сообщает о наличии, отсутствии или местонахождении предмета/лица.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N이/가 있다/없다»: сообщает о наличии, отсутствии или местонахождении предмета/лица.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('51e0e037-a35b-4665-80b4-f780297a32d6', '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9', 'primary')
+values ('8436c04d-c88e-4cd4-850a-30059a23235a', '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3268a1ff-b0f6-48db-bf67-984b8768890d',
-  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  '8436c04d-c88e-4cd4-850a-30059a23235a',
   'opt1',
   'N이/가 있다/없다',
   'N이/가 있다/없다',
@@ -30260,7 +30260,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e82bc071-96c4-4398-80ea-000dcc9844e2',
-  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  '8436c04d-c88e-4cd4-850a-30059a23235a',
   'opt2',
   '이/그/저',
   '이/그/저',
@@ -30273,7 +30273,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2cba1766-c5e3-45d6-9018-82988b9125f1',
-  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  '8436c04d-c88e-4cd4-850a-30059a23235a',
   'opt3',
   'N의',
   'N의',
@@ -30286,7 +30286,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '99551d4b-ac00-4ec0-8950-c7fbbb3cdc49',
-  '51e0e037-a35b-4665-80b4-f780297a32d6',
+  '8436c04d-c88e-4cd4-850a-30059a23235a',
   'opt4',
   'N에①',
   'N에①',
@@ -30299,7 +30299,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0f24667e-2c7c-4803-b482-5574900a8053',
+  'a7195ab3-904c-4a59-b6df-02b146a0b256',
   'exercise.grammar.u02.n04.application',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9',
@@ -30310,22 +30310,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «сообщает о наличии, отсутствии или местонахождении предмета/лица.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N이/가 있다/없다» — сообщает о наличии, отсутствии или местонахождении предмета/лица.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('0f24667e-2c7c-4803-b482-5574900a8053', '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9', 'primary')
+values ('a7195ab3-904c-4a59-b6df-02b146a0b256', '206fea7d-b344-4ed9-ba15-0cb25f1dc4e9', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'c4457e4d-8321-4974-be6f-18b2bf000521',
-  '0f24667e-2c7c-4803-b482-5574900a8053',
+  'a7195ab3-904c-4a59-b6df-02b146a0b256',
   'N이/가 있다/없다',
   'N이/가 있다/없다',
   true,
@@ -30336,7 +30336,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  '733fec11-a1df-4c69-b04f-79ea751ec445',
   'exercise.grammar.u03.n01.recognition',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   '753818d8-088e-4852-8892-a6be1fa91c7e',
@@ -30347,22 +30347,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «формальный вежливый стиль утверждения и вопроса.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-(스)ㅂ니다/-(스)ㅂ니까?»: формальный вежливый стиль утверждения и вопроса.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('1e3d5b68-6593-4ace-ba5d-4cd52be020b4', '753818d8-088e-4852-8892-a6be1fa91c7e', 'primary')
+values ('733fec11-a1df-4c69-b04f-79ea751ec445', '753818d8-088e-4852-8892-a6be1fa91c7e', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9c0abf4d-e4ef-40c3-a065-3b38c835d02f',
-  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  '733fec11-a1df-4c69-b04f-79ea751ec445',
   'opt1',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
@@ -30375,7 +30375,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '686ace3f-71e0-4f60-97e7-d8b52d2c1f22',
-  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  '733fec11-a1df-4c69-b04f-79ea751ec445',
   'opt2',
   'N을/를',
   'N을/를',
@@ -30388,7 +30388,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '37a822d6-8578-447d-8103-2a1bb7775489',
-  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  '733fec11-a1df-4c69-b04f-79ea751ec445',
   'opt3',
   'N만',
   'N만',
@@ -30401,7 +30401,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '723dda30-8eca-4e88-80c1-4df6f6db4ef5',
-  '1e3d5b68-6593-4ace-ba5d-4cd52be020b4',
+  '733fec11-a1df-4c69-b04f-79ea751ec445',
   'opt4',
   'N에 가다/오다',
   'N에 가다/오다',
@@ -30414,7 +30414,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '03ea5556-cfe7-4656-a3dc-6c6bfdaa3d06',
+  'a2cac8e6-daa9-4f41-9eef-d3b98b28b795',
   'exercise.grammar.u03.n01.application',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   '753818d8-088e-4852-8892-a6be1fa91c7e',
@@ -30425,22 +30425,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «формальный вежливый стиль утверждения и вопроса.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-(스)ㅂ니다/-(스)ㅂ니까?» — формальный вежливый стиль утверждения и вопроса.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('03ea5556-cfe7-4656-a3dc-6c6bfdaa3d06', '753818d8-088e-4852-8892-a6be1fa91c7e', 'primary')
+values ('a2cac8e6-daa9-4f41-9eef-d3b98b28b795', '753818d8-088e-4852-8892-a6be1fa91c7e', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'fa8fc627-5aba-43e9-a38c-b76d9a842c61',
-  '03ea5556-cfe7-4656-a3dc-6c6bfdaa3d06',
+  'a2cac8e6-daa9-4f41-9eef-d3b98b28b795',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
   true,
@@ -30451,7 +30451,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  '27f123e4-ca13-4dde-8270-025f810b504b',
   'exercise.grammar.u03.n02.recognition',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   '00bb8c98-c877-468e-868e-51f356a55b06',
@@ -30462,22 +30462,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «маркирует прямое дополнение; `을` после 받침, `를` после гласной.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N을/를»: маркирует прямое дополнение; `을` после 받침, `를` после гласной.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72', '00bb8c98-c877-468e-868e-51f356a55b06', 'primary')
+values ('27f123e4-ca13-4dde-8270-025f810b504b', '00bb8c98-c877-468e-868e-51f356a55b06', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ecc6dc14-48c6-45e2-8ad9-9946378f898e',
-  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  '27f123e4-ca13-4dde-8270-025f810b504b',
   'opt1',
   'N을/를',
   'N을/를',
@@ -30490,7 +30490,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f3ad7960-6bf9-4174-bf27-51174d135494',
-  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  '27f123e4-ca13-4dde-8270-025f810b504b',
   'opt2',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
@@ -30503,7 +30503,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f5f5b026-d664-4009-a42d-afee2a4d6078',
-  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  '27f123e4-ca13-4dde-8270-025f810b504b',
   'opt3',
   'N만',
   'N만',
@@ -30516,7 +30516,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd0f2235e-7a7e-4908-aaab-faf346eb8b90',
-  'dd9e15f1-dfbe-41f7-b4f5-65efb1f4bc72',
+  '27f123e4-ca13-4dde-8270-025f810b504b',
   'opt4',
   'N에 가다/오다',
   'N에 가다/오다',
@@ -30529,7 +30529,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8254f615-97a3-4d68-b06e-8905c28c034a',
+  'b9360cd3-a925-4a54-8532-853f0afbdadc',
   'exercise.grammar.u03.n02.application',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   '00bb8c98-c877-468e-868e-51f356a55b06',
@@ -30540,22 +30540,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «маркирует прямое дополнение; `을` после 받침, `를` после гласной.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N을/를» — маркирует прямое дополнение; `을` после 받침, `를` после гласной.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('8254f615-97a3-4d68-b06e-8905c28c034a', '00bb8c98-c877-468e-868e-51f356a55b06', 'primary')
+values ('b9360cd3-a925-4a54-8532-853f0afbdadc', '00bb8c98-c877-468e-868e-51f356a55b06', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '5f976d9a-6a5c-4e75-b6fd-3fdd827b6b68',
-  '8254f615-97a3-4d68-b06e-8905c28c034a',
+  'b9360cd3-a925-4a54-8532-853f0afbdadc',
   'N을/를',
   'N을/를',
   true,
@@ -30566,7 +30566,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  '60cd59fb-1557-49c1-98b0-9a5bfed958d4',
   'exercise.grammar.u03.n03.recognition',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   '275400bf-a5c2-42f5-bb7f-b19ff372a569',
@@ -30577,22 +30577,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «ограничивает значение: «только N».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N만»: ограничивает значение: «только N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('dc4537bb-6ac6-4883-bd2a-435a4afd6ee1', '275400bf-a5c2-42f5-bb7f-b19ff372a569', 'primary')
+values ('60cd59fb-1557-49c1-98b0-9a5bfed958d4', '275400bf-a5c2-42f5-bb7f-b19ff372a569', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9b189c09-9b1d-4b96-9691-182f63596178',
-  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  '60cd59fb-1557-49c1-98b0-9a5bfed958d4',
   'opt1',
   'N만',
   'N만',
@@ -30605,7 +30605,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '91cc5a1d-692b-4123-a31c-ce594a0345f0',
-  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  '60cd59fb-1557-49c1-98b0-9a5bfed958d4',
   'opt2',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
@@ -30618,7 +30618,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e944cd8c-b274-4ccc-984c-460effaed8fc',
-  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  '60cd59fb-1557-49c1-98b0-9a5bfed958d4',
   'opt3',
   'N을/를',
   'N을/를',
@@ -30631,7 +30631,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '92ea9c0d-01fd-4464-97b4-7dfd49f62b63',
-  'dc4537bb-6ac6-4883-bd2a-435a4afd6ee1',
+  '60cd59fb-1557-49c1-98b0-9a5bfed958d4',
   'opt4',
   'N에 가다/오다',
   'N에 가다/오다',
@@ -30644,7 +30644,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '1c395eb4-5b08-4c6f-821e-cc49b7d375f0',
+  '44d85607-5d85-4e33-ab1a-740055936973',
   'exercise.grammar.u03.n03.application',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   '275400bf-a5c2-42f5-bb7f-b19ff372a569',
@@ -30655,22 +30655,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «ограничивает значение: «только N».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N만» — ограничивает значение: «только N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('1c395eb4-5b08-4c6f-821e-cc49b7d375f0', '275400bf-a5c2-42f5-bb7f-b19ff372a569', 'primary')
+values ('44d85607-5d85-4e33-ab1a-740055936973', '275400bf-a5c2-42f5-bb7f-b19ff372a569', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'a455dbbe-048a-4591-98d4-80aba31fd187',
-  '1c395eb4-5b08-4c6f-821e-cc49b7d375f0',
+  '44d85607-5d85-4e33-ab1a-740055936973',
   'N만',
   'N만',
   true,
@@ -30681,7 +30681,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  '0b4b74eb-bf0f-4df4-921a-261b878f8f61',
   'exercise.grammar.u03.n04.recognition',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   'fa62b1f0-61ca-4e68-90a9-4270a7881003',
@@ -30692,22 +30692,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает движение к месту: «идти/приходить в N».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N에 가다/오다»: выражает движение к месту: «идти/приходить в N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('8f6d590e-c1ec-4925-a394-07bfa031aa47', 'fa62b1f0-61ca-4e68-90a9-4270a7881003', 'primary')
+values ('0b4b74eb-bf0f-4df4-921a-261b878f8f61', 'fa62b1f0-61ca-4e68-90a9-4270a7881003', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2b6b6490-bfd5-4de0-8713-690c87dda964',
-  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  '0b4b74eb-bf0f-4df4-921a-261b878f8f61',
   'opt1',
   'N에 가다/오다',
   'N에 가다/오다',
@@ -30720,7 +30720,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6365ec53-5c73-4e4b-b07c-68191aef9bd7',
-  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  '0b4b74eb-bf0f-4df4-921a-261b878f8f61',
   'opt2',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
@@ -30733,7 +30733,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f901d07d-39a9-46f9-84d7-0fbeafaf6cdd',
-  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  '0b4b74eb-bf0f-4df4-921a-261b878f8f61',
   'opt3',
   'N을/를',
   'N을/를',
@@ -30746,7 +30746,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a69664af-2237-4808-ae56-88a58faf5464',
-  '8f6d590e-c1ec-4925-a394-07bfa031aa47',
+  '0b4b74eb-bf0f-4df4-921a-261b878f8f61',
   'opt4',
   'N만',
   'N만',
@@ -30759,7 +30759,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0c5cbeb9-7d1a-4559-b2d9-122d062a5d3d',
+  '21c3d03e-dc7a-4ea1-a7a1-5a2defa33d5f',
   'exercise.grammar.u03.n04.application',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   'fa62b1f0-61ca-4e68-90a9-4270a7881003',
@@ -30770,22 +30770,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает движение к месту: «идти/приходить в N».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N에 가다/오다» — выражает движение к месту: «идти/приходить в N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('0c5cbeb9-7d1a-4559-b2d9-122d062a5d3d', 'fa62b1f0-61ca-4e68-90a9-4270a7881003', 'primary')
+values ('21c3d03e-dc7a-4ea1-a7a1-5a2defa33d5f', 'fa62b1f0-61ca-4e68-90a9-4270a7881003', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '3a8a933a-3f01-4555-a463-0b7dd70a53db',
-  '0c5cbeb9-7d1a-4559-b2d9-122d062a5d3d',
+  '21c3d03e-dc7a-4ea1-a7a1-5a2defa33d5f',
   'N에 가다/오다',
   'N에 가다/오다',
   true,
@@ -30796,7 +30796,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  '26bad67a-f3c8-4ea7-ba5e-0f5b7f8aa035',
   'exercise.grammar.u03.n05.recognition',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   '05c93655-e1d7-494a-9971-7f3b3f08270b',
@@ -30807,34 +30807,34 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «수①»: базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('5867671b-fe5e-4d59-9fde-b31eb8f6227d', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'primary')
+values ('26bad67a-f3c8-4ea7-ba5e-0f5b7f8aa035', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('5867671b-fe5e-4d59-9fde-b31eb8f6227d', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+values ('26bad67a-f3c8-4ea7-ba5e-0f5b7f8aa035', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('5867671b-fe5e-4d59-9fde-b31eb8f6227d', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+values ('26bad67a-f3c8-4ea7-ba5e-0f5b7f8aa035', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('5867671b-fe5e-4d59-9fde-b31eb8f6227d', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+values ('26bad67a-f3c8-4ea7-ba5e-0f5b7f8aa035', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8b9472e4-8a42-419e-8200-31e44913614e',
-  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  '26bad67a-f3c8-4ea7-ba5e-0f5b7f8aa035',
   'opt1',
   '수①',
   '수①',
@@ -30847,7 +30847,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f8908b1f-126e-4264-867d-15892819422c',
-  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  '26bad67a-f3c8-4ea7-ba5e-0f5b7f8aa035',
   'opt2',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
   'V-(스)ㅂ니다/-(스)ㅂ니까?',
@@ -30860,7 +30860,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '90feb5a0-2a15-4b56-ac77-3a301aa88351',
-  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  '26bad67a-f3c8-4ea7-ba5e-0f5b7f8aa035',
   'opt3',
   'N을/를',
   'N을/를',
@@ -30873,7 +30873,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '140dc484-6bbc-4dd9-99d6-5eb18bb662d9',
-  '5867671b-fe5e-4d59-9fde-b31eb8f6227d',
+  '26bad67a-f3c8-4ea7-ba5e-0f5b7f8aa035',
   'opt4',
   'N만',
   'N만',
@@ -30886,7 +30886,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'bffd8114-10e8-4a9e-b486-091fa80c54d9',
+  'e8757d84-1285-4976-8184-c6ed291367c7',
   'exercise.grammar.u03.n05.application',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   '05c93655-e1d7-494a-9971-7f3b3f08270b',
@@ -30897,34 +30897,34 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «수①» — базовые китайско-корейские и исконно корейские числительные, включая номера, телефон и счёт со счётными словами.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('bffd8114-10e8-4a9e-b486-091fa80c54d9', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'primary')
+values ('e8757d84-1285-4976-8184-c6ed291367c7', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('bffd8114-10e8-4a9e-b486-091fa80c54d9', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+values ('e8757d84-1285-4976-8184-c6ed291367c7', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('bffd8114-10e8-4a9e-b486-091fa80c54d9', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+values ('e8757d84-1285-4976-8184-c6ed291367c7', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('bffd8114-10e8-4a9e-b486-091fa80c54d9', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+values ('e8757d84-1285-4976-8184-c6ed291367c7', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '1916962d-7ed5-45e5-8e22-cd476c005df5',
-  'bffd8114-10e8-4a9e-b486-091fa80c54d9',
+  'e8757d84-1285-4976-8184-c6ed291367c7',
   '수①',
   '수①',
   true,
@@ -30935,7 +30935,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'c549b81f-d793-4922-b117-bba135cefcbc',
-  'bffd8114-10e8-4a9e-b486-091fa80c54d9',
+  'e8757d84-1285-4976-8184-c6ed291367c7',
   '수',
   '수',
   false,
@@ -30946,7 +30946,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'c7c1a4d2-90ed-407c-b90d-6bcc499cf24b',
   'exercise.grammar.u04.n01.recognition',
   'eee407f3-7185-4524-9e59-d79769238530',
   'ece80569-38fc-4b3a-bf4a-c587ff14ea63',
@@ -30957,22 +30957,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «нейтрально-письменно соединяет существительные значением «и/с».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N와/과 N»: нейтрально-письменно соединяет существительные значением «и/с».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('0cdcf564-1a92-4aa2-aafe-3a98d91f685e', 'ece80569-38fc-4b3a-bf4a-c587ff14ea63', 'primary')
+values ('c7c1a4d2-90ed-407c-b90d-6bcc499cf24b', 'ece80569-38fc-4b3a-bf4a-c587ff14ea63', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e908ffd4-3f24-4db6-8bd1-492328c5cd9f',
-  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'c7c1a4d2-90ed-407c-b90d-6bcc499cf24b',
   'opt1',
   'N와/과 N',
   'N와/과 N',
@@ -30985,7 +30985,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'dff3bbe9-466e-40c0-81b5-e900895d763d',
-  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'c7c1a4d2-90ed-407c-b90d-6bcc499cf24b',
   'opt2',
   'N하고 N',
   'N하고 N',
@@ -30998,7 +30998,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a375a742-24b9-4fce-b433-4524a4fb96ec',
-  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'c7c1a4d2-90ed-407c-b90d-6bcc499cf24b',
   'opt3',
   'N에서',
   'N에서',
@@ -31011,7 +31011,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bff4c1dc-1117-40f2-8af8-ab01d3c95321',
-  '0cdcf564-1a92-4aa2-aafe-3a98d91f685e',
+  'c7c1a4d2-90ed-407c-b90d-6bcc499cf24b',
   'opt4',
   '수②',
   '수②',
@@ -31024,7 +31024,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'b8924e69-a8dd-482e-bf26-079a75d77e59',
+  'd59f93ef-9ba9-4505-92d1-9678fae5add3',
   'exercise.grammar.u04.n01.application',
   'eee407f3-7185-4524-9e59-d79769238530',
   'ece80569-38fc-4b3a-bf4a-c587ff14ea63',
@@ -31035,22 +31035,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «нейтрально-письменно соединяет существительные значением «и/с».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N와/과 N» — нейтрально-письменно соединяет существительные значением «и/с».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('b8924e69-a8dd-482e-bf26-079a75d77e59', 'ece80569-38fc-4b3a-bf4a-c587ff14ea63', 'primary')
+values ('d59f93ef-9ba9-4505-92d1-9678fae5add3', 'ece80569-38fc-4b3a-bf4a-c587ff14ea63', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'b5e5f03a-1f0b-4d47-bbbf-d02eb1d6b114',
-  'b8924e69-a8dd-482e-bf26-079a75d77e59',
+  'd59f93ef-9ba9-4505-92d1-9678fae5add3',
   'N와/과 N',
   'N와/과 N',
   true,
@@ -31061,7 +31061,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  '4c899d34-1345-4db3-8227-7655a3036167',
   'exercise.grammar.u04.n02.recognition',
   'eee407f3-7185-4524-9e59-d79769238530',
   '74e26dec-da2c-4709-8953-1dd49a02569c',
@@ -31072,22 +31072,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «разговорно соединяет существительные значением «и/с».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N하고 N»: разговорно соединяет существительные значением «и/с».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01', '74e26dec-da2c-4709-8953-1dd49a02569c', 'primary')
+values ('4c899d34-1345-4db3-8227-7655a3036167', '74e26dec-da2c-4709-8953-1dd49a02569c', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f335fc30-5c68-405b-9c59-9d7435d0d6b0',
-  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  '4c899d34-1345-4db3-8227-7655a3036167',
   'opt1',
   'N하고 N',
   'N하고 N',
@@ -31100,7 +31100,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '65e02629-f77b-42d6-907d-65e2e41787c3',
-  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  '4c899d34-1345-4db3-8227-7655a3036167',
   'opt2',
   'N와/과 N',
   'N와/과 N',
@@ -31113,7 +31113,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '25b96c3b-8589-435c-b3da-633f48185dd9',
-  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  '4c899d34-1345-4db3-8227-7655a3036167',
   'opt3',
   'N에서',
   'N에서',
@@ -31126,7 +31126,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd87eb2ab-e94c-41d4-a9eb-e42347a2c7f6',
-  '4ead9089-e0d9-4f32-ac90-f0e5ce8f3c01',
+  '4c899d34-1345-4db3-8227-7655a3036167',
   'opt4',
   '수②',
   '수②',
@@ -31139,7 +31139,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'bf0acc59-9989-4a3b-91c9-53aeb14564f1',
+  '0c5f703e-ceaa-4f10-9307-580eb1c50f47',
   'exercise.grammar.u04.n02.application',
   'eee407f3-7185-4524-9e59-d79769238530',
   '74e26dec-da2c-4709-8953-1dd49a02569c',
@@ -31150,22 +31150,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «разговорно соединяет существительные значением «и/с».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N하고 N» — разговорно соединяет существительные значением «и/с».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('bf0acc59-9989-4a3b-91c9-53aeb14564f1', '74e26dec-da2c-4709-8953-1dd49a02569c', 'primary')
+values ('0c5f703e-ceaa-4f10-9307-580eb1c50f47', '74e26dec-da2c-4709-8953-1dd49a02569c', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'b07bfad5-b2d7-4f20-9ef5-135d1a008fe1',
-  'bf0acc59-9989-4a3b-91c9-53aeb14564f1',
+  '0c5f703e-ceaa-4f10-9307-580eb1c50f47',
   'N하고 N',
   'N하고 N',
   true,
@@ -31176,7 +31176,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  '05d9845b-cca2-423b-b66a-cd8ec8b0bc9e',
   'exercise.grammar.u04.n03.recognition',
   'eee407f3-7185-4524-9e59-d79769238530',
   '312ec2b7-5d62-4e8e-bcd4-de828e1805a1',
@@ -31187,22 +31187,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «обозначает место действия или исходную точку движения.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N에서»: обозначает место действия или исходную точку движения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('499ef943-d8dc-490a-91c2-17b58f208f3f', '312ec2b7-5d62-4e8e-bcd4-de828e1805a1', 'primary')
+values ('05d9845b-cca2-423b-b66a-cd8ec8b0bc9e', '312ec2b7-5d62-4e8e-bcd4-de828e1805a1', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '868d68b5-5089-4bdd-bcf1-47022f579488',
-  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  '05d9845b-cca2-423b-b66a-cd8ec8b0bc9e',
   'opt1',
   'N에서',
   'N에서',
@@ -31215,7 +31215,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ef766bfa-c6df-4b74-b071-75ed5c62ae12',
-  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  '05d9845b-cca2-423b-b66a-cd8ec8b0bc9e',
   'opt2',
   'N와/과 N',
   'N와/과 N',
@@ -31228,7 +31228,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '11190a28-5deb-402e-b384-df59bed63b28',
-  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  '05d9845b-cca2-423b-b66a-cd8ec8b0bc9e',
   'opt3',
   'N하고 N',
   'N하고 N',
@@ -31241,7 +31241,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '718a5f10-dacc-4675-a5fd-b877e9d0de90',
-  '499ef943-d8dc-490a-91c2-17b58f208f3f',
+  '05d9845b-cca2-423b-b66a-cd8ec8b0bc9e',
   'opt4',
   '수②',
   '수②',
@@ -31254,7 +31254,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'ff34e5db-1742-4640-9ac9-e18e00917022',
+  '3d70930f-c9eb-4beb-b483-b48aac1a709e',
   'exercise.grammar.u04.n03.application',
   'eee407f3-7185-4524-9e59-d79769238530',
   '312ec2b7-5d62-4e8e-bcd4-de828e1805a1',
@@ -31265,22 +31265,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «обозначает место действия или исходную точку движения.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N에서» — обозначает место действия или исходную точку движения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('ff34e5db-1742-4640-9ac9-e18e00917022', '312ec2b7-5d62-4e8e-bcd4-de828e1805a1', 'primary')
+values ('3d70930f-c9eb-4beb-b483-b48aac1a709e', '312ec2b7-5d62-4e8e-bcd4-de828e1805a1', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'ffa75433-0a88-4174-b1aa-626cdf27d745',
-  'ff34e5db-1742-4640-9ac9-e18e00917022',
+  '3d70930f-c9eb-4beb-b483-b48aac1a709e',
   'N에서',
   'N에서',
   true,
@@ -31291,7 +31291,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  '1bdc051a-c380-4800-87d5-2160e58168cf',
   'exercise.grammar.u04.n04.recognition',
   'eee407f3-7185-4524-9e59-d79769238530',
   '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a',
@@ -31302,34 +31302,34 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «даты, календарные числа, месяцы, дни недели и чтение календаря.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «수②»: даты, календарные числа, месяцы, дни недели и чтение календаря.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('618480d2-2773-4aa4-b252-559ca4c6a962', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'primary')
+values ('1bdc051a-c380-4800-87d5-2160e58168cf', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('618480d2-2773-4aa4-b252-559ca4c6a962', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+values ('1bdc051a-c380-4800-87d5-2160e58168cf', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('618480d2-2773-4aa4-b252-559ca4c6a962', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+values ('1bdc051a-c380-4800-87d5-2160e58168cf', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('618480d2-2773-4aa4-b252-559ca4c6a962', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+values ('1bdc051a-c380-4800-87d5-2160e58168cf', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f0b383af-3bec-4084-90bc-ca433aba3408',
-  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  '1bdc051a-c380-4800-87d5-2160e58168cf',
   'opt1',
   '수②',
   '수②',
@@ -31342,7 +31342,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e47a570b-02f1-465d-b7d0-0369aa692033',
-  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  '1bdc051a-c380-4800-87d5-2160e58168cf',
   'opt2',
   'N와/과 N',
   'N와/과 N',
@@ -31355,7 +31355,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1d0280f3-66aa-48a7-bc46-ba9a7628841f',
-  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  '1bdc051a-c380-4800-87d5-2160e58168cf',
   'opt3',
   'N하고 N',
   'N하고 N',
@@ -31368,7 +31368,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '62bdf92b-deba-45ef-99b8-defbc212f5d9',
-  '618480d2-2773-4aa4-b252-559ca4c6a962',
+  '1bdc051a-c380-4800-87d5-2160e58168cf',
   'opt4',
   'N에서',
   'N에서',
@@ -31381,7 +31381,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7092340f-118f-46a6-a463-f8df003e2933',
+  'ffcdd84c-0d8c-40d1-8d95-806ad980c65a',
   'exercise.grammar.u04.n04.application',
   'eee407f3-7185-4524-9e59-d79769238530',
   '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a',
@@ -31392,34 +31392,34 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «даты, календарные числа, месяцы, дни недели и чтение календаря.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «수②» — даты, календарные числа, месяцы, дни недели и чтение календаря.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7092340f-118f-46a6-a463-f8df003e2933', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'primary')
+values ('ffcdd84c-0d8c-40d1-8d95-806ad980c65a', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7092340f-118f-46a6-a463-f8df003e2933', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+values ('ffcdd84c-0d8c-40d1-8d95-806ad980c65a', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7092340f-118f-46a6-a463-f8df003e2933', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+values ('ffcdd84c-0d8c-40d1-8d95-806ad980c65a', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7092340f-118f-46a6-a463-f8df003e2933', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+values ('ffcdd84c-0d8c-40d1-8d95-806ad980c65a', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '733ac8c4-bf2a-4692-b8b1-a354fbec17e8',
-  '7092340f-118f-46a6-a463-f8df003e2933',
+  'ffcdd84c-0d8c-40d1-8d95-806ad980c65a',
   '수②',
   '수②',
   true,
@@ -31430,7 +31430,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '1ddefa84-64c6-4a4a-9e88-36123fe93fd1',
-  '7092340f-118f-46a6-a463-f8df003e2933',
+  'ffcdd84c-0d8c-40d1-8d95-806ad980c65a',
   '수',
   '수',
   false,
@@ -31441,7 +31441,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  '6de3a806-2abe-44b4-9272-e65095d93008',
   'exercise.grammar.u04.n05.recognition',
   'eee407f3-7185-4524-9e59-d79769238530',
   '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73',
@@ -31452,26 +31452,26 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N에②»: обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('c6611342-e9bb-463c-bd9e-e757824b2721', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'primary')
+values ('6de3a806-2abe-44b4-9272-e65095d93008', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('c6611342-e9bb-463c-bd9e-e757824b2721', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'secondary')
+values ('6de3a806-2abe-44b4-9272-e65095d93008', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '261a0398-23a9-4833-8581-bf20c54389cd',
-  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  '6de3a806-2abe-44b4-9272-e65095d93008',
   'opt1',
   'N에②',
   'N에②',
@@ -31484,7 +31484,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '089c1c01-5ecf-4b2d-ae04-80a66edc2724',
-  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  '6de3a806-2abe-44b4-9272-e65095d93008',
   'opt2',
   'N와/과 N',
   'N와/과 N',
@@ -31497,7 +31497,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '14dfde64-71fd-470f-8713-2cd2c2de50bb',
-  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  '6de3a806-2abe-44b4-9272-e65095d93008',
   'opt3',
   'N하고 N',
   'N하고 N',
@@ -31510,7 +31510,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '89c853ad-33c5-4d99-9b9a-84d13c7f110b',
-  'c6611342-e9bb-463c-bd9e-e757824b2721',
+  '6de3a806-2abe-44b4-9272-e65095d93008',
   'opt4',
   'N에서',
   'N에서',
@@ -31523,7 +31523,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8b2e1786-b0d4-443c-8be5-3127c17fc6be',
+  'b4ef8627-3205-443e-bf57-56cc211e03cc',
   'exercise.grammar.u04.n05.application',
   'eee407f3-7185-4524-9e59-d79769238530',
   '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73',
@@ -31534,26 +31534,26 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N에②» — обозначает точное время совершения действия; с относительными словами вроде `오늘` обычно не ставится.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('8b2e1786-b0d4-443c-8be5-3127c17fc6be', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'primary')
+values ('b4ef8627-3205-443e-bf57-56cc211e03cc', '0c0c0f76-4a4d-4b6b-8c34-e4aa0330ec73', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('8b2e1786-b0d4-443c-8be5-3127c17fc6be', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'secondary')
+values ('b4ef8627-3205-443e-bf57-56cc211e03cc', '8a1109c4-571f-4b3a-9e32-7897bd43c8f5', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '38ab27f1-a9b5-465e-a287-a343f904dd81',
-  '8b2e1786-b0d4-443c-8be5-3127c17fc6be',
+  'b4ef8627-3205-443e-bf57-56cc211e03cc',
   'N에②',
   'N에②',
   true,
@@ -31564,7 +31564,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '2cd98006-7e25-4d4c-938e-76a55ef25b66',
-  '8b2e1786-b0d4-443c-8be5-3127c17fc6be',
+  'b4ef8627-3205-443e-bf57-56cc211e03cc',
   'N에',
   'N에',
   false,
@@ -31575,7 +31575,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  '17539c63-a0f1-4270-a490-d116adcd28ad',
   'exercise.grammar.u05.n01.recognition',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   '5d69471d-eaad-4e32-ab21-bf3abd158f52',
@@ -31586,22 +31586,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «базовая разговорно-вежливая форма настоящего времени.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-아/어/여요①»: базовая разговорно-вежливая форма настоящего времени.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7', '5d69471d-eaad-4e32-ab21-bf3abd158f52', 'primary')
+values ('17539c63-a0f1-4270-a490-d116adcd28ad', '5d69471d-eaad-4e32-ab21-bf3abd158f52', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '59c7399c-66eb-4e96-85ff-6bbe32f40261',
-  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  '17539c63-a0f1-4270-a490-d116adcd28ad',
   'opt1',
   'V-아/어/여요①',
   'V-아/어/여요①',
@@ -31614,7 +31614,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '082cce8b-0c54-4249-99d4-54dd6b26f630',
-  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  '17539c63-a0f1-4270-a490-d116adcd28ad',
   'opt2',
   'N이에요/예요',
   'N이에요/예요',
@@ -31627,7 +31627,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9f448916-6f0e-4341-ae96-aa12e271459f',
-  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  '17539c63-a0f1-4270-a490-d116adcd28ad',
   'opt3',
   '수③',
   '수③',
@@ -31640,7 +31640,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'df801209-9f61-4581-aba2-5973c6c90d40',
-  'a0a3e9cd-bf3f-4353-a224-2a1ddd2210b7',
+  '17539c63-a0f1-4270-a490-d116adcd28ad',
   'opt4',
   'N부터 N까지',
   'N부터 N까지',
@@ -31653,7 +31653,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8f57e570-f1f6-4c72-a941-5770e29a400b',
+  'a2578788-2b5b-4557-bdcf-3af0873181ed',
   'exercise.grammar.u05.n01.application',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   '5d69471d-eaad-4e32-ab21-bf3abd158f52',
@@ -31664,22 +31664,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «базовая разговорно-вежливая форма настоящего времени.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-아/어/여요①» — базовая разговорно-вежливая форма настоящего времени.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('8f57e570-f1f6-4c72-a941-5770e29a400b', '5d69471d-eaad-4e32-ab21-bf3abd158f52', 'primary')
+values ('a2578788-2b5b-4557-bdcf-3af0873181ed', '5d69471d-eaad-4e32-ab21-bf3abd158f52', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'e1051cd0-f739-4733-af29-a41af3442ef4',
-  '8f57e570-f1f6-4c72-a941-5770e29a400b',
+  'a2578788-2b5b-4557-bdcf-3af0873181ed',
   'V-아/어/여요①',
   'V-아/어/여요①',
   true,
@@ -31690,7 +31690,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '3d196058-1c5e-4da0-8a86-235fb4f20e8f',
-  '8f57e570-f1f6-4c72-a941-5770e29a400b',
+  'a2578788-2b5b-4557-bdcf-3af0873181ed',
   'V-아/어/여요',
   'V-아/어/여요',
   false,
@@ -31701,7 +31701,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '022e5581-24b2-4bed-b838-3858aa674867',
+  '290c36b2-6dd6-4465-8f0b-4a6f21ad2ba3',
   'exercise.grammar.u05.n02.recognition',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   '126c5f04-3282-47f1-8a15-acd1f7b188c0',
@@ -31712,22 +31712,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «разговорно-вежливая связка после существительного.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N이에요/예요»: разговорно-вежливая связка после существительного.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('022e5581-24b2-4bed-b838-3858aa674867', '126c5f04-3282-47f1-8a15-acd1f7b188c0', 'primary')
+values ('290c36b2-6dd6-4465-8f0b-4a6f21ad2ba3', '126c5f04-3282-47f1-8a15-acd1f7b188c0', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4bf2313c-bbe3-44f9-a16c-dbe029c5936f',
-  '022e5581-24b2-4bed-b838-3858aa674867',
+  '290c36b2-6dd6-4465-8f0b-4a6f21ad2ba3',
   'opt1',
   'N이에요/예요',
   'N이에요/예요',
@@ -31740,7 +31740,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '72b94abd-ca1b-45ab-b7c8-79ed55bd732f',
-  '022e5581-24b2-4bed-b838-3858aa674867',
+  '290c36b2-6dd6-4465-8f0b-4a6f21ad2ba3',
   'opt2',
   'V-아/어/여요①',
   'V-아/어/여요①',
@@ -31753,7 +31753,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '97a37ce2-8f82-42c2-9dda-4ca148b255fa',
-  '022e5581-24b2-4bed-b838-3858aa674867',
+  '290c36b2-6dd6-4465-8f0b-4a6f21ad2ba3',
   'opt3',
   '수③',
   '수③',
@@ -31766,7 +31766,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '24ae5ee2-0c30-41c3-8c63-e6e7b2401c09',
-  '022e5581-24b2-4bed-b838-3858aa674867',
+  '290c36b2-6dd6-4465-8f0b-4a6f21ad2ba3',
   'opt4',
   'N부터 N까지',
   'N부터 N까지',
@@ -31779,7 +31779,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '74e83acc-9edd-492a-86ea-34316e1bb63b',
+  '989fae3f-cc79-4ca8-925c-860ee2cdde7a',
   'exercise.grammar.u05.n02.application',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   '126c5f04-3282-47f1-8a15-acd1f7b188c0',
@@ -31790,22 +31790,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «разговорно-вежливая связка после существительного.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N이에요/예요» — разговорно-вежливая связка после существительного.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('74e83acc-9edd-492a-86ea-34316e1bb63b', '126c5f04-3282-47f1-8a15-acd1f7b188c0', 'primary')
+values ('989fae3f-cc79-4ca8-925c-860ee2cdde7a', '126c5f04-3282-47f1-8a15-acd1f7b188c0', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '0cdbd8b1-5f15-42b4-ac06-44f7df06df77',
-  '74e83acc-9edd-492a-86ea-34316e1bb63b',
+  '989fae3f-cc79-4ca8-925c-860ee2cdde7a',
   'N이에요/예요',
   'N이에요/예요',
   true,
@@ -31816,7 +31816,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  '3c98db49-54f0-4c45-aabc-17df07f2cec6',
   'exercise.grammar.u05.n03.recognition',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   '71c150f9-8d5d-4b9f-a864-37b59deb0136',
@@ -31827,34 +31827,34 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «수③»: время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7a94b245-4efb-4a5a-89b5-3a68facc10a9', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'primary')
+values ('3c98db49-54f0-4c45-aabc-17df07f2cec6', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7a94b245-4efb-4a5a-89b5-3a68facc10a9', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+values ('3c98db49-54f0-4c45-aabc-17df07f2cec6', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7a94b245-4efb-4a5a-89b5-3a68facc10a9', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+values ('3c98db49-54f0-4c45-aabc-17df07f2cec6', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7a94b245-4efb-4a5a-89b5-3a68facc10a9', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+values ('3c98db49-54f0-4c45-aabc-17df07f2cec6', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'cc4e1a8e-45a5-4507-bce3-c2dbce360de1',
-  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  '3c98db49-54f0-4c45-aabc-17df07f2cec6',
   'opt1',
   '수③',
   '수③',
@@ -31867,7 +31867,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '796a1be1-ad42-48dd-b914-5d5bb170a52c',
-  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  '3c98db49-54f0-4c45-aabc-17df07f2cec6',
   'opt2',
   'V-아/어/여요①',
   'V-아/어/여요①',
@@ -31880,7 +31880,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'fed10bbf-e94a-479d-9c61-8fb654294a12',
-  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  '3c98db49-54f0-4c45-aabc-17df07f2cec6',
   'opt3',
   'N이에요/예요',
   'N이에요/예요',
@@ -31893,7 +31893,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a12a1262-9801-4ab6-b617-0a484faa4e96',
-  '7a94b245-4efb-4a5a-89b5-3a68facc10a9',
+  '3c98db49-54f0-4c45-aabc-17df07f2cec6',
   'opt4',
   'N부터 N까지',
   'N부터 N까지',
@@ -31906,7 +31906,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '101965ab-5e04-45e9-97da-28b297cefc12',
+  '74a33556-9c9d-482c-82ac-f2bb6938c5e2',
   'exercise.grammar.u05.n03.application',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   '71c150f9-8d5d-4b9f-a864-37b59deb0136',
@@ -31917,34 +31917,34 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «수③» — время по часам: исконно корейские часы, китайско-корейские минуты и связанные выражения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('101965ab-5e04-45e9-97da-28b297cefc12', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'primary')
+values ('74a33556-9c9d-482c-82ac-f2bb6938c5e2', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('101965ab-5e04-45e9-97da-28b297cefc12', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+values ('74a33556-9c9d-482c-82ac-f2bb6938c5e2', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('101965ab-5e04-45e9-97da-28b297cefc12', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+values ('74a33556-9c9d-482c-82ac-f2bb6938c5e2', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('101965ab-5e04-45e9-97da-28b297cefc12', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
+values ('74a33556-9c9d-482c-82ac-f2bb6938c5e2', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'ab3bc108-956b-4c34-bbad-8dbe48432a60',
-  '101965ab-5e04-45e9-97da-28b297cefc12',
+  '74a33556-9c9d-482c-82ac-f2bb6938c5e2',
   '수③',
   '수③',
   true,
@@ -31955,7 +31955,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'd57748e5-26b8-473c-adf1-34891d6922fb',
-  '101965ab-5e04-45e9-97da-28b297cefc12',
+  '74a33556-9c9d-482c-82ac-f2bb6938c5e2',
   '수',
   '수',
   false,
@@ -31966,7 +31966,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  '4a946283-eba7-4897-acc0-3d4982aaef95',
   'exercise.grammar.u05.n04.recognition',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5',
@@ -31977,22 +31977,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «задаёт начало и конец временного или пространственного диапазона.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N부터 N까지»: задаёт начало и конец временного или пространственного диапазона.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('f8b7cb50-2972-4f3a-b766-78154278d39b', 'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5', 'primary')
+values ('4a946283-eba7-4897-acc0-3d4982aaef95', 'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7275e9c0-dc86-4446-bf13-8d9865b177e6',
-  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  '4a946283-eba7-4897-acc0-3d4982aaef95',
   'opt1',
   'N부터 N까지',
   'N부터 N까지',
@@ -32005,7 +32005,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'dc7520c8-43a5-415c-ac36-f2e2cb5db7ad',
-  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  '4a946283-eba7-4897-acc0-3d4982aaef95',
   'opt2',
   'V-아/어/여요①',
   'V-아/어/여요①',
@@ -32018,7 +32018,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '207e40d7-d605-472a-93ee-76ae2b19b8d8',
-  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  '4a946283-eba7-4897-acc0-3d4982aaef95',
   'opt3',
   'N이에요/예요',
   'N이에요/예요',
@@ -32031,7 +32031,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd937ed4b-9767-4852-8424-5fcd54edf2d3',
-  'f8b7cb50-2972-4f3a-b766-78154278d39b',
+  '4a946283-eba7-4897-acc0-3d4982aaef95',
   'opt4',
   '수③',
   '수③',
@@ -32044,7 +32044,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '935f9e30-0ea1-492f-be25-7ad15a4279d6',
+  '5c2671d8-f156-4841-86cf-153e187f8d6d',
   'exercise.grammar.u05.n04.application',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5',
@@ -32055,22 +32055,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «задаёт начало и конец временного или пространственного диапазона.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N부터 N까지» — задаёт начало и конец временного или пространственного диапазона.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('935f9e30-0ea1-492f-be25-7ad15a4279d6', 'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5', 'primary')
+values ('5c2671d8-f156-4841-86cf-153e187f8d6d', 'd2d05fb0-8d2f-4275-ba39-810ce03fd3e5', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '04207ca4-cb82-48cd-88f6-b3a576aa3ed6',
-  '935f9e30-0ea1-492f-be25-7ad15a4279d6',
+  '5c2671d8-f156-4841-86cf-153e187f8d6d',
   'N부터 N까지',
   'N부터 N까지',
   true,
@@ -32081,7 +32081,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'dc4771db-07b2-48c5-b0dc-17c180eaea27',
   'exercise.grammar.u05.n05.recognition',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   '8c39255c-13da-493a-9598-8679ab7a59e7',
@@ -32092,22 +32092,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «краткое и полное отрицание действия или состояния.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «안 V/V-지 않다»: краткое и полное отрицание действия или состояния.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('cafc56ce-4461-4df2-afad-a743d51eaf5d', '8c39255c-13da-493a-9598-8679ab7a59e7', 'primary')
+values ('dc4771db-07b2-48c5-b0dc-17c180eaea27', '8c39255c-13da-493a-9598-8679ab7a59e7', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a5671eeb-1b6f-40e9-869c-2f018407973d',
-  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'dc4771db-07b2-48c5-b0dc-17c180eaea27',
   'opt1',
   '안 V/V-지 않다',
   '안 V/V-지 않다',
@@ -32120,7 +32120,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5f83e263-3237-46d6-8706-72a0331d111a',
-  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'dc4771db-07b2-48c5-b0dc-17c180eaea27',
   'opt2',
   'V-아/어/여요①',
   'V-아/어/여요①',
@@ -32133,7 +32133,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '32c09a1c-09e8-4c1c-a412-a2bb5600f218',
-  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'dc4771db-07b2-48c5-b0dc-17c180eaea27',
   'opt3',
   'N이에요/예요',
   'N이에요/예요',
@@ -32146,7 +32146,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '07d0482b-7ace-4c9a-b45a-4ea00c67db20',
-  'cafc56ce-4461-4df2-afad-a743d51eaf5d',
+  'dc4771db-07b2-48c5-b0dc-17c180eaea27',
   'opt4',
   '수③',
   '수③',
@@ -32159,7 +32159,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a1382165-113c-49be-9b5d-711fd0558531',
+  '4e191c60-bd53-4fe5-a281-a1036b61bc9e',
   'exercise.grammar.u05.n05.application',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   '8c39255c-13da-493a-9598-8679ab7a59e7',
@@ -32170,22 +32170,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «краткое и полное отрицание действия или состояния.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «안 V/V-지 않다» — краткое и полное отрицание действия или состояния.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('a1382165-113c-49be-9b5d-711fd0558531', '8c39255c-13da-493a-9598-8679ab7a59e7', 'primary')
+values ('4e191c60-bd53-4fe5-a281-a1036b61bc9e', '8c39255c-13da-493a-9598-8679ab7a59e7', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '301c3f59-b7b0-4a79-ac4c-fd512f9e4aa9',
-  'a1382165-113c-49be-9b5d-711fd0558531',
+  '4e191c60-bd53-4fe5-a281-a1036b61bc9e',
   '안 V/V-지 않다',
   '안 V/V-지 않다',
   true,
@@ -32196,7 +32196,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  '808d045d-f9c9-4ac6-a19c-6bc99da5e181',
   'exercise.grammar.u06.n01.recognition',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   '5837b05d-94c5-4844-a413-e945b4344d4f',
@@ -32207,22 +32207,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «образует прошедшее время глагола или прилагательного.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-았/었/였-»: образует прошедшее время глагола или прилагательного.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('8d1c443d-1bdc-4669-8750-6841848b0e57', '5837b05d-94c5-4844-a413-e945b4344d4f', 'primary')
+values ('808d045d-f9c9-4ac6-a19c-6bc99da5e181', '5837b05d-94c5-4844-a413-e945b4344d4f', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '78ea3d2f-5dba-432a-bcec-0639413a2943',
-  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  '808d045d-f9c9-4ac6-a19c-6bc99da5e181',
   'opt1',
   'V-았/었/였-',
   'V-았/었/였-',
@@ -32235,7 +32235,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b7ec5bc6-22f2-47b4-843a-bb0a192b86fe',
-  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  '808d045d-f9c9-4ac6-a19c-6bc99da5e181',
   'opt2',
   'N이었/였-',
   'N이었/였-',
@@ -32248,7 +32248,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '91e11720-3209-489e-b5dd-936a8262b747',
-  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  '808d045d-f9c9-4ac6-a19c-6bc99da5e181',
   'opt3',
   'V-고①',
   'V-고①',
@@ -32261,7 +32261,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '293f3c3f-568e-4e0e-83d8-9fd6701e855b',
-  '8d1c443d-1bdc-4669-8750-6841848b0e57',
+  '808d045d-f9c9-4ac6-a19c-6bc99da5e181',
   'opt4',
   'N(이)고',
   'N(이)고',
@@ -32274,7 +32274,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '89f0892a-908c-499c-9d08-22e09defcf7f',
+  '62349991-cd6c-4198-8071-870af828932f',
   'exercise.grammar.u06.n01.application',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   '5837b05d-94c5-4844-a413-e945b4344d4f',
@@ -32285,22 +32285,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «образует прошедшее время глагола или прилагательного.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-았/었/였-» — образует прошедшее время глагола или прилагательного.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('89f0892a-908c-499c-9d08-22e09defcf7f', '5837b05d-94c5-4844-a413-e945b4344d4f', 'primary')
+values ('62349991-cd6c-4198-8071-870af828932f', '5837b05d-94c5-4844-a413-e945b4344d4f', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'c80e3adb-f3ac-4efb-9d55-76b1f4352a7b',
-  '89f0892a-908c-499c-9d08-22e09defcf7f',
+  '62349991-cd6c-4198-8071-870af828932f',
   'V-았/었/였-',
   'V-았/었/였-',
   true,
@@ -32311,7 +32311,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'ff48a6d4-7c19-445b-8569-ef641b10e85b',
   'exercise.grammar.u06.n02.recognition',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   'ba4806cd-2a3a-48a4-8f39-170acb3f2def',
@@ -32322,22 +32322,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «прошедшая форма связки после существительного.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N이었/였-»: прошедшая форма связки после существительного.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('932dcd4d-6b40-448b-9096-666e2d7ced80', 'ba4806cd-2a3a-48a4-8f39-170acb3f2def', 'primary')
+values ('ff48a6d4-7c19-445b-8569-ef641b10e85b', 'ba4806cd-2a3a-48a4-8f39-170acb3f2def', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e1738e0a-98b8-4ad5-b686-38d2ffd53a54',
-  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'ff48a6d4-7c19-445b-8569-ef641b10e85b',
   'opt1',
   'N이었/였-',
   'N이었/였-',
@@ -32350,7 +32350,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6ae59a2e-8040-40ff-bae7-f9e534b713e2',
-  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'ff48a6d4-7c19-445b-8569-ef641b10e85b',
   'opt2',
   'V-았/었/였-',
   'V-았/었/였-',
@@ -32363,7 +32363,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '071ec15b-9ffa-42fb-b033-62a4d52888e5',
-  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'ff48a6d4-7c19-445b-8569-ef641b10e85b',
   'opt3',
   'V-고①',
   'V-고①',
@@ -32376,7 +32376,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f27d5dae-8944-47fd-856e-320c85eccd0c',
-  '932dcd4d-6b40-448b-9096-666e2d7ced80',
+  'ff48a6d4-7c19-445b-8569-ef641b10e85b',
   'opt4',
   'N(이)고',
   'N(이)고',
@@ -32389,7 +32389,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'af9f3df8-d62a-4569-be4d-7223156172b7',
+  '9dff5b50-3bba-47ad-9ae9-f135c95f7800',
   'exercise.grammar.u06.n02.application',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   'ba4806cd-2a3a-48a4-8f39-170acb3f2def',
@@ -32400,22 +32400,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «прошедшая форма связки после существительного.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N이었/였-» — прошедшая форма связки после существительного.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('af9f3df8-d62a-4569-be4d-7223156172b7', 'ba4806cd-2a3a-48a4-8f39-170acb3f2def', 'primary')
+values ('9dff5b50-3bba-47ad-9ae9-f135c95f7800', 'ba4806cd-2a3a-48a4-8f39-170acb3f2def', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '704b5662-953b-436a-a16a-7a544b066261',
-  'af9f3df8-d62a-4569-be4d-7223156172b7',
+  '9dff5b50-3bba-47ad-9ae9-f135c95f7800',
   'N이었/였-',
   'N이었/였-',
   true,
@@ -32426,7 +32426,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  '8336bf9f-b0e4-4f9b-b786-33fd46659be8',
   'exercise.grammar.u06.n03.recognition',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   'fbc7140a-f6a0-4dcb-996c-730ddbed58d3',
@@ -32437,22 +32437,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «перечисляет действия или состояния без обязательной причинной связи.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-고①»: перечисляет действия или состояния без обязательной причинной связи.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('acf23dd4-6bd9-4e11-bfeb-ffd8696aa518', 'fbc7140a-f6a0-4dcb-996c-730ddbed58d3', 'primary')
+values ('8336bf9f-b0e4-4f9b-b786-33fd46659be8', 'fbc7140a-f6a0-4dcb-996c-730ddbed58d3', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c2265dd4-b421-4720-aed0-2fcc3c117450',
-  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  '8336bf9f-b0e4-4f9b-b786-33fd46659be8',
   'opt1',
   'V-고①',
   'V-고①',
@@ -32465,7 +32465,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6c3b753f-0786-4d9e-adc2-ae7cdd84e5da',
-  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  '8336bf9f-b0e4-4f9b-b786-33fd46659be8',
   'opt2',
   'V-았/었/였-',
   'V-았/었/였-',
@@ -32478,7 +32478,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f16b8e4d-0b2d-48af-93d0-8e78a4113c60',
-  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  '8336bf9f-b0e4-4f9b-b786-33fd46659be8',
   'opt3',
   'N이었/였-',
   'N이었/였-',
@@ -32491,7 +32491,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7dbafd61-4fae-42af-a4a2-bacaf1b7e16b',
-  'acf23dd4-6bd9-4e11-bfeb-ffd8696aa518',
+  '8336bf9f-b0e4-4f9b-b786-33fd46659be8',
   'opt4',
   'N(이)고',
   'N(이)고',
@@ -32504,7 +32504,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'e6590270-3858-493e-892f-f3d767c5b6c1',
+  '70e3a4c2-21ea-4767-8287-600e3329b711',
   'exercise.grammar.u06.n03.application',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   'fbc7140a-f6a0-4dcb-996c-730ddbed58d3',
@@ -32515,22 +32515,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «перечисляет действия или состояния без обязательной причинной связи.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-고①» — перечисляет действия или состояния без обязательной причинной связи.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('e6590270-3858-493e-892f-f3d767c5b6c1', 'fbc7140a-f6a0-4dcb-996c-730ddbed58d3', 'primary')
+values ('70e3a4c2-21ea-4767-8287-600e3329b711', 'fbc7140a-f6a0-4dcb-996c-730ddbed58d3', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'd632bebc-996f-4b87-97d9-bac3437a0f52',
-  'e6590270-3858-493e-892f-f3d767c5b6c1',
+  '70e3a4c2-21ea-4767-8287-600e3329b711',
   'V-고①',
   'V-고①',
   true,
@@ -32541,7 +32541,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '26bae33e-a374-441b-8cd1-59ccd4365b2d',
-  'e6590270-3858-493e-892f-f3d767c5b6c1',
+  '70e3a4c2-21ea-4767-8287-600e3329b711',
   'V-고',
   'V-고',
   false,
@@ -32552,7 +32552,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  '847662b7-5cac-4732-8729-747d0aeeecde',
   'exercise.grammar.u06.n04.recognition',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   'ce20b2f3-9f2c-47c5-aba2-13dc19da118d',
@@ -32563,22 +32563,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «соединяет существительные или именные характеристики значением «и».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N(이)고»: соединяет существительные или именные характеристики значением «и».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('98ca25cc-5988-427a-b379-1d44bfdb2454', 'ce20b2f3-9f2c-47c5-aba2-13dc19da118d', 'primary')
+values ('847662b7-5cac-4732-8729-747d0aeeecde', 'ce20b2f3-9f2c-47c5-aba2-13dc19da118d', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd90163d7-cc26-433e-b79a-42acea767c16',
-  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  '847662b7-5cac-4732-8729-747d0aeeecde',
   'opt1',
   'N(이)고',
   'N(이)고',
@@ -32591,7 +32591,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6c3f77a4-4a36-4c8d-b0b8-7d06ba78d5f5',
-  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  '847662b7-5cac-4732-8729-747d0aeeecde',
   'opt2',
   'V-았/었/였-',
   'V-았/었/였-',
@@ -32604,7 +32604,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ad774e79-0ced-473c-b80c-bc3ad9927497',
-  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  '847662b7-5cac-4732-8729-747d0aeeecde',
   'opt3',
   'N이었/였-',
   'N이었/였-',
@@ -32617,7 +32617,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '140e9b82-7042-41aa-b1b8-d687d6cce8b5',
-  '98ca25cc-5988-427a-b379-1d44bfdb2454',
+  '847662b7-5cac-4732-8729-747d0aeeecde',
   'opt4',
   'V-고①',
   'V-고①',
@@ -32630,7 +32630,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '22fdcf35-b709-4c59-8c11-eb83838dad47',
+  '68c65969-7c51-44ab-aba9-214ec2b154ae',
   'exercise.grammar.u06.n04.application',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   'ce20b2f3-9f2c-47c5-aba2-13dc19da118d',
@@ -32641,22 +32641,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «соединяет существительные или именные характеристики значением «и».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N(이)고» — соединяет существительные или именные характеристики значением «и».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('22fdcf35-b709-4c59-8c11-eb83838dad47', 'ce20b2f3-9f2c-47c5-aba2-13dc19da118d', 'primary')
+values ('68c65969-7c51-44ab-aba9-214ec2b154ae', 'ce20b2f3-9f2c-47c5-aba2-13dc19da118d', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '6a879d20-30a3-41fc-b34c-d0e577458f15',
-  '22fdcf35-b709-4c59-8c11-eb83838dad47',
+  '68c65969-7c51-44ab-aba9-214ec2b154ae',
   'N(이)고',
   'N(이)고',
   true,
@@ -32667,7 +32667,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'f6649df9-9725-41c0-a2ad-e8fb2910baf1',
   'exercise.grammar.u06.n05.recognition',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   '79e28405-616c-41de-8b9b-cbbfca67e1aa',
@@ -32678,22 +32678,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает опыт или попытку «попробовать сделать».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-아/어/여 보다»: выражает опыт или попытку «попробовать сделать».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('554f7c63-c45a-4cb2-9b5a-a21be11850d2', '79e28405-616c-41de-8b9b-cbbfca67e1aa', 'primary')
+values ('f6649df9-9725-41c0-a2ad-e8fb2910baf1', '79e28405-616c-41de-8b9b-cbbfca67e1aa', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1074cecc-1e30-49fb-ab05-cf11707396ed',
-  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'f6649df9-9725-41c0-a2ad-e8fb2910baf1',
   'opt1',
   'AV-아/어/여 보다',
   'AV-아/어/여 보다',
@@ -32706,7 +32706,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c91839a1-7d77-4fb5-a79c-999768a2288f',
-  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'f6649df9-9725-41c0-a2ad-e8fb2910baf1',
   'opt2',
   'V-았/었/였-',
   'V-았/었/였-',
@@ -32719,7 +32719,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '79898fc6-8691-4b7b-b7cd-02a6d8023e79',
-  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'f6649df9-9725-41c0-a2ad-e8fb2910baf1',
   'opt3',
   'N이었/였-',
   'N이었/였-',
@@ -32732,7 +32732,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '67e74f0b-a775-400b-9604-63aa28dd1af5',
-  '554f7c63-c45a-4cb2-9b5a-a21be11850d2',
+  'f6649df9-9725-41c0-a2ad-e8fb2910baf1',
   'opt4',
   'V-고①',
   'V-고①',
@@ -32745,7 +32745,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a83d931d-0042-4caf-b1fc-89b861db2741',
+  '499be181-9d31-4e94-8767-03a797c4f9fa',
   'exercise.grammar.u06.n05.application',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   '79e28405-616c-41de-8b9b-cbbfca67e1aa',
@@ -32756,22 +32756,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает опыт или попытку «попробовать сделать».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-아/어/여 보다» — выражает опыт или попытку «попробовать сделать».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('a83d931d-0042-4caf-b1fc-89b861db2741', '79e28405-616c-41de-8b9b-cbbfca67e1aa', 'primary')
+values ('499be181-9d31-4e94-8767-03a797c4f9fa', '79e28405-616c-41de-8b9b-cbbfca67e1aa', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'e33f65a4-d628-4d74-aa90-2066ef7f3de6',
-  'a83d931d-0042-4caf-b1fc-89b861db2741',
+  '499be181-9d31-4e94-8767-03a797c4f9fa',
   'AV-아/어/여 보다',
   'AV-아/어/여 보다',
   true,
@@ -32782,7 +32782,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  '49741a55-ca5c-4d34-b8dc-4c8d4cf0679c',
   'exercise.grammar.u06.n06.recognition',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8',
@@ -32793,22 +32793,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «ㅡ 동사»: описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('46cedfbb-5a07-4aab-9a75-bcc43ca2bd36', '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8', 'primary')
+values ('49741a55-ca5c-4d34-b8dc-4c8d4cf0679c', '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0b84c8c7-7f73-4d93-896d-4c4698bb3b6e',
-  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  '49741a55-ca5c-4d34-b8dc-4c8d4cf0679c',
   'opt1',
   'ㅡ 동사',
   'ㅡ 동사',
@@ -32821,7 +32821,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4d1fd769-f8ac-4ef5-b0e3-3ae297317c1c',
-  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  '49741a55-ca5c-4d34-b8dc-4c8d4cf0679c',
   'opt2',
   'V-았/었/였-',
   'V-았/었/였-',
@@ -32834,7 +32834,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '84f2d525-5cb7-4dda-bd61-3ca344b6915f',
-  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  '49741a55-ca5c-4d34-b8dc-4c8d4cf0679c',
   'opt3',
   'N이었/였-',
   'N이었/였-',
@@ -32847,7 +32847,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9b2cf22f-f318-4bd5-84bb-40afcc0362fa',
-  '46cedfbb-5a07-4aab-9a75-bcc43ca2bd36',
+  '49741a55-ca5c-4d34-b8dc-4c8d4cf0679c',
   'opt4',
   'V-고①',
   'V-고①',
@@ -32860,7 +32860,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'f86835f4-a6a8-4b1b-9881-1af60703ae93',
+  'ed582f9f-2644-40c8-999d-86a79d8d878d',
   'exercise.grammar.u06.n06.application',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8',
@@ -32871,22 +32871,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «ㅡ 동사» — описывает выпадение `ㅡ` перед окончаниями, начинающимися с гласной.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('f86835f4-a6a8-4b1b-9881-1af60703ae93', '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8', 'primary')
+values ('ed582f9f-2644-40c8-999d-86a79d8d878d', '1accdaf8-185c-4cfd-9ec3-1e4ca31d7af8', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '9de7de7e-2588-4771-b9b9-1501f9831dd9',
-  'f86835f4-a6a8-4b1b-9881-1af60703ae93',
+  'ed582f9f-2644-40c8-999d-86a79d8d878d',
   'ㅡ 동사',
   'ㅡ 동사',
   true,
@@ -32897,7 +32897,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'ddde27f6-b52b-4517-a6f9-53eaa0ab52ba',
   'exercise.grammar.u07.n01.recognition',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '1e8467c9-ff54-4a37-bb24-aa475e2f9e45',
@@ -32908,26 +32908,26 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «подчёркивает контраст или сравнение двух тем.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N은/는②»: подчёркивает контраст или сравнение двух тем.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('5aef05a5-c92a-4e1a-b046-db2fa704b137', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'primary')
+values ('ddde27f6-b52b-4517-a6f9-53eaa0ab52ba', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('5aef05a5-c92a-4e1a-b046-db2fa704b137', '8a80682b-a6e1-4455-9837-56d128b281d0', 'secondary')
+values ('ddde27f6-b52b-4517-a6f9-53eaa0ab52ba', '8a80682b-a6e1-4455-9837-56d128b281d0', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f0ae20bf-0e0f-4503-92e8-f3678c6ddb27',
-  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'ddde27f6-b52b-4517-a6f9-53eaa0ab52ba',
   'opt1',
   'N은/는②',
   'N은/는②',
@@ -32940,7 +32940,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '93940fe0-aebf-4bd8-8d71-3e6b438d5c29',
-  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'ddde27f6-b52b-4517-a6f9-53eaa0ab52ba',
   'opt2',
   'ㅂ 동사',
   'ㅂ 동사',
@@ -32953,7 +32953,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '117d5dcf-f55c-4273-bd52-be92d0595bf0',
-  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'ddde27f6-b52b-4517-a6f9-53eaa0ab52ba',
   'opt3',
   'AV-아/어/여서①',
   'AV-아/어/여서①',
@@ -32966,7 +32966,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '91f6efca-eef5-49ee-845b-e7834910f2bf',
-  '5aef05a5-c92a-4e1a-b046-db2fa704b137',
+  'ddde27f6-b52b-4517-a6f9-53eaa0ab52ba',
   'opt4',
   'N(으)로①',
   'N(으)로①',
@@ -32979,7 +32979,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'e3d32091-63cd-4abf-af93-001a312184c7',
+  '2bd34e35-e7fa-4c1a-82e3-0da8679e8452',
   'exercise.grammar.u07.n01.application',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '1e8467c9-ff54-4a37-bb24-aa475e2f9e45',
@@ -32990,26 +32990,26 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «подчёркивает контраст или сравнение двух тем.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N은/는②» — подчёркивает контраст или сравнение двух тем.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('e3d32091-63cd-4abf-af93-001a312184c7', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'primary')
+values ('2bd34e35-e7fa-4c1a-82e3-0da8679e8452', '1e8467c9-ff54-4a37-bb24-aa475e2f9e45', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('e3d32091-63cd-4abf-af93-001a312184c7', '8a80682b-a6e1-4455-9837-56d128b281d0', 'secondary')
+values ('2bd34e35-e7fa-4c1a-82e3-0da8679e8452', '8a80682b-a6e1-4455-9837-56d128b281d0', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'eea68b07-9662-4afb-9ff7-1a82026d49e5',
-  'e3d32091-63cd-4abf-af93-001a312184c7',
+  '2bd34e35-e7fa-4c1a-82e3-0da8679e8452',
   'N은/는②',
   'N은/는②',
   true,
@@ -33020,7 +33020,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '3bb5aca5-5abe-43d8-8c02-635bd9d49435',
-  'e3d32091-63cd-4abf-af93-001a312184c7',
+  '2bd34e35-e7fa-4c1a-82e3-0da8679e8452',
   'N은/는',
   'N은/는',
   false,
@@ -33031,7 +33031,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  '333be4d1-99c2-45ca-935d-06acb3501923',
   'exercise.grammar.u07.n02.recognition',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c',
@@ -33042,22 +33042,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «ㅂ 동사»: описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('2932b1bd-eaa8-49d3-8871-1fe7f05fc645', '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c', 'primary')
+values ('333be4d1-99c2-45ca-935d-06acb3501923', '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '03b344b4-f2c5-4c88-aca9-1dd62e8f3a48',
-  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  '333be4d1-99c2-45ca-935d-06acb3501923',
   'opt1',
   'ㅂ 동사',
   'ㅂ 동사',
@@ -33070,7 +33070,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e06efdc7-b83f-4c67-928a-9ee3d134d7d7',
-  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  '333be4d1-99c2-45ca-935d-06acb3501923',
   'opt2',
   'N은/는②',
   'N은/는②',
@@ -33083,7 +33083,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ef61e759-bc58-415a-8077-5741ed1a1823',
-  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  '333be4d1-99c2-45ca-935d-06acb3501923',
   'opt3',
   'AV-아/어/여서①',
   'AV-아/어/여서①',
@@ -33096,7 +33096,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '30a39bcc-c341-4dd9-a492-c41650786867',
-  '2932b1bd-eaa8-49d3-8871-1fe7f05fc645',
+  '333be4d1-99c2-45ca-935d-06acb3501923',
   'opt4',
   'N(으)로①',
   'N(으)로①',
@@ -33109,7 +33109,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'bbff31ce-77be-4222-b306-426de8f84cb3',
+  '42682a69-b977-4bdf-815a-46b4dd15e01b',
   'exercise.grammar.u07.n02.application',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c',
@@ -33120,22 +33120,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «ㅂ 동사» — описывает переход `ㅂ` в `우/오` у соответствующих неправильных основ.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('bbff31ce-77be-4222-b306-426de8f84cb3', '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c', 'primary')
+values ('42682a69-b977-4bdf-815a-46b4dd15e01b', '0dc8b236-cfc4-40ab-88b0-2ec9ff57378c', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '443f22bb-5553-4fdb-9261-cfaeb054b39e',
-  'bbff31ce-77be-4222-b306-426de8f84cb3',
+  '42682a69-b977-4bdf-815a-46b4dd15e01b',
   'ㅂ 동사',
   'ㅂ 동사',
   true,
@@ -33146,7 +33146,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'c716e728-3079-4c8d-bca8-951dccb13db6',
   'exercise.grammar.u07.n03.recognition',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '7854c9ff-14a3-442f-b737-2b93c4c4046d',
@@ -33157,22 +33157,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-아/어/여서①»: соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('0c685eeb-5114-48e5-90df-7e72e98362ad', '7854c9ff-14a3-442f-b737-2b93c4c4046d', 'primary')
+values ('c716e728-3079-4c8d-bca8-951dccb13db6', '7854c9ff-14a3-442f-b737-2b93c4c4046d', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f36fc80d-fa8f-47c9-9c32-2b75d27debf9',
-  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'c716e728-3079-4c8d-bca8-951dccb13db6',
   'opt1',
   'AV-아/어/여서①',
   'AV-아/어/여서①',
@@ -33185,7 +33185,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a48d20b4-6799-4be8-8964-5baab385589c',
-  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'c716e728-3079-4c8d-bca8-951dccb13db6',
   'opt2',
   'N은/는②',
   'N은/는②',
@@ -33198,7 +33198,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0e4c7bcf-2b50-4c94-b214-dca8ac08bec0',
-  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'c716e728-3079-4c8d-bca8-951dccb13db6',
   'opt3',
   'ㅂ 동사',
   'ㅂ 동사',
@@ -33211,7 +33211,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '00d4b296-f6e1-467b-9179-8a8376d0f394',
-  '0c685eeb-5114-48e5-90df-7e72e98362ad',
+  'c716e728-3079-4c8d-bca8-951dccb13db6',
   'opt4',
   'N(으)로①',
   'N(으)로①',
@@ -33224,7 +33224,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '38de0248-b406-4fe1-b556-450654d129ec',
+  'e1bb16ed-b942-490a-bd14-9848e2aa3803',
   'exercise.grammar.u07.n03.application',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '7854c9ff-14a3-442f-b737-2b93c4c4046d',
@@ -33235,22 +33235,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-아/어/여서①» — соединяет тесно связанные последовательные действия одного субъекта: «сделать и затем».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('38de0248-b406-4fe1-b556-450654d129ec', '7854c9ff-14a3-442f-b737-2b93c4c4046d', 'primary')
+values ('e1bb16ed-b942-490a-bd14-9848e2aa3803', '7854c9ff-14a3-442f-b737-2b93c4c4046d', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'b4538f9c-2348-4b70-a54a-24e9ffa050f6',
-  '38de0248-b406-4fe1-b556-450654d129ec',
+  'e1bb16ed-b942-490a-bd14-9848e2aa3803',
   'AV-아/어/여서①',
   'AV-아/어/여서①',
   true,
@@ -33261,7 +33261,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '635d6670-bffd-4298-b679-b97558f60897',
-  '38de0248-b406-4fe1-b556-450654d129ec',
+  'e1bb16ed-b942-490a-bd14-9848e2aa3803',
   'AV-아/어/여서',
   'AV-아/어/여서',
   false,
@@ -33272,7 +33272,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'bf535b64-869f-4a0a-862f-254fbdec3eba',
   'exercise.grammar.u07.n04.recognition',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '214132fd-fdc0-43dd-a962-e42ff1c23fcb',
@@ -33283,26 +33283,26 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «указывает направление движения; после гласной и `ㄹ` используется `로`.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N(으)로①»: указывает направление движения; после гласной и `ㄹ` используется `로`.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('347bbd30-a44b-47e0-b4c0-80f0c36ae5d3', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'primary')
+values ('bf535b64-869f-4a0a-862f-254fbdec3eba', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('347bbd30-a44b-47e0-b4c0-80f0c36ae5d3', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'secondary')
+values ('bf535b64-869f-4a0a-862f-254fbdec3eba', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '31dbae67-d480-4a01-9dbd-211c6e59fa23',
-  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'bf535b64-869f-4a0a-862f-254fbdec3eba',
   'opt1',
   'N(으)로①',
   'N(으)로①',
@@ -33315,7 +33315,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e942601e-1eb2-4179-97d8-9202688e2ea1',
-  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'bf535b64-869f-4a0a-862f-254fbdec3eba',
   'opt2',
   'N은/는②',
   'N은/는②',
@@ -33328,7 +33328,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2f67199d-d024-42e3-b05f-fc65a85a172e',
-  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'bf535b64-869f-4a0a-862f-254fbdec3eba',
   'opt3',
   'ㅂ 동사',
   'ㅂ 동사',
@@ -33341,7 +33341,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e9da46b6-43d7-4ff4-a3c9-d0f1559d53ad',
-  '347bbd30-a44b-47e0-b4c0-80f0c36ae5d3',
+  'bf535b64-869f-4a0a-862f-254fbdec3eba',
   'opt4',
   'AV-아/어/여서①',
   'AV-아/어/여서①',
@@ -33354,7 +33354,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '9e79d8e3-3076-41b7-af0c-5fe15c7b7139',
+  'a3be9c8b-5b1f-4185-8e0b-786db32bb974',
   'exercise.grammar.u07.n04.application',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '214132fd-fdc0-43dd-a962-e42ff1c23fcb',
@@ -33365,26 +33365,26 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «указывает направление движения; после гласной и `ㄹ` используется `로`.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N(으)로①» — указывает направление движения; после гласной и `ㄹ` используется `로`.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('9e79d8e3-3076-41b7-af0c-5fe15c7b7139', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'primary')
+values ('a3be9c8b-5b1f-4185-8e0b-786db32bb974', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('9e79d8e3-3076-41b7-af0c-5fe15c7b7139', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'secondary')
+values ('a3be9c8b-5b1f-4185-8e0b-786db32bb974', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '9fc6b0e6-f1f4-4fab-be38-7879338da47b',
-  '9e79d8e3-3076-41b7-af0c-5fe15c7b7139',
+  'a3be9c8b-5b1f-4185-8e0b-786db32bb974',
   'N(으)로①',
   'N(으)로①',
   true,
@@ -33395,7 +33395,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '01484e7c-4cd1-4370-a673-f5450bb8243a',
-  '9e79d8e3-3076-41b7-af0c-5fe15c7b7139',
+  'a3be9c8b-5b1f-4185-8e0b-786db32bb974',
   'N(으)로',
   'N(으)로',
   false,
@@ -33406,7 +33406,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'f3dc527f-81bc-4796-8f55-380ab8e9a6c2',
   'exercise.grammar.u07.n05.recognition',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '08602f93-e9c4-43ec-af68-8275e3373035',
@@ -33417,22 +33417,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает цель движения: «идти/приходить, чтобы сделать».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)러 가다/오다»: выражает цель движения: «идти/приходить, чтобы сделать».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('f383e78c-45b4-438f-b098-b7cd7fd7fa53', '08602f93-e9c4-43ec-af68-8275e3373035', 'primary')
+values ('f3dc527f-81bc-4796-8f55-380ab8e9a6c2', '08602f93-e9c4-43ec-af68-8275e3373035', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '553c55f1-65f8-4fbc-9ad1-52525aba451b',
-  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'f3dc527f-81bc-4796-8f55-380ab8e9a6c2',
   'opt1',
   'AV-(으)러 가다/오다',
   'AV-(으)러 가다/오다',
@@ -33445,7 +33445,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'cc9ee0f2-ad60-4174-96aa-776059c53bc6',
-  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'f3dc527f-81bc-4796-8f55-380ab8e9a6c2',
   'opt2',
   'N은/는②',
   'N은/는②',
@@ -33458,7 +33458,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b2022f2c-7c4c-4450-9dca-47c0345b7e80',
-  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'f3dc527f-81bc-4796-8f55-380ab8e9a6c2',
   'opt3',
   'ㅂ 동사',
   'ㅂ 동사',
@@ -33471,7 +33471,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '576fbe5c-6a58-4948-8cb4-83a8327e0fd2',
-  'f383e78c-45b4-438f-b098-b7cd7fd7fa53',
+  'f3dc527f-81bc-4796-8f55-380ab8e9a6c2',
   'opt4',
   'AV-아/어/여서①',
   'AV-아/어/여서①',
@@ -33484,7 +33484,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4d2244e1-6127-4e4a-83c9-250df97683ae',
+  '3d6570d9-bfe9-492d-b721-4706fcd49c14',
   'exercise.grammar.u07.n05.application',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   '08602f93-e9c4-43ec-af68-8275e3373035',
@@ -33495,22 +33495,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает цель движения: «идти/приходить, чтобы сделать».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)러 가다/오다» — выражает цель движения: «идти/приходить, чтобы сделать».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4d2244e1-6127-4e4a-83c9-250df97683ae', '08602f93-e9c4-43ec-af68-8275e3373035', 'primary')
+values ('3d6570d9-bfe9-492d-b721-4706fcd49c14', '08602f93-e9c4-43ec-af68-8275e3373035', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'c484e563-110c-4e5a-ba74-5f7fdd537c11',
-  '4d2244e1-6127-4e4a-83c9-250df97683ae',
+  '3d6570d9-bfe9-492d-b721-4706fcd49c14',
   'AV-(으)러 가다/오다',
   'AV-(으)러 가다/오다',
   true,
@@ -33521,7 +33521,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  '57982d7c-a166-40de-9b82-3c651912eea3',
   'exercise.grammar.u08.n01.recognition',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   '7b58d124-1351-4775-bd05-392d3de9681a',
@@ -33532,22 +33532,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает собственный план, намерение или ожидаемое будущее действие.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)ㄹ 거예요①»: выражает собственный план, намерение или ожидаемое будущее действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb', '7b58d124-1351-4775-bd05-392d3de9681a', 'primary')
+values ('57982d7c-a166-40de-9b82-3c651912eea3', '7b58d124-1351-4775-bd05-392d3de9681a', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9813978d-03ca-4aee-b132-f679bc49e7a4',
-  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  '57982d7c-a166-40de-9b82-3c651912eea3',
   'opt1',
   'AV-(으)ㄹ 거예요①',
   'AV-(으)ㄹ 거예요①',
@@ -33560,7 +33560,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3f9b94a9-bc38-46b0-99a4-9023bdcaca26',
-  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  '57982d7c-a166-40de-9b82-3c651912eea3',
   'opt2',
   'AV-고②',
   'AV-고②',
@@ -33573,7 +33573,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'cf81f8d0-bff9-49ba-9f0e-c5b3c7483a1c',
-  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  '57982d7c-a166-40de-9b82-3c651912eea3',
   'opt3',
   'AV-기 전에/N 전에',
   'AV-기 전에/N 전에',
@@ -33586,7 +33586,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8350de71-529b-4d2d-b0dd-9256f1b14f28',
-  '4d16cbe5-d4af-4e46-b9a4-d11dafaf6fbb',
+  '57982d7c-a166-40de-9b82-3c651912eea3',
   'opt4',
   'AV-(으)ㄴ 후에/N 후에',
   'AV-(으)ㄴ 후에/N 후에',
@@ -33599,7 +33599,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a09960a1-55a6-415d-83b2-4a57f8cb3ca5',
+  'd7016fdd-2499-43f6-a897-002c2c49caa6',
   'exercise.grammar.u08.n01.application',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   '7b58d124-1351-4775-bd05-392d3de9681a',
@@ -33610,22 +33610,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает собственный план, намерение или ожидаемое будущее действие.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)ㄹ 거예요①» — выражает собственный план, намерение или ожидаемое будущее действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('a09960a1-55a6-415d-83b2-4a57f8cb3ca5', '7b58d124-1351-4775-bd05-392d3de9681a', 'primary')
+values ('d7016fdd-2499-43f6-a897-002c2c49caa6', '7b58d124-1351-4775-bd05-392d3de9681a', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'fd7f781a-efc8-40ae-a8fe-25d0677dbc0e',
-  'a09960a1-55a6-415d-83b2-4a57f8cb3ca5',
+  'd7016fdd-2499-43f6-a897-002c2c49caa6',
   'AV-(으)ㄹ 거예요①',
   'AV-(으)ㄹ 거예요①',
   true,
@@ -33636,7 +33636,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'cd73fdf4-96d3-49bb-9891-66dbc9a5dc5d',
-  'a09960a1-55a6-415d-83b2-4a57f8cb3ca5',
+  'd7016fdd-2499-43f6-a897-002c2c49caa6',
   'AV-(으)ㄹ 거예요',
   'AV-(으)ㄹ 거예요',
   false,
@@ -33647,7 +33647,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '96e40798-4751-4e45-9e31-7193731c35db',
+  '2d4f1811-8d16-4455-8609-9330d30acb98',
   'exercise.grammar.u08.n02.recognition',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   '4f221acf-3db5-4160-a85f-3614688a1c97',
@@ -33658,22 +33658,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «соединяет последовательные действия в рассказе о плане или распорядке.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-고②»: соединяет последовательные действия в рассказе о плане или распорядке.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('96e40798-4751-4e45-9e31-7193731c35db', '4f221acf-3db5-4160-a85f-3614688a1c97', 'primary')
+values ('2d4f1811-8d16-4455-8609-9330d30acb98', '4f221acf-3db5-4160-a85f-3614688a1c97', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '14fe4072-983f-4cd2-b7bd-10f34c5a248f',
-  '96e40798-4751-4e45-9e31-7193731c35db',
+  '2d4f1811-8d16-4455-8609-9330d30acb98',
   'opt1',
   'AV-고②',
   'AV-고②',
@@ -33686,7 +33686,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '24c97ffc-f84b-492f-98a6-98a739a7597a',
-  '96e40798-4751-4e45-9e31-7193731c35db',
+  '2d4f1811-8d16-4455-8609-9330d30acb98',
   'opt2',
   'AV-(으)ㄹ 거예요①',
   'AV-(으)ㄹ 거예요①',
@@ -33699,7 +33699,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '49ccefef-d672-41fb-9539-4208d5711830',
-  '96e40798-4751-4e45-9e31-7193731c35db',
+  '2d4f1811-8d16-4455-8609-9330d30acb98',
   'opt3',
   'AV-기 전에/N 전에',
   'AV-기 전에/N 전에',
@@ -33712,7 +33712,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '653fe848-4a9e-4a13-b5c1-6ff97068e83e',
-  '96e40798-4751-4e45-9e31-7193731c35db',
+  '2d4f1811-8d16-4455-8609-9330d30acb98',
   'opt4',
   'AV-(으)ㄴ 후에/N 후에',
   'AV-(으)ㄴ 후에/N 후에',
@@ -33725,7 +33725,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c76aa70a-be6b-4c73-a936-c7ef2838e153',
+  'e54706c1-84a6-4362-afd9-e3639e8aca1c',
   'exercise.grammar.u08.n02.application',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   '4f221acf-3db5-4160-a85f-3614688a1c97',
@@ -33736,22 +33736,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «соединяет последовательные действия в рассказе о плане или распорядке.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-고②» — соединяет последовательные действия в рассказе о плане или распорядке.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('c76aa70a-be6b-4c73-a936-c7ef2838e153', '4f221acf-3db5-4160-a85f-3614688a1c97', 'primary')
+values ('e54706c1-84a6-4362-afd9-e3639e8aca1c', '4f221acf-3db5-4160-a85f-3614688a1c97', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'd68f1c4a-aaff-4e5c-ad73-42905a23dc63',
-  'c76aa70a-be6b-4c73-a936-c7ef2838e153',
+  'e54706c1-84a6-4362-afd9-e3639e8aca1c',
   'AV-고②',
   'AV-고②',
   true,
@@ -33762,7 +33762,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '003ac914-5c9f-4481-88d6-cb7ee156c077',
-  'c76aa70a-be6b-4c73-a936-c7ef2838e153',
+  'e54706c1-84a6-4362-afd9-e3639e8aca1c',
   'AV-고',
   'AV-고',
   false,
@@ -33773,7 +33773,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  '06f5ee9f-3bb0-47c1-9768-86f65726ac06',
   'exercise.grammar.u08.n03.recognition',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59',
@@ -33784,22 +33784,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «обозначает действие или момент «до/перед».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-기 전에/N 전에»: обозначает действие или момент «до/перед».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('36c192e3-0d7b-4385-bb9c-21312cd4fc43', 'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59', 'primary')
+values ('06f5ee9f-3bb0-47c1-9768-86f65726ac06', 'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '00ed56f5-5ebb-4e0c-8043-f1fe9b3da06d',
-  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  '06f5ee9f-3bb0-47c1-9768-86f65726ac06',
   'opt1',
   'AV-기 전에/N 전에',
   'AV-기 전에/N 전에',
@@ -33812,7 +33812,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e6a5eda9-7693-4072-9e9f-650b69ee990b',
-  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  '06f5ee9f-3bb0-47c1-9768-86f65726ac06',
   'opt2',
   'AV-(으)ㄹ 거예요①',
   'AV-(으)ㄹ 거예요①',
@@ -33825,7 +33825,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '359598e4-9efc-40dc-81ed-980c7c53d1e7',
-  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  '06f5ee9f-3bb0-47c1-9768-86f65726ac06',
   'opt3',
   'AV-고②',
   'AV-고②',
@@ -33838,7 +33838,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9224ecc8-320b-442a-ac14-248ddfbe9971',
-  '36c192e3-0d7b-4385-bb9c-21312cd4fc43',
+  '06f5ee9f-3bb0-47c1-9768-86f65726ac06',
   'opt4',
   'AV-(으)ㄴ 후에/N 후에',
   'AV-(으)ㄴ 후에/N 후에',
@@ -33851,7 +33851,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '2d832590-aef0-42bd-93e0-3adfb45d8814',
+  '7783117e-cde4-40e9-b0db-f8cbd16bf448',
   'exercise.grammar.u08.n03.application',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59',
@@ -33862,22 +33862,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «обозначает действие или момент «до/перед».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-기 전에/N 전에» — обозначает действие или момент «до/перед».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('2d832590-aef0-42bd-93e0-3adfb45d8814', 'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59', 'primary')
+values ('7783117e-cde4-40e9-b0db-f8cbd16bf448', 'cf1e3bc1-70bc-41e3-bb07-e81d6349ea59', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'f773b8eb-b502-4d23-8119-22e4de0e75e8',
-  '2d832590-aef0-42bd-93e0-3adfb45d8814',
+  '7783117e-cde4-40e9-b0db-f8cbd16bf448',
   'AV-기 전에/N 전에',
   'AV-기 전에/N 전에',
   true,
@@ -33888,7 +33888,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  '19f2ee32-05ef-44aa-b903-55f73d882cf3',
   'exercise.grammar.u08.n04.recognition',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   '72b9edd3-5a56-4c25-a35a-5fd9b601dc61',
@@ -33899,22 +33899,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «обозначает действие или момент «после».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)ㄴ 후에/N 후에»: обозначает действие или момент «после».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('503cba10-c815-4a0b-9f15-bfa6ea5ed9c4', '72b9edd3-5a56-4c25-a35a-5fd9b601dc61', 'primary')
+values ('19f2ee32-05ef-44aa-b903-55f73d882cf3', '72b9edd3-5a56-4c25-a35a-5fd9b601dc61', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b00b1723-4867-4856-8a47-bcd20d61e18c',
-  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  '19f2ee32-05ef-44aa-b903-55f73d882cf3',
   'opt1',
   'AV-(으)ㄴ 후에/N 후에',
   'AV-(으)ㄴ 후에/N 후에',
@@ -33927,7 +33927,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd307af62-a970-417a-b3a9-2513ee1d8950',
-  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  '19f2ee32-05ef-44aa-b903-55f73d882cf3',
   'opt2',
   'AV-(으)ㄹ 거예요①',
   'AV-(으)ㄹ 거예요①',
@@ -33940,7 +33940,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8443e171-dfd8-4956-bb70-eb5b7ee6c8d1',
-  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  '19f2ee32-05ef-44aa-b903-55f73d882cf3',
   'opt3',
   'AV-고②',
   'AV-고②',
@@ -33953,7 +33953,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a0773bec-9dbd-4e53-a613-4909113b6d6b',
-  '503cba10-c815-4a0b-9f15-bfa6ea5ed9c4',
+  '19f2ee32-05ef-44aa-b903-55f73d882cf3',
   'opt4',
   'AV-기 전에/N 전에',
   'AV-기 전에/N 전에',
@@ -33966,7 +33966,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'fe6c9544-6d7f-4e40-aa33-0be530964bcb',
+  '8317a93d-ccb7-4f4b-a519-048afb1b5fb1',
   'exercise.grammar.u08.n04.application',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   '72b9edd3-5a56-4c25-a35a-5fd9b601dc61',
@@ -33977,22 +33977,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «обозначает действие или момент «после».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)ㄴ 후에/N 후에» — обозначает действие или момент «после».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('fe6c9544-6d7f-4e40-aa33-0be530964bcb', '72b9edd3-5a56-4c25-a35a-5fd9b601dc61', 'primary')
+values ('8317a93d-ccb7-4f4b-a519-048afb1b5fb1', '72b9edd3-5a56-4c25-a35a-5fd9b601dc61', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '23b0f3f6-4ff4-42e1-8007-67d7bb0e29fe',
-  'fe6c9544-6d7f-4e40-aa33-0be530964bcb',
+  '8317a93d-ccb7-4f4b-a519-048afb1b5fb1',
   'AV-(으)ㄴ 후에/N 후에',
   'AV-(으)ㄴ 후에/N 후에',
   true,
@@ -34003,7 +34003,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'ae98ecf9-d38c-44fb-9589-259ea7eda902',
   'exercise.grammar.u08.n05.recognition',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   'b8628ae8-c518-43b8-8b9a-9333850c2d52',
@@ -34014,22 +34014,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «задаёт продолжительность «в течение N».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N 동안»: задаёт продолжительность «в течение N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3', 'b8628ae8-c518-43b8-8b9a-9333850c2d52', 'primary')
+values ('ae98ecf9-d38c-44fb-9589-259ea7eda902', 'b8628ae8-c518-43b8-8b9a-9333850c2d52', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2c008171-871f-412a-a7b6-d8d301223b75',
-  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'ae98ecf9-d38c-44fb-9589-259ea7eda902',
   'opt1',
   'N 동안',
   'N 동안',
@@ -34042,7 +34042,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '39233f5a-06ed-4c4c-a210-106a4a5b860c',
-  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'ae98ecf9-d38c-44fb-9589-259ea7eda902',
   'opt2',
   'AV-(으)ㄹ 거예요①',
   'AV-(으)ㄹ 거예요①',
@@ -34055,7 +34055,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'dad1f50f-e448-4d13-be30-e1ca38c01f18',
-  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'ae98ecf9-d38c-44fb-9589-259ea7eda902',
   'opt3',
   'AV-고②',
   'AV-고②',
@@ -34068,7 +34068,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2247de13-c9d4-4c66-8e44-66a52711e4d3',
-  '598c2da1-9c5b-4c88-8f6d-71f4ba3db9e3',
+  'ae98ecf9-d38c-44fb-9589-259ea7eda902',
   'opt4',
   'AV-기 전에/N 전에',
   'AV-기 전에/N 전에',
@@ -34081,7 +34081,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '9a7fd59a-a3ae-4b6c-9c59-089d0e337ff5',
+  '800d2531-f958-4d86-90d7-14e95aa1fbce',
   'exercise.grammar.u08.n05.application',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   'b8628ae8-c518-43b8-8b9a-9333850c2d52',
@@ -34092,22 +34092,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «задаёт продолжительность «в течение N».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N 동안» — задаёт продолжительность «в течение N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('9a7fd59a-a3ae-4b6c-9c59-089d0e337ff5', 'b8628ae8-c518-43b8-8b9a-9333850c2d52', 'primary')
+values ('800d2531-f958-4d86-90d7-14e95aa1fbce', 'b8628ae8-c518-43b8-8b9a-9333850c2d52', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '52fccfb8-1041-43fb-a6b1-03686a20df94',
-  '9a7fd59a-a3ae-4b6c-9c59-089d0e337ff5',
+  '800d2531-f958-4d86-90d7-14e95aa1fbce',
   'N 동안',
   'N 동안',
   true,
@@ -34118,7 +34118,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  '8155cf7b-21e6-49fd-9d61-63fb1a4842a0',
   'exercise.grammar.u09.n01.recognition',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   '23c5932e-f49e-4a6e-9823-12eb063ac064',
@@ -34129,34 +34129,34 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «счётные слова, количество товаров, цены и денежные единицы.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «수④»: счётные слова, количество товаров, цены и денежные единицы.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('2958861e-5305-4c52-94eb-9d1a1825ebd5', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'primary')
+values ('8155cf7b-21e6-49fd-9d61-63fb1a4842a0', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('2958861e-5305-4c52-94eb-9d1a1825ebd5', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+values ('8155cf7b-21e6-49fd-9d61-63fb1a4842a0', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('2958861e-5305-4c52-94eb-9d1a1825ebd5', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+values ('8155cf7b-21e6-49fd-9d61-63fb1a4842a0', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('2958861e-5305-4c52-94eb-9d1a1825ebd5', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+values ('8155cf7b-21e6-49fd-9d61-63fb1a4842a0', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'adeeaba6-76f6-4ebd-906b-6faa93b07b58',
-  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  '8155cf7b-21e6-49fd-9d61-63fb1a4842a0',
   'opt1',
   '수④',
   '수④',
@@ -34169,7 +34169,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ea3dff57-8fd2-4a9e-ad1a-143c9a249431',
-  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  '8155cf7b-21e6-49fd-9d61-63fb1a4842a0',
   'opt2',
   'AV-(으)세요/-(으)십시오',
   'AV-(으)세요/-(으)십시오',
@@ -34182,7 +34182,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '179f0bed-9807-4cc4-8161-a91d89144464',
-  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  '8155cf7b-21e6-49fd-9d61-63fb1a4842a0',
   'opt3',
   'N이랑',
   'N이랑',
@@ -34195,7 +34195,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2a9f633c-9e66-41c8-b86a-936649aa24f0',
-  '2958861e-5305-4c52-94eb-9d1a1825ebd5',
+  '8155cf7b-21e6-49fd-9d61-63fb1a4842a0',
   'opt4',
   'AV-고 있다①',
   'AV-고 있다①',
@@ -34208,7 +34208,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4e6a5417-f862-4a6c-a967-9ab2a2e035f4',
+  'd5bd6a84-1aea-483b-a7b0-132481d5ef23',
   'exercise.grammar.u09.n01.application',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   '23c5932e-f49e-4a6e-9823-12eb063ac064',
@@ -34219,34 +34219,34 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «счётные слова, количество товаров, цены и денежные единицы.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «수④» — счётные слова, количество товаров, цены и денежные единицы.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4e6a5417-f862-4a6c-a967-9ab2a2e035f4', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'primary')
+values ('d5bd6a84-1aea-483b-a7b0-132481d5ef23', '23c5932e-f49e-4a6e-9823-12eb063ac064', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4e6a5417-f862-4a6c-a967-9ab2a2e035f4', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
+values ('d5bd6a84-1aea-483b-a7b0-132481d5ef23', '05c93655-e1d7-494a-9971-7f3b3f08270b', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4e6a5417-f862-4a6c-a967-9ab2a2e035f4', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
+values ('d5bd6a84-1aea-483b-a7b0-132481d5ef23', '914400c5-ce7c-4546-9f9a-fc3e0cb45c5a', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4e6a5417-f862-4a6c-a967-9ab2a2e035f4', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
+values ('d5bd6a84-1aea-483b-a7b0-132481d5ef23', '71c150f9-8d5d-4b9f-a864-37b59deb0136', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '39158e6d-9cd6-4488-93f5-38ec5fdfeb8b',
-  '4e6a5417-f862-4a6c-a967-9ab2a2e035f4',
+  'd5bd6a84-1aea-483b-a7b0-132481d5ef23',
   '수④',
   '수④',
   true,
@@ -34257,7 +34257,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '6becc5b8-dd0e-4ee8-8b7c-adb740ee341e',
-  '4e6a5417-f862-4a6c-a967-9ab2a2e035f4',
+  'd5bd6a84-1aea-483b-a7b0-132481d5ef23',
   '수',
   '수',
   false,
@@ -34268,7 +34268,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  '66a80836-f83b-4207-96a7-42c9f9e2189c',
   'exercise.grammar.u09.n02.recognition',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   'd34e895f-8378-4c0e-a775-fac2418cf4cc',
@@ -34279,22 +34279,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «вежливая просьба или команда; `-(으)십시오` формальнее.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)세요/-(으)십시오»: вежливая просьба или команда; `-(으)십시오` формальнее.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('357a7073-bf95-4f9a-82e7-ba1659d5ce9c', 'd34e895f-8378-4c0e-a775-fac2418cf4cc', 'primary')
+values ('66a80836-f83b-4207-96a7-42c9f9e2189c', 'd34e895f-8378-4c0e-a775-fac2418cf4cc', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd2e1c612-c05a-4048-bfed-d5901195a051',
-  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  '66a80836-f83b-4207-96a7-42c9f9e2189c',
   'opt1',
   'AV-(으)세요/-(으)십시오',
   'AV-(으)세요/-(으)십시오',
@@ -34307,7 +34307,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a1c71720-6e9f-4409-aa66-c002fcc53ee1',
-  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  '66a80836-f83b-4207-96a7-42c9f9e2189c',
   'opt2',
   '수④',
   '수④',
@@ -34320,7 +34320,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '809e3bb7-c7f9-4b8b-b1d4-45cdb6321b67',
-  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  '66a80836-f83b-4207-96a7-42c9f9e2189c',
   'opt3',
   'N이랑',
   'N이랑',
@@ -34333,7 +34333,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3837b24f-8969-4afc-b160-7444654a3703',
-  '357a7073-bf95-4f9a-82e7-ba1659d5ce9c',
+  '66a80836-f83b-4207-96a7-42c9f9e2189c',
   'opt4',
   'AV-고 있다①',
   'AV-고 있다①',
@@ -34346,7 +34346,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '35e95ca6-361e-4916-aa61-6d51eae54b9f',
+  'ecd022fc-8d5b-41c4-b28b-0e933d670739',
   'exercise.grammar.u09.n02.application',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   'd34e895f-8378-4c0e-a775-fac2418cf4cc',
@@ -34357,22 +34357,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «вежливая просьба или команда; `-(으)십시오` формальнее.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)세요/-(으)십시오» — вежливая просьба или команда; `-(으)십시오` формальнее.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('35e95ca6-361e-4916-aa61-6d51eae54b9f', 'd34e895f-8378-4c0e-a775-fac2418cf4cc', 'primary')
+values ('ecd022fc-8d5b-41c4-b28b-0e933d670739', 'd34e895f-8378-4c0e-a775-fac2418cf4cc', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '30dd1faf-ea96-4592-aaa8-81971b84f3d5',
-  '35e95ca6-361e-4916-aa61-6d51eae54b9f',
+  'ecd022fc-8d5b-41c4-b28b-0e933d670739',
   'AV-(으)세요/-(으)십시오',
   'AV-(으)세요/-(으)십시오',
   true,
@@ -34383,7 +34383,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  '308ecca2-c2d1-40fc-9118-57a3b14b3707',
   'exercise.grammar.u09.n03.recognition',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724',
@@ -34394,22 +34394,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «разговорное «и/с» после существительного.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N이랑»: разговорное «и/с» после существительного.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7c0edecb-8bf2-4ba7-a2b3-5e623676fea8', 'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724', 'primary')
+values ('308ecca2-c2d1-40fc-9118-57a3b14b3707', 'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c6a04b84-f123-4d8a-aec8-fe819cb9ccdb',
-  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  '308ecca2-c2d1-40fc-9118-57a3b14b3707',
   'opt1',
   'N이랑',
   'N이랑',
@@ -34422,7 +34422,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c7531e9c-fdf9-4a20-b477-0b69dc06c169',
-  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  '308ecca2-c2d1-40fc-9118-57a3b14b3707',
   'opt2',
   '수④',
   '수④',
@@ -34435,7 +34435,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '97542b72-3be7-43d0-bb32-9e0449946682',
-  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  '308ecca2-c2d1-40fc-9118-57a3b14b3707',
   'opt3',
   'AV-(으)세요/-(으)십시오',
   'AV-(으)세요/-(으)십시오',
@@ -34448,7 +34448,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c48ea3d2-d05f-496d-b5e9-4589367c9304',
-  '7c0edecb-8bf2-4ba7-a2b3-5e623676fea8',
+  '308ecca2-c2d1-40fc-9118-57a3b14b3707',
   'opt4',
   'AV-고 있다①',
   'AV-고 있다①',
@@ -34461,7 +34461,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '268d44e7-18d5-4656-b004-890711d78533',
+  '666175b8-ce75-49ad-b18d-2182b6fa61b2',
   'exercise.grammar.u09.n03.application',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724',
@@ -34472,22 +34472,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «разговорное «и/с» после существительного.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N이랑» — разговорное «и/с» после существительного.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('268d44e7-18d5-4656-b004-890711d78533', 'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724', 'primary')
+values ('666175b8-ce75-49ad-b18d-2182b6fa61b2', 'ad6346e6-0c6f-4bf7-9ef8-829f3be7d724', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'f8beb614-db32-4173-b09a-063d071d30b8',
-  '268d44e7-18d5-4656-b004-890711d78533',
+  '666175b8-ce75-49ad-b18d-2182b6fa61b2',
   'N이랑',
   'N이랑',
   true,
@@ -34498,7 +34498,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  '4f57a83e-83fb-40c2-86cb-581bffab2c37',
   'exercise.grammar.u09.n04.recognition',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   '7a58f58a-c03c-42b0-afeb-c08ba1b01171',
@@ -34509,22 +34509,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «действие, продолжающееся в момент речи.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-고 있다①»: действие, продолжающееся в момент речи.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('887fa2ba-2d5b-4282-8266-af7bfa104dfe', '7a58f58a-c03c-42b0-afeb-c08ba1b01171', 'primary')
+values ('4f57a83e-83fb-40c2-86cb-581bffab2c37', '7a58f58a-c03c-42b0-afeb-c08ba1b01171', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0c2e1c6e-27e3-4fb4-a1ea-f82711a78750',
-  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  '4f57a83e-83fb-40c2-86cb-581bffab2c37',
   'opt1',
   'AV-고 있다①',
   'AV-고 있다①',
@@ -34537,7 +34537,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b8f2d634-25aa-4cff-a1bc-ffef8757dcc4',
-  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  '4f57a83e-83fb-40c2-86cb-581bffab2c37',
   'opt2',
   '수④',
   '수④',
@@ -34550,7 +34550,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c9b77792-ca55-4c84-8d1c-c98a9b36f98b',
-  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  '4f57a83e-83fb-40c2-86cb-581bffab2c37',
   'opt3',
   'AV-(으)세요/-(으)십시오',
   'AV-(으)세요/-(으)십시오',
@@ -34563,7 +34563,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f1ea8cef-ef6a-4eae-8fdb-0752ed3e9da0',
-  '887fa2ba-2d5b-4282-8266-af7bfa104dfe',
+  '4f57a83e-83fb-40c2-86cb-581bffab2c37',
   'opt4',
   'N이랑',
   'N이랑',
@@ -34576,7 +34576,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0fe61894-899b-48ce-a9c5-784b1824513c',
+  'c9c8a67e-453a-4738-8db0-06ad60b12cfe',
   'exercise.grammar.u09.n04.application',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   '7a58f58a-c03c-42b0-afeb-c08ba1b01171',
@@ -34587,22 +34587,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «действие, продолжающееся в момент речи.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-고 있다①» — действие, продолжающееся в момент речи.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('0fe61894-899b-48ce-a9c5-784b1824513c', '7a58f58a-c03c-42b0-afeb-c08ba1b01171', 'primary')
+values ('c9c8a67e-453a-4738-8db0-06ad60b12cfe', '7a58f58a-c03c-42b0-afeb-c08ba1b01171', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '2981a589-fb04-4587-a989-60790714a9cf',
-  '0fe61894-899b-48ce-a9c5-784b1824513c',
+  'c9c8a67e-453a-4738-8db0-06ad60b12cfe',
   'AV-고 있다①',
   'AV-고 있다①',
   true,
@@ -34613,7 +34613,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'f12b016b-d644-4421-b5dc-ab6b848fa81e',
-  '0fe61894-899b-48ce-a9c5-784b1824513c',
+  'c9c8a67e-453a-4738-8db0-06ad60b12cfe',
   'AV-고 있다',
   'AV-고 있다',
   false,
@@ -34624,7 +34624,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'ed9549e1-cf09-4aea-81a1-75ca00c25e00',
   'exercise.grammar.u09.n05.recognition',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   '07191fe0-9b53-4189-b9c5-6024d35fc792',
@@ -34635,22 +34635,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «адресат или источник действия: «кому/у кого/от кого».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N에게(서)/한테(서)»: адресат или источник действия: «кому/у кого/от кого».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('04d92d78-9461-4aa6-973b-7134ce794577', '07191fe0-9b53-4189-b9c5-6024d35fc792', 'primary')
+values ('ed9549e1-cf09-4aea-81a1-75ca00c25e00', '07191fe0-9b53-4189-b9c5-6024d35fc792', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7e309f7f-a299-4a6d-8aea-ec2f13ee8329',
-  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'ed9549e1-cf09-4aea-81a1-75ca00c25e00',
   'opt1',
   'N에게(서)/한테(서)',
   'N에게(서)/한테(서)',
@@ -34663,7 +34663,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f515a179-8287-4210-91e7-08fa050645d0',
-  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'ed9549e1-cf09-4aea-81a1-75ca00c25e00',
   'opt2',
   '수④',
   '수④',
@@ -34676,7 +34676,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '57ca0ada-7c1b-4138-8e1d-a30bb597472b',
-  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'ed9549e1-cf09-4aea-81a1-75ca00c25e00',
   'opt3',
   'AV-(으)세요/-(으)십시오',
   'AV-(으)세요/-(으)십시오',
@@ -34689,7 +34689,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '89b5a93f-7069-464a-8187-35884fb5a36a',
-  '04d92d78-9461-4aa6-973b-7134ce794577',
+  'ed9549e1-cf09-4aea-81a1-75ca00c25e00',
   'opt4',
   'N이랑',
   'N이랑',
@@ -34702,7 +34702,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0c54b46e-cd69-48a9-8c26-0df1d6c6a3fb',
+  '1cd97682-2447-492a-a786-99088962325a',
   'exercise.grammar.u09.n05.application',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   '07191fe0-9b53-4189-b9c5-6024d35fc792',
@@ -34713,22 +34713,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «адресат или источник действия: «кому/у кого/от кого».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N에게(서)/한테(서)» — адресат или источник действия: «кому/у кого/от кого».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('0c54b46e-cd69-48a9-8c26-0df1d6c6a3fb', '07191fe0-9b53-4189-b9c5-6024d35fc792', 'primary')
+values ('1cd97682-2447-492a-a786-99088962325a', '07191fe0-9b53-4189-b9c5-6024d35fc792', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '0fd6eb53-0d41-4fb8-bad2-1a5c2b3f835e',
-  '0c54b46e-cd69-48a9-8c26-0df1d6c6a3fb',
+  '1cd97682-2447-492a-a786-99088962325a',
   'N에게(서)/한테(서)',
   'N에게(서)/한테(서)',
   true,
@@ -34739,7 +34739,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  '3c94ea08-1dbb-4ce4-9dc7-26b23103a438',
   'exercise.grammar.u10.n01.recognition',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '3abf4efa-6f21-4cd7-aefe-1707f822b409',
@@ -34750,22 +34750,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «предлагает совместное действие или спрашивает решение собеседника.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)ㄹ까요?①»: предлагает совместное действие или спрашивает решение собеседника.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('190a00fb-d07a-49ec-a8cd-29d00150f859', '3abf4efa-6f21-4cd7-aefe-1707f822b409', 'primary')
+values ('3c94ea08-1dbb-4ce4-9dc7-26b23103a438', '3abf4efa-6f21-4cd7-aefe-1707f822b409', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '857ea55e-4a0f-4d49-9223-692792b2a14c',
-  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  '3c94ea08-1dbb-4ce4-9dc7-26b23103a438',
   'opt1',
   'AV-(으)ㄹ까요?①',
   'AV-(으)ㄹ까요?①',
@@ -34778,7 +34778,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '00448b77-44b7-4ab5-97b2-5066c152db20',
-  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  '3c94ea08-1dbb-4ce4-9dc7-26b23103a438',
   'opt2',
   'AV-(으)ㅂ시다',
   'AV-(으)ㅂ시다',
@@ -34791,7 +34791,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9125bf5c-9d30-417f-b27e-d93a9339aecf',
-  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  '3c94ea08-1dbb-4ce4-9dc7-26b23103a438',
   'opt3',
   'V-(으)니까①/N(이)니까',
   'V-(으)니까①/N(이)니까',
@@ -34804,7 +34804,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '072e7285-a563-45a7-a470-9f28f07bb21b',
-  '190a00fb-d07a-49ec-a8cd-29d00150f859',
+  '3c94ea08-1dbb-4ce4-9dc7-26b23103a438',
   'opt4',
   'AV-고 싶다',
   'AV-고 싶다',
@@ -34817,7 +34817,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'b8505ed9-b1c9-4c89-ae1b-d10607a66559',
+  '463ee0b6-9d7f-45f2-8bd3-a379dfb35854',
   'exercise.grammar.u10.n01.application',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '3abf4efa-6f21-4cd7-aefe-1707f822b409',
@@ -34828,22 +34828,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «предлагает совместное действие или спрашивает решение собеседника.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)ㄹ까요?①» — предлагает совместное действие или спрашивает решение собеседника.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('b8505ed9-b1c9-4c89-ae1b-d10607a66559', '3abf4efa-6f21-4cd7-aefe-1707f822b409', 'primary')
+values ('463ee0b6-9d7f-45f2-8bd3-a379dfb35854', '3abf4efa-6f21-4cd7-aefe-1707f822b409', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'b3abdad7-fe05-4904-b3a4-6714040cdd7b',
-  'b8505ed9-b1c9-4c89-ae1b-d10607a66559',
+  '463ee0b6-9d7f-45f2-8bd3-a379dfb35854',
   'AV-(으)ㄹ까요?①',
   'AV-(으)ㄹ까요?①',
   true,
@@ -34854,7 +34854,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '5730e1a2-7a57-4f38-b45c-28f6063608e8',
-  'b8505ed9-b1c9-4c89-ae1b-d10607a66559',
+  '463ee0b6-9d7f-45f2-8bd3-a379dfb35854',
   'AV-(으)ㄹ까요?',
   'AV-(으)ㄹ까요?',
   false,
@@ -34865,7 +34865,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  '07d7f2bb-4716-47a9-9fc7-478a35d48d41',
   'exercise.grammar.u10.n02.recognition',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '061ecaf0-518b-488a-903e-fafff4b0e7b0',
@@ -34876,22 +34876,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «формальное «давайте сделаем».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)ㅂ시다»: формальное «давайте сделаем».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('07c2458b-ce7a-480c-b8d2-5832438ceb26', '061ecaf0-518b-488a-903e-fafff4b0e7b0', 'primary')
+values ('07d7f2bb-4716-47a9-9fc7-478a35d48d41', '061ecaf0-518b-488a-903e-fafff4b0e7b0', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9fdfdde2-41ac-4862-ba01-bd02d40f7021',
-  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  '07d7f2bb-4716-47a9-9fc7-478a35d48d41',
   'opt1',
   'AV-(으)ㅂ시다',
   'AV-(으)ㅂ시다',
@@ -34904,7 +34904,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e68547ad-f5c7-43fb-9c34-d541d922b99b',
-  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  '07d7f2bb-4716-47a9-9fc7-478a35d48d41',
   'opt2',
   'AV-(으)ㄹ까요?①',
   'AV-(으)ㄹ까요?①',
@@ -34917,7 +34917,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8abdd8ae-8f84-4fa0-9cea-de99317f6721',
-  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  '07d7f2bb-4716-47a9-9fc7-478a35d48d41',
   'opt3',
   'V-(으)니까①/N(이)니까',
   'V-(으)니까①/N(이)니까',
@@ -34930,7 +34930,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f973e378-70d0-47b5-97b0-08c588e74608',
-  '07c2458b-ce7a-480c-b8d2-5832438ceb26',
+  '07d7f2bb-4716-47a9-9fc7-478a35d48d41',
   'opt4',
   'AV-고 싶다',
   'AV-고 싶다',
@@ -34943,7 +34943,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '6b6844d7-b42c-4b90-8fa7-15449ba40b97',
+  '7d83a598-f7fe-4c86-9bf1-8823fae1c794',
   'exercise.grammar.u10.n02.application',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '061ecaf0-518b-488a-903e-fafff4b0e7b0',
@@ -34954,22 +34954,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «формальное «давайте сделаем».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)ㅂ시다» — формальное «давайте сделаем».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('6b6844d7-b42c-4b90-8fa7-15449ba40b97', '061ecaf0-518b-488a-903e-fafff4b0e7b0', 'primary')
+values ('7d83a598-f7fe-4c86-9bf1-8823fae1c794', '061ecaf0-518b-488a-903e-fafff4b0e7b0', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '760bd223-d0fd-4e09-836c-1eca9efd9aa2',
-  '6b6844d7-b42c-4b90-8fa7-15449ba40b97',
+  '7d83a598-f7fe-4c86-9bf1-8823fae1c794',
   'AV-(으)ㅂ시다',
   'AV-(으)ㅂ시다',
   true,
@@ -34980,7 +34980,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  '6af5a1e6-5fb5-45bc-bb54-fa719a7a0dbe',
   'exercise.grammar.u10.n03.recognition',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a',
@@ -34991,22 +34991,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает причину, особенно перед просьбой, предложением или выводом.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-(으)니까①/N(이)니까»: выражает причину, особенно перед просьбой, предложением или выводом.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('b10fc43b-9305-49a7-8069-94e5fb415fbc', '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a', 'primary')
+values ('6af5a1e6-5fb5-45bc-bb54-fa719a7a0dbe', '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '005a15ec-3cc1-4917-814c-58a07bd8956c',
-  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  '6af5a1e6-5fb5-45bc-bb54-fa719a7a0dbe',
   'opt1',
   'V-(으)니까①/N(이)니까',
   'V-(으)니까①/N(이)니까',
@@ -35019,7 +35019,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6f7e5532-1e0a-4f31-b2a5-516ef47ea2ca',
-  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  '6af5a1e6-5fb5-45bc-bb54-fa719a7a0dbe',
   'opt2',
   'AV-(으)ㄹ까요?①',
   'AV-(으)ㄹ까요?①',
@@ -35032,7 +35032,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5034a4e6-933e-462b-be0d-15d84499f060',
-  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  '6af5a1e6-5fb5-45bc-bb54-fa719a7a0dbe',
   'opt3',
   'AV-(으)ㅂ시다',
   'AV-(으)ㅂ시다',
@@ -35045,7 +35045,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'eb44c712-8e49-4d6c-a567-21a626b3503d',
-  'b10fc43b-9305-49a7-8069-94e5fb415fbc',
+  '6af5a1e6-5fb5-45bc-bb54-fa719a7a0dbe',
   'opt4',
   'AV-고 싶다',
   'AV-고 싶다',
@@ -35058,7 +35058,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '767ab4bb-4272-4be8-ac60-b4398060b3c3',
+  '8b9e11e8-13fb-4413-887d-d47254e0ee1a',
   'exercise.grammar.u10.n03.application',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a',
@@ -35069,22 +35069,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает причину, особенно перед просьбой, предложением или выводом.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-(으)니까①/N(이)니까» — выражает причину, особенно перед просьбой, предложением или выводом.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('767ab4bb-4272-4be8-ac60-b4398060b3c3', '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a', 'primary')
+values ('8b9e11e8-13fb-4413-887d-d47254e0ee1a', '2c9bc4ff-748d-4c7e-a9e1-b4c1b7f6eb1a', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'bfafc9fc-2842-4997-89ca-03611373a1a8',
-  '767ab4bb-4272-4be8-ac60-b4398060b3c3',
+  '8b9e11e8-13fb-4413-887d-d47254e0ee1a',
   'V-(으)니까①/N(이)니까',
   'V-(으)니까①/N(이)니까',
   true,
@@ -35095,7 +35095,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'e4da9c10-bbb8-4684-aa80-dc5bbe7781af',
-  '767ab4bb-4272-4be8-ac60-b4398060b3c3',
+  '8b9e11e8-13fb-4413-887d-d47254e0ee1a',
   'V-(으)니까/N(이)니까',
   'V-(으)니까/N(이)니까',
   false,
@@ -35106,7 +35106,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'eb29244e-9768-4f5f-b46c-51513a3f74ce',
   'exercise.grammar.u10.n04.recognition',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '41adbad8-eebc-47ec-b4ea-caeaf78d5b90',
@@ -35117,22 +35117,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает желание говорящего выполнить действие.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-고 싶다»: выражает желание говорящего выполнить действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099', '41adbad8-eebc-47ec-b4ea-caeaf78d5b90', 'primary')
+values ('eb29244e-9768-4f5f-b46c-51513a3f74ce', '41adbad8-eebc-47ec-b4ea-caeaf78d5b90', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '07601b0f-2d17-4ac0-b1ec-bc82cc681ed7',
-  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'eb29244e-9768-4f5f-b46c-51513a3f74ce',
   'opt1',
   'AV-고 싶다',
   'AV-고 싶다',
@@ -35145,7 +35145,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '69cc8b6a-fe9f-4094-9a3d-034a07463824',
-  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'eb29244e-9768-4f5f-b46c-51513a3f74ce',
   'opt2',
   'AV-(으)ㄹ까요?①',
   'AV-(으)ㄹ까요?①',
@@ -35158,7 +35158,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5de6ff1f-aef6-4e04-a98a-192d5b6c1ce3',
-  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'eb29244e-9768-4f5f-b46c-51513a3f74ce',
   'opt3',
   'AV-(으)ㅂ시다',
   'AV-(으)ㅂ시다',
@@ -35171,7 +35171,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f12d1f3c-e43c-4274-ba55-7566e1fe311f',
-  '4f6f52c5-f6c2-4ff4-a0f4-8db4a6ef9099',
+  'eb29244e-9768-4f5f-b46c-51513a3f74ce',
   'opt4',
   'V-(으)니까①/N(이)니까',
   'V-(으)니까①/N(이)니까',
@@ -35184,7 +35184,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '1cdcd6bc-2f90-4e3e-adcc-621ce38def8a',
+  '7023e01e-b31f-4d57-8055-1d16079fc850',
   'exercise.grammar.u10.n04.application',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '41adbad8-eebc-47ec-b4ea-caeaf78d5b90',
@@ -35195,22 +35195,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает желание говорящего выполнить действие.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-고 싶다» — выражает желание говорящего выполнить действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('1cdcd6bc-2f90-4e3e-adcc-621ce38def8a', '41adbad8-eebc-47ec-b4ea-caeaf78d5b90', 'primary')
+values ('7023e01e-b31f-4d57-8055-1d16079fc850', '41adbad8-eebc-47ec-b4ea-caeaf78d5b90', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '04c3ef62-38cb-46b8-922c-8ccb8c498806',
-  '1cdcd6bc-2f90-4e3e-adcc-621ce38def8a',
+  '7023e01e-b31f-4d57-8055-1d16079fc850',
   'AV-고 싶다',
   'AV-고 싶다',
   true,
@@ -35221,7 +35221,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'f2bf701b-b2b2-4042-acad-d083d1140a8f',
   'exercise.grammar.u10.n05.recognition',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f',
@@ -35232,22 +35232,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает решение или намерение говорящего в текущей ситуации.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-겠-①»: выражает решение или намерение говорящего в текущей ситуации.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4', '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f', 'primary')
+values ('f2bf701b-b2b2-4042-acad-d083d1140a8f', '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a083ffe5-7ec9-488e-a3ab-2ec602724754',
-  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'f2bf701b-b2b2-4042-acad-d083d1140a8f',
   'opt1',
   'AV-겠-①',
   'AV-겠-①',
@@ -35260,7 +35260,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7ab0bea9-aa32-482f-a90c-0ae79383d005',
-  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'f2bf701b-b2b2-4042-acad-d083d1140a8f',
   'opt2',
   'AV-(으)ㄹ까요?①',
   'AV-(으)ㄹ까요?①',
@@ -35273,7 +35273,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd6caed87-ec9d-42ef-a76e-b4d4fbf0fbd7',
-  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'f2bf701b-b2b2-4042-acad-d083d1140a8f',
   'opt3',
   'AV-(으)ㅂ시다',
   'AV-(으)ㅂ시다',
@@ -35286,7 +35286,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '16c32eda-3347-49ab-b3b7-61ece9410618',
-  '68c6fbbf-7d92-460d-9cb1-1a70a0d3fed4',
+  'f2bf701b-b2b2-4042-acad-d083d1140a8f',
   'opt4',
   'V-(으)니까①/N(이)니까',
   'V-(으)니까①/N(이)니까',
@@ -35299,7 +35299,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '900aea8c-7fea-472d-98cf-379dec1cdb80',
+  '78ab5156-0043-4374-bc8a-033ae9472e03',
   'exercise.grammar.u10.n05.application',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f',
@@ -35310,22 +35310,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает решение или намерение говорящего в текущей ситуации.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-겠-①» — выражает решение или намерение говорящего в текущей ситуации.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('900aea8c-7fea-472d-98cf-379dec1cdb80', '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f', 'primary')
+values ('78ab5156-0043-4374-bc8a-033ae9472e03', '7b3ca26e-7a66-4176-a4bb-b860c3f69a9f', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '76fb2fae-913f-4d9b-bcf5-4d6083b29c18',
-  '900aea8c-7fea-472d-98cf-379dec1cdb80',
+  '78ab5156-0043-4374-bc8a-033ae9472e03',
   'AV-겠-①',
   'AV-겠-①',
   true,
@@ -35336,7 +35336,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '94b43ff5-3956-43d9-9d5b-6c47098de0a6',
-  '900aea8c-7fea-472d-98cf-379dec1cdb80',
+  '78ab5156-0043-4374-bc8a-033ae9472e03',
   'AV-겠-',
   'AV-겠-',
   false,
@@ -35347,7 +35347,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  '1ababd91-8fb5-4e43-97a1-7062ca232b53',
   'exercise.grammar.u11.n01.recognition',
   'df512da8-8f48-486f-801d-5260291b8d89',
   '89fc27d6-28c0-426d-8b59-bd14e3efa1a5',
@@ -35358,22 +35358,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «просит подтверждение известного или ожидаемого факта.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-지요?/N(이)지요?»: просит подтверждение известного или ожидаемого факта.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('ab09d396-850e-4e8f-b1e8-a6148b1bc739', '89fc27d6-28c0-426d-8b59-bd14e3efa1a5', 'primary')
+values ('1ababd91-8fb5-4e43-97a1-7062ca232b53', '89fc27d6-28c0-426d-8b59-bd14e3efa1a5', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bb27ebe1-6d08-45d7-8986-f8a7395a16bc',
-  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  '1ababd91-8fb5-4e43-97a1-7062ca232b53',
   'opt1',
   'V-지요?/N(이)지요?',
   'V-지요?/N(이)지요?',
@@ -35386,7 +35386,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '32530d25-e3cd-4107-8454-ac21055022ed',
-  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  '1ababd91-8fb5-4e43-97a1-7062ca232b53',
   'opt2',
   'V-겠-②/N이겠-',
   'V-겠-②/N이겠-',
@@ -35399,7 +35399,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '159eece3-581d-46f7-8a03-73d75e80c4aa',
-  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  '1ababd91-8fb5-4e43-97a1-7062ca232b53',
   'opt3',
   'AV-아/어/여 주다',
   'AV-아/어/여 주다',
@@ -35412,7 +35412,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c591f3ca-1fd7-4f35-ab6b-ab14dc4d1f03',
-  'ab09d396-850e-4e8f-b1e8-a6148b1bc739',
+  '1ababd91-8fb5-4e43-97a1-7062ca232b53',
   'opt4',
   'V-(으)면/N이면',
   'V-(으)면/N이면',
@@ -35425,7 +35425,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'aee9b0b4-362f-4880-a7fe-298eb54fe401',
+  '194fa1dd-2222-40f6-a533-cff8d5361d67',
   'exercise.grammar.u11.n01.application',
   'df512da8-8f48-486f-801d-5260291b8d89',
   '89fc27d6-28c0-426d-8b59-bd14e3efa1a5',
@@ -35436,22 +35436,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «просит подтверждение известного или ожидаемого факта.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-지요?/N(이)지요?» — просит подтверждение известного или ожидаемого факта.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('aee9b0b4-362f-4880-a7fe-298eb54fe401', '89fc27d6-28c0-426d-8b59-bd14e3efa1a5', 'primary')
+values ('194fa1dd-2222-40f6-a533-cff8d5361d67', '89fc27d6-28c0-426d-8b59-bd14e3efa1a5', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'a3e9e2a4-c53d-49c7-97f1-1f0402aa50a4',
-  'aee9b0b4-362f-4880-a7fe-298eb54fe401',
+  '194fa1dd-2222-40f6-a533-cff8d5361d67',
   'V-지요?/N(이)지요?',
   'V-지요?/N(이)지요?',
   true,
@@ -35462,7 +35462,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  '39c7ae9a-f6b4-4654-85f8-0f9f52a63c81',
   'exercise.grammar.u11.n02.recognition',
   'df512da8-8f48-486f-801d-5260291b8d89',
   '565a91c3-0493-4077-b4e9-5c1a9ddb1451',
@@ -35473,22 +35473,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает предположение по имеющимся признакам.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-겠-②/N이겠-»: выражает предположение по имеющимся признакам.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('3eacb830-9124-4e92-b6e5-7bd2415ab2e2', '565a91c3-0493-4077-b4e9-5c1a9ddb1451', 'primary')
+values ('39c7ae9a-f6b4-4654-85f8-0f9f52a63c81', '565a91c3-0493-4077-b4e9-5c1a9ddb1451', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b094c997-0cf6-4085-a0d7-49bcd7c7fbe3',
-  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  '39c7ae9a-f6b4-4654-85f8-0f9f52a63c81',
   'opt1',
   'V-겠-②/N이겠-',
   'V-겠-②/N이겠-',
@@ -35501,7 +35501,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bcaa3d12-4f68-4808-a3ca-d0645638fb58',
-  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  '39c7ae9a-f6b4-4654-85f8-0f9f52a63c81',
   'opt2',
   'V-지요?/N(이)지요?',
   'V-지요?/N(이)지요?',
@@ -35514,7 +35514,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b8c5a568-c2c5-43da-8c63-d05045533fc2',
-  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  '39c7ae9a-f6b4-4654-85f8-0f9f52a63c81',
   'opt3',
   'AV-아/어/여 주다',
   'AV-아/어/여 주다',
@@ -35527,7 +35527,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a116a060-681b-4435-aac9-d19eb244b208',
-  '3eacb830-9124-4e92-b6e5-7bd2415ab2e2',
+  '39c7ae9a-f6b4-4654-85f8-0f9f52a63c81',
   'opt4',
   'V-(으)면/N이면',
   'V-(으)면/N이면',
@@ -35540,7 +35540,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'e78726bb-1027-4ec4-ad41-52220f2ba726',
+  'e9376ece-1f91-4112-b3f9-4314a580b903',
   'exercise.grammar.u11.n02.application',
   'df512da8-8f48-486f-801d-5260291b8d89',
   '565a91c3-0493-4077-b4e9-5c1a9ddb1451',
@@ -35551,22 +35551,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает предположение по имеющимся признакам.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-겠-②/N이겠-» — выражает предположение по имеющимся признакам.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('e78726bb-1027-4ec4-ad41-52220f2ba726', '565a91c3-0493-4077-b4e9-5c1a9ddb1451', 'primary')
+values ('e9376ece-1f91-4112-b3f9-4314a580b903', '565a91c3-0493-4077-b4e9-5c1a9ddb1451', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'e737a7c6-4497-43e8-9bff-784542a28d2c',
-  'e78726bb-1027-4ec4-ad41-52220f2ba726',
+  'e9376ece-1f91-4112-b3f9-4314a580b903',
   'V-겠-②/N이겠-',
   'V-겠-②/N이겠-',
   true,
@@ -35577,7 +35577,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'b704a770-bae7-44ec-bcec-f047176900ee',
-  'e78726bb-1027-4ec4-ad41-52220f2ba726',
+  'e9376ece-1f91-4112-b3f9-4314a580b903',
   'V-겠-/N이겠-',
   'V-겠-/N이겠-',
   false,
@@ -35588,7 +35588,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  '982af1fc-8274-43df-aad4-b1c1e27bd000',
   'exercise.grammar.u11.n03.recognition',
   'df512da8-8f48-486f-801d-5260291b8d89',
   '430fd2d3-a80d-407c-9e35-d312829dba68',
@@ -35599,22 +35599,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «действие, выполненное для другого человека.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-아/어/여 주다»: действие, выполненное для другого человека.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('61ffcb91-bf41-486d-8703-f190e3ab69ac', '430fd2d3-a80d-407c-9e35-d312829dba68', 'primary')
+values ('982af1fc-8274-43df-aad4-b1c1e27bd000', '430fd2d3-a80d-407c-9e35-d312829dba68', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3696221a-ce6d-4bd4-8d79-43fc33002cc4',
-  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  '982af1fc-8274-43df-aad4-b1c1e27bd000',
   'opt1',
   'AV-아/어/여 주다',
   'AV-아/어/여 주다',
@@ -35627,7 +35627,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ba4c5caa-4b24-4d5e-ab58-b67aa97aceab',
-  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  '982af1fc-8274-43df-aad4-b1c1e27bd000',
   'opt2',
   'V-지요?/N(이)지요?',
   'V-지요?/N(이)지요?',
@@ -35640,7 +35640,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3393782a-c003-4ae8-ba6f-c50b9ff52a02',
-  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  '982af1fc-8274-43df-aad4-b1c1e27bd000',
   'opt3',
   'V-겠-②/N이겠-',
   'V-겠-②/N이겠-',
@@ -35653,7 +35653,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4939b2f4-9d1c-4940-87a0-aa8440224c89',
-  '61ffcb91-bf41-486d-8703-f190e3ab69ac',
+  '982af1fc-8274-43df-aad4-b1c1e27bd000',
   'opt4',
   'V-(으)면/N이면',
   'V-(으)면/N이면',
@@ -35666,7 +35666,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '9cbae4c1-89d3-408c-9efc-85f8a38a9f24',
+  '71c98dca-cd48-4fa3-aaf2-851335ac6bb8',
   'exercise.grammar.u11.n03.application',
   'df512da8-8f48-486f-801d-5260291b8d89',
   '430fd2d3-a80d-407c-9e35-d312829dba68',
@@ -35677,22 +35677,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «действие, выполненное для другого человека.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-아/어/여 주다» — действие, выполненное для другого человека.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('9cbae4c1-89d3-408c-9efc-85f8a38a9f24', '430fd2d3-a80d-407c-9e35-d312829dba68', 'primary')
+values ('71c98dca-cd48-4fa3-aaf2-851335ac6bb8', '430fd2d3-a80d-407c-9e35-d312829dba68', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '279e4119-98f3-46d5-bf39-fc5d9224d83e',
-  '9cbae4c1-89d3-408c-9efc-85f8a38a9f24',
+  '71c98dca-cd48-4fa3-aaf2-851335ac6bb8',
   'AV-아/어/여 주다',
   'AV-아/어/여 주다',
   true,
@@ -35703,7 +35703,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'a37bad15-ba67-4014-880e-6d0d6248bb5f',
   'exercise.grammar.u11.n04.recognition',
   'df512da8-8f48-486f-801d-5260291b8d89',
   'c0005fb3-26c0-4541-98ea-5bc63b5476da',
@@ -35714,22 +35714,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «условие или повторяющаяся ситуация «если/когда».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-(으)면/N이면»: условие или повторяющаяся ситуация «если/когда».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('33847de7-e1fa-41c4-adf1-75b370270f37', 'c0005fb3-26c0-4541-98ea-5bc63b5476da', 'primary')
+values ('a37bad15-ba67-4014-880e-6d0d6248bb5f', 'c0005fb3-26c0-4541-98ea-5bc63b5476da', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '168c90cc-8afa-46e7-8b13-448c4b6122bc',
-  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'a37bad15-ba67-4014-880e-6d0d6248bb5f',
   'opt1',
   'V-(으)면/N이면',
   'V-(으)면/N이면',
@@ -35742,7 +35742,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b96c9b74-4f65-4200-b49d-cb55d5926498',
-  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'a37bad15-ba67-4014-880e-6d0d6248bb5f',
   'opt2',
   'V-지요?/N(이)지요?',
   'V-지요?/N(이)지요?',
@@ -35755,7 +35755,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '65bcaffe-2cc1-46af-8b12-6349a1a8c680',
-  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'a37bad15-ba67-4014-880e-6d0d6248bb5f',
   'opt3',
   'V-겠-②/N이겠-',
   'V-겠-②/N이겠-',
@@ -35768,7 +35768,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9b0b32e1-33cc-41d6-965a-10a3bf10e4f6',
-  '33847de7-e1fa-41c4-adf1-75b370270f37',
+  'a37bad15-ba67-4014-880e-6d0d6248bb5f',
   'opt4',
   'AV-아/어/여 주다',
   'AV-아/어/여 주다',
@@ -35781,7 +35781,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd063d2f6-e266-4358-a0f3-bd492beaf6ea',
+  '6f8a0600-bc0d-4df3-8475-f07b8aa26548',
   'exercise.grammar.u11.n04.application',
   'df512da8-8f48-486f-801d-5260291b8d89',
   'c0005fb3-26c0-4541-98ea-5bc63b5476da',
@@ -35792,22 +35792,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «условие или повторяющаяся ситуация «если/когда».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-(으)면/N이면» — условие или повторяющаяся ситуация «если/когда».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('d063d2f6-e266-4358-a0f3-bd492beaf6ea', 'c0005fb3-26c0-4541-98ea-5bc63b5476da', 'primary')
+values ('6f8a0600-bc0d-4df3-8475-f07b8aa26548', 'c0005fb3-26c0-4541-98ea-5bc63b5476da', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'b6d12a06-fba1-4721-9905-fbc6f8541a2b',
-  'd063d2f6-e266-4358-a0f3-bd492beaf6ea',
+  '6f8a0600-bc0d-4df3-8475-f07b8aa26548',
   'V-(으)면/N이면',
   'V-(으)면/N이면',
   true,
@@ -35818,7 +35818,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'd26a640c-0477-4dab-b953-d5e6e49bd764',
   'exercise.grammar.u11.n05.recognition',
   'df512da8-8f48-486f-801d-5260291b8d89',
   '02211b82-623d-4b85-8780-3683370a7752',
@@ -35829,22 +35829,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «ㄷ 동사»: описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8', '02211b82-623d-4b85-8780-3683370a7752', 'primary')
+values ('d26a640c-0477-4dab-b953-d5e6e49bd764', '02211b82-623d-4b85-8780-3683370a7752', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2897d0c6-da23-446c-806a-c0e8c77cc8ae',
-  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'd26a640c-0477-4dab-b953-d5e6e49bd764',
   'opt1',
   'ㄷ 동사',
   'ㄷ 동사',
@@ -35857,7 +35857,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '454afa5d-ee07-4dac-abcf-f8eaaf5658f3',
-  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'd26a640c-0477-4dab-b953-d5e6e49bd764',
   'opt2',
   'V-지요?/N(이)지요?',
   'V-지요?/N(이)지요?',
@@ -35870,7 +35870,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c7044f6a-f9ec-47a7-94de-32903c6474aa',
-  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'd26a640c-0477-4dab-b953-d5e6e49bd764',
   'opt3',
   'V-겠-②/N이겠-',
   'V-겠-②/N이겠-',
@@ -35883,7 +35883,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bd0f9415-7044-4d20-a770-7a1b8553fd11',
-  '8d54d8e5-6d55-4ac3-81bb-94b3c84c3db8',
+  'd26a640c-0477-4dab-b953-d5e6e49bd764',
   'opt4',
   'AV-아/어/여 주다',
   'AV-아/어/여 주다',
@@ -35896,7 +35896,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '9dc5d21f-4e45-4e0b-95d2-c1c5cf163d7a',
+  '50d6ae7b-503c-41eb-8c4c-46c720eab33d',
   'exercise.grammar.u11.n05.application',
   'df512da8-8f48-486f-801d-5260291b8d89',
   '02211b82-623d-4b85-8780-3683370a7752',
@@ -35907,22 +35907,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «ㄷ 동사» — описывает переход `ㄷ → ㄹ` перед гласной у соответствующих неправильных глаголов.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('9dc5d21f-4e45-4e0b-95d2-c1c5cf163d7a', '02211b82-623d-4b85-8780-3683370a7752', 'primary')
+values ('50d6ae7b-503c-41eb-8c4c-46c720eab33d', '02211b82-623d-4b85-8780-3683370a7752', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '9dc9f7e9-f61e-4291-b759-d2bb7aa03ed8',
-  '9dc5d21f-4e45-4e0b-95d2-c1c5cf163d7a',
+  '50d6ae7b-503c-41eb-8c4c-46c720eab33d',
   'ㄷ 동사',
   'ㄷ 동사',
   true,
@@ -35933,7 +35933,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  '10ba6d15-6f0d-4843-bf3d-931ee4afabd3',
   'exercise.grammar.u12.n01.recognition',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   '002f5586-a1f8-4b97-bc23-f4505d7d3806',
@@ -35944,22 +35944,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-아/어/여서②/N이어/여서»: выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('096b191f-b28e-4f4c-8656-22bcf0ec92ab', '002f5586-a1f8-4b97-bc23-f4505d7d3806', 'primary')
+values ('10ba6d15-6f0d-4843-bf3d-931ee4afabd3', '002f5586-a1f8-4b97-bc23-f4505d7d3806', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f5b1a0a9-9e3f-41ad-860c-0a29cccec760',
-  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  '10ba6d15-6f0d-4843-bf3d-931ee4afabd3',
   'opt1',
   'V-아/어/여서②/N이어/여서',
   'V-아/어/여서②/N이어/여서',
@@ -35972,7 +35972,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c971ae45-da88-4ebd-a8d8-1cb70447bffe',
-  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  '10ba6d15-6f0d-4843-bf3d-931ee4afabd3',
   'opt2',
   'AV-(으)ㄹ 수 있다/없다',
   'AV-(으)ㄹ 수 있다/없다',
@@ -35985,7 +35985,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5961196f-ef40-4f95-a832-4304025ef3a3',
-  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  '10ba6d15-6f0d-4843-bf3d-931ee4afabd3',
   'opt3',
   'V-(으)ㄹ까요?②/N일까요?',
   'V-(으)ㄹ까요?②/N일까요?',
@@ -35998,7 +35998,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a363173f-0e0c-4d43-933a-fafc2ff79cff',
-  '096b191f-b28e-4f4c-8656-22bcf0ec92ab',
+  '10ba6d15-6f0d-4843-bf3d-931ee4afabd3',
   'opt4',
   'AV-(으)ㄹ 거예요②/N일 거예요',
   'AV-(으)ㄹ 거예요②/N일 거예요',
@@ -36011,7 +36011,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0ebd19d2-1369-4845-83f1-ac2e777810df',
+  '3e9e92ab-a89a-4524-867f-d1c1057fc0db',
   'exercise.grammar.u12.n01.application',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   '002f5586-a1f8-4b97-bc23-f4505d7d3806',
@@ -36022,22 +36022,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-아/어/여서②/N이어/여서» — выражает причину: первая часть объясняет вторую; именная форма присоединяется к существительному.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('0ebd19d2-1369-4845-83f1-ac2e777810df', '002f5586-a1f8-4b97-bc23-f4505d7d3806', 'primary')
+values ('3e9e92ab-a89a-4524-867f-d1c1057fc0db', '002f5586-a1f8-4b97-bc23-f4505d7d3806', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'eebe9271-f473-4dfa-9afe-dbbdd9d7b915',
-  '0ebd19d2-1369-4845-83f1-ac2e777810df',
+  '3e9e92ab-a89a-4524-867f-d1c1057fc0db',
   'V-아/어/여서②/N이어/여서',
   'V-아/어/여서②/N이어/여서',
   true,
@@ -36048,7 +36048,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '499e5d43-5581-4dcb-973b-0bb2cfcf95f6',
-  '0ebd19d2-1369-4845-83f1-ac2e777810df',
+  '3e9e92ab-a89a-4524-867f-d1c1057fc0db',
   'V-아/어/여서/N이어/여서',
   'V-아/어/여서/N이어/여서',
   false,
@@ -36059,7 +36059,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  '560396f0-02b1-45d5-81b3-9bfba568404f',
   'exercise.grammar.u12.n02.recognition',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   '4c859c1a-69e4-4006-a14f-36b2ba02c220',
@@ -36070,22 +36070,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «возможность, способность или невозможность выполнить действие.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)ㄹ 수 있다/없다»: возможность, способность или невозможность выполнить действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('d961e44c-3e2f-4142-a85c-394b297c5118', '4c859c1a-69e4-4006-a14f-36b2ba02c220', 'primary')
+values ('560396f0-02b1-45d5-81b3-9bfba568404f', '4c859c1a-69e4-4006-a14f-36b2ba02c220', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7e1d3d97-b692-44bb-b12c-1b0ac019c0e7',
-  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  '560396f0-02b1-45d5-81b3-9bfba568404f',
   'opt1',
   'AV-(으)ㄹ 수 있다/없다',
   'AV-(으)ㄹ 수 있다/없다',
@@ -36098,7 +36098,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'be428ef0-63c1-42df-b9de-7b2cb7976f43',
-  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  '560396f0-02b1-45d5-81b3-9bfba568404f',
   'opt2',
   'V-아/어/여서②/N이어/여서',
   'V-아/어/여서②/N이어/여서',
@@ -36111,7 +36111,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8293de9a-e7a0-40e5-905b-2c4847f2cb9f',
-  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  '560396f0-02b1-45d5-81b3-9bfba568404f',
   'opt3',
   'V-(으)ㄹ까요?②/N일까요?',
   'V-(으)ㄹ까요?②/N일까요?',
@@ -36124,7 +36124,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c41cf3d5-5d12-48bc-bfa4-72c8ac89ec9a',
-  'd961e44c-3e2f-4142-a85c-394b297c5118',
+  '560396f0-02b1-45d5-81b3-9bfba568404f',
   'opt4',
   'AV-(으)ㄹ 거예요②/N일 거예요',
   'AV-(으)ㄹ 거예요②/N일 거예요',
@@ -36137,7 +36137,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'b0b82627-d935-42cc-8df2-fdf1e2dcc39b',
+  'fa333e62-0768-4e10-b37f-1757a624b79d',
   'exercise.grammar.u12.n02.application',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   '4c859c1a-69e4-4006-a14f-36b2ba02c220',
@@ -36148,22 +36148,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «возможность, способность или невозможность выполнить действие.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)ㄹ 수 있다/없다» — возможность, способность или невозможность выполнить действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('b0b82627-d935-42cc-8df2-fdf1e2dcc39b', '4c859c1a-69e4-4006-a14f-36b2ba02c220', 'primary')
+values ('fa333e62-0768-4e10-b37f-1757a624b79d', '4c859c1a-69e4-4006-a14f-36b2ba02c220', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'ef9b68e9-05e1-4ea8-a2e2-f8961cd1889d',
-  'b0b82627-d935-42cc-8df2-fdf1e2dcc39b',
+  'fa333e62-0768-4e10-b37f-1757a624b79d',
   'AV-(으)ㄹ 수 있다/없다',
   'AV-(으)ㄹ 수 있다/없다',
   true,
@@ -36174,7 +36174,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  '6273ce1f-919b-4dfa-add1-55498588da9d',
   'exercise.grammar.u12.n03.recognition',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   'e5cca2ff-779a-4aee-acb0-26d487b93ec0',
@@ -36185,22 +36185,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «вопрос-предположение о будущем или неизвестном факте.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-(으)ㄹ까요?②/N일까요?»: вопрос-предположение о будущем или неизвестном факте.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('1a2603a0-dd6a-4d07-b193-dc33432f2b9e', 'e5cca2ff-779a-4aee-acb0-26d487b93ec0', 'primary')
+values ('6273ce1f-919b-4dfa-add1-55498588da9d', 'e5cca2ff-779a-4aee-acb0-26d487b93ec0', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2398fc98-702d-4ebf-a550-8cf56cf7bc95',
-  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  '6273ce1f-919b-4dfa-add1-55498588da9d',
   'opt1',
   'V-(으)ㄹ까요?②/N일까요?',
   'V-(으)ㄹ까요?②/N일까요?',
@@ -36213,7 +36213,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd547f40f-bb3d-48dc-97f0-ab37afb1da48',
-  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  '6273ce1f-919b-4dfa-add1-55498588da9d',
   'opt2',
   'V-아/어/여서②/N이어/여서',
   'V-아/어/여서②/N이어/여서',
@@ -36226,7 +36226,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e4b651b5-eb97-4506-a38f-b3d9faeda603',
-  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  '6273ce1f-919b-4dfa-add1-55498588da9d',
   'opt3',
   'AV-(으)ㄹ 수 있다/없다',
   'AV-(으)ㄹ 수 있다/없다',
@@ -36239,7 +36239,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '01900236-349b-4915-b220-d9cfebe7f25e',
-  '1a2603a0-dd6a-4d07-b193-dc33432f2b9e',
+  '6273ce1f-919b-4dfa-add1-55498588da9d',
   'opt4',
   'AV-(으)ㄹ 거예요②/N일 거예요',
   'AV-(으)ㄹ 거예요②/N일 거예요',
@@ -36252,7 +36252,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '18018682-38f1-4232-a354-b930247cc30a',
+  'af7340a7-e5a0-4f24-a310-25d9696542c0',
   'exercise.grammar.u12.n03.application',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   'e5cca2ff-779a-4aee-acb0-26d487b93ec0',
@@ -36263,22 +36263,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «вопрос-предположение о будущем или неизвестном факте.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-(으)ㄹ까요?②/N일까요?» — вопрос-предположение о будущем или неизвестном факте.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('18018682-38f1-4232-a354-b930247cc30a', 'e5cca2ff-779a-4aee-acb0-26d487b93ec0', 'primary')
+values ('af7340a7-e5a0-4f24-a310-25d9696542c0', 'e5cca2ff-779a-4aee-acb0-26d487b93ec0', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '59f98335-4f8a-47d2-a3f9-47e4a62fede0',
-  '18018682-38f1-4232-a354-b930247cc30a',
+  'af7340a7-e5a0-4f24-a310-25d9696542c0',
   'V-(으)ㄹ까요?②/N일까요?',
   'V-(으)ㄹ까요?②/N일까요?',
   true,
@@ -36289,7 +36289,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '3450cd70-8432-4182-ae68-1081f2d632c1',
-  '18018682-38f1-4232-a354-b930247cc30a',
+  'af7340a7-e5a0-4f24-a310-25d9696542c0',
   'V-(으)ㄹ까요?/N일까요?',
   'V-(으)ㄹ까요?/N일까요?',
   false,
@@ -36300,7 +36300,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  '849006bd-1dfe-4a78-95ba-df79807bf841',
   'exercise.grammar.u12.n04.recognition',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   '05cd47b1-ee91-44e0-89d4-1c7f018e831c',
@@ -36311,22 +36311,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «предположение о чужом действии или неподконтрольном факте.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)ㄹ 거예요②/N일 거예요»: предположение о чужом действии или неподконтрольном факте.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7425f839-b55f-4ef3-9ecc-88183de85fc0', '05cd47b1-ee91-44e0-89d4-1c7f018e831c', 'primary')
+values ('849006bd-1dfe-4a78-95ba-df79807bf841', '05cd47b1-ee91-44e0-89d4-1c7f018e831c', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'abf01629-f614-47f1-ab0a-52e6f2ff44b8',
-  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  '849006bd-1dfe-4a78-95ba-df79807bf841',
   'opt1',
   'AV-(으)ㄹ 거예요②/N일 거예요',
   'AV-(으)ㄹ 거예요②/N일 거예요',
@@ -36339,7 +36339,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a0085e65-c362-4f59-a872-55f3008992e5',
-  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  '849006bd-1dfe-4a78-95ba-df79807bf841',
   'opt2',
   'V-아/어/여서②/N이어/여서',
   'V-아/어/여서②/N이어/여서',
@@ -36352,7 +36352,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '61d225ed-3825-46ad-af12-7b3671cec055',
-  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  '849006bd-1dfe-4a78-95ba-df79807bf841',
   'opt3',
   'AV-(으)ㄹ 수 있다/없다',
   'AV-(으)ㄹ 수 있다/없다',
@@ -36365,7 +36365,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7a588c6f-f385-409e-81dd-97f40a6ef551',
-  '7425f839-b55f-4ef3-9ecc-88183de85fc0',
+  '849006bd-1dfe-4a78-95ba-df79807bf841',
   'opt4',
   'V-(으)ㄹ까요?②/N일까요?',
   'V-(으)ㄹ까요?②/N일까요?',
@@ -36378,7 +36378,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '40b4e9c7-3174-458c-8ca0-87f2896a4841',
+  'c571b411-9d34-4e73-8650-5c7c6bc1470c',
   'exercise.grammar.u12.n04.application',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   '05cd47b1-ee91-44e0-89d4-1c7f018e831c',
@@ -36389,22 +36389,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «предположение о чужом действии или неподконтрольном факте.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)ㄹ 거예요②/N일 거예요» — предположение о чужом действии или неподконтрольном факте.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('40b4e9c7-3174-458c-8ca0-87f2896a4841', '05cd47b1-ee91-44e0-89d4-1c7f018e831c', 'primary')
+values ('c571b411-9d34-4e73-8650-5c7c6bc1470c', '05cd47b1-ee91-44e0-89d4-1c7f018e831c', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'f6e98754-19a1-4e14-88be-02552cceed56',
-  '40b4e9c7-3174-458c-8ca0-87f2896a4841',
+  'c571b411-9d34-4e73-8650-5c7c6bc1470c',
   'AV-(으)ㄹ 거예요②/N일 거예요',
   'AV-(으)ㄹ 거예요②/N일 거예요',
   true,
@@ -36415,7 +36415,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'ff587aa5-3d52-4374-9a53-f39dd3e801a4',
-  '40b4e9c7-3174-458c-8ca0-87f2896a4841',
+  'c571b411-9d34-4e73-8650-5c7c6bc1470c',
   'AV-(으)ㄹ 거예요/N일 거예요',
   'AV-(으)ㄹ 거예요/N일 거예요',
   false,
@@ -36426,7 +36426,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  '157fe9e2-457a-4694-b038-d12ed96fb1e3',
   'exercise.grammar.u12.n05.recognition',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f',
@@ -36437,22 +36437,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «обещание или решение говорящего, принятое с учётом собеседника.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)ㄹ게요»: обещание или решение говорящего, принятое с учётом собеседника.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('62a17542-406b-497f-bef6-f2cafbfbd478', '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f', 'primary')
+values ('157fe9e2-457a-4694-b038-d12ed96fb1e3', '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c2c0e95d-4a35-4ace-af76-539597e07323',
-  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  '157fe9e2-457a-4694-b038-d12ed96fb1e3',
   'opt1',
   'AV-(으)ㄹ게요',
   'AV-(으)ㄹ게요',
@@ -36465,7 +36465,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e5c56757-e9ba-4528-8dff-a2b483b85c2a',
-  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  '157fe9e2-457a-4694-b038-d12ed96fb1e3',
   'opt2',
   'V-아/어/여서②/N이어/여서',
   'V-아/어/여서②/N이어/여서',
@@ -36478,7 +36478,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '724d0899-ed64-467d-a374-687eff11330c',
-  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  '157fe9e2-457a-4694-b038-d12ed96fb1e3',
   'opt3',
   'AV-(으)ㄹ 수 있다/없다',
   'AV-(으)ㄹ 수 있다/없다',
@@ -36491,7 +36491,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2554d31c-bd92-4bb3-a197-2d60573b426a',
-  '62a17542-406b-497f-bef6-f2cafbfbd478',
+  '157fe9e2-457a-4694-b038-d12ed96fb1e3',
   'opt4',
   'V-(으)ㄹ까요?②/N일까요?',
   'V-(으)ㄹ까요?②/N일까요?',
@@ -36504,7 +36504,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0b8e32e6-7d7f-4d3f-a17c-ee0a857e863c',
+  '94b870ab-beac-4269-a289-272409420fa0',
   'exercise.grammar.u12.n05.application',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f',
@@ -36515,22 +36515,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «обещание или решение говорящего, принятое с учётом собеседника.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)ㄹ게요» — обещание или решение говорящего, принятое с учётом собеседника.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('0b8e32e6-7d7f-4d3f-a17c-ee0a857e863c', '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f', 'primary')
+values ('94b870ab-beac-4269-a289-272409420fa0', '1712a6e5-cd1a-45d1-8c64-e66fb1b3d26f', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '5195191a-55a8-4fd2-91a3-a10533184742',
-  '0b8e32e6-7d7f-4d3f-a17c-ee0a857e863c',
+  '94b870ab-beac-4269-a289-272409420fa0',
   'AV-(으)ㄹ게요',
   'AV-(으)ㄹ게요',
   true,
@@ -36541,7 +36541,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  '31075126-0cd0-47cb-945e-0d6bd7d4809b',
   'exercise.grammar.u13.n01.recognition',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   '97dbcbc3-8066-455a-a1ef-a39fd478e8fd',
@@ -36552,22 +36552,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «та же вежливая форма используется как мягкая просьба, команда или предложение по контексту.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-아/어/여요②»: та же вежливая форма используется как мягкая просьба, команда или предложение по контексту.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7c5bb49b-e983-4adc-846e-9e8397bf70a4', '97dbcbc3-8066-455a-a1ef-a39fd478e8fd', 'primary')
+values ('31075126-0cd0-47cb-945e-0d6bd7d4809b', '97dbcbc3-8066-455a-a1ef-a39fd478e8fd', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ad7f3c5e-b1cd-4c7c-8854-f97a2c06a4fb',
-  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  '31075126-0cd0-47cb-945e-0d6bd7d4809b',
   'opt1',
   'AV-아/어/여요②',
   'AV-아/어/여요②',
@@ -36580,7 +36580,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9f23e0e2-346f-4d82-9ca1-60fa781d8a96',
-  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  '31075126-0cd0-47cb-945e-0d6bd7d4809b',
   'opt2',
   'N(으)로②',
   'N(으)로②',
@@ -36593,7 +36593,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ee8f8149-530f-4c9c-9267-0a001508957f',
-  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  '31075126-0cd0-47cb-945e-0d6bd7d4809b',
   'opt3',
   'ㄹ 동사',
   'ㄹ 동사',
@@ -36606,7 +36606,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4df5030c-fe66-46b9-a026-df59c5665d39',
-  '7c5bb49b-e983-4adc-846e-9e8397bf70a4',
+  '31075126-0cd0-47cb-945e-0d6bd7d4809b',
   'opt4',
   'V-거나/N이나',
   'V-거나/N이나',
@@ -36619,7 +36619,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '1685d36a-4023-40bf-83e0-107ca1956db1',
+  '4985da10-c389-4546-a83f-718aa6471b6e',
   'exercise.grammar.u13.n01.application',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   '97dbcbc3-8066-455a-a1ef-a39fd478e8fd',
@@ -36630,22 +36630,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «та же вежливая форма используется как мягкая просьба, команда или предложение по контексту.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-아/어/여요②» — та же вежливая форма используется как мягкая просьба, команда или предложение по контексту.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('1685d36a-4023-40bf-83e0-107ca1956db1', '97dbcbc3-8066-455a-a1ef-a39fd478e8fd', 'primary')
+values ('4985da10-c389-4546-a83f-718aa6471b6e', '97dbcbc3-8066-455a-a1ef-a39fd478e8fd', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '0eb63bbb-5adf-488c-83c0-6a3113cce76f',
-  '1685d36a-4023-40bf-83e0-107ca1956db1',
+  '4985da10-c389-4546-a83f-718aa6471b6e',
   'AV-아/어/여요②',
   'AV-아/어/여요②',
   true,
@@ -36656,7 +36656,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '0332456c-b06b-4d67-aa9a-f1b1e8bc4c9d',
-  '1685d36a-4023-40bf-83e0-107ca1956db1',
+  '4985da10-c389-4546-a83f-718aa6471b6e',
   'AV-아/어/여요',
   'AV-아/어/여요',
   false,
@@ -36667,7 +36667,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'ffc2fda5-0504-4b00-b4d5-b1bd7327f56d',
   'exercise.grammar.u13.n02.recognition',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   'e5e7f5ee-764b-4288-85a0-42ade11f8d7d',
@@ -36678,26 +36678,26 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «обозначает средство, инструмент или способ передвижения.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N(으)로②»: обозначает средство, инструмент или способ передвижения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('01531d83-a6c9-4536-8ba8-1f5b0d6d4728', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'primary')
+values ('ffc2fda5-0504-4b00-b4d5-b1bd7327f56d', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('01531d83-a6c9-4536-8ba8-1f5b0d6d4728', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'secondary')
+values ('ffc2fda5-0504-4b00-b4d5-b1bd7327f56d', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'secondary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '71e6674a-4bef-48d9-b90c-f34f424ecc6a',
-  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'ffc2fda5-0504-4b00-b4d5-b1bd7327f56d',
   'opt1',
   'N(으)로②',
   'N(으)로②',
@@ -36710,7 +36710,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2318404d-98d6-4582-9fb3-1dd10afba373',
-  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'ffc2fda5-0504-4b00-b4d5-b1bd7327f56d',
   'opt2',
   'AV-아/어/여요②',
   'AV-아/어/여요②',
@@ -36723,7 +36723,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b631e81d-7983-4bbe-8f30-72ad548e3387',
-  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'ffc2fda5-0504-4b00-b4d5-b1bd7327f56d',
   'opt3',
   'ㄹ 동사',
   'ㄹ 동사',
@@ -36736,7 +36736,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f97eea30-1548-4d4d-a558-cfdfa9775371',
-  '01531d83-a6c9-4536-8ba8-1f5b0d6d4728',
+  'ffc2fda5-0504-4b00-b4d5-b1bd7327f56d',
   'opt4',
   'V-거나/N이나',
   'V-거나/N이나',
@@ -36749,7 +36749,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'fa1ba7f8-7b62-4d13-90e5-e4265902b835',
+  '8f7618a6-708f-407d-8d4d-b74a768d932b',
   'exercise.grammar.u13.n02.application',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   'e5e7f5ee-764b-4288-85a0-42ade11f8d7d',
@@ -36760,26 +36760,26 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «обозначает средство, инструмент или способ передвижения.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1","ans2"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N(으)로②» — обозначает средство, инструмент или способ передвижения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('fa1ba7f8-7b62-4d13-90e5-e4265902b835', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'primary')
+values ('8f7618a6-708f-407d-8d4d-b74a768d932b', 'e5e7f5ee-764b-4288-85a0-42ade11f8d7d', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('fa1ba7f8-7b62-4d13-90e5-e4265902b835', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'secondary')
+values ('8f7618a6-708f-407d-8d4d-b74a768d932b', '214132fd-fdc0-43dd-a962-e42ff1c23fcb', 'secondary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '3d7ba355-4e31-428d-9402-faeb3691d7fc',
-  'fa1ba7f8-7b62-4d13-90e5-e4265902b835',
+  '8f7618a6-708f-407d-8d4d-b74a768d932b',
   'N(으)로②',
   'N(으)로②',
   true,
@@ -36790,7 +36790,7 @@ insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '15745382-9891-424f-a28e-3ee45051856b',
-  'fa1ba7f8-7b62-4d13-90e5-e4265902b835',
+  '8f7618a6-708f-407d-8d4d-b74a768d932b',
   'N(으)로',
   'N(으)로',
   false,
@@ -36801,7 +36801,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '91488265-408e-4b76-a803-8b4273dd5111',
+  'd57acfff-09c5-4289-9982-f776051e1975',
   'exercise.grammar.u13.n03.recognition',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   'cfdc61fd-7dbc-4629-8174-04724cab75de',
@@ -36812,22 +36812,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «ㄹ 동사»: описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('91488265-408e-4b76-a803-8b4273dd5111', 'cfdc61fd-7dbc-4629-8174-04724cab75de', 'primary')
+values ('d57acfff-09c5-4289-9982-f776051e1975', 'cfdc61fd-7dbc-4629-8174-04724cab75de', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0e8ccd8b-0786-4a88-bcf0-7aa47408e0a2',
-  '91488265-408e-4b76-a803-8b4273dd5111',
+  'd57acfff-09c5-4289-9982-f776051e1975',
   'opt1',
   'ㄹ 동사',
   'ㄹ 동사',
@@ -36840,7 +36840,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '274d2e93-2a4b-4087-b598-9ea16113c6e2',
-  '91488265-408e-4b76-a803-8b4273dd5111',
+  'd57acfff-09c5-4289-9982-f776051e1975',
   'opt2',
   'AV-아/어/여요②',
   'AV-아/어/여요②',
@@ -36853,7 +36853,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '29cd2f5b-bc4a-48ff-8057-bedebd4a7f4b',
-  '91488265-408e-4b76-a803-8b4273dd5111',
+  'd57acfff-09c5-4289-9982-f776051e1975',
   'opt3',
   'N(으)로②',
   'N(으)로②',
@@ -36866,7 +36866,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f620cbce-274e-4775-8b6b-981682c17a2f',
-  '91488265-408e-4b76-a803-8b4273dd5111',
+  'd57acfff-09c5-4289-9982-f776051e1975',
   'opt4',
   'V-거나/N이나',
   'V-거나/N이나',
@@ -36879,7 +36879,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '353b9c8e-b672-441c-8f5d-9441b9d0f314',
+  '55713520-8101-4f75-a582-90e17fb3ac9a',
   'exercise.grammar.u13.n03.application',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   'cfdc61fd-7dbc-4629-8174-04724cab75de',
@@ -36890,22 +36890,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «ㄹ 동사» — описывает выпадение конечного `ㄹ` перед `ㄴ`, `ㅂ`, `ㅅ` и его сохранение в остальных позициях.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('353b9c8e-b672-441c-8f5d-9441b9d0f314', 'cfdc61fd-7dbc-4629-8174-04724cab75de', 'primary')
+values ('55713520-8101-4f75-a582-90e17fb3ac9a', 'cfdc61fd-7dbc-4629-8174-04724cab75de', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'def03c97-32dc-4450-bddf-f981a54e5e90',
-  '353b9c8e-b672-441c-8f5d-9441b9d0f314',
+  '55713520-8101-4f75-a582-90e17fb3ac9a',
   'ㄹ 동사',
   'ㄹ 동사',
   true,
@@ -36916,7 +36916,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  '4641a2e2-8326-4326-9974-e9c6f5471fed',
   'exercise.grammar.u13.n04.recognition',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   'f893a08f-9d51-414b-89cf-4e2ee2d6db28',
@@ -36927,22 +36927,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «соединяет альтернативы значением «или».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-거나/N이나»: соединяет альтернативы значением «или».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('a4553fb3-180e-4fed-8a1f-ccabe8348653', 'f893a08f-9d51-414b-89cf-4e2ee2d6db28', 'primary')
+values ('4641a2e2-8326-4326-9974-e9c6f5471fed', 'f893a08f-9d51-414b-89cf-4e2ee2d6db28', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6fad275a-f18d-40f2-a29d-9fd9b65968fe',
-  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  '4641a2e2-8326-4326-9974-e9c6f5471fed',
   'opt1',
   'V-거나/N이나',
   'V-거나/N이나',
@@ -36955,7 +36955,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b163e863-2ddc-4e86-8293-2d2a336afa80',
-  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  '4641a2e2-8326-4326-9974-e9c6f5471fed',
   'opt2',
   'AV-아/어/여요②',
   'AV-아/어/여요②',
@@ -36968,7 +36968,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b201c267-1f7b-4f40-a913-803783e98e32',
-  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  '4641a2e2-8326-4326-9974-e9c6f5471fed',
   'opt3',
   'N(으)로②',
   'N(으)로②',
@@ -36981,7 +36981,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '529d31b4-7b52-40f3-9d90-8bda16a2f723',
-  'a4553fb3-180e-4fed-8a1f-ccabe8348653',
+  '4641a2e2-8326-4326-9974-e9c6f5471fed',
   'opt4',
   'ㄹ 동사',
   'ㄹ 동사',
@@ -36994,7 +36994,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '149c7eb1-8639-4d8e-a5a3-fbe169cb9efa',
+  '1943a25f-77a2-4932-b83c-c893c9086b30',
   'exercise.grammar.u13.n04.application',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   'f893a08f-9d51-414b-89cf-4e2ee2d6db28',
@@ -37005,22 +37005,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «соединяет альтернативы значением «или».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-거나/N이나» — соединяет альтернативы значением «или».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('149c7eb1-8639-4d8e-a5a3-fbe169cb9efa', 'f893a08f-9d51-414b-89cf-4e2ee2d6db28', 'primary')
+values ('1943a25f-77a2-4932-b83c-c893c9086b30', 'f893a08f-9d51-414b-89cf-4e2ee2d6db28', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'b7103556-36f0-4ee7-9942-89284de3fdc7',
-  '149c7eb1-8639-4d8e-a5a3-fbe169cb9efa',
+  '1943a25f-77a2-4932-b83c-c893c9086b30',
   'V-거나/N이나',
   'V-거나/N이나',
   true,
@@ -37031,7 +37031,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  '2d560c89-3037-4a0f-9d98-3e0bd86b3ae3',
   'exercise.grammar.u13.n05.recognition',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   '6f412792-8b46-433a-a8e8-d1b23f47256a',
@@ -37042,22 +37042,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает объективную невозможность или отсутствие умения.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «못 AV/AV-지 못하다»: выражает объективную невозможность или отсутствие умения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('8f359f01-ee14-4b00-99fb-b18c8edff517', '6f412792-8b46-433a-a8e8-d1b23f47256a', 'primary')
+values ('2d560c89-3037-4a0f-9d98-3e0bd86b3ae3', '6f412792-8b46-433a-a8e8-d1b23f47256a', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5e6b7ecb-82b2-446b-aeed-6f7356727b43',
-  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  '2d560c89-3037-4a0f-9d98-3e0bd86b3ae3',
   'opt1',
   '못 AV/AV-지 못하다',
   '못 AV/AV-지 못하다',
@@ -37070,7 +37070,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'acaeb640-c48d-4f9a-b68e-948628721975',
-  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  '2d560c89-3037-4a0f-9d98-3e0bd86b3ae3',
   'opt2',
   'AV-아/어/여요②',
   'AV-아/어/여요②',
@@ -37083,7 +37083,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c2a80538-8190-433d-8561-4f493809bb1d',
-  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  '2d560c89-3037-4a0f-9d98-3e0bd86b3ae3',
   'opt3',
   'N(으)로②',
   'N(으)로②',
@@ -37096,7 +37096,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '74bd5788-531c-4793-87dd-811b76d7704e',
-  '8f359f01-ee14-4b00-99fb-b18c8edff517',
+  '2d560c89-3037-4a0f-9d98-3e0bd86b3ae3',
   'opt4',
   'ㄹ 동사',
   'ㄹ 동사',
@@ -37109,7 +37109,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd2ca06a3-cad9-43b1-ad2a-91c52abc6a3c',
+  '40b0e47d-2d80-4041-915e-455658b35d8d',
   'exercise.grammar.u13.n05.application',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   '6f412792-8b46-433a-a8e8-d1b23f47256a',
@@ -37120,22 +37120,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает объективную невозможность или отсутствие умения.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «못 AV/AV-지 못하다» — выражает объективную невозможность или отсутствие умения.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('d2ca06a3-cad9-43b1-ad2a-91c52abc6a3c', '6f412792-8b46-433a-a8e8-d1b23f47256a', 'primary')
+values ('40b0e47d-2d80-4041-915e-455658b35d8d', '6f412792-8b46-433a-a8e8-d1b23f47256a', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '26f442ad-0556-481e-92b7-9d9cbdd215cd',
-  'd2ca06a3-cad9-43b1-ad2a-91c52abc6a3c',
+  '40b0e47d-2d80-4041-915e-455658b35d8d',
   '못 AV/AV-지 못하다',
   '못 AV/AV-지 못하다',
   true,
@@ -37146,7 +37146,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '3943c5ab-a815-4760-af36-437b53240178',
+  'ecee0dca-1148-43d9-b065-2f71a1b398a6',
   'exercise.grammar.u14.n01.recognition',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   '3b09c8d4-883e-4aa2-a69b-965dc62066f4',
@@ -37157,22 +37157,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает намерение или подготовленный план выполнить действие.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)려고 하다»: выражает намерение или подготовленный план выполнить действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('3943c5ab-a815-4760-af36-437b53240178', '3b09c8d4-883e-4aa2-a69b-965dc62066f4', 'primary')
+values ('ecee0dca-1148-43d9-b065-2f71a1b398a6', '3b09c8d4-883e-4aa2-a69b-965dc62066f4', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '02bbc7bf-d573-4a6f-96da-70c9bd68597c',
-  '3943c5ab-a815-4760-af36-437b53240178',
+  'ecee0dca-1148-43d9-b065-2f71a1b398a6',
   'opt1',
   'AV-(으)려고 하다',
   'AV-(으)려고 하다',
@@ -37185,7 +37185,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e793a6c0-6f28-48fa-ac00-df64d1700a48',
-  '3943c5ab-a815-4760-af36-437b53240178',
+  'ecee0dca-1148-43d9-b065-2f71a1b398a6',
   'opt2',
   'N께서/N께서는',
   'N께서/N께서는',
@@ -37198,7 +37198,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8575e8db-21cf-495c-8255-2c59fa3941d1',
-  '3943c5ab-a815-4760-af36-437b53240178',
+  'ecee0dca-1148-43d9-b065-2f71a1b398a6',
   'opt3',
   'V-(으)시-/N이시-',
   'V-(으)시-/N이시-',
@@ -37211,7 +37211,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6eb8c52b-603e-48c7-a7fd-07c59d9ef626',
-  '3943c5ab-a815-4760-af36-437b53240178',
+  'ecee0dca-1148-43d9-b065-2f71a1b398a6',
   'opt4',
   'V-아/어/야 되다/하다',
   'V-아/어/야 되다/하다',
@@ -37224,7 +37224,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7ed7340b-5c6b-45ca-a576-f76c81f13f78',
+  '6f4f5a52-2ef4-4f4c-8d2a-4ff9e55071a1',
   'exercise.grammar.u14.n01.application',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   '3b09c8d4-883e-4aa2-a69b-965dc62066f4',
@@ -37235,22 +37235,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает намерение или подготовленный план выполнить действие.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)려고 하다» — выражает намерение или подготовленный план выполнить действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7ed7340b-5c6b-45ca-a576-f76c81f13f78', '3b09c8d4-883e-4aa2-a69b-965dc62066f4', 'primary')
+values ('6f4f5a52-2ef4-4f4c-8d2a-4ff9e55071a1', '3b09c8d4-883e-4aa2-a69b-965dc62066f4', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '808a54aa-9e78-4392-86f7-5b956ee9b676',
-  '7ed7340b-5c6b-45ca-a576-f76c81f13f78',
+  '6f4f5a52-2ef4-4f4c-8d2a-4ff9e55071a1',
   'AV-(으)려고 하다',
   'AV-(으)려고 하다',
   true,
@@ -37261,7 +37261,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  '73f434fe-0344-4faf-9a97-99ca07a3805c',
   'exercise.grammar.u14.n02.recognition',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   'c81d1630-7bb1-4b5a-8018-c16e9133a58f',
@@ -37272,22 +37272,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «почтительные аналоги маркеров подлежащего и темы.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N께서/N께서는»: почтительные аналоги маркеров подлежащего и темы.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('6407bd94-c8b5-4e22-92cc-98b03331d9e3', 'c81d1630-7bb1-4b5a-8018-c16e9133a58f', 'primary')
+values ('73f434fe-0344-4faf-9a97-99ca07a3805c', 'c81d1630-7bb1-4b5a-8018-c16e9133a58f', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '13bdf5c9-279a-4555-bd87-b47b9c71d404',
-  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  '73f434fe-0344-4faf-9a97-99ca07a3805c',
   'opt1',
   'N께서/N께서는',
   'N께서/N께서는',
@@ -37300,7 +37300,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6cc62247-e52d-4686-b55a-ef59d383300d',
-  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  '73f434fe-0344-4faf-9a97-99ca07a3805c',
   'opt2',
   'AV-(으)려고 하다',
   'AV-(으)려고 하다',
@@ -37313,7 +37313,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '812a5e3a-d0bb-4f52-b339-cb81cc2f247f',
-  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  '73f434fe-0344-4faf-9a97-99ca07a3805c',
   'opt3',
   'V-(으)시-/N이시-',
   'V-(으)시-/N이시-',
@@ -37326,7 +37326,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7745004d-2382-49b2-984a-b0a86c96e0e6',
-  '6407bd94-c8b5-4e22-92cc-98b03331d9e3',
+  '73f434fe-0344-4faf-9a97-99ca07a3805c',
   'opt4',
   'V-아/어/야 되다/하다',
   'V-아/어/야 되다/하다',
@@ -37339,7 +37339,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a2c25dc3-b6c3-4044-99a0-8849ee39b948',
+  '4c86daac-93e5-44c0-936b-6d81667b33ad',
   'exercise.grammar.u14.n02.application',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   'c81d1630-7bb1-4b5a-8018-c16e9133a58f',
@@ -37350,22 +37350,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «почтительные аналоги маркеров подлежащего и темы.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N께서/N께서는» — почтительные аналоги маркеров подлежащего и темы.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('a2c25dc3-b6c3-4044-99a0-8849ee39b948', 'c81d1630-7bb1-4b5a-8018-c16e9133a58f', 'primary')
+values ('4c86daac-93e5-44c0-936b-6d81667b33ad', 'c81d1630-7bb1-4b5a-8018-c16e9133a58f', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '0e821f83-ae38-46a8-8c24-3ba2cff7cc36',
-  'a2c25dc3-b6c3-4044-99a0-8849ee39b948',
+  '4c86daac-93e5-44c0-936b-6d81667b33ad',
   'N께서/N께서는',
   'N께서/N께서는',
   true,
@@ -37376,7 +37376,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'd7dcba05-1338-4cdb-bb66-97918ef00971',
   'exercise.grammar.u14.n03.recognition',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   '288c870d-e9cb-4980-9d2d-9cd8d93f11a2',
@@ -37387,22 +37387,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «почтительно маркирует действие, состояние или статус уважаемого лица.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-(으)시-/N이시-»: почтительно маркирует действие, состояние или статус уважаемого лица.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('f2029ec6-14a9-4f15-aceb-c893e3366d97', '288c870d-e9cb-4980-9d2d-9cd8d93f11a2', 'primary')
+values ('d7dcba05-1338-4cdb-bb66-97918ef00971', '288c870d-e9cb-4980-9d2d-9cd8d93f11a2', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '92cbcfc0-8ffc-42dd-b8c3-85104d5ce4a2',
-  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'd7dcba05-1338-4cdb-bb66-97918ef00971',
   'opt1',
   'V-(으)시-/N이시-',
   'V-(으)시-/N이시-',
@@ -37415,7 +37415,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f62e055c-c7ec-47b0-921d-102d5e5962d7',
-  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'd7dcba05-1338-4cdb-bb66-97918ef00971',
   'opt2',
   'AV-(으)려고 하다',
   'AV-(으)려고 하다',
@@ -37428,7 +37428,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '39d7b906-f075-4d31-a8e2-2acc9bd103f7',
-  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'd7dcba05-1338-4cdb-bb66-97918ef00971',
   'opt3',
   'N께서/N께서는',
   'N께서/N께서는',
@@ -37441,7 +37441,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd73c0696-6e91-477a-af1d-61e1cd7ef33f',
-  'f2029ec6-14a9-4f15-aceb-c893e3366d97',
+  'd7dcba05-1338-4cdb-bb66-97918ef00971',
   'opt4',
   'V-아/어/야 되다/하다',
   'V-아/어/야 되다/하다',
@@ -37454,7 +37454,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '1df7a844-c89f-40d5-b717-9c1669ef34b4',
+  'c605b362-0dfa-4c6f-80f1-abe30be11a44',
   'exercise.grammar.u14.n03.application',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   '288c870d-e9cb-4980-9d2d-9cd8d93f11a2',
@@ -37465,22 +37465,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «почтительно маркирует действие, состояние или статус уважаемого лица.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-(으)시-/N이시-» — почтительно маркирует действие, состояние или статус уважаемого лица.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('1df7a844-c89f-40d5-b717-9c1669ef34b4', '288c870d-e9cb-4980-9d2d-9cd8d93f11a2', 'primary')
+values ('c605b362-0dfa-4c6f-80f1-abe30be11a44', '288c870d-e9cb-4980-9d2d-9cd8d93f11a2', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '95c24b5f-27c5-4968-82f0-7cd5ca272d11',
-  '1df7a844-c89f-40d5-b717-9c1669ef34b4',
+  'c605b362-0dfa-4c6f-80f1-abe30be11a44',
   'V-(으)시-/N이시-',
   'V-(으)시-/N이시-',
   true,
@@ -37491,7 +37491,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'f660e6ce-0a8e-4f55-a705-c2f3a3e6c89c',
   'exercise.grammar.u14.n04.recognition',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   '9a9bf96f-67a2-48f8-be0f-a932c0af853e',
@@ -37502,22 +37502,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает обязанность или необходимость.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-아/어/야 되다/하다»: выражает обязанность или необходимость.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a', '9a9bf96f-67a2-48f8-be0f-a932c0af853e', 'primary')
+values ('f660e6ce-0a8e-4f55-a705-c2f3a3e6c89c', '9a9bf96f-67a2-48f8-be0f-a932c0af853e', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c1c6222a-eedb-4d7a-97be-c458450f7055',
-  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'f660e6ce-0a8e-4f55-a705-c2f3a3e6c89c',
   'opt1',
   'V-아/어/야 되다/하다',
   'V-아/어/야 되다/하다',
@@ -37530,7 +37530,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a331103a-6184-4511-9374-302c616a35b4',
-  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'f660e6ce-0a8e-4f55-a705-c2f3a3e6c89c',
   'opt2',
   'AV-(으)려고 하다',
   'AV-(으)려고 하다',
@@ -37543,7 +37543,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3316bab6-6aa5-4af3-9b70-a9cb1ee649f1',
-  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'f660e6ce-0a8e-4f55-a705-c2f3a3e6c89c',
   'opt3',
   'N께서/N께서는',
   'N께서/N께서는',
@@ -37556,7 +37556,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c9df0839-bb04-4e8c-bb5d-123c11f0c6da',
-  'a1c2aa2a-eb32-410b-9d79-02a5d9a04e5a',
+  'f660e6ce-0a8e-4f55-a705-c2f3a3e6c89c',
   'opt4',
   'V-(으)시-/N이시-',
   'V-(으)시-/N이시-',
@@ -37569,7 +37569,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'f24754d7-38b5-4ee2-89ae-0d9483a5e4a2',
+  '058901b5-d916-458b-a955-8e0ac481acf0',
   'exercise.grammar.u14.n04.application',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   '9a9bf96f-67a2-48f8-be0f-a932c0af853e',
@@ -37580,22 +37580,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает обязанность или необходимость.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-아/어/야 되다/하다» — выражает обязанность или необходимость.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('f24754d7-38b5-4ee2-89ae-0d9483a5e4a2', '9a9bf96f-67a2-48f8-be0f-a932c0af853e', 'primary')
+values ('058901b5-d916-458b-a955-8e0ac481acf0', '9a9bf96f-67a2-48f8-be0f-a932c0af853e', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '057cf5ed-e8a6-4e56-9ea5-af38b489b399',
-  'f24754d7-38b5-4ee2-89ae-0d9483a5e4a2',
+  '058901b5-d916-458b-a955-8e0ac481acf0',
   'V-아/어/야 되다/하다',
   'V-아/어/야 되다/하다',
   true,
@@ -37606,7 +37606,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'bfc913eb-bdf4-4a55-ad6f-78569bbeca13',
   'exercise.grammar.u14.n05.recognition',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   'd2af41d0-d70a-4af1-a936-f198e7af7897',
@@ -37617,22 +37617,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «запрещает или просит не выполнять действие.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-지 말다»: запрещает или просит не выполнять действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('3f2d3c67-db27-4a8a-9df1-bd2c9239b7db', 'd2af41d0-d70a-4af1-a936-f198e7af7897', 'primary')
+values ('bfc913eb-bdf4-4a55-ad6f-78569bbeca13', 'd2af41d0-d70a-4af1-a936-f198e7af7897', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '520e12c6-919e-46fb-bd7d-817631c80a2c',
-  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'bfc913eb-bdf4-4a55-ad6f-78569bbeca13',
   'opt1',
   'AV-지 말다',
   'AV-지 말다',
@@ -37645,7 +37645,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0b7c2425-8a1e-47cf-af84-9986b926f2fc',
-  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'bfc913eb-bdf4-4a55-ad6f-78569bbeca13',
   'opt2',
   'AV-(으)려고 하다',
   'AV-(으)려고 하다',
@@ -37658,7 +37658,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c89dc840-643a-4579-bcad-a6eaab5638ec',
-  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'bfc913eb-bdf4-4a55-ad6f-78569bbeca13',
   'opt3',
   'N께서/N께서는',
   'N께서/N께서는',
@@ -37671,7 +37671,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9f6d5ce5-7a42-4cc5-8487-0f0d90d5398b',
-  '3f2d3c67-db27-4a8a-9df1-bd2c9239b7db',
+  'bfc913eb-bdf4-4a55-ad6f-78569bbeca13',
   'opt4',
   'V-(으)시-/N이시-',
   'V-(으)시-/N이시-',
@@ -37684,7 +37684,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'aefd44a3-509e-42c3-9dcd-9d3bd6bde83b',
+  '5a22581c-817a-415a-9869-6efeb6b3a091',
   'exercise.grammar.u14.n05.application',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   'd2af41d0-d70a-4af1-a936-f198e7af7897',
@@ -37695,22 +37695,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «запрещает или просит не выполнять действие.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-지 말다» — запрещает или просит не выполнять действие.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('aefd44a3-509e-42c3-9dcd-9d3bd6bde83b', 'd2af41d0-d70a-4af1-a936-f198e7af7897', 'primary')
+values ('5a22581c-817a-415a-9869-6efeb6b3a091', 'd2af41d0-d70a-4af1-a936-f198e7af7897', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '55110fba-09fc-4ae2-bbb1-509f8a3ca0e5',
-  'aefd44a3-509e-42c3-9dcd-9d3bd6bde83b',
+  '5a22581c-817a-415a-9869-6efeb6b3a091',
   'AV-지 말다',
   'AV-지 말다',
   true,
@@ -37721,7 +37721,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  '546f8dfb-2b83-48c5-8075-8883a3d9aa7c',
   'exercise.grammar.u15.n01.recognition',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   '497f924d-5dc0-4e16-9ea2-9694ea742b7c',
@@ -37732,22 +37732,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «вводит объект сравнения: «чем N».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N보다»: вводит объект сравнения: «чем N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('76087dd1-b976-43c1-8cd8-110d6df8f907', '497f924d-5dc0-4e16-9ea2-9694ea742b7c', 'primary')
+values ('546f8dfb-2b83-48c5-8075-8883a3d9aa7c', '497f924d-5dc0-4e16-9ea2-9694ea742b7c', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '936709d4-c4ce-45b7-9e4d-db98ecd7c396',
-  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  '546f8dfb-2b83-48c5-8075-8883a3d9aa7c',
   'opt1',
   'N보다',
   'N보다',
@@ -37760,7 +37760,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8e3f920a-97c9-4a99-b3a5-c8f704040e0a',
-  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  '546f8dfb-2b83-48c5-8075-8883a3d9aa7c',
   'opt2',
   'V-지만/N(이)지만',
   'V-지만/N(이)지만',
@@ -37773,7 +37773,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4cb4170b-7b5d-4740-9610-be76b14c7e83',
-  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  '546f8dfb-2b83-48c5-8075-8883a3d9aa7c',
   'opt3',
   'DV-(으)ㄴ N',
   'DV-(으)ㄴ N',
@@ -37786,7 +37786,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c9166801-bd4e-4cd2-99fe-dd3182239932',
-  '76087dd1-b976-43c1-8cd8-110d6df8f907',
+  '546f8dfb-2b83-48c5-8075-8883a3d9aa7c',
   'opt4',
   'V-아/어/여도 되다',
   'V-아/어/여도 되다',
@@ -37799,7 +37799,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'bf82eb52-cce5-455f-a2f9-863e4ff6eb80',
+  '947cc063-660a-4558-be3f-b8096fe1f624',
   'exercise.grammar.u15.n01.application',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   '497f924d-5dc0-4e16-9ea2-9694ea742b7c',
@@ -37810,22 +37810,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «вводит объект сравнения: «чем N».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N보다» — вводит объект сравнения: «чем N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('bf82eb52-cce5-455f-a2f9-863e4ff6eb80', '497f924d-5dc0-4e16-9ea2-9694ea742b7c', 'primary')
+values ('947cc063-660a-4558-be3f-b8096fe1f624', '497f924d-5dc0-4e16-9ea2-9694ea742b7c', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'f4e7ab8e-41ff-4c44-be71-7cee5d4a64ee',
-  'bf82eb52-cce5-455f-a2f9-863e4ff6eb80',
+  '947cc063-660a-4558-be3f-b8096fe1f624',
   'N보다',
   'N보다',
   true,
@@ -37836,7 +37836,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  '97fc8d4c-cb77-4ac2-a5fb-24cbafd8e091',
   'exercise.grammar.u15.n02.recognition',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   'ed637696-9842-4420-827d-99a8f926450b',
@@ -37847,22 +37847,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «соединяет противопоставленные части значением «но/хотя».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-지만/N(이)지만»: соединяет противопоставленные части значением «но/хотя».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('f303ce7c-39db-498d-b5fb-c151e6377c1c', 'ed637696-9842-4420-827d-99a8f926450b', 'primary')
+values ('97fc8d4c-cb77-4ac2-a5fb-24cbafd8e091', 'ed637696-9842-4420-827d-99a8f926450b', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1fe84504-ad2d-4b62-b8d5-403adc056f54',
-  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  '97fc8d4c-cb77-4ac2-a5fb-24cbafd8e091',
   'opt1',
   'V-지만/N(이)지만',
   'V-지만/N(이)지만',
@@ -37875,7 +37875,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0d0b4e3d-7cec-402e-9cf9-8d7fb0f15f93',
-  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  '97fc8d4c-cb77-4ac2-a5fb-24cbafd8e091',
   'opt2',
   'N보다',
   'N보다',
@@ -37888,7 +37888,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9116678f-289c-470e-8532-cb8e726e6819',
-  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  '97fc8d4c-cb77-4ac2-a5fb-24cbafd8e091',
   'opt3',
   'DV-(으)ㄴ N',
   'DV-(으)ㄴ N',
@@ -37901,7 +37901,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bd433086-0410-477e-bf0e-31e59735fa22',
-  'f303ce7c-39db-498d-b5fb-c151e6377c1c',
+  '97fc8d4c-cb77-4ac2-a5fb-24cbafd8e091',
   'opt4',
   'V-아/어/여도 되다',
   'V-아/어/여도 되다',
@@ -37914,7 +37914,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7311bfe5-7c34-459e-80ce-f340a676509f',
+  '94e97b3d-e2b0-4679-adb0-e73b55bbb1d1',
   'exercise.grammar.u15.n02.application',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   'ed637696-9842-4420-827d-99a8f926450b',
@@ -37925,22 +37925,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «соединяет противопоставленные части значением «но/хотя».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-지만/N(이)지만» — соединяет противопоставленные части значением «но/хотя».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('7311bfe5-7c34-459e-80ce-f340a676509f', 'ed637696-9842-4420-827d-99a8f926450b', 'primary')
+values ('94e97b3d-e2b0-4679-adb0-e73b55bbb1d1', 'ed637696-9842-4420-827d-99a8f926450b', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '8d028c46-ddcd-4a36-b97c-ec93f82788ae',
-  '7311bfe5-7c34-459e-80ce-f340a676509f',
+  '94e97b3d-e2b0-4679-adb0-e73b55bbb1d1',
   'V-지만/N(이)지만',
   'V-지만/N(이)지만',
   true,
@@ -37951,7 +37951,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  '2a12bb66-d00d-4603-bfee-3b40e3cb6284',
   'exercise.grammar.u15.n03.recognition',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   '9c99de38-5225-4aa5-979a-13d727a9ded9',
@@ -37962,22 +37962,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «превращает описательный глагол в определение перед существительным.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «DV-(으)ㄴ N»: превращает описательный глагол в определение перед существительным.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('d8e92220-3a43-484e-abd8-40f7d850425c', '9c99de38-5225-4aa5-979a-13d727a9ded9', 'primary')
+values ('2a12bb66-d00d-4603-bfee-3b40e3cb6284', '9c99de38-5225-4aa5-979a-13d727a9ded9', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a360054e-e395-4344-b625-9a6d0309b9c4',
-  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  '2a12bb66-d00d-4603-bfee-3b40e3cb6284',
   'opt1',
   'DV-(으)ㄴ N',
   'DV-(으)ㄴ N',
@@ -37990,7 +37990,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a1d6958c-8ad9-49b3-af13-a4bba518ec91',
-  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  '2a12bb66-d00d-4603-bfee-3b40e3cb6284',
   'opt2',
   'N보다',
   'N보다',
@@ -38003,7 +38003,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0108c29d-0fd5-41e0-8885-270578655adc',
-  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  '2a12bb66-d00d-4603-bfee-3b40e3cb6284',
   'opt3',
   'V-지만/N(이)지만',
   'V-지만/N(이)지만',
@@ -38016,7 +38016,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ec500cc9-f591-43da-9acf-fc4dd6dab54d',
-  'd8e92220-3a43-484e-abd8-40f7d850425c',
+  '2a12bb66-d00d-4603-bfee-3b40e3cb6284',
   'opt4',
   'V-아/어/여도 되다',
   'V-아/어/여도 되다',
@@ -38029,7 +38029,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8be350c7-6298-4a9e-aacf-d191f0cfe0f0',
+  'ead12c55-d2d3-435c-834e-48a90b478000',
   'exercise.grammar.u15.n03.application',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   '9c99de38-5225-4aa5-979a-13d727a9ded9',
@@ -38040,22 +38040,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «превращает описательный глагол в определение перед существительным.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «DV-(으)ㄴ N» — превращает описательный глагол в определение перед существительным.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('8be350c7-6298-4a9e-aacf-d191f0cfe0f0', '9c99de38-5225-4aa5-979a-13d727a9ded9', 'primary')
+values ('ead12c55-d2d3-435c-834e-48a90b478000', '9c99de38-5225-4aa5-979a-13d727a9ded9', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '487f9dad-7c5f-420c-bff4-d3df3772556f',
-  '8be350c7-6298-4a9e-aacf-d191f0cfe0f0',
+  'ead12c55-d2d3-435c-834e-48a90b478000',
   'DV-(으)ㄴ N',
   'DV-(으)ㄴ N',
   true,
@@ -38066,7 +38066,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'b5716ded-c3d2-4ca6-9539-a2ddf3c5c393',
   'exercise.grammar.u15.n04.recognition',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   '83a4a2f0-403e-40ed-8b14-3eacb2045e3f',
@@ -38077,22 +38077,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «запрашивает или даёт разрешение: «можно».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-아/어/여도 되다»: запрашивает или даёт разрешение: «можно».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('e88bec25-00a5-4338-bf55-33feb1665126', '83a4a2f0-403e-40ed-8b14-3eacb2045e3f', 'primary')
+values ('b5716ded-c3d2-4ca6-9539-a2ddf3c5c393', '83a4a2f0-403e-40ed-8b14-3eacb2045e3f', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '77a89ff6-2082-4660-a1a9-1f7fe758e30f',
-  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'b5716ded-c3d2-4ca6-9539-a2ddf3c5c393',
   'opt1',
   'V-아/어/여도 되다',
   'V-아/어/여도 되다',
@@ -38105,7 +38105,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'df4606f3-a461-433f-a0db-298a019381fe',
-  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'b5716ded-c3d2-4ca6-9539-a2ddf3c5c393',
   'opt2',
   'N보다',
   'N보다',
@@ -38118,7 +38118,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'aac6c02b-b476-4d4f-a871-fece246585d5',
-  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'b5716ded-c3d2-4ca6-9539-a2ddf3c5c393',
   'opt3',
   'V-지만/N(이)지만',
   'V-지만/N(이)지만',
@@ -38131,7 +38131,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0491d2bc-361d-439c-b1e8-fb30f907fdc4',
-  'e88bec25-00a5-4338-bf55-33feb1665126',
+  'b5716ded-c3d2-4ca6-9539-a2ddf3c5c393',
   'opt4',
   'DV-(으)ㄴ N',
   'DV-(으)ㄴ N',
@@ -38144,7 +38144,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a668916c-ce37-408e-99bd-1ac19afd0499',
+  'ba6e7ec5-0331-4141-9dc5-4dfd5a657160',
   'exercise.grammar.u15.n04.application',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   '83a4a2f0-403e-40ed-8b14-3eacb2045e3f',
@@ -38155,22 +38155,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «запрашивает или даёт разрешение: «можно».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-아/어/여도 되다» — запрашивает или даёт разрешение: «можно».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('a668916c-ce37-408e-99bd-1ac19afd0499', '83a4a2f0-403e-40ed-8b14-3eacb2045e3f', 'primary')
+values ('ba6e7ec5-0331-4141-9dc5-4dfd5a657160', '83a4a2f0-403e-40ed-8b14-3eacb2045e3f', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'e33d61b3-3f29-47a0-8c67-62a0de0986fe',
-  'a668916c-ce37-408e-99bd-1ac19afd0499',
+  'ba6e7ec5-0331-4141-9dc5-4dfd5a657160',
   'V-아/어/여도 되다',
   'V-아/어/여도 되다',
   true,
@@ -38181,7 +38181,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  '60a9e91b-92d5-410c-ad0d-1bf5e2857623',
   'exercise.grammar.u15.n05.recognition',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   '481a9706-bb03-4137-adc3-4c200890794a',
@@ -38192,22 +38192,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «выражает запрет: «нельзя».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)면 안 되다»: выражает запрет: «нельзя».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('5f90632a-1c1e-46f6-8296-6553c0355d50', '481a9706-bb03-4137-adc3-4c200890794a', 'primary')
+values ('60a9e91b-92d5-410c-ad0d-1bf5e2857623', '481a9706-bb03-4137-adc3-4c200890794a', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7b32a607-9973-4ebb-a42e-cd09bc2cf5a7',
-  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  '60a9e91b-92d5-410c-ad0d-1bf5e2857623',
   'opt1',
   'AV-(으)면 안 되다',
   'AV-(으)면 안 되다',
@@ -38220,7 +38220,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'caf53109-9a7a-4e38-9746-0ba401a8f348',
-  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  '60a9e91b-92d5-410c-ad0d-1bf5e2857623',
   'opt2',
   'N보다',
   'N보다',
@@ -38233,7 +38233,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2df08570-1670-46a9-ac42-7930a17a0d6d',
-  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  '60a9e91b-92d5-410c-ad0d-1bf5e2857623',
   'opt3',
   'V-지만/N(이)지만',
   'V-지만/N(이)지만',
@@ -38246,7 +38246,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8e8ef5bb-64b8-45f4-a304-7045a4b8f68f',
-  '5f90632a-1c1e-46f6-8296-6553c0355d50',
+  '60a9e91b-92d5-410c-ad0d-1bf5e2857623',
   'opt4',
   'DV-(으)ㄴ N',
   'DV-(으)ㄴ N',
@@ -38259,7 +38259,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '78f73664-08bb-474d-b8a5-e9a116fac048',
+  'd736d94f-01cb-4a9f-9a9f-1d73d608710a',
   'exercise.grammar.u15.n05.application',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   '481a9706-bb03-4137-adc3-4c200890794a',
@@ -38270,22 +38270,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «выражает запрет: «нельзя».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)면 안 되다» — выражает запрет: «нельзя».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('78f73664-08bb-474d-b8a5-e9a116fac048', '481a9706-bb03-4137-adc3-4c200890794a', 'primary')
+values ('d736d94f-01cb-4a9f-9a9f-1d73d608710a', '481a9706-bb03-4137-adc3-4c200890794a', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'e3e0cb84-fd54-44b0-9ec1-af781495ee91',
-  '78f73664-08bb-474d-b8a5-e9a116fac048',
+  'd736d94f-01cb-4a9f-9a9f-1d73d608710a',
   'AV-(으)면 안 되다',
   'AV-(으)면 안 되다',
   true,
@@ -38296,7 +38296,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'ef329e82-3b6d-4b5f-b1f8-59d578c42e11',
   'exercise.grammar.u16.n01.recognition',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948',
@@ -38307,22 +38307,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «образует определительные формы действия в прошедшем, настоящем и будущем времени.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-(으)ㄴ/는/(으)ㄹ N»: образует определительные формы действия в прошедшем, настоящем и будущем времени.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('c1cf200d-f72e-434a-a59a-71e5a517f2bb', 'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948', 'primary')
+values ('ef329e82-3b6d-4b5f-b1f8-59d578c42e11', 'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8a149f06-0310-4090-82e0-1069a2f7e921',
-  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'ef329e82-3b6d-4b5f-b1f8-59d578c42e11',
   'opt1',
   'AV-(으)ㄴ/는/(으)ㄹ N',
   'AV-(으)ㄴ/는/(으)ㄹ N',
@@ -38335,7 +38335,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '19cc099b-922c-4543-a07e-ede013a15770',
-  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'ef329e82-3b6d-4b5f-b1f8-59d578c42e11',
   'opt2',
   'N인 N',
   'N인 N',
@@ -38348,7 +38348,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5aaba3b7-2c55-410d-b832-1f24138f8903',
-  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'ef329e82-3b6d-4b5f-b1f8-59d578c42e11',
   'opt3',
   'V-(으)ㄴ/는데/N인데',
   'V-(으)ㄴ/는데/N인데',
@@ -38361,7 +38361,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1679c6a8-a963-4cc8-b787-f1b00ae713ff',
-  'c1cf200d-f72e-434a-a59a-71e5a517f2bb',
+  'ef329e82-3b6d-4b5f-b1f8-59d578c42e11',
   'opt4',
   'N께',
   'N께',
@@ -38374,7 +38374,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '3014465e-7560-434b-b868-8f688f8c22c1',
+  '450f7dad-8101-49a4-817e-a95ec3f09e9e',
   'exercise.grammar.u16.n01.application',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948',
@@ -38385,22 +38385,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «образует определительные формы действия в прошедшем, настоящем и будущем времени.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-(으)ㄴ/는/(으)ㄹ N» — образует определительные формы действия в прошедшем, настоящем и будущем времени.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('3014465e-7560-434b-b868-8f688f8c22c1', 'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948', 'primary')
+values ('450f7dad-8101-49a4-817e-a95ec3f09e9e', 'fe9ffd3a-8f88-4bc7-99ac-9e20197d7948', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '8b346c9b-3b5d-459e-a994-0ffd7f322434',
-  '3014465e-7560-434b-b868-8f688f8c22c1',
+  '450f7dad-8101-49a4-817e-a95ec3f09e9e',
   'AV-(으)ㄴ/는/(으)ㄹ N',
   'AV-(으)ㄴ/는/(으)ㄹ N',
   true,
@@ -38411,7 +38411,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  '80905b6e-ac1b-4f65-aded-c288a69a7d37',
   'exercise.grammar.u16.n02.recognition',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   '3dac5866-b5c5-4978-8fa6-9b965144975c',
@@ -38422,22 +38422,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «определяет существительное через другое существительное: «N, являющийся N».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N인 N»: определяет существительное через другое существительное: «N, являющийся N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('022ea07e-b803-4f5c-bfa1-87da5b98a7c3', '3dac5866-b5c5-4978-8fa6-9b965144975c', 'primary')
+values ('80905b6e-ac1b-4f65-aded-c288a69a7d37', '3dac5866-b5c5-4978-8fa6-9b965144975c', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2e905118-24ef-447b-942c-950374e67f9e',
-  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  '80905b6e-ac1b-4f65-aded-c288a69a7d37',
   'opt1',
   'N인 N',
   'N인 N',
@@ -38450,7 +38450,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '57a09842-6b7b-4cee-a6ae-2aa7aa7582c1',
-  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  '80905b6e-ac1b-4f65-aded-c288a69a7d37',
   'opt2',
   'AV-(으)ㄴ/는/(으)ㄹ N',
   'AV-(으)ㄴ/는/(으)ㄹ N',
@@ -38463,7 +38463,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bba3300f-3099-4e69-ae50-5cdac6ba3f0a',
-  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  '80905b6e-ac1b-4f65-aded-c288a69a7d37',
   'opt3',
   'V-(으)ㄴ/는데/N인데',
   'V-(으)ㄴ/는데/N인데',
@@ -38476,7 +38476,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c8f7bf31-a289-497c-95eb-e1754c7b9317',
-  '022ea07e-b803-4f5c-bfa1-87da5b98a7c3',
+  '80905b6e-ac1b-4f65-aded-c288a69a7d37',
   'opt4',
   'N께',
   'N께',
@@ -38489,7 +38489,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '909d1e01-fe4c-49bb-aca0-609b680babb6',
+  '89326b66-abd3-4322-b432-43e15cf0d653',
   'exercise.grammar.u16.n02.application',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   '3dac5866-b5c5-4978-8fa6-9b965144975c',
@@ -38500,22 +38500,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «определяет существительное через другое существительное: «N, являющийся N».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N인 N» — определяет существительное через другое существительное: «N, являющийся N».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('909d1e01-fe4c-49bb-aca0-609b680babb6', '3dac5866-b5c5-4978-8fa6-9b965144975c', 'primary')
+values ('89326b66-abd3-4322-b432-43e15cf0d653', '3dac5866-b5c5-4978-8fa6-9b965144975c', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '7dfe5817-a0ce-40bb-af06-2bc4cc879ef2',
-  '909d1e01-fe4c-49bb-aca0-609b680babb6',
+  '89326b66-abd3-4322-b432-43e15cf0d653',
   'N인 N',
   'N인 N',
   true,
@@ -38526,7 +38526,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  '03d5ff7d-c3e0-48e2-ac4e-d9ba5ed8193a',
   'exercise.grammar.u16.n03.recognition',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   '98771e63-13b4-47f2-9e16-ec1f35e4f99d',
@@ -38537,22 +38537,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «вводит фон, пояснение, мягкое противопоставление или переход к просьбе.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «V-(으)ㄴ/는데/N인데»: вводит фон, пояснение, мягкое противопоставление или переход к просьбе.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07', '98771e63-13b4-47f2-9e16-ec1f35e4f99d', 'primary')
+values ('03d5ff7d-c3e0-48e2-ac4e-d9ba5ed8193a', '98771e63-13b4-47f2-9e16-ec1f35e4f99d', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '91272a10-af57-4903-9709-6def2e79f16a',
-  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  '03d5ff7d-c3e0-48e2-ac4e-d9ba5ed8193a',
   'opt1',
   'V-(으)ㄴ/는데/N인데',
   'V-(으)ㄴ/는데/N인데',
@@ -38565,7 +38565,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9e8f1c8b-6120-46de-8878-a8107511eb33',
-  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  '03d5ff7d-c3e0-48e2-ac4e-d9ba5ed8193a',
   'opt2',
   'AV-(으)ㄴ/는/(으)ㄹ N',
   'AV-(으)ㄴ/는/(으)ㄹ N',
@@ -38578,7 +38578,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '31873de8-9e5c-434a-9121-2f4a7ba322df',
-  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  '03d5ff7d-c3e0-48e2-ac4e-d9ba5ed8193a',
   'opt3',
   'N인 N',
   'N인 N',
@@ -38591,7 +38591,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '886faca6-df52-4386-9a7d-8ec8e509319c',
-  'abe3f4ce-a4cc-4f0e-8494-fa5ce02fff07',
+  '03d5ff7d-c3e0-48e2-ac4e-d9ba5ed8193a',
   'opt4',
   'N께',
   'N께',
@@ -38604,7 +38604,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd08eb323-a22c-4905-a591-88ed3662b320',
+  '24bffcb2-bfc0-4034-a840-c8f42ac4e7ed',
   'exercise.grammar.u16.n03.application',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   '98771e63-13b4-47f2-9e16-ec1f35e4f99d',
@@ -38615,22 +38615,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «вводит фон, пояснение, мягкое противопоставление или переход к просьбе.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «V-(으)ㄴ/는데/N인데» — вводит фон, пояснение, мягкое противопоставление или переход к просьбе.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('d08eb323-a22c-4905-a591-88ed3662b320', '98771e63-13b4-47f2-9e16-ec1f35e4f99d', 'primary')
+values ('24bffcb2-bfc0-4034-a840-c8f42ac4e7ed', '98771e63-13b4-47f2-9e16-ec1f35e4f99d', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '73170122-2318-4e51-a754-ecb9f68225c3',
-  'd08eb323-a22c-4905-a591-88ed3662b320',
+  '24bffcb2-bfc0-4034-a840-c8f42ac4e7ed',
   'V-(으)ㄴ/는데/N인데',
   'V-(으)ㄴ/는데/N인데',
   true,
@@ -38641,7 +38641,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c363b323-de87-4add-9df6-9867a3d46127',
+  'b04bc677-5401-4971-bd32-b0a3923c5bcf',
   'exercise.grammar.u16.n04.recognition',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   '7afa0122-df8b-41e1-9903-a7efffc56474',
@@ -38652,22 +38652,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «почтительный показатель адресата «кому».»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «N께»: почтительный показатель адресата «кому».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('c363b323-de87-4add-9df6-9867a3d46127', '7afa0122-df8b-41e1-9903-a7efffc56474', 'primary')
+values ('b04bc677-5401-4971-bd32-b0a3923c5bcf', '7afa0122-df8b-41e1-9903-a7efffc56474', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e6119f83-ef98-43d2-858f-516e51bce0f1',
-  'c363b323-de87-4add-9df6-9867a3d46127',
+  'b04bc677-5401-4971-bd32-b0a3923c5bcf',
   'opt1',
   'N께',
   'N께',
@@ -38680,7 +38680,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7dae1df4-81b5-4fcc-8d90-10ee2a3285a6',
-  'c363b323-de87-4add-9df6-9867a3d46127',
+  'b04bc677-5401-4971-bd32-b0a3923c5bcf',
   'opt2',
   'AV-(으)ㄴ/는/(으)ㄹ N',
   'AV-(으)ㄴ/는/(으)ㄹ N',
@@ -38693,7 +38693,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'fb690f87-2d0d-4127-b2cf-c8715fd792dc',
-  'c363b323-de87-4add-9df6-9867a3d46127',
+  'b04bc677-5401-4971-bd32-b0a3923c5bcf',
   'opt3',
   'N인 N',
   'N인 N',
@@ -38706,7 +38706,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7185d02a-0dea-4a65-b0b7-18d8381f55d9',
-  'c363b323-de87-4add-9df6-9867a3d46127',
+  'b04bc677-5401-4971-bd32-b0a3923c5bcf',
   'opt4',
   'V-(으)ㄴ/는데/N인데',
   'V-(으)ㄴ/는데/N인데',
@@ -38719,7 +38719,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '412e7385-bf47-4585-a012-6eb280f36439',
+  '38cca0db-abed-4fdd-89d6-19ab1b229b68',
   'exercise.grammar.u16.n04.application',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   '7afa0122-df8b-41e1-9903-a7efffc56474',
@@ -38730,22 +38730,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «почтительный показатель адресата «кому».»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «N께» — почтительный показатель адресата «кому».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('412e7385-bf47-4585-a012-6eb280f36439', '7afa0122-df8b-41e1-9903-a7efffc56474', 'primary')
+values ('38cca0db-abed-4fdd-89d6-19ab1b229b68', '7afa0122-df8b-41e1-9903-a7efffc56474', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '53871a26-caad-4a3e-9762-0da66fb2cb20',
-  '412e7385-bf47-4585-a012-6eb280f36439',
+  '38cca0db-abed-4fdd-89d6-19ab1b229b68',
   'N께',
   'N께',
   true,
@@ -38756,7 +38756,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  '848af0ec-7061-45b2-9888-9c396a2f498e',
   'exercise.grammar.u16.n05.recognition',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   '5b46cf40-c18d-49f6-a472-f4045d111dca',
@@ -38767,22 +38767,22 @@ insert into public.exercises (
   '알맞은 문법 패턴을 고르십시오.',
   'Выберите корейский паттерн для правила: «действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.»',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновое упражнение на распознавание паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Верный паттерн — «AV-아/어/여 드리다/주다»: действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('75f56bad-005d-4868-8a3e-faafce9096c8', '5b46cf40-c18d-49f6-a472-f4045d111dca', 'primary')
+values ('848af0ec-7061-45b2-9888-9c396a2f498e', '5b46cf40-c18d-49f6-a472-f4045d111dca', 'primary')
 on conflict do nothing;
 
 insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9cc675d9-9882-4758-ac4c-525cdca155d7',
-  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  '848af0ec-7061-45b2-9888-9c396a2f498e',
   'opt1',
   'AV-아/어/여 드리다/주다',
   'AV-아/어/여 드리다/주다',
@@ -38795,7 +38795,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '68edf7fe-ce55-4c7f-b24c-6cc37ce848c6',
-  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  '848af0ec-7061-45b2-9888-9c396a2f498e',
   'opt2',
   'AV-(으)ㄴ/는/(으)ㄹ N',
   'AV-(으)ㄴ/는/(으)ㄹ N',
@@ -38808,7 +38808,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8e3bf50a-22ef-471b-b0fc-a054de7a814e',
-  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  '848af0ec-7061-45b2-9888-9c396a2f498e',
   'opt3',
   'N인 N',
   'N인 N',
@@ -38821,7 +38821,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9e4efc69-62ad-4619-9bfc-1f212250da58',
-  '75f56bad-005d-4868-8a3e-faafce9096c8',
+  '848af0ec-7061-45b2-9888-9c396a2f498e',
   'opt4',
   'V-(으)ㄴ/는데/N인데',
   'V-(으)ㄴ/는데/N인데',
@@ -38834,7 +38834,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'b60c1188-3fa9-444a-ba9a-59a8c4b47789',
+  '6b757b04-a620-4e17-ae3d-00fab1c2ce20',
   'exercise.grammar.u16.n05.application',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   '5b46cf40-c18d-49f6-a472-f4045d111dca',
@@ -38845,22 +38845,22 @@ insert into public.exercises (
   '설명에 맞는 문법 패턴을 쓰십시오.',
   'Напишите корейский паттерн для правила: «действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.»',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновое упражнение на применение паттерна из каталога; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  'Напишите паттерн «AV-아/어/여 드리다/주다» — действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_topics (exercise_id, topic_id, role)
-values ('b60c1188-3fa9-444a-ba9a-59a8c4b47789', '5b46cf40-c18d-49f6-a472-f4045d111dca', 'primary')
+values ('6b757b04-a620-4e17-ae3d-00fab1c2ce20', '5b46cf40-c18d-49f6-a472-f4045d111dca', 'primary')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'f17a5a4a-213f-4daf-9140-a5afdb0881df',
-  'b60c1188-3fa9-444a-ba9a-59a8c4b47789',
+  '6b757b04-a620-4e17-ae3d-00fab1c2ce20',
   'AV-아/어/여 드리다/주다',
   'AV-아/어/여 드리다/주다',
   true,
@@ -38871,7 +38871,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '72ea2b72-73b3-4e27-b0e5-a09a9f0ad324',
+  '80986e5c-3e32-4a31-8f99-2f8c4241294f',
   'exercise.vocabulary.u01.vy.ko-ru',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   null,
@@ -38882,9 +38882,9 @@ insert into public.exercises (
   '당신',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«당신» означает «вы».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -38893,7 +38893,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2a3ea5d2-0652-49c9-909e-d0c4e1b0dae8',
-  '72ea2b72-73b3-4e27-b0e5-a09a9f0ad324',
+  '80986e5c-3e32-4a31-8f99-2f8c4241294f',
   'opt1',
   'вы',
   'вы',
@@ -38906,7 +38906,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bb7aac77-f0f3-4093-a6bc-85e97a6546c6',
-  '72ea2b72-73b3-4e27-b0e5-a09a9f0ad324',
+  '80986e5c-3e32-4a31-8f99-2f8c4241294f',
   'opt2',
   'там (среднее расстояние)',
   'там (среднее расстояние)',
@@ -38919,7 +38919,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5445fa12-5063-407a-805d-1e3316c20230',
-  '72ea2b72-73b3-4e27-b0e5-a09a9f0ad324',
+  '80986e5c-3e32-4a31-8f99-2f8c4241294f',
   'opt3',
   'он; тот (определитель)',
   'он; тот (определитель)',
@@ -38932,7 +38932,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '102a2bff-9839-4e21-a5c1-b457e4cd1af4',
-  '72ea2b72-73b3-4e27-b0e5-a09a9f0ad324',
+  '80986e5c-3e32-4a31-8f99-2f8c4241294f',
   'opt4',
   'они',
   'они',
@@ -38942,14 +38942,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('72ea2b72-73b3-4e27-b0e5-a09a9f0ad324', '254961f9-c46d-4877-9008-a552370f9241', 'target')
+values ('80986e5c-3e32-4a31-8f99-2f8c4241294f', '254961f9-c46d-4877-9008-a552370f9241', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd39cb4c4-f75f-4057-9178-c1cc185960e0',
+  '5d3b97c0-6fcc-4d86-9da2-6088c375e3b0',
   'exercise.vocabulary.u01.tam-srednee-rasstoyanie.ru-ko',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   null,
@@ -38960,9 +38960,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «там (среднее расстояние)».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«거기» означает «там (среднее расстояние)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -38971,7 +38971,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '19b3e2eb-ae99-4587-9d13-528fc6fdaaec',
-  'd39cb4c4-f75f-4057-9178-c1cc185960e0',
+  '5d3b97c0-6fcc-4d86-9da2-6088c375e3b0',
   'opt1',
   '거기',
   '거기',
@@ -38984,7 +38984,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '98f85618-8a52-4364-8f1f-3c6a21c64c24',
-  'd39cb4c4-f75f-4057-9178-c1cc185960e0',
+  '5d3b97c0-6fcc-4d86-9da2-6088c375e3b0',
   'opt2',
   '당신',
   '당신',
@@ -38997,7 +38997,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e6ec0ad8-30e2-477b-bd5b-5ceeb5ac1c94',
-  'd39cb4c4-f75f-4057-9178-c1cc185960e0',
+  '5d3b97c0-6fcc-4d86-9da2-6088c375e3b0',
   'opt3',
   '그',
   '그',
@@ -39010,7 +39010,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '409d5d0d-2f47-4446-a5df-f5ae953e039b',
-  'd39cb4c4-f75f-4057-9178-c1cc185960e0',
+  '5d3b97c0-6fcc-4d86-9da2-6088c375e3b0',
   'opt4',
   '그들',
   '그들',
@@ -39020,14 +39020,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('d39cb4c4-f75f-4057-9178-c1cc185960e0', '68256200-732a-4ba9-9ea3-d7789d7bffa9', 'target')
+values ('5d3b97c0-6fcc-4d86-9da2-6088c375e3b0', '68256200-732a-4ba9-9ea3-d7789d7bffa9', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'edaea12e-6b2a-4ff4-afb8-7801791f8c6d',
+  '39f2f327-2a5e-4c5b-934a-9c9f6a6a7b11',
   'exercise.vocabulary.u01.on-tot-opredelitel.produce',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   null,
@@ -39038,22 +39038,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «он; тот (определитель)».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«그» означает «он; тот (определитель)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('edaea12e-6b2a-4ff4-afb8-7801791f8c6d', '811aa961-a5bd-4878-acea-6d0cbf8145f8', 'target')
+values ('39f2f327-2a5e-4c5b-934a-9c9f6a6a7b11', '811aa961-a5bd-4878-acea-6d0cbf8145f8', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '86a2d7af-fe40-4d6b-b692-ce641fa9e877',
-  'edaea12e-6b2a-4ff4-afb8-7801791f8c6d',
+  '39f2f327-2a5e-4c5b-934a-9c9f6a6a7b11',
   '그',
   '그',
   true,
@@ -39064,7 +39064,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a35cc1c7-2c1c-4b35-9758-0b5f91799527',
+  '1d8cbb24-4623-4777-a3d5-878d7afbdb9c',
   'exercise.vocabulary.u01.matching.v01',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   null,
@@ -39075,34 +39075,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"그들","ru":"그들"},"right":{"ko":"они","ru":"они"}},{"id":"pair2","left":{"ko":"그것","ru":"그것"},"right":{"ko":"то (предмет, среднее расстояние)","ru":"то (предмет, среднее расстояние)"}},{"id":"pair3","left":{"ko":"그곳","ru":"그곳"},"right":{"ko":"то место, там","ru":"то место, там"}},{"id":"pair4","left":{"ko":"그녀","ru":"그녀"},"right":{"ko":"она","ru":"она"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«그들» означает «они».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('a35cc1c7-2c1c-4b35-9758-0b5f91799527', 'a3efe373-654c-4c43-9b03-acdd1afe7d37', 'target')
+values ('1d8cbb24-4623-4777-a3d5-878d7afbdb9c', 'a3efe373-654c-4c43-9b03-acdd1afe7d37', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('a35cc1c7-2c1c-4b35-9758-0b5f91799527', 'd4965875-9e24-46f8-963e-6d415cbfce1e', 'target')
+values ('1d8cbb24-4623-4777-a3d5-878d7afbdb9c', 'd4965875-9e24-46f8-963e-6d415cbfce1e', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('a35cc1c7-2c1c-4b35-9758-0b5f91799527', '1f805d0b-dc4c-419e-97ae-049398e6e4b5', 'target')
+values ('1d8cbb24-4623-4777-a3d5-878d7afbdb9c', '1f805d0b-dc4c-419e-97ae-049398e6e4b5', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('a35cc1c7-2c1c-4b35-9758-0b5f91799527', '56d53ca2-906f-4ebe-af9f-b5c9d21980d2', 'target')
+values ('1d8cbb24-4623-4777-a3d5-878d7afbdb9c', '56d53ca2-906f-4ebe-af9f-b5c9d21980d2', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c35933c6-23b7-45ee-a33e-c8f27e7dcf39',
+  'c03ca120-2feb-46e2-a93f-7fc0b5611574',
   'exercise.vocabulary.u02.ochki.ko-ru',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   null,
@@ -39113,9 +39113,9 @@ insert into public.exercises (
   '안경',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«안경» означает «очки».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -39124,7 +39124,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '56615615-7e44-49f6-a931-bf16f5cccba3',
-  'c35933c6-23b7-45ee-a33e-c8f27e7dcf39',
+  'c03ca120-2feb-46e2-a93f-7fc0b5611574',
   'opt1',
   'очки',
   'очки',
@@ -39137,7 +39137,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8e3685eb-48d4-485d-a76d-3d9fca10c598',
-  'c35933c6-23b7-45ee-a33e-c8f27e7dcf39',
+  'c03ca120-2feb-46e2-a93f-7fc0b5611574',
   'opt2',
   'рюкзак (походный, туристический)',
   'рюкзак (походный, туристический)',
@@ -39150,7 +39150,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '22eb562b-6ebe-4a66-9dc8-5fd442f8d588',
-  'c35933c6-23b7-45ee-a33e-c8f27e7dcf39',
+  'c03ca120-2feb-46e2-a93f-7fc0b5611574',
   'opt3',
   'подушка',
   'подушка',
@@ -39163,7 +39163,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '44c494fd-e689-44e8-97c6-8716d5a4c647',
-  'c35933c6-23b7-45ee-a33e-c8f27e7dcf39',
+  'c03ca120-2feb-46e2-a93f-7fc0b5611574',
   'opt4',
   'мыло',
   'мыло',
@@ -39173,14 +39173,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('c35933c6-23b7-45ee-a33e-c8f27e7dcf39', '84d83f09-1b0c-4c12-b7e1-71e1d9d414ca', 'target')
+values ('c03ca120-2feb-46e2-a93f-7fc0b5611574', '84d83f09-1b0c-4c12-b7e1-71e1d9d414ca', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd9434787-88e2-4c93-bf40-aa9b258846fe',
+  'b3acc8d6-0a4e-43ff-ad85-fa27ee6e47d8',
   'exercise.vocabulary.u02.ryukzak-pohodnyi-turisticheskii.ru-ko',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   null,
@@ -39191,9 +39191,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «рюкзак (походный, туристический)».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«배낭» означает «рюкзак (походный, туристический)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -39202,7 +39202,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ea40e305-c77c-4ace-a42d-42ede95a6c5b',
-  'd9434787-88e2-4c93-bf40-aa9b258846fe',
+  'b3acc8d6-0a4e-43ff-ad85-fa27ee6e47d8',
   'opt1',
   '배낭',
   '배낭',
@@ -39215,7 +39215,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '894a4ab6-49b6-4a19-bef3-1c995fdbfccc',
-  'd9434787-88e2-4c93-bf40-aa9b258846fe',
+  'b3acc8d6-0a4e-43ff-ad85-fa27ee6e47d8',
   'opt2',
   '안경',
   '안경',
@@ -39228,7 +39228,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3bb2af71-af93-4244-9f9e-53058c37e185',
-  'd9434787-88e2-4c93-bf40-aa9b258846fe',
+  'b3acc8d6-0a4e-43ff-ad85-fa27ee6e47d8',
   'opt3',
   '베개',
   '베개',
@@ -39241,7 +39241,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5e1a05ee-e0f6-4986-8b52-a50249cface9',
-  'd9434787-88e2-4c93-bf40-aa9b258846fe',
+  'b3acc8d6-0a4e-43ff-ad85-fa27ee6e47d8',
   'opt4',
   '비누',
   '비누',
@@ -39251,14 +39251,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('d9434787-88e2-4c93-bf40-aa9b258846fe', '6b2d61d0-3422-4f4e-8cb5-07c233e21d3b', 'target')
+values ('b3acc8d6-0a4e-43ff-ad85-fa27ee6e47d8', '6b2d61d0-3422-4f4e-8cb5-07c233e21d3b', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '56d2690c-afe0-4f6b-b9eb-6ec2964269f3',
+  '20572f3e-4221-4e66-abb5-e27bf89b113f',
   'exercise.vocabulary.u02.podushka.produce',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   null,
@@ -39269,22 +39269,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «подушка».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«베개» означает «подушка».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('56d2690c-afe0-4f6b-b9eb-6ec2964269f3', '702fb52a-3258-4fa7-a922-dc231286b1d1', 'target')
+values ('20572f3e-4221-4e66-abb5-e27bf89b113f', '702fb52a-3258-4fa7-a922-dc231286b1d1', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'bddb4f7e-d583-44e2-80fd-17cfdca274a4',
-  '56d2690c-afe0-4f6b-b9eb-6ec2964269f3',
+  '20572f3e-4221-4e66-abb5-e27bf89b113f',
   '베개',
   '베개',
   true,
@@ -39295,7 +39295,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '82b16fe2-b2f6-4ffc-bf1c-84e97e9485b3',
+  '89bf9553-45e2-4a9f-bffb-51338d5891f5',
   'exercise.vocabulary.u02.matching.v01',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   null,
@@ -39306,34 +39306,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"비누","ru":"비누"},"right":{"ko":"мыло","ru":"мыло"}},{"id":"pair2","left":{"ko":"볼펜","ru":"볼펜"},"right":{"ko":"шариковая ручка","ru":"шариковая ручка"}},{"id":"pair3","left":{"ko":"봉투","ru":"봉투"},"right":{"ko":"конверт, пакетик","ru":"конверт, пакетик"}},{"id":"pair4","left":{"ko":"책","ru":"책"},"right":{"ko":"книга","ru":"книга"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«비누» означает «мыло».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('82b16fe2-b2f6-4ffc-bf1c-84e97e9485b3', 'b05ebf4b-6d7a-481d-8c03-1fa997547cff', 'target')
+values ('89bf9553-45e2-4a9f-bffb-51338d5891f5', 'b05ebf4b-6d7a-481d-8c03-1fa997547cff', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('82b16fe2-b2f6-4ffc-bf1c-84e97e9485b3', '1b361edf-3818-4d56-ad8e-e1525e2fd1c6', 'target')
+values ('89bf9553-45e2-4a9f-bffb-51338d5891f5', '1b361edf-3818-4d56-ad8e-e1525e2fd1c6', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('82b16fe2-b2f6-4ffc-bf1c-84e97e9485b3', 'ec157337-23fe-4aa2-b6fd-027f51a625f4', 'target')
+values ('89bf9553-45e2-4a9f-bffb-51338d5891f5', 'ec157337-23fe-4aa2-b6fd-027f51a625f4', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('82b16fe2-b2f6-4ffc-bf1c-84e97e9485b3', '23e007d1-be3a-4c6b-bda7-a2ea652117da', 'target')
+values ('89bf9553-45e2-4a9f-bffb-51338d5891f5', '23e007d1-be3a-4c6b-bda7-a2ea652117da', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '787a86a5-c1b8-4c41-a9ff-df8464b68639',
+  '20fe3e8d-2439-4890-bb6f-69333a9edf9d',
   'exercise.vocabulary.u03.klass-gruppa-uchebnaya.ko-ru',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   null,
@@ -39344,9 +39344,9 @@ insert into public.exercises (
   '반',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«반» означает «класс, группа (учебная)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -39355,7 +39355,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '959199e6-2d01-4dca-b383-64aedddc9708',
-  '787a86a5-c1b8-4c41-a9ff-df8464b68639',
+  '20fe3e8d-2439-4890-bb6f-69333a9edf9d',
   'opt1',
   'класс, группа (учебная)',
   'класс, группа (учебная)',
@@ -39368,7 +39368,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '00bd94e2-0a20-49dc-a17b-ff536245f3f9',
-  '787a86a5-c1b8-4c41-a9ff-df8464b68639',
+  '20fe3e8d-2439-4890-bb6f-69333a9edf9d',
   'opt2',
   'студенческий билет',
   'студенческий билет',
@@ -39381,7 +39381,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f33e7b34-0db7-49ad-8770-86baac7b02fa',
-  '787a86a5-c1b8-4c41-a9ff-df8464b68639',
+  '20fe3e8d-2439-4890-bb6f-69333a9edf9d',
   'opt3',
   'экзамен, тест',
   'экзамен, тест',
@@ -39394,7 +39394,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '83594756-675e-4dd7-aa59-c3aae9c1f961',
-  '787a86a5-c1b8-4c41-a9ff-df8464b68639',
+  '20fe3e8d-2439-4890-bb6f-69333a9edf9d',
   'opt4',
   'урок, занятие',
   'урок, занятие',
@@ -39404,14 +39404,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('787a86a5-c1b8-4c41-a9ff-df8464b68639', 'e931e250-7674-4dfd-9993-295a81fc837d', 'target')
+values ('20fe3e8d-2439-4890-bb6f-69333a9edf9d', 'e931e250-7674-4dfd-9993-295a81fc837d', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '08cb2c4d-64b4-4638-bb64-ee00fb41d359',
+  'd6717a61-7cc3-4934-83f5-b71bd9572c69',
   'exercise.vocabulary.u03.studencheskii-bilet.ru-ko',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   null,
@@ -39422,9 +39422,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «студенческий билет».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«학생증» означает «студенческий билет».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -39433,7 +39433,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9a648f56-6cc4-4eda-b803-7cff45e15f70',
-  '08cb2c4d-64b4-4638-bb64-ee00fb41d359',
+  'd6717a61-7cc3-4934-83f5-b71bd9572c69',
   'opt1',
   '학생증',
   '학생증',
@@ -39446,7 +39446,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '504c0def-fcf5-47c6-b655-558f5a57839f',
-  '08cb2c4d-64b4-4638-bb64-ee00fb41d359',
+  'd6717a61-7cc3-4934-83f5-b71bd9572c69',
   'opt2',
   '반',
   '반',
@@ -39459,7 +39459,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'cc676b03-4425-4b03-9c0d-0751c8a3f0aa',
-  '08cb2c4d-64b4-4638-bb64-ee00fb41d359',
+  'd6717a61-7cc3-4934-83f5-b71bd9572c69',
   'opt3',
   '시험',
   '시험',
@@ -39472,7 +39472,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b4e7312d-34c7-4a56-adc8-2e0541fad2ec',
-  '08cb2c4d-64b4-4638-bb64-ee00fb41d359',
+  'd6717a61-7cc3-4934-83f5-b71bd9572c69',
   'opt4',
   '수업',
   '수업',
@@ -39482,14 +39482,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('08cb2c4d-64b4-4638-bb64-ee00fb41d359', 'a4a60b14-5580-464b-a59a-386a85199898', 'target')
+values ('d6717a61-7cc3-4934-83f5-b71bd9572c69', 'a4a60b14-5580-464b-a59a-386a85199898', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'afd30b8a-3169-491f-8b13-748d584317a5',
+  'b2ba2e3e-2276-4ce4-ac2d-c9c1b6d1de67',
   'exercise.vocabulary.u03.ekzamen-test.produce',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   null,
@@ -39500,22 +39500,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «экзамен, тест».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«시험» означает «экзамен, тест».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('afd30b8a-3169-491f-8b13-748d584317a5', '778903b6-908c-4fb9-a2c1-65e5b2437b0d', 'target')
+values ('b2ba2e3e-2276-4ce4-ac2d-c9c1b6d1de67', '778903b6-908c-4fb9-a2c1-65e5b2437b0d', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '338556e4-83c8-40c7-a6b0-e5ec8c4b34f8',
-  'afd30b8a-3169-491f-8b13-748d584317a5',
+  'b2ba2e3e-2276-4ce4-ac2d-c9c1b6d1de67',
   '시험',
   '시험',
   true,
@@ -39526,7 +39526,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '26d22648-16c7-41b4-a1d1-5c7e94c640e1',
+  '96135a73-0cbf-43b5-9cea-102bc10fd750',
   'exercise.vocabulary.u03.matching.v01',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   null,
@@ -39537,34 +39537,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"수업","ru":"수업"},"right":{"ko":"урок, занятие","ru":"урок, занятие"}},{"id":"pair2","left":{"ko":"예습","ru":"예습"},"right":{"ko":"подготовка к уроку заранее","ru":"подготовка к уроку заранее"}},{"id":"pair3","left":{"ko":"배우","ru":"배우"},"right":{"ko":"актёр, актриса","ru":"актёр, актриса"}},{"id":"pair4","left":{"ko":"변호사","ru":"변호사"},"right":{"ko":"юрист, адвокат","ru":"юрист, адвокат"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«수업» означает «урок, занятие».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('26d22648-16c7-41b4-a1d1-5c7e94c640e1', 'c0e4b5ae-ffd3-4671-ae6c-89ab8f4bde34', 'target')
+values ('96135a73-0cbf-43b5-9cea-102bc10fd750', 'c0e4b5ae-ffd3-4671-ae6c-89ab8f4bde34', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('26d22648-16c7-41b4-a1d1-5c7e94c640e1', 'e9d75883-20bd-45fa-861f-119380ed1368', 'target')
+values ('96135a73-0cbf-43b5-9cea-102bc10fd750', 'e9d75883-20bd-45fa-861f-119380ed1368', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('26d22648-16c7-41b4-a1d1-5c7e94c640e1', '6973173d-cc87-44f4-8e0c-7839369baba5', 'target')
+values ('96135a73-0cbf-43b5-9cea-102bc10fd750', '6973173d-cc87-44f4-8e0c-7839369baba5', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('26d22648-16c7-41b4-a1d1-5c7e94c640e1', 'c9e0c75e-6822-4cf8-9767-23c66f8cf85e', 'target')
+values ('96135a73-0cbf-43b5-9cea-102bc10fd750', 'c9e0c75e-6822-4cf8-9767-23c66f8cf85e', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '81bf411a-2b33-4416-b8f2-eebda98c2628',
+  'ab551157-fea1-43c2-83d1-751a10b6640c',
   'exercise.vocabulary.u04.kanikuly-shkolnye-universitetskie.ko-ru',
   'eee407f3-7185-4524-9e59-d79769238530',
   null,
@@ -39575,9 +39575,9 @@ insert into public.exercises (
   '방학',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«방학» означает «каникулы (школьные/университетские)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -39586,7 +39586,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd7a1db56-0a77-4c07-bd1f-21924a54f786',
-  '81bf411a-2b33-4416-b8f2-eebda98c2628',
+  'ab551157-fea1-43c2-83d1-751a10b6640c',
   'opt1',
   'каникулы (школьные/университетские)',
   'каникулы (школьные/университетские)',
@@ -39599,7 +39599,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1e3d71de-c400-48b0-9a47-86a0e1c0c579',
-  '81bf411a-2b33-4416-b8f2-eebda98c2628',
+  'ab551157-fea1-43c2-83d1-751a10b6640c',
   'opt2',
   'следующий месяц',
   'следующий месяц',
@@ -39612,7 +39612,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a27eb01e-22b0-4981-b7d6-dd2a21665d54',
-  '81bf411a-2b33-4416-b8f2-eebda98c2628',
+  'ab551157-fea1-43c2-83d1-751a10b6640c',
   'opt3',
   'следующая неделя',
   'следующая неделя',
@@ -39625,7 +39625,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8a3eb3f9-f156-4ad1-955f-49b2a90f054f',
-  '81bf411a-2b33-4416-b8f2-eebda98c2628',
+  'ab551157-fea1-43c2-83d1-751a10b6640c',
   'opt4',
   'месяц',
   'месяц',
@@ -39635,14 +39635,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('81bf411a-2b33-4416-b8f2-eebda98c2628', 'ac1113eb-3009-4d6c-b5d2-a2a5792e122e', 'target')
+values ('ab551157-fea1-43c2-83d1-751a10b6640c', 'ac1113eb-3009-4d6c-b5d2-a2a5792e122e', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'ddd026eb-5f0a-4de4-9155-6989b7e2c75b',
+  '8627fb2a-bf2a-4723-8236-6dc1b082087d',
   'exercise.vocabulary.u04.sleduyuschii-mesyats.ru-ko',
   'eee407f3-7185-4524-9e59-d79769238530',
   null,
@@ -39653,9 +39653,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «следующий месяц».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«다음 달» означает «следующий месяц».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -39664,7 +39664,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'fb49fbc6-e73b-4fee-9d8c-354424e0981b',
-  'ddd026eb-5f0a-4de4-9155-6989b7e2c75b',
+  '8627fb2a-bf2a-4723-8236-6dc1b082087d',
   'opt1',
   '다음 달',
   '다음 달',
@@ -39677,7 +39677,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7d38de14-363e-4ae2-ac38-8d4ec23e64cb',
-  'ddd026eb-5f0a-4de4-9155-6989b7e2c75b',
+  '8627fb2a-bf2a-4723-8236-6dc1b082087d',
   'opt2',
   '방학',
   '방학',
@@ -39690,7 +39690,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f713aa80-c2ef-4d9d-8c4b-7b9c27847894',
-  'ddd026eb-5f0a-4de4-9155-6989b7e2c75b',
+  '8627fb2a-bf2a-4723-8236-6dc1b082087d',
   'opt3',
   '다음 주',
   '다음 주',
@@ -39703,7 +39703,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'aa71101f-f345-42fb-9d98-d34e91a2d0f8',
-  'ddd026eb-5f0a-4de4-9155-6989b7e2c75b',
+  '8627fb2a-bf2a-4723-8236-6dc1b082087d',
   'opt4',
   '달',
   '달',
@@ -39713,14 +39713,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('ddd026eb-5f0a-4de4-9155-6989b7e2c75b', '4d82c9a7-aecb-4190-983e-9835fc2e239f', 'target')
+values ('8627fb2a-bf2a-4723-8236-6dc1b082087d', '4d82c9a7-aecb-4190-983e-9835fc2e239f', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c349362b-18ce-49c7-8a2d-7819e0b997f1',
+  '640644da-73ef-444d-b135-b532cf7d932e',
   'exercise.vocabulary.u04.sleduyuschaya-nedelya.produce',
   'eee407f3-7185-4524-9e59-d79769238530',
   null,
@@ -39731,22 +39731,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «следующая неделя».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«다음 주» означает «следующая неделя».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('c349362b-18ce-49c7-8a2d-7819e0b997f1', '54c5a91d-892e-4959-90ec-2702b2a1dd3a', 'target')
+values ('640644da-73ef-444d-b135-b532cf7d932e', '54c5a91d-892e-4959-90ec-2702b2a1dd3a', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '1a574ba6-8e29-4617-be93-b6b5c0e34070',
-  'c349362b-18ce-49c7-8a2d-7819e0b997f1',
+  '640644da-73ef-444d-b135-b532cf7d932e',
   '다음 주',
   '다음 주',
   true,
@@ -39757,7 +39757,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '9a860675-fbac-4923-918c-ffee4a97d4d0',
+  'daa8e5b1-9189-4193-a7f4-cce5c21e5116',
   'exercise.vocabulary.u04.matching.v01',
   'eee407f3-7185-4524-9e59-d79769238530',
   null,
@@ -39768,34 +39768,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"달","ru":"달"},"right":{"ko":"месяц","ru":"месяц"}},{"id":"pair2","left":{"ko":"어제","ru":"어제"},"right":{"ko":"вчера","ru":"вчера"}},{"id":"pair3","left":{"ko":"개학","ru":"개학"},"right":{"ko":"начало учебного семестра (после каникул)","ru":"начало учебного семестра (после каникул)"}},{"id":"pair4","left":{"ko":"그제","ru":"그제"},"right":{"ko":"позавчера","ru":"позавчера"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«달» означает «месяц».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('9a860675-fbac-4923-918c-ffee4a97d4d0', 'cc353fa3-1a9f-4bc6-8c0a-4e94721f800f', 'target')
+values ('daa8e5b1-9189-4193-a7f4-cce5c21e5116', 'cc353fa3-1a9f-4bc6-8c0a-4e94721f800f', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('9a860675-fbac-4923-918c-ffee4a97d4d0', '6f5937ba-2951-4b44-bf5d-6c7445bef18b', 'target')
+values ('daa8e5b1-9189-4193-a7f4-cce5c21e5116', '6f5937ba-2951-4b44-bf5d-6c7445bef18b', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('9a860675-fbac-4923-918c-ffee4a97d4d0', 'd8efedf8-9077-4636-97c7-50b36906bdec', 'target')
+values ('daa8e5b1-9189-4193-a7f4-cce5c21e5116', 'd8efedf8-9077-4636-97c7-50b36906bdec', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('9a860675-fbac-4923-918c-ffee4a97d4d0', '3653a910-e9ea-48f9-8988-d5e06af8b8ac', 'target')
+values ('daa8e5b1-9189-4193-a7f4-cce5c21e5116', '3653a910-e9ea-48f9-8988-d5e06af8b8ac', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'ef055596-e22b-402e-bcf3-f5261e9acecf',
+  '54c3ad39-a7ba-4fe8-a349-5797a6487f85',
   'exercise.vocabulary.u05.utro.ko-ru',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   null,
@@ -39806,9 +39806,9 @@ insert into public.exercises (
   '아침',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«아침» означает «утро».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -39817,7 +39817,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9c6e2d39-02ca-419d-8dd8-eed1b4d51b64',
-  'ef055596-e22b-402e-bcf3-f5261e9acecf',
+  '54c3ad39-a7ba-4fe8-a349-5797a6487f85',
   'opt1',
   'утро',
   'утро',
@@ -39830,7 +39830,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c401ba92-76d8-46db-aa8b-5fbf4a8a21a1',
-  'ef055596-e22b-402e-bcf3-f5261e9acecf',
+  '54c3ad39-a7ba-4fe8-a349-5797a6487f85',
   'opt2',
   'ночь',
   'ночь',
@@ -39843,7 +39843,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ad1d21de-63b8-42b0-9b0c-4db4b319d7fc',
-  'ef055596-e22b-402e-bcf3-f5261e9acecf',
+  '54c3ad39-a7ba-4fe8-a349-5797a6487f85',
   'opt3',
   'глубокая ночь',
   'глубокая ночь',
@@ -39856,7 +39856,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'db43b01c-7a01-4d2e-a59a-c34bcb6d3b77',
-  'ef055596-e22b-402e-bcf3-f5261e9acecf',
+  '54c3ad39-a7ba-4fe8-a349-5797a6487f85',
   'opt4',
   'полночь',
   'полночь',
@@ -39866,14 +39866,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('ef055596-e22b-402e-bcf3-f5261e9acecf', '1bbd0016-d9a1-41a9-ad83-e4bcd6320452', 'target')
+values ('54c3ad39-a7ba-4fe8-a349-5797a6487f85', '1bbd0016-d9a1-41a9-ad83-e4bcd6320452', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'f03e1cf0-96ef-4e6e-aa2b-5bb18fa2e057',
+  '6e2617d9-e0e7-445b-a0a0-76b771a1a1ed',
   'exercise.vocabulary.u05.noch.ru-ko',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   null,
@@ -39884,9 +39884,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «ночь».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«밤» означает «ночь».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -39895,7 +39895,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '54bc8c2f-8777-4f90-a824-0566ec8a739c',
-  'f03e1cf0-96ef-4e6e-aa2b-5bb18fa2e057',
+  '6e2617d9-e0e7-445b-a0a0-76b771a1a1ed',
   'opt1',
   '밤',
   '밤',
@@ -39908,7 +39908,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3e45dfab-645e-48d7-a935-b76e5127e70a',
-  'f03e1cf0-96ef-4e6e-aa2b-5bb18fa2e057',
+  '6e2617d9-e0e7-445b-a0a0-76b771a1a1ed',
   'opt2',
   '아침',
   '아침',
@@ -39921,7 +39921,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e3900a02-bdb8-4439-9a52-39eaaf443842',
-  'f03e1cf0-96ef-4e6e-aa2b-5bb18fa2e057',
+  '6e2617d9-e0e7-445b-a0a0-76b771a1a1ed',
   'opt3',
   '한밤중',
   '한밤중',
@@ -39934,7 +39934,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '297d11fd-31c6-410e-b49d-35d65273baf8',
-  'f03e1cf0-96ef-4e6e-aa2b-5bb18fa2e057',
+  '6e2617d9-e0e7-445b-a0a0-76b771a1a1ed',
   'opt4',
   '자정',
   '자정',
@@ -39944,14 +39944,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('f03e1cf0-96ef-4e6e-aa2b-5bb18fa2e057', 'fca7ac5d-cd49-47c3-9100-dc52667fa901', 'target')
+values ('6e2617d9-e0e7-445b-a0a0-76b771a1a1ed', 'fca7ac5d-cd49-47c3-9100-dc52667fa901', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'b2c4d64a-b27c-4477-8f40-c7356af71dac',
+  'e501f4ba-6918-45be-bd58-88db5697dcb2',
   'exercise.vocabulary.u05.glubokaya-noch.produce',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   null,
@@ -39962,22 +39962,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «глубокая ночь».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«한밤중» означает «глубокая ночь».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('b2c4d64a-b27c-4477-8f40-c7356af71dac', '18aac127-5135-4a11-bcd3-cb41be459820', 'target')
+values ('e501f4ba-6918-45be-bd58-88db5697dcb2', '18aac127-5135-4a11-bcd3-cb41be459820', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '229032e8-6928-4de3-97c9-3b258805bfc7',
-  'b2c4d64a-b27c-4477-8f40-c7356af71dac',
+  'e501f4ba-6918-45be-bd58-88db5697dcb2',
   '한밤중',
   '한밤중',
   true,
@@ -39988,7 +39988,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '04f234e4-77a8-4af4-8ff1-7bcc9af2c422',
+  '757e529a-8c9d-4b37-b7f8-9f1f4d920f7a',
   'exercise.vocabulary.u05.matching.v01',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   null,
@@ -39999,34 +39999,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"자정","ru":"자정"},"right":{"ko":"полночь","ru":"полночь"}},{"id":"pair2","left":{"ko":"점심","ru":"점심"},"right":{"ko":"обед, полдень","ru":"обед, полдень"}},{"id":"pair3","left":{"ko":"정오","ru":"정오"},"right":{"ko":"полдень","ru":"полдень"}},{"id":"pair4","left":{"ko":"저녁","ru":"저녁"},"right":{"ko":"вечер","ru":"вечер"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«자정» означает «полночь».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('04f234e4-77a8-4af4-8ff1-7bcc9af2c422', 'd4da1c68-35b9-4aa7-8338-dab004b6fce0', 'target')
+values ('757e529a-8c9d-4b37-b7f8-9f1f4d920f7a', 'd4da1c68-35b9-4aa7-8338-dab004b6fce0', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('04f234e4-77a8-4af4-8ff1-7bcc9af2c422', '9fb8b3b9-dbf0-40a1-89b0-a1c1a0e8d5fa', 'target')
+values ('757e529a-8c9d-4b37-b7f8-9f1f4d920f7a', '9fb8b3b9-dbf0-40a1-89b0-a1c1a0e8d5fa', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('04f234e4-77a8-4af4-8ff1-7bcc9af2c422', '17c61f90-d329-4ab8-8ce5-a471273a7032', 'target')
+values ('757e529a-8c9d-4b37-b7f8-9f1f4d920f7a', '17c61f90-d329-4ab8-8ce5-a471273a7032', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('04f234e4-77a8-4af4-8ff1-7bcc9af2c422', '65a1127d-553d-4668-abbf-5affb2dbc988', 'target')
+values ('757e529a-8c9d-4b37-b7f8-9f1f4d920f7a', '65a1127d-553d-4668-abbf-5affb2dbc988', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8f2dbe2e-bd7d-48dd-900c-13f0f00a4752',
+  '30650b1c-7f9a-4f33-85b3-0e057f741f85',
   'exercise.vocabulary.u06.badminton.ko-ru',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   null,
@@ -40037,9 +40037,9 @@ insert into public.exercises (
   '배드민턴',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«배드민턴» означает «бадминтон».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -40048,7 +40048,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'eed4820c-1b4f-471b-b963-65ed8144e6ef',
-  '8f2dbe2e-bd7d-48dd-900c-13f0f00a4752',
+  '30650b1c-7f9a-4f33-85b3-0e057f741f85',
   'opt1',
   'бадминтон',
   'бадминтон',
@@ -40061,7 +40061,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '26d1177c-8878-480e-90e2-4641c6b76cb4',
-  '8f2dbe2e-bd7d-48dd-900c-13f0f00a4752',
+  '30650b1c-7f9a-4f33-85b3-0e057f741f85',
   'opt2',
   'волейбол',
   'волейбол',
@@ -40074,7 +40074,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f1849ed0-6cda-4198-96df-87251dd06d3e',
-  '8f2dbe2e-bd7d-48dd-900c-13f0f00a4752',
+  '30650b1c-7f9a-4f33-85b3-0e057f741f85',
   'opt3',
   'бокс',
   'бокс',
@@ -40087,7 +40087,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '44329947-98a6-481c-b502-99acd5ede7e9',
-  '8f2dbe2e-bd7d-48dd-900c-13f0f00a4752',
+  '30650b1c-7f9a-4f33-85b3-0e057f741f85',
   'opt4',
   'боулинг',
   'боулинг',
@@ -40097,14 +40097,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('8f2dbe2e-bd7d-48dd-900c-13f0f00a4752', '0fafcf5e-0cf4-462e-b966-7fb9256a3b16', 'target')
+values ('30650b1c-7f9a-4f33-85b3-0e057f741f85', '0fafcf5e-0cf4-462e-b966-7fb9256a3b16', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'dd046478-8c0b-46bc-9fd1-069c78e7f974',
+  'd249bf46-c005-47d9-9ac9-4f2776903be9',
   'exercise.vocabulary.u06.voleibol.ru-ko',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   null,
@@ -40115,9 +40115,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «волейбол».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«배구» означает «волейбол».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -40126,7 +40126,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8562f2fe-6521-4f90-9cc2-ab350fda986e',
-  'dd046478-8c0b-46bc-9fd1-069c78e7f974',
+  'd249bf46-c005-47d9-9ac9-4f2776903be9',
   'opt1',
   '배구',
   '배구',
@@ -40139,7 +40139,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f3704c0a-55da-4b30-b752-1c0aecb4b2c3',
-  'dd046478-8c0b-46bc-9fd1-069c78e7f974',
+  'd249bf46-c005-47d9-9ac9-4f2776903be9',
   'opt2',
   '배드민턴',
   '배드민턴',
@@ -40152,7 +40152,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'fc6bcd40-c4da-45ab-ac43-90cdd08e01ce',
-  'dd046478-8c0b-46bc-9fd1-069c78e7f974',
+  'd249bf46-c005-47d9-9ac9-4f2776903be9',
   'opt3',
   '복싱',
   '복싱',
@@ -40165,7 +40165,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '91b949bc-7ed0-4241-956a-240a3a5678ad',
-  'dd046478-8c0b-46bc-9fd1-069c78e7f974',
+  'd249bf46-c005-47d9-9ac9-4f2776903be9',
   'opt4',
   '볼링',
   '볼링',
@@ -40175,14 +40175,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('dd046478-8c0b-46bc-9fd1-069c78e7f974', '972cdebf-4689-47fa-839a-45e7aee96a95', 'target')
+values ('d249bf46-c005-47d9-9ac9-4f2776903be9', '972cdebf-4689-47fa-839a-45e7aee96a95', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '60fbd6cd-5301-45f9-803d-be0d6e94a7ff',
+  'b4122287-dcaa-498c-ab62-89531b614f3d',
   'exercise.vocabulary.u06.boks.produce',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   null,
@@ -40193,22 +40193,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «бокс».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«복싱» означает «бокс».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('60fbd6cd-5301-45f9-803d-be0d6e94a7ff', 'a3feb3ff-234a-4db9-8999-c1f7377e20e9', 'target')
+values ('b4122287-dcaa-498c-ab62-89531b614f3d', 'a3feb3ff-234a-4db9-8999-c1f7377e20e9', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'ceeaf469-fca7-4e00-987b-4f6143b6d106',
-  '60fbd6cd-5301-45f9-803d-be0d6e94a7ff',
+  'b4122287-dcaa-498c-ab62-89531b614f3d',
   '복싱',
   '복싱',
   true,
@@ -40219,7 +40219,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '96d3203b-422b-4eea-b21e-2bb447d5ced3',
+  '97df8eb4-6ed2-4a7a-891f-ba93e3be50a4',
   'exercise.vocabulary.u06.matching.v01',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   null,
@@ -40230,34 +40230,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"볼링","ru":"볼링"},"right":{"ko":"боулинг","ru":"боулинг"}},{"id":"pair2","left":{"ko":"체조","ru":"체조"},"right":{"ko":"гимнастика","ru":"гимнастика"}},{"id":"pair3","left":{"ko":"축구","ru":"축구"},"right":{"ko":"футбол","ru":"футбол"}},{"id":"pair4","left":{"ko":"달리기","ru":"달리기"},"right":{"ko":"бег","ru":"бег"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«볼링» означает «боулинг».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('96d3203b-422b-4eea-b21e-2bb447d5ced3', '15c806fb-5bd0-4452-aa5f-b035077d26c6', 'target')
+values ('97df8eb4-6ed2-4a7a-891f-ba93e3be50a4', '15c806fb-5bd0-4452-aa5f-b035077d26c6', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('96d3203b-422b-4eea-b21e-2bb447d5ced3', '8785ced0-ab33-4096-87ce-f603d0a8d9f8', 'target')
+values ('97df8eb4-6ed2-4a7a-891f-ba93e3be50a4', '8785ced0-ab33-4096-87ce-f603d0a8d9f8', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('96d3203b-422b-4eea-b21e-2bb447d5ced3', '23c3fb06-4dd4-4591-89b4-861cb4d66fec', 'target')
+values ('97df8eb4-6ed2-4a7a-891f-ba93e3be50a4', '23c3fb06-4dd4-4591-89b4-861cb4d66fec', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('96d3203b-422b-4eea-b21e-2bb447d5ced3', 'cb803244-8989-4d51-b453-631ca0c86647', 'target')
+values ('97df8eb4-6ed2-4a7a-891f-ba93e3be50a4', 'cb803244-8989-4d51-b453-631ca0c86647', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '6eedbbcc-517e-4fb8-927f-4c471dfc1e2d',
+  'de51a458-6ce6-4036-8561-18080b10c03f',
   'exercise.vocabulary.u07.nasyschennyi-soderzhatelnyi-produktivnyi.ko-ru',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   null,
@@ -40268,9 +40268,9 @@ insert into public.exercises (
   '알차다',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«알차다» означает «насыщенный, содержательный, продуктивный».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -40279,7 +40279,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a158c80c-bc73-4083-b293-420596354260',
-  '6eedbbcc-517e-4fb8-927f-4c471dfc1e2d',
+  'de51a458-6ce6-4036-8561-18080b10c03f',
   'opt1',
   'насыщенный, содержательный, продуктивный',
   'насыщенный, содержательный, продуктивный',
@@ -40292,7 +40292,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6b4af5f1-2e30-4f55-b3e2-7b2b4927cb0a',
-  '6eedbbcc-517e-4fb8-927f-4c471dfc1e2d',
+  'de51a458-6ce6-4036-8561-18080b10c03f',
   'opt2',
   'больной, болит',
   'больной, болит',
@@ -40305,7 +40305,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '394c29e0-9f20-4f93-bd69-96686aa2c44a',
-  '6eedbbcc-517e-4fb8-927f-4c471dfc1e2d',
+  'de51a458-6ce6-4036-8561-18080b10c03f',
   'opt3',
   'красивый, прекрасный',
   'красивый, прекрасный',
@@ -40318,7 +40318,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a54e5140-821a-4104-8610-cb95b1c7a368',
-  '6eedbbcc-517e-4fb8-927f-4c471dfc1e2d',
+  'de51a458-6ce6-4036-8561-18080b10c03f',
   'opt4',
   'сытый',
   'сытый',
@@ -40328,14 +40328,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('6eedbbcc-517e-4fb8-927f-4c471dfc1e2d', '71dd2328-7063-4df0-aac7-eba925287bf2', 'target')
+values ('de51a458-6ce6-4036-8561-18080b10c03f', '71dd2328-7063-4df0-aac7-eba925287bf2', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '5550f22c-52b7-4ab7-8330-ef1edc44d4db',
+  '09366e27-ab53-429c-942f-0489ca0e29cb',
   'exercise.vocabulary.u07.bolnoi-bolit.ru-ko',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   null,
@@ -40346,9 +40346,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «больной, болит».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«아프다» означает «больной, болит».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -40357,7 +40357,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '493a2e15-242e-4ab7-92ef-33f6298cf3a2',
-  '5550f22c-52b7-4ab7-8330-ef1edc44d4db',
+  '09366e27-ab53-429c-942f-0489ca0e29cb',
   'opt1',
   '아프다',
   '아프다',
@@ -40370,7 +40370,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0f967d46-9640-47e5-b8c8-f69cee240d53',
-  '5550f22c-52b7-4ab7-8330-ef1edc44d4db',
+  '09366e27-ab53-429c-942f-0489ca0e29cb',
   'opt2',
   '알차다',
   '알차다',
@@ -40383,7 +40383,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f29dc1f5-b80a-4e23-aaf6-51ff85c9841f',
-  '5550f22c-52b7-4ab7-8330-ef1edc44d4db',
+  '09366e27-ab53-429c-942f-0489ca0e29cb',
   'opt3',
   '아름답다',
   '아름답다',
@@ -40396,7 +40396,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '81fd4f63-4fc0-4f64-bc95-826f9a421a56',
-  '5550f22c-52b7-4ab7-8330-ef1edc44d4db',
+  '09366e27-ab53-429c-942f-0489ca0e29cb',
   'opt4',
   '배부르다',
   '배부르다',
@@ -40406,14 +40406,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('5550f22c-52b7-4ab7-8330-ef1edc44d4db', '62a0a366-2982-42ab-8c4e-b82a5cf3b558', 'target')
+values ('09366e27-ab53-429c-942f-0489ca0e29cb', '62a0a366-2982-42ab-8c4e-b82a5cf3b558', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'bda64617-f33a-4901-92b0-7ba34926260e',
+  'f0c54c50-40ca-4035-aa4a-af6abe0bd1e3',
   'exercise.vocabulary.u07.krasivyi-prekrasnyi.produce',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   null,
@@ -40424,22 +40424,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «красивый, прекрасный».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«아름답다» означает «красивый, прекрасный».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('bda64617-f33a-4901-92b0-7ba34926260e', 'f7008fcd-c912-49af-a9c3-2b98f44ece36', 'target')
+values ('f0c54c50-40ca-4035-aa4a-af6abe0bd1e3', 'f7008fcd-c912-49af-a9c3-2b98f44ece36', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '70ff458d-5697-4e2a-b83b-1e7806aae31d',
-  'bda64617-f33a-4901-92b0-7ba34926260e',
+  'f0c54c50-40ca-4035-aa4a-af6abe0bd1e3',
   '아름답다',
   '아름답다',
   true,
@@ -40450,7 +40450,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'cb99167b-d33c-4fd7-8138-01015bd3d386',
+  'cff6974e-1478-4b1c-9dbf-9ef1597f41b8',
   'exercise.vocabulary.u07.matching.v01',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   null,
@@ -40461,34 +40461,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"배부르다","ru":"배부르다"},"right":{"ko":"сытый","ru":"сытый"}},{"id":"pair2","left":{"ko":"배고프다","ru":"배고프다"},"right":{"ko":"голодный","ru":"голодный"}},{"id":"pair3","left":{"ko":"밝다","ru":"밝다"},"right":{"ko":"светлый, яркий","ru":"светлый, яркий"}},{"id":"pair4","left":{"ko":"반갑다","ru":"반갑다"},"right":{"ko":"рад(а) встрече","ru":"рад(а) встрече"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«배부르다» означает «сытый».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('cb99167b-d33c-4fd7-8138-01015bd3d386', '8077895c-6929-4749-aecb-ab73245a4ba3', 'target')
+values ('cff6974e-1478-4b1c-9dbf-9ef1597f41b8', '8077895c-6929-4749-aecb-ab73245a4ba3', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('cb99167b-d33c-4fd7-8138-01015bd3d386', '5f641658-2269-45b1-bdbf-f3bb08555be3', 'target')
+values ('cff6974e-1478-4b1c-9dbf-9ef1597f41b8', '5f641658-2269-45b1-bdbf-f3bb08555be3', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('cb99167b-d33c-4fd7-8138-01015bd3d386', '005f33fa-b1e2-439f-ab0f-9f01277831f7', 'target')
+values ('cff6974e-1478-4b1c-9dbf-9ef1597f41b8', '005f33fa-b1e2-439f-ab0f-9f01277831f7', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('cb99167b-d33c-4fd7-8138-01015bd3d386', 'd400e43d-3095-4ce9-ad77-aa784ea16980', 'target')
+values ('cff6974e-1478-4b1c-9dbf-9ef1597f41b8', 'd400e43d-3095-4ce9-ad77-aa784ea16980', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '3bb4f2eb-e4c3-43c5-97ff-fe44196b8d0a',
+  '1092fe91-eae3-4fb0-b5e2-85442b2dfa4d',
   'exercise.vocabulary.u08.znat.ko-ru',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   null,
@@ -40499,9 +40499,9 @@ insert into public.exercises (
   '알다',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«알다» означает «знать».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -40510,7 +40510,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8e787995-6ed7-42d3-9a47-b4069f1b9e48',
-  '3bb4f2eb-e4c3-43c5-97ff-fe44196b8d0a',
+  '1092fe91-eae3-4fb0-b5e2-85442b2dfa4d',
   'opt1',
   'знать',
   'знать',
@@ -40523,7 +40523,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b7366a48-9ebe-4434-97e8-8300acda0eee',
-  '3bb4f2eb-e4c3-43c5-97ff-fe44196b8d0a',
+  '1092fe91-eae3-4fb0-b5e2-85442b2dfa4d',
   'opt2',
   'сидеть, садиться',
   'сидеть, садиться',
@@ -40536,7 +40536,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd63b13e8-b6b1-4f81-9197-9701d0d8f185',
-  '3bb4f2eb-e4c3-43c5-97ff-fe44196b8d0a',
+  '1092fe91-eae3-4fb0-b5e2-85442b2dfa4d',
   'opt3',
   'учиться, изучать',
   'учиться, изучать',
@@ -40549,7 +40549,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ebce6924-00a4-40a5-a026-0d38ba071ff3',
-  '3bb4f2eb-e4c3-43c5-97ff-fe44196b8d0a',
+  '1092fe91-eae3-4fb0-b5e2-85442b2dfa4d',
   'opt4',
   'менять, изменять',
   'менять, изменять',
@@ -40559,14 +40559,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('3bb4f2eb-e4c3-43c5-97ff-fe44196b8d0a', '7d09823d-10c4-48d9-91d8-bd691a6e82e4', 'target')
+values ('1092fe91-eae3-4fb0-b5e2-85442b2dfa4d', '7d09823d-10c4-48d9-91d8-bd691a6e82e4', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '88f764d5-41db-40e1-9fb8-23a9a48c13db',
+  '1254994c-ad69-4929-a807-c7e8edcb57f0',
   'exercise.vocabulary.u08.sidet-saditsya.ru-ko',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   null,
@@ -40577,9 +40577,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «сидеть, садиться».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«앉다» означает «сидеть, садиться».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -40588,7 +40588,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'dda5c423-3555-4d49-9323-94584b7432a7',
-  '88f764d5-41db-40e1-9fb8-23a9a48c13db',
+  '1254994c-ad69-4929-a807-c7e8edcb57f0',
   'opt1',
   '앉다',
   '앉다',
@@ -40601,7 +40601,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a815c879-ae19-4c8f-afe0-251a5922466d',
-  '88f764d5-41db-40e1-9fb8-23a9a48c13db',
+  '1254994c-ad69-4929-a807-c7e8edcb57f0',
   'opt2',
   '알다',
   '알다',
@@ -40614,7 +40614,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'fe5aad50-321d-4721-9673-75ee614f2428',
-  '88f764d5-41db-40e1-9fb8-23a9a48c13db',
+  '1254994c-ad69-4929-a807-c7e8edcb57f0',
   'opt3',
   '배우다',
   '배우다',
@@ -40627,7 +40627,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd88732c5-1999-42fc-8143-8fe15e5c4670',
-  '88f764d5-41db-40e1-9fb8-23a9a48c13db',
+  '1254994c-ad69-4929-a807-c7e8edcb57f0',
   'opt4',
   '바꾸다',
   '바꾸다',
@@ -40637,14 +40637,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('88f764d5-41db-40e1-9fb8-23a9a48c13db', '2682d10d-1ab4-40ff-a01d-50191f1172e3', 'target')
+values ('1254994c-ad69-4929-a807-c7e8edcb57f0', '2682d10d-1ab4-40ff-a01d-50191f1172e3', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'bc0c7b2e-0113-41ac-8fb4-48eb1c438679',
+  '068981df-837f-4f15-aab8-3fa55d75ca56',
   'exercise.vocabulary.u08.uchitsya-izuchat.produce',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   null,
@@ -40655,22 +40655,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «учиться, изучать».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«배우다» означает «учиться, изучать».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('bc0c7b2e-0113-41ac-8fb4-48eb1c438679', 'a4ac233e-3c5d-4adf-93c3-6687eaac683c', 'target')
+values ('068981df-837f-4f15-aab8-3fa55d75ca56', 'a4ac233e-3c5d-4adf-93c3-6687eaac683c', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'ee26e610-7081-4ceb-91e7-2595973eb73b',
-  'bc0c7b2e-0113-41ac-8fb4-48eb1c438679',
+  '068981df-837f-4f15-aab8-3fa55d75ca56',
   '배우다',
   '배우다',
   true,
@@ -40681,7 +40681,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8b44178b-d5a7-40b4-ae83-3ab54a978f83',
+  'f910941f-f48c-418b-a974-35cc76945395',
   'exercise.vocabulary.u08.matching.v01',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   null,
@@ -40692,34 +40692,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"바꾸다","ru":"바꾸다"},"right":{"ko":"менять, изменять","ru":"менять, изменять"}},{"id":"pair2","left":{"ko":"받다","ru":"받다"},"right":{"ko":"получать","ru":"получать"}},{"id":"pair3","left":{"ko":"벌다","ru":"벌다"},"right":{"ko":"зарабатывать (деньги)","ru":"зарабатывать (деньги)"}},{"id":"pair4","left":{"ko":"벌이다","ru":"벌이다"},"right":{"ko":"устраивать, затевать (праздник, дело)","ru":"устраивать, затевать (праздник, дело)"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«바꾸다» означает «менять, изменять».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('8b44178b-d5a7-40b4-ae83-3ab54a978f83', '12ff18c1-e0f3-4860-942d-6e1306101849', 'target')
+values ('f910941f-f48c-418b-a974-35cc76945395', '12ff18c1-e0f3-4860-942d-6e1306101849', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('8b44178b-d5a7-40b4-ae83-3ab54a978f83', '414d1c06-dd98-4e94-a5e7-5d06deda4f04', 'target')
+values ('f910941f-f48c-418b-a974-35cc76945395', '414d1c06-dd98-4e94-a5e7-5d06deda4f04', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('8b44178b-d5a7-40b4-ae83-3ab54a978f83', 'a5c48e0e-1e63-4d52-9a76-a2ae9419e5be', 'target')
+values ('f910941f-f48c-418b-a974-35cc76945395', 'a5c48e0e-1e63-4d52-9a76-a2ae9419e5be', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('8b44178b-d5a7-40b4-ae83-3ab54a978f83', '3f9a5d0e-c9e5-4604-abf1-664c6112eb73', 'target')
+values ('f910941f-f48c-418b-a974-35cc76945395', '3f9a5d0e-c9e5-4604-abf1-664c6112eb73', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd8329fcf-d800-4fd5-8d59-43cfc2921dfd',
+  '76bdb27d-847e-4cea-b247-6b20d9371151',
   'exercise.vocabulary.u09.hanbok-koreiskii-natsionalnyi-kostyum.ko-ru',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   null,
@@ -40730,9 +40730,9 @@ insert into public.exercises (
   '한복',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«한복» означает «ханбок (корейский национальный костюм)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -40741,7 +40741,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a65e8773-6efc-48d1-a312-dca736234e4c',
-  'd8329fcf-d800-4fd5-8d59-43cfc2921dfd',
+  '76bdb27d-847e-4cea-b247-6b20d9371151',
   'opt1',
   'ханбок (корейский национальный костюм)',
   'ханбок (корейский национальный костюм)',
@@ -40754,7 +40754,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'cd4ce80f-54de-47d2-931e-4dc29e23a72e',
-  'd8329fcf-d800-4fd5-8d59-43cfc2921dfd',
+  '76bdb27d-847e-4cea-b247-6b20d9371151',
   'opt2',
   'косметика',
   'косметика',
@@ -40767,7 +40767,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9a84c238-78a6-45a3-af78-0a2ef2dfc59b',
-  'd8329fcf-d800-4fd5-8d59-43cfc2921dfd',
+  '76bdb27d-847e-4cea-b247-6b20d9371151',
   'opt3',
   'перчатки',
   'перчатки',
@@ -40780,7 +40780,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3623c135-5f85-43e5-933d-9944840d9970',
-  'd8329fcf-d800-4fd5-8d59-43cfc2921dfd',
+  '76bdb27d-847e-4cea-b247-6b20d9371151',
   'opt4',
   'галстук',
   'галстук',
@@ -40790,14 +40790,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('d8329fcf-d800-4fd5-8d59-43cfc2921dfd', '17a11339-66e6-4c09-b24d-11d831a8e3d6', 'target')
+values ('76bdb27d-847e-4cea-b247-6b20d9371151', '17a11339-66e6-4c09-b24d-11d831a8e3d6', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '590d74e0-f5e9-44a5-a5fb-a9cdc35a181b',
+  'ae4b60d3-9c34-404f-8b73-495031c386d2',
   'exercise.vocabulary.u09.kosmetika.ru-ko',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   null,
@@ -40808,9 +40808,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «косметика».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«화장품» означает «косметика».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -40819,7 +40819,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '637c28ca-98e7-443f-8839-708e55703f9a',
-  '590d74e0-f5e9-44a5-a5fb-a9cdc35a181b',
+  'ae4b60d3-9c34-404f-8b73-495031c386d2',
   'opt1',
   '화장품',
   '화장품',
@@ -40832,7 +40832,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0b26e97e-8f18-4df1-8ed9-c9ffb631e679',
-  '590d74e0-f5e9-44a5-a5fb-a9cdc35a181b',
+  'ae4b60d3-9c34-404f-8b73-495031c386d2',
   'opt2',
   '한복',
   '한복',
@@ -40845,7 +40845,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '812a6416-6a79-4e6e-9d87-b0414df977ea',
-  '590d74e0-f5e9-44a5-a5fb-a9cdc35a181b',
+  'ae4b60d3-9c34-404f-8b73-495031c386d2',
   'opt3',
   '장갑',
   '장갑',
@@ -40858,7 +40858,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd412cf91-8aac-4f05-852c-ace10fd3406a',
-  '590d74e0-f5e9-44a5-a5fb-a9cdc35a181b',
+  'ae4b60d3-9c34-404f-8b73-495031c386d2',
   'opt4',
   '넥타이',
   '넥타이',
@@ -40868,14 +40868,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('590d74e0-f5e9-44a5-a5fb-a9cdc35a181b', 'c79671f4-09e5-499b-ba32-79a08c4e1239', 'target')
+values ('ae4b60d3-9c34-404f-8b73-495031c386d2', 'c79671f4-09e5-499b-ba32-79a08c4e1239', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '1dac21b2-bb21-4686-af41-7d68b8c6409e',
+  '57efaa47-bf2b-4159-8ee5-237e47088daa',
   'exercise.vocabulary.u09.perchatki.produce',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   null,
@@ -40886,22 +40886,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «перчатки».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«장갑» означает «перчатки».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('1dac21b2-bb21-4686-af41-7d68b8c6409e', 'cf7847cb-55a4-4b2e-a2b4-150e2e439f16', 'target')
+values ('57efaa47-bf2b-4159-8ee5-237e47088daa', 'cf7847cb-55a4-4b2e-a2b4-150e2e439f16', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'b350a53f-bdd3-4f28-b1aa-9b9851f3525f',
-  '1dac21b2-bb21-4686-af41-7d68b8c6409e',
+  '57efaa47-bf2b-4159-8ee5-237e47088daa',
   '장갑',
   '장갑',
   true,
@@ -40912,7 +40912,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'e7fef297-79b9-4d49-9f2d-eb7a3acaee50',
+  'c9a90081-e261-4118-b821-bcac42c1ba15',
   'exercise.vocabulary.u09.matching.v01',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   null,
@@ -40923,34 +40923,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"넥타이","ru":"넥타이"},"right":{"ko":"галстук","ru":"галстук"}},{"id":"pair2","left":{"ko":"옷","ru":"옷"},"right":{"ko":"одежда","ru":"одежда"}},{"id":"pair3","left":{"ko":"신발","ru":"신발"},"right":{"ko":"обувь","ru":"обувь"}},{"id":"pair4","left":{"ko":"손수건","ru":"손수건"},"right":{"ko":"носовой платок","ru":"носовой платок"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«넥타이» означает «галстук».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('e7fef297-79b9-4d49-9f2d-eb7a3acaee50', '93213ec1-bd1f-4eaf-8321-9f7e49070f05', 'target')
+values ('c9a90081-e261-4118-b821-bcac42c1ba15', '93213ec1-bd1f-4eaf-8321-9f7e49070f05', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('e7fef297-79b9-4d49-9f2d-eb7a3acaee50', '3b0eee71-ae4f-40bf-ba6c-aac33d5f97c1', 'target')
+values ('c9a90081-e261-4118-b821-bcac42c1ba15', '3b0eee71-ae4f-40bf-ba6c-aac33d5f97c1', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('e7fef297-79b9-4d49-9f2d-eb7a3acaee50', '43d6ea46-0e81-4532-8511-649ce4abcabc', 'target')
+values ('c9a90081-e261-4118-b821-bcac42c1ba15', '43d6ea46-0e81-4532-8511-649ce4abcabc', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('e7fef297-79b9-4d49-9f2d-eb7a3acaee50', 'ed3a7d1e-1970-48b8-88ad-36706e79eed7', 'target')
+values ('c9a90081-e261-4118-b821-bcac42c1ba15', 'ed3a7d1e-1970-48b8-88ad-36706e79eed7', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '6ce0a290-5ea2-431e-917a-c64cbd91c022',
+  '0b9a0ed6-6087-4af2-8cab-40ce17cf6244',
   'exercise.vocabulary.u10.varenyi-ris-eda-v-shirokom-smysle.ko-ru',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   null,
@@ -40961,9 +40961,9 @@ insert into public.exercises (
   '밥',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«밥» означает «варёный рис, еда (в широком смысле)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -40972,7 +40972,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4e6bb3f1-6956-4050-92b1-44077069ff57',
-  '6ce0a290-5ea2-431e-917a-c64cbd91c022',
+  '0b9a0ed6-6087-4af2-8cab-40ce17cf6244',
   'opt1',
   'варёный рис, еда (в широком смысле)',
   'варёный рис, еда (в широком смысле)',
@@ -40985,7 +40985,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2eeec3d5-8607-4cdf-826a-c5c0fbf62821',
-  '6ce0a290-5ea2-431e-917a-c64cbd91c022',
+  '0b9a0ed6-6087-4af2-8cab-40ce17cf6244',
   'opt2',
   'сливочное масло',
   'сливочное масло',
@@ -40998,7 +40998,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '147537b5-eb65-4338-8f11-5fa5aeed11b5',
-  '6ce0a290-5ea2-431e-917a-c64cbd91c022',
+  '0b9a0ed6-6087-4af2-8cab-40ce17cf6244',
   'opt3',
   'бибимбап (рис с овощами и мясом, часто с яйцом и острым соусом)',
   'бибимбап (рис с овощами и мясом, часто с яйцом и острым соусом)',
@@ -41011,7 +41011,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c5b735d2-0db5-472b-ac90-700d964bf302',
-  '6ce0a290-5ea2-431e-917a-c64cbd91c022',
+  '0b9a0ed6-6087-4af2-8cab-40ce17cf6244',
   'opt4',
   'булгоги (маринованное жареное мясо)',
   'булгоги (маринованное жареное мясо)',
@@ -41021,14 +41021,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('6ce0a290-5ea2-431e-917a-c64cbd91c022', '63d82aba-3591-4357-b41f-1a036066c8f9', 'target')
+values ('0b9a0ed6-6087-4af2-8cab-40ce17cf6244', '63d82aba-3591-4357-b41f-1a036066c8f9', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '2aba80da-6919-466b-9586-77909cfff538',
+  '384ba3b0-3dc5-4f18-a149-2cb6d00e9e00',
   'exercise.vocabulary.u10.slivochnoe-maslo.ru-ko',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   null,
@@ -41039,9 +41039,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «сливочное масло».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«버터» означает «сливочное масло».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -41050,7 +41050,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c62b1203-1ad1-4713-afe3-17a1fc02cf6c',
-  '2aba80da-6919-466b-9586-77909cfff538',
+  '384ba3b0-3dc5-4f18-a149-2cb6d00e9e00',
   'opt1',
   '버터',
   '버터',
@@ -41063,7 +41063,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '702eb640-73a1-4486-808c-a63775287062',
-  '2aba80da-6919-466b-9586-77909cfff538',
+  '384ba3b0-3dc5-4f18-a149-2cb6d00e9e00',
   'opt2',
   '밥',
   '밥',
@@ -41076,7 +41076,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '88d4ade9-4cf3-4a89-9914-c85117c62e87',
-  '2aba80da-6919-466b-9586-77909cfff538',
+  '384ba3b0-3dc5-4f18-a149-2cb6d00e9e00',
   'opt3',
   '비빔밥',
   '비빔밥',
@@ -41089,7 +41089,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f4585917-881a-4587-875b-eb95e36ca7de',
-  '2aba80da-6919-466b-9586-77909cfff538',
+  '384ba3b0-3dc5-4f18-a149-2cb6d00e9e00',
   'opt4',
   '불고기',
   '불고기',
@@ -41099,14 +41099,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('2aba80da-6919-466b-9586-77909cfff538', '669673fe-6d69-4d66-986b-11d39c6a9c79', 'target')
+values ('384ba3b0-3dc5-4f18-a149-2cb6d00e9e00', '669673fe-6d69-4d66-986b-11d39c6a9c79', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '735a22c3-2c45-4cd3-9626-60298fe535da',
+  '9a77620f-0598-4ab0-b7a8-48cb7ca572b9',
   'exercise.vocabulary.u10.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits.produce',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   null,
@@ -41117,22 +41117,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «бибимбап (рис с овощами и мясом, часто с яйцом и острым соусом)».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«비빔밥» означает «бибимбап (рис с овощами и мясом, часто с яйцом и острым соусом)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('735a22c3-2c45-4cd3-9626-60298fe535da', '22fa5c01-1c56-46ce-8ad5-cfc25eaee3f7', 'target')
+values ('9a77620f-0598-4ab0-b7a8-48cb7ca572b9', '22fa5c01-1c56-46ce-8ad5-cfc25eaee3f7', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '05d556ea-5def-49a4-ab5f-9541b977c488',
-  '735a22c3-2c45-4cd3-9626-60298fe535da',
+  '9a77620f-0598-4ab0-b7a8-48cb7ca572b9',
   '비빔밥',
   '비빔밥',
   true,
@@ -41143,7 +41143,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'f1b7a7c9-68fb-4e4b-8a5a-7f09506b969f',
+  '18c13a41-2d26-4558-bd80-0cf90d21419d',
   'exercise.vocabulary.u10.matching.v01',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   null,
@@ -41154,34 +41154,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"불고기","ru":"불고기"},"right":{"ko":"булгоги (маринованное жареное мясо)","ru":"булгоги (маринованное жареное мясо)"}},{"id":"pair2","left":{"ko":"차","ru":"차"},"right":{"ko":"чай","ru":"чай"}},{"id":"pair3","left":{"ko":"치즈","ru":"치즈"},"right":{"ko":"сыр","ru":"сыр"}},{"id":"pair4","left":{"ko":"닭","ru":"닭"},"right":{"ko":"курица (живая птица)","ru":"курица (живая птица)"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«불고기» означает «булгоги (маринованное жареное мясо)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('f1b7a7c9-68fb-4e4b-8a5a-7f09506b969f', '1108580d-ef2d-4ba6-8a3a-f13872eacbc3', 'target')
+values ('18c13a41-2d26-4558-bd80-0cf90d21419d', '1108580d-ef2d-4ba6-8a3a-f13872eacbc3', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('f1b7a7c9-68fb-4e4b-8a5a-7f09506b969f', '1096be2c-5d20-4ba7-b5e8-8716397651dd', 'target')
+values ('18c13a41-2d26-4558-bd80-0cf90d21419d', '1096be2c-5d20-4ba7-b5e8-8716397651dd', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('f1b7a7c9-68fb-4e4b-8a5a-7f09506b969f', '65e2cf8a-2ed6-4a5b-886d-4cebcd4e0f0e', 'target')
+values ('18c13a41-2d26-4558-bd80-0cf90d21419d', '65e2cf8a-2ed6-4a5b-886d-4cebcd4e0f0e', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('f1b7a7c9-68fb-4e4b-8a5a-7f09506b969f', '3cb275d8-a3ff-4a15-bbce-76be2118e484', 'target')
+values ('18c13a41-2d26-4558-bd80-0cf90d21419d', '3cb275d8-a3ff-4a15-bbce-76be2118e484', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4e0a7651-118e-4871-a6af-60a648d7e81b',
+  '9e423094-c682-4ebb-a478-1f7a12ee8794',
   'exercise.vocabulary.u11.batareya-akkumulyator.ko-ru',
   'df512da8-8f48-486f-801d-5260291b8d89',
   null,
@@ -41192,9 +41192,9 @@ insert into public.exercises (
   '배터리',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«배터리» означает «батарея, аккумулятор».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -41203,7 +41203,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a90192fc-16aa-4b21-a615-866df273294e',
-  '4e0a7651-118e-4871-a6af-60a648d7e81b',
+  '9e423094-c682-4ebb-a478-1f7a12ee8794',
   'opt1',
   'батарея, аккумулятор',
   'батарея, аккумулятор',
@@ -41216,7 +41216,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e3817428-16e6-40a5-9631-aee098d85008',
-  '4e0a7651-118e-4871-a6af-60a648d7e81b',
+  '9e423094-c682-4ebb-a478-1f7a12ee8794',
   'opt2',
   'пылесос',
   'пылесос',
@@ -41229,7 +41229,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '03bb5641-9d2e-45b2-8ff9-0c86cc83183d',
-  '4e0a7651-118e-4871-a6af-60a648d7e81b',
+  '9e423094-c682-4ebb-a478-1f7a12ee8794',
   'opt3',
   'зарядное устройство',
   'зарядное устройство',
@@ -41242,7 +41242,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ad915056-5c17-4933-a34a-063f2edf97e3',
-  '4e0a7651-118e-4871-a6af-60a648d7e81b',
+  '9e423094-c682-4ebb-a478-1f7a12ee8794',
   'opt4',
   'утюг',
   'утюг',
@@ -41252,14 +41252,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('4e0a7651-118e-4871-a6af-60a648d7e81b', 'dd31ed8c-1175-4a5a-b224-2c35bd1c937e', 'target')
+values ('9e423094-c682-4ebb-a478-1f7a12ee8794', 'dd31ed8c-1175-4a5a-b224-2c35bd1c937e', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '6f614061-cf00-4bb6-9fd8-2adf11ad5d3a',
+  'f3117ef4-d667-49b8-8a29-0ba9b478839e',
   'exercise.vocabulary.u11.pylesos.ru-ko',
   'df512da8-8f48-486f-801d-5260291b8d89',
   null,
@@ -41270,9 +41270,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «пылесос».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«청소기» означает «пылесос».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -41281,7 +41281,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2cbbeaaf-49c5-440b-aa17-bab9d70505de',
-  '6f614061-cf00-4bb6-9fd8-2adf11ad5d3a',
+  'f3117ef4-d667-49b8-8a29-0ba9b478839e',
   'opt1',
   '청소기',
   '청소기',
@@ -41294,7 +41294,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9e89d34e-53db-4cf6-ba80-6b85b899669a',
-  '6f614061-cf00-4bb6-9fd8-2adf11ad5d3a',
+  'f3117ef4-d667-49b8-8a29-0ba9b478839e',
   'opt2',
   '배터리',
   '배터리',
@@ -41307,7 +41307,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c7951c42-9f87-4db2-83c7-d15e3c31aa6a',
-  '6f614061-cf00-4bb6-9fd8-2adf11ad5d3a',
+  'f3117ef4-d667-49b8-8a29-0ba9b478839e',
   'opt3',
   '충전기',
   '충전기',
@@ -41320,7 +41320,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '23d18063-a468-4188-a686-8040ed2bd74c',
-  '6f614061-cf00-4bb6-9fd8-2adf11ad5d3a',
+  'f3117ef4-d667-49b8-8a29-0ba9b478839e',
   'opt4',
   '다리미',
   '다리미',
@@ -41330,14 +41330,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('6f614061-cf00-4bb6-9fd8-2adf11ad5d3a', '4f96afc3-3b2a-445d-b788-2176073ecd2d', 'target')
+values ('f3117ef4-d667-49b8-8a29-0ba9b478839e', '4f96afc3-3b2a-445d-b788-2176073ecd2d', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a2509692-748f-497e-9e76-49f5cccb8833',
+  '26409060-af9a-41b9-a83f-12774aee1492',
   'exercise.vocabulary.u11.zaryadnoe-ustroistvo.produce',
   'df512da8-8f48-486f-801d-5260291b8d89',
   null,
@@ -41348,22 +41348,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «зарядное устройство».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«충전기» означает «зарядное устройство».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('a2509692-748f-497e-9e76-49f5cccb8833', 'b3e3a5c1-2a94-4528-90a1-cce6613fb6a5', 'target')
+values ('26409060-af9a-41b9-a83f-12774aee1492', 'b3e3a5c1-2a94-4528-90a1-cce6613fb6a5', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '934d5511-4b85-40b3-80db-78d5ed3caf73',
-  'a2509692-748f-497e-9e76-49f5cccb8833',
+  '26409060-af9a-41b9-a83f-12774aee1492',
   '충전기',
   '충전기',
   true,
@@ -41374,7 +41374,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '6b4ec875-43be-4cb6-b529-2373ff116581',
+  '775e8108-c298-417e-9a53-553bbfdea0fd',
   'exercise.vocabulary.u11.matching.v01',
   'df512da8-8f48-486f-801d-5260291b8d89',
   null,
@@ -41385,34 +41385,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"다리미","ru":"다리미"},"right":{"ko":"утюг","ru":"утюг"}},{"id":"pair2","left":{"ko":"에어컨","ru":"에어컨"},"right":{"ko":"кондиционер","ru":"кондиционер"}},{"id":"pair3","left":{"ko":"휴대폰","ru":"휴대폰"},"right":{"ko":"мобильный телефон","ru":"мобильный телефон"}},{"id":"pair4","left":{"ko":"이어폰","ru":"이어폰"},"right":{"ko":"наушники (вкладыши)","ru":"наушники (вкладыши)"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«다리미» означает «утюг».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('6b4ec875-43be-4cb6-b529-2373ff116581', 'ae2d9b5e-1fc1-4fc9-8c81-1c1387ae4b77', 'target')
+values ('775e8108-c298-417e-9a53-553bbfdea0fd', 'ae2d9b5e-1fc1-4fc9-8c81-1c1387ae4b77', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('6b4ec875-43be-4cb6-b529-2373ff116581', '53d5c2b2-8839-4367-914d-70207590d445', 'target')
+values ('775e8108-c298-417e-9a53-553bbfdea0fd', '53d5c2b2-8839-4367-914d-70207590d445', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('6b4ec875-43be-4cb6-b529-2373ff116581', '95809f5e-c0ff-49ea-90ed-c46f871131df', 'target')
+values ('775e8108-c298-417e-9a53-553bbfdea0fd', '95809f5e-c0ff-49ea-90ed-c46f871131df', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('6b4ec875-43be-4cb6-b529-2373ff116581', '802a0c10-499e-4244-960d-e1105b23aa21', 'target')
+values ('775e8108-c298-417e-9a53-553bbfdea0fd', '802a0c10-499e-4244-960d-e1105b23aa21', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0e8134d0-6108-45ef-80a3-5cd3c17f0952',
+  '21876066-4e13-400f-860c-2ca2ebd5e19d',
   'exercise.vocabulary.u12.ili-a-esli-ne.ko-ru',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   null,
@@ -41423,9 +41423,9 @@ insert into public.exercises (
   '아니면',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«아니면» означает «или, а если не».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -41434,7 +41434,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c0e2b063-7448-403e-8aaa-b6e09cfad602',
-  '0e8134d0-6108-45ef-80a3-5cd3c17f0952',
+  '21876066-4e13-400f-860c-2ca2ebd5e19d',
   'opt1',
   'или, а если не',
   'или, а если не',
@@ -41447,7 +41447,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '33b3f889-19c6-489c-8569-f65d9a8cc7f3',
-  '0e8134d0-6108-45ef-80a3-5cd3c17f0952',
+  '21876066-4e13-400f-860c-2ca2ebd5e19d',
   'opt2',
   'но, однако, при этом (уточнение/оговорка)',
   'но, однако, при этом (уточнение/оговорка)',
@@ -41460,7 +41460,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6c199b87-a830-4e40-9a7c-0531bcf38918',
-  '0e8134d0-6108-45ef-80a3-5cd3c17f0952',
+  '21876066-4e13-400f-860c-2ca2ebd5e19d',
   'opt3',
   'всё же, тем не менее',
   'всё же, тем не менее',
@@ -41473,7 +41473,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8e9768dc-73e5-4313-9cf7-139af9f9cae8',
-  '0e8134d0-6108-45ef-80a3-5cd3c17f0952',
+  '21876066-4e13-400f-860c-2ca2ebd5e19d',
   'opt4',
   'поэтому, и поэтому',
   'поэтому, и поэтому',
@@ -41483,14 +41483,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('0e8134d0-6108-45ef-80a3-5cd3c17f0952', '84b538a3-f050-4f5b-a34f-820c69e53989', 'target')
+values ('21876066-4e13-400f-860c-2ca2ebd5e19d', '84b538a3-f050-4f5b-a34f-820c69e53989', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4858220c-3667-4133-8697-f63aa667728e',
+  'df659cb0-f026-4414-8750-8ea99e9d9ef0',
   'exercise.vocabulary.u12.no-odnako-pri-etom-utochnenie-ogovorka.ru-ko',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   null,
@@ -41501,9 +41501,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «но, однако, при этом (уточнение/оговорка)».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«단» означает «но, однако, при этом (уточнение/оговорка)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -41512,7 +41512,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f91dbe27-6422-4ec7-98b6-7c474f3ccf7f',
-  '4858220c-3667-4133-8697-f63aa667728e',
+  'df659cb0-f026-4414-8750-8ea99e9d9ef0',
   'opt1',
   '단',
   '단',
@@ -41525,7 +41525,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'cd810765-a84e-47ee-9a9c-95093de6249b',
-  '4858220c-3667-4133-8697-f63aa667728e',
+  'df659cb0-f026-4414-8750-8ea99e9d9ef0',
   'opt2',
   '아니면',
   '아니면',
@@ -41538,7 +41538,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '31e2c566-998a-4f3c-862a-1914cf3608c0',
-  '4858220c-3667-4133-8697-f63aa667728e',
+  'df659cb0-f026-4414-8750-8ea99e9d9ef0',
   'opt3',
   '그래도',
   '그래도',
@@ -41551,7 +41551,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ed3be392-eab0-473c-bbf5-0f7c53e85b07',
-  '4858220c-3667-4133-8697-f63aa667728e',
+  'df659cb0-f026-4414-8750-8ea99e9d9ef0',
   'opt4',
   '그래서',
   '그래서',
@@ -41561,14 +41561,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('4858220c-3667-4133-8697-f63aa667728e', '78d877c0-1ee4-4c3e-9cb2-765a0f1e2754', 'target')
+values ('df659cb0-f026-4414-8750-8ea99e9d9ef0', '78d877c0-1ee4-4c3e-9cb2-765a0f1e2754', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '31341cce-4df5-45f0-b04f-64ebdc79f988',
+  'e8707023-3bf2-4e30-91c0-0e3087ee3e20',
   'exercise.vocabulary.u12.vse-zhe-tem-ne-menee.produce',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   null,
@@ -41579,22 +41579,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «всё же, тем не менее».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«그래도» означает «всё же, тем не менее».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('31341cce-4df5-45f0-b04f-64ebdc79f988', '48af7003-1d81-4b6b-aca8-b88c6ef2fb40', 'target')
+values ('e8707023-3bf2-4e30-91c0-0e3087ee3e20', '48af7003-1d81-4b6b-aca8-b88c6ef2fb40', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   'd4c4110c-044e-4653-8a4c-77eeb79ca7c5',
-  '31341cce-4df5-45f0-b04f-64ebdc79f988',
+  'e8707023-3bf2-4e30-91c0-0e3087ee3e20',
   '그래도',
   '그래도',
   true,
@@ -41605,7 +41605,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7e114d39-3dd2-42ba-b1eb-ce55529862ea',
+  'f74d0cfb-c8e9-4bed-80bc-08a0eff5190b',
   'exercise.vocabulary.u12.matching.v01',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   null,
@@ -41616,34 +41616,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"그래서","ru":"그래서"},"right":{"ko":"поэтому, и поэтому","ru":"поэтому, и поэтому"}},{"id":"pair2","left":{"ko":"그렇지만","ru":"그렇지만"},"right":{"ko":"но, тем не менее","ru":"но, тем не менее"}},{"id":"pair3","left":{"ko":"그럼","ru":"그럼"},"right":{"ko":"тогда, в таком случае","ru":"тогда, в таком случае"}},{"id":"pair4","left":{"ko":"그러면","ru":"그러면"},"right":{"ko":"если так, в таком случае, тогда","ru":"если так, в таком случае, тогда"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«그래서» означает «поэтому, и поэтому».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('7e114d39-3dd2-42ba-b1eb-ce55529862ea', '8bc332a0-0ea6-43f3-a9da-101fb29fcc2f', 'target')
+values ('f74d0cfb-c8e9-4bed-80bc-08a0eff5190b', '8bc332a0-0ea6-43f3-a9da-101fb29fcc2f', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('7e114d39-3dd2-42ba-b1eb-ce55529862ea', '826147e0-d7c0-42e9-9d56-99c7bf1319cf', 'target')
+values ('f74d0cfb-c8e9-4bed-80bc-08a0eff5190b', '826147e0-d7c0-42e9-9d56-99c7bf1319cf', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('7e114d39-3dd2-42ba-b1eb-ce55529862ea', 'f07a6b68-08c6-46e5-a443-26353564afb6', 'target')
+values ('f74d0cfb-c8e9-4bed-80bc-08a0eff5190b', 'f07a6b68-08c6-46e5-a443-26353564afb6', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('7e114d39-3dd2-42ba-b1eb-ce55529862ea', 'aff6660a-a0af-4ed1-a885-59b2bb0d4585', 'target')
+values ('f74d0cfb-c8e9-4bed-80bc-08a0eff5190b', 'aff6660a-a0af-4ed1-a885-59b2bb0d4585', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '202355f9-9280-415b-a12a-b926505848c6',
+  '7425faa4-0fce-4e27-9e7e-7d1c2df7e575',
   'exercise.vocabulary.u13.more.ko-ru',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   null,
@@ -41654,9 +41654,9 @@ insert into public.exercises (
   '바다',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«바다» означает «море».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -41665,7 +41665,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd6152beb-356c-4031-ba7a-01242d8b2ddf',
-  '202355f9-9280-415b-a12a-b926505848c6',
+  '7425faa4-0fce-4e27-9e7e-7d1c2df7e575',
   'opt1',
   'море',
   'море',
@@ -41678,7 +41678,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f1520ff0-c8c7-4ab6-aa97-c1f8e4a28482',
-  '202355f9-9280-415b-a12a-b926505848c6',
+  '7425faa4-0fce-4e27-9e7e-7d1c2df7e575',
   'opt2',
   'универмаг, торговый центр',
   'универмаг, торговый центр',
@@ -41691,7 +41691,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'eb490afa-802f-4829-8e79-92a78f55074c',
-  '202355f9-9280-415b-a12a-b926505848c6',
+  '7425faa4-0fce-4e27-9e7e-7d1c2df7e575',
   'opt3',
   'музей',
   'музей',
@@ -41704,7 +41704,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8bad7d97-c206-4704-9493-6d73b15a4251',
-  '202355f9-9280-415b-a12a-b926505848c6',
+  '7425faa4-0fce-4e27-9e7e-7d1c2df7e575',
   'opt4',
   'автобусная остановка',
   'автобусная остановка',
@@ -41714,14 +41714,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('202355f9-9280-415b-a12a-b926505848c6', '69b9ebc2-8aca-4a8e-9b75-15ba991f5438', 'target')
+values ('7425faa4-0fce-4e27-9e7e-7d1c2df7e575', '69b9ebc2-8aca-4a8e-9b75-15ba991f5438', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0b383197-0ba5-4fdf-8e64-d238b38f4418',
+  '80073f28-0c35-4c5b-bcb0-01cb51ca3c36',
   'exercise.vocabulary.u13.univermag-torgovyi-tsentr.ru-ko',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   null,
@@ -41732,9 +41732,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «универмаг, торговый центр».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«백화점» означает «универмаг, торговый центр».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -41743,7 +41743,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '35ccbed6-255a-4533-b719-913eb0bd80e8',
-  '0b383197-0ba5-4fdf-8e64-d238b38f4418',
+  '80073f28-0c35-4c5b-bcb0-01cb51ca3c36',
   'opt1',
   '백화점',
   '백화점',
@@ -41756,7 +41756,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '20cda2f4-59aa-4d46-8a6d-fd59d4c86436',
-  '0b383197-0ba5-4fdf-8e64-d238b38f4418',
+  '80073f28-0c35-4c5b-bcb0-01cb51ca3c36',
   'opt2',
   '바다',
   '바다',
@@ -41769,7 +41769,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7adbba32-e9e8-4ebd-b207-9244c9431b60',
-  '0b383197-0ba5-4fdf-8e64-d238b38f4418',
+  '80073f28-0c35-4c5b-bcb0-01cb51ca3c36',
   'opt3',
   '박물관',
   '박물관',
@@ -41782,7 +41782,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7b33b6f4-95c7-4df7-a2d3-1fe941c20f24',
-  '0b383197-0ba5-4fdf-8e64-d238b38f4418',
+  '80073f28-0c35-4c5b-bcb0-01cb51ca3c36',
   'opt4',
   '버스정류장',
   '버스정류장',
@@ -41792,14 +41792,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('0b383197-0ba5-4fdf-8e64-d238b38f4418', '9fbf5cf5-9976-4eb7-8ac1-2d1cffa89fba', 'target')
+values ('80073f28-0c35-4c5b-bcb0-01cb51ca3c36', '9fbf5cf5-9976-4eb7-8ac1-2d1cffa89fba', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a004794f-f43a-4669-91c9-372f277aa4e3',
+  '3a9acd40-f632-4aca-b172-27d082a99ab4',
   'exercise.vocabulary.u13.muzei.produce',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   null,
@@ -41810,22 +41810,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «музей».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«박물관» означает «музей».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('a004794f-f43a-4669-91c9-372f277aa4e3', 'f7aeb6b6-f774-45b5-94cc-b8649da26489', 'target')
+values ('3a9acd40-f632-4aca-b172-27d082a99ab4', 'f7aeb6b6-f774-45b5-94cc-b8649da26489', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '01ea22b6-c2b4-4c96-b11c-4f2453b6fae4',
-  'a004794f-f43a-4669-91c9-372f277aa4e3',
+  '3a9acd40-f632-4aca-b172-27d082a99ab4',
   '박물관',
   '박물관',
   true,
@@ -41836,7 +41836,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c6c80d76-3a42-41a9-a216-9dcd30307cc9',
+  '14e501a1-26a4-4b9c-8d58-b06940988fe4',
   'exercise.vocabulary.u13.matching.v01',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   null,
@@ -41847,34 +41847,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"버스정류장","ru":"버스정류장"},"right":{"ko":"автобусная остановка","ru":"автобусная остановка"}},{"id":"pair2","left":{"ko":"빌딩","ru":"빌딩"},"right":{"ko":"здание (обычно офисное/многоэтажное)","ru":"здание (обычно офисное/многоэтажное)"}},{"id":"pair3","left":{"ko":"병원","ru":"병원"},"right":{"ko":"больница","ru":"больница"}},{"id":"pair4","left":{"ko":"체육관","ru":"체육관"},"right":{"ko":"спортзал, спортивный зал","ru":"спортзал, спортивный зал"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«버스정류장» означает «автобусная остановка».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('c6c80d76-3a42-41a9-a216-9dcd30307cc9', '9ddd3e18-c01a-45f6-8e5e-feb99f42443f', 'target')
+values ('14e501a1-26a4-4b9c-8d58-b06940988fe4', '9ddd3e18-c01a-45f6-8e5e-feb99f42443f', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('c6c80d76-3a42-41a9-a216-9dcd30307cc9', 'be26a67d-3877-415b-a27f-eaec49284f45', 'target')
+values ('14e501a1-26a4-4b9c-8d58-b06940988fe4', 'be26a67d-3877-415b-a27f-eaec49284f45', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('c6c80d76-3a42-41a9-a216-9dcd30307cc9', '17624647-430f-41ad-ac1c-301e1810256d', 'target')
+values ('14e501a1-26a4-4b9c-8d58-b06940988fe4', '17624647-430f-41ad-ac1c-301e1810256d', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('c6c80d76-3a42-41a9-a216-9dcd30307cc9', 'bf1aeaff-e393-4200-8129-f21968cd6569', 'target')
+values ('14e501a1-26a4-4b9c-8d58-b06940988fe4', 'bf1aeaff-e393-4200-8129-f21968cd6569', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '12d07403-1e35-4500-82ba-a6cb70c875fc',
+  '88935437-3068-4732-b23e-d077877fd167',
   'exercise.vocabulary.u14.magazin-nebolshoi.ko-ru',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   null,
@@ -41885,9 +41885,9 @@ insert into public.exercises (
   '가게',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«가게» означает «магазин (небольшой)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -41896,7 +41896,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f24ef565-3bf4-47d9-95e4-9b77581fe122',
-  '12d07403-1e35-4500-82ba-a6cb70c875fc',
+  '88935437-3068-4732-b23e-d077877fd167',
   'opt1',
   'магазин (небольшой)',
   'магазин (небольшой)',
@@ -41909,7 +41909,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3584832f-4a54-4b27-9593-b3b28ffc67a7',
-  '12d07403-1e35-4500-82ba-a6cb70c875fc',
+  '88935437-3068-4732-b23e-d077877fd167',
   'opt2',
   'театр',
   'театр',
@@ -41922,7 +41922,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2b085a0b-7ff1-4309-8c27-104295f7c156',
-  '12d07403-1e35-4500-82ba-a6cb70c875fc',
+  '88935437-3068-4732-b23e-d077877fd167',
   'opt3',
   'железнодорожная станция',
   'железнодорожная станция',
@@ -41935,7 +41935,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c69e701a-ab13-4fa4-a838-840796eb777c',
-  '12d07403-1e35-4500-82ba-a6cb70c875fc',
+  '88935437-3068-4732-b23e-d077877fd167',
   'opt4',
   'старшая школа (полная средняя)',
   'старшая школа (полная средняя)',
@@ -41945,14 +41945,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('12d07403-1e35-4500-82ba-a6cb70c875fc', 'ba85c2dd-9026-4e23-8324-fea2840db774', 'target')
+values ('88935437-3068-4732-b23e-d077877fd167', 'ba85c2dd-9026-4e23-8324-fea2840db774', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '638217db-d794-42bb-8d99-a6053820eb61',
+  'f0aa0a97-2510-45f3-9dcb-b64e30ece6c0',
   'exercise.vocabulary.u14.teatr.ru-ko',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   null,
@@ -41963,9 +41963,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «театр».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«극장» означает «театр».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -41974,7 +41974,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '53b3dee2-0cde-4847-9d81-c28de32892a9',
-  '638217db-d794-42bb-8d99-a6053820eb61',
+  'f0aa0a97-2510-45f3-9dcb-b64e30ece6c0',
   'opt1',
   '극장',
   '극장',
@@ -41987,7 +41987,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c1af6e7a-a17f-4700-b191-38f5985b9450',
-  '638217db-d794-42bb-8d99-a6053820eb61',
+  'f0aa0a97-2510-45f3-9dcb-b64e30ece6c0',
   'opt2',
   '가게',
   '가게',
@@ -42000,7 +42000,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f284115c-4c68-470f-b3da-255802c7e10d',
-  '638217db-d794-42bb-8d99-a6053820eb61',
+  'f0aa0a97-2510-45f3-9dcb-b64e30ece6c0',
   'opt3',
   '기차역',
   '기차역',
@@ -42013,7 +42013,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e919a131-c1ad-4b6b-bab9-dedb1b534907',
-  '638217db-d794-42bb-8d99-a6053820eb61',
+  'f0aa0a97-2510-45f3-9dcb-b64e30ece6c0',
   'opt4',
   '고등학교',
   '고등학교',
@@ -42023,14 +42023,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('638217db-d794-42bb-8d99-a6053820eb61', '6aa83849-5288-462d-87dd-0155c4a68202', 'target')
+values ('f0aa0a97-2510-45f3-9dcb-b64e30ece6c0', '6aa83849-5288-462d-87dd-0155c4a68202', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'fd102068-0fcf-4827-9165-06990d852eeb',
+  'd49bdfcd-de13-429d-9a88-bd3fd059c7d0',
   'exercise.vocabulary.u14.zheleznodorozhnaya-stantsiya.produce',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   null,
@@ -42041,22 +42041,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «железнодорожная станция».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«기차역» означает «железнодорожная станция».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('fd102068-0fcf-4827-9165-06990d852eeb', '7da50155-940f-4dda-b003-c427474dd3f9', 'target')
+values ('d49bdfcd-de13-429d-9a88-bd3fd059c7d0', '7da50155-940f-4dda-b003-c427474dd3f9', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '56a29761-559e-463a-bec2-0f171aa33164',
-  'fd102068-0fcf-4827-9165-06990d852eeb',
+  'd49bdfcd-de13-429d-9a88-bd3fd059c7d0',
   '기차역',
   '기차역',
   true,
@@ -42067,7 +42067,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7f13ed5c-32d3-44a7-84fd-2325aee2fa29',
+  '84993657-d596-42df-becd-ca00ec126131',
   'exercise.vocabulary.u14.matching.v01',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   null,
@@ -42078,34 +42078,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"고등학교","ru":"고등학교"},"right":{"ko":"старшая школа (полная средняя)","ru":"старшая школа (полная средняя)"}},{"id":"pair2","left":{"ko":"공공장소","ru":"공공장소"},"right":{"ko":"общественное место","ru":"общественное место"}},{"id":"pair3","left":{"ko":"공항","ru":"공항"},"right":{"ko":"аэропорт","ru":"аэропорт"}},{"id":"pair4","left":{"ko":"공원","ru":"공원"},"right":{"ko":"парк","ru":"парк"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«고등학교» означает «старшая школа (полная средняя)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('7f13ed5c-32d3-44a7-84fd-2325aee2fa29', 'd70d8c70-5807-4d84-9529-1b67832bd2bd', 'target')
+values ('84993657-d596-42df-becd-ca00ec126131', 'd70d8c70-5807-4d84-9529-1b67832bd2bd', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('7f13ed5c-32d3-44a7-84fd-2325aee2fa29', '2510dba0-f9c2-4edc-9769-9052090f7307', 'target')
+values ('84993657-d596-42df-becd-ca00ec126131', '2510dba0-f9c2-4edc-9769-9052090f7307', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('7f13ed5c-32d3-44a7-84fd-2325aee2fa29', '919a6fde-5317-4c7d-aa3e-9bbdc92a14c5', 'target')
+values ('84993657-d596-42df-becd-ca00ec126131', '919a6fde-5317-4c7d-aa3e-9bbdc92a14c5', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('7f13ed5c-32d3-44a7-84fd-2325aee2fa29', 'c31461e0-f902-410a-b3c6-910eed2874c9', 'target')
+values ('84993657-d596-42df-becd-ca00ec126131', 'c31461e0-f902-410a-b3c6-910eed2874c9', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '84d0cb51-ea5b-4951-9f70-daebeab2fd5d',
+  'a385ba2d-04dd-4ebf-992c-2901fee616c3',
   'exercise.vocabulary.u15.zhivot.ko-ru',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   null,
@@ -42116,9 +42116,9 @@ insert into public.exercises (
   '배',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«배» означает «живот».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -42127,7 +42127,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c1ea4242-04a3-41db-8cd0-dc4573b9fc04',
-  '84d0cb51-ea5b-4951-9f70-daebeab2fd5d',
+  'a385ba2d-04dd-4ebf-992c-2901fee616c3',
   'opt1',
   'живот',
   'живот',
@@ -42140,7 +42140,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '44ca7180-a78a-4097-9e85-aa53b3f90330',
-  '84d0cb51-ea5b-4951-9f70-daebeab2fd5d',
+  'a385ba2d-04dd-4ebf-992c-2901fee616c3',
   'opt2',
   'стопа',
   'стопа',
@@ -42153,7 +42153,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '27cc3606-18c7-4305-908b-5ac2afd06d6e',
-  '84d0cb51-ea5b-4951-9f70-daebeab2fd5d',
+  'a385ba2d-04dd-4ebf-992c-2901fee616c3',
   'opt3',
   'палец (на ноге)',
   'палец (на ноге)',
@@ -42166,7 +42166,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '56d26718-d23d-4dd2-8308-6da501789913',
-  '84d0cb51-ea5b-4951-9f70-daebeab2fd5d',
+  'a385ba2d-04dd-4ebf-992c-2901fee616c3',
   'opt4',
   'нога (от бедра до стопы)',
   'нога (от бедра до стопы)',
@@ -42176,14 +42176,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('84d0cb51-ea5b-4951-9f70-daebeab2fd5d', 'e88aa59e-68fa-4f1d-b214-2de289fae78a', 'target')
+values ('a385ba2d-04dd-4ebf-992c-2901fee616c3', 'e88aa59e-68fa-4f1d-b214-2de289fae78a', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'c3becfe5-ae35-49a5-8397-9c044f0505ac',
+  '69c3533c-4828-4d03-aa80-643c12bb236e',
   'exercise.vocabulary.u15.stopa.ru-ko',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   null,
@@ -42194,9 +42194,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «стопа».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«발» означает «стопа».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -42205,7 +42205,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '805a2c1f-96c9-4251-a813-9c9326f1d4be',
-  'c3becfe5-ae35-49a5-8397-9c044f0505ac',
+  '69c3533c-4828-4d03-aa80-643c12bb236e',
   'opt1',
   '발',
   '발',
@@ -42218,7 +42218,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a6c85f29-604c-4afb-80c8-beb07a235c48',
-  'c3becfe5-ae35-49a5-8397-9c044f0505ac',
+  '69c3533c-4828-4d03-aa80-643c12bb236e',
   'opt2',
   '배',
   '배',
@@ -42231,7 +42231,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1a437085-2739-4856-b686-0ac9de5fb975',
-  'c3becfe5-ae35-49a5-8397-9c044f0505ac',
+  '69c3533c-4828-4d03-aa80-643c12bb236e',
   'opt3',
   '발가락',
   '발가락',
@@ -42244,7 +42244,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '438da852-1b10-4702-913b-5b3502b0a4d3',
-  'c3becfe5-ae35-49a5-8397-9c044f0505ac',
+  '69c3533c-4828-4d03-aa80-643c12bb236e',
   'opt4',
   '다리',
   '다리',
@@ -42254,14 +42254,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('c3becfe5-ae35-49a5-8397-9c044f0505ac', '44d542a8-368e-45c4-8c45-46b28b9fb09d', 'target')
+values ('69c3533c-4828-4d03-aa80-643c12bb236e', '44d542a8-368e-45c4-8c45-46b28b9fb09d', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '2f3edd14-a8d0-45b3-aeea-82b06cbb7375',
+  '67c764d5-5a9d-469b-ad84-9c58e7fbdda8',
   'exercise.vocabulary.u15.palets-na-noge.produce',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   null,
@@ -42272,22 +42272,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «палец (на ноге)».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«발가락» означает «палец (на ноге)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('2f3edd14-a8d0-45b3-aeea-82b06cbb7375', '2f847307-e7ae-4e20-8199-07ca5afeb684', 'target')
+values ('67c764d5-5a9d-469b-ad84-9c58e7fbdda8', '2f847307-e7ae-4e20-8199-07ca5afeb684', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '2305da7e-d4a6-445d-ae57-5283a2de970f',
-  '2f3edd14-a8d0-45b3-aeea-82b06cbb7375',
+  '67c764d5-5a9d-469b-ad84-9c58e7fbdda8',
   '발가락',
   '발가락',
   true,
@@ -42298,7 +42298,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '2c4f0a68-4ddb-4710-afff-ddb886f06052',
+  'fcac6f55-95fa-4c5c-a752-acfa5a6c8168',
   'exercise.vocabulary.u15.matching.v01',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   null,
@@ -42309,34 +42309,34 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"다리","ru":"다리"},"right":{"ko":"нога (от бедра до стопы)","ru":"нога (от бедра до стопы)"}},{"id":"pair2","left":{"ko":"등","ru":"등"},"right":{"ko":"спина","ru":"спина"}},{"id":"pair3","left":{"ko":"어깨","ru":"어깨"},"right":{"ko":"плечо","ru":"плечо"}},{"id":"pair4","left":{"ko":"얼굴","ru":"얼굴"},"right":{"ko":"лицо","ru":"лицо"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«다리» означает «нога (от бедра до стопы)».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('2c4f0a68-4ddb-4710-afff-ddb886f06052', '7f92e693-d67f-446c-bd14-05cfd2357235', 'target')
+values ('fcac6f55-95fa-4c5c-a752-acfa5a6c8168', '7f92e693-d67f-446c-bd14-05cfd2357235', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('2c4f0a68-4ddb-4710-afff-ddb886f06052', '330530e7-8af2-4cd5-9f92-c0230747c747', 'target')
+values ('fcac6f55-95fa-4c5c-a752-acfa5a6c8168', '330530e7-8af2-4cd5-9f92-c0230747c747', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('2c4f0a68-4ddb-4710-afff-ddb886f06052', 'ed4aa725-1605-422e-9e27-1cf1dd9e0802', 'target')
+values ('fcac6f55-95fa-4c5c-a752-acfa5a6c8168', 'ed4aa725-1605-422e-9e27-1cf1dd9e0802', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('2c4f0a68-4ddb-4710-afff-ddb886f06052', '3c34aa92-2a37-49b4-b3ef-a9f1cd5ade40', 'target')
+values ('fcac6f55-95fa-4c5c-a752-acfa5a6c8168', '3c34aa92-2a37-49b4-b3ef-a9f1cd5ade40', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '2141cf4b-e0d7-4e83-89b5-57e245fc206f',
+  '43e664eb-5354-4ce9-9400-a4e9a3272fb5',
   'exercise.vocabulary.u16.otets.ko-ru',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   null,
@@ -42347,9 +42347,9 @@ insert into public.exercises (
   '아버지',
   'Выберите значение слова.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор значения слова; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«아버지» означает «отец».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -42358,7 +42358,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd37dc28d-af89-4bf6-8b29-857f3a92916a',
-  '2141cf4b-e0d7-4e83-89b5-57e245fc206f',
+  '43e664eb-5354-4ce9-9400-a4e9a3272fb5',
   'opt1',
   'отец',
   'отец',
@@ -42371,7 +42371,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2d4bcba9-849c-4618-9a39-785c98a1558c',
-  '2141cf4b-e0d7-4e83-89b5-57e245fc206f',
+  '43e664eb-5354-4ce9-9400-a4e9a3272fb5',
   'opt2',
   'сын',
   'сын',
@@ -42384,7 +42384,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ad4cbed3-1839-487c-9ffb-2741890d3f20',
-  '2141cf4b-e0d7-4e83-89b5-57e245fc206f',
+  '43e664eb-5354-4ce9-9400-a4e9a3272fb5',
   'opt3',
   'обращение к мужчине среднего возраста',
   'обращение к мужчине среднего возраста',
@@ -42397,7 +42397,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f7be9f92-19e2-4f2e-909c-89ece1e841b8',
-  '2141cf4b-e0d7-4e83-89b5-57e245fc206f',
+  '43e664eb-5354-4ce9-9400-a4e9a3272fb5',
   'opt4',
   'обращение к женщине среднего возраста',
   'обращение к женщине среднего возраста',
@@ -42407,14 +42407,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('2141cf4b-e0d7-4e83-89b5-57e245fc206f', 'dbbcd6e6-952a-4907-8581-2ed6ce0964f5', 'target')
+values ('43e664eb-5354-4ce9-9400-a4e9a3272fb5', 'dbbcd6e6-952a-4907-8581-2ed6ce0964f5', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '81be5d79-e5ac-4d64-abec-f86e58ae29d6',
+  'eafb0478-3fd5-46e3-9a10-8bda04eb97a7',
   'exercise.vocabulary.u16.syn.ru-ko',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   null,
@@ -42425,9 +42425,9 @@ insert into public.exercises (
   '알맞은 한국어 단어를 고르십시오.',
   'Выберите корейское слово для значения: «сын».',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой выбор корейского слова по переводу; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«아들» означает «сын».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -42436,7 +42436,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e0794daa-2036-4b05-ac1d-d27d171a4ccf',
-  '81be5d79-e5ac-4d64-abec-f86e58ae29d6',
+  'eafb0478-3fd5-46e3-9a10-8bda04eb97a7',
   'opt1',
   '아들',
   '아들',
@@ -42449,7 +42449,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '09eee592-19c5-4f92-a933-e5e78e0813e6',
-  '81be5d79-e5ac-4d64-abec-f86e58ae29d6',
+  'eafb0478-3fd5-46e3-9a10-8bda04eb97a7',
   'opt2',
   '아버지',
   '아버지',
@@ -42462,7 +42462,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3f331ba9-87cf-4101-b125-3e2c25cbb964',
-  '81be5d79-e5ac-4d64-abec-f86e58ae29d6',
+  'eafb0478-3fd5-46e3-9a10-8bda04eb97a7',
   'opt3',
   '아저씨',
   '아저씨',
@@ -42475,7 +42475,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7a2f2d7d-88a6-43e7-8220-aed37bf28c4c',
-  '81be5d79-e5ac-4d64-abec-f86e58ae29d6',
+  'eafb0478-3fd5-46e3-9a10-8bda04eb97a7',
   'opt4',
   '아주머니',
   '아주머니',
@@ -42485,14 +42485,14 @@ insert into public.exercise_options (
 );
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('81be5d79-e5ac-4d64-abec-f86e58ae29d6', '42d86085-85b1-4876-a6a7-ea3a19ba74f3', 'target')
+values ('eafb0478-3fd5-46e3-9a10-8bda04eb97a7', '42d86085-85b1-4876-a6a7-ea3a19ba74f3', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '5e958ccd-785e-4373-a81f-d746f737160c',
+  'f5c6736d-8b29-4333-b103-4076e659964b',
   'exercise.vocabulary.u16.obraschenie-k-muzhchine-srednego-vozrasta.produce',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   null,
@@ -42503,22 +42503,22 @@ insert into public.exercises (
   '한국어로 쓰십시오.',
   'Напишите по-корейски: «обращение к мужчине среднего возраста».',
   '{"answerLanguage":"ko","acceptedAnswerIds":["ans1"]}'::jsonb,
-  'Черновой ввод слова; транслитерация не принимается.',
-  'draft',
-  '1.0.0',
+  '«아저씨» означает «обращение к мужчине среднего возраста».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('5e958ccd-785e-4373-a81f-d746f737160c', '15485c8d-e059-456d-8173-ab8f000c328d', 'target')
+values ('f5c6736d-8b29-4333-b103-4076e659964b', '15485c8d-e059-456d-8173-ab8f000c328d', 'target')
 on conflict do nothing;
 
 insert into public.accepted_answers (
   id, exercise_id, raw_value, normalized_value, is_canonical, review_status
 ) values (
   '655cea6b-68ca-417f-8721-3b63d13b1dc1',
-  '5e958ccd-785e-4373-a81f-d746f737160c',
+  'f5c6736d-8b29-4333-b103-4076e659964b',
   '아저씨',
   '아저씨',
   true,
@@ -42529,7 +42529,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8096ce67-006a-47d2-9293-b9f4c7ff38b4',
+  '6b415086-8f6b-4064-8fbb-fc782db3d65b',
   'exercise.vocabulary.u16.matching.v01',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   null,
@@ -42540,27 +42540,27 @@ insert into public.exercises (
   '단어를 뜻과 연결하십시오.',
   'Сопоставьте корейские слова и значения.',
   '{"pairs":[{"id":"pair1","left":{"ko":"아주머니","ru":"아주머니"},"right":{"ko":"обращение к женщине среднего возраста","ru":"обращение к женщине среднего возраста"}},{"id":"pair2","left":{"ko":"아내","ru":"아내"},"right":{"ko":"жена","ru":"жена"}},{"id":"pair3","left":{"ko":"아빠","ru":"아빠"},"right":{"ko":"папа","ru":"папа"}},{"id":"pair4","left":{"ko":"부모님","ru":"부모님"},"right":{"ko":"родители","ru":"родители"}}]}'::jsonb,
-  'Черновое сопоставление словаря; язык не утверждён.',
-  'draft',
-  '1.0.0',
+  '«아주머니» означает «обращение к женщине среднего возраста».',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('8096ce67-006a-47d2-9293-b9f4c7ff38b4', 'e45e1a8f-087f-40a1-83d9-5e5cea7c4c42', 'target')
+values ('6b415086-8f6b-4064-8fbb-fc782db3d65b', 'e45e1a8f-087f-40a1-83d9-5e5cea7c4c42', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('8096ce67-006a-47d2-9293-b9f4c7ff38b4', '2bc41c66-d6fb-4364-8781-31ef7ec63225', 'target')
+values ('6b415086-8f6b-4064-8fbb-fc782db3d65b', '2bc41c66-d6fb-4364-8781-31ef7ec63225', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('8096ce67-006a-47d2-9293-b9f4c7ff38b4', 'b5217e42-6704-4e55-a321-1925386d0811', 'target')
+values ('6b415086-8f6b-4064-8fbb-fc782db3d65b', 'b5217e42-6704-4e55-a321-1925386d0811', 'target')
 on conflict do nothing;
 
 insert into public.exercise_dictionary_entries (exercise_id, dictionary_entry_id, role)
-values ('8096ce67-006a-47d2-9293-b9f4c7ff38b4', 'f4401085-b933-4e8a-a0c2-88e4327a840d', 'target')
+values ('6b415086-8f6b-4064-8fbb-fc782db3d65b', 'f4401085-b933-4e8a-a0c2-88e4327a840d', 'target')
 on conflict do nothing;
 
 insert into public.exercises (
@@ -49967,7 +49967,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  '07ce8239-2ccc-462a-8fa3-02adaa36b331',
   'exercise.reading.bank.u01.q01',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   null,
@@ -49978,9 +49978,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -49989,7 +49989,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b52ea13b-7728-4f5e-b0f5-96a0e04eaf41',
-  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  '07ce8239-2ccc-462a-8fa3-02adaa36b331',
   'opt1',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -50002,7 +50002,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '46392ab8-75ba-412a-9bca-300afcbceba5',
-  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  '07ce8239-2ccc-462a-8fa3-02adaa36b331',
   'opt2',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -50015,7 +50015,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f5887af3-0b48-4f29-8da0-fed85c641aba',
-  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  '07ce8239-2ccc-462a-8fa3-02adaa36b331',
   'opt3',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -50028,7 +50028,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '02901403-c6f6-4685-91dd-83865c05a43d',
-  '0d36c3d6-5087-4a31-820e-5bf6be3a4ae4',
+  '07ce8239-2ccc-462a-8fa3-02adaa36b331',
   'opt4',
   '한국에서의 일상생활에 대한 글을 읽고 말하기',
   '한국에서의 일상생활에 대한 글을 읽고 말하기',
@@ -50041,7 +50041,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  '99dd2211-0353-41cf-a170-01cbe9ebbf92',
   'exercise.reading.bank.u01.q02',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   null,
@@ -50052,9 +50052,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50063,7 +50063,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f789472c-9b0d-4d13-81e8-42f7c225fe3e',
-  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  '99dd2211-0353-41cf-a170-01cbe9ebbf92',
   'opt1',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -50076,7 +50076,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3e490a0f-1ed7-4bad-96b1-1afef9f65ca3',
-  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  '99dd2211-0353-41cf-a170-01cbe9ebbf92',
   'opt2',
   '저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.',
   '저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.',
@@ -50089,7 +50089,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'fbb65f7a-72f3-46b7-85bf-863bc58d12c9',
-  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  '99dd2211-0353-41cf-a170-01cbe9ebbf92',
   'opt3',
   '위층에는 제 방, 위층 화장실이 있습니다. 제 방에 침대, 책상, 옷장이 있습니다. 책상 위에 책, 공책, 컴퓨터가 있습니다. 화장실은 제 방의 오른쪽에 있습니다.',
   '위층에는 제 방, 위층 화장실이 있습니다. 제 방에 침대, 책상, 옷장이 있습니다. 책상 위에 책, 공책, 컴퓨터가 있습니다. 화장실은 제 방의 오른쪽에 있습니다.',
@@ -50102,7 +50102,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '975b442e-20b2-4931-b855-234352dc2e20',
-  'bb2d0a35-7abd-42ae-a60a-0e8cb7cd4f0f',
+  '99dd2211-0353-41cf-a170-01cbe9ebbf92',
   'opt4',
   '저는 인하대학교에 다닙니다.',
   '저는 인하대학교에 다닙니다.',
@@ -50115,7 +50115,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  '875478ad-34e1-406f-92e7-1bd1983c2eac',
   'exercise.reading.bank.u01.q03',
   'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1',
   null,
@@ -50128,9 +50128,9 @@ ____? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에
   'Выберите слово для пропуска.
 ____? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50139,7 +50139,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e9a12573-18d1-436f-8d19-e638e1382f74',
-  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  '875478ad-34e1-406f-92e7-1bd1983c2eac',
   'opt1',
   '안녕하십니까',
   '안녕하십니까',
@@ -50152,7 +50152,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'dc0f2dfd-d422-4f19-b494-973109a42abb',
-  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  '875478ad-34e1-406f-92e7-1bd1983c2eac',
   'opt2',
   '로빈입니다',
   '로빈입니다',
@@ -50165,7 +50165,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ff2163ba-19e0-4d87-981a-1e2219975c9e',
-  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  '875478ad-34e1-406f-92e7-1bd1983c2eac',
   'opt3',
   '고향집은',
   '고향집은',
@@ -50178,7 +50178,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3146a268-56bf-4db7-b59c-191eec3a83c5',
-  '378e1a63-398f-4f44-8fcb-7370458614d4',
+  '875478ad-34e1-406f-92e7-1bd1983c2eac',
   'opt4',
   '미국의',
   '미국의',
@@ -50191,7 +50191,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  '4ebad215-28b6-41f7-b49d-1f8f0c1d8fb5',
   'exercise.reading.bank.u02.q01',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   null,
@@ -50202,9 +50202,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50213,7 +50213,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '420846c8-e3a9-4c7e-9515-15676c05470d',
-  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  '4ebad215-28b6-41f7-b49d-1f8f0c1d8fb5',
   'opt1',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -50226,7 +50226,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9f3c7349-1748-4312-86c1-c5d7946a14b8',
-  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  '4ebad215-28b6-41f7-b49d-1f8f0c1d8fb5',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -50239,7 +50239,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '55ee2f0b-7b58-4c15-bad2-3d0deac58cad',
-  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  '4ebad215-28b6-41f7-b49d-1f8f0c1d8fb5',
   'opt3',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -50252,7 +50252,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '48f2371c-be5e-4c2c-a189-84325ead369b',
-  '23999399-bfae-4abd-aea3-0b8d289a0322',
+  '4ebad215-28b6-41f7-b49d-1f8f0c1d8fb5',
   'opt4',
   '한국에서의 일상생활에 대한 글을 읽고 말하기',
   '한국에서의 일상생활에 대한 글을 읽고 말하기',
@@ -50265,7 +50265,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  '55eedfc2-0a62-4036-821a-27dbee70118a',
   'exercise.reading.bank.u02.q02',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   null,
@@ -50276,9 +50276,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50287,7 +50287,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '82d4789a-c07f-479a-98b6-a35c429aacfc',
-  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  '55eedfc2-0a62-4036-821a-27dbee70118a',
   'opt1',
   '저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.',
   '저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.',
@@ -50300,7 +50300,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '29ddc88e-ae14-4748-b8ee-f56af790a7c6',
-  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  '55eedfc2-0a62-4036-821a-27dbee70118a',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -50313,7 +50313,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '73c0bb3b-ad94-49bd-ad2c-5d01e148cf4f',
-  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  '55eedfc2-0a62-4036-821a-27dbee70118a',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -50326,7 +50326,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bf3984c3-2462-4115-9260-90e8cc5071fe',
-  '8fb5b2fd-3f88-403d-9be1-cda6faf7218a',
+  '55eedfc2-0a62-4036-821a-27dbee70118a',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -50339,7 +50339,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'b68ae630-dc88-431b-98db-e87aca78586c',
   'exercise.reading.bank.u02.q03',
   '706d624f-aefd-42e9-a146-d7b88ae10f4d',
   null,
@@ -50352,9 +50352,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 ____.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50363,7 +50363,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b3ff7c7b-3787-4a43-a4f4-b5959037d824',
-  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'b68ae630-dc88-431b-98db-e87aca78586c',
   'opt1',
   '이층집입니다',
   '이층집입니다',
@@ -50376,7 +50376,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b147589c-9472-4c40-8829-e6557d41c63e',
-  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'b68ae630-dc88-431b-98db-e87aca78586c',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -50389,7 +50389,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '63165174-1eaf-4615-97fc-8078a8b84610',
-  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'b68ae630-dc88-431b-98db-e87aca78586c',
   'opt3',
   '만나서',
   '만나서',
@@ -50402,7 +50402,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '301d23e4-2e2c-4542-a684-f9959f8c10d8',
-  '1dc9a12c-30c3-4645-b8ca-e99ec7208e83',
+  'b68ae630-dc88-431b-98db-e87aca78586c',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -50415,7 +50415,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  '131357d1-0864-4177-bfce-e8b46218793c',
   'exercise.reading.bank.u03.q01',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   null,
@@ -50426,9 +50426,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «저는 인하대학교에 다닙니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 인하대학교에 다닙니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50437,7 +50437,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0c204d3b-d4ea-4eba-841b-bc956258b4e0',
-  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  '131357d1-0864-4177-bfce-e8b46218793c',
   'opt1',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -50450,7 +50450,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9d7c9505-d401-4cba-a673-c97612972883',
-  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  '131357d1-0864-4177-bfce-e8b46218793c',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -50463,7 +50463,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '930a9db8-9a29-4122-93c3-43c8b88d06fa',
-  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  '131357d1-0864-4177-bfce-e8b46218793c',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -50476,7 +50476,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '72a553fc-e45f-4f87-a728-6e3e363345f8',
-  '8d0711bb-23c3-4c37-aa54-557f3c155dda',
+  '131357d1-0864-4177-bfce-e8b46218793c',
   'opt4',
   '한국에서의 일상생활에 대한 글을 읽고 말하기',
   '한국에서의 일상생활에 대한 글을 읽고 말하기',
@@ -50489,7 +50489,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  '2d8b43e3-580e-4e95-8d92-9e81adf0e5bf',
   'exercise.reading.bank.u03.q02',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   null,
@@ -50500,9 +50500,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «저는 인하대학교에 다닙니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 인하대학교에 다닙니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50511,7 +50511,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '00eeb8d6-0652-4ef6-a84c-f3bc5918ebc8',
-  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  '2d8b43e3-580e-4e95-8d92-9e81adf0e5bf',
   'opt1',
   '저는 인하대학교에 다닙니다.',
   '저는 인하대학교에 다닙니다.',
@@ -50524,7 +50524,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a1406b76-6bf9-4dfb-83f2-59281fb2ffb4',
-  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  '2d8b43e3-580e-4e95-8d92-9e81adf0e5bf',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -50537,7 +50537,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '98f811ed-71c8-453e-864d-f61af8d65c8b',
-  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  '2d8b43e3-580e-4e95-8d92-9e81adf0e5bf',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -50550,7 +50550,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a9c6b378-526e-4c85-8964-d5392b9d7483',
-  '39009c6d-5d81-4298-b5eb-c52743f413ad',
+  '2d8b43e3-580e-4e95-8d92-9e81adf0e5bf',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -50563,7 +50563,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  '5e00677e-13e0-4089-bb8c-8b04d8183866',
   'exercise.reading.bank.u03.q03',
   '2fafcbc2-2711-429b-ac68-e95d5e1d7e11',
   null,
@@ -50576,9 +50576,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 저는 ____ 다닙니다.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «저는 인하대학교에 다닙니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 인하대학교에 다닙니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50587,7 +50587,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '761d0470-3acb-4f11-b978-7bafad92812d',
-  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  '5e00677e-13e0-4089-bb8c-8b04d8183866',
   'opt1',
   '인하대학교에',
   '인하대학교에',
@@ -50600,7 +50600,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0feb10cf-dbcc-4819-b31d-38cdfbe473ab',
-  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  '5e00677e-13e0-4089-bb8c-8b04d8183866',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -50613,7 +50613,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1fb44885-36d4-4039-837d-dff0e8071329',
-  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  '5e00677e-13e0-4089-bb8c-8b04d8183866',
   'opt3',
   '만나서',
   '만나서',
@@ -50626,7 +50626,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f5f0ab95-a36d-42eb-83a8-4726d835290d',
-  '0990ad0b-6e46-45c9-8aef-6514c346754e',
+  '5e00677e-13e0-4089-bb8c-8b04d8183866',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -50639,7 +50639,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  '9bd9b5d7-b9e5-419b-963c-a28d419362f8',
   'exercise.reading.bank.u04.q01',
   'eee407f3-7185-4524-9e59-d79769238530',
   null,
@@ -50650,9 +50650,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50661,7 +50661,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '11e1a902-248c-4e17-8f7e-7fade07af4fd',
-  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  '9bd9b5d7-b9e5-419b-963c-a28d419362f8',
   'opt1',
   '한국에서의 일상생활에 대한 글을 읽고 말하기',
   '한국에서의 일상생활에 대한 글을 읽고 말하기',
@@ -50674,7 +50674,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6d553667-761e-49a0-8e66-fa758c8d438a',
-  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  '9bd9b5d7-b9e5-419b-963c-a28d419362f8',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -50687,7 +50687,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8f3497c3-f311-4124-ba79-4405e817ec57',
-  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  '9bd9b5d7-b9e5-419b-963c-a28d419362f8',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -50700,7 +50700,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bfdb7e53-b6eb-46eb-9ea9-d816394a8ffc',
-  '6a848258-985e-4b9f-80bf-90085f0b8940',
+  '9bd9b5d7-b9e5-419b-963c-a28d419362f8',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -50713,7 +50713,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'da9d78a0-6fd5-41f2-a3cf-3f98d16ddcf2',
   'exercise.reading.bank.u04.q02',
   'eee407f3-7185-4524-9e59-d79769238530',
   null,
@@ -50724,9 +50724,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50735,7 +50735,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'aeb1d4f4-3093-4d41-8345-0dc313b35c01',
-  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'da9d78a0-6fd5-41f2-a3cf-3f98d16ddcf2',
   'opt1',
   '저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.',
   '저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.',
@@ -50748,7 +50748,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '65dc2f67-3a2d-43f2-908c-d1c2a6c0a0f3',
-  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'da9d78a0-6fd5-41f2-a3cf-3f98d16ddcf2',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -50761,7 +50761,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd7620bf2-bd92-4710-bb3c-c216e9736871',
-  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'da9d78a0-6fd5-41f2-a3cf-3f98d16ddcf2',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -50774,7 +50774,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '421f1ea3-8ad1-4d8f-8fbd-3992cfad18b9',
-  'fa3f0d28-2e20-4790-8060-d945f1319fcf',
+  'da9d78a0-6fd5-41f2-a3cf-3f98d16ddcf2',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -50787,7 +50787,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd6f60646-6872-43de-bc2e-548377d28232',
+  '49f4d453-7657-4719-802c-815c09773282',
   'exercise.reading.bank.u04.q03',
   'eee407f3-7185-4524-9e59-d79769238530',
   null,
@@ -50800,9 +50800,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 ____. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50811,7 +50811,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e253cb9f-35dd-4dfa-8ee8-592bf4e05e99',
-  'd6f60646-6872-43de-bc2e-548377d28232',
+  '49f4d453-7657-4719-802c-815c09773282',
   'opt1',
   '재미있습니다',
   '재미있습니다',
@@ -50824,7 +50824,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7eaace9e-cbd8-4b26-9e9d-062d09539b20',
-  'd6f60646-6872-43de-bc2e-548377d28232',
+  '49f4d453-7657-4719-802c-815c09773282',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -50837,7 +50837,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7bba2269-2b0d-4b60-aa87-433c0ac8eba3',
-  'd6f60646-6872-43de-bc2e-548377d28232',
+  '49f4d453-7657-4719-802c-815c09773282',
   'opt3',
   '만나서',
   '만나서',
@@ -50850,7 +50850,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b4c190ba-e2fb-4685-a0d5-fca5ad498a3f',
-  'd6f60646-6872-43de-bc2e-548377d28232',
+  '49f4d453-7657-4719-802c-815c09773282',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -50863,7 +50863,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  '7ce1b3d7-2603-4ba3-bd59-77c9fa84917c',
   'exercise.reading.bank.u05.q01',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   null,
@@ -50874,9 +50874,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50885,7 +50885,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8dff2b90-5c4c-4269-b50f-693dd860263d',
-  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  '7ce1b3d7-2603-4ba3-bd59-77c9fa84917c',
   'opt1',
   '하루 일과에 대한 글을 읽고 말하기',
   '하루 일과에 대한 글을 읽고 말하기',
@@ -50898,7 +50898,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9d2dd4c5-3cb3-41a8-a160-5ff39cab3f73',
-  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  '7ce1b3d7-2603-4ba3-bd59-77c9fa84917c',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -50911,7 +50911,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5bbeacab-9b8d-46d3-ab2e-0068e4846a90',
-  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  '7ce1b3d7-2603-4ba3-bd59-77c9fa84917c',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -50924,7 +50924,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0ac0581a-e98b-409f-a4f4-710b41fe3052',
-  'caaa3cd3-352d-4ba0-8069-ede9f0a53964',
+  '7ce1b3d7-2603-4ba3-bd59-77c9fa84917c',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -50937,7 +50937,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  '8becc8a4-29e1-43ad-afc3-51fa3f5ccc93',
   'exercise.reading.bank.u05.q02',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   null,
@@ -50948,9 +50948,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -50959,7 +50959,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b79da5aa-a6a2-4903-a059-c5da2b5c6685',
-  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  '8becc8a4-29e1-43ad-afc3-51fa3f5ccc93',
   'opt1',
   '저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.',
   '저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.',
@@ -50972,7 +50972,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a67b8d60-0068-40d4-ab93-b06461a9af77',
-  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  '8becc8a4-29e1-43ad-afc3-51fa3f5ccc93',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -50985,7 +50985,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1cef7206-c4e3-4987-b7ec-bd7a43b4f4f6',
-  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  '8becc8a4-29e1-43ad-afc3-51fa3f5ccc93',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -50998,7 +50998,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f6d278f4-7e94-4ef7-b37f-211d5fad8f92',
-  '43fe89d7-6037-427d-a0ba-257c4b21fe38',
+  '8becc8a4-29e1-43ad-afc3-51fa3f5ccc93',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -51011,7 +51011,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'd2332fcd-e66b-4255-b01a-d34624484c27',
   'exercise.reading.bank.u05.q03',
   'c3ea2d8d-5b20-4b07-958c-0619735c3ba4',
   null,
@@ -51024,9 +51024,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 ____ 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51035,7 +51035,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1207e90c-7220-4a5d-b1ac-0322f40d36f2',
-  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'd2332fcd-e66b-4255-b01a-d34624484c27',
   'opt1',
   '도서관에서',
   '도서관에서',
@@ -51048,7 +51048,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0c833eb4-3fbc-48b8-9560-2fc7f58a12a3',
-  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'd2332fcd-e66b-4255-b01a-d34624484c27',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -51061,7 +51061,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '131037c1-499b-462a-a4af-f710e77fd1ea',
-  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'd2332fcd-e66b-4255-b01a-d34624484c27',
   'opt3',
   '만나서',
   '만나서',
@@ -51074,7 +51074,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9d7a70a6-aafe-4d95-93ad-cf5d192b8e95',
-  '2840d3b6-baf2-46a2-8fa0-e4e7a44156a6',
+  'd2332fcd-e66b-4255-b01a-d34624484c27',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -51087,7 +51087,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  '4190acfb-dcd7-4c6d-a318-c13b60cd4bf8',
   'exercise.reading.bank.u06.q01',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   null,
@@ -51098,9 +51098,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «7월 8일 토요일»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «7월 8일 토요일»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51109,7 +51109,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c3d6bc4c-672c-4cb3-82fc-76fbe99d2d17',
-  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  '4190acfb-dcd7-4c6d-a318-c13b60cd4bf8',
   'opt1',
   '주말 이야기에 대한 글을 읽고 말하기',
   '주말 이야기에 대한 글을 읽고 말하기',
@@ -51122,7 +51122,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b5c093a4-70b5-4ed7-950e-174c13154643',
-  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  '4190acfb-dcd7-4c6d-a318-c13b60cd4bf8',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -51135,7 +51135,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a0da2876-1ac7-4062-af47-84bca7f5a8ae',
-  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  '4190acfb-dcd7-4c6d-a318-c13b60cd4bf8',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -51148,7 +51148,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'dfe44f96-19b0-4fa8-8b4e-2f170ae70c84',
-  'faac55ba-2541-4dae-b557-f0255e25c4ad',
+  '4190acfb-dcd7-4c6d-a318-c13b60cd4bf8',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -51161,7 +51161,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  '536f7395-dec9-4247-884a-cbf302fccaba',
   'exercise.reading.bank.u06.q02',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   null,
@@ -51172,9 +51172,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «7월 8일 토요일»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «7월 8일 토요일»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51183,7 +51183,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a1b1f26c-cc5b-4460-9ce0-a8c299354e4d',
-  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  '536f7395-dec9-4247-884a-cbf302fccaba',
   'opt1',
   '7월 8일 토요일',
   '7월 8일 토요일',
@@ -51196,7 +51196,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '32e6f4f6-f7e2-4145-a383-e34c74851d48',
-  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  '536f7395-dec9-4247-884a-cbf302fccaba',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -51209,7 +51209,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '292005e0-c0c6-4254-b9c5-f76639753b32',
-  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  '536f7395-dec9-4247-884a-cbf302fccaba',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -51222,7 +51222,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '48020ee5-4802-44b7-ab1c-328ee9628be6',
-  'cd2ccdd7-d15e-4326-baa0-6cfa251c1b84',
+  '536f7395-dec9-4247-884a-cbf302fccaba',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -51235,7 +51235,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  '168af081-d4fb-4460-9899-b267de205c2e',
   'exercise.reading.bank.u06.q03',
   'bc38c906-b83d-406b-9960-1a21b3efff72',
   null,
@@ -51248,9 +51248,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 ____ 가고 공원에도 갔습니다.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 차이나타운에도 가고 공원에도 갔습니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 차이나타운에도 가고 공원에도 갔습니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51259,7 +51259,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ce8445fd-6ed7-4a9b-81bb-d817e6d5a52a',
-  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  '168af081-d4fb-4460-9899-b267de205c2e',
   'opt1',
   '차이나타운에도',
   '차이나타운에도',
@@ -51272,7 +51272,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'dfc1a0c9-1d88-4cea-8524-e6d7f2f71bb3',
-  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  '168af081-d4fb-4460-9899-b267de205c2e',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -51285,7 +51285,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ce981692-5258-4fe6-8003-43f91774e209',
-  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  '168af081-d4fb-4460-9899-b267de205c2e',
   'opt3',
   '만나서',
   '만나서',
@@ -51298,7 +51298,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2a90230d-52ba-4cbd-9c42-fb9a324c77e8',
-  'd85fd62d-ee41-4c4f-baec-b9ada41469aa',
+  '168af081-d4fb-4460-9899-b267de205c2e',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -51311,7 +51311,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'b70a1d79-2e2e-4ad4-aa84-f8f2bed0b367',
   'exercise.reading.bank.u07.q01',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   null,
@@ -51322,9 +51322,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51333,7 +51333,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '39953308-cec5-49cf-a30c-6233a5d4c133',
-  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'b70a1d79-2e2e-4ad4-aa84-f8f2bed0b367',
   'opt1',
   '좋아하는 계절에 대한 글을 읽고 말하기',
   '좋아하는 계절에 대한 글을 읽고 말하기',
@@ -51346,7 +51346,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '21859174-d2c8-445e-a2a0-9b193e68877c',
-  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'b70a1d79-2e2e-4ad4-aa84-f8f2bed0b367',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -51359,7 +51359,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7ea22bd3-17b7-453c-add0-0d46cbe09f4c',
-  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'b70a1d79-2e2e-4ad4-aa84-f8f2bed0b367',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -51372,7 +51372,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '73cdcda8-e17b-4147-a1fe-3ec5e7f451b4',
-  '76cd571e-fade-4611-81f9-aa1be755c06b',
+  'b70a1d79-2e2e-4ad4-aa84-f8f2bed0b367',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -51385,7 +51385,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  '8a87c097-b8a7-4cdd-bff4-83170162457a',
   'exercise.reading.bank.u07.q02',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   null,
@@ -51396,9 +51396,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51407,7 +51407,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '72ff1c63-5d33-4a3d-b4ea-8913e301a2ce',
-  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  '8a87c097-b8a7-4cdd-bff4-83170162457a',
   'opt1',
   '한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.',
   '한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.',
@@ -51420,7 +51420,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '239eae18-ab5f-40e8-a07f-f24ec369a0fc',
-  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  '8a87c097-b8a7-4cdd-bff4-83170162457a',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -51433,7 +51433,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ba67e3fd-d805-443e-b70e-f5b0ad90b37b',
-  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  '8a87c097-b8a7-4cdd-bff4-83170162457a',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -51446,7 +51446,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '71c7d0fd-a790-447e-9918-e50553580b7c',
-  '326561ab-fe58-45fc-a231-527d89c03bcf',
+  '8a87c097-b8a7-4cdd-bff4-83170162457a',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -51459,7 +51459,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'ebbf2681-e958-4f55-b235-74a12cd43ae5',
   'exercise.reading.bank.u07.q03',
   '9e4d54a7-fad6-4ba5-81ef-0a395e1b393f',
   null,
@@ -51472,9 +51472,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 한국의 가을은 날씨가 맑고 바람도 ____. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51483,7 +51483,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b764c0bc-8ef9-41c3-ba53-cff6b46cd2d0',
-  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'ebbf2681-e958-4f55-b235-74a12cd43ae5',
   'opt1',
   '시원합니다',
   '시원합니다',
@@ -51496,7 +51496,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c9b52336-4165-40d3-b027-79e345fe1ad6',
-  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'ebbf2681-e958-4f55-b235-74a12cd43ae5',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -51509,7 +51509,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6be85b21-e4a5-4169-b494-baede9847ba6',
-  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'ebbf2681-e958-4f55-b235-74a12cd43ae5',
   'opt3',
   '만나서',
   '만나서',
@@ -51522,7 +51522,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f36cb20b-e08c-41da-a32c-11534f77546d',
-  'd2fc2f83-635f-419c-bc0d-aa38b0d025f1',
+  'ebbf2681-e958-4f55-b235-74a12cd43ae5',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -51535,7 +51535,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'e2819593-388a-4941-855d-790b9bd2bd9d',
   'exercise.reading.bank.u08.q01',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   null,
@@ -51546,9 +51546,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51557,7 +51557,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ce80483b-e801-459d-afcd-edf822226952',
-  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'e2819593-388a-4941-855d-790b9bd2bd9d',
   'opt1',
   '방학 계획에 대한 글을 읽고 말하기',
   '방학 계획에 대한 글을 읽고 말하기',
@@ -51570,7 +51570,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2370641c-51eb-49fc-8e55-9ebdc53a0ef1',
-  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'e2819593-388a-4941-855d-790b9bd2bd9d',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -51583,7 +51583,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6d7f666e-05a8-4a3f-a4f8-f355cf4bb23f',
-  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'e2819593-388a-4941-855d-790b9bd2bd9d',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -51596,7 +51596,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '23f5810c-4afc-4e9d-8013-a3a4cac9abd8',
-  '12f73620-cfd3-4c6a-96a1-dff180716cef',
+  'e2819593-388a-4941-855d-790b9bd2bd9d',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -51609,7 +51609,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  '4101f140-b073-4d93-8a1d-e70b50da5499',
   'exercise.reading.bank.u08.q02',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   null,
@@ -51620,9 +51620,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51631,7 +51631,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b3dcca05-e53c-4943-b602-b7334a96ac7a',
-  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  '4101f140-b073-4d93-8a1d-e70b50da5499',
   'opt1',
   '저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.',
   '저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.',
@@ -51644,7 +51644,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '39a44790-2863-48e1-ad16-2cf3937d9e56',
-  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  '4101f140-b073-4d93-8a1d-e70b50da5499',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -51657,7 +51657,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6120e5fb-847c-4a0a-9414-b2f2cd58aca5',
-  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  '4101f140-b073-4d93-8a1d-e70b50da5499',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -51670,7 +51670,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a69eec95-c30b-4e53-a87e-be537fb7633c',
-  'a0a21c8d-73fb-4d83-a94f-c5c448ebf2d4',
+  '4101f140-b073-4d93-8a1d-e70b50da5499',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -51683,7 +51683,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  '944a947b-646f-4d61-8a1b-46d89a65b793',
   'exercise.reading.bank.u08.q03',
   '3d238cd9-9420-42f4-9432-3790c4bcb12f',
   null,
@@ -51696,9 +51696,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. ____ 부모님과 친구의 선물을 살 겁니다.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51707,7 +51707,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '889068b2-0d45-4454-b019-385d131d5877',
-  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  '944a947b-646f-4d61-8a1b-46d89a65b793',
   'opt1',
   '백화점에서',
   '백화점에서',
@@ -51720,7 +51720,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ea6ad764-c723-49d8-b707-7cc21774644c',
-  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  '944a947b-646f-4d61-8a1b-46d89a65b793',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -51733,7 +51733,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd1efbd08-631a-4c31-bdb8-f68cb13854e4',
-  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  '944a947b-646f-4d61-8a1b-46d89a65b793',
   'opt3',
   '만나서',
   '만나서',
@@ -51746,7 +51746,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '76cb772b-a7c5-4884-a04b-10cdbb535091',
-  '6cba2819-4246-4b5b-b5de-0d1f79e56b90',
+  '944a947b-646f-4d61-8a1b-46d89a65b793',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -51759,7 +51759,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '314115c3-9325-467b-9b56-52c6228c31bc',
+  '1c4eb412-d425-42c3-a2f8-8f7542ef4cf1',
   'exercise.reading.bank.u09.q01',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   null,
@@ -51770,9 +51770,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51781,7 +51781,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '75d3a594-cb05-4f55-8108-5d806dbbb6d0',
-  '314115c3-9325-467b-9b56-52c6228c31bc',
+  '1c4eb412-d425-42c3-a2f8-8f7542ef4cf1',
   'opt1',
   '특별한 날에 주는 선물에 대한 글을 읽고 말하기',
   '특별한 날에 주는 선물에 대한 글을 읽고 말하기',
@@ -51794,7 +51794,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4cbc0be8-5630-4070-970b-bc0821929649',
-  '314115c3-9325-467b-9b56-52c6228c31bc',
+  '1c4eb412-d425-42c3-a2f8-8f7542ef4cf1',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -51807,7 +51807,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a09f8eef-c334-4631-a6b2-c78bb751e3f2',
-  '314115c3-9325-467b-9b56-52c6228c31bc',
+  '1c4eb412-d425-42c3-a2f8-8f7542ef4cf1',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -51820,7 +51820,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd691a766-0d73-454e-b60f-70357473ea4f',
-  '314115c3-9325-467b-9b56-52c6228c31bc',
+  '1c4eb412-d425-42c3-a2f8-8f7542ef4cf1',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -51833,7 +51833,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  '2772074b-d1e7-4640-8b5f-9a4e78e03b0d',
   'exercise.reading.bank.u09.q02',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   null,
@@ -51844,9 +51844,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51855,7 +51855,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b1f28668-4ea3-4adc-a5b7-355c8b770f31',
-  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  '2772074b-d1e7-4640-8b5f-9a4e78e03b0d',
   'opt1',
   '내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.',
   '내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.',
@@ -51868,7 +51868,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a5cc1a72-3d13-4104-a74b-a52d296c6255',
-  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  '2772074b-d1e7-4640-8b5f-9a4e78e03b0d',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -51881,7 +51881,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '406d04db-b25e-44b5-9785-09248cf18693',
-  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  '2772074b-d1e7-4640-8b5f-9a4e78e03b0d',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -51894,7 +51894,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c7947d11-0ce2-4c4d-b765-e8bd9141ff6d',
-  'a15cffb4-1b31-4af5-aabe-cf658ff80637',
+  '2772074b-d1e7-4640-8b5f-9a4e78e03b0d',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -51907,7 +51907,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  '2472d0b6-3fd4-4f72-aa33-4ebeec07c2ed',
   'exercise.reading.bank.u09.q03',
   '4b66ae56-55a6-4590-bca7-2f3f201ff969',
   null,
@@ -51920,9 +51920,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 내일은 5월 8일 ____. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -51931,7 +51931,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'cd5286d9-96bb-4370-9112-48ca19b71f16',
-  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  '2472d0b6-3fd4-4f72-aa33-4ebeec07c2ed',
   'opt1',
   '어버이날입니다',
   '어버이날입니다',
@@ -51944,7 +51944,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6b9a8351-7b2f-43c8-914e-c0c2f1867732',
-  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  '2472d0b6-3fd4-4f72-aa33-4ebeec07c2ed',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -51957,7 +51957,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0cb6db4f-3df2-4910-90b0-ee23942de970',
-  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  '2472d0b6-3fd4-4f72-aa33-4ebeec07c2ed',
   'opt3',
   '만나서',
   '만나서',
@@ -51970,7 +51970,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '94c0077a-06cc-4975-88a1-55775bea5026',
-  '92722b5b-96c6-40d7-baa0-17ef18acc399',
+  '2472d0b6-3fd4-4f72-aa33-4ebeec07c2ed',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -51983,7 +51983,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  '3a70618b-b885-4e44-a37f-009e47633f78',
   'exercise.reading.bank.u10.q01',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   null,
@@ -51994,9 +51994,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52005,7 +52005,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c2b7a226-da6c-4eca-acc2-5a3460710ecf',
-  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  '3a70618b-b885-4e44-a37f-009e47633f78',
   'opt1',
   '좋아하는 음식에 대한 글을 읽고 말하기',
   '좋아하는 음식에 대한 글을 읽고 말하기',
@@ -52018,7 +52018,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd4c8ae80-d8c9-4b4a-8173-6e8748ef3873',
-  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  '3a70618b-b885-4e44-a37f-009e47633f78',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -52031,7 +52031,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '03362ca6-91ae-406d-858c-2c52bcbbee09',
-  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  '3a70618b-b885-4e44-a37f-009e47633f78',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -52044,7 +52044,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '62c5942a-5f38-40a7-a8fe-76465569930c',
-  'e45a40ac-6903-49e7-9162-ddd338683db4',
+  '3a70618b-b885-4e44-a37f-009e47633f78',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -52057,7 +52057,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  '75f979e2-5184-4c74-8021-6464f643e880',
   'exercise.reading.bank.u10.q02',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   null,
@@ -52068,9 +52068,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52079,7 +52079,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '0c9e33aa-36db-483e-a7f3-54a846b4db48',
-  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  '75f979e2-5184-4c74-8021-6464f643e880',
   'opt1',
   '저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.',
   '저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.',
@@ -52092,7 +52092,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '411104a4-92a4-4100-87dd-f2f3947ad3e1',
-  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  '75f979e2-5184-4c74-8021-6464f643e880',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -52105,7 +52105,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '168376f6-152c-42b5-9871-cb1b754af12d',
-  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  '75f979e2-5184-4c74-8021-6464f643e880',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -52118,7 +52118,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '60aea580-6ae0-4882-b137-aed41b9eb6a4',
-  'd1a4a3a8-9700-489c-a3cd-f5a606702cdf',
+  '75f979e2-5184-4c74-8021-6464f643e880',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -52131,7 +52131,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  '08f70dec-d8ca-43c5-831e-f0e6d8d223fd',
   'exercise.reading.bank.u10.q03',
   '24c1c977-7856-452f-b835-3a420faeb9fb',
   null,
@@ -52144,9 +52144,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 ____. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52155,7 +52155,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3677c584-fba7-4617-8694-d7ff5f9614aa',
-  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  '08f70dec-d8ca-43c5-831e-f0e6d8d223fd',
   'opt1',
   '맛있었습니다',
   '맛있었습니다',
@@ -52168,7 +52168,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '62db45a9-6ad0-449b-8e7c-f85ce8149b8a',
-  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  '08f70dec-d8ca-43c5-831e-f0e6d8d223fd',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -52181,7 +52181,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '383f788c-cccd-4b7e-bb99-c0870a765f31',
-  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  '08f70dec-d8ca-43c5-831e-f0e6d8d223fd',
   'opt3',
   '만나서',
   '만나서',
@@ -52194,7 +52194,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '930a60fa-4b97-43f6-943c-51e7748cc147',
-  '4ebb048b-5588-4fcf-ac80-6cf5cc3c5a59',
+  '08f70dec-d8ca-43c5-831e-f0e6d8d223fd',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -52207,7 +52207,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  '88ab294c-b249-4fd4-b31d-9b5654f31bcb',
   'exercise.reading.bank.u11.q01',
   'df512da8-8f48-486f-801d-5260291b8d89',
   null,
@@ -52218,9 +52218,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52229,7 +52229,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '94331efb-5e12-4f83-a700-c9da3505a604',
-  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  '88ab294c-b249-4fd4-b31d-9b5654f31bcb',
   'opt1',
   '전화를 바꿔 주기',
   '전화를 바꿔 주기',
@@ -52242,7 +52242,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e3dabefb-b7f4-4075-b079-4bf69955c916',
-  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  '88ab294c-b249-4fd4-b31d-9b5654f31bcb',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -52255,7 +52255,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6bf2a692-5063-44cd-a343-801eb08dc896',
-  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  '88ab294c-b249-4fd4-b31d-9b5654f31bcb',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -52268,7 +52268,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a2e12c61-f030-4140-a370-fe48796fef9d',
-  '35d02d83-4841-4206-8be3-36a3fb84e44f',
+  '88ab294c-b249-4fd4-b31d-9b5654f31bcb',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -52281,7 +52281,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'e315b5be-2855-4d72-9346-97b0063a640d',
   'exercise.reading.bank.u11.q02',
   'df512da8-8f48-486f-801d-5260291b8d89',
   null,
@@ -52292,9 +52292,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52303,7 +52303,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a58bc778-f557-4aa0-85a5-2d268c7fcf6e',
-  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'e315b5be-2855-4d72-9346-97b0063a640d',
   'opt1',
   '여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?',
   '여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?',
@@ -52316,7 +52316,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '069371cd-c50a-4b7f-a58e-08304f44ab9f',
-  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'e315b5be-2855-4d72-9346-97b0063a640d',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -52329,7 +52329,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5f6ace4c-73b7-47f7-9193-dca55a78dc23',
-  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'e315b5be-2855-4d72-9346-97b0063a640d',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -52342,7 +52342,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '78376edf-3720-406d-a3de-4680933c2be8',
-  '33466525-cb1d-4607-8f0e-0562d40ba865',
+  'e315b5be-2855-4d72-9346-97b0063a640d',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -52355,7 +52355,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'f0ab273b-4753-404c-8efc-5ee1ec1635e2',
   'exercise.reading.bank.u11.q03',
   'df512da8-8f48-486f-801d-5260291b8d89',
   null,
@@ -52368,9 +52368,9 @@ ____? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?',
   'Выберите слово для пропуска.
 ____? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52379,7 +52379,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3a32121d-89cb-4401-b51a-42ddcf1b2264',
-  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'f0ab273b-4753-404c-8efc-5ee1ec1635e2',
   'opt1',
   '여보세요',
   '여보세요',
@@ -52392,7 +52392,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4ed75536-5f1b-42ec-a9c3-582f5d11c99f',
-  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'f0ab273b-4753-404c-8efc-5ee1ec1635e2',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -52405,7 +52405,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd3147964-17f0-4cad-843f-2b0d237d664a',
-  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'f0ab273b-4753-404c-8efc-5ee1ec1635e2',
   'opt3',
   '만나서',
   '만나서',
@@ -52418,7 +52418,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2d2590ba-ab80-4627-ae4e-97d327b974f9',
-  '11d00f8d-9df0-41f3-ad54-3ff9eaa6ee37',
+  'f0ab273b-4753-404c-8efc-5ee1ec1635e2',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -52431,7 +52431,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'a2befe8c-2b14-454f-bc2c-a466d2636131',
   'exercise.reading.bank.u12.q01',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   null,
@@ -52442,9 +52442,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52453,7 +52453,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4154d068-191c-49f7-9b1b-fa275fc15c39',
-  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'a2befe8c-2b14-454f-bc2c-a466d2636131',
   'opt1',
   '이메일로 약속하는 글을 읽고 말하기',
   '이메일로 약속하는 글을 읽고 말하기',
@@ -52466,7 +52466,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b4294936-40f0-4705-aa3c-9f4cc0d0d2ce',
-  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'a2befe8c-2b14-454f-bc2c-a466d2636131',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -52479,7 +52479,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ab4f4748-020f-438c-918b-a6488678edb1',
-  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'a2befe8c-2b14-454f-bc2c-a466d2636131',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -52492,7 +52492,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6ebe9905-860b-4b80-b488-efcbf9f174d2',
-  '5b1a0424-71cc-446d-8fe9-74c7e26f8b96',
+  'a2befe8c-2b14-454f-bc2c-a466d2636131',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -52505,7 +52505,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'b0fa0d84-99eb-4554-a94d-883d3468d947',
   'exercise.reading.bank.u12.q02',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   null,
@@ -52516,9 +52516,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52527,7 +52527,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '576332ea-17a1-42a6-abea-6c08f364a1f2',
-  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'b0fa0d84-99eb-4554-a94d-883d3468d947',
   'opt1',
   '오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr',
   '오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr',
@@ -52540,7 +52540,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'd4afba16-3def-480a-8851-122ff1a345f4',
-  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'b0fa0d84-99eb-4554-a94d-883d3468d947',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -52553,7 +52553,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4ec9382d-3ae3-4d5f-9520-38bb45d76609',
-  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'b0fa0d84-99eb-4554-a94d-883d3468d947',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -52566,7 +52566,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9a00fb2d-972d-4e0d-850f-c98ef02e9d87',
-  '62a086b9-e48a-4062-9eb4-89352eff3f1e',
+  'b0fa0d84-99eb-4554-a94d-883d3468d947',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -52579,7 +52579,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'dc77167b-71da-43fc-b594-ef4e84ceecae',
   'exercise.reading.bank.u12.q03',
   '4a217933-add4-41e9-9840-f77bb5baa1f4',
   null,
@@ -52592,9 +52592,9 @@ ____ owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr',
   'Выберите слово для пропуска.
 ____ owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52603,7 +52603,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c6dafbfe-214b-4a2d-bfbd-6a5bfb2fb820',
-  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'dc77167b-71da-43fc-b594-ef4e84ceecae',
   'opt1',
   '오위노',
   '오위노',
@@ -52616,7 +52616,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2caa9c67-465f-47be-976c-b587d3dec4ae',
-  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'dc77167b-71da-43fc-b594-ef4e84ceecae',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -52629,7 +52629,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1e0f1c20-0fb7-4dc2-90e3-a53aabf47c3a',
-  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'dc77167b-71da-43fc-b594-ef4e84ceecae',
   'opt3',
   '만나서',
   '만나서',
@@ -52642,7 +52642,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'add0fa2f-0540-49f1-917b-cd8223d46717',
-  'dde62dc7-c44f-4e2e-b47d-0655dc119131',
+  'dc77167b-71da-43fc-b594-ef4e84ceecae',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -52655,7 +52655,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  '7eea72f1-c543-4c48-8b21-3720c98818d9',
   'exercise.reading.bank.u13.q01',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   null,
@@ -52666,9 +52666,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52677,7 +52677,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '36e6f9ce-5f6e-4a7e-adf9-25015db9797f',
-  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  '7eea72f1-c543-4c48-8b21-3720c98818d9',
   'opt1',
   '목적지에 가는 글을 읽고 말하기',
   '목적지에 가는 글을 읽고 말하기',
@@ -52690,7 +52690,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '36cc251f-fc11-4964-87d0-4ebc1eda75e0',
-  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  '7eea72f1-c543-4c48-8b21-3720c98818d9',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -52703,7 +52703,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '1fdb3afc-e580-40c2-a55c-2ed79abb324d',
-  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  '7eea72f1-c543-4c48-8b21-3720c98818d9',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -52716,7 +52716,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bcc6e3bc-f434-4473-9132-0cfd1d5140e3',
-  '7ee71761-6515-4a15-9077-7efa7c9fbdcd',
+  '7eea72f1-c543-4c48-8b21-3720c98818d9',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -52729,7 +52729,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  '7f2668dd-af5a-462c-b8e5-2c79846b14cd',
   'exercise.reading.bank.u13.q02',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   null,
@@ -52740,9 +52740,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52751,7 +52751,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '10652eff-f8eb-4cf7-b62e-30262793a19f',
-  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  '7f2668dd-af5a-462c-b8e5-2c79846b14cd',
   'opt1',
   '오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.',
   '오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.',
@@ -52764,7 +52764,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '44507672-02c6-4609-a8b6-cd03b20c1217',
-  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  '7f2668dd-af5a-462c-b8e5-2c79846b14cd',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -52777,7 +52777,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9463a065-7ef5-4fb4-b76f-faea7cb4fd1b',
-  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  '7f2668dd-af5a-462c-b8e5-2c79846b14cd',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -52790,7 +52790,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bffdf607-f3ef-4862-a29c-716dc0403a20',
-  '37c4efcb-ab47-4fa9-9371-b0a6ecddd7ad',
+  '7f2668dd-af5a-462c-b8e5-2c79846b14cd',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -52803,7 +52803,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  '711d1717-2086-442a-adb4-b750c039624c',
   'exercise.reading.bank.u13.q03',
   'b5fe446c-99fa-4aa5-85d0-7806760c484c',
   null,
@@ -52816,9 +52816,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 오늘 난타 공연을 보러 ____ 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52827,7 +52827,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '994e5f77-7ac1-4342-abfc-fe9a72d93b30',
-  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  '711d1717-2086-442a-adb4-b750c039624c',
   'opt1',
   '세종문화회관에',
   '세종문화회관에',
@@ -52840,7 +52840,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ee948f35-e5cf-419e-9a4d-f5005dc8a801',
-  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  '711d1717-2086-442a-adb4-b750c039624c',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -52853,7 +52853,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '18940367-4065-495c-af06-d48b0cf83deb',
-  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  '711d1717-2086-442a-adb4-b750c039624c',
   'opt3',
   '만나서',
   '만나서',
@@ -52866,7 +52866,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6e12f346-813d-400b-af4c-c8e39b2c1b34',
-  '89f0f547-6c9c-45ac-8e3d-9677c19b2dbd',
+  '711d1717-2086-442a-adb4-b750c039624c',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -52879,7 +52879,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'df5cd192-9c8f-4372-a1b1-1240ac3a2612',
   'exercise.reading.bank.u14.q01',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   null,
@@ -52890,9 +52890,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «**도서관 이용 안내**»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «**도서관 이용 안내**»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52901,7 +52901,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3a710277-3005-47db-a757-263c7146f16d',
-  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'df5cd192-9c8f-4372-a1b1-1240ac3a2612',
   'opt1',
   '도서관 이용 안내문을 읽고 말하기',
   '도서관 이용 안내문을 읽고 말하기',
@@ -52914,7 +52914,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '4506855b-9a16-4ae5-bc62-3793bb03d98b',
-  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'df5cd192-9c8f-4372-a1b1-1240ac3a2612',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -52927,7 +52927,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '425c2614-f30c-4a87-98df-6836f5de177c',
-  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'df5cd192-9c8f-4372-a1b1-1240ac3a2612',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -52940,7 +52940,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '12fa5f8d-1c34-4189-9f93-4678bff5d7f1',
-  'd2996642-7ff6-4143-a745-80600f705a8e',
+  'df5cd192-9c8f-4372-a1b1-1240ac3a2612',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -52953,7 +52953,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  '97613b1e-ae47-4833-9b23-42e6b876f49b',
   'exercise.reading.bank.u14.q02',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   null,
@@ -52964,9 +52964,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «**도서관 이용 안내**»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «**도서관 이용 안내**»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -52975,7 +52975,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'abfb46f0-398b-4ab1-b41e-ca9bb854c371',
-  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  '97613b1e-ae47-4833-9b23-42e6b876f49b',
   'opt1',
   '**도서관 이용 안내**',
   '**도서관 이용 안내**',
@@ -52988,7 +52988,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '22c36360-7fff-4d3b-b53d-316491e1befa',
-  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  '97613b1e-ae47-4833-9b23-42e6b876f49b',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -53001,7 +53001,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a6188ba4-fc32-49d8-b666-a7dbc66652c0',
-  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  '97613b1e-ae47-4833-9b23-42e6b876f49b',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -53014,7 +53014,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '47fd0d23-035c-4df2-b65b-abb0a375a884',
-  '00dc503a-46bf-4acd-828c-0373c61846c0',
+  '97613b1e-ae47-4833-9b23-42e6b876f49b',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -53027,7 +53027,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  '1a2bb605-1381-456a-a8f6-b901584772da',
   'exercise.reading.bank.u14.q03',
   '48a55ccf-76e5-42c4-b581-00e86f614a50',
   null,
@@ -53040,9 +53040,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 **____ 이용 안내**',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «**도서관 이용 안내**»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «**도서관 이용 안내**»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -53051,7 +53051,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f0bcf12c-8e6a-40fa-b027-297072527e0f',
-  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  '1a2bb605-1381-456a-a8f6-b901584772da',
   'opt1',
   '도서관',
   '도서관',
@@ -53064,7 +53064,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '5b35c64e-8e37-4191-9b5a-1edd94280b16',
-  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  '1a2bb605-1381-456a-a8f6-b901584772da',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -53077,7 +53077,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '347c7641-08f2-407e-a555-5e6e50f03fcf',
-  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  '1a2bb605-1381-456a-a8f6-b901584772da',
   'opt3',
   '만나서',
   '만나서',
@@ -53090,7 +53090,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8804af64-a95d-4b03-9108-aa9775050e9e',
-  '5eebd20a-87b6-464c-ba4c-fefcc556cc63',
+  '1a2bb605-1381-456a-a8f6-b901584772da',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -53103,7 +53103,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'fe900c87-d90b-4c2f-a297-4f377d950ad0',
   'exercise.reading.bank.u15.q01',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   null,
@@ -53114,9 +53114,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «왕루 씨 (21세, 여)»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «왕루 씨 (21세, 여)»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -53125,7 +53125,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '8ba1b33a-4590-466b-8b9c-4150cfa058dc',
-  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'fe900c87-d90b-4c2f-a297-4f377d950ad0',
   'opt1',
   '약을 먹는 방법을 읽고 말하기',
   '약을 먹는 방법을 읽고 말하기',
@@ -53138,7 +53138,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'b39d8036-10b9-4196-ad54-b8508cea756c',
-  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'fe900c87-d90b-4c2f-a297-4f377d950ad0',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -53151,7 +53151,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '26247f8c-0951-4290-85a1-3b520f64e0aa',
-  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'fe900c87-d90b-4c2f-a297-4f377d950ad0',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -53164,7 +53164,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '02aacf86-b08d-4ffa-b711-d71a08a2df18',
-  '40a34ceb-df0d-4d72-8743-b0d789a9d31e',
+  'fe900c87-d90b-4c2f-a297-4f377d950ad0',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -53177,7 +53177,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  '7e0ebdc1-92da-47b4-89a6-7d5f0359a21b',
   'exercise.reading.bank.u15.q02',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   null,
@@ -53188,9 +53188,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «왕루 씨 (21세, 여)»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «왕루 씨 (21세, 여)»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -53199,7 +53199,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'def28a2b-7839-4406-9f82-2f854b73e1e4',
-  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  '7e0ebdc1-92da-47b4-89a6-7d5f0359a21b',
   'opt1',
   '왕루 씨 (21세, 여)',
   '왕루 씨 (21세, 여)',
@@ -53212,7 +53212,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f6a85abd-202c-4b52-863b-fab4f5a47456',
-  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  '7e0ebdc1-92da-47b4-89a6-7d5f0359a21b',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -53225,7 +53225,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'e525b379-9a7d-4dfa-94a2-76cb4980135b',
-  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  '7e0ebdc1-92da-47b4-89a6-7d5f0359a21b',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -53238,7 +53238,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a814946d-08cf-4d5c-9621-3ffe410f2d47',
-  'a35a4acb-59ea-410b-80bc-f9a50797fdd1',
+  '7e0ebdc1-92da-47b4-89a6-7d5f0359a21b',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -53251,7 +53251,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'd2ea7da1-7b05-45dd-aea6-f0327db4faad',
   'exercise.reading.bank.u15.q03',
   '3209c69a-a864-4968-99d2-ec3ed803dab1',
   null,
@@ -53264,9 +53264,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 식전 30분 / 식후 30분 / 6____)',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «식전 30분 / 식후 30분 / 6시간마다)»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «식전 30분 / 식후 30분 / 6시간마다)»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -53275,7 +53275,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a4b0f722-fd89-4173-afdc-aef0f0e9c55e',
-  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'd2ea7da1-7b05-45dd-aea6-f0327db4faad',
   'opt1',
   '시간마다',
   '시간마다',
@@ -53288,7 +53288,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'a71f101d-f610-4410-8a0e-270eb984df98',
-  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'd2ea7da1-7b05-45dd-aea6-f0327db4faad',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -53301,7 +53301,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '9ab52f02-d45c-48b5-bb19-74bfb0b33db2',
-  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'd2ea7da1-7b05-45dd-aea6-f0327db4faad',
   'opt3',
   '만나서',
   '만나서',
@@ -53314,7 +53314,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3a1f65f6-e288-4b7d-9958-29df6e9dcf83',
-  '7d412a65-14aa-4b2d-ba27-08d759a3d5e5',
+  'd2ea7da1-7b05-45dd-aea6-f0327db4faad',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -53327,7 +53327,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  '29794aa2-7ebd-4e70-89ba-d735d86a8a38',
   'exercise.reading.bank.u16.q01',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   null,
@@ -53338,9 +53338,9 @@ insert into public.exercises (
   '이 글의 중심 내용은 무엇입니까? 알맞은 것을 고르십시오.',
   'О чём этот текст? Выберите подходящий вариант.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на главную мысль. Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -53349,7 +53349,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '31852b78-33e1-4044-b00c-c30890db1571',
-  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  '29794aa2-7ebd-4e70-89ba-d735d86a8a38',
   'opt1',
   '부모님께 쓴 편지를 읽고 말하기',
   '부모님께 쓴 편지를 읽고 말하기',
@@ -53362,7 +53362,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '7743f35f-d7c5-48f5-9f52-7f20895a9ddd',
-  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  '29794aa2-7ebd-4e70-89ba-d735d86a8a38',
   'opt2',
   '자기소개에 대한 글을 읽고 말하기',
   '자기소개에 대한 글을 읽고 말하기',
@@ -53375,7 +53375,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '2326bd80-85ba-4d54-af2c-c34866ca8dfb',
-  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  '29794aa2-7ebd-4e70-89ba-d735d86a8a38',
   'opt3',
   '고향집을 소개하는 글을 읽고 말하기',
   '고향집을 소개하는 글을 읽고 말하기',
@@ -53388,7 +53388,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '28b84748-e09c-4d73-ba32-0ed73a84449e',
-  '0d1ad2af-3d4a-45d9-9aac-a9a8b5f8c2c2',
+  '29794aa2-7ebd-4e70-89ba-d735d86a8a38',
   'opt4',
   '학교생활을 설명하는 글을 읽고 말하기',
   '학교생활을 설명하는 글을 읽고 말하기',
@@ -53401,7 +53401,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  '97f992d5-7958-4570-9e00-69f47e68bc0b',
   'exercise.reading.bank.u16.q02',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   null,
@@ -53412,9 +53412,9 @@ insert into public.exercises (
   '다음 중 글의 내용과 같은 것을 고르십시오.',
   'Выберите утверждение, которое соответствует тексту.',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на соответствие. Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -53423,7 +53423,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '3750e95a-c250-4eb3-9ab1-e6a59a82cff5',
-  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  '97f992d5-7958-4570-9e00-69f47e68bc0b',
   'opt1',
   '아버지, 어머니 잘 지내고 계시지요?',
   '아버지, 어머니 잘 지내고 계시지요?',
@@ -53436,7 +53436,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'f2b4c7f4-b2c8-4981-bee3-f375262b6bd7',
-  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  '97f992d5-7958-4570-9e00-69f47e68bc0b',
   'opt2',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
   '안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.',
@@ -53449,7 +53449,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '78684ed0-7f26-458f-aa1f-2b6fd7c2857f',
-  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  '97f992d5-7958-4570-9e00-69f47e68bc0b',
   'opt3',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
   '아멜리 씨는 제 친구입니다. 아멜리 씨는 중국 사람이 아닙니다. 프랑스에서 왔습니다. 자르갈 씨도 제 친구입니다. 자르갈 씨는 몽골 사람입니다. 자르갈 씨도 학생입니다.',
@@ -53462,7 +53462,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'ce9b8517-baa4-4f2a-8363-e58232534059',
-  'a18c4b04-8d85-4f0f-a34c-f5ee13a84ff0',
+  '97f992d5-7958-4570-9e00-69f47e68bc0b',
   'opt4',
   '모두 우리 반 친구입니다.',
   '모두 우리 반 친구입니다.',
@@ -53475,7 +53475,7 @@ insert into public.exercises (
   id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
-  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  '959decf3-f985-49d6-b955-c311b4cb8563',
   'exercise.reading.bank.u16.q03',
   '9d93adf1-8eca-4864-b209-f5a50b2776bb',
   null,
@@ -53488,9 +53488,9 @@ insert into public.exercises (
   'Выберите слово для пропуска.
 아버지, 어머니 잘 지내고 ____?',
   '{"correctOptionId":"opt1","optionIds":["opt1","opt2","opt3","opt4"]}'::jsonb,
-  'Черновой вопрос на заполнение. Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»',
-  'draft',
-  '1.0.0',
+  'Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»',
+  'approved',
+  '1.0.1',
   'manual'
 )
 ;
@@ -53499,7 +53499,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '6511a463-bb7f-401c-a5c1-0641e31ec47a',
-  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  '959decf3-f985-49d6-b955-c311b4cb8563',
   'opt1',
   '계시지요',
   '계시지요',
@@ -53512,7 +53512,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'bbdc0a0b-e57b-4b79-95ba-d9fee398158f',
-  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  '959decf3-f985-49d6-b955-c311b4cb8563',
   'opt2',
   '안녕하십니까',
   '안녕하십니까',
@@ -53525,7 +53525,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   '69ddc0fc-d286-458d-9035-b0c7623ed9fe',
-  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  '959decf3-f985-49d6-b955-c311b4cb8563',
   'opt3',
   '만나서',
   '만나서',
@@ -53538,7 +53538,7 @@ insert into public.exercise_options (
   id, exercise_id, option_key, label_ko, label_ru, value_payload, is_correct, sort_order
 ) values (
   'c119b9ab-b455-45a8-b857-3800ca50f304',
-  '7660c52e-ad21-4d7c-82d3-96d3b4949051',
+  '959decf3-f985-49d6-b955-c311b4cb8563',
   'opt4',
   '반갑습니다',
   '반갑습니다',
@@ -54993,10 +54993,10 @@ insert into public.content_provenance (
   '800f9503-9c65-46b7-b269-f4327e17860f',
   'exercise',
   'exercise.grammar.u01.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n01',
-  'feb4062eb90800cb51c14258ebb9304c3c2650c6198ac3761a269e2384baeef4',
+  '4928416470d640b2e4e2fc4ad03280549ebbc86e03858d2a4f2b723242c05a57',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55008,10 +55008,10 @@ insert into public.content_provenance (
   '8825fa90-0ad2-479f-9c9f-d1322c8ffc3a',
   'exercise',
   'exercise.grammar.u01.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n01',
-  'f9a0e049c3b81975a970f5e6cacb21d264c8ef7c8e942667321d67ae0c854434',
+  '046785696669cc886619606a0836b453af062adea14047040855f16dfe3ae128',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55023,10 +55023,10 @@ insert into public.content_provenance (
   '673f431f-5b57-41e7-97b7-4464708a4609',
   'exercise',
   'exercise.grammar.u01.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n02',
-  '132ced5efce018130b199191dfdb1dda0e66156badfb85029e168fcee81b3f8f',
+  'b184baa2d1854dad20cd8fa17ac26eb0f262608b5f57e1ff30f681cb4a85f0a9',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55038,10 +55038,10 @@ insert into public.content_provenance (
   '33f8b53f-e982-455d-9ed4-29107b2a061e',
   'exercise',
   'exercise.grammar.u01.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n02',
-  '264e4663bea3369b1f627b6f8d5b16fa048edacf4cada06101b5f5c932834f19',
+  '4e38ec1c2da24cbb0ff40c4fd1ce1ae0fd6283bd6339168c58a069e89aced7d6',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55053,10 +55053,10 @@ insert into public.content_provenance (
   '031209dc-0527-4fdf-802c-28c968ae9f1a',
   'exercise',
   'exercise.grammar.u01.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n03',
-  '28b07f4266d9bdee14298950f95168f063086cc9aa09dcffdfc1b5f9c5305ec0',
+  'f3a022a0ac0ed1cf2bc6933a4f2d3c505843cf67c1dfcb832f1f6abc39f05ae4',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55068,10 +55068,10 @@ insert into public.content_provenance (
   '74656921-5d2a-4978-b940-e960dad76912',
   'exercise',
   'exercise.grammar.u01.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n03',
-  '3c9e4b56a889fef4836ce9042a74ce90e0247324ffde23c02bff6411dbc3b2f3',
+  'f0e540490c050758b272868dce8fbba7f39e967fdbfe84ffeb5ec4def4100559',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55083,10 +55083,10 @@ insert into public.content_provenance (
   '583c16c2-13e8-456a-bc75-8ff235f13db5',
   'exercise',
   'exercise.grammar.u01.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n04',
-  '535359777ce5ca7af136bdd2f79b8687bf1eb23ee6937eafe83157f9d439ec5e',
+  'b8be4494b6aba633ec33f82b77e52944177f75578b3653228328b5733207bb32',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55098,10 +55098,10 @@ insert into public.content_provenance (
   '3fc66b28-2b9a-4189-9333-e1a5a0b768b3',
   'exercise',
   'exercise.grammar.u01.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n04',
-  '2935b81d19aedc3e9725b7b78e7a648cbc8ad2429cc09e6f5c389f9dc251fc6d',
+  '252847e0703d5ca9aa509d81f6cc79cd3bffd8be46c3c8439df5485a0a6c815e',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55113,10 +55113,10 @@ insert into public.content_provenance (
   '05f58f1f-065e-46e2-b057-dafad58a3f9d',
   'exercise',
   'exercise.grammar.u01.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n05',
-  'cfb2cf9e2b5a24361b003397a3f1692ed27ba3b4e85cbe151adddc272609abe3',
+  'a0aafc09c074dec14167c758c22ae656be15709c66ab5fb79de6175b42e0a14b',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55128,10 +55128,10 @@ insert into public.content_provenance (
   '18730a8f-9236-444d-b4e7-75c36ecc8f06',
   'exercise',
   'exercise.grammar.u01.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u01.n05',
-  'dfc8f0740e8ff84afb00f72d3a82eb4f526b47616015bf317feeff49a3663b87',
+  '5d6ee502f08bf2b6372a2998a85087ae95424c48f153db9b2a4aad9113371238',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55143,10 +55143,10 @@ insert into public.content_provenance (
   '5ef75988-e25b-416a-8d93-0c6c98360d94',
   'exercise',
   'exercise.grammar.u02.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u02.n01',
-  '2278d2d38262d346e61e02bf5c3ed8816af1670ca101f6bb94abd4a8793175b0',
+  '474d400f491bb47867448fed3085df556df37d96c0774df9d279b1b5f018effd',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55158,10 +55158,10 @@ insert into public.content_provenance (
   'c3117791-d9c5-42dd-9281-caeaf2ca8df6',
   'exercise',
   'exercise.grammar.u02.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u02.n01',
-  'ad9851421c9b52676f39d5d5ec0e90f3a9ac925fa18e35987492f10ab598e8aa',
+  '8c9fafde37dc7c7a9595193f5c8dfc18bf5352104e1852ae3e23275a73b47ad7',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55173,10 +55173,10 @@ insert into public.content_provenance (
   '1a077615-9731-473f-a9d2-eb84cbc6bbf0',
   'exercise',
   'exercise.grammar.u02.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u02.n02',
-  'e43fea0841a9490b040840dbce5ac362a8d1cdea73899b7bd732a367335afd69',
+  '97b79282e176edfd83b28cbbb89ef318c79d2618aad82afc4c6334baa3b1527b',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55188,10 +55188,10 @@ insert into public.content_provenance (
   '49b8e333-992b-4029-8a63-def2c17891ea',
   'exercise',
   'exercise.grammar.u02.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u02.n02',
-  'eaae569acb50cc4b9edf919622aa2de0d2d7842985f91623a4e7f5bfc410a916',
+  '4727811cf3bfbfc8811fcbae8f78ff8b22d8eec66c80a78969a9aa29ce9e7ff9',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55203,10 +55203,10 @@ insert into public.content_provenance (
   '87e89fb1-9316-44c3-b89f-f7fa11934eed',
   'exercise',
   'exercise.grammar.u02.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u02.n03',
-  '66aca7d8db34015478d70392ca73eb485e6724a732b477e3dfebd3e58f59f447',
+  '6be364a5ee109ee06223c8835c55e8de9a0271333a4cfe31e26d0237795b8aa5',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55218,10 +55218,10 @@ insert into public.content_provenance (
   'b588c772-eb3f-4202-8de7-b85b20e0d4b2',
   'exercise',
   'exercise.grammar.u02.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u02.n03',
-  '1b2aada3a97941407878d33af68d56c0c4df27e1d3e43eb5265882c213538d88',
+  '403ff98ab25d736a3ab4fad638cdc25cb7331f322b636e07945eb06ed8f68c48',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55233,10 +55233,10 @@ insert into public.content_provenance (
   '230ec1f7-5a95-42d9-94f2-9c1c700f34ce',
   'exercise',
   'exercise.grammar.u02.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u02.n04',
-  'b65afa2657cbc43b12dd341c9385ab8870363a3c912e55253ae813e3fea6615f',
+  '74a41757713d11a20085de4e41df6a8ef35dc3dbabc1cce186936e3958f14621',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55248,10 +55248,10 @@ insert into public.content_provenance (
   '3e6142fc-9817-42d6-9444-64192903fe56',
   'exercise',
   'exercise.grammar.u02.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u02.n04',
-  '72c3491ecc546cf05df3658006f7a9efdabd05d24e23df19c5b79cae71c29afe',
+  '0345680316270f43068d9c7ea21d6f4bcd1aa934fcba8b214b06110933642d7d',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55263,10 +55263,10 @@ insert into public.content_provenance (
   '11ba231a-ef24-4b0c-a71a-7775332efe85',
   'exercise',
   'exercise.grammar.u03.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n01',
-  'c0bfe80fd035c7f838f2ffb284d09ac37379553feb57ff4553d46d3d4039145e',
+  '7568e60e72afe4a23c81d53dfe6c3ce95f9fbc748c222b787b7adc5189ec29e4',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55278,10 +55278,10 @@ insert into public.content_provenance (
   '39514e34-1e6a-41a3-9151-27da1e440673',
   'exercise',
   'exercise.grammar.u03.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n01',
-  '54abc7b459c9cdfab580847d3ec508e6efc8315eb6131ae18c4ea7b5260e7f80',
+  'ef61ab04f060e59847b3c84a17d3ba8082be86574628afb037f5d905257d0b91',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55293,10 +55293,10 @@ insert into public.content_provenance (
   'dd06a166-8ca7-4cd3-ae04-3cbf1c9e366b',
   'exercise',
   'exercise.grammar.u03.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n02',
-  '41ae70d341c6c725fd1fbe65ac81dca178c5cf4730e6b608ef1541a13b88c510',
+  'e7e9777b8e29ed583c9df58f8c611d3011a6da75037404703ea57740dd59c808',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55308,10 +55308,10 @@ insert into public.content_provenance (
   '97d5113c-7cf4-4661-abf0-313e3cf6e7d9',
   'exercise',
   'exercise.grammar.u03.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n02',
-  'e338ff367992adf5b8a43619a8915dd47c39639d1103f2b6459fc55e1ed45267',
+  '72a5a5f2ca72fe3bf34bab4114e0cef1054a9d9eeb8ede1ea8bc6e95b3d21266',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55323,10 +55323,10 @@ insert into public.content_provenance (
   'ed1d7226-dcf6-4975-8bc9-4e3c61dafe9d',
   'exercise',
   'exercise.grammar.u03.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n03',
-  '7c1641bb902886eaf1ecd383a2c68ca5e63a0b187d36a2002cad5a266c456f55',
+  'b4c9e51c80d3ef68813f738b68b78b2de2fb6de3afa90441cb7f3a2da7b5870e',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55338,10 +55338,10 @@ insert into public.content_provenance (
   '73fbe927-e6d5-4e8a-be69-cc4888dd8e07',
   'exercise',
   'exercise.grammar.u03.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n03',
-  'e94e1a241abd980aaa86e44d891312d84c70aeee0ac9bcb79e44cc025a509ef9',
+  'f762152a14e3056b453b60157ed64bc5a52da7d7ecab8e8363eda204760b913d',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55353,10 +55353,10 @@ insert into public.content_provenance (
   '7931d044-6d7a-4a78-94af-6c0c23b0593a',
   'exercise',
   'exercise.grammar.u03.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n04',
-  '30984fbbcbfe245db0d1a242083af736309f3861b353b50c5c776e5f1998f3f6',
+  '88b4c89a6897955a04239166792f2cda72a504334b7044c75521fc3998ff910d',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55368,10 +55368,10 @@ insert into public.content_provenance (
   'd8b5992e-7719-485e-af9c-ebb4e28d88c0',
   'exercise',
   'exercise.grammar.u03.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n04',
-  'b9555c7d2c4b8432547697c60a08821ec735d7380913fa6d004135d145edba4a',
+  'ea3ec39aaf6edc9e91664332c9bf70d61e3f466fe0590a8b9da4aaecdf4e0b81',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55383,10 +55383,10 @@ insert into public.content_provenance (
   'ad67a12d-e872-44fe-a822-4fa4dda0795e',
   'exercise',
   'exercise.grammar.u03.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n05',
-  'fefd903bc26bd91a27f0ee7b38663bbd012dd077566399d05c92249cb9b5bb43',
+  '91920a0be980a6630032cb1ac24aead66a06508d3c44f838ac4a37e6c3967850',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55398,10 +55398,10 @@ insert into public.content_provenance (
   '858cc889-066e-4e0f-9b5a-35c56f8fc670',
   'exercise',
   'exercise.grammar.u03.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u03.n05',
-  '5b39a9bc292b70bc3ef19cf1b2a9e4991475af2e1ac26754992133aca84323e5',
+  'f914b094aeb22435ea34ef5d78720afd1a05e01687cb9d533a017fa243d0d43d',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55413,10 +55413,10 @@ insert into public.content_provenance (
   '717a0201-79d4-40cd-8e13-aec52dcd7441',
   'exercise',
   'exercise.grammar.u04.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n01',
-  '7e858179b17955d26fd887ffd55e23d4711556ae2d07c2d4939e3ec63dcef548',
+  '1b31abb71dc25d21e23bb505537b8b03772c9bad1a8ec546aaacf04a642efac1',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55428,10 +55428,10 @@ insert into public.content_provenance (
   'c0c842fe-df6e-41ac-a672-c596ec65374b',
   'exercise',
   'exercise.grammar.u04.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n01',
-  'bfb75a0908858325f861e7acd53dd257f7ec9703148786fb7893f4a5c8915bbe',
+  'de66a3f76fd39033c11c47d70e71f2070a8416098b4a456eeb4734f4935e2b70',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55443,10 +55443,10 @@ insert into public.content_provenance (
   'a7a80b8d-3e03-42ed-a035-3972fae169b3',
   'exercise',
   'exercise.grammar.u04.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n02',
-  'b0fe5d66747222fd484651add4f5ddb395030a71ffa72972f55c414a12d1dd35',
+  'bdc45fe96b5de576d93ba6dce2b81cc31520fdcafe898c9fedcf43342e9820f8',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55458,10 +55458,10 @@ insert into public.content_provenance (
   'a89273c1-cbd2-45b2-ad5f-6700b8b5292d',
   'exercise',
   'exercise.grammar.u04.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n02',
-  'b3285a7ecdc6831e4a4167a273fab458bf058026cc3043fafd09f5bfd681df41',
+  'bb908b90e6e2db4fe632cc45faa14266fd85332e638ce4641fe8de99e8cdaa39',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55473,10 +55473,10 @@ insert into public.content_provenance (
   '3553fe71-827c-45c6-b911-ad0628307277',
   'exercise',
   'exercise.grammar.u04.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n03',
-  '21f1d1c69c4dfbd07fb7c6331d72ee5ab9cf891ab7b46823f3b73de16be74475',
+  'cbf58a25d9d1848864e4ecf36a9fd924ede1bd0034d6f590a7b71ea530572bc9',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55488,10 +55488,10 @@ insert into public.content_provenance (
   'dfc7b666-cb42-4c37-8f82-e021a3ab11df',
   'exercise',
   'exercise.grammar.u04.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n03',
-  '5a4d0069b5f86286df280d8dad6b760e0175aa3afb1dd2478a9ca0eec650d634',
+  'dc556e5ff34878e503a7a0fb4ea18d59c7ad6e5879bb0e8b5262b248b98e812b',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55503,10 +55503,10 @@ insert into public.content_provenance (
   '7f4e8080-d290-4847-8c48-98e34258ce5a',
   'exercise',
   'exercise.grammar.u04.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n04',
-  'abb902ffe811af1478cde55a81df0a7dc36311ab77f0414e073de43144347589',
+  '1308479c003be1437d82225b9f5a4efa92b6437fb9bfc53746a3750c06068e05',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55518,10 +55518,10 @@ insert into public.content_provenance (
   '006f3e14-4f01-4b87-9035-d27b8b6556f6',
   'exercise',
   'exercise.grammar.u04.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n04',
-  '3e228db121ce7a147987531a666289476a96c2c234e32d707a8b502d1ce9375a',
+  '80b3e4e031d2e8389c03782226970c4051495798117143e91f81541faceb0ae6',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55533,10 +55533,10 @@ insert into public.content_provenance (
   '3ed345ca-9e38-44fb-bf67-4c44a718578e',
   'exercise',
   'exercise.grammar.u04.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n05',
-  '41c349bc50a96cda0bc5cd254a7a0fd11e3ca4252ee21e456d48f5681e767a39',
+  '8d488afd003f15f739782cf04cd421f45844d248180473b53db404a6e6ad230f',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55548,10 +55548,10 @@ insert into public.content_provenance (
   '15bdcfda-fca2-446d-82ec-27e9412551f2',
   'exercise',
   'exercise.grammar.u04.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u04.n05',
-  'd14e06dddb06b3e1ce41eeecc163cd49543cbc11a8ef02bc52edaf484a5716f6',
+  'e9c61ec43008eb0238b0316385cbddb5e22e56be7958234cd8e43c4cfc3c4fd3',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55563,10 +55563,10 @@ insert into public.content_provenance (
   'e3212f4e-ca45-4e84-8c6a-52c37f085756',
   'exercise',
   'exercise.grammar.u05.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n01',
-  'ec80d94317ccaf2e14aefb79a0aa82d4948136f1b516a3a6f21e518a4628278b',
+  'b22072d0eb3c3f0471c6130d1f26616293ff94e5ad4bff90fef446994d95f436',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55578,10 +55578,10 @@ insert into public.content_provenance (
   '625250dc-bf06-4adb-a44d-db35a1c89b4c',
   'exercise',
   'exercise.grammar.u05.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n01',
-  '399191ebf74fe026331834677992209d666ac6a8198cb95fd8de3122a41198ac',
+  '68a9ef03d0cb32037342da527ad5abc298a07a21e1054a1b9c81d61a8d32db46',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55593,10 +55593,10 @@ insert into public.content_provenance (
   'c22bd695-52f6-4900-94e2-d470a4477216',
   'exercise',
   'exercise.grammar.u05.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n02',
-  '581af4c172883070cbcf6933316fdfe797e9ed5f83a83b8c5d495d6e7643961c',
+  '9c62e4552b2ef8aa32762c83ad3c70b392b9999ef8b971ccb7c7c34043286978',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55608,10 +55608,10 @@ insert into public.content_provenance (
   'f1ba163e-ddfc-4837-b83e-cf0c9178bd69',
   'exercise',
   'exercise.grammar.u05.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n02',
-  'dd20100ed81c7a699c555ea1f5861bb0605e2edae71263b9184850cf4893060e',
+  '19af3f41f97790eb5246eadb7fce4e541365b55661e1bc77e3ea0a6eb0ab1a6a',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55623,10 +55623,10 @@ insert into public.content_provenance (
   '4cbd83d0-e00f-46fc-8e34-6055aec90317',
   'exercise',
   'exercise.grammar.u05.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n03',
-  'b8febc2cc11055947966b3a59303351d788a1258af71ea40fef676d9e0bbeb3d',
+  '85bbc8f471f0da9f9d083b6612547fb4685b6dd82d57f238c3a978189a180255',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55638,10 +55638,10 @@ insert into public.content_provenance (
   '66aa01ba-de17-47fa-abf6-734b2ad56730',
   'exercise',
   'exercise.grammar.u05.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n03',
-  '1090f4cb663b4c92432ccc5b2f674d8cbe0f92faa48e9cd943e360f8f038b611',
+  'c9803e1efdd1142ebc45f33374f4816a4517514fcbd6349ee3e272bb0198d3db',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55653,10 +55653,10 @@ insert into public.content_provenance (
   '9e0dfc5a-996e-4388-99c6-0d95e96aff47',
   'exercise',
   'exercise.grammar.u05.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n04',
-  '0032f5d004d04f1802ae2ea135252d5dc0d262d6e11a1a67524c80792dae2745',
+  '7bf46909187185bc91f831b25edf9f821750034c0022662c5473f99856167891',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55668,10 +55668,10 @@ insert into public.content_provenance (
   'd4725a0f-4775-42de-b41f-fd66ae57a637',
   'exercise',
   'exercise.grammar.u05.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n04',
-  'ef6fc60930e96f80f6b87d2fd215f8c83b5e08c91e30e7955a710c3b607de2ad',
+  '63c943aeac068abe464c2171272df1daee1e58ebdcaa6a12438ab0395966d1c7',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55683,10 +55683,10 @@ insert into public.content_provenance (
   'b06d7986-210b-4f44-b46b-397efaf03821',
   'exercise',
   'exercise.grammar.u05.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n05',
-  'e81a476203f6c9f13a79320349098f4c3bd643aef9185bccc2484a1729abde3d',
+  '1a381911b0af289db4a961e8a58b5ab33b399be181ee3cdf824410ee7e06b9f4',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55698,10 +55698,10 @@ insert into public.content_provenance (
   '2fb0bc98-586d-417a-875f-3df64de002c1',
   'exercise',
   'exercise.grammar.u05.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u05.n05',
-  'a00d98a4c3511ca95119a4cd55e3544ce8d914da9a62c2818a0428f48cd1498e',
+  'cdf8fbf3e42c13cef9d3ca1d748254757572cc3add4420a46197a25271eb8f21',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55713,10 +55713,10 @@ insert into public.content_provenance (
   '6245f2e5-dc67-4314-ade5-5d72f84f0ffc',
   'exercise',
   'exercise.grammar.u06.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n01',
-  'a125dc1d8fe6ac0c3bb43325f789cb92d7ba704e570b0f953cc733166d5696ec',
+  '2968289220a4a14bb07153f3db593203857a1128b749e571b50fef55ee49081b',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55728,10 +55728,10 @@ insert into public.content_provenance (
   'cde4c60b-c281-408d-9c8f-982c2b0083b6',
   'exercise',
   'exercise.grammar.u06.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n01',
-  '259be6932634e7ef1bf01324174e96b2f550b762c1a679bcd7e59c624815ca37',
+  'fa5bd0e1f6536e009df6c1c34210c2b7f412c81c6b2070fe20b10396e762591c',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55743,10 +55743,10 @@ insert into public.content_provenance (
   '81f1261c-20f3-4073-ae59-77cd40088372',
   'exercise',
   'exercise.grammar.u06.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n02',
-  '2ca3bbfcbd78d437c13625e1ae188ac8e7b2d8e8ad0d344854e966650d38cd23',
+  'aeaa19be2831b531ef2b78e1ec519d5a08cd937f9b085e697ecd54abc7814215',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55758,10 +55758,10 @@ insert into public.content_provenance (
   'a9f302fc-2a33-41d7-961b-05b0a840f090',
   'exercise',
   'exercise.grammar.u06.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n02',
-  'c25d5900cc555398a937e810afb5b5c1dd576ae9d28d052d4867c1f34b48e078',
+  '382cf9de2b1fc3a577b3dc12b707062a5aff2c682a3ffb731ba3919a4496d339',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55773,10 +55773,10 @@ insert into public.content_provenance (
   '0cef48c7-fac5-40e0-a45a-5217216e6ff5',
   'exercise',
   'exercise.grammar.u06.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n03',
-  'f30cb39d28cb93ee391858dd3f8edbf30abaaa051a8fb3d490266b2c8a08ef22',
+  '318011eb231a61e1247ac5a6dbc55c1cb194c1a80377fd0566897f67558ae074',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55788,10 +55788,10 @@ insert into public.content_provenance (
   '13ea775f-ff61-443e-bf96-c473ad9973ab',
   'exercise',
   'exercise.grammar.u06.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n03',
-  'ae89c6cbb92d3ec641bf0ec3817d2e853cbe74081945998f1082403128a0b110',
+  'cff2cadb8622bf246f569049d09d3cc64be416d140cfaaa3639b9c664836c78e',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55803,10 +55803,10 @@ insert into public.content_provenance (
   '7195faef-d934-4c14-bf0a-8b2fa1a05394',
   'exercise',
   'exercise.grammar.u06.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n04',
-  '2ad75c542721d2589bdc4581cd1dec2fafef2fe571b907b4b20e40f0f0564159',
+  '80d641e6dce41c9ddf5185926ffd5968b1b23c1bf144ca024b16aa4152860c48',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55818,10 +55818,10 @@ insert into public.content_provenance (
   '30eaf03e-7c93-4730-8dce-444ec5fa6884',
   'exercise',
   'exercise.grammar.u06.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n04',
-  'ee29fe0f71f64da1b306efa1c59016b47037e10d0d0fd5ae91dac9fed3b85673',
+  'a47514cc54913ba8a100903eeacd59577c4b4e356f3e254e5fd4bac47f659fd4',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55833,10 +55833,10 @@ insert into public.content_provenance (
   '7b0f0e31-d101-4ed1-944e-fb5a38338b09',
   'exercise',
   'exercise.grammar.u06.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n05',
-  'e61e772d162f0f998033acedffb131b5d6b4d9400c16710ab956829bdef8742f',
+  '1d598991f19b6ba1f73e7e98f1487d6f5858a569be7418adf84072ea11b4da90',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55848,10 +55848,10 @@ insert into public.content_provenance (
   '4247b9f1-ac40-40b7-8f32-c3e305276924',
   'exercise',
   'exercise.grammar.u06.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n05',
-  'bf906ee9cfe70f3bdad568f011500b0743c4a87de6e0ab877a67a09bf50a482e',
+  'e37783347acd1c67112b022cb64d14f7bfcb15eef6514b1da581b7da0aa5379a',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55863,10 +55863,10 @@ insert into public.content_provenance (
   '41605ef8-d5c7-42be-b7ec-a723d7c5032b',
   'exercise',
   'exercise.grammar.u06.n06.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n06',
-  'dc55df7b22f3b6c4983107b147661a16961320766e6eb386ca24b57d8e48623a',
+  '4bbf7d046be46a3072af0c16f731fce7cc0917c2179758022ff8c6aaa656556d',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55878,10 +55878,10 @@ insert into public.content_provenance (
   '1a40afc3-fd54-4db6-bd13-4c02d7774cfb',
   'exercise',
   'exercise.grammar.u06.n06.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u06.n06',
-  'cde2a197f324af269ab1560a77da42136d4d35886296268027c8766a272334c5',
+  'c0e6297f309ccdd4ed6627a94c9b0150ada1133a10a11966cb992e800a398b35',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55893,10 +55893,10 @@ insert into public.content_provenance (
   'f5f859aa-2780-41dd-aae3-e86d2d7755cf',
   'exercise',
   'exercise.grammar.u07.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n01',
-  'b008c602bfcc7482af900ffa1c732755ce70a6120c80c6aeb93a15129a7db37f',
+  'e1234d738f283c9e2925768bec924ab64e0bfca9f13c200d70ef38f8020dac1a',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55908,10 +55908,10 @@ insert into public.content_provenance (
   '9485dfa0-681b-49a4-8bfe-0e9eea90618b',
   'exercise',
   'exercise.grammar.u07.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n01',
-  '5934f39c774e63bcadf3b2b771eb6c99b919a6fac008948761d085b139d847b0',
+  'ca7d0322fe19d020fa7e26fe7cb8d507ae951cd27d45049a5399561465ee72f2',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55923,10 +55923,10 @@ insert into public.content_provenance (
   '013b6a69-e363-463e-af4b-8a6cae891317',
   'exercise',
   'exercise.grammar.u07.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n02',
-  'df80b28381ce9c70b6c8058fa4ebfbe0374c6b30c28d1dd6e22fd66b65425eef',
+  '1ce2ccc2e6929d18271546ea56421b4a6a6b43f5c1ee582b4bdfa2c488825d15',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55938,10 +55938,10 @@ insert into public.content_provenance (
   '8d7fe518-80ba-4454-9941-f8dd348d9fd7',
   'exercise',
   'exercise.grammar.u07.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n02',
-  'a67758ef3aa8174f60f725a00614bf503862d79d366af63198d21c555079134f',
+  '8d5a9a0aebb51f2f043d4979f765260a3e5656ad331e9983b35bac8b4ffc24f2',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55953,10 +55953,10 @@ insert into public.content_provenance (
   '8a3b10f8-f392-4ec8-9661-09edc0c84cbb',
   'exercise',
   'exercise.grammar.u07.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n03',
-  'dd831e53395925f1a6944fdd2ddf43701a359176b506b9c54d77b0f890e3e45a',
+  '4a776028c3956c87ed0f23ccd8dd6ab4606348746c092c9d29d5e89e581f0035',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55968,10 +55968,10 @@ insert into public.content_provenance (
   '58da5232-09eb-43aa-a147-0bc40aa38b18',
   'exercise',
   'exercise.grammar.u07.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n03',
-  '6d508b33b0c2753ef14a24b9a50b291c2fcfb1eea2a64a065f2caadd7147728c',
+  '4416b229720dd726ccc7a8cfb159f3be3e4988411b72bedffd5cfa0641b1e29e',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55983,10 +55983,10 @@ insert into public.content_provenance (
   '5833e233-bb47-435a-92f7-679ce984336b',
   'exercise',
   'exercise.grammar.u07.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n04',
-  '1ddfe72e8fdba6027f6c4a891db62a7047f57be7d99d8a7dfd060c2205121377',
+  '65eb4a6acbd147e24630c1fe578c40bc47372c1358090d23ae249b420d02660c',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -55998,10 +55998,10 @@ insert into public.content_provenance (
   '9d240cbc-1bda-425a-9c24-32c6d7f812d1',
   'exercise',
   'exercise.grammar.u07.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n04',
-  '3c8560481ebcb17f8cc3871f05fc449b900e937ac4d0186ff92260d74c9b2e1a',
+  '44c9993566faef61e36555d55506c7bee827a0626237e5853d11a44b678d9a1a',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56013,10 +56013,10 @@ insert into public.content_provenance (
   '0f1c9453-f442-46e4-9139-9b53ca7bb3af',
   'exercise',
   'exercise.grammar.u07.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n05',
-  '3b354cf877b3195504d84936771f5c19cf94b65be80a76b08867695e3812a4b8',
+  'b2e626438a2e2d814984899ba4b3fda79b654ac6bdfb2a18d2f86ad41b612b3f',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56028,10 +56028,10 @@ insert into public.content_provenance (
   '81fe0345-aa9a-4adc-be9d-96a0ad2c1b00',
   'exercise',
   'exercise.grammar.u07.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u07.n05',
-  '43aa1875aa7e94950fcfd35c6586e581f8036545bb10c2036179594f713333d2',
+  '7df54fe296aeeb795b16e19eac9a2036036e56979e30241d98137851e6de05c9',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56043,10 +56043,10 @@ insert into public.content_provenance (
   'afe561ef-90ea-4979-bc2b-385a00138dd8',
   'exercise',
   'exercise.grammar.u08.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n01',
-  'e6113dcd2f59f25af98338bcbf4fc4aa80ac04cc6094bc0a7516fc1ac0e9fb2e',
+  'b55c481edbbea21a1aa92fb73aa6bbb156dedf512f64bd23152ab3ab75ef72d0',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56058,10 +56058,10 @@ insert into public.content_provenance (
   '229d3632-c6a6-49fb-8913-3abece57385f',
   'exercise',
   'exercise.grammar.u08.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n01',
-  '4cd72f96e86a803437964e95befee85cad9bff866a90c1aa382109f54233db6e',
+  'd2776b613cc283b1cd5877c9b8284268b29939c84252b234ccc977d31e95b372',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56073,10 +56073,10 @@ insert into public.content_provenance (
   'fb04cbda-57e5-4ebe-918a-3115b82b782b',
   'exercise',
   'exercise.grammar.u08.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n02',
-  'f9b294decb1692692d65511811f0152566628e92cc6753341f05b03413b03f2f',
+  '29d40cc7050e98250d80963dd3c8742aca66798cf786631bf8fd8ccaafd84706',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56088,10 +56088,10 @@ insert into public.content_provenance (
   'fdc0a534-14a7-4178-ae48-d094a2b85621',
   'exercise',
   'exercise.grammar.u08.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n02',
-  'c38adf818d90a2719f03665be98f97f475311b57362e549f61055169c3a5634c',
+  '86fd621422c7f4d0407d1c8476aff1ca28e002eb24547004f1236b81b680a071',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56103,10 +56103,10 @@ insert into public.content_provenance (
   '590da92b-10b7-4025-86a5-a45346dabd87',
   'exercise',
   'exercise.grammar.u08.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n03',
-  '9df9ef8de44699c15074014c8674211b6a8e01891c7b0a17a7621178dfc086e8',
+  'f9dd4b44675eff056152f742d3d0208fcf6457b3e511eddc960623a689a23e86',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56118,10 +56118,10 @@ insert into public.content_provenance (
   '7a9bce83-9931-4c2f-864e-5a99a6e82ba9',
   'exercise',
   'exercise.grammar.u08.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n03',
-  '7f70e79dee81717b38bf2a2d6d65dda347610b0de162de6dbad768d3aa19f848',
+  'be6a799ee2c8538ff4dd7414a62515c6d2311bbc8f86937077f1074de570efbe',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56133,10 +56133,10 @@ insert into public.content_provenance (
   '265dcc56-cc23-48e1-9aea-0c3f395a2a70',
   'exercise',
   'exercise.grammar.u08.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n04',
-  '8d44edb1494bc85da83e21f43619f209d797846376b0182a30f7f8dc982c4b7f',
+  '41af01a32a6170e412e93809785f0a2845714817132116adaad2a72369a2aabe',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56148,10 +56148,10 @@ insert into public.content_provenance (
   '95711865-181c-4dd4-9117-65ad774e7814',
   'exercise',
   'exercise.grammar.u08.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n04',
-  '33d1d261060f9189f5f4d20f4ed48f6b550a36329e713781542db2cc6e86eaa6',
+  '87b60bfdd7b10734e143af8de3f6585a87272b7509c7730f0fdbf0f923baeafc',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56163,10 +56163,10 @@ insert into public.content_provenance (
   '8e6950d3-8ca8-4df8-8ce6-4ab43320fb6e',
   'exercise',
   'exercise.grammar.u08.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n05',
-  'fc756b906f056c93c4938f1fa4da7345ba2ac868d38928c5c65913dac3b0a09b',
+  '90f5785f97236223ef4c480e1b8f1140524455ffd4d3858cf982f6864a09e6d5',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56178,10 +56178,10 @@ insert into public.content_provenance (
   'f9bc22d3-2bc3-47f0-9c03-965cf2771168',
   'exercise',
   'exercise.grammar.u08.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u08.n05',
-  'a1ef2b52031c46b5fdc20e9a647ea259894106851040c8855064a3e91a823f60',
+  '4070bda62ca5798fe4c17a8eeb1d1a9bfea39f6f7d883cf324ddd0f142ef8c2e',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56193,10 +56193,10 @@ insert into public.content_provenance (
   'bf6ff8ce-4a22-4971-a1ff-7a759d7d6151',
   'exercise',
   'exercise.grammar.u09.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n01',
-  '3d73f88bd05add702db66f57ecef80a367df15df00c8894697b4022ec645271c',
+  '2d9508dbe64bad5d457873ddbbb3b18ec0487ddf5ebacc70865ac3d2a8f4fc78',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56208,10 +56208,10 @@ insert into public.content_provenance (
   '75619f3b-a363-4ddd-b717-1c782a2c398d',
   'exercise',
   'exercise.grammar.u09.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n01',
-  '3d6023bfec2da6676c491f7777d429f64904c35368a8f125dcfa994403e4d652',
+  '0a9d321bebefb4cd8ae6b096d8c44b154592b57096af3709b6f2af7266be9356',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56223,10 +56223,10 @@ insert into public.content_provenance (
   '8010ac08-7d34-4e76-b2f2-c76f4116942e',
   'exercise',
   'exercise.grammar.u09.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n02',
-  '6ca5ec852e83332a10596883e6bb3b969acbae0f5d5bf4a8f6cf02903082d20e',
+  '68bb127adfd4937fa106e7be87ff4295a48c14b4a3a1ec61b1d0259f70fb23e8',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56238,10 +56238,10 @@ insert into public.content_provenance (
   'ca8a5192-5036-47f3-8de2-e78cb9ad08ba',
   'exercise',
   'exercise.grammar.u09.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n02',
-  '4e089bcc013a07b1d7dbc607c7c3ec02cda9dfb3a84e406cda65647d77a5189f',
+  '8c15734e069d886a657d7e22c80af3ce6b9d741230543a29d2ebd97ad0d457c7',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56253,10 +56253,10 @@ insert into public.content_provenance (
   '0cacf90d-f044-40f4-bd4a-bb657b940d50',
   'exercise',
   'exercise.grammar.u09.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n03',
-  '82b417c872fed8bc12264664ce0f5878165670e08ff2b591d1420e3e25bf2de4',
+  '3c312676ff529e85399633018174af8309404458a8db1771a7d01af77a19b204',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56268,10 +56268,10 @@ insert into public.content_provenance (
   '26720107-896f-421f-b1e5-8301c93b0529',
   'exercise',
   'exercise.grammar.u09.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n03',
-  'ae88540bbf5e110a26f61abd6cf6f0b88fd7f2ee92c9179387477b0da1863d88',
+  '98a2974f00f62aa1f496f9d529e17b53db04236c5047ccefc2219fdecacf9ef0',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56283,10 +56283,10 @@ insert into public.content_provenance (
   '594ccdda-8905-43bb-9579-e355002b6310',
   'exercise',
   'exercise.grammar.u09.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n04',
-  'f31bbfa890ba57b64a828ce2f68bffd82ecf5f5049b9e1a4c32e4abbc13325d7',
+  'e4c7e895aa671404253b548285517eb6aa0dd6553b39680c55894606afa00660',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56298,10 +56298,10 @@ insert into public.content_provenance (
   '6e6ab40f-a666-4f05-8868-8e44e4e0bb12',
   'exercise',
   'exercise.grammar.u09.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n04',
-  'e5699eb5bc738ab6a2ea71190df56f6c821816cab344b849b871f8051fe43b3e',
+  '32fe16cc4f446b842f0fe3119d3bfbbc91ba6ebce5c4b67c1539c4a6e3adf9a7',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56313,10 +56313,10 @@ insert into public.content_provenance (
   'fe2646cb-62d0-4ec8-af1e-262cd2b64571',
   'exercise',
   'exercise.grammar.u09.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n05',
-  '8a45d0261cadaf7b049a61d968bdfae1329f17cb4a7baba2e9a498b12e15e028',
+  '7a0cbbac6d15ea2deda8294b114c25eb6ec5810fd769ed2d69261332043d2f33',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56328,10 +56328,10 @@ insert into public.content_provenance (
   'a33bfd3e-b4e1-4f68-bc77-32a4a9810b55',
   'exercise',
   'exercise.grammar.u09.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u09.n05',
-  'c1d8f71ceefe54102bae231593c9e2bc874e6bd6ffd9de6af6b2fc1e5f6b0d51',
+  'e48e2c6385855464f0105dfcab4b0a648e9090c723b91ab1393d37a4f6bc1297',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56343,10 +56343,10 @@ insert into public.content_provenance (
   '0018431a-81e5-4ed7-8595-71bea7f8e625',
   'exercise',
   'exercise.grammar.u10.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n01',
-  'cda2aaa1f6db974c710047f98be83d94b9e5839d56e4e227ac591f2ec0bf7027',
+  '7ecec03eb6dc0c71a5f525f08eb56e540d9a7452566385b30f521c78a1d62f12',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56358,10 +56358,10 @@ insert into public.content_provenance (
   '12cd460c-9bf1-40e4-a6cc-225ea00d9a95',
   'exercise',
   'exercise.grammar.u10.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n01',
-  '5702ff9d7c014703328f1eed7e031a58cb61234ff0d9a8c12ad00146cd86e0f6',
+  'e98d3afd9e5fa2c27be0f4160e806d00aa66051f6d90ad3e15ff891624102c46',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56373,10 +56373,10 @@ insert into public.content_provenance (
   '3acf2a5d-8d29-43c6-88db-66389ff511d0',
   'exercise',
   'exercise.grammar.u10.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n02',
-  '1cc3adc9bd7016b806f011b983d92907bb0e7f0c8ddc2ca4501ecd064bc1427d',
+  '2fe17244e24f78880e4efdcd11bcddd2b2b04d56914c61afe0153a5121d4620a',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56388,10 +56388,10 @@ insert into public.content_provenance (
   'e0f23158-38e5-406b-b3f4-43dabc673290',
   'exercise',
   'exercise.grammar.u10.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n02',
-  'c9cda1da0ca0b6fa4f182e64178476920610ec730e8b5b1f184594b6f4af5c99',
+  '57c64e697c79cd0986180f5a19045c962fd9301c0107f2a1b66fcb6ddf93cd43',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56403,10 +56403,10 @@ insert into public.content_provenance (
   '8fa1d238-942c-48ea-8517-36017291c985',
   'exercise',
   'exercise.grammar.u10.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n03',
-  '88613776c8c8f9fd004a603b7166ff62f8d60468624af461da6c3abd5937d59d',
+  '58f6ded9d5d397783f61a70370ba7b3e97bc1773e5c17209b16c8b672a09b8be',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56418,10 +56418,10 @@ insert into public.content_provenance (
   '55f46c89-5a2a-46fd-8e94-47690ca70c9f',
   'exercise',
   'exercise.grammar.u10.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n03',
-  '960a18f230eb1f5da16e34304231d825fa5403581abcf91607995c93f12a1895',
+  'e4df03bfa006f1654a2a999995c521af640453b68ead190e78bf567ac988c4ac',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56433,10 +56433,10 @@ insert into public.content_provenance (
   'fa621af9-3364-4f45-9d91-a78ed3909de5',
   'exercise',
   'exercise.grammar.u10.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n04',
-  'c37cc71e28fef6d0ee02d85c60689b5c90d8bb7af8f2188fd6cacf67126b2b74',
+  'ac10b733349ef6ea5c4c71c80bcbef5bc46afdebf2ab7ea1f5209c477bbc6bc9',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56448,10 +56448,10 @@ insert into public.content_provenance (
   '5a01b246-d9f6-460b-a6d3-b5a0eb695f16',
   'exercise',
   'exercise.grammar.u10.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n04',
-  'a3a13b6e469373d9b91d3de8cb5434239093610358c3d08e69a888ac45d6b92b',
+  '8dfe8b889eff0c65c410d01924935ae5623989f1796a26ad85da085232a076c2',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56463,10 +56463,10 @@ insert into public.content_provenance (
   '3c07b47b-4c48-436c-96a4-c632844bd8cb',
   'exercise',
   'exercise.grammar.u10.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n05',
-  'e3f6d2a4ed9ba1c47d052defb20c99f9d1dca2b4297041948311df00183e9a8e',
+  'd1dc4b27115e7278bbab14f3e195f08c00096721f46ef88f25ccd960d5a30412',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56478,10 +56478,10 @@ insert into public.content_provenance (
   '5f25aff6-2cfd-4b81-92ac-cd1cb14f2ce1',
   'exercise',
   'exercise.grammar.u10.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u10.n05',
-  '8d12ddc194390ce39d1f07eb46ac56c944e93dd35b7e1e46346bf3c38bdda910',
+  '9d2f27662d454a9d2cf45cf26a080a03cedb6d370f3bf478c5ababb1aabb4cf9',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56493,10 +56493,10 @@ insert into public.content_provenance (
   'c1292379-81aa-498e-99f6-891a5bc3b8e3',
   'exercise',
   'exercise.grammar.u11.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n01',
-  '9123c2a712f1fedfa56059f921a89be2f8503d935a361e9efed66355dcc43a3e',
+  'f755ab4bc5215b2f0273d97378147822c1a9f34a311ae0dbcaf0cbb915e04ed0',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56508,10 +56508,10 @@ insert into public.content_provenance (
   '3d4f808e-39c6-46e3-b1be-45249fb9a814',
   'exercise',
   'exercise.grammar.u11.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n01',
-  '996077ebdbf1dbbc2cac2b7d69b21bd29e8b9e26786d44072f74a94a9b55231d',
+  '10edc85b2643ce279ccb83f2f05e98d07971edf4c2e942cb5ee187e07d422b48',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56523,10 +56523,10 @@ insert into public.content_provenance (
   '7af22a3b-c900-4680-8f8b-b7d8f5994142',
   'exercise',
   'exercise.grammar.u11.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n02',
-  '8758f547658d73f61b9eab3347bebdaf7f8d9d270ab6f8d6b10b47f835e10e2f',
+  '59c53847a265141172771aed4f2c2a911a4640800cebd8d191bc15d90ce53feb',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56538,10 +56538,10 @@ insert into public.content_provenance (
   'ddcc9569-7afe-4714-9327-2044178e8acb',
   'exercise',
   'exercise.grammar.u11.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n02',
-  '49894b0c9d4037907b6b2656c01283d755b4848472403afc56b89cd62ced76db',
+  'ac4eacb1f92e01f09fb40229a44caf6a2e912b20deede8d52be149a13cd1bbed',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56553,10 +56553,10 @@ insert into public.content_provenance (
   'ed6c72b1-9213-4c12-b918-6ad5c1f1458e',
   'exercise',
   'exercise.grammar.u11.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n03',
-  '7dca12031e0b6ff40c5488b57d7215b879bf7d2478a9cedbd94d3186abe966c7',
+  'b0e500f886c8e9c650df42ac7d30391003dc4fae3c085ea12d4038b9acf2e99b',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56568,10 +56568,10 @@ insert into public.content_provenance (
   'bf121294-0dc7-4cd4-8141-fc0612eaaa55',
   'exercise',
   'exercise.grammar.u11.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n03',
-  '8556287844564c604b5e931c45c53d44f87fd43f42583f6fe67e4707001cff3f',
+  'd1b77da8c6a4d9d05facc66bf08eea99b136955be06beb6583d0e5340073e781',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56583,10 +56583,10 @@ insert into public.content_provenance (
   'fa1c0766-178a-4ab1-bf04-69e2fa0bfdd4',
   'exercise',
   'exercise.grammar.u11.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n04',
-  '203111c7e32501f42315a107a72f102e7ad26c267e4da824d31f19553f6a66ae',
+  '0dd69d3eedba04f1c3cd024c9c8542bf20010d501ba11fe6c9ae43d547f61954',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56598,10 +56598,10 @@ insert into public.content_provenance (
   '3b71c7df-572c-4e94-85df-bac7471dea40',
   'exercise',
   'exercise.grammar.u11.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n04',
-  'cb79ed292cdf56def10551b99d57c9f8206e24ddc9d59c3eda03038d9149575b',
+  'ddae0988576d29eca7d128101a706d848cc948c5f4832ef0483e65a4eab90206',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56613,10 +56613,10 @@ insert into public.content_provenance (
   '1d5f0d81-106d-4907-a7a1-9f9615bd773e',
   'exercise',
   'exercise.grammar.u11.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n05',
-  'e2e75f5df8524df0defab81eea1a3ce83d079268d685409d4f76a95d8e75dbd5',
+  '1a78853631e04ead9b3e564b77aad17cfe93ed31f83ca81849f1165d7ab333ae',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56628,10 +56628,10 @@ insert into public.content_provenance (
   '746a8247-08e4-4bc9-94d1-e65759c4884c',
   'exercise',
   'exercise.grammar.u11.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u11.n05',
-  '8f00fb823991bd877f2de8d8a3b63d65edeeeb2b23380505c52cb3913769115a',
+  'd4071e3833777694dcb99bf1d868100a8d49043aa804d35a699be933103d48d9',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56643,10 +56643,10 @@ insert into public.content_provenance (
   '58a3ac02-b228-4f33-a46c-e316119ae20a',
   'exercise',
   'exercise.grammar.u12.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n01',
-  '016d92a9c27ebbfa052f9fe9c9709190c89051306d4788387d1e5ac142228129',
+  '293be5461207a219ee2f1fd56c99d00ecb597baccfa53a3c447b1afb193d8340',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56658,10 +56658,10 @@ insert into public.content_provenance (
   'c35cd372-aa91-4da9-981f-cb5eb70b8417',
   'exercise',
   'exercise.grammar.u12.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n01',
-  '6588d6d6e7be70b7ecd3c32fcb14e0adecd1fed49cc94f368dbc3c5be66f577c',
+  '4c55cb3cfd9ea3ed6ce00ceda287644753ebf77c0a2c0d729ecda7d110cc5bd3',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56673,10 +56673,10 @@ insert into public.content_provenance (
   'c2d53838-20cf-4d46-a377-4b2c636d6a37',
   'exercise',
   'exercise.grammar.u12.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n02',
-  '2b0975de49d02686fe02dc98b02c665f0c4e29ce2d4e19dfc42ee330d358f719',
+  'fce3e7dd4ee9c088c12cb2f4421a82d761a5791da6510d38bb68be1340fbffe6',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56688,10 +56688,10 @@ insert into public.content_provenance (
   '1d625e95-99c2-4b8b-9c92-9fd5f936dec4',
   'exercise',
   'exercise.grammar.u12.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n02',
-  'e8cfdb251df0d2999234fbef9441a848b94a2b7dda3a84649e6215349f783cc8',
+  '85da90063217976b035bceebe6b710764baf73c54a22b0b2cde1b51a250c02f8',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56703,10 +56703,10 @@ insert into public.content_provenance (
   'a13bd1e2-6def-4c21-816a-266447de72e9',
   'exercise',
   'exercise.grammar.u12.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n03',
-  '3c5dfab4ac80607dde20d7b06fee422f889e72212788767ebeeb3a3315fe3700',
+  '9e0e630c8cfb5c18659c88d0f966c9b69a57176adf698caa54c566d7d40f8383',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56718,10 +56718,10 @@ insert into public.content_provenance (
   '6c29b4d3-31f3-4b0f-b803-b8fffc0cf2f1',
   'exercise',
   'exercise.grammar.u12.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n03',
-  'ab0c33e59076df77c8a93bd160112185aa7806891154f73942d3ec4e2c1cb8d2',
+  'c7ea1b23535573dc1170c704709a99723fc27115080d7264cf6904b38814fa29',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56733,10 +56733,10 @@ insert into public.content_provenance (
   '63e311dc-88a9-4d60-bb26-364d35d5a460',
   'exercise',
   'exercise.grammar.u12.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n04',
-  '35a534edc4c6676f16e40ef4b92f03f4a6ef344f5a3b00408f0121d7f4a6a645',
+  '6318a9b85e884c645daec50d1ae41fd3ee2f70117c3af7732c2aeb00dd3916f3',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56748,10 +56748,10 @@ insert into public.content_provenance (
   '4cd9d3cf-90f7-4326-9f9f-c6521d5fb43e',
   'exercise',
   'exercise.grammar.u12.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n04',
-  '215525bab3d9c33fdc14750e8b62def90351f930357aa5b0e4cc898bbc873eac',
+  '9efd93b792a8f78d560fa3dab728edefa7022f46b2e5d4a0f9d1c79e55334b40',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56763,10 +56763,10 @@ insert into public.content_provenance (
   '47f26223-54af-4546-9d51-adb7f848c8da',
   'exercise',
   'exercise.grammar.u12.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n05',
-  'bccf9f522baf79eb272a98a969b643a2c167d58ce8a87c81b2cf5566b7f5d7a9',
+  'd72319d4c4fc39762e2bd396c9f3340c32bf6fc6038be7cd0810a05082f27a72',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56778,10 +56778,10 @@ insert into public.content_provenance (
   '7b3d60f7-4f81-4704-9502-7379fd615746',
   'exercise',
   'exercise.grammar.u12.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u12.n05',
-  '8058ded3e938a734150481490f6e0e9544f9d66e2198b7848a7f963b4a3b41ae',
+  'bfd4b2580718efc50b63d55fb1a3d5906165d6cc2b440817f533eb54dce907a5',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56793,10 +56793,10 @@ insert into public.content_provenance (
   '8aed2878-fb97-4224-9236-1b1d395b6903',
   'exercise',
   'exercise.grammar.u13.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n01',
-  '28caad17e01c0a72c4f1a87d7fd99464be937dd2e34a92d4612e82baa4492d4f',
+  'e422cc1bf1d3ebade7cbaa7053405339ecc9d6b8089df8bdd878473755340cd9',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56808,10 +56808,10 @@ insert into public.content_provenance (
   'ad9a5134-6649-4591-a176-58f73ff7847b',
   'exercise',
   'exercise.grammar.u13.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n01',
-  '193144bd8d5a4b8c606a167826b1df2aceade5d6f7a86ee19e80a5f68dce3d9a',
+  'ed80da2d9ed1f76f2131c67deca3d10106b71bb71077ef29ae84449205057600',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56823,10 +56823,10 @@ insert into public.content_provenance (
   '2f66c8dc-ca16-4322-98d1-7543f1b4412c',
   'exercise',
   'exercise.grammar.u13.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n02',
-  '847a13c8c447855dd6bb4fbf91e3aa4baa47309116e1651ac2a13627ec7c66fd',
+  'aeef4c60d96273b11d0e04aaf46ffa176d1d28c7f981a6c8a3c5e5d47a2f134d',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56838,10 +56838,10 @@ insert into public.content_provenance (
   'e14023bd-1507-40f2-94cf-8a380f63fbbf',
   'exercise',
   'exercise.grammar.u13.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n02',
-  '300ecf89938e4d1347cf8fb354bfdd97580896e7cea15a752dbd693e90cbfcaa',
+  'a72ae045ff697729153d6cbadda105f1420e4c2941cf8fb7609fee88dcc957b4',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56853,10 +56853,10 @@ insert into public.content_provenance (
   'd7e91a83-6883-4149-a78e-81bf3bbd6593',
   'exercise',
   'exercise.grammar.u13.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n03',
-  '241eafcc96125c3dfa5e26d87ba77d98dfcbe838ccfc5ece6836e503512b9ff3',
+  '95aecb01ac2690ab8c92e19383be3a06298009e5bca9e3a182a8c91e0e090b8d',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56868,10 +56868,10 @@ insert into public.content_provenance (
   'd02dde15-4a33-4d35-b826-522ee62cb0d2',
   'exercise',
   'exercise.grammar.u13.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n03',
-  'c3dbda90d33e2378051a56b7626b48305447046741f5ef3620b6a8f162f285b9',
+  '70041004fd5bb7e77dc4dcaadc73e50e1d87296533497fe7a10969573b5e8297',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56883,10 +56883,10 @@ insert into public.content_provenance (
   '17896bd6-9d41-44dc-acf6-a621f99fa260',
   'exercise',
   'exercise.grammar.u13.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n04',
-  'beec301968dd3af6f22c39d6c267e463e69330bf79c5d684a6c9c855c906325d',
+  '8d4158b0055b42f47f766682511a3bf5d306c53eba8e8b7ab496eeb31fbb65f6',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56898,10 +56898,10 @@ insert into public.content_provenance (
   '12393ebf-6d03-4872-b0cb-377756e4ad4b',
   'exercise',
   'exercise.grammar.u13.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n04',
-  'e3e0c133f1a3c8100beed400393ff639b7b10b390ff9b86e5abbe62bd65afc97',
+  '9ece48097d871ce9534d7228941318b2aecc78540615632d92e58eed7d5e1c2e',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56913,10 +56913,10 @@ insert into public.content_provenance (
   'a225c4de-03a2-48ff-9a03-c5e6daa92482',
   'exercise',
   'exercise.grammar.u13.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n05',
-  '704081862d1e943926f159e4eb6211672b380d47971ab6af0c20385b218ac06a',
+  '448d1ce831479a111ebc8eb50855d59bd34c0b083e7277a26935a2586ac6828d',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56928,10 +56928,10 @@ insert into public.content_provenance (
   '89735c91-b040-4ef1-9475-ae7f74f213d2',
   'exercise',
   'exercise.grammar.u13.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u13.n05',
-  '96c06ff3cb65e33cc579043af14dba798c97bff87c286fbd5bc580889f6a26cb',
+  'e32d56141afca73584359a1f0d652b75831af8bc1abde55ec556bdac9a12b4c1',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56943,10 +56943,10 @@ insert into public.content_provenance (
   '535900e3-5435-4c73-9001-154b921948c5',
   'exercise',
   'exercise.grammar.u14.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n01',
-  'f3e8e32166eb27aafd33683ad7e7a9b992fcb19847d5ac378bb45e5db20db627',
+  'aba2f5952965ff56acf092b74a266661cb5791a3cf7acbdd28e70d74c46bf265',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56958,10 +56958,10 @@ insert into public.content_provenance (
   '0cf75fc4-34e3-4fc1-b2e4-03cc4cb8f8d0',
   'exercise',
   'exercise.grammar.u14.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n01',
-  'b376da10e9675cbe019714243eb92de59b7156745b93b9fd1f941f1e1bdbc391',
+  '77bf113bd6f81573939e07a9a7d04871faa36c2239860187d0ee600cd80bf5b8',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56973,10 +56973,10 @@ insert into public.content_provenance (
   '22095e78-b7b0-45f1-9c73-df773a670f0b',
   'exercise',
   'exercise.grammar.u14.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n02',
-  '114a21467302bd46b32d85f14c258298e6784c280cf27b2ccb16d66bcc2b76bf',
+  'e919ce9928582fa1a82a6c636f9276428cbaa3844647c0bd1e16e73701278218',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -56988,10 +56988,10 @@ insert into public.content_provenance (
   'ff28f824-c76c-4181-b319-0f56b89bddc1',
   'exercise',
   'exercise.grammar.u14.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n02',
-  '2cda79936f8e47c5917ec5feee6732154a1066055f630f5a7ab57ca5bfcf40e8',
+  '25ffe641aee2b76baa142d3688e89d8f73ce787fee640e63acd84cdfa04f02d2',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57003,10 +57003,10 @@ insert into public.content_provenance (
   '36b5fb24-123f-4fb7-9385-6225cee065a0',
   'exercise',
   'exercise.grammar.u14.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n03',
-  '722acf43cfc2ef451bc45ac934e6c8f8bb9349a7da241672381bc42558018abe',
+  'eb9b23be98e51ed24c4becf0a6cf3c45ce1b747dfefd909f8a27c42926c3613a',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57018,10 +57018,10 @@ insert into public.content_provenance (
   '0bb703a1-07a9-4506-a564-cdf728cb285e',
   'exercise',
   'exercise.grammar.u14.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n03',
-  '345dd89f5669893e0a60ae77c1b4142d35b44241e7592d0f8f149243da120728',
+  'c7552e510260547eb4a5bddf5acbb92e34c037b2fea05b4ac7d062a202e071e4',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57033,10 +57033,10 @@ insert into public.content_provenance (
   '5e060a2c-68ec-4d31-a292-2df26f7be7e1',
   'exercise',
   'exercise.grammar.u14.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n04',
-  '2db56aaf7eaa9457e6adc91b75155255c0b7cfa5f297c770fe4624935b1cd9bf',
+  '755dc9a2c93fb4ebd5f9cc7ccdfb85f8b16e505160a8ca6114faba6e31afd3b5',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57048,10 +57048,10 @@ insert into public.content_provenance (
   '80267f14-1f20-4310-b9f3-d11c8b39b7aa',
   'exercise',
   'exercise.grammar.u14.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n04',
-  '542fd1a0647c73610f3aabf73ceef45c20546e88218ca19d4119e998ca84015e',
+  '8b12ea29fa98f87a9641e4354f6979f51275449b5f2bc51df87a23d59701296e',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57063,10 +57063,10 @@ insert into public.content_provenance (
   '4520f0ad-33ac-4b6d-9513-51b952daf579',
   'exercise',
   'exercise.grammar.u14.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n05',
-  '51c661947b58f2915bea1557def6915e535a0f191ca24dc194033446ca854025',
+  '3a668cd025f140ac684b3c2a8b94bc580f68aa4ba2959bd88fa03b4a120c508c',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57078,10 +57078,10 @@ insert into public.content_provenance (
   '0a79f5ed-0eda-432d-9206-f448ff188160',
   'exercise',
   'exercise.grammar.u14.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u14.n05',
-  '9764e554288de822dbfb2acdc634c6fef70c1ac6f5f69a8c73febacb52a127d5',
+  '76699f0325fbd0fd35f4ac82d65fe2a0a922d6ce382f453dd529b419f49172e7',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57093,10 +57093,10 @@ insert into public.content_provenance (
   'ae30aef7-2631-4d03-9fb1-3fb4275a8f6c',
   'exercise',
   'exercise.grammar.u15.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n01',
-  '0e610dd3257390a0c692e413b45145e68b57fd73ad7209b8c9f61b0fd604037f',
+  '921501f66407154181d970ce7396d777ebc34395552f5b736a2aeebb9cb25253',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57108,10 +57108,10 @@ insert into public.content_provenance (
   'fb384a76-ea62-4ef4-b9e7-860d40294821',
   'exercise',
   'exercise.grammar.u15.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n01',
-  '66549d37216c23e9e3e265b4756c763ea2a5fa19279236aed3309aa5f5271094',
+  'e8363de4d0145fb8c2962b7d5fa9386cec03614870205cdb9982c5e5f502acfc',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57123,10 +57123,10 @@ insert into public.content_provenance (
   '11ddf0c6-cdc0-4464-b2c2-562b5b94caf5',
   'exercise',
   'exercise.grammar.u15.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n02',
-  '52c68dc7d049eebda5c2496202fbc45b4e584cb091654122d06db853923bcda2',
+  'd4daa6f0d961dd0e63f7cc6ab3c73d5fbbe61e361df6e97964c6962ea8b68713',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57138,10 +57138,10 @@ insert into public.content_provenance (
   '94405c0f-9c3c-4677-b79c-7a813c36e411',
   'exercise',
   'exercise.grammar.u15.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n02',
-  'ebf6dbc34b07d13636a2b7f7e240fbde98e2c8a5adcb36791e27b043d8b3b7ec',
+  '26e866cb25bd8d70db20d68538f12efa17b19c7e864fb531f39ac4a7da8d7ea9',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57153,10 +57153,10 @@ insert into public.content_provenance (
   'f177590e-da94-4ba8-9022-f641325ed98b',
   'exercise',
   'exercise.grammar.u15.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n03',
-  '5c18960233fc23eaa7a262e034c2654e678d66292b137b0e9a14be6db30f49b4',
+  '0bfe5bef76f74780e6fa65775eaf340385e5e90c21c1c48a1fcd9e92b7c6345c',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57168,10 +57168,10 @@ insert into public.content_provenance (
   '2777a24a-070a-4f1e-b05a-a7e470562508',
   'exercise',
   'exercise.grammar.u15.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n03',
-  '6b38b899e8d392c638e28a0fe0df1cbf746a328cbc29e91e8a523426894a309e',
+  '9ba40554be418afb3fc24479f89de115b1554784217eb0b1b0bb9938cd21c942',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57183,10 +57183,10 @@ insert into public.content_provenance (
   '9bfc4e8c-b97f-4ea8-8054-4ca32da99f4f',
   'exercise',
   'exercise.grammar.u15.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n04',
-  'b58d28c7dee2ab1babdf1489ae2791b0cb0fe59f55e7fa4b85abe3a46778ca6c',
+  '990fdb21780e415190447065a83d727cb348fcd6633e42ec384c2dd26f679a11',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57198,10 +57198,10 @@ insert into public.content_provenance (
   'b718a1a2-103d-4676-b011-e57f3fdcfcd9',
   'exercise',
   'exercise.grammar.u15.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n04',
-  '5aa65b7f2b1babeb6d4de3845c25dce282b177dacfece2f102a2b2372b5e1da9',
+  'c4b6b2f7b5bd6d26d42e90317799c1007a4de0316c7d33f9efa9edf2c7b600a5',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57213,10 +57213,10 @@ insert into public.content_provenance (
   '7202570a-5d49-4a23-8aca-bde9ee1667c2',
   'exercise',
   'exercise.grammar.u15.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n05',
-  'c767255dc1f6c7c30ecdf2ee7152593f994e5d5f49250c247669b5e07ac0b06e',
+  '32526981218f273d5c047231741fe5d34b664fa92e11f9d65a9de477eab8b0dc',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57228,10 +57228,10 @@ insert into public.content_provenance (
   'ae534d83-90ee-4d24-afb8-efb25a0706e8',
   'exercise',
   'exercise.grammar.u15.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u15.n05',
-  '7c4f98449fe012fd43a63be84eeea313b5670587c31237bb1947559cb8ff3f01',
+  'eb8e9d8b118c04a55fcaedfe28e016931a1181e9528ca02821d70da330117bc0',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57243,10 +57243,10 @@ insert into public.content_provenance (
   '459c9841-e6ef-465f-8b07-9d8fbfc24058',
   'exercise',
   'exercise.grammar.u16.n01.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n01',
-  'e0f54d9f0e31eb3958cd45fd7fb9bd297acfdc451f916f91d5f6e73f66800337',
+  '65d8351a9d94b557e8fcf447f37fa7278db3d5b99e54db9215f2618b6d8b8bb6',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57258,10 +57258,10 @@ insert into public.content_provenance (
   'd50acdba-caca-494f-8742-fe06bed29ec5',
   'exercise',
   'exercise.grammar.u16.n01.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n01',
-  '3dd02e5b516507eac3153fe01c6e7ad1f0ca3789bf8f48602a565334ed873a56',
+  '04eab6694a241d2549d0da193a0d7db76473bca64868b8b147864ebe4615883f',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57273,10 +57273,10 @@ insert into public.content_provenance (
   '4ea2139c-eafd-4240-abda-932f4209caf5',
   'exercise',
   'exercise.grammar.u16.n02.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n02',
-  '5923f7e27e5a35fdae36848f4542a3ae4497c0245ba0a17ed9cf851a0cfdd6a9',
+  'f388706488f58075377f39c04d4956bcdd301a9a035c4b7b16217d3b75651465',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57288,10 +57288,10 @@ insert into public.content_provenance (
   '21dbb965-f7f1-41f0-8c3e-486f74f69ef7',
   'exercise',
   'exercise.grammar.u16.n02.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n02',
-  'b82c9d69b23818dae05292f342fe4e567737624c6644523f3ce6428a435d8601',
+  'd455f13aeface6a4b150fc46e287249f360817b247a4938aef23ff2bdcc1261f',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57303,10 +57303,10 @@ insert into public.content_provenance (
   '389cfa37-fa5a-4f1b-bf87-5b69d5828c73',
   'exercise',
   'exercise.grammar.u16.n03.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n03',
-  '36a38635c9184be106107eeecfe89806d05c51173fb3b9827f28b219f3232bc8',
+  '9e72571bd587fc758bc4960ae0edffd7d5dc9486ed8c1a52e0aacb76f70f42b7',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57318,10 +57318,10 @@ insert into public.content_provenance (
   'c7750af6-4edb-4c1f-9c59-f3b78aae90de',
   'exercise',
   'exercise.grammar.u16.n03.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n03',
-  '5beeed3a4bbdfe3d8b227a9ccf5dd56d565683da67dc767bb1504e38cf59e51d',
+  '9f37aefde04227a87d1db573136605145d61fde560cd9088736f6fea6029a798',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57333,10 +57333,10 @@ insert into public.content_provenance (
   '22ebe6ca-aa7c-4aa6-8148-40ffaa8d0dc1',
   'exercise',
   'exercise.grammar.u16.n04.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n04',
-  '3b77657a6ba39364598c5310849347fa79bc812fccef6144a782b8d46ec1b1e6',
+  'dd487d93227c78f65c0dabc1904c597c4be37f74d26de243969d3a98f939c339',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57348,10 +57348,10 @@ insert into public.content_provenance (
   '05f277fb-fc7a-4969-8f98-04bc6faf33d6',
   'exercise',
   'exercise.grammar.u16.n04.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n04',
-  '776d0e1dd51f7379bd95e167b76510741befab62bf5570958f320338196b9972',
+  'aaa68bd49e2e6302dbee44439221c90f8224911d360930c9ec50ddd1a542fc69',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57363,10 +57363,10 @@ insert into public.content_provenance (
   '505d7114-6d14-42f8-afef-b483e6660ad2',
   'exercise',
   'exercise.grammar.u16.n05.recognition',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n05',
-  '9d4edf544d7e7b8e6ca7c25b66309b53b29c989bbe5058e11d078edc048f4562',
+  '4b8801d67d1e5ffd3ebecfae16eeb63d432882e6b165582c65c0c1452b6917ff',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -57378,10 +57378,10 @@ insert into public.content_provenance (
   '5a82b32d-9ea5-4dbc-8651-15c7d9de5cd5',
   'exercise',
   'exercise.grammar.u16.n05.application',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-grammar'),
   'section:u16.n05',
-  'edd0a069b68a2e54f377ee10efd6f021ead498865c1abe29560117bb382972f6',
+  '20205936d6d484ffc66f0eb5307e29e09c2e6cbc0efb068dfe22a0ecbfca355f',
   'high',
   'draft',
   'manual-derived draft grammar exercise from curriculum topic pattern/summary; not language-approved.'
@@ -73758,10 +73758,10 @@ insert into public.content_provenance (
   '97a235c5-6581-4532-a964-8cc900b841e8',
   'exercise',
   'exercise.vocabulary.u01.vy.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L383',
-  '37733c464ee1498e5bbad4eb04d1a41e15cf2dc10eaba74498b5229f3df4c668',
+  'e0ff6ff90805ad9cb301957f31de3abe98f39090a7c4bcdda50aee037312a60f',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73773,10 +73773,10 @@ insert into public.content_provenance (
   '710ebc20-b59e-408e-9041-576d30824b37',
   'exercise',
   'exercise.vocabulary.u01.tam-srednee-rasstoyanie.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L395',
-  'b744d52d0e858b76b77a97c1c6e92c0ee93c4745e3d667c888dd59039e986a15',
+  '8993766aed86010c2f43fb074650ad043a690262360b5a84f1f3056de4a1a14b',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73788,10 +73788,10 @@ insert into public.content_provenance (
   'd0180603-d0cf-48cc-8777-ca5f24bb0160',
   'exercise',
   'exercise.vocabulary.u01.on-tot-opredelitel.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L386',
-  '4d730e36228b68747cdab480f3ca3ad3dfe05aedb9cf302dc7ffe936e0d82a5c',
+  'a353eee4de5e132d10c0c69e63d36936a25a4453380327cedac514f9e3b83c4f',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73803,10 +73803,10 @@ insert into public.content_provenance (
   '7655359e-3a6a-42b4-ac92-8bd9bc6603ee',
   'exercise',
   'exercise.vocabulary.u01.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u01.matching',
-  '929d9cbd385189ef4c1fb7588c302f7559d4dc36a712fe42dd606c82e6770b71',
+  'b2b44a822533fee9f89e1cba29ef223a1f4cbe8f062e5ced6f9fa861c0085da2',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73818,10 +73818,10 @@ insert into public.content_provenance (
   'f5f17732-c9f9-476e-a2a0-bdacf0b651e7',
   'exercise',
   'exercise.vocabulary.u02.ochki.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L557',
-  '47357191c0199ecb5ed7e7ec548ca034802a9a3b4798aec01a4c46695cc629f9',
+  '6033bd9f5eea6efd44ed2ac6d7123bafb8f8eeff822aabc40c5684f30e03728f',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73833,10 +73833,10 @@ insert into public.content_provenance (
   '1dfe87a8-8371-4eb0-9842-36bf21975bb4',
   'exercise',
   'exercise.vocabulary.u02.ryukzak-pohodnyi-turisticheskii.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L554',
-  'c269d4454e8404895fc748cdb09699f3560e5c66a5629b22daa58dcfd0d0f8ee',
+  '840a2818485c1c5d969e2b8c420d8dd8d0b008c43834bd6a9a9b7eef258c2f72',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73848,10 +73848,10 @@ insert into public.content_provenance (
   'e056f3e7-9718-4afb-8d5e-9ba176e4cc4b',
   'exercise',
   'exercise.vocabulary.u02.podushka.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L558',
-  '5180845a593a53f64a1dbdb01a323cffec22d482fa11c64c98ff01ff928e0152',
+  '76ac68c41aedc777dcb3694fe84a8e099e65c065239cc2d4ccece8b8e5670055',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73863,10 +73863,10 @@ insert into public.content_provenance (
   'a30731bb-843f-4b9d-9b51-23927b0a6f72',
   'exercise',
   'exercise.vocabulary.u02.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u02.matching',
-  '784c8b1ab6ec03419fb568ea9deccd1403a6733aa825cd2024df5c4c5c881372',
+  '4e35399b69dcbec227462f9ec40fea14d65ef29d70061a09781597062d45690e',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73878,10 +73878,10 @@ insert into public.content_provenance (
   'aae2fe04-003a-44d5-8607-bad73e2a3452',
   'exercise',
   'exercise.vocabulary.u03.klass-gruppa-uchebnaya.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L536',
-  'd645a3388029d857ac3ec7c91b4cc19308fc826c9d7bf3600d97b2a8f9d4967e',
+  'dd99943a91fd02a59b7cc6643284b5f30789e9ae89a0c0329bd03a6b76b8e3fa',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73893,10 +73893,10 @@ insert into public.content_provenance (
   'f9b1d374-9823-4b11-8dae-03f087fb999e',
   'exercise',
   'exercise.vocabulary.u03.studencheskii-bilet.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L534',
-  'ed94e26c3bf0da93eed06aff2286b3bc9e919a5351aa52beac31cdee077f0714',
+  'f4787498ce5b3bd7b769be61baf57bd5e8c83fec3644aea9a6e62ecadebde881',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73908,10 +73908,10 @@ insert into public.content_provenance (
   'ca58ad5b-d5db-4964-a891-7d77998bb753',
   'exercise',
   'exercise.vocabulary.u03.ekzamen-test.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L532',
-  'e0e841bb49b7da89f6d7b887e27a27b4dfadccec3c4cefb7190106d3f6ff15a9',
+  'bf5ed162f27f12f812616a19f26cb49b2de0e33a389b0fbd82a469e16d8a1569',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73923,10 +73923,10 @@ insert into public.content_provenance (
   '3e84e6bf-4057-4b57-8e53-405446cb0ac6',
   'exercise',
   'exercise.vocabulary.u03.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u03.matching',
-  '9441937a14736a6925eb68c4b1225f6ddd92c13e70c9d574e4b0e5c7fd61ab0f',
+  '30086f410cbd4c1d619d3bd32fac1883dcb8ee18d05022086bede1df58876958',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73938,10 +73938,10 @@ insert into public.content_provenance (
   'b204a5f4-094e-430d-a604-1cb401484374',
   'exercise',
   'exercise.vocabulary.u04.kanikuly-shkolnye-universitetskie.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L1193',
-  'd602c56d640e93fe110a3842a3bbf417c1bb47d5075ee81828be9ee053f58cf8',
+  '6ab457e939f29cd857ac4cdaaaea125c3be387ce48eab4c48b413179ab5fae53',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73953,10 +73953,10 @@ insert into public.content_provenance (
   '098c782e-7754-4ec8-9ae2-c86cd04980ce',
   'exercise',
   'exercise.vocabulary.u04.sleduyuschii-mesyats.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L1178',
-  '4084290d1c574753cb617546eced593a4a18b8aa1477c06a9a35e0d5920d2776',
+  'f451d80dfcd080082a0a0079ff74e5a0851b03ddba77ab3a82ee7fe271351734',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73968,10 +73968,10 @@ insert into public.content_provenance (
   '05fb2339-ecbe-4473-bb77-4c8ddd171627',
   'exercise',
   'exercise.vocabulary.u04.sleduyuschaya-nedelya.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L1172',
-  '89531b5646a3065b4646deaf437bbfcd41b78843299da3bbe51ac4447dc8189a',
+  '6418bebfcfa300f0e6efcc174d43e07cabeb487020280bcf6b252191b44f6d39',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73983,10 +73983,10 @@ insert into public.content_provenance (
   'ea768740-1b2f-4572-a269-377df89931c6',
   'exercise',
   'exercise.vocabulary.u04.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u04.matching',
-  'a92101e1b41494a0bd66b5ae76f0a9ca31f6a35d5bfe67a7841d3cf31e699cab',
+  '6f3485e48b7f0eb62ab6a8501c325a899ec01c08e2c480c93b5614255d9cd50b',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -73998,10 +73998,10 @@ insert into public.content_provenance (
   'd481a467-03ec-40bf-b3c4-8bb875224dbc',
   'exercise',
   'exercise.vocabulary.u05.utro.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L1204',
-  'be124da1274cceff08e189ad27170736322c3591c590044027df8adf5e619445',
+  'ef3309cc3bffbbb861b18708be4a3a218b138a9ac1a161a05ad0503b9b1d972b',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74013,10 +74013,10 @@ insert into public.content_provenance (
   'f175646d-1759-4644-bf2f-7db0d1f14653',
   'exercise',
   'exercise.vocabulary.u05.noch.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L1211',
-  'fd736282491eda3abb339138a18019815625265ce37ab1078c46c65d585ca102',
+  '0ef26a5a39cebbf1033c77ab062a37457e39ad19afd52a187124083c5f2bf583',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74028,10 +74028,10 @@ insert into public.content_provenance (
   '010f5d7b-e0a4-4d9f-b366-5b8ec94e4c2b',
   'exercise',
   'exercise.vocabulary.u05.glubokaya-noch.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L1215',
-  '1e0152ef60ed73fdc3da13cb651ec08e6ffbbb5e34a5b6129b838c24806c0ec8',
+  'd874affd97a32f5cd2f350e797f879f4e0bb83a5773cee89896edd160a4b13ee',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74043,10 +74043,10 @@ insert into public.content_provenance (
   'd277b9b2-8721-4bb1-bffc-e5a707a2dd3c',
   'exercise',
   'exercise.vocabulary.u05.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u05.matching',
-  '3a5f5d76d60580ca9379561acb98c19ab69e7e79bf629ef0d22c6b407021396b',
+  'f5d2f224be9e210ad342a35790c2b3c4efd40c2782d3eab72c8ffc8c917d3983',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74058,10 +74058,10 @@ insert into public.content_provenance (
   'fe37b378-98a8-4f16-bfdf-d680636fa999',
   'exercise',
   'exercise.vocabulary.u06.badminton.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L691',
-  'd57712fd94e2a1b8ad372bdcca7d03d5712c60ee91930d100dc6f7ed80c3e4a5',
+  '42bf030701c77aac60cc02cdee4534ae468794d12d25387e922a9330c26b62a8',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74073,10 +74073,10 @@ insert into public.content_provenance (
   '22c1ce4f-1921-4ca9-98c0-f5d7f3802c53',
   'exercise',
   'exercise.vocabulary.u06.voleibol.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L677',
-  'd6ce46470d7a157dd0657956a0c294f7ba6d4953b90a171a0ec0b726ae3b63d8',
+  'bf33a409133cd8b32df88374e7b10c44c46d84fce03e85a405cbca20cfec347b',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74088,10 +74088,10 @@ insert into public.content_provenance (
   '16e846db-c6cb-440d-9b9f-8a69a4fef5cd',
   'exercise',
   'exercise.vocabulary.u06.boks.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L689',
-  '7d71bc68d5747ee7f14cda632c03c34ccbe071efff7cc3ed2b419d60c99d8487',
+  '13a5eaea49a4c5d033d00b7fdb5dc73dc8865a4aa9453690578b98ca12265737',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74103,10 +74103,10 @@ insert into public.content_provenance (
   'a7c4acde-9a4f-4f15-9d30-ed831982e35c',
   'exercise',
   'exercise.vocabulary.u06.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u06.matching',
-  '8c4352c348a358aea98b16c4683163055f99af116e7aa3a692bff82ddc36f809',
+  '65394820fdc316aabe3880202c0fca865da8c71c398de01dcd14de68933d4b1a',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74118,10 +74118,10 @@ insert into public.content_provenance (
   '4c4ed075-37d3-432c-af93-844d75d58199',
   'exercise',
   'exercise.vocabulary.u07.nasyschennyi-soderzhatelnyi-produktivnyi.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L274',
-  '40f8b279cdf232de342feabef02055f74df4b97ae237fa21dcc280cdfe62d379',
+  'a45a2aefeda7a5823e5318662d36357e6ec3140209c5ed58ea59030cb1660c25',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74133,10 +74133,10 @@ insert into public.content_provenance (
   '54fbf967-1281-4f02-8aa9-5a97e85f6e3f',
   'exercise',
   'exercise.vocabulary.u07.bolnoi-bolit.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L243',
-  '88108bdeb398f5dcc4c892e2fa149250c465d2bdbee971552b3ec36bdb5cffd5',
+  '3a9c9c469fafb3b7acc5a30d59e6b1f32000f0210ed97f03633752c864a79d0a',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74148,10 +74148,10 @@ insert into public.content_provenance (
   'a09c9e86-18ee-43b3-9c8d-3da0dbb4d977',
   'exercise',
   'exercise.vocabulary.u07.krasivyi-prekrasnyi.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L256',
-  '8fcd3bd1b2ad6e109ad68afe6b2f080324216d61f653330600327df471599b72',
+  '407399daedf9986212fea2899d50dd4fd8c6d0827b616729587057a5d19d9427',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74163,10 +74163,10 @@ insert into public.content_provenance (
   '3bbdc277-fd96-48d5-9685-235e4cefcbc5',
   'exercise',
   'exercise.vocabulary.u07.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u07.matching',
-  '87a8ef75762c8d6bb33d2bc63e6045aa25ec24000b775d1fffaa78173c036e70',
+  '7377acb8e06426b84616589ef38f2df5dd63996e94eab6b194117a5e9155c690',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74178,10 +74178,10 @@ insert into public.content_provenance (
   '3a89cd6e-0acb-43af-9e36-9767a19a7eeb',
   'exercise',
   'exercise.vocabulary.u08.znat.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L92',
-  '7322da598f83684fd1d692d4eb5ce390aef10030d621ebd1c83b876f2df0b3be',
+  '102a14edd4594be8d8138695ef81565cb1c966c8ae5a72b7041cb2404023dd1c',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74193,10 +74193,10 @@ insert into public.content_provenance (
   '376c7f61-859b-460c-af64-914fb697b49f',
   'exercise',
   'exercise.vocabulary.u08.sidet-saditsya.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L28',
-  '718e63a2e39f85daa233e3a8be39ff11c73010ba8cf4bc50e01286f512542904',
+  '47d75ba7302c4f5d4426893a401b0efc8e01408238533f91f102491a3ec70864',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74208,10 +74208,10 @@ insert into public.content_provenance (
   '28eb0649-2e6d-4db2-8a3d-7caf43eb94be',
   'exercise',
   'exercise.vocabulary.u08.uchitsya-izuchat.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L39',
-  '572f5fd55ee3f9eb7a35f026ae456016b8e9dfaa7cda2f6ed26098d8295e6a7e',
+  'cd7870e1d9d6c488ffcd31739d6d6f93ae1a3a5c7166115cac9289a3b6da53dc',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74223,10 +74223,10 @@ insert into public.content_provenance (
   '8c3e334d-9a6f-4e57-96dc-5dd5ff64e0a2',
   'exercise',
   'exercise.vocabulary.u08.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u08.matching',
-  '129835a1cf7f8e986e943cc8ac30eefb68933bd51bbcda87e53b94a96069bad8',
+  'dc27f656e2a84b25f07a163fa2d4bfe7c1a20399900313d37c4cb6b68e8e3a26',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74238,10 +74238,10 @@ insert into public.content_provenance (
   'bd6d2386-7ac3-473f-af22-72bd4137c0ce',
   'exercise',
   'exercise.vocabulary.u09.hanbok-koreiskii-natsionalnyi-kostyum.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L867',
-  '197f10c9c810308295874ef5f0cae1f83d76589107bb0acce047b62b9c321db8',
+  'b8cf276e12aade7b9e1e60b7039ddf56e674804783f9b43dfe7167b2ed1d7a62',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74253,10 +74253,10 @@ insert into public.content_provenance (
   '2c940dfc-87c2-486b-868d-408b0b089491',
   'exercise',
   'exercise.vocabulary.u09.kosmetika.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L866',
-  '5dcd7efce47ca4a2663bb425b351540d676eb73fd7029e409bfcaac8df7ac251',
+  '09a195896030c0c4a4a0d8cdab366004df3c5df1714ed3cb2eb8397af7c3a29c',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74268,10 +74268,10 @@ insert into public.content_provenance (
   '321eb686-2365-4503-b6b1-137e6c0be781',
   'exercise',
   'exercise.vocabulary.u09.perchatki.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L869',
-  '5ca8701fe349978ae93d7cf08659bb78cb9ab93f2e7f16a0bb15069d2ae387d3',
+  '9955491972f803c50afde42023b1692a7fe916fc2f241e02dcd63b2b6cab9e22',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74283,10 +74283,10 @@ insert into public.content_provenance (
   '95556f89-a6f0-4ee0-870a-6332f9450753',
   'exercise',
   'exercise.vocabulary.u09.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u09.matching',
-  'b643fafdc994b9a8716f7d1a549606a944fd5c6a4aa910b873dc5a2de81aaa86',
+  '4d3920a8c0fbb9acc3908bc0099436777155b962fa705db59b9cb7727fcb672f',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74298,10 +74298,10 @@ insert into public.content_provenance (
   '32911446-c76b-4007-980f-2b1a9af4aa92',
   'exercise',
   'exercise.vocabulary.u10.varenyi-ris-eda-v-shirokom-smysle.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L476',
-  'f88b45133847a58ba0c78ad5e701e288d20582aca6ffd8ffd765c9d5d319ccdc',
+  '9dc8fa7f64159f36fb25f4265972716a6eceb5314cb97578e23de8177df0c540',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74313,10 +74313,10 @@ insert into public.content_provenance (
   '1e80a6b2-579e-46ff-b60d-726e263529ef',
   'exercise',
   'exercise.vocabulary.u10.slivochnoe-maslo.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L486',
-  '262a3fd775b72cb6b9b068f97f6a745faf828bfd9e59899d15f5c7c0c725f65c',
+  '8d413393f6a061644d504718fde465777fa22b2f4d01438a916b01693b0bd15e',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74328,10 +74328,10 @@ insert into public.content_provenance (
   '1986fe0d-59a4-4bb7-9db2-262feab7023c',
   'exercise',
   'exercise.vocabulary.u10.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L504',
-  'b034f4743e49da7a3573b28af2243d976b1709ebd89163096ecd5b53512d483f',
+  '5b83465cbb9b3ed60d5ab3e342da30eda922a4f4628535882029b922901d99c3',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74343,10 +74343,10 @@ insert into public.content_provenance (
   'c55856c3-b34e-46f5-a718-564ba76043bb',
   'exercise',
   'exercise.vocabulary.u10.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u10.matching',
-  '9bc2b5fe8057a20a5474d64ca4eb91a9f64e95deb01b7c10467cfdc8f7a66d9a',
+  '4bfbd366ca317e575d8d8674ad9f94dce54edc3b4e743f049e3c3e329d4896d4',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74358,10 +74358,10 @@ insert into public.content_provenance (
   '90c89ced-f104-4b99-8403-013f76200faa',
   'exercise',
   'exercise.vocabulary.u11.batareya-akkumulyator.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L622',
-  '3da48b54a2e46c953b2f81feda3514915ae5016f4705802a921e137719913daf',
+  'e8c33df86fa6e774f8120bd098a188326896ca35116776d61865099891bc5ed0',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74373,10 +74373,10 @@ insert into public.content_provenance (
   '85a03e9c-b9bc-440f-8918-919960086c3d',
   'exercise',
   'exercise.vocabulary.u11.pylesos.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L615',
-  '16c5c8de1eca8c5c5d67c2d04179b2ffd47240a4f1044ed1f31a3730a7811670',
+  '010caf1b2ba2baddf942d87b00821f566fbe527daff0f8d7959d272e833a4a01',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74388,10 +74388,10 @@ insert into public.content_provenance (
   '754c16f8-2e2e-4fc1-a46a-3f5ad8a2c733',
   'exercise',
   'exercise.vocabulary.u11.zaryadnoe-ustroistvo.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L621',
-  '67d022ded21338aa1c88679364d04399f97efe58334bb27e80fdde13f90f993c',
+  'e0b855708e4e844c114a5c9368c41bd859e7543c31d59738a90bfe5e6a950393',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74403,10 +74403,10 @@ insert into public.content_provenance (
   'c040a77d-778e-4aec-988c-ddd6d24e0be6',
   'exercise',
   'exercise.vocabulary.u11.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u11.matching',
-  '523c7c923afecc918d3e90252cdac319b6a72c1935289d49f86505aa2db1f6b2',
+  'c12cc6576820432f4ec3ee62fce03b27f201912594dc370c53c5b37301580ab3',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74418,10 +74418,10 @@ insert into public.content_provenance (
   '8333eaeb-5142-475d-98d4-6305b61ca10d',
   'exercise',
   'exercise.vocabulary.u12.ili-a-esli-ne.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L1274',
-  'bede2070ec3ff152ddbc12b98a57203b7ef88e1886847cb2b5e4aa92d6df3f7e',
+  '4ddcfbb52ba7b1884cc515ea7bf993909fd03cda6234c78e6571540c9688de8d',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74433,10 +74433,10 @@ insert into public.content_provenance (
   'd2f6757f-70d7-4a02-9fe1-3ceb1b783c72',
   'exercise',
   'exercise.vocabulary.u12.no-odnako-pri-etom-utochnenie-ogovorka.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L1277',
-  '2f637ca6eee057251c848ef6bffaf02fb17fa8f2323e6d01dab20fcee080b275',
+  '611122287268024a6646d57df66a535fa4749d3beb5fa36f176d17b03ce439ea',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74448,10 +74448,10 @@ insert into public.content_provenance (
   '49433058-e10e-4275-ac3f-ae1e732d6ed6',
   'exercise',
   'exercise.vocabulary.u12.vse-zhe-tem-ne-menee.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L1269',
-  '4844d54cf322a87687d599dcc264d23433605e3103d606a2806ea4868a3e9b67',
+  '843d3fceb436d410e1cfad036e98d2e16eb3bae5c5dea1da97e1dd8b150dc7fc',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74463,10 +74463,10 @@ insert into public.content_provenance (
   '811de999-f843-4cb0-b902-d243cec088f0',
   'exercise',
   'exercise.vocabulary.u12.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u12.matching',
-  '7cfa3d4e6380aefc96c9031c7031715a35a8cc3eb7727ae1843f51c2e8e3a0e3',
+  '324974d0ea5ddf81f31d3efe637bba8936e83e80d5a5e45c810fe7025007972a',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74478,10 +74478,10 @@ insert into public.content_provenance (
   '016845b0-84f4-4f6a-9173-66fc005efab7',
   'exercise',
   'exercise.vocabulary.u13.more.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L795',
-  '5a175ad5a91e2994dac0f6c5d5cfc5c51958a16dc4c2d9d7b12b7bb9730ecc13',
+  'a6b3ea9c5401979c4bf2d162fd9da509dd6f21026f0b7e12233f8673b87def4b',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74493,10 +74493,10 @@ insert into public.content_provenance (
   'ced2f6b8-5f18-46b6-8ec6-329e57858727',
   'exercise',
   'exercise.vocabulary.u13.univermag-torgovyi-tsentr.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L780',
-  'fc010c25df512082771e544f7144bef49913504fe9b6d44c65995de8734d6030',
+  'da816e9454df604e0eac54da74782b50eda9aa1da60f90f4233b22e3b3473736',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74508,10 +74508,10 @@ insert into public.content_provenance (
   '8cbe0fd6-28dd-4694-8592-4e1183386f0f',
   'exercise',
   'exercise.vocabulary.u13.muzei.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L783',
-  '5644002b2687ea7a66c4444b82c9c7fe64fa8083075bf05ab1d4b74edb2abe8c',
+  'c47703aa04ca7c2b9de6519c03b885c5190fd9b7ada570c5731ed4f7d2b2614b',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74523,10 +74523,10 @@ insert into public.content_provenance (
   '7456724c-9d99-40ea-a221-38798f0cc1b6',
   'exercise',
   'exercise.vocabulary.u13.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u13.matching',
-  '7e433b752bf540f45312d43a75a8d3f6d4615d27f43b03e14e57fd924ce97772',
+  '8bed5d9cd68d4c42773cfbc7dff3cdc9a0b294941c5cf59879c15ec170c754ff',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74538,10 +74538,10 @@ insert into public.content_provenance (
   '8517d879-a275-4a4e-a742-5bf389db8650',
   'exercise',
   'exercise.vocabulary.u14.magazin-nebolshoi.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L764',
-  'dfbae6469151f604f6af3d562c45a38d4875baddb46b7d91805cfb5f507f7e8e',
+  '2237f3960a89943fd5e628345a8933216658daeb513d8c9fe26f5bed26a61146',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74553,10 +74553,10 @@ insert into public.content_provenance (
   '7b731454-f326-48df-932b-0ffe20b7418b',
   'exercise',
   'exercise.vocabulary.u14.teatr.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L773',
-  'f18db239526447854da5742fe0ace929c752b3b6d30bc9d7c24e2beb8d0c3048',
+  '8a6a3de4a113d991379d43d9d2bcdf29d8061d47c39a146e82d4e5b86619b38a',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74568,10 +74568,10 @@ insert into public.content_provenance (
   'b243d557-3d53-412e-929d-e9b3881d8b01',
   'exercise',
   'exercise.vocabulary.u14.zheleznodorozhnaya-stantsiya.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L787',
-  '363a7f8cbb9610b06d86585965cf5cb60568d489b4888719ff9cdf9d0754b32d',
+  'cb5d557bfa3fd9f0b967d1253f6d460d0afbf4b74b54c9be51e2cb33e74ef730',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74583,10 +74583,10 @@ insert into public.content_provenance (
   'dde0c187-ccb1-4f93-9276-ff290f0b6834',
   'exercise',
   'exercise.vocabulary.u14.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u14.matching',
-  '1f0afd2a4fd45b9e35af97935fd50399c35ec550820559981a72833dfbd86aa9',
+  'a7971fe138b6f5b88b7f9def92054a3db117f0ce2bd9d6c5314c881a64c47289',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74598,10 +74598,10 @@ insert into public.content_provenance (
   'c4c3eb8b-b4fa-438f-90aa-c52efc7e7afe',
   'exercise',
   'exercise.vocabulary.u15.zhivot.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L854',
-  '355c28e116b311d4806daa5fed875e367605161bbc4fcf1a400f3f34bc4194ef',
+  '10fc5af9e94059fc0b00e0e1e622a4b40fcfc5dfa52af9db14c815c55a7451e0',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74613,10 +74613,10 @@ insert into public.content_provenance (
   '7a6d68bc-2028-456b-9b6f-a7242f6f6850',
   'exercise',
   'exercise.vocabulary.u15.stopa.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L848',
-  '37543eccabcfe01e0885aea73cf4a5d1d8ed7fb9686a10036cf39422573d8d21',
+  '4597be3ffbdc4a6686bdfb2a15e4212a5a3a6c3d4b9ff34cafc2f26d86652c63',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74628,10 +74628,10 @@ insert into public.content_provenance (
   '5d3d91e4-7c22-4367-9b09-b66464bfeae8',
   'exercise',
   'exercise.vocabulary.u15.palets-na-noge.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L849',
-  '47f492cb90eb91d60aebae8cdfb3c961eaecf2d4e954e5d56eb9b937259f1358',
+  '0d2c2d52e89c8a719af163d35599e57fad3692bff040a4727876f7f6b435c8d2',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74643,10 +74643,10 @@ insert into public.content_provenance (
   '7e54afc2-0554-494a-a4ec-25e2f5451be2',
   'exercise',
   'exercise.vocabulary.u15.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u15.matching',
-  '9eeba8bd6dddb18e69ea82b9b816706e84bb14cce35db27c80bba0703682a0f6',
+  '0790e44de99e3107553cc9fba29aea3afe47db466c50ddd92d7b2d6c3c0925b4',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74658,10 +74658,10 @@ insert into public.content_provenance (
   '8da12e75-d7cd-4e44-bc38-8c69653984a0',
   'exercise',
   'exercise.vocabulary.u16.otets.ko-ru',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L633',
-  '68fa9ed88c9bce6194d520626add6eb34ec9160584a8ba54ec15806ea417ffe3',
+  'de43e1fcebba4c4b77411b6d11afbb79fd2ef08c65d08704c54f880b68297846',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74673,10 +74673,10 @@ insert into public.content_provenance (
   '3144bc86-ce4d-473d-88d7-1bf41abb5ecb',
   'exercise',
   'exercise.vocabulary.u16.syn.ru-ko',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L638',
-  '4adc37cfeada327828a85d0046bf0ef1bc1cae49c4c41bdcf6fc24b17c762d2d',
+  '9429d1901a0ec74991e7868615f95b0f4f28cee6b10a46051855f18e49b7f2d5',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74688,10 +74688,10 @@ insert into public.content_provenance (
   '47f56798-dc10-4136-b138-7a3b97d5244f',
   'exercise',
   'exercise.vocabulary.u16.obraschenie-k-muzhchine-srednego-vozrasta.produce',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'line-range:L655',
-  '716686350a2ed8d6b4116e0dee4f6aa3582dd751579fc4482fabd0fa63ab4cfa',
+  '8e239ea025461b43f706022b042eb697669056dc13c1f0e1e91388cbe98a6c37',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -74703,10 +74703,10 @@ insert into public.content_provenance (
   'ac58387d-12ab-4994-ab76-de0fac84a458',
   'exercise',
   'exercise.vocabulary.u16.matching.v01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-vocabulary'),
   'section:unit.u16.matching',
-  '08552d54e46119d88d2b971331db9a05cfc09047e07d4afd83c0f505212cc01b',
+  '87439dc7058f3e4fe60414994d9c73922a5cba1f08847713f3b0089520f89155',
   'high',
   'draft',
   'manual-derived draft vocabulary exercise; transliteration is never an accepted Korean answer.'
@@ -78888,10 +78888,10 @@ insert into public.content_provenance (
   '026dd856-0988-4c0c-85c2-4fa1eb179b70',
   'exercise',
   'exercise.reading.bank.u01.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L71',
-  '86a7a6a30edab26d54d398fad7469f061a62eac4ca2e00ba499bc137dfb96819',
+  '85ec1897c90285c0cf613d074bf93f282d1b26bf18667f00114d931b377eb479',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -78903,10 +78903,10 @@ insert into public.content_provenance (
   '8130799e-2541-424b-8320-7a3d1e0f548a',
   'exercise',
   'exercise.reading.bank.u01.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L71',
-  'cdaab99502ba377c094c1c3304b5bef28b59a6d930ffa80c4601ee6faf25cb32',
+  '1b3c8ab22342f3f96733279c80bbe158816551696759d31b5382c0c0dfbe1548',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -78918,10 +78918,10 @@ insert into public.content_provenance (
   'cae77a0d-8b74-4799-92c6-6b315b230687',
   'exercise',
   'exercise.reading.bank.u01.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L71',
-  'f75613d5d71655e6a950f1daed76d6a959799dabcbf4578db03250648b371a81',
+  '1fbc49d1502239a111a0906b8ec0bde318ae351d62f0e7a4f8e88d7e5772c8af',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -78933,10 +78933,10 @@ insert into public.content_provenance (
   '1d5a0737-d0ac-4dc9-8d93-ef7ea673036f',
   'exercise',
   'exercise.reading.bank.u02.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L154',
-  'ca0fcb5ecdc8811c081a15bd00177b7ebe72991f8b6560bd8fde6248f2258ba9',
+  '32b7a8751b4cd1716c29c69706d03593fff3c4bdda1ec2d85829719fd4e8ea92',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -78948,10 +78948,10 @@ insert into public.content_provenance (
   'c9058e10-4d4e-472e-8e62-e1aad5958abc',
   'exercise',
   'exercise.reading.bank.u02.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L154',
-  'c8a01845bd695812ec22a2819ba4fb262622d35d77f661c447b1b4f18952484f',
+  '5e610aa9e16e691df540d497320c7522d85abb4313480e53d0e2de0f04b525aa',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -78963,10 +78963,10 @@ insert into public.content_provenance (
   'a4f1d2b3-2037-4b62-ac99-b8019064c120',
   'exercise',
   'exercise.reading.bank.u02.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L154',
-  '124405aa4ae960240d407b5853badebf4a829e7a678887e68e5d9d4d3d1cabcb',
+  '9815b0ef9938b31b28422e168ae86d6b363267c6c194e42801f4025b36c45137',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -78978,10 +78978,10 @@ insert into public.content_provenance (
   'd17883d9-59d9-47d8-9d52-2f32cc0ad033',
   'exercise',
   'exercise.reading.bank.u03.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L229',
-  'e8f55d7d66873ed005269a37af4dc28ffaf55c30cbfece8b070dd22b0b27f65c',
+  'c7595a682f8ab73e25cc542d14c67bde915fe114432aa93ba9d8826e99fcf04e',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -78993,10 +78993,10 @@ insert into public.content_provenance (
   '1cb01c11-4644-47ef-94ab-eee2598efbd7',
   'exercise',
   'exercise.reading.bank.u03.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L229',
-  '90817fbfe3c4b9e14b20a9c5fdc66b4e1ba912d10277c2bbd821c70a3f6df924',
+  'c043d8579cddc3f5e4a700dfe54f33973482281e94f70047ea30c2b8187d7b0b',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79008,10 +79008,10 @@ insert into public.content_provenance (
   '7cc81f03-1bce-4eff-8ded-7a214d15136a',
   'exercise',
   'exercise.reading.bank.u03.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L229',
-  '6ffacf3a9b7ce8f5da02c61b01db24c55ec9cbb59c1ae883af314ff729cce1f3',
+  'b230d1c143d119a82597aa1af0dac4021855a965b81f44bc7a4de4249c2ee880',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79023,10 +79023,10 @@ insert into public.content_provenance (
   '2184b2bb-c84b-4b79-91d4-4f0221e07dc5',
   'exercise',
   'exercise.reading.bank.u04.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L310',
-  '774863d47292ef45f6993e431ca442b3a08a3dd155e613b6194ec6ec4aa77ecb',
+  'd618efed7baab3575e05c069ad28918cd3ab87818f13e45a51823fda38fd26d0',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79038,10 +79038,10 @@ insert into public.content_provenance (
   '6cb958e9-acae-4cd1-bf25-239a88a3e0c4',
   'exercise',
   'exercise.reading.bank.u04.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L310',
-  '26f6895eaa0b36493d706e99e48c02923b37e68bccff8d9f68a0f41e2f4b123a',
+  '9b1fad948e9f4835cccb5d748d38a996d0b81e9525ac95b3e4db3a61f0f0e3f4',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79053,10 +79053,10 @@ insert into public.content_provenance (
   'd280edcc-f1b4-4617-8d7e-a00d5d94cd42',
   'exercise',
   'exercise.reading.bank.u04.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L310',
-  'cb183861c481c0a7c56ecd85e14d1ecfb0b5af4602be110925ee1f1393779efa',
+  '0d53145e2533ed5596084f28cec2c5b5499a01e8de519ca1e9b8cae780e6c8f9',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79068,10 +79068,10 @@ insert into public.content_provenance (
   '26014c94-237f-4dca-a347-6ddfb1409024',
   'exercise',
   'exercise.reading.bank.u05.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L382',
-  '6081367be5a880203048e07528f105ed4a62f707a9395e132df0ab4b30c55bb9',
+  '8e61ff349e53b823a089f00aa34633b61d89bcc25c9c8a4e2af420e43e800569',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79083,10 +79083,10 @@ insert into public.content_provenance (
   '48a2e572-1ee9-4f21-b405-e20decfa8d12',
   'exercise',
   'exercise.reading.bank.u05.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L382',
-  '2cb70552542d2f7a3366436369d4e07af5d8e389abc873e27417d837504a487d',
+  'f7856f1354dc27093453bbb44f757ff631b6cb56fa5e8dfabc48457b59ca2af6',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79098,10 +79098,10 @@ insert into public.content_provenance (
   '12d6a8fc-756b-469a-ba4a-bd6c7c51118d',
   'exercise',
   'exercise.reading.bank.u05.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L382',
-  '0cec6475d0194bc7170674c215e5ccb43929ed9651b20f8fc650dafc6d8c4116',
+  'bd80784d246a065a9fec27ebe773d464f613e8d9e76b0e9672cfd6a786eaa916',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79113,10 +79113,10 @@ insert into public.content_provenance (
   '106efc59-64c0-42c6-8f1c-9b7e4cc8fe9e',
   'exercise',
   'exercise.reading.bank.u06.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L440',
-  'd138c448f1d28ef001c8f04a44097a962cb94def059b58997524a547c9f47c95',
+  'faf59aeb46a86da82b7b84c57224e8f89432ef8a5c597c0f8eb42aa4768ef9dc',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79128,10 +79128,10 @@ insert into public.content_provenance (
   '92380864-2d3c-413b-ab71-c789b72129c6',
   'exercise',
   'exercise.reading.bank.u06.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L440',
-  '39df8153f1fbf79054efaaacdea05c133f4febe139d3ab24eab5768f56ee2e48',
+  '74c3fc880b126f55df85cbc4285af4dca256e09937c98afbf6d81383898e6467',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79143,10 +79143,10 @@ insert into public.content_provenance (
   '411408aa-37f1-4e69-b456-1a0f564e01cc',
   'exercise',
   'exercise.reading.bank.u06.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L440',
-  '28740c6ee67efe733e9f93febffcb009ce942c5d59cb3602bd9f7520c2ee2a14',
+  'b2fee6ac672ad4e00ef27d54f8200e678f3367b96e07542ba43759e41da70eb5',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79158,10 +79158,10 @@ insert into public.content_provenance (
   'b2629f92-0376-4e7a-bc0b-80bffb43c832',
   'exercise',
   'exercise.reading.bank.u07.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L508',
-  '5894347dfd36ebe900ab77a3b97768dd1c5ce3e4525792d2ed1945ba28093b44',
+  '4b48bf035bd7046d44d1ea593b2a08a9d1ae28056fdf1cd89d73f66296e690bf',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79173,10 +79173,10 @@ insert into public.content_provenance (
   'f867b96d-c0d1-4f1c-9b77-8b599d0e9a16',
   'exercise',
   'exercise.reading.bank.u07.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L508',
-  'f468a7189fb4cc0d660d032df61c382dc2d5ea06b06ecc6c270db2607c6c4bc4',
+  'aedc3683f3885129697bef95808fe09e603f3f03fd0e19ace89e014d9867bb0d',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79188,10 +79188,10 @@ insert into public.content_provenance (
   '5a691324-2a32-4ce3-bfdb-5f4d7d736e56',
   'exercise',
   'exercise.reading.bank.u07.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L508',
-  'ecd6786277ca571fe3740ffe3625d173020f3501c08d15c7adca4ae3c7ab301f',
+  '9f9b59ffcd685eec9b473a577aff6d54733a556f22941c6a7807684df19d3fcc',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79203,10 +79203,10 @@ insert into public.content_provenance (
   '4665c417-46d5-43c0-a186-36c49582cac7',
   'exercise',
   'exercise.reading.bank.u08.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L583',
-  'cb9fe1b28f564bbc6471f6b76eee19266a65abda1f3308eaa4722ba1493d831c',
+  '41365b81232308926210f77adb5492d11a64150f459438bdac548e7ebf870745',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79218,10 +79218,10 @@ insert into public.content_provenance (
   'b155bebe-7de2-4e88-905e-64734d2c3461',
   'exercise',
   'exercise.reading.bank.u08.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L583',
-  'ca47125934cb8b252c3ab94267cd0b00028c790977442bbabf42cf9cf2f45f6e',
+  '7a2f92677f70c3ff46a12f301be50ab9b941e4f51fc28288c12b4f81ba1d07c8',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79233,10 +79233,10 @@ insert into public.content_provenance (
   '08bc4d5b-9b25-43d5-98c3-5bcd6e31f550',
   'exercise',
   'exercise.reading.bank.u08.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L583',
-  '376f6d4042912391a9e8f562d15426ecc1715b9ed61f25550f1bf81956bbf22c',
+  'f5c0003b93a6581f07fa38b903665ec501abffae89011b96ad828c599df964c3',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79248,10 +79248,10 @@ insert into public.content_provenance (
   'f9e84996-c697-49af-a846-55d7453be203',
   'exercise',
   'exercise.reading.bank.u09.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L694',
-  '323c889b90ab5de8ad057781f99d53796f364eb7f811ea03d5f0c073af1e6771',
+  '407056aca2989fa36a36c61611e8d8f11b4909f84f4b2ed5f31a1630a9af7124',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79263,10 +79263,10 @@ insert into public.content_provenance (
   '99f1a87b-160e-4afb-9099-b770dc39ee02',
   'exercise',
   'exercise.reading.bank.u09.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L694',
-  'f987bab6216e7b3e4803590747f76f5304879af4da4250d8fd88fab8369529c9',
+  '9830250b637855f9d56388c372c74627ed0f023b89d7f5055be8040b804e6117',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79278,10 +79278,10 @@ insert into public.content_provenance (
   '703ef394-8030-4881-a27e-9f37052ba7f8',
   'exercise',
   'exercise.reading.bank.u09.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L694',
-  '42fc180fbe0bccd743df0d7c940765f0bd99788692c07ab6823eca2127383045',
+  '70049dad741b5cca785546a2e338fb83012d520d9fc30722b04c377ab8af2ce0',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79293,10 +79293,10 @@ insert into public.content_provenance (
   '9a748a5f-cd4a-48fe-8264-7610e4637b6b',
   'exercise',
   'exercise.reading.bank.u10.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L772',
-  '311ffd0245c535c1e2420ba4de67e2cbefa0311d6f8cd845671f6b949c8b5b31',
+  '115d166c7b7038c9953c873536e9a2de97760fb2b45121b958fc84858524666c',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79308,10 +79308,10 @@ insert into public.content_provenance (
   '29a6062f-4631-485c-a299-1e297bc88d79',
   'exercise',
   'exercise.reading.bank.u10.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L772',
-  '824dfb255f63319365ddf9cf7a40dd17bc7d915beb8749a7bb0903b3c1603a37',
+  'b15479224a8cc306ff19f8ac21ab6a4dae76ee4e70a25689f82ec504a15a9172',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79323,10 +79323,10 @@ insert into public.content_provenance (
   '7ea97c08-c10b-41a7-976c-189ad76e2b72',
   'exercise',
   'exercise.reading.bank.u10.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L772',
-  '5d6a5ce3de657dd9aba0e8b3fd721affaeae1ee174ec4588c03e5a79d8e4a1b4',
+  'bdad7013919ef71e030b14a8277d88316b2bf107a0d3543639335cd6f72fa991',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79338,10 +79338,10 @@ insert into public.content_provenance (
   '90a44b7c-7daf-4e0f-bfef-dcb46a0a4a02',
   'exercise',
   'exercise.reading.bank.u11.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L832',
-  'de629b56ac775893ba97211db1b78f8904f3f8c3ffe2c0945a771e077052d20f',
+  'f78b65e57c46cc66a9c93d949e7b614389442f981fa20499c5cd4568bc6ddbd1',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79353,10 +79353,10 @@ insert into public.content_provenance (
   '26c18e51-5eac-471e-9505-2a9e0d982e67',
   'exercise',
   'exercise.reading.bank.u11.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L832',
-  '2b5a7dea2db4939dc839933437fbaa0cfeda2e15a4204ead2f9befcbd8b60260',
+  '73633b5358f237ae5d3c1c7ad6f0e47fca29782628d1c312102c065ffcd816bc',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79368,10 +79368,10 @@ insert into public.content_provenance (
   '7b77d016-9a98-47a9-8f95-cd8247f04bfc',
   'exercise',
   'exercise.reading.bank.u11.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L832',
-  '104f39201101703ca8470c59bd6ebe561f8a0f2c00275f8452bfe32d1b40ff23',
+  '9421c189478267403866d2e0312d158e3f3656456eea69cfba5636d890aad5c6',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79383,10 +79383,10 @@ insert into public.content_provenance (
   '13afb537-3ee0-401f-b405-cd60e1b6c5b7',
   'exercise',
   'exercise.reading.bank.u12.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L945',
-  '382c68ed2ed0d271b336c91de3c93e5c4fe9086282913fe4dd23663330f21134',
+  'fd1c455d90e5d251fef1b20f0b5e19e12c4e78d34d2fd84d14643ccffb0277ad',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79398,10 +79398,10 @@ insert into public.content_provenance (
   'c18c0171-8180-4a59-9a53-4af201e7c0d7',
   'exercise',
   'exercise.reading.bank.u12.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L945',
-  'f4970d43ccd9a550ed20a31935ca343260741cd8280ccbc0f2d9e72e592c0910',
+  '8207d66befca8e8e1a217c0af0336b35358ea6f000088dfc7f57a39364cd80f7',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79413,10 +79413,10 @@ insert into public.content_provenance (
   'da920f72-8a54-4072-ba05-b86bb74111c8',
   'exercise',
   'exercise.reading.bank.u12.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L945',
-  '677120e4f345c992b95cfa98b616feee8ca5848ad343f3041705813db2b49de7',
+  'e81d15e3c6f1c8b9deca2906589836a4431eb04bfa21fad1cd72be7037603872',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79428,10 +79428,10 @@ insert into public.content_provenance (
   'bbe32e89-401c-410b-8825-bf18616776ff',
   'exercise',
   'exercise.reading.bank.u13.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1071',
-  '85ed42f781362187c80d94c9b91f3d6a9b1eaeb7685e30b6f1f525ba560dd6a1',
+  '7b607f5c685146c191bcd51e256113dcf6311199b99b2c59d391b8f0172d4871',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79443,10 +79443,10 @@ insert into public.content_provenance (
   '2cbd5999-c22d-4810-bbbb-83173f4cc321',
   'exercise',
   'exercise.reading.bank.u13.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1071',
-  '248548a905db1afd8e162218859df025e1822b69fe2c113fd282046108eb8984',
+  '49f57faeb8dec230321eb8b955de7c2c199179f9d27cabb69867bf20768b73c7',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79458,10 +79458,10 @@ insert into public.content_provenance (
   'abbfc466-0b65-4786-b3ba-e7241da465b4',
   'exercise',
   'exercise.reading.bank.u13.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1071',
-  '7d489637819aab1f31acd36f01c912727c346fd9d7419ad2f5bfca0dfce2dda9',
+  'f23a391dfd3c9615ce80647469a1f5b493b61457748b016d77cb0b9c393715cc',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79473,10 +79473,10 @@ insert into public.content_provenance (
   'e332b617-a1f9-4e37-b1da-80d4d2d29a3c',
   'exercise',
   'exercise.reading.bank.u14.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1166',
-  '9cc8a05c970d80a63e1ab426dcc4cdc7a2d6825e2bbcf53faa061c79aa69ad82',
+  '98c1ba0c8f4bc6bbe6aba87ebbc51e7d77dfd8af3e72ee1516450b8d46fa79d3',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79488,10 +79488,10 @@ insert into public.content_provenance (
   '81676854-7839-4667-adda-69864a2a9c85',
   'exercise',
   'exercise.reading.bank.u14.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1166',
-  '333faa81422dffb925953b0a013fb53744b0d344dd79d35b60ddeb8f69c86e91',
+  'b0060b7a8d6a48ed6d4d0250b502de1a3b9d9a2b205bc1afe371b31cb7854a86',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79503,10 +79503,10 @@ insert into public.content_provenance (
   'a9043b66-f4e1-462e-b81b-e4f00511693c',
   'exercise',
   'exercise.reading.bank.u14.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1166',
-  '62fe5dccd4303aa3a690a0ce54e59fab3c0fbf05b7ffb03fc85d193084dcab29',
+  '1caf1c16dbdaf5522648685acb4c2cf6cbae191196e8bebd47e38415965ae09b',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79518,10 +79518,10 @@ insert into public.content_provenance (
   '056447c6-c4b9-4b1a-8b8d-4aa07c6b90e4',
   'exercise',
   'exercise.reading.bank.u15.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1271',
-  '4438078db633ca55d49916e8b39638f3addfd4ae0ae7ab31562cabc7a8900606',
+  '2fa0e331eb10103286660028ebf525b9aa084dfe7ad35fd9f54e3bee485fa8be',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79533,10 +79533,10 @@ insert into public.content_provenance (
   'd27bd40d-c1db-40a9-8e68-195e1979899c',
   'exercise',
   'exercise.reading.bank.u15.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1271',
-  '003b02c2e23d323bb6da6c5c98b3d71a0b8477db3f74ff10bf5b8baac73e946c',
+  '01bb6336f45ab2321eb0cbc9bf6d5b1cda13e4dde8553ac618ba73f88fea7a73',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79548,10 +79548,10 @@ insert into public.content_provenance (
   '479e767b-a475-412c-894c-db8f382afc4d',
   'exercise',
   'exercise.reading.bank.u15.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1271',
-  '18bf4eaf331621102166f59d25b9b0392254247563bfd3dce2ae89dc369a5c92',
+  '0b8996a38712772466c9e07d178961fa829013d05df09dffc0777fc2b0b9e64c',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79563,10 +79563,10 @@ insert into public.content_provenance (
   '8613e7bf-2a42-4330-8ca7-256a4a831e40',
   'exercise',
   'exercise.reading.bank.u16.q01',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1366',
-  '75364fccbccc602330e0e985fc57438879b01cd583ea59ae8212d8106143110d',
+  '4a0b74a404af06677c94ca499df37a233710451ddd97d90a0a6fec56782d631c',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79578,10 +79578,10 @@ insert into public.content_provenance (
   'dc92e782-d4ac-457c-b425-5e93becb9181',
   'exercise',
   'exercise.reading.bank.u16.q02',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1366',
-  '9415526fd216ea38542206e4abc7178e03c5b5953d8c0295be17d5d94baa9728',
+  '97d833b0f9eacfc85a624a01d29b3078918e28b0a6beac9779204d7d4116aad3',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'
@@ -79593,10 +79593,10 @@ insert into public.content_provenance (
   'c57114ac-24fe-4659-9083-845791c5e409',
   'exercise',
   'exercise.reading.bank.u16.q03',
-  '1.0.0',
+  '1.0.1',
   (select id from public.content_sources where source_key = 'curriculum-texts'),
   'line-range:L1366',
-  '1b27ceeef5a32cc818f4614d1e76ff2556d793dd784f2b3607859a563e3da9dc',
+  'f160876cc89d5ad154aa480f2124b37cc672c1946c49aa163c25f843031ec27e',
   'high',
   'draft',
   'manual-derived draft reading bank question; explanation cites a passage fragment.'

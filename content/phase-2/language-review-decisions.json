@@ -1,0 +1,5193 @@
+{
+  "schemaVersion": "phase-2.language-review.v1",
+  "iteration": "F2-I22",
+  "reviewedAt": "2026-08-10T02:30:00.000Z",
+  "reviewer": "project-owner",
+  "note": "Individual decisions for §3.2 publishable minimum only. Non-minimum dictionary/passages/exam exercises remain draft. 쪽/쭉 lemmas are not in the primary bank and stay draft.",
+  "decisions": [
+    {
+      "logicalId": "dict.abeoji.otets",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.achim.utro",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.adeul.syn",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.ajeossi.obraschenie-k-muzhchine-srednego-vozrasta",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.ajumeoni.obraschenie-k-zhenschine-srednego-vozrasta",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.alchada.nasyschennyi-soderzhatelnyi-produktivnyi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.alda.znat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.anae.zhena",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.angyeong.ochki",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.animyeon.ili-a-esli-ne",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.anjda.sidet-saditsya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.apeuda.bolnoi-bolit",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.appa.papa",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.areumdapda.krasivyi-prekrasnyi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bada.more",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bae.zhivot",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested homonym 배: abdomen sense kept as primary for u15; ship sense remains draft.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.baebureuda.sytyi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.baedeuminteon.badminton",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.baegopeuda.golodnyi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.baegu.voleibol",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.baekhwajeom.univermag-torgovyi-tsentr",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.baenang.ryukzak-pohodnyi-turisticheskii",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.baeteori.batareya-akkumulyator",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.baeu.akter-aktrisa",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.baeuda.uchitsya-izuchat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bakda.svetlyi-yarkii",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bakkuda.menyat-izmenyat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bakmulgwan.muzei",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bal.stopa",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.balgarak.palets-na-noge",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bam.noch",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.ban.klass-gruppa-uchebnaya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.ban.polovina-dlya-vremeni-n-n-30",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bangapda.rad-a-vstreche",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.banghak.kanikuly-shkolnye-universitetskie",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bap.varenyi-ris-eda-v-shirokom-smysle",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bappeuda.zanyatoi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.batda.poluchat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.begae.podushka",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.beol.komplekt-nabor-dlya-odezhdy",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.beolda.zarabatyvat-dengi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.beon.raz-nomer",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.beorida.ustraivat-zatevat-prazdnik-delo",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.beoseu-jeongnyujang.avtobusnaya-ostanovka",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.beotda.snimat-odezhdu",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.beoteo.slivochnoe-maslo",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bibimbap.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bilding.zdanie-obychno-ofisnoe-mnogoetazhnoe",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.billida.odalzhivat-brat-naprokat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.binu.mylo",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bissada.dorogoi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.boda.smotret-videt",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bokjaphada.slozhnyi-mnogolyudnyi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.boksing.boks",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bolling.bouling",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bolpen.sharikovaya-ruchka",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bonaeda.otpravlyat-posylat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bongtu.konvert-paketik",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.buchida.otpravlyat-posylku-pismo",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bujireonhada.trudolyubivyi-prilezhnyi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bulchinjeolhada.nedruzhelyubnyi-nevezhlivyi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bulgogi.bulgogi-marinovannoe-zharenoe-myaso",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.bumonim.roditeli",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.byeongwon.bolnitsa",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.byeonhosa.yurist-advokat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.cha.chai",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chaek.kniga",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chaekgabang.shkolnyi-ryukzak",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chaekjang.knizhnyi-shkaf",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chaeksang.pismennyi-stol-parta",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chejo.gimnastika",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.cheongsogi.pylesos",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.cheyukgwan.sportzal-sportivnyi-zal",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chijeu.syr",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chimdae.krovat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chincheok.rodstvenniki-rodnya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chingu.drug-podruga",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chitsol.zubnaya-schetka",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chodeunghakgyo.nachalnaya-shkola",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chukgu.futbol",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.chungjeongi.zaryadnoe-ustroistvo",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.daehagwon.aspirantura-magistratura",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.daehakgyo.universitet",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.daehaksaeng.student-universiteta",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.daeum-dal.sleduyuschii-mesyats",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.daeum-ju.sleduyuschaya-nedelya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dak.kuritsa-zhivaya-ptitsa",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dakgogi.kuritsa-myaso",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dal.mesyats",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dalgyal.yaitso",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dalligi.beg",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dan.no-odnako-pri-etom-utochnenie-ogovorka",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dangsin.vy",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.danmuji.marinovannaya-zheltaya-redka-dlya-kimbapa",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dari.noga-ot-bedra-do-stopy",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested homonym 다리: body-part sense kept as primary for u15; bridge sense remains draft.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.darimi.utyug",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.deung.spina",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.deungsan.pohod-v-gory-trekking",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dijaineo.dizainer",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.doenjang.soevaya-pasta",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.doenjangjjigae.tvendyang-tige-ragu-s-soevoi-pastoi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dongmurwon.zoopark",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dongnyo.kollega",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.dongsaeng.mladshii-brat-ili-sestra",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.doseogwan.biblioteka",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.eeokeon-e-eo-keon.konditsioner",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.enjinieo.inzhener",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.eoje.vchera",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.eokkae.plecho",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.eolgul.litso",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.eomeoni.mat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.eomma.mama",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.eongdeongi.yagoditsy",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.eunhaeng.bank",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gaehak.nachalo-uchebnogo-semestra-posle-kanikul",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gage.magazin-nebolshoi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gaseum.grud",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geogi.tam-srednee-rasstoyanie",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geu.on-tot-opredelitel",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geudeul.oni",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geugeot.to-predmet-srednee-rasstoyanie",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geugot.to-mesto-tam",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geuje.pozavchera",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geujeokke.pozavchera",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geukjang.teatr",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geumyoil.pyatnitsa",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geunyeo.ona",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geuraedo.vse-zhe-tem-ne-menee",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geuraeseo.poetomu-i-poetomu",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geureochiman.no-tem-ne-menee",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geureom.togda-v-takom-sluchae",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geureomyeon.esli-tak-v-takom-sluchae-togda",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geureona.no-odnako",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geureonde.no-kstati-a-vot",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geureonikka.poetomu-tak-chto",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.geurigo.i-a-takzhe-i-potom",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gichayeok.zheleznodorozhnaya-stantsiya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.godeunghakgyo.starshaya-shkola-polnaya-srednyaya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.golpeu.golf",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gonggongjangso.obschestvennoe-mesto",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gonghang.aeroport",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gonghyuil.gosudarstvennyi-prazdnik",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gongwon.park",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gungnipjungangbangmulgwan.natsionalnyi-muzei-korei",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gwi.uho",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.gyosil.klass-klassnaya-komnata",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.hae.god",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.haesuyokjang.plyazh-dlya-kupaniya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.hajiman.no-odnako",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.hakgyo.shkola",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.haksaengjeung.studencheskii-bilet",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.hanbamjjung.glubokaya-noch",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.hanbok.hanbok-koreiskii-natsionalnyi-kostyum",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.haru.odin-den-sutki",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.helseu-jang.fitnes-zal-trenazhernyi-zal",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.helseu.trenazhernyi-zal-fitnes",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.heori.poyasnitsa-taliya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.hwajangpum.kosmetika",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.hyeo.yazyk-organ",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.hyudaepon.mobilnyi-telefon",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.i.etot-opredelitel",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.ieopon.naushniki-vkladyshi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.igeot.eto-predmet-blizko",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.ireon.takoi-kak-etot",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.jagi.sam-sebya-svoi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.jajeong.polnoch",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.jajeongeo-tagi.ezda-na-velosipede",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.janggap.perchatki",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.jeo.tot-ta-to-opredelitel-daleko",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested demonstrative 저: distal determiner sense kept as primary for u01; other senses remain draft.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.jeomsim.obed-polden",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.jeongo.polden",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.jeonjareinji.mikrovolnovaya-pech",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.jeonyeok.vecher",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.joging.dzhogging-beg-trustsoi",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.kamera.kamera-fotoapparat",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.keompyuteo.kompyuter",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.kibodeu.klaviatura",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.mauseu.kompyuternaya-mysh",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.nat.den-svetloe-vremya-sutok",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.nektai.galstuk",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.ohu.posle-poludnya-vtoraya-polovina-dnya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.ojeon.do-poludnya-pervaya-polovina-dnya",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.ot.odezhda",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.saebyeok.rassvet-rannee-utro",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.siheom.ekzamen-test",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.sikhu.posle-edy",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.sinbal.obuv",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.sonsugeon.nosovoi-platok",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.sueop.urok-zanyatie",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.suyeongbok.kupalnik-plavki",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.undonghwa.krossovki-sportivnaya-obuv",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "dict.yeseup.podgotovka-k-uroku-zaranee",
+      "kind": "dictionary-entry",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u01.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u02.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u02.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u02.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u02.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u02.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u02.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u02.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u02.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u03.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u04.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u05.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n06.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u06.n06.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u07.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u08.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u09.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u10.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u11.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u12.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u13.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u14.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u15.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n01.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n01.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n02.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n02.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n03.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n03.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n04.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n04.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n05.application",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.grammar.u16.n05.recognition",
+      "kind": "exercise-grammar",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal grammar bank (recognition + application); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u01.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u01.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u01.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u02.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u02.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u02.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u03.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u03.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u03.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u04.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u04.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u04.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u05.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u05.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u05.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u06.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u06.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u06.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u07.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u07.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u07.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u08.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u08.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u08.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u09.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u09.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u09.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u10.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u10.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u10.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u11.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u11.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u11.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u12.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u12.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u12.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u13.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u13.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u13.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u14.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u14.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u14.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u15.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u15.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u15.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u16.q01",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u16.q02",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.reading.bank.u16.q03",
+      "kind": "exercise-reading",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u01.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u01.on-tot-opredelitel.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u01.tam-srednee-rasstoyanie.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u01.vy.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u02.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u02.ochki.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u02.podushka.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u02.ryukzak-pohodnyi-turisticheskii.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u03.ekzamen-test.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u03.klass-gruppa-uchebnaya.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u03.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u03.studencheskii-bilet.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u04.kanikuly-shkolnye-universitetskie.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u04.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u04.sleduyuschaya-nedelya.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u04.sleduyuschii-mesyats.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u05.glubokaya-noch.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u05.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u05.noch.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u05.utro.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u06.badminton.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u06.boks.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u06.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u06.voleibol.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u07.bolnoi-bolit.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u07.krasivyi-prekrasnyi.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u07.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u07.nasyschennyi-soderzhatelnyi-produktivnyi.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u08.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u08.sidet-saditsya.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u08.uchitsya-izuchat.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u08.znat.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u09.hanbok-koreiskii-natsionalnyi-kostyum.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u09.kosmetika.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u09.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u09.perchatki.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u10.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u10.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u10.slivochnoe-maslo.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u10.varenyi-ris-eda-v-shirokom-smysle.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u11.batareya-akkumulyator.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u11.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u11.pylesos.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u11.zaryadnoe-ustroistvo.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u12.ili-a-esli-ne.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u12.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u12.no-odnako-pri-etom-utochnenie-ogovorka.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u12.vse-zhe-tem-ne-menee.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u13.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u13.more.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u13.muzei.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u13.univermag-torgovyi-tsentr.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u14.magazin-nebolshoi.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u14.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u14.teatr.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u14.zheleznodorozhnaya-stantsiya.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u15.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u15.palets-na-noge.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u15.stopa.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u15.zhivot.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u16.matching.v01",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u16.obraschenie-k-muzhchine-srednego-vozrasta.produce",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u16.otets.ko-ru",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "exercise.vocabulary.u16.syn.ru-ko",
+      "kind": "exercise-vocabulary",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Minimal vocabulary bank (≥4/unit); explanation rewritten on approval.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u01.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u01.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u01.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u01.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u01.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u02.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u02.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u02.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u02.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u03.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u03.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u03.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u03.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u03.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u04.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u04.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u04.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u04.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u04.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u05.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u05.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u05.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u05.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u05.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u06.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u06.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u06.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u06.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u06.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u06.n06",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u07.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u07.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u07.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested -아/어서①: sequential tightly linked actions (u07); kept distinct from causal ② in u12 per CURRICULUM_GRAMMAR.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u07.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u07.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested -(으)러: purpose of movement with 가다/오다; approved against CURRICULUM_GRAMMAR examples.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u08.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u08.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u08.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u08.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u08.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u09.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u09.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested -(으)세요/-(으)십시오: polite request/command; -(으)십시오 noted as more formal.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u09.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u09.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u09.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u10.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u10.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u10.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u10.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u10.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u11.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u11.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u11.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u11.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u11.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u12.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested -아/어서② / N이어/여서: cause/reason sense (u12); separate logicalId from sequential ①.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u12.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u12.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u12.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u12.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u13.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u13.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u13.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u13.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u13.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u14.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u14.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u14.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u14.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u14.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u15.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u15.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u15.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u15.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u15.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u16.n01",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u16.n02",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u16.n03",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u16.n04",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "grammar.u16.n05",
+      "kind": "grammar-topic",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Grammar metadata (pattern/title/summary) matches CURRICULUM_GRAMMAR atomic record.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u01.section.s004",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u02.section.37",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested blank markers (㉠): intentional fill prompts; source blanks not replaced with answers.",
+      "fromStatus": "needs_review",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u03.section.s013",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u04.section.s018",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u05.section.s023",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u06.section.100",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u07.section.s031",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested blank markers (㉠/㉡): intentional fill prompts; source blanks not replaced with answers.",
+      "fromStatus": "needs_review",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u08.section.s036",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u09.section.149",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": true,
+      "rationale": "Contested blank markers (㉠/㉡): intentional fill prompts; source blanks not replaced with answers.",
+      "fromStatus": "needs_review",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u10.section.s046",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u11.section.2-177-track-142",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u12.section.s055",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u13.section.s061",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u14.section.233",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u15.section.249",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "passage.u16.section.266",
+      "kind": "reading-passage",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Canonical unit reading passage selected in reading-bank-selection.json.",
+      "fromStatus": "reviewed",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u01",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u02",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u03",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u04",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u05",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u06",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u07",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u08",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u09",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u10",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u11",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u12",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u13",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u14",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u15",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    },
+    {
+      "logicalId": "unit.u16",
+      "kind": "unit",
+      "decision": "approve",
+      "contested": false,
+      "rationale": "Unit title/summary matches CURRICULUM_TOPICS outline for 1급.",
+      "fromStatus": "draft",
+      "contentVersion": "1.0.0"
+    }
+  ]
+}

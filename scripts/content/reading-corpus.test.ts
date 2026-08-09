@@ -60,12 +60,8 @@ describe("phase-2 reading corpus", () => {
 
     expect(examExercises).toHaveLength(100);
     expect(bankExercises).toHaveLength(48);
-    expect(graph.exercisesReading.items.every((exercise) => exercise.status === "draft")).toBe(
-      true,
-    );
-    expect(graph.exercisesReading.items.every((exercise) => exercise.status !== "approved")).toBe(
-      true,
-    );
+    expect(examExercises.every((exercise) => exercise.status === "draft")).toBe(true);
+    expect(bankExercises.every((exercise) => exercise.status === "approved")).toBe(true);
     expect(
       graph.exercisesReading.items.every(
         (exercise) =>

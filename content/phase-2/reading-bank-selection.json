@@ -7,112 +7,112 @@
       "unitLogicalId": "unit.u01",
       "passageLogicalId": "passage.u01.section.s004",
       "titleKo": "자기소개에 대한 글을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u02",
       "passageLogicalId": "passage.u02.section.37",
       "titleKo": "고향집을 소개하는 글을 읽고 말하기",
-      "status": "needs_review",
+      "status": "approved",
       "hasBlankMarkers": true
     },
     {
       "unitLogicalId": "unit.u03",
       "passageLogicalId": "passage.u03.section.s013",
       "titleKo": "학교생활을 설명하는 글을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u04",
       "passageLogicalId": "passage.u04.section.s018",
       "titleKo": "한국에서의 일상생활에 대한 글을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u05",
       "passageLogicalId": "passage.u05.section.s023",
       "titleKo": "하루 일과에 대한 글을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u06",
       "passageLogicalId": "passage.u06.section.100",
       "titleKo": "주말 이야기에 대한 글을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u07",
       "passageLogicalId": "passage.u07.section.s031",
       "titleKo": "좋아하는 계절에 대한 글을 읽고 말하기",
-      "status": "needs_review",
+      "status": "approved",
       "hasBlankMarkers": true
     },
     {
       "unitLogicalId": "unit.u08",
       "passageLogicalId": "passage.u08.section.s036",
       "titleKo": "방학 계획에 대한 글을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u09",
       "passageLogicalId": "passage.u09.section.149",
       "titleKo": "특별한 날에 주는 선물에 대한 글을 읽고 말하기",
-      "status": "needs_review",
+      "status": "approved",
       "hasBlankMarkers": true
     },
     {
       "unitLogicalId": "unit.u10",
       "passageLogicalId": "passage.u10.section.s046",
       "titleKo": "좋아하는 음식에 대한 글을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u11",
       "passageLogicalId": "passage.u11.section.2-177-track-142",
       "titleKo": "전화를 바꿔 주기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u12",
       "passageLogicalId": "passage.u12.section.s055",
       "titleKo": "이메일로 약속하는 글을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u13",
       "passageLogicalId": "passage.u13.section.s061",
       "titleKo": "목적지에 가는 글을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u14",
       "passageLogicalId": "passage.u14.section.233",
       "titleKo": "도서관 이용 안내문을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u15",
       "passageLogicalId": "passage.u15.section.249",
       "titleKo": "약을 먹는 방법을 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     },
     {
       "unitLogicalId": "unit.u16",
       "passageLogicalId": "passage.u16.section.266",
       "titleKo": "부모님께 쓴 편지를 읽고 말하기",
-      "status": "reviewed",
+      "status": "approved",
       "hasBlankMarkers": false
     }
   ]

@@ -119,7 +119,7 @@ const vocabularyBoundary = {
     lemma,
     senseCount: graph.dictionaryEntries.items.filter((entry) => entry.lemma === lemma).length,
   })),
-  note: "No dictionary senses are approved yet. Business lexicon remains draft (level=business-draft).",
+  note: "Primary §3.2 senses are approved; remaining senses and business lexicon stay draft (level=business-draft).",
 };
 
 const importedReadingExercises = graph.exercisesReading.items.filter((item) =>
@@ -140,11 +140,14 @@ const report = {
     "docs/CURRICULUM_TEXTS.md",
   ],
   checkpoint: {
-    id: "CP-6",
-    status: "accepted",
-    acceptedAt: "2026-08-09",
+    id: "CP-8",
+    status: "pending_user_acceptance",
+    previousAccepted: [
+      { id: "CP-6", acceptedAt: "2026-08-09" },
+      { id: "CP-7", acceptedAt: "2026-08-10" },
+    ],
     blocks: [
-      "status promotions to approved without language review",
+      "F2-I23 release/preview until CP-8 accepted",
       "remote supabase seed/migration without explicit step",
     ],
   },
@@ -194,11 +197,10 @@ const report = {
     absoluteLocalPathHits: absolutePathHits,
     appContentImportScan: "passed",
   },
-  openQuestionsForCp6: [
-    "Confirm 16 units / 80 grammar catalog structure against CURRICULUM_TOPICS.md and CURRICULUM_GRAMMAR.md.",
-    "Confirm dictionary homonyms and business-draft boundary before any approval.",
-    "Confirm reading merge decisions and exam bank remain draft until language review.",
-    "Decide which metadata (if any) may move to reviewed after CP-6; none are approved yet.",
+  openQuestionsForCp8: [
+    "Confirm approved §3.2 minimum (16/80/192/16 + exercise banks) is linguistically acceptable.",
+    "Confirm contested approvals (-아/어서 ①/②, -(으)러, -(으)십시오, blank passages, selected homonyms).",
+    "Confirm non-minimum draft remainder (exam bank, extra dictionary/passages) stays unpublished.",
   ],
   derivedReportsPresent: {
     dictionaryReconciliation: Boolean(dictionaryReport),
@@ -236,7 +238,7 @@ console.log(
   [
     "Content audit passed structural gates.",
     `Report: ${path.relative(ROOT, REPORT_PATH)}`,
-    "CP-6 status: accepted",
-    `Not approved: units=${notApproved.units}, grammar=${notApproved.grammarTopics}, dictionary=${notApproved.dictionaryEntries}, passages=${notApproved.readingPassages}, readingExercises=${notApproved.exercisesReading}`,
+    "CP-8 status: pending_user_acceptance",
+    `Not approved remainder: units=${notApproved.units}, grammar=${notApproved.grammarTopics}, dictionary=${notApproved.dictionaryEntries}, passages=${notApproved.readingPassages}, readingExercises=${notApproved.exercisesReading}`,
   ].join("\n"),
 );

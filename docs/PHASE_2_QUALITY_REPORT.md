@@ -1,93 +1,47 @@
-# Phase 2 quality report (F2-I21)
+# Phase 2 quality report (post F2-I22)
 
 Generated: 2026-08-10  
 CP-7: accepted  
-Language approval: pending F2-I22 / CP-8  
-Speculative spare content: not generated (F2-I21 policy)
+Language approval: applied in authoring (F2-I22); **awaiting CP-8**  
+Speculative spare content: not generated
 
 ## Result
 
-- Status: **passed** (automated technical gate, two consecutive runs)
-- P0/P1 technical defects: none found in gate scope
-- Curriculum lifecycle status unchanged (banks remain draft/reviewed until F2-I22)
+- Status: **language review complete** for §3.2 minimum; CP-8 pending user acceptance
+- Approved entities: 576 (via individual decision manifest)
+- Contested approvals recorded explicitly: 10
+- Non-minimum remainder left draft (does not block §3.2)
 
-## Gate counts (both passes)
+## §3.2 approved minimum
 
-| Layer | Count |
-| --- | ---: |
-| unit | 358 |
-| content | 43 |
-| integration | 19 |
-| DB | 24 |
-| RLS | 13 |
-| E2E | 34 (17 desktop + 17 mobile) |
+| Area                       | Approved |
+| -------------------------- | -------: |
+| Units                      |       16 |
+| Grammar topics             |       80 |
+| Primary vocabulary senses  |      192 |
+| Canonical reading passages |       16 |
+| Grammar exercises          |      160 |
+| Vocabulary exercises       |       64 |
+| Reading bank exercises     |       48 |
 
-## Pass 2 durations (`pnpm gate:phase-two`)
+Left draft (intentional): ~899 dictionary senses, 162 non-canonical passages, 100 exam reading questions.
 
-| Step | Result | Duration ms |
-| --- | --- | ---: |
-| format | pass | 4760 |
-| lint | pass | 6611 |
-| typecheck | pass | 2153 |
-| unit | pass | 19798 |
-| content-validate | pass | 583 |
-| content-audit | pass | 962 |
-| content-tests | pass | 1091 |
-| scan-secrets | pass | 585 |
-| scan-dto | pass | 580 |
-| integration | pass | 2326 |
-| build | pass | 5234 |
-| bundles | pass | 466 |
+## Contested decisions (approved with notes)
 
-Pass 1 additionally green for: DB reset/upgrade + RLS matrix, full Playwright, `perf:smoke`.
+- `grammar.u07.n03` / `grammar.u12.n01` — sequential vs causal `-아/어서`
+- `grammar.u07.n05` — `-(으)러` purpose of movement
+- `grammar.u09.n02` — `-(으)세요/-(으)십시오`
+- `passage.u02.section.37`, `passage.u07.section.s031`, `passage.u09.section.149` — blank markers kept
+- Homonym primaries: `dict.dari.noga-ot-bedra-do-stopy`, `dict.bae.zhivot`, `dict.jeo.tot-ta-to-opredelitel-daleko`
+- `쪽`/`쭉` not in primary bank → remain draft
 
-## Content status snapshot
+## Artifacts
 
-- units: 16 draft
-- grammar topics: 80 draft
-- dictionary entries: mostly draft + reviewed minimum bank links
-- reading passages: 178 not approved for publication (canonical bank present; exam imports remain draft)
-- reading exercises: 148 (100 exam draft + 48 baseline bank)
-- Absolute local path hits: 0
-
-## §3.2 minimum coverage (eligibility)
-
-Structural publishable minimum confirmed by `phase-two-minimum-coverage.test.ts`:
-
-- 16 units, 80 grammar topics
-- ≥2 grammar exercises/topic (recognition + application)
-- ≥12 reviewed senses/unit, ≥4 vocabulary exercises/unit
-- ≥1 passage + ≥3 reading exercises/unit
-- explanations present on eligible bank exercises
-
-Approved publication remains F2-I22.
-
-## Bundle budgets (gzip)
-
-- `/dictionary`: 15 KB / 150 KB
-- `/review`: 15 KB / 150 KB
-- `/topics`: 15 KB / 180 KB
-- `/training`: 150 KB / 180 KB
-- `/training/[sessionId]`: 92 KB / 220 KB
-
-## Security / DTO
-
-- `pnpm scan:secrets` passed
-- `pnpm scan:dto-leaks` passed
-- content audit absolute-path hits empty
-
-## CI updates
-
-- content audit, secret scan, DTO scan, perf smoke added
-- e2e runs on push/PR
-- `codex/**` branches included in CI triggers
-- quality report artifact upload
-
-## Known nonblocking
-
-- Curriculum content not yet `approved` (blocked on CP-8 / language review)
-- Local Node engine warning when not on 24.18.0; CI uses `.nvmrc`
+- `content/phase-2/language-review-decisions.json`
+- `pnpm content:language-review --write-manifest|--apply`
+- Regenerated `supabase/seed.sql`
 
 ## Next
 
-- F2-I22 manual language review and approved transitions
+- User accepts **CP-8**
+- Then F2-I23 preview stabilization / CP-9 / `v0.1.0`

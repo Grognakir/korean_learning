@@ -16,10 +16,10 @@ describe("RLS content visibility", () => {
   const anon = createLocalAnonClient();
 
   it("allows anon to read published content tables", async () => {
-    await expectSelectCount(anon, "learning_modules", 1);
-    await expectSelectCount(anon, "grammar_topics", 2);
-    await expectSelectCount(anon, "exercises", 16);
-    await expectSelectCount(anon, "exercise_topics", 16);
+    await expectSelectCount(anon, "learning_modules", 17);
+    await expectSelectCount(anon, "grammar_topics", 82);
+    await expectSelectCount(anon, "exercises", 288);
+    await expectSelectCount(anon, "exercise_topics", 212);
   });
 
   it("hides draft modules from anon", async () => {
@@ -27,7 +27,7 @@ describe("RLS content visibility", () => {
       "insert into public.learning_modules (id, slug, level, title_ko, title_ru, description_ru, status, content_version, sort_order) values ('11111111-1111-4111-8111-111111111111', 'draft-only-module', '1급', 'draft', 'draft', 'draft', 'draft', '1.0.0', 99);",
     );
 
-    await expectSelectCount(anon, "learning_modules", 1);
+    await expectSelectCount(anon, "learning_modules", 17);
   });
 
   it("blocks direct reads of exercise_options and accepted_answers", async () => {
@@ -212,8 +212,8 @@ describe("RLS curriculum skill tables", () => {
       "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('22222222-2222-4222-8222-222222222222', 'reading.sample.draft', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'draft-ko', 'draft', 'body', 'draft', '1.0.0');",
     );
 
-    // Seed already includes one published sample passage; drafts stay hidden.
-    await expectSelectCount(anon, "reading_passages", 1);
+    // Seed includes sample + 16 approved canonical passages; drafts stay hidden.
+    await expectSelectCount(anon, "reading_passages", 17);
     await expectSelectDenied(anon, "content_sources");
     await expectSelectDenied(anon, "content_provenance");
   });
@@ -223,7 +223,7 @@ describe("RLS curriculum skill tables", () => {
       "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('33333333-3333-4333-8333-333333333333', 'reading.sample.published', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'title-ko', 'passage', 'hello', 'published', '1.0.0');",
     );
 
-    await expectSelectCount(anon, "reading_passages", 2);
+    await expectSelectCount(anon, "reading_passages", 18);
   });
 
   it("isolates user_skill_progress between users", async () => {

@@ -4,7 +4,7 @@
     {
       "logicalId": "unit.u01",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -24,12 +24,16 @@
       "summary": {
         "ko": "1과 인사와 소개",
         "ru": "Урок 1: приветствие и представление"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u02",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -49,12 +53,16 @@
       "summary": {
         "ko": "2과 학교와 집",
         "ru": "Урок 2: школа и дом"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u03",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -74,12 +82,16 @@
       "summary": {
         "ko": "3과 학교 생활",
         "ru": "Урок 3: школьная жизнь"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u04",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -99,12 +111,16 @@
       "summary": {
         "ko": "4과 일상 생활",
         "ru": "Урок 4: повседневная жизнь"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u05",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -124,12 +140,16 @@
       "summary": {
         "ko": "5과 하루 일과",
         "ru": "Урок 5: распорядок дня"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u06",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -149,12 +169,16 @@
       "summary": {
         "ko": "6과 주말",
         "ru": "Урок 6: выходные"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u07",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -174,12 +198,16 @@
       "summary": {
         "ko": "7과 날씨와 계절",
         "ru": "Урок 7: погода и времена года"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u08",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -199,12 +227,16 @@
       "summary": {
         "ko": "8과 계획",
         "ru": "Урок 8: планы"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u09",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -224,12 +256,16 @@
       "summary": {
         "ko": "9과 물건 사기",
         "ru": "Урок 9: покупки"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u10",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -249,12 +285,16 @@
       "summary": {
         "ko": "10과 음식",
         "ru": "Урок 10: еда"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u11",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -274,12 +314,16 @@
       "summary": {
         "ko": "11과 전화",
         "ru": "Урок 11: телефон"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u12",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -299,12 +343,16 @@
       "summary": {
         "ko": "12과 약속",
         "ru": "Урок 12: договорённости"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u13",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -324,12 +372,16 @@
       "summary": {
         "ko": "13과 교통",
         "ru": "Урок 13: транспорт"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u14",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -349,12 +401,16 @@
       "summary": {
         "ko": "14과 공공 장소",
         "ru": "Урок 14: общественные места"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u15",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -374,12 +430,16 @@
       "summary": {
         "ko": "15과 건강",
         "ru": "Урок 15: здоровье"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     },
     {
       "logicalId": "unit.u16",
       "contentVersion": "1.0.0",
-      "status": "draft",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-topics",
@@ -399,6 +459,10 @@
       "summary": {
         "ko": "16과 가족",
         "ru": "Урок 16: семья"
+      },
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Unit title/summary matches CURRICULUM_TOPICS outline for 1급."
       }
     }
   ]

@@ -6203,8 +6203,8 @@
     },
     {
       "logicalId": "exercise.reading.bank.u01.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6227,7 +6227,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»"
+        "ru": "Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»"
       },
       "difficulty": "intro",
       "options": [
@@ -6262,12 +6262,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u01.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6290,7 +6294,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»"
+        "ru": "Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -6325,12 +6329,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u01.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6353,7 +6361,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»"
+        "ru": "Фрагмент: «안녕하십니까? 만나서 반갑습니다. 제 이름은 왕루입니다. 저는 중국에서 왔습니다. 저는 학생입니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -6388,12 +6396,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u02.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6416,7 +6428,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»"
+        "ru": "Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»"
       },
       "difficulty": "intro",
       "options": [
@@ -6451,12 +6463,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u02.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6479,7 +6495,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»"
+        "ru": "Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -6514,12 +6530,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u02.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6542,7 +6562,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»"
+        "ru": "Фрагмент: «저는 로빈입니다. 제 고향집은 미국의 시카고에 있습니다. 우리 집은 이층집입니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -6577,12 +6597,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u03.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6605,7 +6629,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «저는 인하대학교에 다닙니다.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «저는 인하대학교에 다닙니다.»"
+        "ru": "Фрагмент: «저는 인하대학교에 다닙니다.»"
       },
       "difficulty": "intro",
       "options": [
@@ -6640,12 +6664,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u03.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6668,7 +6696,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «저는 인하대학교에 다닙니다.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «저는 인하대학교에 다닙니다.»"
+        "ru": "Фрагмент: «저는 인하대학교에 다닙니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -6703,12 +6731,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u03.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6731,7 +6763,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «저는 인하대학교에 다닙니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «저는 인하대학교에 다닙니다.»"
+        "ru": "Фрагмент: «저는 인하대학교에 다닙니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -6766,12 +6798,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u04.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6794,7 +6830,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»"
+        "ru": "Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»"
       },
       "difficulty": "intro",
       "options": [
@@ -6829,12 +6865,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u04.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6857,7 +6897,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»"
+        "ru": "Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -6892,12 +6932,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u04.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6920,7 +6964,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»"
+        "ru": "Фрагмент: «저는 한국에서 한국어를 공부합니다. 평일에 학교에서 한국어를 배웁니다. 한국어가 아주 재미있습니다. 월요일 오후에는 태권도를 배웁니다. 수요일에는 집을 청소합니다. 그리고 목요일에는 마트에서 물건을 삽니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -6955,12 +6999,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u05.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -6983,7 +7031,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»"
+        "ru": "Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»"
       },
       "difficulty": "intro",
       "options": [
@@ -7018,12 +7066,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u05.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7046,7 +7098,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»"
+        "ru": "Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»"
       },
       "difficulty": "practice",
       "options": [
@@ -7081,12 +7133,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u05.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7109,7 +7165,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»"
+        "ru": "Фрагмент: «저는 날마다 아침 7시에 일어나요. 세수를 해요. 그리고 아침을 먹어요. 8시 반에 학교에 가요. 한국어 수업은 9시에 시작해요. 10시 50분부터 11시 10분까지 쉬어요. 친구는 커피를 마셔요. 하지만 저는 커피를 마시지 않아요. 저는 우유를 마셔요. 1시에 수업이 끝나요. 학생 식당에서 점심을 먹어요. 5시까지 도서관에서 숙제를 해요. 5시부터 운동장에서 친구와 농구를 해요. 8시에 집에서 저녁을 먹어요. 그리고 한국어 수업을 복습해요. 11시 반에 잠을 자요.»"
       },
       "difficulty": "practice",
       "options": [
@@ -7144,12 +7200,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u06.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7172,7 +7232,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «7월 8일 토요일»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «7월 8일 토요일»"
+        "ru": "Фрагмент: «7월 8일 토요일»"
       },
       "difficulty": "intro",
       "options": [
@@ -7207,12 +7267,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u06.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7235,7 +7299,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «7월 8일 토요일»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «7월 8일 토요일»"
+        "ru": "Фрагмент: «7월 8일 토요일»"
       },
       "difficulty": "practice",
       "options": [
@@ -7270,12 +7334,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u06.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7298,7 +7366,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 차이나타운에도 가고 공원에도 갔습니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 차이나타운에도 가고 공원에도 갔습니다.»"
+        "ru": "Фрагмент: «어제 친구가 고향에서 왔습니다. 그래서 오늘 오전 10시부터 친구와 함께 차이나타운에도 가고 공원에도 갔습니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -7333,12 +7401,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u07.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7361,7 +7433,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»"
+        "ru": "Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»"
       },
       "difficulty": "intro",
       "options": [
@@ -7396,12 +7468,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u07.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7424,7 +7500,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»"
+        "ru": "Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -7459,12 +7535,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u07.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7487,7 +7567,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»"
+        "ru": "Фрагмент: «한국의 가을은 날씨가 맑고 바람도 시원합니다. 그래서 가을에 등산도 하고 공원에도 자주 갑니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -7522,12 +7602,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u08.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7550,7 +7634,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»"
+        "ru": "Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»"
       },
       "difficulty": "intro",
       "options": [
@@ -7585,12 +7669,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u08.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7613,7 +7701,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»"
+        "ru": "Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -7648,12 +7736,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u08.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7676,7 +7768,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»"
+        "ru": "Фрагмент: «저는 이번 방학에 고향에 갈 겁니다. 고향에 가기 전에 비행기 표를 예매하고 백화점에 갈 겁니다. 백화점에서 부모님과 친구의 선물을 살 겁니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -7711,12 +7803,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u09.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7739,7 +7835,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»"
+        "ru": "Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»"
       },
       "difficulty": "intro",
       "options": [
@@ -7774,12 +7870,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u09.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7802,7 +7902,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»"
+        "ru": "Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -7837,12 +7937,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u09.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7865,7 +7969,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»"
+        "ru": "Фрагмент: «내일은 5월 8일 어버이날입니다. 한국 사람들은 어버이날에 부모님에게 카네이션을 선물합니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -7900,12 +8004,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u10.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7928,7 +8036,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»"
+        "ru": "Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»"
       },
       "difficulty": "intro",
       "options": [
@@ -7963,12 +8071,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u10.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -7991,7 +8103,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»"
+        "ru": "Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -8026,12 +8138,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u10.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8054,7 +8170,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»"
+        "ru": "Фрагмент: «저는 한국에 와서 떡볶이를 처음 먹어 봤습니다. 떡볶이는 조금 매웠습니다. 하지만 달고 맛있었습니다. 그래서 저는 떡볶이를 아주 좋아합니다. 친구들과 함께 떡볶이를 먹으러 식당에 자주 갑니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -8089,12 +8205,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u11.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8117,7 +8237,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»"
+        "ru": "Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»"
       },
       "difficulty": "intro",
       "options": [
@@ -8152,12 +8272,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u11.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8180,7 +8304,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»"
+        "ru": "Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»"
       },
       "difficulty": "practice",
       "options": [
@@ -8215,12 +8339,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u11.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8243,7 +8371,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»"
+        "ru": "Фрагмент: «여보세요? 거기가 파하드 씨의 집이지요? 파하드 씨 있어요?»"
       },
       "difficulty": "practice",
       "options": [
@@ -8278,12 +8406,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u12.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8306,7 +8438,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»"
+        "ru": "Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»"
       },
       "difficulty": "intro",
       "options": [
@@ -8341,12 +8473,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u12.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8369,7 +8505,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»"
+        "ru": "Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»"
       },
       "difficulty": "practice",
       "options": [
@@ -8404,12 +8540,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u12.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8432,7 +8572,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»"
+        "ru": "Фрагмент: «오위노 owino@inha.ac.kr → 받는 사람: 왕루 wangru@inha.ac.kr»"
       },
       "difficulty": "practice",
       "options": [
@@ -8467,12 +8607,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u13.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8495,7 +8639,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»"
+        "ru": "Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»"
       },
       "difficulty": "intro",
       "options": [
@@ -8530,12 +8674,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u13.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8558,7 +8706,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»"
+        "ru": "Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -8593,12 +8741,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u13.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8621,7 +8773,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»"
+        "ru": "Фрагмент: «오늘 난타 공연을 보러 세종문화회관에 갑니다. 주안역에서 지하철 1호선을 타고 신길역에서 내립니다. 그리고 신길역에서 지하철 5호선으로 갈아타고 광화문역에서 내립니다. 주안역에서 광화문역까지 지하철로 1시간쯤 걸립니다.»"
       },
       "difficulty": "practice",
       "options": [
@@ -8656,12 +8808,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u14.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8684,7 +8840,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «**도서관 이용 안내**»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «**도서관 이용 안내**»"
+        "ru": "Фрагмент: «**도서관 이용 안내**»"
       },
       "difficulty": "intro",
       "options": [
@@ -8719,12 +8875,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u14.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8747,7 +8907,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «**도서관 이용 안내**»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «**도서관 이용 안내**»"
+        "ru": "Фрагмент: «**도서관 이용 안내**»"
       },
       "difficulty": "practice",
       "options": [
@@ -8782,12 +8942,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u14.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8810,7 +8974,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «**도서관 이용 안내**»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «**도서관 이용 안내**»"
+        "ru": "Фрагмент: «**도서관 이용 안내**»"
       },
       "difficulty": "practice",
       "options": [
@@ -8845,12 +9009,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u15.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8873,7 +9041,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «왕루 씨 (21세, 여)»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «왕루 씨 (21세, 여)»"
+        "ru": "Фрагмент: «왕루 씨 (21세, 여)»"
       },
       "difficulty": "intro",
       "options": [
@@ -8908,12 +9076,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u15.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8936,7 +9108,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «왕루 씨 (21세, 여)»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «왕루 씨 (21세, 여)»"
+        "ru": "Фрагмент: «왕루 씨 (21세, 여)»"
       },
       "difficulty": "practice",
       "options": [
@@ -8971,12 +9143,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u15.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -8999,7 +9175,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «식전 30분 / 식후 30분 / 6시간마다)»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «식전 30분 / 식후 30분 / 6시간마다)»"
+        "ru": "Фрагмент: «식전 30분 / 식후 30분 / 6시간마다)»"
       },
       "difficulty": "practice",
       "options": [
@@ -9034,12 +9210,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u16.q01",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -9062,7 +9242,7 @@
       },
       "explanation": {
         "ko": "중심 내용은 제목/주제에 가깝습니다. 관련 부분: «아버지, 어머니 잘 지내고 계시지요?»",
-        "ru": "Черновой вопрос на главную мысль. Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»"
+        "ru": "Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»"
       },
       "difficulty": "intro",
       "options": [
@@ -9097,12 +9277,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u16.q02",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -9125,7 +9309,7 @@
       },
       "explanation": {
         "ko": "정답은 글에 있는 내용입니다: «아버지, 어머니 잘 지내고 계시지요?»",
-        "ru": "Черновой вопрос на соответствие. Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»"
+        "ru": "Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»"
       },
       "difficulty": "practice",
       "options": [
@@ -9160,12 +9344,16 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     },
     {
       "logicalId": "exercise.reading.bank.u16.q03",
-      "contentVersion": "1.0.0",
-      "status": "draft",
+      "contentVersion": "1.0.1",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -9188,7 +9376,7 @@
       },
       "explanation": {
         "ko": "빈칸의 말은 글의 이 부분에서 옵니다: «아버지, 어머니 잘 지내고 계시지요?»",
-        "ru": "Черновой вопрос на заполнение. Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»"
+        "ru": "Фрагмент: «아버지, 어머니 잘 지내고 계시지요?»"
       },
       "difficulty": "practice",
       "options": [
@@ -9223,7 +9411,11 @@
       ],
       "pairs": [],
       "correctOptionId": "opt1",
-      "acceptedAnswers": []
+      "acceptedAnswers": [],
+      "review": {
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Minimal reading bank (3/unit on canonical passage); explanation cleaned on approval."
+      }
     }
   ]
 }

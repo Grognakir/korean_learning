@@ -1,6 +1,8 @@
+import "server-only";
+
 import { unstable_cache } from "next/cache";
 
-import { createServerSupabaseClient } from "@/lib/supabase/serverClient";
+import { createServiceRoleSupabaseClient } from "@/lib/supabase/serviceRoleClient";
 
 import type { CatalogRepository } from "./CatalogRepository";
 import type {
@@ -44,7 +46,9 @@ async function loadPublishedCatalogSnapshot(): Promise<{
     approvedExercises: number;
   };
 }> {
-  const supabase = await createServerSupabaseClient();
+  // Public catalog reads run inside `"use cache"` / `unstable_cache`; cookie-bound
+  // server clients are unavailable there, so use the service-role client (same as modules).
+  const supabase = createServiceRoleSupabaseClient();
 
   const [modulesResult, topicsResult, dictResult, passagesResult, exercisesResult] =
     await Promise.all([

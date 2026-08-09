@@ -358,6 +358,7 @@ export function useTrainingSession(options: UseTrainingSessionOptions): UseTrain
         exerciseId: currentExercise.id,
         contentVersion,
         submission,
+        submissionId,
       });
 
       commitState((currentState) => {

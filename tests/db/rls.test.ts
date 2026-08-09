@@ -143,6 +143,55 @@ describe("RLS user isolation", () => {
       }),
     );
   });
+
+  it("allows authenticated users to submit attempts through trusted RPC", async () => {
+    const user = await createTestAuthUser("rpc-attempt-user");
+    const client = asUserClient(user);
+    const SAMPLE_TOPIC_ID = "d8b1e1e2-97d8-4413-a890-730f85b32b51";
+
+    const { data: session, error: sessionError } = await client
+      .from("training_sessions")
+      .insert({
+        user_id: user.id,
+        module_id: SAMPLE_MODULE_ID,
+        mode: "practice",
+        content_version: "1.0.0",
+        random_seed: "seed-rpc",
+        idempotency_key: "rpc-session",
+      })
+      .select("id")
+      .single();
+
+    expect(sessionError).toBeNull();
+
+    const { error: exerciseLinkError } = await client.from("session_exercises").insert({
+      session_id: session!.id,
+      exercise_id: SAMPLE_EXERCISE_ID,
+      position: 0,
+      exercise_version: "1.0.0",
+    });
+
+    expect(exerciseLinkError).toBeNull();
+
+    const { data: attempt, error: attemptError } = await client.rpc("submit_training_attempt", {
+      p_session_id: session!.id,
+      p_exercise_id: SAMPLE_EXERCISE_ID,
+      p_idempotency_key: "rpc-attempt-1",
+      p_raw_answer: { optionId: "a" },
+      p_normalized_answer: { optionId: "a" },
+      p_is_correct: false,
+      p_score: 0,
+      p_reason_code: "incorrect",
+      p_answer_version: "1.0.0",
+      p_mistake_module_id: SAMPLE_MODULE_ID,
+      p_mistake_primary_topic_id: SAMPLE_TOPIC_ID,
+      p_mistake_concept_key: "sample-choice",
+      p_mistake_error_type: "incorrect",
+    });
+
+    expect(attemptError).toBeNull();
+    expect(attempt?.id).toBeTruthy();
+  });
 });
 
 describe("RLS trusted server access", () => {

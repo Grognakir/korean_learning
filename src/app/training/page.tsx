@@ -4,7 +4,11 @@ import Link from "next/link";
 import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import { Badge } from "@/components/ui";
-import { DEMO_TRAINING_SESSION_ID, ResumeTrainingPrompt } from "@/features/training";
+import {
+  DEMO_TRAINING_SESSION_ID,
+  GuestSessionImportPrompt,
+  ResumeTrainingPrompt,
+} from "@/features/training";
 import {
   getLearningContent,
   HONORIFICS_MODULE_SLUG,
@@ -63,6 +67,12 @@ export default async function TrainingPage() {
       />
 
       <ResumeTrainingPrompt />
+      <GuestSessionImportPrompt
+        moduleIdBySlug={{
+          ...(sampleModule ? { [sampleModule.slug]: sampleModule.id } : {}),
+          ...(honorificsModule ? { [honorificsModule.slug]: honorificsModule.id } : {}),
+        }}
+      />
 
       {!hasModules ? (
         <CatalogEmptyState />

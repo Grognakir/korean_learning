@@ -8,6 +8,8 @@ export { FillBlankExercise } from "./FillBlankExercise";
 export type { FillBlankExerciseProps } from "./FillBlankExercise";
 export { MatchingExercise } from "./MatchingExercise";
 export type { MatchingExerciseProps } from "./MatchingExercise";
+export { GuestSessionImportPrompt } from "./GuestSessionImportPrompt";
+export type { GuestSessionImportPromptProps } from "./GuestSessionImportPrompt";
 export { MistakeSummary } from "./MistakeSummary";
 export type { MistakeSummaryProps } from "./MistakeSummary";
 export { ModuleCard } from "./ModuleCard";

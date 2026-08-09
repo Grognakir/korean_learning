@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { Alert } from "@/components/feedback";
 import { Button } from "@/components/ui";
+import { useAuthUser } from "@/features/authentication";
 
 import { LocalTrainingSessionStore } from "../../persistence";
 import type { PersistedTrainingSessionRecord } from "../../persistence";
@@ -25,10 +26,15 @@ type ResumeViewState =
   | { readonly status: "notice"; readonly message: string };
 
 export function ResumeTrainingPrompt({ store }: ResumeTrainingPromptProps) {
+  const user = useAuthUser();
   const storeRef = useRef(store ?? new LocalTrainingSessionStore());
   const [view, setView] = useState<ResumeViewState>({ status: "pending" });
 
   useEffect(() => {
+    if (user) {
+      return;
+    }
+
     const sessionStore = storeRef.current;
     const loaded = sessionStore.load();
 
@@ -62,7 +68,11 @@ export function ResumeTrainingPrompt({ store }: ResumeTrainingPromptProps) {
     }
 
     setView({ status: "hidden" });
-  }, []);
+  }, [user]);
+
+  if (user) {
+    return null;
+  }
 
   if (view.status === "pending" || view.status === "hidden") {
     return null;

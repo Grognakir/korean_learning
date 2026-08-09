@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I29 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
+- **Общее состояние:** F1-I01–F1-I30 завершены; CP-1A/CP-2/CP-3/CP-4 приняты.
 - **Текущая фаза:** фаза 1 — создание рабочего каркаса.
-- **Текущая итерация:** F1-I29 load learning content from Supabase — `done`.
+- **Текущая итерация:** F1-I30 persist training sessions and attempts — `done`.
 - **Статус текущей итерации:** `done`.
-- **Уже сделано:** async repositories; Supabase module/exercise repos + mappers; PublicExercise DTO; server evaluate action; content source selector (local vs Vercel+Supabase).
-- **Выполненные проверки:** format/lint/typecheck/251 unit/17 integration/build на Node 24.18.0.
-- **Сейчас работает:** topics/training pages через `getLearningContent()`; client получает только PublicExercise; оценка ответов на server path; local/test/dev fallback явный.
-- **Пока не работает:** cloud session/attempt sync (F1-I30).
-- **Следующий конкретный шаг:** F1-I30 persist training sessions and attempts — без дополнительного CP.
+- **Уже сделано:** training API routes (start/attempt/complete/import); SECURITY DEFINER RPCs; Supabase session repository; cloud sync hook; guest import prompt; authenticated session persistence.
+- **Выполненные проверки:** format/lint/typecheck/257 unit/17 integration/build.
+- **Сейчас работает:** авторизованные сессии синхронизируются через `/api/training/*`; guest flow локальный; явный import guest→account; server-only evaluation + idempotency.
+- **Пока не работает:** progress UI и aggregates (F1-I31).
+- **Следующий конкретный шаг:** F1-I31 add learning progress tracking — без дополнительного CP.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed.
 - **Последнее обновление:** 2026-08-09.
@@ -742,7 +742,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I30 — Сохранение сессий и попыток
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done`.
 - **Цель и зачем:** сохранять историю обучения и синхронизировать авторизованный прогресс.
 - **Входные зависимости:** F1-I29.
 - **Задачи:** server validated start/answer/complete mutations; idempotency keys; session ownership; accepted snapshot/version; reconcile active local guest session after login by explicit user action.

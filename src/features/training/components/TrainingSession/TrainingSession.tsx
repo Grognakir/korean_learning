@@ -24,6 +24,10 @@ import {
   persistTrainingSessionState,
   usePersistedSessionBootstrap,
 } from "../../hooks/usePersistedTrainingSession";
+import {
+  useCloudTrainingPersistence,
+  type CloudTrainingPersistenceConfig,
+} from "../../hooks/useCloudTrainingPersistence";
 import { useTrainingSession, type UseTrainingSessionOptions } from "../../hooks/useTrainingSession";
 import { LocalTrainingSessionStore } from "../../persistence";
 import type { PublicExercise } from "../../presentation";
@@ -49,6 +53,7 @@ export type TrainingSessionProps = {
   /** When false, skips localStorage (unit tests). Default true. */
   readonly persist?: boolean;
   readonly store?: LocalTrainingSessionStore;
+  readonly cloudPersistence?: CloudTrainingPersistenceConfig;
 };
 
 function exerciseInstruction(exercise: PublicExercise): string | null {
@@ -73,6 +78,7 @@ function isSingleLineTextField(target: EventTarget | null): target is HTMLInputE
 }
 
 function TrainingSessionRuntime({
+  cloudPersistence,
   contentVersion,
   createSubmissionId,
   evaluateSubmission,
@@ -99,6 +105,15 @@ function TrainingSessionRuntime({
   readonly store: LocalTrainingSessionStore;
   readonly topics: readonly LearningTopicDefinition[];
 }) {
+  const cloud = useCloudTrainingPersistence(cloudPersistence);
+  const effectiveEvaluateSubmission = cloudPersistence
+    ? cloud.evaluateSubmission
+    : evaluateSubmission;
+  const effectivePersist = persist && !cloudPersistence;
+  const syncNotice =
+    cloud.syncMessage ??
+    (cloud.syncStatus === "starting" ? "Подключение к серверу…" : null) ??
+    notice;
   const didPersistCreate = useRef(false);
   const didClearActiveSession = useRef(false);
   const promptHeadingRef = useRef<HTMLHeadingElement>(null);
@@ -111,7 +126,7 @@ function TrainingSessionRuntime({
 
   const session = useTrainingSession({
     publicExercises,
-    evaluateSubmission,
+    evaluateSubmission: effectiveEvaluateSubmission,
     ...(sessionId === undefined ? {} : { sessionId }),
     moduleSlug,
     ...(seed === undefined ? {} : { seed }),
@@ -120,7 +135,7 @@ function TrainingSessionRuntime({
     ...(now === undefined ? {} : { now }),
     ...(createSubmissionId === undefined ? {} : { createSubmissionId }),
     ...(initialState ? { initialState } : {}),
-    ...(persist
+    ...(effectivePersist
       ? {
           onStateChange: (state: TrainingSessionState) => {
             persistTrainingSessionState(state, store);
@@ -130,13 +145,21 @@ function TrainingSessionRuntime({
   });
 
   useEffect(() => {
-    if (!persist || !persistCreate || didPersistCreate.current) {
+    if (!cloudPersistence || !session.isCompleted) {
+      return;
+    }
+
+    void cloud.completeSession(session.state.completedAt ?? new Date().toISOString());
+  }, [cloud, cloudPersistence, session.isCompleted, session.state.completedAt]);
+
+  useEffect(() => {
+    if (!effectivePersist || !persistCreate || didPersistCreate.current) {
       return;
     }
 
     didPersistCreate.current = true;
     persistTrainingSessionState(session.state, store);
-  }, [persist, persistCreate, session.state, store]);
+  }, [effectivePersist, persistCreate, session.state, store]);
 
   useEffect(() => {
     if (!session.currentExerciseId) {
@@ -155,22 +178,36 @@ function TrainingSessionRuntime({
   }, [session.currentExerciseId]);
 
   useEffect(() => {
-    if (!session.isCompleted || !persist || didClearActiveSession.current) {
+    if (!session.isCompleted || !effectivePersist || didClearActiveSession.current) {
       return;
     }
 
     didClearActiveSession.current = true;
     store.clear();
-  }, [persist, session.isCompleted, store]);
+  }, [effectivePersist, session.isCompleted, store]);
+
+  if (cloudPersistence && (cloud.syncStatus === "starting" || cloud.syncStatus === "error")) {
+    return (
+      <section className={styles.complete}>
+        <h1 className={styles.completeTitle}>Синхронизация сессии</h1>
+        <p className={styles.completeCopy}>{cloud.syncMessage ?? "Подготовка серверной сессии…"}</p>
+        {cloud.syncStatus === "error" ? (
+          <Button onClick={cloud.retryStart} type="button">
+            Повторить
+          </Button>
+        ) : null}
+      </section>
+    );
+  }
 
   if (session.isCompleted) {
     const snapshot = buildTrainingResultSnapshot(session.state, exercisesById, { topics });
 
     return (
       <>
-        {notice ? (
+        {syncNotice ? (
           <Alert className={styles.notice} title="Сохранение" tone="info">
-            {notice}
+            {syncNotice}
           </Alert>
         ) : null}
         <TrainingResult
@@ -234,9 +271,9 @@ function TrainingSessionRuntime({
 
   return (
     <div className={styles.sessionForm} onKeyDown={handleSessionKeyDown}>
-      {notice ? (
+      {syncNotice ? (
         <Alert className={styles.notice} title="Сохранение" tone="info">
-          {notice}
+          {syncNotice}
         </Alert>
       ) : null}
       <TrainingShell className={styles.shell}>
@@ -301,6 +338,7 @@ function TrainingSessionRuntime({
 }
 
 export function TrainingSession({
+  cloudPersistence,
   contentVersion = "1.0.0",
   createSubmissionId,
   evaluateSubmission,
@@ -314,6 +352,7 @@ export function TrainingSession({
   store: storeProp,
   topics = [],
 }: TrainingSessionProps) {
+  const effectivePersist = persist && !cloudPersistence;
   const [fallbackStore] = useState(() => new LocalTrainingSessionStore());
   const store = storeProp ?? fallbackStore;
   const clock = now ?? (() => new Date().toISOString());
@@ -323,7 +362,7 @@ export function TrainingSession({
   const [skipBootstrap, setSkipBootstrap] = useState(false);
 
   const bootstrap = usePersistedSessionBootstrap({
-    persist: persist && !skipBootstrap,
+    persist: effectivePersist && !skipBootstrap,
     ...(sessionId === undefined ? {} : { sessionId }),
     moduleSlug,
     contentVersion,
@@ -367,13 +406,14 @@ export function TrainingSession({
   return (
     <TrainingSessionRuntime
       key={runtimeKey}
+      {...(cloudPersistence ? { cloudPersistence } : {})}
       contentVersion={contentVersion}
       evaluateSubmission={evaluateSubmission}
       publicExercises={publicExercises}
       moduleSlug={moduleSlug}
       notice={notice}
       onRetryMistakes={handleRetryMistakes}
-      persist={persist}
+      persist={effectivePersist}
       persistCreate={persistCreate}
       store={store}
       topics={topics}

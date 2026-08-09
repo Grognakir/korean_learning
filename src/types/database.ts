@@ -828,6 +828,7 @@ export type Database = {
       };
       training_sessions: {
         Row: {
+          complete_idempotency_key: string | null;
           completed_at: string | null;
           content_version: string;
           current_index: number;
@@ -843,6 +844,7 @@ export type Database = {
           user_id: string;
         };
         Insert: {
+          complete_idempotency_key?: string | null;
           completed_at?: string | null;
           content_version: string;
           current_index?: number;
@@ -858,6 +860,7 @@ export type Database = {
           user_id: string;
         };
         Update: {
+          complete_idempotency_key?: string | null;
           completed_at?: string | null;
           content_version?: string;
           current_index?: number;
@@ -1015,6 +1018,14 @@ export type Database = {
       };
     };
     Functions: {
+      complete_training_session: {
+        Args: {
+          p_completed_at?: string;
+          p_idempotency_key: string;
+          p_session_id: string;
+        };
+        Returns: Database["public"]["Tables"]["training_sessions"]["Row"];
+      };
       is_public_exercise: { Args: { p_exercise_id: string }; Returns: boolean };
       is_published_module: { Args: { p_module_id: string }; Returns: boolean };
       is_published_topic: { Args: { p_topic_id: string }; Returns: boolean };
@@ -1022,6 +1033,25 @@ export type Database = {
       owns_training_session: {
         Args: { p_session_id: string };
         Returns: boolean;
+      };
+      submit_training_attempt: {
+        Args: {
+          p_answer_version: string;
+          p_duration_ms?: number | null;
+          p_exercise_id: string;
+          p_idempotency_key: string;
+          p_is_correct: boolean;
+          p_mistake_concept_key?: string | null;
+          p_mistake_error_type?: string | null;
+          p_mistake_module_id?: string | null;
+          p_mistake_primary_topic_id?: string | null;
+          p_normalized_answer: Json;
+          p_raw_answer: Json;
+          p_reason_code: string;
+          p_score: number;
+          p_session_id: string;
+        };
+        Returns: Database["public"]["Tables"]["attempts"]["Row"];
       };
     };
     Enums: {

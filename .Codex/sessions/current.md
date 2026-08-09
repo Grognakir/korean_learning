@@ -1,29 +1,36 @@
-# Current session — F1-I29 complete
+# Current session — F1-I30
 
-## Iteration
-- **ID:** F1-I29 — load learning content from Supabase
-- **Branch:** `feature/supabase-content`
-- **Status:** done (local commit pending user push)
+**Branch:** `feature/persist-training-attempts`  
+**Iteration:** F1-I30 — persist training sessions and attempts  
+**Status:** done (awaiting commit)
 
-## Delivered
-- Async `ExerciseRepository` / `ModuleRepository` boundary
-- `SupabaseModuleRepository`, `SupabaseExerciseRepository` (server-only, service role, cached)
-- Row mappers + `PublicExercise` DTO (no answer keys to client)
-- `evaluateTrainingSubmissionAction` — server evaluation by exercise id/version
-- `getLearningContent()` + `CONTENT_SOURCE` / Vercel gate
-- Pages: topics, module, training, session — async content load + ServiceUnavailableState
-- TrainingSession: `publicExercises` + async evaluate prop
-- Seed generator: topic `rule_payload` stores Korean titles
+## Summary
 
-## Gate (2026-08-09)
+Implemented server-backed training session persistence for authenticated users:
+
+- Migration `20260809000007_training_persistence_rpcs.sql` with `submit_training_attempt` and `complete_training_session` SECURITY DEFINER RPCs
+- API routes: `POST /api/training/sessions`, `.../attempts`, `.../complete`, `POST /api/training/import`
+- Application layer + `SupabaseTrainingSessionRepository`
+- Cloud sync hook (`useCloudTrainingPersistence`) wired into `TrainingSession` for logged-in users
+- `GuestSessionImportPrompt` for explicit guest→account import after login
+- Guest local persistence unchanged; no silent merge
+
+## Gate
+
 - format:check ✅
 - lint ✅
 - typecheck ✅
-- test:run 251 ✅
+- test:run 257 ✅
 - test:integration 17 ✅
 - build ✅
-- test:db / test:rls — not re-run this step (unchanged migrations)
+- test:rls — not run (Supabase CLI unavailable in agent env; new RPC test added)
 
 ## Next
-- **F1-I30** — persist training sessions and attempts
-- Do **not** start F1-I30 until explicit user go-ahead
+
+- Commit: `feat: persist training sessions and attempts`
+- Then F1-I31 learning progress tracking
+
+## Notes
+
+- Remote Supabase still needs migration apply before cloud sync works in production.
+- Node gate run on 22.15.0 locally; project expects 24.18.0.

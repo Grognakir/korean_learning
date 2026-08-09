@@ -5,6 +5,7 @@ export type EvaluateSubmissionInput = {
   readonly exerciseId: string;
   readonly contentVersion: string;
   readonly submission: AnswerSubmission;
+  readonly submissionId?: string;
 };
 
 export type EvaluateSubmissionFn = (input: EvaluateSubmissionInput) => Promise<AnswerEvaluation>;

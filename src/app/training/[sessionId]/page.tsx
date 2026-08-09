@@ -11,6 +11,7 @@ import {
   TrainingSession,
 } from "@/features/training";
 import { evaluateTrainingSubmissionAction } from "@/features/training/actions/evaluateTrainingSubmissionAction";
+import { getServerAuthUser } from "@/features/authentication/server/getServerAuthUser";
 import { toPublicExercises, type PublicExercise } from "@/features/training/presentation";
 import {
   getLearningContent,
@@ -125,10 +126,23 @@ export default async function SessionPage({ params }: SessionPageProps) {
     );
   }
 
+  const user = await getServerAuthUser();
+
   return (
     <PageContainer className={styles.page} width="narrow">
       <PageHeader description={session.description} title="Учебная сессия" />
       <TrainingSession
+        {...(user && learningModule
+          ? {
+              cloudPersistence: {
+                moduleId: learningModule.id,
+                clientSessionKey: session.sessionId,
+                contentVersion: learningModule.contentVersion,
+                exerciseIds: publicExercises.map((exercise) => exercise.id),
+                randomSeed: String(DEMO_TRAINING_SEED),
+              },
+            }
+          : {})}
         contentVersion={learningModule?.contentVersion ?? "1.0.0"}
         evaluateSubmission={evaluateTrainingSubmissionAction}
         moduleSlug={session.moduleSlug}

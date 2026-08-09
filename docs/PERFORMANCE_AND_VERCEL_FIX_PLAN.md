@@ -2,7 +2,7 @@
 
 Последнее обновление: 2026-08-09
 
-Статус: PERF-I01—I03 и PERF-I05—I07 в commit `5f716e9`; PERF-I09 в commit `dcbb774` прошёл локальный gate и удалённую приёмку Preview/Production (Preview desktop median 81,5 мс / p95 109 мс, mobile median 86 мс / p95 95 мс при порогах ≤150/≤250 мс; публичный Production доступен, «Сервис недоступен» устранён). PERF-I04 подтверждён build output. Остаётся передеплоить Preview с proxy-проверкой 404 и повторить удалённый smoke.
+Статус: PERF-I01—I03 и PERF-I05—I07 в commit `5f716e9`; PERF-I09 в commit `dcbb774` прошёл локальный gate и удалённую приёмку Preview/Production (Preview desktop median 81,5 мс / p95 109 мс, mobile median 86 мс / p95 95 мс при порогах ≤150/≤250 мс; публичный Production доступен, «Сервис недоступен» устранён). PERF-I04 подтверждён build output. Deployment сейчас заблокирован: Vercel build commit `9368236` упал на `Collecting page data for /topics/[moduleSlug]`, потому что Supabase ответил `JWT issued at future`; локально тот же коммит с теми же кредами собирается. Разблокировка — ключ в окружении Vercel; устойчивость сборки вынесена в PERF-I10. Передеплой Preview с proxy-проверкой 404 и удалённый smoke — после разблокировки.
 
 Базовый commit: `1d6fd9af5a21d85d5b115e9a83e7c14b984d1002`.
 
@@ -567,13 +567,75 @@ Baseline теста должен содержать текущие удалён�
 
 Критерий готовности PERF-I09: все navigation assertions проходят локально и на актуальном Preview, а PERF-I04 route-shell criterion подтверждён build output. После этого статусы PERF-I04, PERF-I08 и PERF-I09 можно одновременно перевести в «выполнено».
 
+### PERF-I10 — не ронять deployment при недоступном контент-хранилище
+
+Статус: выполнено локально, полный локальный gate зелёный. Не отменяет необходимость починить ключ Supabase в окружении Vercel: PERF-I10 делает деплой возможным при сбое хранилища, но контент при неверном ключе всё равно не отобразится.
+
+Цель — сбой чтения опубликованного контента должен деградировать до `ServiceUnavailableState` на затронутой странице, а не прекращать сборку. Доступность деплоя не может зависеть от того, ответил ли Supabase в конкретную минуту билда.
+
+#### 1. Подтверждение дефекта
+
+Vercel build ветки `fix/perf-i09-notfound-status` (commit `9368236`) упал на этапе `Collecting page data for /topics/[moduleSlug]`: Supabase ответил `JWT issued at future`, `SupabaseModuleRepository` бросил ошибку, `cachedLearningContent.ts` завернул её в `LearningContentError`, а `generateStaticParams` её не обрабатывает. Деплой не создан, поэтому Preview URL отдаёт страницу Vercel, а не приложение.
+
+Локальная проверка на том же коммите:
+
+1. Чистый `next build` с реальными ключами и `CONTENT_SOURCE=supabase` проходит и пререндерит `/topics/honorifics`, то есть код и креды исправны — отличается только окружение Vercel.
+2. Чистый `next build` с недоступным Supabase воспроизводит падение Vercel один в один.
+3. Точечная защита `generateStaticParams` недостаточна: при Cache Components пустой массив запрещён (`must return at least one result`), а если ошибку там поглотить, сборка падает следующим шагом на пререндере `/topics` — **несмотря на то, что `TopicsCatalog` ловит `LearningContentError` и возвращает `ServiceUnavailableState`**.
+
+#### 2. Результат спайка
+
+`use-cache.md` и `cacheComponents.md` этот случай не описывают, поэтому поведение установлено экспериментом на чистой сборке с недоступным Supabase:
+
+1. Ошибка, брошенная внутри `"use cache"`, прерывает пререндер и роняет билд **даже если вызывающий компонент её ловит**. Component-level `catch` работает во время запроса, но не во время сборки.
+2. Как только тот же сбой возвращается значением, а не исключением, сборка с полностью недоступным хранилищем проходит целиком.
+3. Следствие: единственный рабочий контракт — cached-функция сама превращает сбой в discriminated result. Обёртка вокруг cached-функции не помогает, потому что ошибка всё равно пересекает границу кэша.
+
+Freshness решается документированным паттерном `cacheLife` в разных ветках кода (`cacheLife.md`, «Conditional cache lifetimes»): готовый контент получает `learningContent`, недоступность — короткий `learningContentUnavailable`.
+
+#### 3. Реализация
+
+1. `src/modules/cachedLearningContent.ts` — тип `ContentResult<T>` (`ready` / `unavailable`); каждая cached-функция ловит `LearningContentError` внутри своей области и выбирает `cacheLife`: `learningContent` для готового контента, `learningContentUnavailable` для сбоя. Ошибки, не относящиеся к контент-хранилищу, по-прежнему пробрасываются.
+2. `next.config.ts` — профиль `learningContentUnavailable` (`stale 5 s`, `revalidate 15 s`, `expire 60 s`), поэтому восстановление Supabase подхватывается без передеплоя, а хранилище защищено от retry-шторма.
+3. Потребители (`TopicsCatalog`, `ModuleDetailPanel`, `TrainingModulesPanel`, `SessionExercisePanel`) переключаются по `status` вместо `try/catch`; `resolveSession` возвращает `ready` / `unknown` / `unavailable`, поэтому сбой хранилища больше не выглядит как 404 и не проходит мимо обработки.
+4. `PLACEHOLDER_MODULE_SLUG` (`content-unavailable`) в `src/modules/resolveRouteExistence.ts` — единственный параметр `generateStaticParams` при пустом или недоступном каталоге. Slug намеренно не публикуется, поэтому Proxy отдаёт для него 404.
+5. Гейт honorifics и поведение Proxy из PERF-I09 не менялись.
+
+Затронутые файлы: `next.config.ts`, `src/modules/cachedLearningContent.ts`, `src/modules/resolveRouteExistence.ts`, `src/app/topics/[moduleSlug]/page.tsx`, `src/app/topics/[moduleSlug]/ModuleDetailPanel.tsx`, `src/app/topics/TopicsCatalog.tsx`, `src/app/training/TrainingModulesPanel.tsx`, `src/app/training/[sessionId]/SessionExercisePanel.tsx`.
+
+#### 4. Не делать
+
+1. Не отключать `cacheComponents` ради обхода проблемы.
+2. Не чинить это подстановкой локального контента вместо Supabase на Vercel: preview обязан показывать реальное состояние хранилища.
+3. Не расширять scope до причины `JWT issued at future` — это конфигурация окружения, а не код.
+
+#### 5. Тесты и фактические результаты
+
+Добавлено: `src/modules/cachedLearningContent.test.ts` (сбой хранилища даёт `unavailable`, чужие ошибки пробрасываются) и `tests/app/content-unavailable.test.tsx` (все четыре панели показывают `ServiceUnavailableState`; `generateStaticParams` отдаёт placeholder и при сбое, и при пустом каталоге). В `src/modules/resolveRouteExistence.test.ts` закреплено, что placeholder никогда не считается опубликованным модулем.
+
+Локальный gate:
+
+| Проверка                            | Результат                                                                    |
+| ----------------------------------- | ---------------------------------------------------------------------------- |
+| `format:check`, `lint`, `typecheck` | green                                                                        |
+| Unit                                | 297 passed (было 287)                                                        |
+| Integration                         | 17 passed                                                                    |
+| Playwright desktop + mobile         | 20 passed                                                                    |
+| `next build`, недоступное хранилище | успешно; ранее падал на `Collecting page data for /topics/[moduleSlug]`      |
+| `next build`, рабочее хранилище     | без изменений: prerendered маршруты и `5m / 1d` те же                        |
+| Bundle budgets                      | без изменений: `/topics`, `/training`, `/training/[sessionId]` — 159 KB gzip |
+
+Runtime на локальном production server с недоступным хранилищем: `/topics`, `/training`, `/topics/sample-module`, `/training/demo-session` → `200` с «Сервис недоступен» вместо падения. На рабочем контенте инвариант PERF-I09 сохранён: валидные маршруты `200`; `/topics/missing-module`, `/training/missing-session`, `/training/honorifics-preview`, `/topics/content-unavailable` → `404`.
+
+Критерий готовности: выполнен локально. Удалённая приёмка — после разблокировки ключа Supabase в окружении Vercel.
+
 ## 5. Обязательная матрица проверок
 
 После каждой кодовой итерации выполняются только релевантные быстрые тесты, затем полный gate перед merge:
 
 1. ESLint.
 2. TypeScript без emit.
-3. Все unit и integration tests — текущий baseline после PERF-I09: 287 unit + 17 integration.
+3. Все unit и integration tests — текущий baseline после PERF-I10: 297 unit + 17 integration.
 4. Production build.
 5. E2E:
    - все девять маршрутов;

@@ -6,6 +6,7 @@ import {
   getCachedPublishedModules,
   getCachedPublishedModuleBySlug,
 } from "@/modules/cachedLearningContent";
+import { PLACEHOLDER_MODULE_SLUG } from "@/modules/resolveRouteExistence";
 import type { LearningModuleDefinition } from "@/types";
 
 import { ModuleDetailPanel } from "./ModuleDetailPanel";
@@ -18,25 +19,26 @@ type ModulePageProps = {
 
 export async function generateMetadata({ params }: ModulePageProps): Promise<Metadata> {
   const { moduleSlug } = await params;
+  const result = await getCachedPublishedModuleBySlug(moduleSlug);
 
-  try {
-    const learningModule = await getCachedPublishedModuleBySlug(moduleSlug);
-
-    return {
-      title: learningModule?.title.ru ?? "Модуль не найден",
-      description: learningModule?.description.ru,
-    };
-  } catch {
-    return {
-      title: "Модуль недоступен",
-    };
+  if (result.status === "unavailable") {
+    return { title: "Модуль недоступен" };
   }
+
+  return {
+    title: result.data?.title.ru ?? "Модуль не найден",
+    description: result.data?.description.ru,
+  };
 }
 
 export async function generateStaticParams() {
   const modules = await getCachedPublishedModules();
+  const params =
+    modules.status === "ready"
+      ? modules.data.map((module: LearningModuleDefinition) => ({ moduleSlug: module.slug }))
+      : [];
 
-  return modules.map((module: LearningModuleDefinition) => ({ moduleSlug: module.slug }));
+  return params.length > 0 ? params : [{ moduleSlug: PLACEHOLDER_MODULE_SLUG }];
 }
 
 export default async function ModulePage({ params }: ModulePageProps) {

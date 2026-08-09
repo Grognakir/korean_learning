@@ -10,40 +10,30 @@ import {
   getCachedPublishedModuleBySlug,
 } from "@/modules/cachedLearningContent";
 import { HONORIFICS_MODULE_SLUG, HONORIFICS_PREVIEW_SESSION_ID } from "@/modules";
-import { LearningContentError } from "@/modules/resolveLearningContent";
-import type { LearningModuleDefinition } from "@/types";
 
 import styles from "./page.module.css";
 
-type TrainingModulesData = {
-  readonly sampleModule: LearningModuleDefinition | undefined;
-  readonly honorificsModule: LearningModuleDefinition | undefined;
-  readonly sampleExerciseCount: number;
-  readonly honorificsExerciseCount: number;
-};
-
 export async function TrainingModulesPanel() {
-  let data: TrainingModulesData;
+  const [sample, honorifics, sampleCount, honorificsCount] = await Promise.all([
+    getCachedPublishedModuleBySlug("sample-module"),
+    getCachedPublishedModuleBySlug(HONORIFICS_MODULE_SLUG),
+    getCachedExerciseCountByModuleSlug("sample-module"),
+    getCachedExerciseCountByModuleSlug(HONORIFICS_MODULE_SLUG),
+  ]);
 
-  try {
-    const [sampleModule, honorificsModule, sampleExerciseCount, honorificsExerciseCount] =
-      await Promise.all([
-        getCachedPublishedModuleBySlug("sample-module"),
-        getCachedPublishedModuleBySlug(HONORIFICS_MODULE_SLUG),
-        getCachedExerciseCountByModuleSlug("sample-module"),
-        getCachedExerciseCountByModuleSlug(HONORIFICS_MODULE_SLUG),
-      ]);
-
-    data = { sampleModule, honorificsModule, sampleExerciseCount, honorificsExerciseCount };
-  } catch (error) {
-    if (error instanceof LearningContentError) {
-      return <ServiceUnavailableState />;
-    }
-
-    throw error;
+  if (
+    sample.status === "unavailable" ||
+    honorifics.status === "unavailable" ||
+    sampleCount.status === "unavailable" ||
+    honorificsCount.status === "unavailable"
+  ) {
+    return <ServiceUnavailableState />;
   }
 
-  const { sampleModule, honorificsModule, sampleExerciseCount, honorificsExerciseCount } = data;
+  const sampleModule = sample.data;
+  const honorificsModule = honorifics.data;
+  const sampleExerciseCount = sampleCount.data;
+  const honorificsExerciseCount = honorificsCount.data;
   const hasModules = Boolean(sampleModule) || Boolean(honorificsModule);
 
   return (

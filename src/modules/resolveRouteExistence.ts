@@ -9,6 +9,13 @@ export type ContentRoute =
   | { readonly kind: "module"; readonly slug: string }
   | { readonly kind: "session"; readonly sessionId: string };
 
+/**
+ * Cache Components requires at least one prerendered param, so an empty or unreachable catalog
+ * still has to name a module route. This slug is deliberately never published: the shell behind
+ * `Suspense` is identical for every slug, and Proxy answers `404` for it like any unknown module.
+ */
+export const PLACEHOLDER_MODULE_SLUG = "content-unavailable";
+
 const MODULE_ROUTE = /^\/topics\/([^/]+)\/?$/;
 const SESSION_ROUTE = /^\/training\/([^/]+)\/?$/;
 

@@ -85,9 +85,13 @@ describe("application routes", () => {
   });
 
   it("renders the demo training session route", async () => {
-    const session = await resolveSession("demo-session");
-    expect(session).not.toBeNull();
-    render(await SessionExercisePanel({ session: session! }));
+    const resolution = await resolveSession("demo-session");
+    expect(resolution.status).toBe("ready");
+    render(
+      await SessionExercisePanel({
+        session: (resolution as Extract<typeof resolution, { status: "ready" }>).session,
+      }),
+    );
 
     expect(screen.getByRole("heading", { level: 1, name: "Учебная сессия" })).toBeInTheDocument();
     expect(screen.getByRole("progressbar")).toBeInTheDocument();

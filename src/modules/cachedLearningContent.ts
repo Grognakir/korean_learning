@@ -86,41 +86,92 @@ async function readExercisesByModuleSlug(moduleSlug: string): Promise<readonly E
   }
 }
 
-export async function getCachedPublishedModules(): Promise<readonly LearningModuleDefinition[]> {
+/**
+ * An error thrown inside a `"use cache"` scope aborts prerendering and fails the build even when
+ * the consuming component catches it, so a store failure must never cross that boundary. Cached
+ * loaders report it as a value instead and keep it on a short `cacheLife`, so a recovered store is
+ * picked up without a redeploy.
+ */
+export type ContentResult<T> =
+  { readonly status: "ready"; readonly data: T } | { readonly status: "unavailable" };
+
+async function readContent<T>(read: () => Promise<T>): Promise<ContentResult<T>> {
+  try {
+    return { status: "ready", data: await read() };
+  } catch (error) {
+    if (error instanceof LearningContentError) {
+      return { status: "unavailable" };
+    }
+
+    throw error;
+  }
+}
+
+function cacheLifeFor(status: ContentResult<unknown>["status"]): void {
+  if (status === "ready") {
+    cacheLife("learningContent");
+    return;
+  }
+
+  cacheLife("learningContentUnavailable");
+}
+
+export async function getCachedPublishedModules(): Promise<
+  ContentResult<readonly LearningModuleDefinition[]>
+> {
   "use cache";
   cacheTag("learning-modules");
-  cacheLife("learningContent");
-  return readPublishedModules();
+
+  const result = await readContent(readPublishedModules);
+  cacheLifeFor(result.status);
+
+  return result;
 }
 
 export async function getCachedPublishedModuleBySlug(
   slug: string,
-): Promise<LearningModuleDefinition | undefined> {
+): Promise<ContentResult<LearningModuleDefinition | undefined>> {
   "use cache";
   cacheTag("learning-modules", `learning-module:${slug}`);
-  cacheLife("learningContent");
-  return readModuleBySlug(slug);
+
+  const result = await readContent(() => readModuleBySlug(slug));
+  cacheLifeFor(result.status);
+
+  return result;
 }
 
 export async function getCachedExerciseCountsByModuleSlug(): Promise<
-  Readonly<Record<string, number>>
+  ContentResult<Readonly<Record<string, number>>>
 > {
   "use cache";
   cacheTag("learning-exercise-counts");
-  cacheLife("learningContent");
-  return readExerciseCountsByModuleSlug();
+
+  const result = await readContent(readExerciseCountsByModuleSlug);
+  cacheLifeFor(result.status);
+
+  return result;
 }
 
-export async function getCachedExerciseCountByModuleSlug(moduleSlug: string): Promise<number> {
+export async function getCachedExerciseCountByModuleSlug(
+  moduleSlug: string,
+): Promise<ContentResult<number>> {
   const counts = await getCachedExerciseCountsByModuleSlug();
-  return counts[moduleSlug] ?? 0;
+
+  if (counts.status === "unavailable") {
+    return counts;
+  }
+
+  return { status: "ready", data: counts.data[moduleSlug] ?? 0 };
 }
 
 export async function getCachedExercisesByModuleSlug(
   moduleSlug: string,
-): Promise<readonly Exercise[]> {
+): Promise<ContentResult<readonly Exercise[]>> {
   "use cache";
   cacheTag("learning-exercises", `learning-exercises:${moduleSlug}`);
-  cacheLife("learningContent");
-  return readExercisesByModuleSlug(moduleSlug);
+
+  const result = await readContent(() => readExercisesByModuleSlug(moduleSlug));
+  cacheLifeFor(result.status);
+
+  return result;
 }

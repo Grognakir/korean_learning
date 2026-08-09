@@ -6,8 +6,6 @@ import { PageHeader } from "@/components/layout";
 import { Badge } from "@/components/ui/Badge";
 import { selectPublishedTopics } from "@/features/training/domain/moduleSelectors";
 import { getCachedPublishedModuleBySlug } from "@/modules/cachedLearningContent";
-import { LearningContentError } from "@/modules/resolveLearningContent";
-import type { LearningModuleDefinition } from "@/types";
 import { ContentSection } from "@/wrappers";
 
 import styles from "./page.module.css";
@@ -17,22 +15,18 @@ type ModuleDetailPanelProps = {
 };
 
 export async function ModuleDetailPanel({ moduleSlug }: ModuleDetailPanelProps) {
-  let learningModule: LearningModuleDefinition | undefined;
+  const result = await getCachedPublishedModuleBySlug(moduleSlug);
 
-  try {
-    learningModule = await getCachedPublishedModuleBySlug(moduleSlug);
-  } catch (error) {
-    if (error instanceof LearningContentError) {
-      return (
-        <>
-          <PageHeader description="Не удалось загрузить модуль." title="Модуль недоступен" />
-          <ServiceUnavailableState />
-        </>
-      );
-    }
-
-    throw error;
+  if (result.status === "unavailable") {
+    return (
+      <>
+        <PageHeader description="Не удалось загрузить модуль." title="Модуль недоступен" />
+        <ServiceUnavailableState />
+      </>
+    );
   }
+
+  const learningModule = result.data;
 
   if (!learningModule) {
     notFound();

@@ -1,7 +1,9 @@
+import "server-only";
+
 import { unstable_cache } from "next/cache";
 
 import type { CatalogQuery } from "@/features/catalog/domain/types";
-import { createServerSupabaseClient } from "@/lib/supabase/serverClient";
+import { createServiceRoleSupabaseClient } from "@/lib/supabase/serviceRoleClient";
 
 import type { ReadingRepository } from "./ReadingRepository";
 import type { PublicCurriculumExercise, PublicReadingPassage } from "../domain/types";
@@ -10,7 +12,7 @@ async function loadPublishedReadingBundle(): Promise<{
   passages: PublicReadingPassage[];
   exercises: PublicCurriculumExercise[];
 }> {
-  const supabase = await createServerSupabaseClient();
+  const supabase = createServiceRoleSupabaseClient();
 
   const [passagesResult, modulesResult, exercisesResult, optionsResult] = await Promise.all([
     supabase
@@ -66,15 +68,20 @@ async function loadPublishedReadingBundle(): Promise<{
 
   const optionsByExercise = new Map<string, { id: string; label: { ko: string; ru: string } }[]>();
   for (const option of optionsResult.data ?? []) {
-    const list = optionsByExercise.get(option.exercise_id) ?? [];
+    if (!option.exercise_id || !option.option_key) {
+      continue;
+    }
+    const exerciseId = option.exercise_id;
+    const optionKey = option.option_key;
+    const list = optionsByExercise.get(exerciseId) ?? [];
     list.push({
-      id: option.option_key,
+      id: optionKey,
       label: {
-        ko: option.label_ko ?? option.label_ru ?? option.option_key,
-        ru: option.label_ru ?? option.label_ko ?? option.option_key,
+        ko: option.label_ko ?? option.label_ru ?? optionKey,
+        ru: option.label_ru ?? option.label_ko ?? optionKey,
       },
     });
-    optionsByExercise.set(option.exercise_id, list);
+    optionsByExercise.set(exerciseId, list);
   }
 
   const passageLogicalById = new Map(passages.map((passage) => [passage.id, passage.logicalId]));

@@ -4,26 +4,21 @@
 
 ## Чем занимаемся
 
-F2-I23 in progress. CP-8 accepted. Local release stabilization done; **remote import / preview / tag blocked on explicit permission + CP-9**.
+F2-I23 in progress. CP-8 accepted. Remote curriculum imported; Production `CONTENT_SOURCE=supabase` set; fixing cached curriculum reads (service role) after preview smoke found «Сервис недоступен».
 
-## F2-I23 — локально сделано
+## F2-I23 — сделано
 
-- `sample-module` archived (TS + seed); curriculum is published baseline
-- Removed demo link / `demo-session` compat route
-- E2E/perf smoke retargeted to filtered curriculum sessions (`filt__*`)
-- DB/RLS progress tests use published `u01` ids
-- Audit checkpoint → CP-9 pending
+- Local release stabilization merged (#16)
+- Remote: migrations pushed, curriculum chunk-import, `sample-module` archived
+- Remote counts: 16 published modules, 80 grammar, 192 dict, 16 passages, 272 approved exercises
+- Vercel: `CONTENT_SOURCE=supabase` on Production + Preview
+- Hotfix branch: curriculum catalog/dictionary/reading use service-role client inside cache (cookie client breaks `"use cache"`)
 
-## Нужно от пользователя
+## Нужно
 
-1. Явное разрешение: remote Supabase migrations (если pending) + curriculum import на linked project
-2. Явное разрешение: Vercel preview deploy / smoke
-3. После preview — **CP-9** и tag `v0.1.0`
+1. Merge cache fix → production redeploy → smoke matrix
+2. **CP-9** then tag `v0.1.0` (do not tag without CP-9)
 
 ## Ветка
 
-`codex/f2-i23-release-stabilization`
-
-## Коммит (карточка)
-
-`chore: release level one learning curriculum` (после remote/preview или локальный partial — по согласованию)
+`codex/f2-i23-curriculum-cache-fix`

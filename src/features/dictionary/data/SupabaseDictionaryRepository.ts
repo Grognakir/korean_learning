@@ -1,6 +1,8 @@
+import "server-only";
+
 import { unstable_cache } from "next/cache";
 
-import { createServerSupabaseClient } from "@/lib/supabase/serverClient";
+import { createServiceRoleSupabaseClient } from "@/lib/supabase/serviceRoleClient";
 
 import type {
   DictionaryPageResult,
@@ -12,7 +14,7 @@ import type { PublicDictionaryEntry } from "../domain/types";
 const DEFAULT_PAGE_SIZE = 20;
 
 async function loadPublishedDictionary(): Promise<readonly PublicDictionaryEntry[]> {
-  const supabase = await createServerSupabaseClient();
+  const supabase = createServiceRoleSupabaseClient();
   const { data, error } = await supabase
     .from("dictionary_entries")
     .select(

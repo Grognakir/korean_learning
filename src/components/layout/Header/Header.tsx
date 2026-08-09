@@ -1,17 +1,16 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
-import { UserMenu } from "@/features/authentication/components/UserMenu";
-import type { AuthUser } from "@/features/authentication/domain/types";
 import { PrimaryNavigation } from "@/components/navigation";
 import { APP_NAME } from "@/constants";
 
 import styles from "./Header.module.css";
 
 export type HeaderProps = {
-  user?: AuthUser | null;
+  userMenu: ReactNode;
 };
 
-export function Header({ user = null }: HeaderProps) {
+export function Header({ userMenu }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
@@ -25,7 +24,7 @@ export function Header({ user = null }: HeaderProps) {
           </span>
         </Link>
         <PrimaryNavigation />
-        <UserMenu user={user} />
+        {userMenu}
       </div>
     </header>
   );

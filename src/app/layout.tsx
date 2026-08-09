@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { Suspense } from "react";
 
 import { APP_DESCRIPTION, APP_NAME, DEFAULT_LANGUAGE } from "@/constants";
-import { getServerAuthUser } from "@/features/authentication/server/getServerAuthUser";
-import { AppShell, AuthBoundary } from "@/wrappers";
+import { AuthProvider } from "@/features/authentication/context/AuthContext";
+import { UserMenuPlaceholder } from "@/features/authentication/components/UserMenu/UserMenuPlaceholder";
+import { HeaderAuthSection } from "@/features/authentication/server/HeaderAuthSection";
+import { AppShell } from "@/wrappers";
 import "@/styles/reset.css";
 import "@/styles/tokens.css";
 import "@/styles/globals.css";
@@ -21,18 +24,24 @@ type RootLayoutProps = Readonly<{
   children: ReactNode;
 }>;
 
-export default async function RootLayout({ children }: RootLayoutProps) {
-  const user = await getServerAuthUser();
-
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang={DEFAULT_LANGUAGE}>
       <body>
         <a className="skip-link" href="#main-content">
           Перейти к содержимому
         </a>
-        <AuthBoundary user={user}>
-          <AppShell user={user}>{children}</AppShell>
-        </AuthBoundary>
+        <AuthProvider user={null}>
+          <AppShell
+            userMenu={
+              <Suspense fallback={<UserMenuPlaceholder />}>
+                <HeaderAuthSection />
+              </Suspense>
+            }
+          >
+            {children}
+          </AppShell>
+        </AuthProvider>
       </body>
     </html>
   );

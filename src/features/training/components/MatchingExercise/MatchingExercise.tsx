@@ -1,6 +1,6 @@
 "use client";
 
-import { Select } from "@/components/ui";
+import { Select } from "@/components/ui/Select";
 
 import type { MatchingExerciseView } from "../../presentation";
 import { ExerciseText } from "../ExerciseText";

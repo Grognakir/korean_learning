@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Badge } from "@/components/ui";
+import { Badge } from "@/components/ui/Badge";
 import { PageContainer } from "@/wrappers";
 
 import styles from "./page.module.css";

@@ -74,3 +74,89 @@ export function assertPublicSchemaExcludesServerSecrets(
     );
   }
 }
+
+const deploymentSupabaseEnvSchema = publicSupabaseEnvSchema.extend({
+  SUPABASE_SECRET_KEY: nonEmptyTrimmed,
+});
+
+export type DeploymentSupabaseEnv = PublicSupabaseEnv & {
+  secretKey: string;
+};
+
+function resolveDeploymentContentSource(
+  source: NodeJS.ProcessEnv | Record<string, string | undefined>,
+): "local" | "supabase" | null {
+  const explicit = source.CONTENT_SOURCE?.trim().toLowerCase();
+
+  if (explicit === "local" || explicit === "supabase") {
+    return explicit;
+  }
+
+  if (source.VERCEL === "1") {
+    return "supabase";
+  }
+
+  if (source.NODE_ENV === "production" && source.CI === "true") {
+    return "supabase";
+  }
+
+  return null;
+}
+
+function missingDeploymentEnvKeys(
+  source: NodeJS.ProcessEnv | Record<string, string | undefined>,
+): string[] {
+  const required = [
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY",
+    "SUPABASE_SECRET_KEY",
+  ] as const;
+
+  return required.filter((key) => !source[key]?.trim());
+}
+
+/**
+ * Validates deployment env before production builds on Vercel/CI.
+ * Local development with CONTENT_SOURCE=local skips Supabase requirements.
+ */
+export function parseDeploymentSupabaseEnv(
+  source: NodeJS.ProcessEnv | Record<string, string | undefined> = process.env,
+): DeploymentSupabaseEnv | null {
+  const deploymentSource = resolveDeploymentContentSource(source);
+
+  if (deploymentSource === "local") {
+    return null;
+  }
+
+  if (deploymentSource !== "supabase") {
+    return null;
+  }
+
+  const missingKeys = missingDeploymentEnvKeys(source);
+
+  if (missingKeys.length > 0) {
+    throw new EnvValidationError(
+      `Supabase deployment environment is missing required keys: ${missingKeys.join(", ")}`,
+      missingKeys.map((key) => `${key}: Required`),
+    );
+  }
+
+  const result = deploymentSupabaseEnvSchema.safeParse({
+    NEXT_PUBLIC_SUPABASE_URL: source.NEXT_PUBLIC_SUPABASE_URL,
+    NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: source.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+    SUPABASE_SECRET_KEY: source.SUPABASE_SECRET_KEY,
+  });
+
+  if (!result.success) {
+    throw new EnvValidationError(
+      "Supabase deployment environment is missing or invalid.",
+      formatIssues(result.error),
+    );
+  }
+
+  return {
+    url: result.data.NEXT_PUBLIC_SUPABASE_URL,
+    publishableKey: result.data.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+    secretKey: result.data.SUPABASE_SECRET_KEY,
+  };
+}

@@ -1,10 +1,12 @@
 import "server-only";
 
+import { cache } from "react";
+
 import { createServerSupabaseClient } from "@/lib/supabase/serverClient";
 
 import type { AuthUser } from "../domain/types";
 
-export async function getServerAuthUser(): Promise<AuthUser | null> {
+async function readServerAuthUser(): Promise<AuthUser | null> {
   try {
     const supabase = await createServerSupabaseClient();
     const {
@@ -24,3 +26,5 @@ export async function getServerAuthUser(): Promise<AuthUser | null> {
     return null;
   }
 }
+
+export const getServerAuthUser = cache(readServerAuthUser);

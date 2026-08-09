@@ -10,7 +10,8 @@ import {
 } from "react";
 
 import { Alert } from "@/components/feedback";
-import { Button, ProgressBar } from "@/components/ui";
+import { Button } from "@/components/ui/Button";
+import { ProgressBar } from "@/components/ui/ProgressBar";
 import type { LearningTopicDefinition } from "@/types";
 import { TrainingShell } from "@/wrappers";
 
@@ -110,6 +111,9 @@ function TrainingSessionRuntime({
     ? cloud.evaluateSubmission
     : evaluateSubmission;
   const effectivePersist = persist && !cloudPersistence;
+  const cloudNotReady =
+    cloudPersistence !== undefined &&
+    (cloud.syncStatus === "starting" || cloud.syncStatus === "error");
   const syncNotice =
     cloud.syncMessage ??
     (cloud.syncStatus === "starting" ? "Подключение к серверу…" : null) ??
@@ -186,20 +190,6 @@ function TrainingSessionRuntime({
     store.clear();
   }, [effectivePersist, session.isCompleted, store]);
 
-  if (cloudPersistence && (cloud.syncStatus === "starting" || cloud.syncStatus === "error")) {
-    return (
-      <section className={styles.complete}>
-        <h1 className={styles.completeTitle}>Синхронизация сессии</h1>
-        <p className={styles.completeCopy}>{cloud.syncMessage ?? "Подготовка серверной сессии…"}</p>
-        {cloud.syncStatus === "error" ? (
-          <Button onClick={cloud.retryStart} type="button">
-            Повторить
-          </Button>
-        ) : null}
-      </section>
-    );
-  }
-
   if (session.isCompleted) {
     const snapshot = buildTrainingResultSnapshot(session.state, exercisesById, { topics });
 
@@ -232,11 +222,12 @@ function TrainingSessionRuntime({
 
   const positionLabel = `Задание ${session.progress.current} из ${session.progress.total}`;
   const completionLabel = `Выполнено заданий: ${session.progress.answeredCount} из ${session.progress.total}`;
-  const inputsDisabled = session.hasAnsweredCurrent || session.isSubmitting;
+  const inputsDisabled =
+    session.hasAnsweredCurrent || session.isSubmitting || cloudNotReady;
   const instruction = exerciseInstruction(session.currentExerciseView);
 
   function submitAnswer() {
-    if (session.canSubmit) {
+    if (session.canSubmit && !cloudNotReady) {
       session.submit();
     }
   }
@@ -273,7 +264,14 @@ function TrainingSessionRuntime({
     <div className={styles.sessionForm} onKeyDown={handleSessionKeyDown}>
       {syncNotice ? (
         <Alert className={styles.notice} title="Сохранение" tone="info">
-          {syncNotice}
+          <span className={styles.syncNoticeBody}>
+            {syncNotice}
+            {cloud.syncStatus === "error" ? (
+              <Button className={styles.retryButton} onClick={cloud.retryStart} type="button">
+                Повторить
+              </Button>
+            ) : null}
+          </span>
         </Alert>
       ) : null}
       <TrainingShell className={styles.shell}>
@@ -324,7 +322,7 @@ function TrainingSessionRuntime({
                 Дальше
               </Button>
             ) : (
-              <Button disabled={!session.canSubmit} onClick={submitAnswer} type="button">
+              <Button disabled={!session.canSubmit || cloudNotReady} onClick={submitAnswer} type="button">
                 Ответить
               </Button>
             )}

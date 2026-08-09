@@ -3,15 +3,12 @@ import type { Metadata } from "next";
 import { ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import { getServerAuthUser } from "@/features/authentication/server/getServerAuthUser";
-import {
-  createSupabaseProgressRepository,
-  hasAnyRecordedProgress,
-  ProgressEmptyState,
-  ProgressGuestEmptyState,
-  ProgressOverview,
-  ProgressRepositoryError,
-  type LearningProgressOverview,
-} from "@/features/progress";
+import { createSupabaseProgressRepository } from "@/features/progress/data/SupabaseProgressRepository";
+import { ProgressRepositoryError } from "@/features/progress/data/progressMapper";
+import { hasAnyRecordedProgress } from "@/features/progress/domain";
+import type { LearningProgressOverview } from "@/features/progress/domain";
+import { ProgressEmptyState, ProgressGuestEmptyState } from "@/features/progress/components/ProgressEmptyState";
+import { ProgressOverview } from "@/features/progress/components/ProgressOverview";
 import { createServerSupabaseClient } from "@/lib/supabase/serverClient";
 import { PageContainer } from "@/wrappers";
 

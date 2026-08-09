@@ -68,6 +68,7 @@ async function loadPublishedModules(): Promise<readonly LearningModuleDefinition
 
 const getCachedPublishedModules = unstable_cache(loadPublishedModules, ["learning-modules"], {
   tags: [CACHE_TAG],
+  revalidate: 3600,
 });
 
 export class SupabaseModuleRepository implements ModuleRepository {

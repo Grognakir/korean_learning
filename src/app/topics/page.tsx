@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 
 import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
-import { ModuleCard } from "@/features/training";
-import { getLearningContent, LearningContentError } from "@/modules";
+import { ModuleCard } from "@/features/training/components/ModuleCard";
+import { getModuleContent, LearningContentError } from "@/modules";
 import type { LearningModuleDefinition } from "@/types";
 import { PageContainer } from "@/wrappers";
 
@@ -18,7 +18,7 @@ export default async function TopicsPage() {
   let modules: readonly LearningModuleDefinition[] | null = null;
 
   try {
-    const { moduleRepository } = await getLearningContent();
+    const { moduleRepository } = await getModuleContent();
     modules = await moduleRepository.getPublished();
   } catch (error) {
     if (!(error instanceof LearningContentError)) {

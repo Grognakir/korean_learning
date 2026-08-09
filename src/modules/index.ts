@@ -7,9 +7,12 @@ export {
   HONORIFICS_PREVIEW_SESSION_ID,
 } from "./honorifics/previewConstants";
 export {
+  getExerciseContent,
+  getExerciseCountByModuleSlug,
   getLearningContent,
   getLearningContentRepositories,
   getLocalLearningContent,
+  getModuleContent,
   LearningContentError,
 } from "./resolveLearningContent";
 export { exerciseRepository, learningModuleRegistry, moduleRepository } from "./registry";

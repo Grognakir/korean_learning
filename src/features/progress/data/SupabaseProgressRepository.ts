@@ -2,7 +2,7 @@ import "server-only";
 
 import type { SupabaseClient } from "@supabase/supabase-js";
 
-import { getLearningContent } from "@/modules";
+import { getModuleContent } from "@/modules";
 import type { Database } from "@/types/database";
 
 import type { ProgressRepository } from "./ProgressRepository";
@@ -13,7 +13,7 @@ export function createSupabaseProgressRepository(
 ): ProgressRepository {
   return {
     async getOverviewForUser(userId) {
-      const { moduleRepository } = await getLearningContent();
+      const { moduleRepository } = await getModuleContent();
       const publishedModules = await moduleRepository.getPublished();
 
       const [

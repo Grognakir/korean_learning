@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 import { Alert } from "@/components/feedback";
-import { Button } from "@/components/ui";
+import { Button } from "@/components/ui/Button";
 import { useAuthUser } from "@/features/authentication";
 
 import { LocalTrainingSessionStore } from "../../persistence";

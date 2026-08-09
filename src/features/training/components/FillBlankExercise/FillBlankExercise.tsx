@@ -1,6 +1,6 @@
 "use client";
 
-import { Input } from "@/components/ui";
+import { Input } from "@/components/ui/Input";
 
 import { describeFillBlankTemplate, type FillBlankExerciseView } from "../../presentation";
 

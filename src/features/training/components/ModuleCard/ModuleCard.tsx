@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Badge } from "@/components/ui";
+import { Badge } from "@/components/ui/Badge";
 import { selectPublishedTopics } from "@/features/training/domain";
 import type { LearningModuleDefinition } from "@/types";
 

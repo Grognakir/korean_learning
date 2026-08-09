@@ -1,6 +1,7 @@
 "use client";
 
-import { Input, Textarea } from "@/components/ui";
+import { Input } from "@/components/ui/Input";
+import { Textarea } from "@/components/ui/Textarea";
 
 import type { FreeResponseExerciseView } from "../../presentation";
 

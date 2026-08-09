@@ -7,6 +7,7 @@
   "packageManager": "pnpm@10.34.5",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/validate-deployment-env.ts",
     "build": "next build",
     "start": "next start",
     "typecheck": "next typegen && tsc --noEmit",
@@ -19,6 +20,8 @@
     "test:integration": "vitest run --config vitest.integration.config.mts",
     "test:e2e": "playwright test",
     "test:coverage": "vitest run --coverage",
+    "check:bundles": "tsx scripts/check-bundle-budgets.mts",
+    "perf:smoke": "tsx scripts/performance-smoke.mts",
     "supabase:start": "supabase start",
     "supabase:stop": "supabase stop",
     "supabase:status": "supabase status",
@@ -29,7 +32,7 @@
     "test:rls": "vitest run --config vitest.rls.config.mts"
   },
   "engines": {
-    "node": ">=24.18.0 <25",
+    "node": ">=24.15.0 <25",
     "pnpm": "10.34.5"
   },
   "dependencies": {

@@ -4,17 +4,18 @@ import { notFound } from "next/navigation";
 
 import { ExercisesEmptyState, ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
+import { evaluateTrainingSubmissionAction } from "@/features/training/actions/evaluateTrainingSubmissionAction";
+import { TrainingSession } from "@/features/training/components/TrainingSession";
+import { getServerAuthUser } from "@/features/authentication/server/getServerAuthUser";
+import { toPublicExercises, type PublicExercise } from "@/features/training/presentation";
 import {
   DEMO_TRAINING_MODULE_SLUG,
   DEMO_TRAINING_SEED,
   DEMO_TRAINING_SESSION_ID,
-  TrainingSession,
-} from "@/features/training";
-import { evaluateTrainingSubmissionAction } from "@/features/training/actions/evaluateTrainingSubmissionAction";
-import { getServerAuthUser } from "@/features/authentication/server/getServerAuthUser";
-import { toPublicExercises, type PublicExercise } from "@/features/training/presentation";
+} from "@/features/training/sessionConstants";
 import {
-  getLearningContent,
+  getExerciseContent,
+  getModuleContent,
   HONORIFICS_MODULE_SLUG,
   HONORIFICS_PREVIEW_SESSION_ID,
   LearningContentError,
@@ -51,7 +52,7 @@ async function resolveSession(sessionId: string): Promise<{
   readonly moduleSlug: string;
   readonly description: ReactNode;
 } | null> {
-  const { moduleRepository } = await getLearningContent();
+  const { moduleRepository } = await getModuleContent();
 
   if (sessionId === DEMO_TRAINING_SESSION_ID) {
     return {
@@ -95,9 +96,15 @@ export default async function SessionPage({ params }: SessionPageProps) {
       notFound();
     }
 
-    const { exerciseRepository, moduleRepository } = await getLearningContent();
-    const exercises = await exerciseRepository.list({ moduleSlug: session.moduleSlug });
-    learningModule = await moduleRepository.getBySlug(session.moduleSlug);
+    const [{ exerciseRepository }, { moduleRepository }] = await Promise.all([
+      getExerciseContent(),
+      getModuleContent(),
+    ]);
+    const [exercises, module] = await Promise.all([
+      exerciseRepository.list({ moduleSlug: session.moduleSlug }),
+      moduleRepository.getBySlug(session.moduleSlug),
+    ]);
+    learningModule = module;
     publicExercises = toPublicExercises(exercises, { seed: DEMO_TRAINING_SEED });
     topics = learningModule?.topics ?? [];
   } catch (error) {

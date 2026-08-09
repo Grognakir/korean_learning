@@ -1,5 +1,7 @@
-import type { Exercise, ExerciseRepository } from "@/features/training";
-import { LocalModuleRepository, ModuleRegistry, type ModuleRepository } from "@/features/training";
+import type { Exercise } from "@/features/training/domain";
+import { ModuleRegistry } from "@/features/training/domain";
+import { LocalModuleRepository, type ModuleRepository } from "@/features/training/data";
+import type { ExerciseRepository } from "@/features/training/data/ExerciseRepository";
 import type { LearningModuleDefinition } from "@/types";
 
 import { composeDevelopmentContent } from "./composeDevelopmentContent";
@@ -41,29 +43,60 @@ function wrapLocalComposition(composition: LearningContentComposition): Learning
   };
 }
 
-async function composeSupabaseContent(): Promise<LearningContentComposition> {
-  const [{ SupabaseModuleRepository }, { SupabaseExerciseRepository }] = await Promise.all([
-    import("@/features/training/data/SupabaseModuleRepository"),
-    import("@/features/training/data/SupabaseExerciseRepository"),
-  ]);
-
+async function createSupabaseModuleRepository(): Promise<{
+  readonly moduleRepository: ModuleRepository;
+  readonly modules: readonly LearningModuleDefinition[];
+  readonly learningModuleRegistry: ModuleRegistry;
+}> {
+  const { SupabaseModuleRepository } = await import("@/features/training/data/SupabaseModuleRepository");
   const moduleRepository = new SupabaseModuleRepository();
-  const exerciseRepository = new SupabaseExerciseRepository();
   const modules = await moduleRepository.getAll();
-  const exercises = await exerciseRepository.list();
   const learningModuleRegistry = new ModuleRegistry(modules);
 
   return {
-    learningModuleRegistry,
     moduleRepository,
-    exerciseRepository,
     modules,
+    learningModuleRegistry,
+  };
+}
+
+async function createSupabaseExerciseRepository(): Promise<{
+  readonly exerciseRepository: ExerciseRepository;
+  readonly exercises: readonly Exercise[];
+}> {
+  const { SupabaseExerciseRepository } = await import(
+    "@/features/training/data/SupabaseExerciseRepository"
+  );
+  const exerciseRepository = new SupabaseExerciseRepository();
+  const exercises = await exerciseRepository.list();
+
+  return {
+    exerciseRepository,
     exercises,
+  };
+}
+
+async function composeSupabaseContent(): Promise<LearningContentComposition> {
+  const [moduleContent, exerciseContent] = await Promise.all([
+    createSupabaseModuleRepository(),
+    createSupabaseExerciseRepository(),
+  ]);
+
+  return {
+    ...moduleContent,
+    ...exerciseContent,
   };
 }
 
 let cachedLocalComposition: LearningContentComposition | undefined;
 let cachedSupabaseComposition: Promise<LearningContentComposition> | undefined;
+let cachedSupabaseModuleContent:
+  | Promise<Awaited<ReturnType<typeof createSupabaseModuleRepository>>>
+  | undefined;
+let cachedSupabaseExerciseContent:
+  | Promise<Awaited<ReturnType<typeof createSupabaseExerciseRepository>>>
+  | undefined;
+let cachedSupabaseExerciseCounts: Promise<Readonly<Record<string, number>>> | undefined;
 
 export function composeLearningContent(
   nodeEnv: string = process.env.NODE_ENV ?? "production",
@@ -83,6 +116,103 @@ export function getLocalLearningContent(
   }
 
   return cachedLocalComposition;
+}
+
+function loadLocalModuleContent(nodeEnv: string) {
+  const content = getLocalLearningContent(nodeEnv);
+
+  return {
+    moduleRepository: content.moduleRepository,
+    modules: content.modules,
+    learningModuleRegistry: content.learningModuleRegistry,
+  };
+}
+
+function loadLocalExerciseContent(nodeEnv: string) {
+  const content = getLocalLearningContent(nodeEnv);
+
+  return {
+    exerciseRepository: content.exerciseRepository,
+    exercises: content.exercises,
+  };
+}
+
+export async function getModuleContent(
+  env: NodeJS.ProcessEnv | Record<string, string | undefined> = process.env,
+): Promise<{
+  readonly moduleRepository: ModuleRepository;
+  readonly modules: readonly LearningModuleDefinition[];
+  readonly learningModuleRegistry: ModuleRegistry;
+}> {
+  const source = resolveContentSource(env);
+
+  if (source === "local") {
+    return loadLocalModuleContent(env.NODE_ENV ?? "production");
+  }
+
+  if (!cachedSupabaseModuleContent) {
+    cachedSupabaseModuleContent = createSupabaseModuleRepository().catch((error: unknown) => {
+      cachedSupabaseModuleContent = undefined;
+      const message = error instanceof Error ? error.message : "Unknown Supabase module error.";
+      throw new LearningContentError(message);
+    });
+  }
+
+  return cachedSupabaseModuleContent;
+}
+
+export async function getExerciseContent(
+  env: NodeJS.ProcessEnv | Record<string, string | undefined> = process.env,
+): Promise<{
+  readonly exerciseRepository: ExerciseRepository;
+  readonly exercises: readonly Exercise[];
+}> {
+  const source = resolveContentSource(env);
+
+  if (source === "local") {
+    return loadLocalExerciseContent(env.NODE_ENV ?? "production");
+  }
+
+  if (!cachedSupabaseExerciseContent) {
+    cachedSupabaseExerciseContent = createSupabaseExerciseRepository().catch((error: unknown) => {
+      cachedSupabaseExerciseContent = undefined;
+      const message = error instanceof Error ? error.message : "Unknown Supabase exercise error.";
+      throw new LearningContentError(message);
+    });
+  }
+
+  return cachedSupabaseExerciseContent;
+}
+
+async function loadSupabaseExerciseCounts(): Promise<Readonly<Record<string, number>>> {
+  const { countApprovedExercisesByModuleSlug } = await import(
+    "@/features/training/data/countApprovedExercisesByModuleSlug"
+  );
+
+  return countApprovedExercisesByModuleSlug();
+}
+
+export async function getExerciseCountByModuleSlug(
+  moduleSlug: string,
+  env: NodeJS.ProcessEnv | Record<string, string | undefined> = process.env,
+): Promise<number> {
+  const source = resolveContentSource(env);
+
+  if (source === "local") {
+    const { exerciseRepository } = loadLocalExerciseContent(env.NODE_ENV ?? "production");
+    return (await exerciseRepository.list({ moduleSlug })).length;
+  }
+
+  if (!cachedSupabaseExerciseCounts) {
+    cachedSupabaseExerciseCounts = loadSupabaseExerciseCounts().catch((error: unknown) => {
+      cachedSupabaseExerciseCounts = undefined;
+      const message = error instanceof Error ? error.message : "Unknown Supabase exercise count error.";
+      throw new LearningContentError(message);
+    });
+  }
+
+  const counts = await cachedSupabaseExerciseCounts;
+  return counts[moduleSlug] ?? 0;
 }
 
 export async function getLearningContent(
@@ -115,12 +245,15 @@ export type LearningContentRepositories = {
 export async function getLearningContentRepositories(
   env: NodeJS.ProcessEnv | Record<string, string | undefined> = process.env,
 ): Promise<LearningContentRepositories> {
-  const content = await getLearningContent(env);
+  const [moduleContent, exerciseContent] = await Promise.all([
+    getModuleContent(env),
+    getExerciseContent(env),
+  ]);
 
   return {
-    moduleRepository: content.moduleRepository,
-    exerciseRepository: content.exerciseRepository,
-    modules: content.modules,
-    exercises: content.exercises,
+    moduleRepository: moduleContent.moduleRepository,
+    exerciseRepository: exerciseContent.exerciseRepository,
+    modules: moduleContent.modules,
+    exercises: exerciseContent.exercises,
   };
 }

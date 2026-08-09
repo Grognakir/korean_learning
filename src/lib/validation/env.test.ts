@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 import {
   assertPublicSchemaExcludesServerSecrets,
   EnvValidationError,
+  parseDeploymentSupabaseEnv,
   parsePublicSupabaseEnv,
   publicSupabaseEnvSchema,
   SERVER_ONLY_SUPABASE_ENV_KEYS,
@@ -71,5 +72,91 @@ describe("server env boundary", () => {
         name: "EnvValidationError",
       });
     }
+  });
+});
+
+const validDeployment = {
+  VERCEL: "1",
+  CONTENT_SOURCE: "supabase",
+  NEXT_PUBLIC_SUPABASE_URL: "https://example.supabase.co",
+  NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: "sb_publishable_test_key",
+  SUPABASE_SECRET_KEY: "sb_secret_test_key",
+} as const;
+
+describe("parseDeploymentSupabaseEnv", () => {
+  it("passes with valid Supabase deployment env", () => {
+    expect(parseDeploymentSupabaseEnv(validDeployment)).toEqual({
+      url: "https://example.supabase.co",
+      publishableKey: "sb_publishable_test_key",
+      secretKey: "sb_secret_test_key",
+    });
+  });
+
+  it("passes without Supabase keys when CONTENT_SOURCE=local", () => {
+    expect(
+      parseDeploymentSupabaseEnv({
+        VERCEL: "1",
+        CONTENT_SOURCE: "local",
+      }),
+    ).toBeNull();
+  });
+
+  it("skips validation outside deployment contexts", () => {
+    expect(parseDeploymentSupabaseEnv({ NODE_ENV: "development" })).toBeNull();
+  });
+
+  it("rejects missing NEXT_PUBLIC_SUPABASE_URL", () => {
+    expect(() =>
+      parseDeploymentSupabaseEnv({
+        ...validDeployment,
+        NEXT_PUBLIC_SUPABASE_URL: "",
+      }),
+    ).toThrow(EnvValidationError);
+  });
+
+  it("rejects missing NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY", () => {
+    expect(() =>
+      parseDeploymentSupabaseEnv({
+        ...validDeployment,
+        NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: "",
+      }),
+    ).toThrow(EnvValidationError);
+  });
+
+  it("rejects missing SUPABASE_SECRET_KEY", () => {
+    expect(() =>
+      parseDeploymentSupabaseEnv({
+        ...validDeployment,
+        SUPABASE_SECRET_KEY: "",
+      }),
+    ).toThrow(EnvValidationError);
+  });
+
+  it("rejects all missing keys with key names in the message", () => {
+    try {
+      parseDeploymentSupabaseEnv({
+        VERCEL: "1",
+        CONTENT_SOURCE: "supabase",
+      });
+      expect.unreachable("expected validation failure");
+    } catch (error) {
+      expect(error).toMatchObject({
+        code: "ENV_VALIDATION_FAILED",
+        message: expect.stringContaining("NEXT_PUBLIC_SUPABASE_URL"),
+      });
+      expect((error as EnvValidationError).message).toContain(
+        "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY",
+      );
+      expect((error as EnvValidationError).message).toContain("SUPABASE_SECRET_KEY");
+    }
+  });
+
+  it("rejects malformed URL", () => {
+    expect(() =>
+      parseDeploymentSupabaseEnv({
+        ...validDeployment,
+        NEXT_PUBLIC_SUPABASE_URL: "not-a-url",
+      }),
+    ).toThrow(EnvValidationError);
   });
 });

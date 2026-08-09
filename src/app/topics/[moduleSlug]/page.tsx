@@ -4,9 +4,9 @@ import { notFound } from "next/navigation";
 
 import { TopicsEmptyState, ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
-import { Badge } from "@/components/ui";
-import { selectPublishedTopics } from "@/features/training";
-import { getLearningContent, LearningContentError } from "@/modules";
+import { Badge } from "@/components/ui/Badge";
+import { selectPublishedTopics } from "@/features/training/domain/moduleSelectors";
+import { getModuleContent, LearningContentError } from "@/modules";
 import type { LearningModuleDefinition } from "@/types";
 import { ContentSection, PageContainer } from "@/wrappers";
 
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: ModulePageProps): Promise<Met
   const { moduleSlug } = await params;
 
   try {
-    const { moduleRepository } = await getLearningContent();
+    const { moduleRepository } = await getModuleContent();
     const learningModule = await moduleRepository.getPublishedBySlug(moduleSlug);
 
     return {
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: ModulePageProps): Promise<Met
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const { moduleRepository } = await getLearningContent();
+  const { moduleRepository } = await getModuleContent();
   const modules = await moduleRepository.getPublished();
 
   return modules.map((module: LearningModuleDefinition) => ({ moduleSlug: module.slug }));
@@ -49,7 +49,7 @@ export default async function ModulePage({ params }: ModulePageProps) {
   let learningModule: LearningModuleDefinition | null | undefined;
 
   try {
-    const { moduleRepository } = await getLearningContent();
+    const { moduleRepository } = await getModuleContent();
     learningModule = await moduleRepository.getPublishedBySlug(moduleSlug);
   } catch (error) {
     if (!(error instanceof LearningContentError)) {

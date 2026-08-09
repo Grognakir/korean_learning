@@ -3,14 +3,13 @@ import Link from "next/link";
 
 import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
-import { Badge } from "@/components/ui";
+import { Badge } from "@/components/ui/Badge";
+import { GuestSessionImportPrompt } from "@/features/training/components/GuestSessionImportPrompt";
+import { ResumeTrainingPrompt } from "@/features/training/components/ResumeTrainingPrompt";
+import { DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
 import {
-  DEMO_TRAINING_SESSION_ID,
-  GuestSessionImportPrompt,
-  ResumeTrainingPrompt,
-} from "@/features/training";
-import {
-  getLearningContent,
+  getExerciseCountByModuleSlug,
+  getModuleContent,
   HONORIFICS_MODULE_SLUG,
   HONORIFICS_PREVIEW_SESSION_ID,
   LearningContentError,
@@ -32,15 +31,14 @@ export default async function TrainingPage() {
   let honorificsExerciseCount = 0;
 
   try {
-    const { moduleRepository, exerciseRepository } = await getLearningContent();
-    sampleModule = await moduleRepository.getBySlug("sample-module");
-    sampleExerciseCount = sampleModule
-      ? (await exerciseRepository.list({ moduleSlug: "sample-module" })).length
-      : 0;
-    honorificsModule = await moduleRepository.getBySlug(HONORIFICS_MODULE_SLUG);
-    honorificsExerciseCount = honorificsModule
-      ? (await exerciseRepository.list({ moduleSlug: HONORIFICS_MODULE_SLUG })).length
-      : 0;
+    const { moduleRepository } = await getModuleContent();
+    [sampleModule, honorificsModule, sampleExerciseCount, honorificsExerciseCount] =
+      await Promise.all([
+        moduleRepository.getBySlug("sample-module"),
+        moduleRepository.getBySlug(HONORIFICS_MODULE_SLUG),
+        getExerciseCountByModuleSlug("sample-module"),
+        getExerciseCountByModuleSlug(HONORIFICS_MODULE_SLUG),
+      ]);
   } catch (error) {
     if (error instanceof LearningContentError) {
       return (

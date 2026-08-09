@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useTransition } from "react";
 
-import { Button } from "@/components/ui";
+import { Button } from "@/components/ui/Button";
 import type { AuthUser } from "@/features/authentication/domain/types";
 import { signOutAction } from "@/features/authentication/server/signOutAction";
 

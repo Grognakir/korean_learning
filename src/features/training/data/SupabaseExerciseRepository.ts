@@ -98,6 +98,7 @@ async function loadApprovedExercises(): Promise<LoadedExerciseBundle> {
 
 const getCachedExerciseBundle = unstable_cache(loadApprovedExercises, ["learning-exercises"], {
   tags: [CACHE_TAG],
+  revalidate: 3600,
 });
 
 function matchesQuery(exercise: Exercise, query: ExerciseQuery): boolean {

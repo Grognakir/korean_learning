@@ -1,15 +1,15 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
 
-import RootLayout from "./layout";
-
-vi.mock("@/features/authentication/server/getServerAuthUser", () => ({
-  getServerAuthUser: vi.fn(async () => null),
+vi.mock("@/features/authentication/server/HeaderAuthSection", () => ({
+  HeaderAuthSection: () => <span data-testid="header-auth">auth</span>,
 }));
+
+import RootLayout from "./layout";
 
 describe("RootLayout", () => {
   it("задаёт язык документа и ссылку пропуска навигации", async () => {
-    const element = await RootLayout({
+    const element = RootLayout({
       children: <div>Содержимое</div>,
     });
     const markup = renderToStaticMarkup(element);

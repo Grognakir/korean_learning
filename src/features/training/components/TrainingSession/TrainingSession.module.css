@@ -16,6 +16,17 @@
   margin: 0;
 }
 
+.syncNoticeBody {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.retryButton {
+  flex-shrink: 0;
+}
+
 .shell {
   min-width: 0;
 }

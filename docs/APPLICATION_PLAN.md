@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I08 `done`; CP-6 принят).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I09 `done`; CP-6 принят).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I08 deterministic content import — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i08-content-seed-pipeline`.
-- **Уже сделано:** `db:seed` пишет sample + curriculum; `content:import` upsert/dry-run; local reset даёт 17 modules / 82 topics / 1091 dict / 178 passages / 114 exercises.
-- **Выполненные проверки:** content/unit/integration/db/rls/build gate итерации.
-- **Сейчас работает:** local Supabase seed с draft curriculum + published sample; runtime UI ещё на sample.
-- **Пока не работает / ограничения:** repositories/UI каталога ещё нет (F2-I09+); remote seed не применялся; Preview SSO как раньше.
-- **Следующий конкретный шаг:** F2-I09 — content repositories и public DTO.
+- **Текущая итерация:** F2-I09 curriculum content repositories — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i09-content-repositories`.
+- **Уже сделано:** catalog/dictionary/reading repositories + public DTOs + cached loaders; local published fixture; Supabase adapters filter published/approved only.
+- **Выполненные проверки:** unit/integration/lint/typecheck/build (gate итерации).
+- **Сейчас работает:** server API для каталога без correct answers; UI каталога ещё sample.
+- **Пока не работает / ограничения:** страницы dual-catalog ещё нет (F2-I10); curriculum в seed в основном draft → public lists из Supabase пустые до publish; Preview SSO как раньше.
+- **Следующий конкретный шаг:** F2-I10 — dual catalog themes/grammar.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

@@ -4,27 +4,22 @@
 
 ## Чем занимаемся
 
-CP-6 принят. F2-I08 выполнен. Следующая карточка — F2-I09.
+F2-I09 выполнен. Следующая карточка — F2-I10 (dual catalog).
 
-## F2-I08 — результат
+## F2-I09 — результат
 
-- `scripts/content/curriculumSeedSql.ts` — SQL builder (insert/upsert)
-- `pnpm db:seed` — sample + curriculum → `supabase/seed.sql`
-- `pnpm content:import` / `content:import:dry-run` — transactional upsert
-- Local counts: 17 modules, 82 topics, 1091 dictionary, 178 passages, 114 exercises
-- Status never elevated by import; reading bank stays draft
-- Sample module not archived
-- Remote Supabase seed not applied
-
-## Gate
-
-- content/unit/integration/db/rls/build
+- `src/features/catalog|dictionary|reading` — repositories + public DTOs
+- Local published fixture (не импортирует `content/phase-2` в app graph)
+- Supabase adapters: только `published` / `approved`; options через `exercise_options_public`
+- `resolveCurriculumContent` / `cachedCurriculumContent`
+- Public shape asserts forbid correct flags / provenance hashes
+- Integration parity: local fixture ≡ supabase-fixture adapter
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i08-content-seed-pipeline`
-- Commit: `feat: add deterministic curriculum content import`
+- Branch: `codex/f2-i09-content-repositories`
+- Commit: `feat: add curriculum content repositories`
 
 ## Следующий шаг
 
-F2-I09 — repositories, public DTO и cache queries.
+F2-I10 — theme and grammar catalogs.

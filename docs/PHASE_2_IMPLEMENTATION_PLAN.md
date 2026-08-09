@@ -437,7 +437,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I09 — Repositories, public DTO и cache queries
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** дать страницам безопасный server API без прямого доступа к таблицам и правильным ответам.
 - **Вход:** F2-I08 `done`.
 - **Ветка:** `codex/f2-i09-content-repositories`.

@@ -4,28 +4,27 @@
 
 ## Чем занимаемся
 
-F2-I07 audit gate выполнен. **Остановка на CP-6** — ждём решения пользователя.
+CP-6 принят. F2-I08 выполнен. Следующая карточка — F2-I09.
 
-## F2-I07 — результат
+## F2-I08 — результат
 
-- `pnpm content:audit` → `content/phase-2/content-audit-report.json`
-- Structural gates green: 16 units, 80 grammar (exact per-unit), 1091 dictionary senses, 100 reading exercises
-- Absolute-path scan clean; app must not import `content/phase-2`
-- CP-6 status: `pending_user_acceptance`
-- Not approved: all new content remains draft/needs_review
+- `scripts/content/curriculumSeedSql.ts` — SQL builder (insert/upsert)
+- `pnpm db:seed` — sample + curriculum → `supabase/seed.sql`
+- `pnpm content:import` / `content:import:dry-run` — transactional upsert
+- Local counts: 17 modules, 82 topics, 1091 dictionary, 178 passages, 114 exercises
+- Status never elevated by import; reading bank stays draft
+- Sample module not archived
+- Remote Supabase seed not applied
 
-## CP-6 вопросы
+## Gate
 
-1. Подтвердить 16 тем / 80 грамматик
-2. Подтвердить омонимы и business-draft границу словаря
-3. Подтвердить reading merge decisions + exam bank как draft
-4. Решить, что (если что-то) можно перевести в reviewed после CP-6
+- content/unit/integration/db/rls/build
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i07-content-audit-gate`
-- Commit: `test: enforce phase two content audit gate`
+- Branch: `codex/f2-i08-content-seed-pipeline`
+- Commit: `feat: add deterministic curriculum content import`
 
 ## Следующий шаг
 
-Только после принятия CP-6 — F2-I08.
+F2-I09 — repositories, public DTO и cache queries.

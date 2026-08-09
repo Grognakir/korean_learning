@@ -134,11 +134,11 @@ const report = {
   ],
   checkpoint: {
     id: "CP-6",
-    status: "pending_user_acceptance",
+    status: "accepted",
+    acceptedAt: "2026-08-09",
     blocks: [
-      "F2-I08 seed/import pipeline",
-      "UI on canonical content",
-      "status promotions to reviewed/approved without decision",
+      "status promotions to approved without language review",
+      "remote supabase seed/migration without explicit step",
     ],
   },
   counts: {
@@ -225,7 +225,7 @@ console.log(
   [
     "Content audit passed structural gates.",
     `Report: ${path.relative(ROOT, REPORT_PATH)}`,
-    "CP-6 status: pending_user_acceptance",
+    "CP-6 status: accepted",
     `Not approved: units=${notApproved.units}, grammar=${notApproved.grammarTopics}, dictionary=${notApproved.dictionaryEntries}, passages=${notApproved.readingPassages}, readingExercises=${notApproved.exercisesReading}`,
   ].join("\n"),
 );

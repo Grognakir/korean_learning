@@ -5,23 +5,14 @@ import type { Exercise } from "@/features/training/domain/exercise";
 import { sampleExercises } from "@/modules/sample/sampleExercises";
 import { sampleModule } from "@/modules/sample/sampleModule";
 
-function sqlString(value: string | null | undefined): string {
-  if (value === null || value === undefined) {
-    return "null";
-  }
-  return `'${value.replace(/'/g, "''")}'`;
-}
-
-function sqlJson(value: unknown): string {
-  return `'${JSON.stringify(value).replace(/'/g, "''")}'::jsonb`;
-}
+import { buildCurriculumSeedSql, sqlJson, sqlString } from "./content/curriculumSeedSql";
 
 const lines: string[] = [
-  "-- Deterministic dev seed for sample module (F1-I26). Do not import honorifics preview.",
+  "-- Deterministic dev seed: sample module (F1) + phase-2 curriculum authoring (F2-I08).",
   "begin;",
   "",
   `insert into public.learning_modules (`,
-  `  id, slug, level, title_ko, title_ru, description_ru, status, content_version, sort_order`,
+  `  id, slug, level, title_ko, title_ru, description_ru, status, content_version, sort_order, unit_number`,
   `) values (`,
   `  '${sampleModule.id}',`,
   `  '${sampleModule.slug}',`,
@@ -31,7 +22,8 @@ const lines: string[] = [
   `  ${sqlString(sampleModule.description.ru)},`,
   `  'published',`,
   `  '${sampleModule.contentVersion}',`,
-  `  ${sampleModule.sortOrder}`,
+  `  ${sampleModule.sortOrder},`,
+  `  null`,
   `);`,
   "",
 ];
@@ -214,10 +206,13 @@ lines.push(
   `  'Sample module seed approval'`,
   `);`,
   "",
-  "commit;",
-  "",
 );
+
+const curriculum = buildCurriculumSeedSql("insert");
+lines.push(curriculum.sql.trimEnd(), "", "commit;", "");
 
 const target = resolve(process.cwd(), "supabase/seed.sql");
 writeFileSync(target, lines.join("\n"));
-console.log(`Wrote ${target} (${sampleExercises.length} exercises)`);
+console.log(
+  `Wrote ${target} (sampleExercises=${sampleExercises.length}, curriculumExercises=${curriculum.stats.exercises}, modules=${1 + curriculum.stats.modules})`,
+);

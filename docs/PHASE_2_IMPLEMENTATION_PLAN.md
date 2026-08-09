@@ -406,7 +406,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I07 — Content audit gate и CP-6
 
-- **Статус:** `blocked` (ожидает принятия CP-6).
+- **Статус:** `done` (CP-6 принят пользователем 2026-08-09).
 - **Цель:** доказать, что структура и импорт полны, прежде чем строить пользовательский UI.
 - **Вход:** F2-I06 `done`.
 - **Ветка:** `codex/f2-i07-content-audit-gate`.
@@ -421,7 +421,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I08 — Детерминированный seed/import pipeline
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** переносить canonical content в Supabase одной проверяемой транзакцией.
 - **Вход:** F2-I07 `done`, CP-6 принят.
 - **Ветка:** `codex/f2-i08-content-seed-pipeline`.

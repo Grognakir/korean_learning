@@ -7,12 +7,22 @@ import { countRows, createLocalAdminClient, expectSqlFailure, runSql } from "./h
 describe("database schema and seed", () => {
   const client = createLocalAdminClient();
 
-  it("applies seed counts for the sample module", async () => {
-    await expect(countRows(client, "learning_modules")).resolves.toBe(1);
-    await expect(countRows(client, "grammar_topics")).resolves.toBe(2);
-    await expect(countRows(client, "exercises")).resolves.toBe(14);
+  it("applies seed counts for the sample module and curriculum import", async () => {
+    await expect(countRows(client, "learning_modules")).resolves.toBe(17);
+    await expect(countRows(client, "grammar_topics")).resolves.toBe(82);
+    await expect(countRows(client, "exercises")).resolves.toBe(114);
+    await expect(countRows(client, "dictionary_entries")).resolves.toBe(1091);
+    await expect(countRows(client, "reading_passages")).resolves.toBe(178);
     await expect(countRows(client, "exercise_topics")).resolves.toBe(14);
     await expect(countRows(client, "content_reviews")).resolves.toBe(15);
+    expect(
+      runSql("select count(*)::text from public.exercises where learning_skill = 'reading';"),
+    ).toBe("100");
+    expect(
+      runSql(
+        "select count(*)::text from public.exercises where status = 'draft' and learning_skill = 'reading';",
+      ),
+    ).toBe("100");
   });
 
   it("rejects duplicate exercise logical_id + content_version", () => {
@@ -104,6 +114,11 @@ describe("database schema and seed", () => {
     expect(
       runSql("select count(*)::text from public.exercises where learning_skill = 'grammar';"),
     ).toBe("14");
+    expect(
+      runSql(
+        "select count(*)::text from public.learning_modules where unit_number is not null and level = '1급';",
+      ),
+    ).toBe("16");
 
     expect(
       runSql(
@@ -202,7 +217,8 @@ describe("database reset repeatability", () => {
   it("matches seed counts after a second reset", async () => {
     runSql("select 1");
     execSync("node_modules/.bin/supabase db reset", { cwd: process.cwd(), stdio: "inherit" });
-    await expect(countRows(createLocalAdminClient(), "learning_modules")).resolves.toBe(1);
-    await expect(countRows(createLocalAdminClient(), "exercises")).resolves.toBe(14);
+    await expect(countRows(createLocalAdminClient(), "learning_modules")).resolves.toBe(17);
+    await expect(countRows(createLocalAdminClient(), "exercises")).resolves.toBe(114);
+    await expect(countRows(createLocalAdminClient(), "dictionary_entries")).resolves.toBe(1091);
   });
 });

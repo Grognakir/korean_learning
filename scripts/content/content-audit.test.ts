@@ -25,7 +25,7 @@ describe("phase-2 content audit gate", () => {
     };
 
     expect(report.checkpoint.id).toBe("CP-6");
-    expect(report.checkpoint.status).toBe("pending_user_acceptance");
+    expect(report.checkpoint.status).toBe("accepted");
     expect(report.auditDoc).toBe("docs/PHASE_2_CONTENT_AUDIT.md");
     expect(report.correspondence.topicsUnits).toBe(true);
     expect(report.correspondence.grammarTopics).toBe(true);

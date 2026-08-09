@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I06 `done`; F2-I07 audit gate готов, CP-6 pending).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I08 `done`; CP-6 принят).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I07 content audit gate — `blocked` на CP-6.
-- **Статус текущей итерации:** audit tooling/`content-audit-report.json` готовы; ждём принятия CP-6.
-- **Уже сделано:** `pnpm content:audit`; отчёт counts/statuses/correspondence/vocabulary boundary/open questions.
-- **Выполненные проверки:** content:audit + content tests; format/lint/typecheck/unit/integration/build; DB/RLS без новых migrations.
-- **Сейчас работает:** sample runtime; authoring draft в `content/phase-2`.
-- **Пока не работает / ограничения:** F2-I08+ заблокированы до CP-6; ничего не approved; Preview SSO как раньше.
-- **Следующий конкретный шаг:** принять или отклонить CP-6; после принятия — F2-I08.
+- **Текущая итерация:** F2-I08 deterministic content import — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i08-content-seed-pipeline`.
+- **Уже сделано:** `db:seed` пишет sample + curriculum; `content:import` upsert/dry-run; local reset даёт 17 modules / 82 topics / 1091 dict / 178 passages / 114 exercises.
+- **Выполненные проверки:** content/unit/integration/db/rls/build gate итерации.
+- **Сейчас работает:** local Supabase seed с draft curriculum + published sample; runtime UI ещё на sample.
+- **Пока не работает / ограничения:** repositories/UI каталога ещё нет (F2-I09+); remote seed не применялся; Preview SSO как раньше.
+- **Следующий конкретный шаг:** F2-I09 — content repositories и public DTO.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.
@@ -1506,7 +1506,7 @@ MVP включает навигацию по темам и грамматике,
 
 ## 24. Чек-лист выпуска v0.1.0
 
-- [ ] CP-5, CP-6, CP-7, CP-8 и CP-9 подтверждены.
+- [x] CP-5, CP-6 подтверждены; [ ] CP-7, CP-8 и CP-9 подтверждены.
 - [ ] Scope соответствует MVP; higher-level grammar не попала в release pool.
 - [ ] Все published exercises имеют approved review той же версии.
 - [ ] Нет открытых P0/P1; P2 явно приняты или исправлены.

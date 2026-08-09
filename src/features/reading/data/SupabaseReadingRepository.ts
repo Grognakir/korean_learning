@@ -1,44 +1,61 @@
 import "server-only";
 
-import { unstable_cache } from "next/cache";
-
 import type { CatalogQuery } from "@/features/catalog/domain/types";
-import { createServiceRoleSupabaseClient } from "@/lib/supabase/serviceRoleClient";
+import {
+  createServiceRoleSupabaseClient,
+  type ServiceRoleSupabaseClient,
+} from "@/lib/supabase/serviceRoleClient";
+import { CurriculumContentError } from "@/modules/curriculum/CurriculumContentError";
 
 import type { ReadingRepository } from "./ReadingRepository";
 import type { PublicCurriculumExercise, PublicReadingPassage } from "../domain/types";
 
-async function loadPublishedReadingBundle(): Promise<{
+type PublishedReadingBundle = {
   passages: PublicReadingPassage[];
   exercises: PublicCurriculumExercise[];
-}> {
-  const supabase = createServiceRoleSupabaseClient();
+};
 
-  const [passagesResult, modulesResult, exercisesResult, optionsResult] = await Promise.all([
-    supabase
-      .from("reading_passages")
-      .select(
-        "id, logical_id, primary_module_id, title_ko, title_ru, body_ko, content_version, status",
-      )
-      .eq("status", "published"),
-    supabase
-      .from("learning_modules")
-      .select("id, slug, unit_number")
-      .eq("status", "published")
-      .not("unit_number", "is", null),
-    supabase
-      .from("exercises")
-      .select(
-        "id, logical_id, module_id, learning_skill, type, difficulty, prompt_ko, prompt_ru, reading_passage_id, primary_topic_id, content_version, status",
-      )
-      .eq("status", "approved"),
-    supabase.from("exercise_options_public").select("exercise_id, option_key, label_ko, label_ru"),
-  ]);
+export async function loadPublishedReadingBundle(
+  supabase: ServiceRoleSupabaseClient = createServiceRoleSupabaseClient(),
+): Promise<PublishedReadingBundle> {
+  let results;
+  try {
+    results = await Promise.all([
+      supabase
+        .from("reading_passages")
+        .select(
+          "id, logical_id, primary_module_id, title_ko, title_ru, body_ko, content_version, status",
+        )
+        .eq("status", "published"),
+      supabase
+        .from("learning_modules")
+        .select("id, slug, unit_number")
+        .eq("status", "published")
+        .not("unit_number", "is", null),
+      supabase.from("grammar_topics").select("id, logical_id").eq("status", "published"),
+      supabase
+        .from("exercises")
+        .select(
+          "id, logical_id, module_id, learning_skill, type, difficulty, prompt_ko, prompt_ru, reading_passage_id, primary_topic_id, content_version, status",
+        )
+        .eq("status", "approved"),
+      supabase
+        .from("exercise_options_public")
+        .select("exercise_id, option_key, label_ko, label_ru, sort_order")
+        .order("sort_order", { ascending: true }),
+    ]);
+  } catch (error) {
+    throw new CurriculumContentError("Reading query failed", error);
+  }
 
-  if (passagesResult.error) throw passagesResult.error;
-  if (modulesResult.error) throw modulesResult.error;
-  if (exercisesResult.error) throw exercisesResult.error;
-  if (optionsResult.error) throw optionsResult.error;
+  const [passagesResult, modulesResult, topicsResult, exercisesResult, optionsResult] = results;
+  const queryError =
+    passagesResult.error ??
+    modulesResult.error ??
+    topicsResult.error ??
+    exercisesResult.error ??
+    optionsResult.error;
+  if (queryError) throw new CurriculumContentError("Reading query failed", queryError);
 
   const modules = new Map(
     (modulesResult.data ?? []).map((module) => [
@@ -85,6 +102,9 @@ async function loadPublishedReadingBundle(): Promise<{
   }
 
   const passageLogicalById = new Map(passages.map((passage) => [passage.id, passage.logicalId]));
+  const topicLogicalById = new Map(
+    (topicsResult.data ?? []).map((topic) => [topic.id, topic.logical_id]),
+  );
 
   const exercises: PublicCurriculumExercise[] = (exercisesResult.data ?? []).flatMap((exercise) => {
     const learningModule = modules.get(exercise.module_id);
@@ -107,7 +127,9 @@ async function loadPublishedReadingBundle(): Promise<{
         readingPassageLogicalId: exercise.reading_passage_id
           ? (passageLogicalById.get(exercise.reading_passage_id) ?? null)
           : null,
-        grammarTopicLogicalId: null,
+        grammarTopicLogicalId: exercise.primary_topic_id
+          ? (topicLogicalById.get(exercise.primary_topic_id) ?? null)
+          : null,
         contentVersion: exercise.content_version as PublicCurriculumExercise["contentVersion"],
       },
     ];
@@ -116,16 +138,24 @@ async function loadPublishedReadingBundle(): Promise<{
   return { passages, exercises };
 }
 
-const getCachedReadingBundle = unstable_cache(loadPublishedReadingBundle, ["curriculum-reading"], {
-  tags: ["curriculum-reading"],
-  revalidate: 3600,
-});
-
 export class SupabaseReadingRepository implements ReadingRepository {
+  #inFlight: Promise<PublishedReadingBundle> | undefined;
+
+  async #getBundle(): Promise<PublishedReadingBundle> {
+    const promise = this.#inFlight ?? loadPublishedReadingBundle();
+    this.#inFlight = promise;
+
+    try {
+      return await promise;
+    } finally {
+      if (this.#inFlight === promise) this.#inFlight = undefined;
+    }
+  }
+
   async listPassages(
     query: Pick<CatalogQuery, "unitSlug"> = {},
   ): Promise<readonly PublicReadingPassage[]> {
-    const bundle = await getCachedReadingBundle();
+    const bundle = await this.#getBundle();
     if (!query.unitSlug) {
       return bundle.passages;
     }
@@ -133,14 +163,14 @@ export class SupabaseReadingRepository implements ReadingRepository {
   }
 
   async getPassageByLogicalId(logicalId: string): Promise<PublicReadingPassage | undefined> {
-    const bundle = await getCachedReadingBundle();
+    const bundle = await this.#getBundle();
     return bundle.passages.find((passage) => passage.logicalId === logicalId);
   }
 
   async listApprovedExercises(
     query: CatalogQuery = {},
   ): Promise<readonly PublicCurriculumExercise[]> {
-    const bundle = await getCachedReadingBundle();
+    const bundle = await this.#getBundle();
     let exercises = bundle.exercises;
 
     if (query.unitSlug) {

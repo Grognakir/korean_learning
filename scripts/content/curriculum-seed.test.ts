@@ -35,6 +35,10 @@ describe("curriculum seed SQL builder", () => {
     expect(first.sql).toContain("'grammar'");
     expect(first.sql).toContain("'vocabulary'");
     expect(first.sql).toContain("accepted_answers");
+    expect(first.sql).toContain("'u01-n01'");
+    expect(first.sql).toMatch(
+      /exercise\.grammar\.u01\.n01\.application[\s\S]*?accepted_answers[\s\S]*?'approved'/,
+    );
     expect(first.sql).toContain("'secondary'");
     expect(first.sql).toContain("matching-translation");
     expect(uuidFromKey("module:unit.u01@1.0.0")).toBe(uuidFromKey("module:unit.u01@1.0.0"));

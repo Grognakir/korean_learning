@@ -29,12 +29,20 @@ const topicRulePayloadSchema = z
   })
   .passthrough();
 
+export function normalizeTopicCode(value: string): string {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 function mapTopicRow(row: GrammarTopicRow): LearningTopicDefinition {
   const rulePayload = topicRulePayloadSchema.safeParse(row.rule_payload).data ?? {};
 
   return {
     id: row.id,
-    code: row.code,
+    code: normalizeTopicCode(row.code),
     title: {
       ko: rulePayload.titleKo ?? row.title,
       ru: row.title,

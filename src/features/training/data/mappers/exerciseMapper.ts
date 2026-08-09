@@ -114,7 +114,7 @@ function mapOptionRows(rows: readonly ExerciseOptionRow[]): ExerciseOption[] {
 function resolveTopicIds(
   exerciseId: string,
   topicRows: readonly ExerciseTopicRow[],
-  primaryTopicId: string,
+  primaryTopicId: string | null,
 ): readonly string[] {
   const linked = topicRows
     .filter((row) => row.exercise_id === exerciseId)
@@ -132,7 +132,7 @@ function resolveTopicIds(
     .map((row) => row.topic_id);
 
   if (linked.length === 0) {
-    return [primaryTopicId];
+    return primaryTopicId ? [primaryTopicId] : [];
   }
 
   return linked;

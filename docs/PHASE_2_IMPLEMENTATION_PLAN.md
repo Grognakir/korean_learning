@@ -2,7 +2,7 @@
 
 Последнее обновление: 2026-08-09
 
-Статус: `in_progress` (F2-I01–F2-I02 `done`). Фаза 1 завершена и слита в `main` коммитом `4fb00b8`.
+Статус: `in_progress` (F2-I01–F2-I03 `done`). Фаза 1 завершена и слита в `main` коммитом `4fb00b8`.
 
 ## 1. Как использовать этот документ
 
@@ -342,7 +342,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I03 — Схема Supabase для трёх навыков
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** расширить существующую БД forward-only без потери phase-1 данных.
 - **Вход:** F2-I02 `done`; прочитаны текущие migrations/RPC/RLS/tests.
 - **Ветка:** `codex/f2-i03-curriculum-schema`.

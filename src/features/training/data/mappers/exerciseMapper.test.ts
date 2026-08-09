@@ -15,6 +15,8 @@ describe("exerciseMapper", () => {
         logical_id: exercise!.logicalId,
         module_id: sampleModule.id,
         primary_topic_id: exercise!.topicIds[0]!,
+        learning_skill: "grammar",
+        reading_passage_id: null,
         type: exercise!.type,
         difficulty: exercise!.difficulty,
         prompt_ko: exercise!.prompt.ko,

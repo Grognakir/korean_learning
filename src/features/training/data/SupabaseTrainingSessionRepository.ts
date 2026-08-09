@@ -303,11 +303,13 @@ export function createSupabaseTrainingSessionRepository(
         p_score: evaluation.scoreRatio,
         p_reason_code: evaluation.reasonCode,
         p_answer_version: answerVersion,
-        p_duration_ms: request.durationMs ?? null,
-        p_mistake_module_id: mistake?.moduleId ?? null,
-        p_mistake_primary_topic_id: mistake?.primaryTopicId ?? null,
-        p_mistake_concept_key: mistake?.conceptKey ?? null,
-        p_mistake_error_type: mistake?.errorType ?? null,
+        ...(request.durationMs === undefined ? {} : { p_duration_ms: request.durationMs }),
+        ...(mistake?.moduleId === undefined ? {} : { p_mistake_module_id: mistake.moduleId }),
+        ...(mistake?.primaryTopicId === undefined
+          ? {}
+          : { p_mistake_primary_topic_id: mistake.primaryTopicId }),
+        ...(mistake?.conceptKey === undefined ? {} : { p_mistake_concept_key: mistake.conceptKey }),
+        ...(mistake?.errorType === undefined ? {} : { p_mistake_error_type: mistake.errorType }),
       });
 
       if (error || !data) {

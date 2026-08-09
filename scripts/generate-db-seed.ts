@@ -39,7 +39,8 @@ const lines: string[] = [
 for (const topic of sampleModule.topics) {
   lines.push(
     `insert into public.grammar_topics (`,
-    `  id, module_id, code, title, summary_ru, rule_payload, level, status, sort_order, content_version`,
+    `  id, module_id, code, title, summary_ru, rule_payload, level, status, sort_order, content_version,`,
+    `  logical_id, pattern_ko, category, usage_key`,
     `) values (`,
     `  '${topic.id}',`,
     `  '${sampleModule.id}',`,
@@ -50,7 +51,11 @@ for (const topic of sampleModule.topics) {
     `  ${sqlString(topic.level)},`,
     `  'published',`,
     `  ${topic.sortOrder},`,
-    `  '${topic.contentVersion}'`,
+    `  '${topic.contentVersion}',`,
+    `  ${sqlString(`grammar.sample.${topic.code}`)},`,
+    `  ${sqlString(topic.title.ko)},`,
+    `  'sample',`,
+    `  null`,
     `);`,
     "",
   );
@@ -91,13 +96,15 @@ for (const exercise of sampleExercises) {
   const primaryTopicId = exercise.topicIds[0];
   lines.push(
     `insert into public.exercises (`,
-    `  id, logical_id, module_id, primary_topic_id, type, difficulty,`,
+    `  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,`,
     `  prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source`,
     `) values (`,
     `  '${exercise.id}',`,
     `  '${exercise.logicalId}',`,
     `  '${sampleModule.id}',`,
     `  '${primaryTopicId}',`,
+    `  'grammar',`,
+    `  null,`,
     `  '${exercise.type}',`,
     `  '${exercise.difficulty}',`,
     `  ${sqlString(exercise.prompt.ko)},`,

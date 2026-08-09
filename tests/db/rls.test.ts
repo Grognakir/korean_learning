@@ -200,5 +200,54 @@ describe("RLS trusted server access", () => {
     await expectSelectCount(admin, "exercise_options", 12);
     await expectSelectCount(admin, "accepted_answers", 4);
     await expectSelectCount(admin, "content_reviews", 15);
+    await expectSelectCount(admin, "content_sources", 4);
+  });
+});
+
+describe("RLS curriculum skill tables", () => {
+  const anon = createLocalAnonClient();
+
+  it("hides draft reading passages and authoring provenance from anon", async () => {
+    runSql(
+      "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('22222222-2222-4222-8222-222222222222', 'reading.sample.draft', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'draft-ko', 'draft', 'body', 'draft', '1.0.0');",
+    );
+
+    await expectSelectCount(anon, "reading_passages", 0);
+    await expectSelectDenied(anon, "content_sources");
+    await expectSelectDenied(anon, "content_provenance");
+  });
+
+  it("exposes published reading passages under a published module", async () => {
+    runSql(
+      "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('33333333-3333-4333-8333-333333333333', 'reading.sample.published', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'title-ko', 'passage', 'hello', 'published', '1.0.0');",
+    );
+
+    await expectSelectCount(anon, "reading_passages", 1);
+  });
+
+  it("isolates user_skill_progress between users", async () => {
+    const userA = await createTestAuthUser("skill-a");
+    const userB = await createTestAuthUser("skill-b");
+    const clientA = asUserClient(userA);
+    const clientB = asUserClient(userB);
+
+    runSql(
+      `insert into public.user_skill_progress (user_id, module_id, learning_skill, attempts, correct, accuracy, mastery) values ('${userA.id}', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'grammar', 2, 1, 0.5, 'learning');`,
+    );
+
+    await expectSelectCount(clientA, "user_skill_progress", 1);
+    await expectSelectCount(clientB, "user_skill_progress", 0);
+
+    await expectMutationDenied(() =>
+      clientA.from("user_skill_progress").insert({
+        user_id: userA.id,
+        module_id: SAMPLE_MODULE_ID,
+        learning_skill: "vocabulary",
+        attempts: 1,
+        correct: 0,
+        accuracy: 0,
+        mastery: "learning",
+      }),
+    );
   });
 });

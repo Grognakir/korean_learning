@@ -57,10 +57,14 @@ async function submitAttempt(
     p_score: input.isCorrect ? 1 : 0,
     p_reason_code: input.isCorrect ? "correct" : "incorrect",
     p_answer_version: "1.0.0",
-    p_mistake_module_id: input.isCorrect ? null : SAMPLE_MODULE_ID,
-    p_mistake_primary_topic_id: input.isCorrect ? null : SAMPLE_TOPIC_ID,
-    p_mistake_concept_key: input.isCorrect ? null : CONCEPT_KEY,
-    p_mistake_error_type: input.isCorrect ? null : "incorrect",
+    ...(input.isCorrect
+      ? {}
+      : {
+          p_mistake_module_id: SAMPLE_MODULE_ID,
+          p_mistake_primary_topic_id: SAMPLE_TOPIC_ID,
+          p_mistake_concept_key: CONCEPT_KEY,
+          p_mistake_error_type: "incorrect",
+        }),
     p_now: input.now ?? NOW,
   });
 

@@ -189,6 +189,56 @@ export type Database = {
           },
         ];
       };
+      content_provenance: {
+        Row: {
+          confidence: Database["public"]["Enums"]["content_confidence"];
+          content_version: string;
+          created_at: string;
+          entity_logical_id: string;
+          entity_type: Database["public"]["Enums"]["content_review_entity_type"];
+          id: string;
+          locator: string;
+          note: string | null;
+          record_hash: string;
+          review_state: Database["public"]["Enums"]["content_lifecycle_status"];
+          source_id: string;
+        };
+        Insert: {
+          confidence?: Database["public"]["Enums"]["content_confidence"];
+          content_version: string;
+          created_at?: string;
+          entity_logical_id: string;
+          entity_type: Database["public"]["Enums"]["content_review_entity_type"];
+          id?: string;
+          locator: string;
+          note?: string | null;
+          record_hash: string;
+          review_state?: Database["public"]["Enums"]["content_lifecycle_status"];
+          source_id: string;
+        };
+        Update: {
+          confidence?: Database["public"]["Enums"]["content_confidence"];
+          content_version?: string;
+          created_at?: string;
+          entity_logical_id?: string;
+          entity_type?: Database["public"]["Enums"]["content_review_entity_type"];
+          id?: string;
+          locator?: string;
+          note?: string | null;
+          record_hash?: string;
+          review_state?: Database["public"]["Enums"]["content_lifecycle_status"];
+          source_id?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "content_provenance_source_id_fkey";
+            columns: ["source_id"];
+            isOneToOne: false;
+            referencedRelation: "content_sources";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
       content_reviews: {
         Row: {
           content_version: string;
@@ -225,17 +275,54 @@ export type Database = {
         };
         Relationships: [];
       };
+      content_sources: {
+        Row: {
+          created_at: string;
+          derived: boolean;
+          display_label: string;
+          id: string;
+          kind: string;
+          note: string | null;
+          source_key: string;
+          updated_at: string;
+        };
+        Insert: {
+          created_at?: string;
+          derived?: boolean;
+          display_label: string;
+          id?: string;
+          kind: string;
+          note?: string | null;
+          source_key: string;
+          updated_at?: string;
+        };
+        Update: {
+          created_at?: string;
+          derived?: boolean;
+          display_label?: string;
+          id?: string;
+          kind?: string;
+          note?: string | null;
+          source_key?: string;
+          updated_at?: string;
+        };
+        Relationships: [];
+      };
       dictionary_entries: {
         Row: {
           content_version: string;
           created_at: string;
           id: string;
           lemma_ko: string;
+          level: string | null;
+          logical_id: string;
           meanings_ru: Json;
           module_id: string;
           normalized_lemma_ko: string;
           part_of_speech: string;
+          sense_key: string;
           status: Database["public"]["Enums"]["content_lifecycle_status"];
+          transliteration: string | null;
           updated_at: string;
           usage_note_ru: string | null;
         };
@@ -244,11 +331,15 @@ export type Database = {
           created_at?: string;
           id?: string;
           lemma_ko: string;
+          level?: string | null;
+          logical_id: string;
           meanings_ru: Json;
           module_id: string;
           normalized_lemma_ko: string;
           part_of_speech: string;
+          sense_key: string;
           status?: Database["public"]["Enums"]["content_lifecycle_status"];
+          transliteration?: string | null;
           updated_at?: string;
           usage_note_ru?: string | null;
         };
@@ -257,11 +348,15 @@ export type Database = {
           created_at?: string;
           id?: string;
           lemma_ko?: string;
+          level?: string | null;
+          logical_id?: string;
           meanings_ru?: Json;
           module_id?: string;
           normalized_lemma_ko?: string;
           part_of_speech?: string;
+          sense_key?: string;
           status?: Database["public"]["Enums"]["content_lifecycle_status"];
+          transliteration?: string | null;
           updated_at?: string;
           usage_note_ru?: string | null;
         };
@@ -271,6 +366,75 @@ export type Database = {
             columns: ["module_id"];
             isOneToOne: false;
             referencedRelation: "learning_modules";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
+      dictionary_entry_modules: {
+        Row: {
+          entry_id: string;
+          module_id: string;
+          role: Database["public"]["Enums"]["dictionary_module_role"];
+          sort_order: number;
+        };
+        Insert: {
+          entry_id: string;
+          module_id: string;
+          role?: Database["public"]["Enums"]["dictionary_module_role"];
+          sort_order?: number;
+        };
+        Update: {
+          entry_id?: string;
+          module_id?: string;
+          role?: Database["public"]["Enums"]["dictionary_module_role"];
+          sort_order?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "dictionary_entry_modules_entry_id_fkey";
+            columns: ["entry_id"];
+            isOneToOne: false;
+            referencedRelation: "dictionary_entries";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "dictionary_entry_modules_module_id_fkey";
+            columns: ["module_id"];
+            isOneToOne: false;
+            referencedRelation: "learning_modules";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
+      exercise_dictionary_entries: {
+        Row: {
+          dictionary_entry_id: string;
+          exercise_id: string;
+          role: Database["public"]["Enums"]["exercise_dictionary_role"];
+        };
+        Insert: {
+          dictionary_entry_id: string;
+          exercise_id: string;
+          role?: Database["public"]["Enums"]["exercise_dictionary_role"];
+        };
+        Update: {
+          dictionary_entry_id?: string;
+          exercise_id?: string;
+          role?: Database["public"]["Enums"]["exercise_dictionary_role"];
+        };
+        Relationships: [
+          {
+            foreignKeyName: "exercise_dictionary_entries_dictionary_entry_id_fkey";
+            columns: ["dictionary_entry_id"];
+            isOneToOne: false;
+            referencedRelation: "dictionary_entries";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "exercise_dictionary_entries_exercise_id_fkey";
+            columns: ["exercise_id"];
+            isOneToOne: false;
+            referencedRelation: "exercises";
             referencedColumns: ["id"];
           },
         ];
@@ -359,12 +523,14 @@ export type Database = {
           difficulty: Database["public"]["Enums"]["exercise_difficulty"];
           explanation_ru: string;
           id: string;
+          learning_skill: Database["public"]["Enums"]["learning_skill"];
           logical_id: string;
           module_id: string;
           payload: Json;
-          primary_topic_id: string;
+          primary_topic_id: string | null;
           prompt_ko: string | null;
           prompt_ru: string | null;
+          reading_passage_id: string | null;
           source: Database["public"]["Enums"]["exercise_source"];
           source_generation_id: string | null;
           status: Database["public"]["Enums"]["exercise_lifecycle_status"];
@@ -377,12 +543,14 @@ export type Database = {
           difficulty: Database["public"]["Enums"]["exercise_difficulty"];
           explanation_ru: string;
           id?: string;
+          learning_skill?: Database["public"]["Enums"]["learning_skill"];
           logical_id: string;
           module_id: string;
           payload?: Json;
-          primary_topic_id: string;
+          primary_topic_id?: string | null;
           prompt_ko?: string | null;
           prompt_ru?: string | null;
+          reading_passage_id?: string | null;
           source?: Database["public"]["Enums"]["exercise_source"];
           source_generation_id?: string | null;
           status?: Database["public"]["Enums"]["exercise_lifecycle_status"];
@@ -395,12 +563,14 @@ export type Database = {
           difficulty?: Database["public"]["Enums"]["exercise_difficulty"];
           explanation_ru?: string;
           id?: string;
+          learning_skill?: Database["public"]["Enums"]["learning_skill"];
           logical_id?: string;
           module_id?: string;
           payload?: Json;
-          primary_topic_id?: string;
+          primary_topic_id?: string | null;
           prompt_ko?: string | null;
           prompt_ru?: string | null;
+          reading_passage_id?: string | null;
           source?: Database["public"]["Enums"]["exercise_source"];
           source_generation_id?: string | null;
           status?: Database["public"]["Enums"]["exercise_lifecycle_status"];
@@ -420,6 +590,13 @@ export type Database = {
             columns: ["primary_topic_id"];
             isOneToOne: false;
             referencedRelation: "grammar_topics";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "exercises_reading_passage_id_fkey";
+            columns: ["reading_passage_id"];
+            isOneToOne: false;
+            referencedRelation: "reading_passages";
             referencedColumns: ["id"];
           },
           {
@@ -474,46 +651,58 @@ export type Database = {
       };
       grammar_topics: {
         Row: {
+          category: string;
           code: string;
           content_version: string;
           created_at: string;
           id: string;
           level: string;
+          logical_id: string;
           module_id: string;
+          pattern_ko: string;
           rule_payload: Json;
           sort_order: number;
           status: Database["public"]["Enums"]["content_lifecycle_status"];
           summary_ru: string;
           title: string;
           updated_at: string;
+          usage_key: string | null;
         };
         Insert: {
+          category: string;
           code: string;
           content_version: string;
           created_at?: string;
           id?: string;
           level: string;
+          logical_id: string;
           module_id: string;
+          pattern_ko: string;
           rule_payload?: Json;
           sort_order?: number;
           status?: Database["public"]["Enums"]["content_lifecycle_status"];
           summary_ru: string;
           title: string;
           updated_at?: string;
+          usage_key?: string | null;
         };
         Update: {
+          category?: string;
           code?: string;
           content_version?: string;
           created_at?: string;
           id?: string;
           level?: string;
+          logical_id?: string;
           module_id?: string;
+          pattern_ko?: string;
           rule_payload?: Json;
           sort_order?: number;
           status?: Database["public"]["Enums"]["content_lifecycle_status"];
           summary_ru?: string;
           title?: string;
           updated_at?: string;
+          usage_key?: string | null;
         };
         Relationships: [
           {
@@ -598,6 +787,7 @@ export type Database = {
           status: Database["public"]["Enums"]["content_lifecycle_status"];
           title_ko: string;
           title_ru: string;
+          unit_number: number | null;
           updated_at: string;
         };
         Insert: {
@@ -611,6 +801,7 @@ export type Database = {
           status?: Database["public"]["Enums"]["content_lifecycle_status"];
           title_ko: string;
           title_ru: string;
+          unit_number?: number | null;
           updated_at?: string;
         };
         Update: {
@@ -624,6 +815,7 @@ export type Database = {
           status?: Database["public"]["Enums"]["content_lifecycle_status"];
           title_ko?: string;
           title_ru?: string;
+          unit_number?: number | null;
           updated_at?: string;
         };
         Relationships: [];
@@ -719,6 +911,59 @@ export type Database = {
           user_id?: string;
         };
         Relationships: [];
+      };
+      reading_passages: {
+        Row: {
+          body_ko: string;
+          content_version: string;
+          created_at: string;
+          id: string;
+          logical_id: string;
+          payload: Json;
+          primary_module_id: string;
+          status: Database["public"]["Enums"]["content_lifecycle_status"];
+          title_ko: string;
+          title_ru: string;
+          translation_ru: string | null;
+          updated_at: string;
+        };
+        Insert: {
+          body_ko: string;
+          content_version: string;
+          created_at?: string;
+          id?: string;
+          logical_id: string;
+          payload?: Json;
+          primary_module_id: string;
+          status?: Database["public"]["Enums"]["content_lifecycle_status"];
+          title_ko: string;
+          title_ru: string;
+          translation_ru?: string | null;
+          updated_at?: string;
+        };
+        Update: {
+          body_ko?: string;
+          content_version?: string;
+          created_at?: string;
+          id?: string;
+          logical_id?: string;
+          payload?: Json;
+          primary_module_id?: string;
+          status?: Database["public"]["Enums"]["content_lifecycle_status"];
+          title_ko?: string;
+          title_ru?: string;
+          translation_ru?: string | null;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "reading_passages_primary_module_id_fkey";
+            columns: ["primary_module_id"];
+            isOneToOne: false;
+            referencedRelation: "learning_modules";
+            referencedColumns: ["id"];
+          },
+        ];
       };
       review_queue: {
         Row: {
@@ -929,6 +1174,60 @@ export type Database = {
           },
         ];
       };
+      user_skill_progress: {
+        Row: {
+          accuracy: number;
+          attempts: number;
+          correct: number;
+          created_at: string;
+          last_practiced_at: string | null;
+          learning_skill: Database["public"]["Enums"]["learning_skill"];
+          mastery: Database["public"]["Enums"]["mastery_status"];
+          module_id: string;
+          updated_at: string;
+          user_id: string;
+        };
+        Insert: {
+          accuracy?: number;
+          attempts?: number;
+          correct?: number;
+          created_at?: string;
+          last_practiced_at?: string | null;
+          learning_skill: Database["public"]["Enums"]["learning_skill"];
+          mastery?: Database["public"]["Enums"]["mastery_status"];
+          module_id: string;
+          updated_at?: string;
+          user_id: string;
+        };
+        Update: {
+          accuracy?: number;
+          attempts?: number;
+          correct?: number;
+          created_at?: string;
+          last_practiced_at?: string | null;
+          learning_skill?: Database["public"]["Enums"]["learning_skill"];
+          mastery?: Database["public"]["Enums"]["mastery_status"];
+          module_id?: string;
+          updated_at?: string;
+          user_id?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "user_skill_progress_module_id_fkey";
+            columns: ["module_id"];
+            isOneToOne: false;
+            referencedRelation: "learning_modules";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "user_skill_progress_user_id_fkey";
+            columns: ["user_id"];
+            isOneToOne: false;
+            referencedRelation: "profiles";
+            referencedColumns: ["user_id"];
+          },
+        ];
+      };
       user_topic_progress: {
         Row: {
           accuracy: number;
@@ -1018,13 +1317,51 @@ export type Database = {
       };
     };
     Functions: {
+      apply_review_queue_after_attempt: {
+        Args: {
+          p_attempt_id: string;
+          p_concept_key: string;
+          p_exercise_id: string;
+          p_is_correct: boolean;
+          p_module_id: string;
+          p_now: string;
+          p_session_mode: string;
+          p_user_id: string;
+        };
+        Returns: undefined;
+      };
+      approved_exercise_exists_for_concept: {
+        Args: { p_concept_key: string; p_module_id: string };
+        Returns: boolean;
+      };
       complete_training_session: {
         Args: {
           p_completed_at?: string;
           p_idempotency_key: string;
           p_session_id: string;
         };
-        Returns: Database["public"]["Tables"]["training_sessions"]["Row"];
+        Returns: {
+          complete_idempotency_key: string | null;
+          completed_at: string | null;
+          content_version: string;
+          current_index: number;
+          difficulty: Database["public"]["Enums"]["exercise_difficulty"] | null;
+          id: string;
+          idempotency_key: string;
+          last_activity_at: string;
+          mode: string;
+          module_id: string;
+          random_seed: string;
+          started_at: string;
+          status: Database["public"]["Enums"]["training_session_status"];
+          user_id: string;
+        };
+        SetofOptions: {
+          from: "*";
+          to: "training_sessions";
+          isOneToOne: true;
+          isSetofReturn: false;
+        };
       };
       compute_module_mastery_status: {
         Args: {
@@ -1035,24 +1372,22 @@ export type Database = {
         Returns: Database["public"]["Enums"]["mastery_status"];
       };
       compute_topic_mastery_status: {
-        Args: {
-          p_attempts_count: number;
-          p_correct_count: number;
-        };
+        Args: { p_attempts_count: number; p_correct_count: number };
         Returns: Database["public"]["Enums"]["mastery_status"];
       };
       is_public_exercise: { Args: { p_exercise_id: string }; Returns: boolean };
       is_published_module: { Args: { p_module_id: string }; Returns: boolean };
+      is_published_reading_passage: {
+        Args: { p_passage_id: string };
+        Returns: boolean;
+      };
       is_published_topic: { Args: { p_topic_id: string }; Returns: boolean };
       is_semver: { Args: { "": string }; Returns: boolean };
       owns_training_session: {
         Args: { p_session_id: string };
         Returns: boolean;
       };
-      rebuild_user_progress: {
-        Args: { p_user_id: string };
-        Returns: undefined;
-      };
+      rebuild_user_progress: { Args: { p_user_id: string }; Returns: undefined };
       refresh_user_progress_for_session: {
         Args: {
           p_completed_at: string;
@@ -1064,14 +1399,14 @@ export type Database = {
       submit_training_attempt: {
         Args: {
           p_answer_version: string;
-          p_duration_ms?: number | null;
+          p_duration_ms?: number;
           p_exercise_id: string;
           p_idempotency_key: string;
           p_is_correct: boolean;
-          p_mistake_concept_key?: string | null;
-          p_mistake_error_type?: string | null;
-          p_mistake_module_id?: string | null;
-          p_mistake_primary_topic_id?: string | null;
+          p_mistake_concept_key?: string;
+          p_mistake_error_type?: string;
+          p_mistake_module_id?: string;
+          p_mistake_primary_topic_id?: string;
           p_normalized_answer: Json;
           p_now?: string;
           p_raw_answer: Json;
@@ -1079,20 +1414,69 @@ export type Database = {
           p_score: number;
           p_session_id: string;
         };
-        Returns: Database["public"]["Tables"]["attempts"]["Row"];
+        Returns: {
+          answer_version: string;
+          answered_at: string;
+          attempt_number: number;
+          duration_ms: number | null;
+          exercise_id: string;
+          id: string;
+          idempotency_key: string;
+          is_correct: boolean;
+          normalized_answer: Json;
+          raw_answer: Json;
+          reason_code: string;
+          score: number;
+          session_id: string;
+          user_id: string;
+        };
+        SetofOptions: {
+          from: "*";
+          to: "attempts";
+          isOneToOne: true;
+          isSetofReturn: false;
+        };
       };
       sync_review_queue_availability: {
         Args: { p_now?: string };
-        Returns: Database["public"]["Tables"]["review_queue"]["Row"][];
+        Returns: {
+          concept_key: string;
+          consecutive_correct: number;
+          created_at: string;
+          due_at: string | null;
+          exercise_id: string | null;
+          id: string;
+          interval_stage: number;
+          last_attempt_id: string | null;
+          module_id: string;
+          status: Database["public"]["Enums"]["review_queue_status"];
+          updated_at: string;
+          user_id: string;
+        }[];
+        SetofOptions: {
+          from: "*";
+          to: "review_queue";
+          isOneToOne: false;
+          isSetofReturn: true;
+        };
       };
     };
     Enums: {
       accepted_answer_review_status: "pending" | "approved" | "rejected";
       ai_generation_status: "queued" | "running" | "succeeded" | "failed" | "timed_out";
+      content_confidence: "high" | "medium" | "low";
       content_lifecycle_status: "draft" | "reviewed" | "published" | "archived";
       content_review_decision: "reviewed" | "approved" | "rejected";
       content_review_entity_type:
-        "learning_module" | "grammar_topic" | "dictionary_entry" | "honorific_pair" | "exercise";
+        | "learning_module"
+        | "grammar_topic"
+        | "dictionary_entry"
+        | "honorific_pair"
+        | "exercise"
+        | "reading_passage"
+        | "content_source";
+      dictionary_module_role: "primary" | "secondary" | "review";
+      exercise_dictionary_role: "target" | "distractor" | "context";
       exercise_difficulty: "easy" | "medium" | "hard";
       exercise_lifecycle_status: "draft" | "reviewed" | "approved" | "rejected" | "archived";
       exercise_source: "manual" | "ai";
@@ -1104,10 +1488,12 @@ export type Database = {
         | "plain-choice"
         | "matching-translation"
         | "matching-honorific"
-        | "fill-blank";
+        | "fill-blank"
+        | "single-choice";
       generated_content_status: "generated" | "reviewed" | "approved" | "rejected" | "promoted";
       generated_validation_status: "pending" | "valid" | "invalid";
       honorific_relation_type: "exact" | "contextual";
+      learning_skill: "grammar" | "vocabulary" | "reading";
       mastery_status: "not_started" | "learning" | "practiced";
       review_queue_status: "due" | "scheduled" | "mastered" | "suspended";
       training_session_status: "active" | "completed" | "abandoned";
@@ -1237,6 +1623,7 @@ export const Constants = {
     Enums: {
       accepted_answer_review_status: ["pending", "approved", "rejected"],
       ai_generation_status: ["queued", "running", "succeeded", "failed", "timed_out"],
+      content_confidence: ["high", "medium", "low"],
       content_lifecycle_status: ["draft", "reviewed", "published", "archived"],
       content_review_decision: ["reviewed", "approved", "rejected"],
       content_review_entity_type: [
@@ -1245,7 +1632,11 @@ export const Constants = {
         "dictionary_entry",
         "honorific_pair",
         "exercise",
+        "reading_passage",
+        "content_source",
       ],
+      dictionary_module_role: ["primary", "secondary", "review"],
+      exercise_dictionary_role: ["target", "distractor", "context"],
       exercise_difficulty: ["easy", "medium", "hard"],
       exercise_lifecycle_status: ["draft", "reviewed", "approved", "rejected", "archived"],
       exercise_source: ["manual", "ai"],
@@ -1258,10 +1649,12 @@ export const Constants = {
         "matching-translation",
         "matching-honorific",
         "fill-blank",
+        "single-choice",
       ],
       generated_content_status: ["generated", "reviewed", "approved", "rejected", "promoted"],
       generated_validation_status: ["pending", "valid", "invalid"],
       honorific_relation_type: ["exact", "contextual"],
+      learning_skill: ["grammar", "vocabulary", "reading"],
       mastery_status: ["not_started", "learning", "practiced"],
       review_queue_status: ["due", "scheduled", "mastered", "suspended"],
       training_session_status: ["active", "completed", "abandoned"],

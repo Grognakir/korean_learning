@@ -19,7 +19,7 @@ describe("database schema and seed", () => {
     expectSqlFailure(() =>
       runSql(`
         insert into public.exercises (
-          id, logical_id, module_id, primary_topic_id, type, difficulty,
+          id, logical_id, module_id, primary_topic_id, learning_skill, type, difficulty,
           prompt_ru, payload, explanation_ru, status, content_version, source
         )
         select
@@ -27,6 +27,7 @@ describe("database schema and seed", () => {
           logical_id,
           module_id,
           primary_topic_id,
+          learning_skill,
           type,
           difficulty,
           prompt_ru,
@@ -45,13 +46,14 @@ describe("database schema and seed", () => {
     expectSqlFailure(() =>
       runSql(`
         insert into public.exercises (
-          id, logical_id, module_id, primary_topic_id, type, difficulty,
+          id, logical_id, module_id, primary_topic_id, learning_skill, type, difficulty,
           prompt_ru, payload, explanation_ru, status, content_version, source
         ) values (
           gen_random_uuid(),
           'invalid-status-test',
           (select id from public.learning_modules limit 1),
           (select id from public.grammar_topics limit 1),
+          'grammar',
           'free-response',
           'easy',
           'test',
@@ -69,7 +71,7 @@ describe("database schema and seed", () => {
     expectSqlFailure(() =>
       runSql(`
         insert into public.exercises (
-          id, logical_id, module_id, primary_topic_id, type, difficulty,
+          id, logical_id, module_id, primary_topic_id, learning_skill, type, difficulty,
           prompt_ru, payload, explanation_ru, status, content_version, source,
           source_generation_id
         ) values (
@@ -77,6 +79,7 @@ describe("database schema and seed", () => {
           'invalid-source-test',
           (select id from public.learning_modules limit 1),
           (select id from public.grammar_topics limit 1),
+          'grammar',
           'free-response',
           'easy',
           'test',
@@ -89,6 +92,109 @@ describe("database schema and seed", () => {
         );
       `),
     );
+  });
+
+  it("backfills sample grammar topics and exercise skills", () => {
+    const topics = runSql(
+      "select logical_id || ':' || category from public.grammar_topics order by sort_order;",
+    );
+    expect(topics).toContain("grammar.sample.");
+    expect(topics).toContain(":sample");
+
+    expect(
+      runSql("select count(*)::text from public.exercises where learning_skill = 'grammar';"),
+    ).toBe("14");
+
+    expect(
+      runSql(
+        "select coalesce(unit_number::text, 'null') from public.learning_modules where slug = 'sample-module';",
+      ),
+    ).toBe("null");
+  });
+
+  it("rejects grammar exercises without a topic and reading without a passage", () => {
+    expectSqlFailure(() =>
+      runSql(`
+        insert into public.exercises (
+          id, logical_id, module_id, primary_topic_id, learning_skill, type, difficulty,
+          prompt_ru, payload, explanation_ru, status, content_version, source
+        ) values (
+          gen_random_uuid(),
+          'grammar-missing-topic',
+          (select id from public.learning_modules limit 1),
+          null,
+          'grammar',
+          'single-choice',
+          'easy',
+          'test',
+          '{}'::jsonb,
+          'explanation',
+          'draft',
+          '1.0.0',
+          'manual'
+        );
+      `),
+    );
+
+    expectSqlFailure(() =>
+      runSql(`
+        insert into public.exercises (
+          id, logical_id, module_id, primary_topic_id, reading_passage_id, learning_skill, type, difficulty,
+          prompt_ru, payload, explanation_ru, status, content_version, source
+        ) values (
+          gen_random_uuid(),
+          'reading-missing-passage',
+          (select id from public.learning_modules limit 1),
+          null,
+          null,
+          'reading',
+          'single-choice',
+          'easy',
+          'test',
+          '{}'::jsonb,
+          'explanation',
+          'draft',
+          '1.0.0',
+          'manual'
+        );
+      `),
+    );
+  });
+
+  it("rejects vocabulary exercises without a dictionary target link", () => {
+    expectSqlFailure(() =>
+      runSql(`
+        insert into public.exercises (
+          id, logical_id, module_id, primary_topic_id, learning_skill, type, difficulty,
+          prompt_ru, payload, explanation_ru, status, content_version, source
+        ) values (
+          gen_random_uuid(),
+          'vocab-missing-link',
+          (select id from public.learning_modules limit 1),
+          null,
+          'vocabulary',
+          'meaning-choice',
+          'easy',
+          'test',
+          '{}'::jsonb,
+          'explanation',
+          'draft',
+          '1.0.0',
+          'manual'
+        );
+      `),
+    );
+  });
+
+  it("seeds four canonical content sources without private paths", () => {
+    const sources = runSql(
+      "select source_key, note from public.content_sources order by source_key;",
+    );
+    expect(sources).toMatch(/curriculum-grammar/);
+    expect(sources).toMatch(/curriculum-texts/);
+    expect(sources).toMatch(/curriculum-topics/);
+    expect(sources).toMatch(/curriculum-vocabulary/);
+    expect(sources).not.toMatch(/\/Users\//);
   });
 });
 

@@ -16,7 +16,8 @@ insert into public.learning_modules (
 );
 
 insert into public.grammar_topics (
-  id, module_id, code, title, summary_ru, rule_payload, level, status, sort_order, content_version
+  id, module_id, code, title, summary_ru, rule_payload, level, status, sort_order, content_version,
+  logical_id, pattern_ko, category, usage_key
 ) values (
   'd8b1e1e2-97d8-4413-a890-730f85b32b51',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
@@ -27,11 +28,16 @@ insert into public.grammar_topics (
   '1급',
   'published',
   10,
-  '1.0.0'
+  '1.0.0',
+  'grammar.sample.hangul-basics',
+  '한글 기초',
+  'sample',
+  null
 );
 
 insert into public.grammar_topics (
-  id, module_id, code, title, summary_ru, rule_payload, level, status, sort_order, content_version
+  id, module_id, code, title, summary_ru, rule_payload, level, status, sort_order, content_version,
+  logical_id, pattern_ko, category, usage_key
 ) values (
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
@@ -42,17 +48,23 @@ insert into public.grammar_topics (
   '1급',
   'published',
   20,
-  '1.0.0'
+  '1.0.0',
+  'grammar.sample.first-phrases',
+  '첫 표현',
+  'sample',
+  null
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   '0f6808ba-3ce6-4c94-8d29-e2d52ca2c65a',
   'write-greeting',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'free-response',
   'easy',
   null,
@@ -91,13 +103,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   'd4c697dc-2255-48d2-9d3f-0ed624c9c2da',
   'write-thanks',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'free-response',
   'easy',
   null,
@@ -136,13 +150,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   '39c0c607-38a1-4a70-8e2a-e14061871ded',
   'choose-home-meaning',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   'd8b1e1e2-97d8-4413-a890-730f85b32b51',
+  'grammar',
+  null,
   'meaning-choice',
   'easy',
   '집',
@@ -196,13 +212,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   'eaaf766c-82f8-4a41-b89a-9a275b8148ec',
   'choose-school-meaning',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   'd8b1e1e2-97d8-4413-a890-730f85b32b51',
+  'grammar',
+  null,
   'meaning-choice',
   'easy',
   '학교',
@@ -256,13 +274,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   'f61a206d-6e89-4728-b11f-2412bca08885',
   'choose-honorific-speech',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'honorific-choice',
   'easy',
   '말',
@@ -316,13 +336,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   '4a6b8c63-75bc-4e7e-a1cc-1674bd7d04b8',
   'choose-honorific-meal',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'honorific-choice',
   'easy',
   '밥',
@@ -376,13 +398,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   'e9ac3a32-e348-4272-aed8-7c9589c4680a',
   'choose-plain-speech',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'plain-choice',
   'easy',
   '말씀',
@@ -436,13 +460,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   '25cbb450-eb66-4dd9-a11c-30a4650df992',
   'choose-plain-meal',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'plain-choice',
   'easy',
   '진지',
@@ -496,13 +522,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   'b575f3cc-1025-48ca-b80f-d15e57a28a9b',
   'match-home-school',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   'd8b1e1e2-97d8-4413-a890-730f85b32b51',
+  'grammar',
+  null,
   'matching-translation',
   'easy',
   null,
@@ -530,13 +558,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   'b7bbd9bc-fae7-45f0-a762-7e88020edee0',
   'match-person-friend',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   'd8b1e1e2-97d8-4413-a890-730f85b32b51',
+  'grammar',
+  null,
   'matching-translation',
   'easy',
   null,
@@ -564,13 +594,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   '3cfcae48-4606-41f1-b2e7-9408aac6ae3a',
   'match-honorific-speech-meal',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'matching-honorific',
   'easy',
   null,
@@ -598,13 +630,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   '651cbd4d-2693-468c-9265-d6d341be5242',
   'match-honorific-home-name',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'matching-honorific',
   'easy',
   null,
@@ -632,13 +666,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   'a22d8f97-51c6-4797-8cdb-3e405591b304',
   'fill-greeting',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'fill-blank',
   'easy',
   null,
@@ -677,13 +713,15 @@ insert into public.content_reviews (
 );
 
 insert into public.exercises (
-  id, logical_id, module_id, primary_topic_id, type, difficulty,
+  id, logical_id, module_id, primary_topic_id, learning_skill, reading_passage_id, type, difficulty,
   prompt_ko, prompt_ru, payload, explanation_ru, status, content_version, source
 ) values (
   '9a8f240a-a5ea-4d83-86d2-f9b69fc740d3',
   'fill-thanks',
   'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0',
   '4ded8be2-7e86-4d25-80d0-c0f0e277324f',
+  'grammar',
+  null,
   'fill-blank',
   'easy',
   null,

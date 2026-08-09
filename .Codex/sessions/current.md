@@ -4,25 +4,25 @@
 
 ## Чем занимаемся
 
-F2-I02 выполнен: canonical Zod contracts и provenance graph validation. Следующая карточка — только F2-I03.
+F2-I03 выполнен. F2-I01–I02 уже в `main`. Следующая карточка — F2-I04.
 
-## F2-I02 — результат
+## F2-I03 — результат
 
-- `scripts/content/schemas.ts` — manifest/unit/grammar/dictionary/links/passage/exercise/provenance.
-- `content/phase-2/source-manifest.json` — 4 canonical sources (`curriculum-*`) без приватных путей.
-- Пустые collection JSON (`items: []`) для всех целевых файлов.
-- Graph checks: duplicate IDs, dangling refs, lifecycle transitions, approved→provenance, senseKey/homonyms, absolute paths.
+- Migration `20260809000010_curriculum_skills_schema.sql`
+- Enums: `learning_skill`, `single-choice`, review entity types for passage/source
+- Tables: `reading_passages`, `dictionary_entry_modules`, `exercise_dictionary_entries`, `content_sources`, `content_provenance`, `user_skill_progress`
+- Sample backfill via seed: topic `logical_id`, exercises `learning_skill=grammar`
+- RLS: published passages public; sources/provenance service-only; skill progress owner-select
 
 ## Gate
 
-- content:validate + test:content (15) green
-- format / lint / typecheck / unit 310 / integration 17 / build green
+- db 20, rls 13, unit 310, content 15, integration 17, e2e 20, build green
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i02-content-contracts`
-- Commit message: `feat: define canonical learning content contracts`
+- Branch: `codex/f2-i03-curriculum-schema`
+- Commit: `feat: extend database for curriculum skills`
 
 ## Следующий шаг
 
-F2-I03 — extend database for curriculum skills. Push/merge только по разрешению.
+F2-I04 — 16 units + 80 grammar topics. Push/merge по указанию пользователя.

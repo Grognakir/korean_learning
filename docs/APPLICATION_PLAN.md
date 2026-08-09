@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I02 `done`).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I03 `done` на ветках; I01–I02 в `main`).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I02 canonical content contracts — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i02-content-contracts` (не слита в `main`).
-- **Уже сделано:** Zod-контракты phase-2, 4 canonical source records, пустые collection files, graph integrity (dangling refs/duplicates/lifecycle/provenance).
-- **Выполненные проверки:** format/lint/typecheck/310 unit/15 content/17 integration/build; content:validate green.
-- **Сейчас работает:** sample-module; authoring contracts без учебных entity records.
-- **Пока не работает / ограничения:** DB schema для skills ещё не расширена (F2-I03); программа не импортирована; Preview SSO как раньше.
-- **Следующий конкретный шаг:** F2-I03 — Supabase schema для трёх навыков.
+- **Текущая итерация:** F2-I03 curriculum DB schema — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i03-curriculum-schema`.
+- **Уже сделано:** migration `…00010` (skills, reading_passages, dictionary junctions, provenance/sources, user_skill_progress); seed/types/RLS/DB tests обновлены.
+- **Выполненные проверки:** format/lint/typecheck/310 unit/15 content/17 integration/20 db/13 rls/build/e2e; content:validate green.
+- **Сейчас работает:** sample-module на расширенной схеме (`learning_skill=grammar`, `unit_number=null`).
+- **Пока не работает / ограничения:** 16 тем/80 грамматик ещё не импортированы (F2-I04); Preview SSO как раньше.
+- **Следующий конкретный шаг:** F2-I04 — level-one curriculum catalog.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

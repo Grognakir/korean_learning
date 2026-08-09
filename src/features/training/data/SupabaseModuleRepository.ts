@@ -3,7 +3,7 @@ import "server-only";
 import { unstable_cache } from "next/cache";
 
 import { createServiceRoleSupabaseClient } from "@/lib/supabase/serviceRoleClient";
-import type { LearningModuleDefinition } from "@/types";
+import { EXERCISE_TYPE_IDS, type ExerciseTypeId, type LearningModuleDefinition } from "@/types";
 
 import { ModuleRegistry, selectPublishedModules } from "../domain";
 import type { ModuleRepository } from "./ModuleRepository";
@@ -57,10 +57,14 @@ async function loadPublishedModules(): Promise<readonly LearningModuleDefinition
   }
 
   const supportedExerciseTypesByModuleId = deriveSupportedExerciseTypes(
-    (exerciseTypeRows ?? []).map((row) => ({
-      moduleId: row.module_id,
-      type: row.type,
-    })),
+    (exerciseTypeRows ?? [])
+      .filter((row): row is { module_id: string; type: ExerciseTypeId } =>
+        (EXERCISE_TYPE_IDS as readonly string[]).includes(row.type),
+      )
+      .map((row) => ({
+        moduleId: row.module_id,
+        type: row.type,
+      })),
   );
 
   return mapModuleRows(moduleRows ?? [], filteredTopics, supportedExerciseTypesByModuleId);

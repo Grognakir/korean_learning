@@ -2,7 +2,7 @@
 
 Последнее обновление: 2026-08-09
 
-Статус: PERF-I01—I03 и PERF-I05—I07 в commit `5f716e9`; PERF-I09 в commit `dcbb774` прошёл локальный gate и удалённую приёмку Preview/Production (Preview desktop median 81,5 мс / p95 109 мс, mobile median 86 мс / p95 95 мс при порогах ≤150/≤250 мс; публичный Production доступен, «Сервис недоступен» устранён). PERF-I04 подтверждён build output. PERF-I10 снял зависимость сборки от доступности хранилища. Блокировка deployment снята: после обновления `SUPABASE_SECRET_KEY` Preview-сборка `c945588` прошла с источником Supabase, `JWT issued at future` не воспроизводится. PERF-I11 добавляет наблюдаемость источника контента, без которой диагностика этого сбоя занимала шесть сборок. Остаётся переключить Production с `CONTENT_SOURCE=local` на `supabase` и повторить удалённый smoke.
+Статус: PERF-I01—I11 закрыты. Production на commit `c262230` читает Supabase (`Content source: supabase (cyoezrdxqncroflgkyry.supabase.co)`), smoke и `perf:smoke` зелёные. Новый Production baseline (10 повторов): median TTFB публичных маршрутов 98–106 мс; `/topics` 104 мс (ранее 374 мс). Preview navigation PERF-I09: desktop median 81,5 / p95 109 мс, mobile 86 / 95 мс. Оставшееся в этом плане: опциональный Speed Insights по отдельному разрешению; при необходимости углубить client-navigation baseline в браузере.
 
 Базовый commit: `1d6fd9af5a21d85d5b115e9a83e7c14b984d1002`.
 
@@ -361,6 +361,8 @@ Proxy нельзя считать основной причиной текуще
 
 ### PERF-I08 — закрепить performance gate и наблюдаемость
 
+Статус: выполнено. `pnpm perf:smoke` собирает median TTFB/total по маршрутам из `PERF_BASE_URL`; `pnpm check:bundles` проверяет gzip budgets после `next build` и включён в GitHub Actions после шага Build. Production baseline на `c262230` (10 повторов): median TTFB 98–106 мс по девяти публичным маршрутам. Speed Insights/Web Analytics по-прежнему только по отдельному разрешению.
+
 Цель — не допустить незаметного возврата текущих проблем.
 
 Действия:
@@ -569,7 +571,7 @@ Baseline теста должен содержать текущие удалён�
 
 ### PERF-I10 — не ронять deployment при недоступном контент-хранилище
 
-Статус: выполнено локально, полный локальный gate зелёный. Не отменяет необходимость починить ключ Supabase в окружении Vercel: PERF-I10 делает деплой возможным при сбое хранилища, но контент при неверном ключе всё равно не отобразится.
+Статус: выполнено. Локальный gate зелёный; удалённая приёмка на Preview/Production после обновления `SUPABASE_SECRET_KEY` — сборки проходят с источником Supabase, без `JWT issued at future` и без placeholder `content-unavailable`.
 
 Цель — сбой чтения опубликованного контента должен деградировать до `ServiceUnavailableState` на затронутой странице, а не прекращать сборку. Доступность деплоя не может зависеть от того, ответил ли Supabase в конкретную минуту билда.
 
@@ -631,7 +633,7 @@ Runtime на локальном production server с недоступным хр
 
 ### PERF-I11 — сделать источник контента и причину деградации видимыми
 
-Статус: выполнено локально, полный локальный gate зелёный.
+Статус: выполнено. Удалённая приёмка: Preview и Production build logs на `c262230` печатают `Content source: supabase (cyoezrdxqncroflgkyry.supabase.co)`.
 
 Цель — deployment должен сам сообщать, из какого хранилища взят контент и почему он деградировал. Пока этого нет, отличить «Supabase недоступен» от «включены локальные фикстуры» можно только косвенными догадками.
 
@@ -687,21 +689,15 @@ Runtime на локальном production server с недоступным хр
 
 Критерий готовности: выполнен. Build log называет источник контента, недоступность хранилища оставляет запись в логах, локальный gate зелёный.
 
-### Состояние окружений Vercel на 2026-08-09
+### Состояние окружений Vercel на 2026-08-09 (итог)
 
-Проверка публичного Production после merge `43daf15` и серия Preview-сборок того же дня показали следующее.
+После merge `c262230` и переключения Production:
 
-Production отвечает `200` на всех маршрутах и отдаёт локальные фикстуры: в его окружении задано `CONTENT_SOURCE=local`. Это расходится с требованиями PERF-I00 шаг 3 и PERF-I01 шаг 4.
-
-Preview после удаления переменной `CONTENT_SOURCE` выбирает источник автоматически и получает `supabase`. Сборка `c945588` прошла без ошибок, без `JWT issued at future` и без placeholder `content-unavailable`, то есть хранилище ответило. Ошибка ключа, заблокировавшая `9368236`, после обновления `SUPABASE_SECRET_KEY` не воспроизводится.
-
-Удалённый Supabase содержит один опубликованный модуль `sample-module` — проверено REST-запросом публикуемым ключом. `honorifics` там нет и по замыслу быть не должно.
-
-Практические следствия:
-
-1. Каталоги обоих источников совпадают по слагам, поэтому различить их по ответам страниц невозможно; наблюдаемость добавляется в PERF-I11.
-2. Публичный Production показывает локальные фикстуры, а не контент из хранилища.
-3. Остаётся переключить Production на `CONTENT_SOURCE=supabase`; порядок «сначала Preview, затем Production» соблюдён.
+1. Preview и Production печатают `Content source: supabase (cyoezrdxqncroflgkyry.supabase.co)` в prebuild.
+2. `CONTENT_SOURCE` для Preview удалён (автоопределение); для Production выставлен `supabase`. `VERCEL_FORCE_NO_BUILD_CACHE` убран после проверки.
+3. Публичный smoke `https://korean-learning-gray.vercel.app`: валидные маршруты `200` с каталогом `sample-module` / «Первые шаги в корейском»; нет «Сервис недоступен»; `/topics/honorifics`, `/topics/missing-module`, `/training/honorifics-preview`, `/training/missing-session` → `404`.
+4. `PERF_BASE_URL=https://korean-learning-gray.vercel.app PERF_REPEATS=10 pnpm perf:smoke`: median TTFB 98–106 мс по девяти маршрутам; `/topics` 104 мс (ранее 374 мс на локальных фикстурах).
+5. Удалённый Supabase содержит один опубликованный модуль `sample-module` — это ожидаемое содержимое сида, не регрессия.
 
 ## 5. Обязательная матрица проверок
 
@@ -754,14 +750,16 @@ Cursor или Claude обязан приложить:
 
 План считается исполненным, когда одновременно выполнено следующее:
 
-- публичный Production доступен и не имеет environment errors;
-- обязательные deployment variables проверяются до публикации;
-- client bundles укладываются в budgets;
-- публичный route shell больше не становится полностью dynamic только из-за header auth;
-- повторное посещение cacheable разделов не показывает корневой loading и не блокируется новым foreground RSC roundtrip;
-- `/progress` использует локальную динамическую границу и остаётся свежим после завершения тренировки;
-- повторные auth reads и лишние content reads устранены;
-- cloud bootstrap не скрывает учебный экран и не теряет ответы;
-- Vercel toolchain соответствует заявленному contract;
-- полный локальный и удалённый gate проходит;
-- после исправлений зафиксирован новый Production baseline median/p95.
+- публичный Production доступен и не имеет environment errors — **выполнено** (`c262230`, источник Supabase);
+- обязательные deployment variables проверяются до публикации — **выполнено** (PERF-I01 + строка источника PERF-I11);
+- client bundles укладываются в budgets — **выполнено** (`check:bundles` локально и в CI);
+- публичный route shell больше не становится полностью dynamic только из-за header auth — **выполнено** (PERF-I04/I09, `◐ Partial Prerender`);
+- повторное посещение cacheable разделов не показывает корневой loading и не блокируется новым foreground RSC roundtrip — **выполнено** (PERF-I09 Preview);
+- `/progress` использует локальную динамическую границу и остаётся свежим после завершения тренировки — **выполнено**;
+- повторные auth reads и лишние content reads устранены — **выполнено**;
+- cloud bootstrap не скрывает учебный экран и не теряет ответы — **выполнено**;
+- Vercel toolchain соответствует заявленному contract — **выполнено**;
+- полный локальный и удалённый gate проходит — **выполнено**;
+- после исправлений зафиксирован новый Production baseline median/p95 — **выполнено** (TTFB median 98–106 мс, 10 повторов).
+
+Опционально вне обязательного критерия: Speed Insights/Web Analytics по отдельному разрешению.

@@ -61,6 +61,9 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Check route bundle budgets
+        run: pnpm check:bundles
+
   db:
     name: Supabase DB migrations and seed
     runs-on: ubuntu-latest

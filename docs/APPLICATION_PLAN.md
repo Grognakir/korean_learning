@@ -13,6 +13,7 @@
 - **Следующий конкретный шаг:** F1-I32 add mistake review queue — без дополнительного CP.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked + auth redirects pushed.
+- **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production `c262230` с источником Supabase; повторная навигация и bundle budgets закреплены; следующий шаг фазы 1 — F1-I32 (без перенумерации фаз).
 - **Последнее обновление:** 2026-08-09.
 
 ## 1. Цель, результат и границы

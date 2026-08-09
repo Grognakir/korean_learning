@@ -54,6 +54,18 @@ describe("isKnownContentRoute", () => {
     );
   });
 
+  it("accepts parseable filtered guest session ids", () => {
+    expect(
+      isKnownContentRoute(
+        {
+          kind: "session",
+          sessionId: "filt__grammar__u01__none__none__2__1",
+        },
+        PUBLISHED,
+      ),
+    ).toBe(true);
+  });
+
   it("rejects unknown session ids including the removed honorifics preview", () => {
     expect(isKnownContentRoute({ kind: "session", sessionId: "missing-session" }, PUBLISHED)).toBe(
       false,
@@ -61,5 +73,8 @@ describe("isKnownContentRoute", () => {
     expect(
       isKnownContentRoute({ kind: "session", sessionId: "honorifics-preview" }, PUBLISHED),
     ).toBe(false);
+    expect(isKnownContentRoute({ kind: "session", sessionId: "filt__broken" }, PUBLISHED)).toBe(
+      false,
+    );
   });
 });

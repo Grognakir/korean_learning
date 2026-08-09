@@ -4,21 +4,25 @@
 
 ## Чем занимаемся
 
-F2-I19 выполнен. Следующая карточка — F2-I20 (responsive/a11y + CP-7 stop).
+F2-I20 выполнен. **Остановка на CP-7** — без подтверждения пользователя F2-I21 не начинать.
 
-## F2-I19 — результат
+## F2-I20 — результат
 
-- Concept keys: `skill:targetLogicalId` (+ legacy exercise id fallback)
-- Migration: nullable `mistake_events.primary_topic_id`; skill concept resolve; `user_skill_progress` upsert on session complete
-- Progress UI: module → skills (bars) → grammar topics
-- Review: custom skill/unit filters → create-review-session API
-- Intervals unchanged (1/3/7 day)
+- E2E `tests/e2e/responsive-a11y.spec.ts`: checkpoint widths, smooth sweep step≤6, progress bar, three skills, catalog/dictionary keyboard, reduced motion + 200% zoom, screenshots
+- Helpers: `sweepViewportWidths`, `assertSessionProgressBar`, `withPageZoom`
+- Component: Select Escape/ArrowUp; TrainingSetupControls; SkillProgressList a11y
+- Fix: Proxy `isKnownContentRoute` accepts `filt__*` session ids (was 404)
+- E2E storage key aligned to v2
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i19-skill-progress-review`
-- Commit: `feat: track skill progress and review`
+- Branch: `codex/f2-i20-responsive-accessibility`
+- Commit: `fix: stabilize curriculum learning experience`
+
+## Checkpoint
+
+**CP-7:** показать пользователю три skill flows (grammar/vocabulary/reading) и оба catalog views (темы / грамматика). Ждём подтверждения.
 
 ## Следующий шаг
 
-F2-I20 — responsive, keyboard, a11y gate; stop at CP-7.
+После CP-7 — F2-I21 quality gate.

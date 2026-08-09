@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I19 `done`; CP-6 принят).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I20 `done`; CP-6 принят; **ждём CP-7**).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I19 skill progress and review — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i19-skill-progress-review`.
-- **Уже сделано:** skill-prefixed concept keys; `user_skill_progress` refresh; progress UI by skill/topic/module; review filters skill/unit; nullable mistake topics for vocab/reading.
-- **Выполненные проверки:** unit/lint/typecheck/build (gate итерации).
-- **Сейчас работает:** cloud mistakes/review/progress объясняют skill + target; legacy concept keys остаются валидными.
-- **Пока не работает / ограничения:** curriculum banks remain draft in Supabase until F2-I22; a11y/adaptivity (F2-I20 / CP-7).
-- **Следующий конкретный шаг:** F2-I20 — responsive/a11y gate и CP-7.
+- **Текущая итерация:** F2-I20 responsive/a11y — `done`, остановка на CP-7.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i20-responsive-accessibility`; CP-7 не подтверждён.
+- **Уже сделано:** viewport sweep 320–2560; checkpoint geometry; keyboard pickers; three skill session e2e; progress bar a11y; filtered session proxy allowlist; Select Escape.
+- **Выполненные проверки:** format/lint/typecheck/unit/build + Playwright responsive-a11y (desktop).
+- **Сейчас работает:** guest filtered sessions grammar/vocabulary/reading на u01; catalogs themes/grammar; no horizontal overflow на ключевых страницах.
+- **Пока не работает / ограничения:** curriculum banks draft until F2-I22; F2-I21+ blocked until CP-7.
+- **Следующий конкретный шаг:** принять CP-7 (три skill flows + оба catalog views), затем F2-I21.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

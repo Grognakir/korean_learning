@@ -12,11 +12,20 @@ let slugCache: SlugCacheEntry | undefined;
 
 async function readPublishedModuleSlugs(): Promise<ReadonlySet<string>> {
   if (resolveContentSource() === "local") {
-    const { getLocalLearningContent } = await import("./resolveLearningContent");
+    const [{ getLocalLearningContent }, { getLocalCurriculumRepositories }] = await Promise.all([
+      import("./resolveLearningContent"),
+      import("./curriculum/resolveCurriculumContent"),
+    ]);
     const { moduleRepository } = getLocalLearningContent();
     const modules = await moduleRepository.getPublished();
-
-    return new Set(modules.map((learningModule) => learningModule.slug));
+    const units = await getLocalCurriculumRepositories().catalogRepository.listUnits();
+    const slugs = new Set(modules.map((learningModule) => learningModule.slug));
+    if (units.status === "ready") {
+      for (const unit of units.items) {
+        slugs.add(unit.slug);
+      }
+    }
+    return slugs;
   }
 
   const { createServiceRoleSupabaseClient } = await import("@/lib/supabase/serviceRoleClient");

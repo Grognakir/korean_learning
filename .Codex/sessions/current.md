@@ -4,23 +4,21 @@
 
 ## Чем занимаемся
 
-F2-I10 выполнен. Следующая карточка — F2-I11 (theme/grammar detail pages).
+F2-I11 выполнен. Следующая карточка — F2-I12 (dictionary catalog).
 
-## F2-I10 — результат
+## F2-I11 — результат
 
-- `/topics` принимает `?view=themes|grammar` (unknown → themes)
-- Кастомный segmented/tab control (`CatalogViewSwitch`) без native `<select>`
-- Themes: compact `UnitSummaryCard` из `getCachedPublicUnits`
-- Grammar: grouping по уроку/category (`GrammarCatalogList`)
-- Loading/error/empty через существующие feedback states
-- Counts только из published/approved public DTO
-- Tests: parse/group/switch/page + e2e navigation back/forward
+- `/topics/[moduleSlug]` показывает curriculum unit detail или sample module
+- Grammar detail через query route `?grammar=<logicalId>` (стабильно с F2-I10)
+- Actions → `/training?skill=&unit=[&grammar=]`; disabled без approved exercises
+- Proxy/slug cache включает published curriculum unit slugs
+- Draft detail скрыт; examples placeholder без review notes
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i10-dual-catalog`
-- Commit: `feat: add theme and grammar catalogs`
+- Branch: `codex/f2-i11-content-details`
+- Commit: `feat: add curriculum detail pages`
 
 ## Следующий шаг
 
-F2-I11 — curriculum detail pages.
+F2-I12 — themed Korean dictionary.

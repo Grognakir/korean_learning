@@ -15,7 +15,9 @@ const mocks = vi.hoisted(() => ({
 
 const curriculumMocks = vi.hoisted(() => ({
   getCachedPublicUnits: vi.fn(),
+  getCachedPublicUnitBySlug: vi.fn(),
   getCachedPublicGrammarTopics: vi.fn(),
+  getCachedPublicGrammarTopic: vi.fn(),
   getCachedPublicDictionary: vi.fn(),
   getCachedPublicPassages: vi.fn(),
   getCachedApprovedCurriculumExercises: vi.fn(),
@@ -50,7 +52,12 @@ describe("content store outage", () => {
   it("shows the service unavailable state on a module page instead of a 404", async () => {
     const { ModuleDetailPanel } = await import("@/app/topics/[moduleSlug]/ModuleDetailPanel");
 
-    render(await ModuleDetailPanel({ moduleSlug: "sample-module" }));
+    render(
+      await ModuleDetailPanel({
+        moduleSlug: "sample-module",
+        searchParams: Promise.resolve({}),
+      }),
+    );
 
     expect(
       screen.getByRole("heading", { level: 1, name: "Модуль недоступен" }),

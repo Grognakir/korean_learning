@@ -5,25 +5,39 @@
   padding-block-end: clamp(var(--space-6), 6vw, var(--space-16));
 }
 
-.primaryAction {
+.primaryAction,
+.secondaryAction {
   display: inline-flex;
   min-height: 3rem;
   align-items: center;
   justify-content: center;
   padding: var(--space-3) var(--space-6);
-  border: 1px solid var(--color-accent);
   border-radius: var(--radius-md);
-  background: var(--color-accent);
-  box-shadow: 0 8px 20px rgb(13 81 63 / 18%);
-  color: var(--color-text-on-accent);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
   text-decoration: none;
 }
 
+.primaryAction {
+  border: 1px solid var(--color-accent);
+  background: var(--color-accent);
+  box-shadow: 0 8px 20px rgb(13 81 63 / 18%);
+  color: var(--color-text-on-accent);
+}
+
 .primaryAction:hover {
   background: var(--color-accent-hover);
   color: var(--color-text-on-accent);
+}
+
+.secondaryAction {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.secondaryAction:hover {
+  border-color: var(--color-accent);
 }
 
 .koreanIntro {
@@ -85,7 +99,8 @@
 }
 
 @media (max-width: 42rem) {
-  .primaryAction {
+  .primaryAction,
+  .secondaryAction {
     width: 100%;
   }
 }

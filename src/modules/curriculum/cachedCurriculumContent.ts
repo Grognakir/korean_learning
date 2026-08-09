@@ -51,6 +51,32 @@ export async function getCachedPublicGrammarTopics(
   });
 }
 
+export async function getCachedPublicUnitBySlug(
+  slug: string,
+): Promise<ContentResult<PublicUnitSummary | null>> {
+  "use cache";
+  cacheTag("curriculum-catalog");
+  cacheLife("learningContent");
+
+  return readSafe(async () => {
+    const { catalogRepository } = await getCurriculumRepositories();
+    return (await catalogRepository.getUnitBySlug(slug)) ?? null;
+  });
+}
+
+export async function getCachedPublicGrammarTopic(
+  logicalId: string,
+): Promise<ContentResult<PublicGrammarTopicSummary | null>> {
+  "use cache";
+  cacheTag("curriculum-catalog");
+  cacheLife("learningContent");
+
+  return readSafe(async () => {
+    const { catalogRepository } = await getCurriculumRepositories();
+    return (await catalogRepository.getGrammarTopicByLogicalId(logicalId)) ?? null;
+  });
+}
+
 export async function getCachedPublicDictionary(
   unitSlug?: string,
 ): Promise<ContentResult<readonly PublicDictionaryEntry[]>> {

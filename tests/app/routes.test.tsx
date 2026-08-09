@@ -99,7 +99,12 @@ describe("application routes", () => {
   });
 
   it("renders a module detail route", async () => {
-    render(await ModuleDetailPanel({ moduleSlug: "sample-module" }));
+    render(
+      await ModuleDetailPanel({
+        moduleSlug: "sample-module",
+        searchParams: Promise.resolve({}),
+      }),
+    );
 
     expect(
       screen.getByRole("heading", { level: 1, name: "Первые шаги в корейском" }),

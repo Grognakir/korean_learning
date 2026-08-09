@@ -1,20 +1,164 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { ReactNode } from "react";
 
 import { TopicsEmptyState, ServiceUnavailableState } from "@/components/feedback";
 import { PageHeader } from "@/components/layout";
 import { Badge } from "@/components/ui/Badge";
+import { GrammarDetailView } from "@/features/catalog/components/GrammarDetailView";
+import { UnitDetailView } from "@/features/catalog/components/UnitDetailView";
+import { parseGrammarQuery } from "@/features/catalog/presentation/parseGrammarQuery";
 import { selectPublishedTopics } from "@/features/training/domain/moduleSelectors";
 import { getCachedPublishedModuleBySlug } from "@/modules/cachedLearningContent";
+import {
+  getCachedApprovedCurriculumExercises,
+  getCachedPublicDictionary,
+  getCachedPublicGrammarTopic,
+  getCachedPublicGrammarTopics,
+  getCachedPublicPassages,
+  getCachedPublicUnitBySlug,
+} from "@/modules/curriculum/cachedCurriculumContent";
 import { ContentSection } from "@/wrappers";
 
 import styles from "./page.module.css";
 
 type ModuleDetailPanelProps = {
   readonly moduleSlug: string;
+  readonly searchParams: Promise<{
+    grammar?: string | string[];
+  }>;
 };
 
-export async function ModuleDetailPanel({ moduleSlug }: ModuleDetailPanelProps) {
+/**
+ * Grammar details use the query route `?grammar=<logicalId>` on `/topics/[moduleSlug]`
+ * (chosen over a nested path so F2-I10 catalog links stay stable).
+ */
+export async function ModuleDetailPanel({
+  moduleSlug,
+  searchParams,
+}: ModuleDetailPanelProps): Promise<ReactNode> {
+  const grammarLogicalId = parseGrammarQuery((await searchParams).grammar);
+
+  if (grammarLogicalId) {
+    const [topicResult, unitResult, exercisesResult] = await Promise.all([
+      getCachedPublicGrammarTopic(grammarLogicalId),
+      getCachedPublicUnitBySlug(moduleSlug),
+      getCachedApprovedCurriculumExercises({
+        unitSlug: moduleSlug,
+        grammarTopicId: grammarLogicalId,
+        learningSkill: "grammar",
+      }),
+    ]);
+
+    if (
+      topicResult.status === "unavailable" ||
+      unitResult.status === "unavailable" ||
+      exercisesResult.status === "unavailable"
+    ) {
+      return (
+        <>
+          <PageHeader
+            description="Не удалось загрузить грамматику."
+            title="Грамматика недоступна"
+          />
+          <ServiceUnavailableState />
+        </>
+      );
+    }
+
+    const topic = topicResult.data;
+    const unit = unitResult.data;
+
+    if (!topic || !unit || topic.unitSlug !== moduleSlug) {
+      notFound();
+    }
+
+    return (
+      <>
+        <PageHeader
+          actions={
+            <Link className={styles.secondaryAction} href={`/topics/${moduleSlug}`}>
+              К теме
+            </Link>
+          }
+          description={topic.summary.ru}
+          title={topic.title.ru}
+        />
+        <GrammarDetailView
+          practiceAvailable={exercisesResult.data.length > 0}
+          topic={topic}
+          unit={unit}
+        />
+      </>
+    );
+  }
+
+  const curriculumUnit = await getCachedPublicUnitBySlug(moduleSlug);
+  if (curriculumUnit.status === "ready" && curriculumUnit.data) {
+    const [
+      unitResult,
+      grammarResult,
+      dictionaryResult,
+      passagesResult,
+      grammarEx,
+      vocabEx,
+      readingEx,
+    ] = await Promise.all([
+      getCachedPublicUnitBySlug(moduleSlug),
+      getCachedPublicGrammarTopics(moduleSlug),
+      getCachedPublicDictionary(moduleSlug),
+      getCachedPublicPassages(moduleSlug),
+      getCachedApprovedCurriculumExercises({ unitSlug: moduleSlug, learningSkill: "grammar" }),
+      getCachedApprovedCurriculumExercises({ unitSlug: moduleSlug, learningSkill: "vocabulary" }),
+      getCachedApprovedCurriculumExercises({ unitSlug: moduleSlug, learningSkill: "reading" }),
+    ]);
+
+    if (
+      unitResult.status === "unavailable" ||
+      grammarResult.status === "unavailable" ||
+      dictionaryResult.status === "unavailable" ||
+      passagesResult.status === "unavailable" ||
+      grammarEx.status === "unavailable" ||
+      vocabEx.status === "unavailable" ||
+      readingEx.status === "unavailable"
+    ) {
+      return (
+        <>
+          <PageHeader description="Не удалось загрузить тему." title="Тема недоступна" />
+          <ServiceUnavailableState />
+        </>
+      );
+    }
+
+    const unit = unitResult.data;
+    if (!unit) {
+      notFound();
+    }
+
+    return (
+      <>
+        <PageHeader
+          actions={
+            <Link className={styles.secondaryAction} href="/topics">
+              К каталогу
+            </Link>
+          }
+          description={unit.summary.ru}
+          title={unit.title.ru}
+        />
+        <UnitDetailView
+          grammarPracticeAvailable={grammarEx.data.length > 0}
+          grammarTopics={grammarResult.data}
+          readingAvailable={passagesResult.data.length > 0}
+          readingPracticeAvailable={readingEx.data.length > 0}
+          unit={unit}
+          vocabularyCount={dictionaryResult.data.length}
+          vocabularyPracticeAvailable={vocabEx.data.length > 0}
+        />
+      </>
+    );
+  }
+
   const result = await getCachedPublishedModuleBySlug(moduleSlug);
 
   if (result.status === "unavailable") {

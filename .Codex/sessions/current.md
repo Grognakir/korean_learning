@@ -4,27 +4,27 @@
 
 ## Чем занимаемся
 
-Фаза 1 завершена. Материалы программы 1급 сведены в четыре канонических документа, а план фазы 2 обновлён так, чтобы дальнейшая реализация строилась только на них.
+F2-I01 выполнен: baseline content validation для фазы 2. Следующая карточка — только F2-I02, отдельной веткой.
 
-## Принятые решения
+## F2-I01 — результат
 
-- `docs/CURRICULUM_TOPICS.md` — единственный authoring-источник 16 тематических модулей и учебных результатов.
-- `docs/CURRICULUM_GRAMMAR.md` — единственный authoring-источник 80 грамматических пунктов и объяснений.
-- `docs/CURRICULUM_VOCABULARY.md` — полный словарный корпус, перенесённый без сокращения учебных строк.
-- `docs/CURRICULUM_TEXTS.md` — итоговый корпус на основе Claude и ChatGPT; повторное слияние исходников при реализации запрещено.
-- В итоговые тексты добавлен культурный блок урока 1; сохранены маркеры пропусков, полные блоки уроков 10/14/15, реплика урока 11 и вариант `앞으로 쭉 가면`.
-- По контекстам текстов `-아/어서①` урока 7 зафиксировано как последовательность тесно связанных действий, а `-아/어서②`/`N이어/여서` урока 12 — как причина.
-- `docs/PHASE_2_IMPLEMENTATION_PLAN.md`, `docs/APPLICATION_PLAN.md`, аудит и обязательные условия указывают на четыре канонических документа.
-- Исходные фотографии, расшифровки, грамматические заметки, HTML и TSV остаются только материалами происхождения и аудита.
-- Writing/СГ с LLM, голос, транскрипция и аудирование остаются за пределами фазы 2.
+- `content/phase-2/source-manifest.json` — минимальный manifest (`schemaVersion=phase-2.v1`, `sources=[]`).
+- `pnpm content:validate` — JSON + schema version + запрет импорта `content/phase-2` из `src/`.
+- `pnpm test:content` — 5 integrity tests.
+- ESLint `no-restricted-imports` для app graph.
+- CI checks: `content:validate && test:content`.
 
-## Открытые задачи
+## Gate
 
-- [ ] Начать строго с F2-I01 — baseline и инструменты content quality.
-- [ ] В F2-I02 зафиксировать четыре обязательных canonical source keys.
-- [ ] В F2-I04–F2-I06 детерминированно преобразовать четыре Markdown-документа в JSON и provenance.
-- [ ] До публикации провести ручную языковую проверку минимального банка упражнений и выбранного словарного среза.
+- format / lint / typecheck green
+- unit 310, content 5, integration 17, e2e 20, db 16, rls 10, build green
+- sample-module без изменений
 
-## Контекст для следующей сессии
+## Коммит / ветка
 
-Фаза 2 ещё не реализуется. Перед F2-I01 полностью прочитать `AGENTS.md`, `docs/ITERATION_MANDATORY_CONDITIONS.md`, четыре `docs/CURRICULUM_*.md`, аудит и карточку F2-I01. Не возвращаться к исходным файлам для повторного выбора содержимого и не начинать F2-I02 в той же итерации.
+- Branch: `codex/f2-i01-content-baseline`
+- Commit message: `chore: prepare phase two content validation`
+
+## Следующий шаг
+
+F2-I02 — canonical content contracts. Не начинать без отдельного шага; push/merge только по разрешению.

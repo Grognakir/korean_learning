@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена, слита в `main`; F1-I01–F1-I33 и CP-1A/CP-2/CP-3/CP-4/CP-5 приняты.
-- **Текущая фаза:** подготовлена фаза 2 — полная программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I01 content baseline — `planned`, реализация не начата.
-- **Статус текущей итерации:** фаза 1 слита коммитом `4fb00b8`; новый план фазы 2 готов к исполнению.
-- **Уже сделано:** удалён preview 높임말 и устаревший UI-текст о нём; 3× local full gate; внешний CI checkpoint зелёный; фаза 1 слита в `main`; проведён аудит материалов и подготовлен новый план фазы 2.
-- **Выполненные проверки:** local 3× 309 unit/17 integration/20 e2e/16 db/10 rls/build/bundles; post-CP-5 copy fix — 310 unit/17 integration/typecheck/lint/format/build/bundles; stabilization CI `31313508994` и main CI `31313663674` — success.
-- **Сейчас работает:** каркас фазы 1 без draft honorifics; review/progress/training на sample + demo-session.
-- **Пока не работает / ограничения:** Preview Deployment Protection (Vercel SSO) блокирует unauthenticated HTTP smoke — принято в CP-5 как известное ограничение; реальная программа 1급 ещё не импортирована.
-- **Следующий конкретный шаг:** F2-I01 из `docs/PHASE_2_IMPLEMENTATION_PLAN.md`.
-- **Блокирующие вопросы:** нет (ожидание следующего указания).
+- **Общее состояние:** фаза 1 завершена; фаза 2 начата (F2-I01 `done`).
+- **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
+- **Текущая итерация:** F2-I01 content baseline — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i01-content-baseline` (не слита в `main`).
+- **Уже сделано:** пустой `content/phase-2` + `content:validate` / `test:content`; запрет импорта canonical content в app graph; CI checks включают content validation.
+- **Выполненные проверки:** format/lint/typecheck/310 unit/5 content/17 integration/20 e2e/16 db/10 rls/build.
+- **Сейчас работает:** sample-module каркас фазы 1; content quality tooling без учебных записей.
+- **Пока не работает / ограничения:** канонические схемы/импорт программы ещё не сделаны (F2-I02+); Preview SSO как раньше.
+- **Следующий конкретный шаг:** F2-I02 — canonical schemas и provenance (отдельная ветка после merge/продолжения по указанию).
+- **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.
 - **Последнее обновление:** 2026-08-09.

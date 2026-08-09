@@ -7,6 +7,28 @@ export default defineConfig([
   ...nextVitals,
   ...nextTypeScript,
   prettier,
+  {
+    files: ["src/**/*.{js,jsx,ts,tsx}"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: [
+                "**/content/phase-2",
+                "**/content/phase-2/**",
+                "content/phase-2",
+                "content/phase-2/**",
+              ],
+              message:
+                "Canonical content/phase-2 must not enter the app graph. Load published content through repositories only.",
+            },
+          ],
+        },
+      ],
+    },
+  },
   globalIgnores([
     ".next/**",
     "out/**",

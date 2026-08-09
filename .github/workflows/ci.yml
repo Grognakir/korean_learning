@@ -58,6 +58,9 @@ jobs:
       - name: Integration tests
         run: pnpm test:integration
 
+      - name: Content validation
+        run: pnpm content:validate && pnpm test:content
+
       - name: Build
         run: pnpm build
 

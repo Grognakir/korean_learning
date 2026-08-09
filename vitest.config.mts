@@ -12,7 +12,13 @@ export default defineConfig({
   test: {
     clearMocks: true,
     environment: "jsdom",
-    exclude: ["**/node_modules/**", "**/tests/integration/**", "**/tests/e2e/**", "**/tests/db/**"],
+    exclude: [
+      "**/node_modules/**",
+      "**/tests/integration/**",
+      "**/tests/e2e/**",
+      "**/tests/db/**",
+      "**/scripts/content/**",
+    ],
     restoreMocks: true,
     setupFiles: ["./tests/helpers/setup.ts"],
     coverage: {

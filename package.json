@@ -29,7 +29,9 @@
     "db:seed": "tsx scripts/generate-db-seed.ts",
     "db:types": "supabase gen types typescript --local > src/types/database.ts",
     "test:db": "vitest run --config vitest.db.config.mts",
-    "test:rls": "vitest run --config vitest.rls.config.mts"
+    "test:rls": "vitest run --config vitest.rls.config.mts",
+    "content:validate": "tsx scripts/content/validate-content.ts",
+    "test:content": "vitest run --config vitest.content.config.mts"
   },
   "engines": {
     "node": ">=24.15.0 <25",

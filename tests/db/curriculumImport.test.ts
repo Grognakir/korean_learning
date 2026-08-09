@@ -50,12 +50,12 @@ describe("curriculum import idempotency", () => {
       runSql(
         "select count(*)::text from public.exercises where learning_skill = 'reading' and status = 'draft' and module_id in (select id from public.learning_modules where unit_number is not null);",
       ),
-    ).toBe("148");
+    ).toBe("100");
     expect(
       runSql(
         "select count(*)::text from public.exercises where learning_skill = 'reading' and status = 'approved' and module_id in (select id from public.learning_modules where unit_number is not null);",
       ),
-    ).toBe("0");
+    ).toBe("48");
   });
 
   it("rolls back when a mid-transaction statement fails", async () => {

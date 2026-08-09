@@ -22,7 +22,12 @@ describe("database schema and seed", () => {
       runSql(
         "select count(*)::text from public.exercises where status = 'draft' and learning_skill = 'reading';",
       ),
-    ).toBe("148");
+    ).toBe("100");
+    expect(
+      runSql(
+        "select count(*)::text from public.exercises where status = 'approved' and learning_skill = 'reading' and module_id in (select id from public.learning_modules where unit_number is not null);",
+      ),
+    ).toBe("48");
   });
 
   it("rejects duplicate exercise logical_id + content_version", () => {

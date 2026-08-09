@@ -1540,7 +1540,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u01.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1556,7 +1556,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n01.application",
       "subjectLogicalId": "exercise.grammar.u01.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1572,7 +1572,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u01.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1588,7 +1588,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n02.application",
       "subjectLogicalId": "exercise.grammar.u01.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1604,7 +1604,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u01.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1620,7 +1620,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n03.application",
       "subjectLogicalId": "exercise.grammar.u01.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1636,7 +1636,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u01.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1652,7 +1652,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n04.application",
       "subjectLogicalId": "exercise.grammar.u01.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1668,7 +1668,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u01.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1684,7 +1684,7 @@
     {
       "logicalId": "prov.exercise.grammar.u01.n05.application",
       "subjectLogicalId": "exercise.grammar.u01.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1700,7 +1700,7 @@
     {
       "logicalId": "prov.exercise.grammar.u02.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u02.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1716,7 +1716,7 @@
     {
       "logicalId": "prov.exercise.grammar.u02.n01.application",
       "subjectLogicalId": "exercise.grammar.u02.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1732,7 +1732,7 @@
     {
       "logicalId": "prov.exercise.grammar.u02.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u02.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1748,7 +1748,7 @@
     {
       "logicalId": "prov.exercise.grammar.u02.n02.application",
       "subjectLogicalId": "exercise.grammar.u02.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1764,7 +1764,7 @@
     {
       "logicalId": "prov.exercise.grammar.u02.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u02.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1780,7 +1780,7 @@
     {
       "logicalId": "prov.exercise.grammar.u02.n03.application",
       "subjectLogicalId": "exercise.grammar.u02.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1796,7 +1796,7 @@
     {
       "logicalId": "prov.exercise.grammar.u02.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u02.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1812,7 +1812,7 @@
     {
       "logicalId": "prov.exercise.grammar.u02.n04.application",
       "subjectLogicalId": "exercise.grammar.u02.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1828,7 +1828,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u03.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1844,7 +1844,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n01.application",
       "subjectLogicalId": "exercise.grammar.u03.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1860,7 +1860,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u03.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1876,7 +1876,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n02.application",
       "subjectLogicalId": "exercise.grammar.u03.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1892,7 +1892,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u03.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1908,7 +1908,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n03.application",
       "subjectLogicalId": "exercise.grammar.u03.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1924,7 +1924,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u03.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1940,7 +1940,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n04.application",
       "subjectLogicalId": "exercise.grammar.u03.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1956,7 +1956,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u03.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1972,7 +1972,7 @@
     {
       "logicalId": "prov.exercise.grammar.u03.n05.application",
       "subjectLogicalId": "exercise.grammar.u03.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -1988,7 +1988,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u04.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2004,7 +2004,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n01.application",
       "subjectLogicalId": "exercise.grammar.u04.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2020,7 +2020,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u04.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2036,7 +2036,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n02.application",
       "subjectLogicalId": "exercise.grammar.u04.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2052,7 +2052,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u04.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2068,7 +2068,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n03.application",
       "subjectLogicalId": "exercise.grammar.u04.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2084,7 +2084,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u04.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2100,7 +2100,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n04.application",
       "subjectLogicalId": "exercise.grammar.u04.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2116,7 +2116,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u04.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2132,7 +2132,7 @@
     {
       "logicalId": "prov.exercise.grammar.u04.n05.application",
       "subjectLogicalId": "exercise.grammar.u04.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2148,7 +2148,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u05.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2164,7 +2164,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n01.application",
       "subjectLogicalId": "exercise.grammar.u05.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2180,7 +2180,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u05.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2196,7 +2196,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n02.application",
       "subjectLogicalId": "exercise.grammar.u05.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2212,7 +2212,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u05.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2228,7 +2228,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n03.application",
       "subjectLogicalId": "exercise.grammar.u05.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2244,7 +2244,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u05.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2260,7 +2260,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n04.application",
       "subjectLogicalId": "exercise.grammar.u05.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2276,7 +2276,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u05.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2292,7 +2292,7 @@
     {
       "logicalId": "prov.exercise.grammar.u05.n05.application",
       "subjectLogicalId": "exercise.grammar.u05.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2308,7 +2308,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u06.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2324,7 +2324,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n01.application",
       "subjectLogicalId": "exercise.grammar.u06.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2340,7 +2340,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u06.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2356,7 +2356,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n02.application",
       "subjectLogicalId": "exercise.grammar.u06.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2372,7 +2372,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u06.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2388,7 +2388,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n03.application",
       "subjectLogicalId": "exercise.grammar.u06.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2404,7 +2404,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u06.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2420,7 +2420,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n04.application",
       "subjectLogicalId": "exercise.grammar.u06.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2436,7 +2436,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u06.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2452,7 +2452,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n05.application",
       "subjectLogicalId": "exercise.grammar.u06.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2468,7 +2468,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n06.recognition",
       "subjectLogicalId": "exercise.grammar.u06.n06.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2484,7 +2484,7 @@
     {
       "logicalId": "prov.exercise.grammar.u06.n06.application",
       "subjectLogicalId": "exercise.grammar.u06.n06.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2500,7 +2500,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u07.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2516,7 +2516,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n01.application",
       "subjectLogicalId": "exercise.grammar.u07.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2532,7 +2532,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u07.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2548,7 +2548,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n02.application",
       "subjectLogicalId": "exercise.grammar.u07.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2564,7 +2564,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u07.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2580,7 +2580,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n03.application",
       "subjectLogicalId": "exercise.grammar.u07.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2596,7 +2596,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u07.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2612,7 +2612,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n04.application",
       "subjectLogicalId": "exercise.grammar.u07.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2628,7 +2628,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u07.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2644,7 +2644,7 @@
     {
       "logicalId": "prov.exercise.grammar.u07.n05.application",
       "subjectLogicalId": "exercise.grammar.u07.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2660,7 +2660,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u08.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2676,7 +2676,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n01.application",
       "subjectLogicalId": "exercise.grammar.u08.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2692,7 +2692,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u08.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2708,7 +2708,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n02.application",
       "subjectLogicalId": "exercise.grammar.u08.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2724,7 +2724,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u08.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2740,7 +2740,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n03.application",
       "subjectLogicalId": "exercise.grammar.u08.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2756,7 +2756,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u08.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2772,7 +2772,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n04.application",
       "subjectLogicalId": "exercise.grammar.u08.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2788,7 +2788,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u08.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2804,7 +2804,7 @@
     {
       "logicalId": "prov.exercise.grammar.u08.n05.application",
       "subjectLogicalId": "exercise.grammar.u08.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2820,7 +2820,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u09.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2836,7 +2836,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n01.application",
       "subjectLogicalId": "exercise.grammar.u09.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2852,7 +2852,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u09.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2868,7 +2868,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n02.application",
       "subjectLogicalId": "exercise.grammar.u09.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2884,7 +2884,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u09.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2900,7 +2900,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n03.application",
       "subjectLogicalId": "exercise.grammar.u09.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2916,7 +2916,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u09.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2932,7 +2932,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n04.application",
       "subjectLogicalId": "exercise.grammar.u09.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2948,7 +2948,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u09.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2964,7 +2964,7 @@
     {
       "logicalId": "prov.exercise.grammar.u09.n05.application",
       "subjectLogicalId": "exercise.grammar.u09.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2980,7 +2980,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u10.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -2996,7 +2996,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n01.application",
       "subjectLogicalId": "exercise.grammar.u10.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3012,7 +3012,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u10.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3028,7 +3028,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n02.application",
       "subjectLogicalId": "exercise.grammar.u10.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3044,7 +3044,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u10.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3060,7 +3060,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n03.application",
       "subjectLogicalId": "exercise.grammar.u10.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3076,7 +3076,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u10.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3092,7 +3092,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n04.application",
       "subjectLogicalId": "exercise.grammar.u10.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3108,7 +3108,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u10.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3124,7 +3124,7 @@
     {
       "logicalId": "prov.exercise.grammar.u10.n05.application",
       "subjectLogicalId": "exercise.grammar.u10.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3140,7 +3140,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u11.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3156,7 +3156,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n01.application",
       "subjectLogicalId": "exercise.grammar.u11.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3172,7 +3172,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u11.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3188,7 +3188,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n02.application",
       "subjectLogicalId": "exercise.grammar.u11.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3204,7 +3204,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u11.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3220,7 +3220,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n03.application",
       "subjectLogicalId": "exercise.grammar.u11.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3236,7 +3236,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u11.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3252,7 +3252,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n04.application",
       "subjectLogicalId": "exercise.grammar.u11.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3268,7 +3268,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u11.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3284,7 +3284,7 @@
     {
       "logicalId": "prov.exercise.grammar.u11.n05.application",
       "subjectLogicalId": "exercise.grammar.u11.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3300,7 +3300,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u12.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3316,7 +3316,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n01.application",
       "subjectLogicalId": "exercise.grammar.u12.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3332,7 +3332,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u12.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3348,7 +3348,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n02.application",
       "subjectLogicalId": "exercise.grammar.u12.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3364,7 +3364,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u12.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3380,7 +3380,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n03.application",
       "subjectLogicalId": "exercise.grammar.u12.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3396,7 +3396,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u12.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3412,7 +3412,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n04.application",
       "subjectLogicalId": "exercise.grammar.u12.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3428,7 +3428,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u12.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3444,7 +3444,7 @@
     {
       "logicalId": "prov.exercise.grammar.u12.n05.application",
       "subjectLogicalId": "exercise.grammar.u12.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3460,7 +3460,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u13.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3476,7 +3476,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n01.application",
       "subjectLogicalId": "exercise.grammar.u13.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3492,7 +3492,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u13.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3508,7 +3508,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n02.application",
       "subjectLogicalId": "exercise.grammar.u13.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3524,7 +3524,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u13.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3540,7 +3540,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n03.application",
       "subjectLogicalId": "exercise.grammar.u13.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3556,7 +3556,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u13.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3572,7 +3572,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n04.application",
       "subjectLogicalId": "exercise.grammar.u13.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3588,7 +3588,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u13.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3604,7 +3604,7 @@
     {
       "logicalId": "prov.exercise.grammar.u13.n05.application",
       "subjectLogicalId": "exercise.grammar.u13.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3620,7 +3620,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u14.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3636,7 +3636,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n01.application",
       "subjectLogicalId": "exercise.grammar.u14.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3652,7 +3652,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u14.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3668,7 +3668,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n02.application",
       "subjectLogicalId": "exercise.grammar.u14.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3684,7 +3684,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u14.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3700,7 +3700,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n03.application",
       "subjectLogicalId": "exercise.grammar.u14.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3716,7 +3716,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u14.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3732,7 +3732,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n04.application",
       "subjectLogicalId": "exercise.grammar.u14.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3748,7 +3748,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u14.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3764,7 +3764,7 @@
     {
       "logicalId": "prov.exercise.grammar.u14.n05.application",
       "subjectLogicalId": "exercise.grammar.u14.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3780,7 +3780,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u15.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3796,7 +3796,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n01.application",
       "subjectLogicalId": "exercise.grammar.u15.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3812,7 +3812,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u15.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3828,7 +3828,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n02.application",
       "subjectLogicalId": "exercise.grammar.u15.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3844,7 +3844,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u15.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3860,7 +3860,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n03.application",
       "subjectLogicalId": "exercise.grammar.u15.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3876,7 +3876,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u15.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3892,7 +3892,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n04.application",
       "subjectLogicalId": "exercise.grammar.u15.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3908,7 +3908,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u15.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3924,7 +3924,7 @@
     {
       "logicalId": "prov.exercise.grammar.u15.n05.application",
       "subjectLogicalId": "exercise.grammar.u15.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3940,7 +3940,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n01.recognition",
       "subjectLogicalId": "exercise.grammar.u16.n01.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3956,7 +3956,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n01.application",
       "subjectLogicalId": "exercise.grammar.u16.n01.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3972,7 +3972,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n02.recognition",
       "subjectLogicalId": "exercise.grammar.u16.n02.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -3988,7 +3988,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n02.application",
       "subjectLogicalId": "exercise.grammar.u16.n02.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -4004,7 +4004,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n03.recognition",
       "subjectLogicalId": "exercise.grammar.u16.n03.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -4020,7 +4020,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n03.application",
       "subjectLogicalId": "exercise.grammar.u16.n03.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -4036,7 +4036,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n04.recognition",
       "subjectLogicalId": "exercise.grammar.u16.n04.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -4052,7 +4052,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n04.application",
       "subjectLogicalId": "exercise.grammar.u16.n04.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -4068,7 +4068,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n05.recognition",
       "subjectLogicalId": "exercise.grammar.u16.n05.recognition",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -4084,7 +4084,7 @@
     {
       "logicalId": "prov.exercise.grammar.u16.n05.application",
       "subjectLogicalId": "exercise.grammar.u16.n05.application",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-grammar",
@@ -21556,7 +21556,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u01.vy.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u01.vy.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21572,7 +21572,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u01.tam-srednee-rasstoyanie.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u01.tam-srednee-rasstoyanie.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21588,7 +21588,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u01.on-tot-opredelitel.produce",
       "subjectLogicalId": "exercise.vocabulary.u01.on-tot-opredelitel.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21604,7 +21604,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u01.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u01.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21620,7 +21620,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u02.ochki.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u02.ochki.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21636,7 +21636,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u02.ryukzak-pohodnyi-turisticheskii.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u02.ryukzak-pohodnyi-turisticheskii.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21652,7 +21652,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u02.podushka.produce",
       "subjectLogicalId": "exercise.vocabulary.u02.podushka.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21668,7 +21668,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u02.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u02.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21684,7 +21684,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u03.klass-gruppa-uchebnaya.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u03.klass-gruppa-uchebnaya.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21700,7 +21700,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u03.studencheskii-bilet.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u03.studencheskii-bilet.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21716,7 +21716,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u03.ekzamen-test.produce",
       "subjectLogicalId": "exercise.vocabulary.u03.ekzamen-test.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21732,7 +21732,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u03.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u03.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21748,7 +21748,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u04.kanikuly-shkolnye-universitetskie.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u04.kanikuly-shkolnye-universitetskie.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21764,7 +21764,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u04.sleduyuschii-mesyats.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u04.sleduyuschii-mesyats.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21780,7 +21780,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u04.sleduyuschaya-nedelya.produce",
       "subjectLogicalId": "exercise.vocabulary.u04.sleduyuschaya-nedelya.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21796,7 +21796,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u04.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u04.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21812,7 +21812,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u05.utro.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u05.utro.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21828,7 +21828,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u05.noch.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u05.noch.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21844,7 +21844,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u05.glubokaya-noch.produce",
       "subjectLogicalId": "exercise.vocabulary.u05.glubokaya-noch.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21860,7 +21860,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u05.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u05.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21876,7 +21876,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u06.badminton.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u06.badminton.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21892,7 +21892,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u06.voleibol.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u06.voleibol.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21908,7 +21908,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u06.boks.produce",
       "subjectLogicalId": "exercise.vocabulary.u06.boks.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21924,7 +21924,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u06.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u06.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21940,7 +21940,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u07.nasyschennyi-soderzhatelnyi-produktivnyi.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u07.nasyschennyi-soderzhatelnyi-produktivnyi.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21956,7 +21956,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u07.bolnoi-bolit.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u07.bolnoi-bolit.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21972,7 +21972,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u07.krasivyi-prekrasnyi.produce",
       "subjectLogicalId": "exercise.vocabulary.u07.krasivyi-prekrasnyi.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -21988,7 +21988,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u07.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u07.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22004,7 +22004,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u08.znat.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u08.znat.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22020,7 +22020,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u08.sidet-saditsya.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u08.sidet-saditsya.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22036,7 +22036,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u08.uchitsya-izuchat.produce",
       "subjectLogicalId": "exercise.vocabulary.u08.uchitsya-izuchat.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22052,7 +22052,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u08.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u08.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22068,7 +22068,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u09.hanbok-koreiskii-natsionalnyi-kostyum.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u09.hanbok-koreiskii-natsionalnyi-kostyum.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22084,7 +22084,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u09.kosmetika.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u09.kosmetika.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22100,7 +22100,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u09.perchatki.produce",
       "subjectLogicalId": "exercise.vocabulary.u09.perchatki.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22116,7 +22116,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u09.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u09.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22132,7 +22132,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u10.varenyi-ris-eda-v-shirokom-smysle.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u10.varenyi-ris-eda-v-shirokom-smysle.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22148,7 +22148,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u10.slivochnoe-maslo.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u10.slivochnoe-maslo.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22164,7 +22164,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u10.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits.produce",
       "subjectLogicalId": "exercise.vocabulary.u10.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22180,7 +22180,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u10.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u10.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22196,7 +22196,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u11.batareya-akkumulyator.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u11.batareya-akkumulyator.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22212,7 +22212,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u11.pylesos.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u11.pylesos.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22228,7 +22228,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u11.zaryadnoe-ustroistvo.produce",
       "subjectLogicalId": "exercise.vocabulary.u11.zaryadnoe-ustroistvo.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22244,7 +22244,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u11.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u11.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22260,7 +22260,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u12.ili-a-esli-ne.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u12.ili-a-esli-ne.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22276,7 +22276,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u12.no-odnako-pri-etom-utochnenie-ogovorka.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u12.no-odnako-pri-etom-utochnenie-ogovorka.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22292,7 +22292,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u12.vse-zhe-tem-ne-menee.produce",
       "subjectLogicalId": "exercise.vocabulary.u12.vse-zhe-tem-ne-menee.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22308,7 +22308,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u12.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u12.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22324,7 +22324,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u13.more.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u13.more.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22340,7 +22340,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u13.univermag-torgovyi-tsentr.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u13.univermag-torgovyi-tsentr.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22356,7 +22356,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u13.muzei.produce",
       "subjectLogicalId": "exercise.vocabulary.u13.muzei.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22372,7 +22372,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u13.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u13.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22388,7 +22388,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u14.magazin-nebolshoi.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u14.magazin-nebolshoi.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22404,7 +22404,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u14.teatr.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u14.teatr.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22420,7 +22420,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u14.zheleznodorozhnaya-stantsiya.produce",
       "subjectLogicalId": "exercise.vocabulary.u14.zheleznodorozhnaya-stantsiya.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22436,7 +22436,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u14.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u14.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22452,7 +22452,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u15.zhivot.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u15.zhivot.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22468,7 +22468,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u15.stopa.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u15.stopa.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22484,7 +22484,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u15.palets-na-noge.produce",
       "subjectLogicalId": "exercise.vocabulary.u15.palets-na-noge.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22500,7 +22500,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u15.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u15.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22516,7 +22516,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u16.otets.ko-ru",
       "subjectLogicalId": "exercise.vocabulary.u16.otets.ko-ru",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22532,7 +22532,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u16.syn.ru-ko",
       "subjectLogicalId": "exercise.vocabulary.u16.syn.ru-ko",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22548,7 +22548,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u16.obraschenie-k-muzhchine-srednego-vozrasta.produce",
       "subjectLogicalId": "exercise.vocabulary.u16.obraschenie-k-muzhchine-srednego-vozrasta.produce",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22564,7 +22564,7 @@
     {
       "logicalId": "prov.exercise.vocabulary.u16.matching.v01",
       "subjectLogicalId": "exercise.vocabulary.u16.matching.v01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -27028,7 +27028,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u01.q01",
       "subjectLogicalId": "exercise.reading.bank.u01.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27044,7 +27044,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u01.q02",
       "subjectLogicalId": "exercise.reading.bank.u01.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27060,7 +27060,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u01.q03",
       "subjectLogicalId": "exercise.reading.bank.u01.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27076,7 +27076,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u02.q01",
       "subjectLogicalId": "exercise.reading.bank.u02.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27092,7 +27092,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u02.q02",
       "subjectLogicalId": "exercise.reading.bank.u02.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27108,7 +27108,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u02.q03",
       "subjectLogicalId": "exercise.reading.bank.u02.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27124,7 +27124,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u03.q01",
       "subjectLogicalId": "exercise.reading.bank.u03.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27140,7 +27140,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u03.q02",
       "subjectLogicalId": "exercise.reading.bank.u03.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27156,7 +27156,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u03.q03",
       "subjectLogicalId": "exercise.reading.bank.u03.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27172,7 +27172,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u04.q01",
       "subjectLogicalId": "exercise.reading.bank.u04.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27188,7 +27188,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u04.q02",
       "subjectLogicalId": "exercise.reading.bank.u04.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27204,7 +27204,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u04.q03",
       "subjectLogicalId": "exercise.reading.bank.u04.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27220,7 +27220,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u05.q01",
       "subjectLogicalId": "exercise.reading.bank.u05.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27236,7 +27236,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u05.q02",
       "subjectLogicalId": "exercise.reading.bank.u05.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27252,7 +27252,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u05.q03",
       "subjectLogicalId": "exercise.reading.bank.u05.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27268,7 +27268,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u06.q01",
       "subjectLogicalId": "exercise.reading.bank.u06.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27284,7 +27284,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u06.q02",
       "subjectLogicalId": "exercise.reading.bank.u06.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27300,7 +27300,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u06.q03",
       "subjectLogicalId": "exercise.reading.bank.u06.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27316,7 +27316,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u07.q01",
       "subjectLogicalId": "exercise.reading.bank.u07.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27332,7 +27332,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u07.q02",
       "subjectLogicalId": "exercise.reading.bank.u07.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27348,7 +27348,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u07.q03",
       "subjectLogicalId": "exercise.reading.bank.u07.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27364,7 +27364,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u08.q01",
       "subjectLogicalId": "exercise.reading.bank.u08.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27380,7 +27380,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u08.q02",
       "subjectLogicalId": "exercise.reading.bank.u08.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27396,7 +27396,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u08.q03",
       "subjectLogicalId": "exercise.reading.bank.u08.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27412,7 +27412,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u09.q01",
       "subjectLogicalId": "exercise.reading.bank.u09.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27428,7 +27428,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u09.q02",
       "subjectLogicalId": "exercise.reading.bank.u09.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27444,7 +27444,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u09.q03",
       "subjectLogicalId": "exercise.reading.bank.u09.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27460,7 +27460,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u10.q01",
       "subjectLogicalId": "exercise.reading.bank.u10.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27476,7 +27476,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u10.q02",
       "subjectLogicalId": "exercise.reading.bank.u10.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27492,7 +27492,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u10.q03",
       "subjectLogicalId": "exercise.reading.bank.u10.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27508,7 +27508,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u11.q01",
       "subjectLogicalId": "exercise.reading.bank.u11.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27524,7 +27524,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u11.q02",
       "subjectLogicalId": "exercise.reading.bank.u11.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27540,7 +27540,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u11.q03",
       "subjectLogicalId": "exercise.reading.bank.u11.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27556,7 +27556,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u12.q01",
       "subjectLogicalId": "exercise.reading.bank.u12.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27572,7 +27572,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u12.q02",
       "subjectLogicalId": "exercise.reading.bank.u12.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27588,7 +27588,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u12.q03",
       "subjectLogicalId": "exercise.reading.bank.u12.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27604,7 +27604,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u13.q01",
       "subjectLogicalId": "exercise.reading.bank.u13.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27620,7 +27620,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u13.q02",
       "subjectLogicalId": "exercise.reading.bank.u13.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27636,7 +27636,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u13.q03",
       "subjectLogicalId": "exercise.reading.bank.u13.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27652,7 +27652,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u14.q01",
       "subjectLogicalId": "exercise.reading.bank.u14.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27668,7 +27668,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u14.q02",
       "subjectLogicalId": "exercise.reading.bank.u14.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27684,7 +27684,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u14.q03",
       "subjectLogicalId": "exercise.reading.bank.u14.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27700,7 +27700,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u15.q01",
       "subjectLogicalId": "exercise.reading.bank.u15.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27716,7 +27716,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u15.q02",
       "subjectLogicalId": "exercise.reading.bank.u15.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27732,7 +27732,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u15.q03",
       "subjectLogicalId": "exercise.reading.bank.u15.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27748,7 +27748,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u16.q01",
       "subjectLogicalId": "exercise.reading.bank.u16.q01",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27764,7 +27764,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u16.q02",
       "subjectLogicalId": "exercise.reading.bank.u16.q02",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",
@@ -27780,7 +27780,7 @@
     {
       "logicalId": "prov.exercise.reading.bank.u16.q03",
       "subjectLogicalId": "exercise.reading.bank.u16.q03",
-      "contentVersion": "1.0.0",
+      "contentVersion": "1.0.1",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-texts",

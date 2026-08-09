@@ -1,6 +1,6 @@
 {
   "schemaVersion": "phase-2.content-audit.v1",
-  "generatedAt": "2026-08-09T17:20:23.487Z",
+  "generatedAt": "2026-08-09T17:30:00.981Z",
   "auditDoc": "docs/PHASE_2_CONTENT_AUDIT.md",
   "canonicalDocuments": [
     "docs/CURRICULUM_TOPICS.md",
@@ -9,11 +9,20 @@
     "docs/CURRICULUM_TEXTS.md"
   ],
   "checkpoint": {
-    "id": "CP-6",
-    "status": "accepted",
-    "acceptedAt": "2026-08-09",
+    "id": "CP-8",
+    "status": "pending_user_acceptance",
+    "previousAccepted": [
+      {
+        "id": "CP-6",
+        "acceptedAt": "2026-08-09"
+      },
+      {
+        "id": "CP-7",
+        "acceptedAt": "2026-08-10"
+      }
+    ],
     "blocks": [
-      "status promotions to approved without language review",
+      "F2-I23 release/preview until CP-8 accepted",
       "remote supabase seed/migration without explicit step"
     ]
   },
@@ -21,13 +30,13 @@
     "units": {
       "total": 16,
       "byStatus": {
-        "draft": 16
+        "approved": 16
       }
     },
     "grammarTopics": {
       "total": 80,
       "byStatus": {
-        "draft": 80
+        "approved": 80
       },
       "perUnit": [
         {
@@ -132,7 +141,7 @@
       "total": 1091,
       "byStatus": {
         "draft": 899,
-        "reviewed": 192
+        "approved": 192
       },
       "unitLinks": 192
     },
@@ -140,8 +149,8 @@
       "total": 178,
       "byStatus": {
         "draft": 138,
-        "reviewed": 13,
-        "needs_review": 27
+        "approved": 16,
+        "needs_review": 24
       },
       "textbookOrAppendix": 93,
       "exam": 85
@@ -151,7 +160,8 @@
       "vocabulary": 64,
       "reading": 148,
       "readingByStatus": {
-        "draft": 148
+        "draft": 100,
+        "approved": 48
       }
     }
   },
@@ -176,17 +186,17 @@
     }
   },
   "notApprovedSummary": {
-    "units": 16,
-    "grammarTopics": 80,
-    "dictionaryEntries": 1091,
-    "readingPassages": 178,
-    "exercisesReading": 148,
-    "exercisesGrammar": 160,
-    "exercisesVocabulary": 64
+    "units": 0,
+    "grammarTopics": 0,
+    "dictionaryEntries": 899,
+    "readingPassages": 162,
+    "exercisesReading": 100,
+    "exercisesGrammar": 0,
+    "exercisesVocabulary": 0
   },
   "vocabularyBoundary": {
     "totalSenses": 1091,
-    "approved": 0,
+    "approved": 192,
     "businessDraft": 22,
     "knownHomonyms": [
       {
@@ -222,17 +232,16 @@
         "senseCount": 2
       }
     ],
-    "note": "No dictionary senses are approved yet. Business lexicon remains draft (level=business-draft)."
+    "note": "Primary §3.2 senses are approved; remaining senses and business lexicon stay draft (level=business-draft)."
   },
   "security": {
     "absoluteLocalPathHits": [],
     "appContentImportScan": "passed"
   },
-  "openQuestionsForCp6": [
-    "Confirm 16 units / 80 grammar catalog structure against CURRICULUM_TOPICS.md and CURRICULUM_GRAMMAR.md.",
-    "Confirm dictionary homonyms and business-draft boundary before any approval.",
-    "Confirm reading merge decisions and exam bank remain draft until language review.",
-    "Decide which metadata (if any) may move to reviewed after CP-6; none are approved yet."
+  "openQuestionsForCp8": [
+    "Confirm approved §3.2 minimum (16/80/192/16 + exercise banks) is linguistically acceptable.",
+    "Confirm contested approvals (-아/어서 ①/②, -(으)러, -(으)십시오, blank passages, selected homonyms).",
+    "Confirm non-minimum draft remainder (exam bank, extra dictionary/passages) stays unpublished."
   ],
   "derivedReportsPresent": {
     "dictionaryReconciliation": true,

@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I21 и F2-FIX-01 `done`; CP-6 и CP-7 приняты).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I22 и F2-FIX-01 `done`; CP-6 и CP-7 приняты; **ждём CP-8**).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I21 phase-two quality gate — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i21-phase-two-quality-gate`.
-- **Уже сделано:** §3.2 coverage test; secret/DTO scans; quality report; CI audit/perf/e2e на push; два последовательных полных gate.
-- **Выполненные проверки:** format/lint/typecheck/unit 358 / content 43 / integration 19 / DB 24 / RLS 13 / E2E 34 / build / bundles / perf smoke ×2.
-- **Сейчас работает:** technical release gate готов к language review.
-- **Пока не работает / ограничения:** curriculum banks not approved until F2-I22 / CP-8.
-- **Следующий конкретный шаг:** F2-I22 — ручная языковая проверка и CP-8.
+- **Текущая итерация:** F2-I22 language review — `done`, остановка на CP-8.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i22-language-review`; CP-8 не подтверждён.
+- **Уже сделано:** individual decision manifest (576); §3.2 minimum `approved`; contested notes; draft remainder left unpublished; seed regenerated.
+- **Выполненные проверки:** content validate/audit/tests + полный gate итерации.
+- **Сейчас работает:** publishable minimum bank marked approved in authoring JSON / local seed.
+- **Пока не работает / ограничения:** remote import/preview release (F2-I23); CP-8 user acceptance.
+- **Следующий конкретный шаг:** принять CP-8, затем F2-I23.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.
@@ -1506,7 +1506,7 @@ MVP включает навигацию по темам и грамматике,
 
 ## 24. Чек-лист выпуска v0.1.0
 
-- [x] CP-5, CP-6 подтверждены; [ ] CP-7, CP-8 и CP-9 подтверждены.
+- [x] CP-5, CP-6, CP-7 подтверждены; [ ] CP-8 и CP-9 подтверждены.
 - [ ] Scope соответствует MVP; higher-level grammar не попала в release pool.
 - [ ] Все published exercises имеют approved review той же версии.
 - [ ] Нет открытых P0/P1; P2 явно приняты или исправлены.

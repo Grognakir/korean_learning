@@ -124,7 +124,7 @@
     {
       "logicalId": "dict.beotda.snimat-odezhdu",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -145,8 +145,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -176,7 +176,7 @@
     {
       "logicalId": "dict.anjda.sidet-saditsya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -197,8 +197,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -444,7 +444,7 @@
     {
       "logicalId": "dict.baeuda.uchitsya-izuchat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -465,8 +465,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -1600,7 +1600,7 @@
     {
       "logicalId": "dict.boda.smotret-videt",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -1621,8 +1621,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -1700,7 +1700,7 @@
     {
       "logicalId": "dict.batda.poluchat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -1721,14 +1721,14 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.alda.znat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -1749,8 +1749,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -2548,7 +2548,7 @@
     {
       "logicalId": "dict.bonaeda.otpravlyat-posylat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -2569,8 +2569,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -3200,7 +3200,7 @@
     {
       "logicalId": "dict.beorida.ustraivat-zatevat-prazdnik-delo",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3221,8 +3221,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -3420,7 +3420,7 @@
     {
       "logicalId": "dict.buchida.otpravlyat-posylku-pismo",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3441,8 +3441,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -3592,7 +3592,7 @@
     {
       "logicalId": "dict.bakkuda.menyat-izmenyat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3613,8 +3613,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -3860,7 +3860,7 @@
     {
       "logicalId": "dict.beolda.zarabatyvat-dengi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3881,8 +3881,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -3936,7 +3936,7 @@
     {
       "logicalId": "dict.billida.odalzhivat-brat-naprokat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -3957,8 +3957,8 @@
       "level": null,
       "pos": "verb",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -4348,7 +4348,7 @@
     {
       "logicalId": "dict.bissada.dorogoi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -4369,8 +4369,8 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -4760,7 +4760,7 @@
     {
       "logicalId": "dict.bakda.svetlyi-yarkii",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -4781,8 +4781,8 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -5148,7 +5148,7 @@
     {
       "logicalId": "dict.bokjaphada.slozhnyi-mnogolyudnyi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5169,8 +5169,8 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -5272,7 +5272,7 @@
     {
       "logicalId": "dict.apeuda.bolnoi-bolit",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5293,14 +5293,14 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.baegopeuda.golodnyi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5321,14 +5321,14 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.baebureuda.sytyi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5349,8 +5349,8 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -5596,7 +5596,7 @@
     {
       "logicalId": "dict.areumdapda.krasivyi-prekrasnyi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5617,8 +5617,8 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -5672,7 +5672,7 @@
     {
       "logicalId": "dict.bujireonhada.trudolyubivyi-prilezhnyi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5693,8 +5693,8 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -5748,7 +5748,7 @@
     {
       "logicalId": "dict.bappeuda.zanyatoi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5769,8 +5769,8 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -5848,7 +5848,7 @@
     {
       "logicalId": "dict.bulchinjeolhada.nedruzhelyubnyi-nevezhlivyi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -5869,8 +5869,8 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -6020,7 +6020,7 @@
     {
       "logicalId": "dict.bangapda.rad-a-vstreche",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6041,14 +6041,14 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.alchada.nasyschennyi-soderzhatelnyi-produktivnyi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6069,8 +6069,8 @@
       "level": null,
       "pos": "adjective",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -6316,7 +6316,7 @@
     {
       "logicalId": "dict.dangsin.vy",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6337,8 +6337,8 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -6392,7 +6392,7 @@
     {
       "logicalId": "dict.geu.on-tot-opredelitel",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6413,14 +6413,14 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geunyeo.ona",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6441,14 +6441,14 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geudeul.oni",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6469,14 +6469,14 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.i.etot-opredelitel",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6497,14 +6497,14 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.jeo.tot-ta-to-opredelitel-daleko",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6525,14 +6525,14 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Contested demonstrative 저: distal determiner sense kept as primary for u01; other senses remain draft."
       }
     },
     {
       "logicalId": "dict.igeot.eto-predmet-blizko",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6553,14 +6553,14 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geugeot.to-predmet-srednee-rasstoyanie",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6581,8 +6581,8 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -6636,7 +6636,7 @@
     {
       "logicalId": "dict.geogi.tam-srednee-rasstoyanie",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6657,8 +6657,8 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -6688,7 +6688,7 @@
     {
       "logicalId": "dict.jagi.sam-sebya-svoi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6709,14 +6709,14 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.ireon.takoi-kak-etot",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6737,14 +6737,14 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geugot.to-mesto-tam",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -6765,8 +6765,8 @@
       "level": null,
       "pos": "pronoun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -8116,7 +8116,7 @@
     {
       "logicalId": "dict.bap.varenyi-ris-eda-v-shirokom-smysle",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8137,8 +8137,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -8240,7 +8240,7 @@
     {
       "logicalId": "dict.dakgogi.kuritsa-myaso",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8261,8 +8261,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -8292,7 +8292,7 @@
     {
       "logicalId": "dict.dalgyal.yaitso",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8313,8 +8313,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -8344,7 +8344,7 @@
     {
       "logicalId": "dict.chijeu.syr",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8365,14 +8365,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.beoteo.slivochnoe-maslo",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8393,8 +8393,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -8496,7 +8496,7 @@
     {
       "logicalId": "dict.doenjang.soevaya-pasta",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8517,8 +8517,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -8668,7 +8668,7 @@
     {
       "logicalId": "dict.cha.chai",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8689,8 +8689,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -8816,7 +8816,7 @@
     {
       "logicalId": "dict.bibimbap.bibimbap-ris-s-ovoschami-i-myasom-chasto-s-yaits",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8837,14 +8837,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.bulgogi.bulgogi-marinovannoe-zharenoe-myaso",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -8865,8 +8865,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -9064,7 +9064,7 @@
     {
       "logicalId": "dict.dak.kuritsa-zhivaya-ptitsa",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9085,8 +9085,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -9260,7 +9260,7 @@
     {
       "logicalId": "dict.doenjangjjigae.tvendyang-tige-ragu-s-soevoi-pastoi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9281,8 +9281,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -9360,7 +9360,7 @@
     {
       "logicalId": "dict.danmuji.marinovannaya-zheltaya-redka-dlya-kimbapa",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9381,14 +9381,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.siheom.ekzamen-test",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9409,14 +9409,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.sueop.urok-zanyatie",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9437,14 +9437,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.haksaengjeung.studencheskii-bilet",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9465,14 +9465,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.yeseup.podgotovka-k-uroku-zaranee",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9493,14 +9493,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.ban.klass-gruppa-uchebnaya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9521,8 +9521,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -9552,7 +9552,7 @@
     {
       "logicalId": "dict.chimdae.krovat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9573,8 +9573,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -9604,7 +9604,7 @@
     {
       "logicalId": "dict.chaeksang.pismennyi-stol-parta",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9625,14 +9625,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.chaekjang.knizhnyi-shkaf",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9653,8 +9653,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -9804,7 +9804,7 @@
     {
       "logicalId": "dict.chaekgabang.shkolnyi-ryukzak",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9825,14 +9825,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.baenang.ryukzak-pohodnyi-turisticheskii",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9853,8 +9853,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -9908,7 +9908,7 @@
     {
       "logicalId": "dict.angyeong.ochki",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9929,14 +9929,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.begae.podushka",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -9957,8 +9957,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -10012,7 +10012,7 @@
     {
       "logicalId": "dict.binu.mylo",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10033,14 +10033,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.chitsol.zubnaya-schetka",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10061,8 +10061,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -10236,7 +10236,7 @@
     {
       "logicalId": "dict.chaek.kniga",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10257,8 +10257,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -10384,7 +10384,7 @@
     {
       "logicalId": "dict.bolpen.sharikovaya-ruchka",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10405,8 +10405,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -10676,7 +10676,7 @@
     {
       "logicalId": "dict.bongtu.konvert-paketik",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10697,8 +10697,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -10920,7 +10920,7 @@
     {
       "logicalId": "dict.keompyuteo.kompyuter",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10941,8 +10941,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -10972,7 +10972,7 @@
     {
       "logicalId": "dict.hyudaepon.mobilnyi-telefon",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -10993,8 +10993,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -11072,7 +11072,7 @@
     {
       "logicalId": "dict.eeokeon-e-eo-keon.konditsioner",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11093,14 +11093,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.cheongsogi.pylesos",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11121,14 +11121,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.jeonjareinji.mikrovolnovaya-pech",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11149,8 +11149,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -11180,7 +11180,7 @@
     {
       "logicalId": "dict.darimi.utyug",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11201,14 +11201,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.kamera.kamera-fotoapparat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11229,14 +11229,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.ieopon.naushniki-vkladyshi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11257,14 +11257,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.chungjeongi.zaryadnoe-ustroistvo",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11285,14 +11285,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.baeteori.batareya-akkumulyator",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11313,14 +11313,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.mauseu.kompyuternaya-mysh",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11341,14 +11341,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.kibodeu.klaviatura",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11369,8 +11369,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -11448,7 +11448,7 @@
     {
       "logicalId": "dict.abeoji.otets",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11469,14 +11469,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.appa.papa",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11497,14 +11497,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.eomeoni.mat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11525,14 +11525,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.eomma.mama",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11553,14 +11553,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.bumonim.roditeli",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11581,14 +11581,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.adeul.syn",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11609,8 +11609,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -11736,7 +11736,7 @@
     {
       "logicalId": "dict.dongsaeng.mladshii-brat-ili-sestra",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -11757,8 +11757,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -11980,7 +11980,7 @@
     {
       "logicalId": "dict.anae.zhena",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12001,14 +12001,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.ajeossi.obraschenie-k-muzhchine-srednego-vozrasta",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12029,14 +12029,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.ajumeoni.obraschenie-k-zhenschine-srednego-vozrasta",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12057,8 +12057,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -12112,7 +12112,7 @@
     {
       "logicalId": "dict.chingu.drug-podruga",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12133,8 +12133,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -12308,7 +12308,7 @@
     {
       "logicalId": "dict.chincheok.rodstvenniki-rodnya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12329,8 +12329,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -12360,7 +12360,7 @@
     {
       "logicalId": "dict.chukgu.futbol",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12381,8 +12381,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -12436,7 +12436,7 @@
     {
       "logicalId": "dict.baegu.voleibol",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12457,8 +12457,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -12608,7 +12608,7 @@
     {
       "logicalId": "dict.dalligi.beg",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12629,8 +12629,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -12732,7 +12732,7 @@
     {
       "logicalId": "dict.boksing.boks",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12753,14 +12753,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.golpeu.golf",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12781,14 +12781,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.baedeuminteon.badminton",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12809,14 +12809,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.bolling.bouling",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12837,14 +12837,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.deungsan.pohod-v-gory-trekking",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12865,8 +12865,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -12896,7 +12896,7 @@
     {
       "logicalId": "dict.helseu.trenazhernyi-zal-fitnes",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12917,14 +12917,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.jajeongeo-tagi.ezda-na-velosipede",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -12945,8 +12945,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -13024,7 +13024,7 @@
     {
       "logicalId": "dict.chejo.gimnastika",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13045,8 +13045,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -13076,7 +13076,7 @@
     {
       "logicalId": "dict.joging.dzhogging-beg-trustsoi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13097,8 +13097,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -13272,7 +13272,7 @@
     {
       "logicalId": "dict.byeonhosa.yurist-advokat",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13293,8 +13293,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -13420,7 +13420,7 @@
     {
       "logicalId": "dict.baeu.akter-aktrisa",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13441,8 +13441,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -13592,7 +13592,7 @@
     {
       "logicalId": "dict.enjinieo.inzhener",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13613,8 +13613,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -13644,7 +13644,7 @@
     {
       "logicalId": "dict.dijaineo.dizainer",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13665,8 +13665,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -13840,7 +13840,7 @@
     {
       "logicalId": "dict.dongnyo.kollega",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13861,8 +13861,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -13940,7 +13940,7 @@
     {
       "logicalId": "dict.daehaksaeng.student-universiteta",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -13961,8 +13961,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14040,7 +14040,7 @@
     {
       "logicalId": "dict.daehagwon.aspirantura-magistratura",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14061,14 +14061,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.chodeunghakgyo.nachalnaya-shkola",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14089,8 +14089,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14120,7 +14120,7 @@
     {
       "logicalId": "dict.godeunghakgyo.starshaya-shkola-polnaya-srednyaya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14141,14 +14141,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.daehakgyo.universitet",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14169,14 +14169,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.bilding.zdanie-obychno-ofisnoe-mnogoetazhnoe",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14197,14 +14197,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.byeongwon.bolnitsa",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14225,8 +14225,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14280,7 +14280,7 @@
     {
       "logicalId": "dict.hakgyo.shkola",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14301,8 +14301,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14380,7 +14380,7 @@
     {
       "logicalId": "dict.gage.magazin-nebolshoi",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14401,8 +14401,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14456,7 +14456,7 @@
     {
       "logicalId": "dict.gonghang.aeroport",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14477,14 +14477,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.beoseu-jeongnyujang.avtobusnaya-ostanovka",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14505,8 +14505,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14560,7 +14560,7 @@
     {
       "logicalId": "dict.eunhaeng.bank",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14581,14 +14581,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.gyosil.klass-klassnaya-komnata",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14609,14 +14609,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geukjang.teatr",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14637,8 +14637,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14668,7 +14668,7 @@
     {
       "logicalId": "dict.doseogwan.biblioteka",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14689,14 +14689,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.cheyukgwan.sportzal-sportivnyi-zal",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14717,8 +14717,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14796,7 +14796,7 @@
     {
       "logicalId": "dict.baekhwajeom.univermag-torgovyi-tsentr",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14817,14 +14817,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.gongwon.park",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14845,8 +14845,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14876,7 +14876,7 @@
     {
       "logicalId": "dict.bakmulgwan.muzei",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14897,8 +14897,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14928,7 +14928,7 @@
     {
       "logicalId": "dict.dongmurwon.zoopark",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -14949,8 +14949,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -14980,7 +14980,7 @@
     {
       "logicalId": "dict.gichayeok.zheleznodorozhnaya-stantsiya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15001,8 +15001,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -15152,7 +15152,7 @@
     {
       "logicalId": "dict.haesuyokjang.plyazh-dlya-kupaniya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15173,14 +15173,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.bada.more",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15201,14 +15201,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.helseu-jang.fitnes-zal-trenazhernyi-zal",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15229,8 +15229,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -15260,7 +15260,7 @@
     {
       "logicalId": "dict.gonggongjangso.obschestvennoe-mesto",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15281,8 +15281,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -15312,7 +15312,7 @@
     {
       "logicalId": "dict.gungnipjungangbangmulgwan.natsionalnyi-muzei-korei",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15333,8 +15333,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -15892,7 +15892,7 @@
     {
       "logicalId": "dict.eolgul.litso",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -15913,8 +15913,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -15992,7 +15992,7 @@
     {
       "logicalId": "dict.gwi.uho",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16013,8 +16013,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -16044,7 +16044,7 @@
     {
       "logicalId": "dict.hyeo.yazyk-organ",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16065,8 +16065,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -16096,7 +16096,7 @@
     {
       "logicalId": "dict.eokkae.plecho",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16117,8 +16117,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -16220,7 +16220,7 @@
     {
       "logicalId": "dict.dari.noga-ot-bedra-do-stopy",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16241,14 +16241,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Contested homonym 다리: body-part sense kept as primary for u15; bridge sense remains draft."
       }
     },
     {
       "logicalId": "dict.bal.stopa",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16269,14 +16269,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.balgarak.palets-na-noge",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16297,8 +16297,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -16328,7 +16328,7 @@
     {
       "logicalId": "dict.heori.poyasnitsa-taliya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16349,14 +16349,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.gaseum.grud",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16377,14 +16377,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.deung.spina",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16405,14 +16405,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.bae.zhivot",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16433,14 +16433,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Contested homonym 배: abdomen sense kept as primary for u15; ship sense remains draft."
       }
     },
     {
       "logicalId": "dict.eongdeongi.yagoditsy",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16461,8 +16461,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -16540,7 +16540,7 @@
     {
       "logicalId": "dict.ot.odezhda",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16561,14 +16561,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.sinbal.obuv",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16589,14 +16589,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.hwajangpum.kosmetika",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16617,14 +16617,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.hanbok.hanbok-koreiskii-natsionalnyi-kostyum",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16645,14 +16645,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.suyeongbok.kupalnik-plavki",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16673,14 +16673,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.janggap.perchatki",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16701,14 +16701,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.nektai.galstuk",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16729,14 +16729,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.sonsugeon.nosovoi-platok",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16757,14 +16757,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.undonghwa.krossovki-sportivnaya-obuv",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -16785,8 +16785,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -22744,7 +22744,7 @@
     {
       "logicalId": "dict.geumyoil.pyatnitsa",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22765,8 +22765,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -22844,7 +22844,7 @@
     {
       "logicalId": "dict.haru.odin-den-sutki",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22865,14 +22865,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geujeokke.pozavchera",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22893,14 +22893,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geuje.pozavchera",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22921,14 +22921,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.eoje.vchera",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -22949,8 +22949,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -23124,7 +23124,7 @@
     {
       "logicalId": "dict.daeum-ju.sleduyuschaya-nedelya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23145,8 +23145,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -23176,7 +23176,7 @@
     {
       "logicalId": "dict.dal.mesyats",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23197,8 +23197,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -23276,7 +23276,7 @@
     {
       "logicalId": "dict.daeum-dal.sleduyuschii-mesyats",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23297,8 +23297,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -23352,7 +23352,7 @@
     {
       "logicalId": "dict.hae.god",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23373,8 +23373,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -23620,7 +23620,7 @@
     {
       "logicalId": "dict.gonghyuil.gosudarstvennyi-prazdnik",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23641,14 +23641,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.banghak.kanikuly-shkolnye-universitetskie",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23669,14 +23669,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.gaehak.nachalo-uchebnogo-semestra-posle-kanikul",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23697,8 +23697,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -23776,7 +23776,7 @@
     {
       "logicalId": "dict.saebyeok.rassvet-rannee-utro",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23797,14 +23797,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.achim.utro",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23825,14 +23825,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.ojeon.do-poludnya-pervaya-polovina-dnya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23853,14 +23853,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.jeongo.polden",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23881,14 +23881,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.nat.den-svetloe-vremya-sutok",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23909,14 +23909,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.jeomsim.obed-polden",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23937,14 +23937,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.ohu.posle-poludnya-vtoraya-polovina-dnya",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23965,14 +23965,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.jeonyeok.vecher",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -23993,14 +23993,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.bam.noch",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24021,14 +24021,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.jajeong.polnoch",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24049,8 +24049,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -24080,7 +24080,7 @@
     {
       "logicalId": "dict.sikhu.posle-edy",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24101,14 +24101,14 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.hanbamjjung.glubokaya-noch",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24129,8 +24129,8 @@
       "level": null,
       "pos": "noun",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -24904,7 +24904,7 @@
     {
       "logicalId": "dict.geurigo.i-a-takzhe-i-potom",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24925,14 +24925,14 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geuraeseo.poetomu-i-poetomu",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24953,14 +24953,14 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geureonikka.poetomu-tak-chto",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -24981,14 +24981,14 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geureonde.no-kstati-a-vot",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25009,14 +25009,14 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.hajiman.no-odnako",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25037,14 +25037,14 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geureona.no-odnako",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25065,14 +25065,14 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geuraedo.vse-zhe-tem-ne-menee",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25093,14 +25093,14 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geureomyeon.esli-tak-v-takom-sluchae-togda",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25121,14 +25121,14 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.geureom.togda-v-takom-sluchae",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25149,8 +25149,8 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -25204,7 +25204,7 @@
     {
       "logicalId": "dict.animyeon.ili-a-esli-ne",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25225,8 +25225,8 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -25256,7 +25256,7 @@
     {
       "logicalId": "dict.geureochiman.no-tem-ne-menee",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25277,14 +25277,14 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
       "logicalId": "dict.dan.no-odnako-pri-etom-utochnenie-ogovorka",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -25305,8 +25305,8 @@
       "level": null,
       "pos": "conjunction",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -26416,7 +26416,7 @@
     {
       "logicalId": "dict.ban.polovina-dlya-vremeni-n-n-30",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -26437,8 +26437,8 @@
       "level": null,
       "pos": "counter",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -26540,7 +26540,7 @@
     {
       "logicalId": "dict.beon.raz-nomer",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -26561,8 +26561,8 @@
       "level": null,
       "pos": "counter",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {
@@ -26616,7 +26616,7 @@
     {
       "logicalId": "dict.beol.komplekt-nabor-dlya-odezhdy",
       "contentVersion": "1.0.0",
-      "status": "reviewed",
+      "status": "approved",
       "sourceRefs": [
         {
           "sourceId": "src.curriculum-vocabulary",
@@ -26637,8 +26637,8 @@
       "level": null,
       "pos": "counter",
       "review": {
-        "reviewedAt": "2026-08-10T00:00:00.000Z",
-        "note": "Selected for minimal vocabulary exercise bank (F2-I16); language still draft for publication."
+        "reviewedAt": "2026-08-10T02:30:00.000Z",
+        "note": "F2-I22 language approval by project-owner. Primary minimal vocabulary sense (≥12/unit); gloss/lemma checked for publication."
       }
     },
     {

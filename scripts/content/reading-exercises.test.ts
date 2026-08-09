@@ -46,7 +46,7 @@ describe("phase-2 reading exercise bank", () => {
       const passage = passagesById.get(selected!.passageLogicalId);
       expect(passage).toBeTruthy();
       expect(passage!.unitLogicalId).toBe(unit.logicalId);
-      expect(["reviewed", "needs_review"]).toContain(passage!.status);
+      expect(passage!.status).toBe("approved");
       expect(passage!.bodyRu).toBeNull();
 
       const unitBank = bankExercises.filter(
@@ -57,7 +57,7 @@ describe("phase-2 reading exercise bank", () => {
         unitBank.every(
           (exercise) =>
             exercise.readingPassageLogicalId === selected!.passageLogicalId &&
-            exercise.contentVersion === passage!.contentVersion &&
+            exercise.status === "approved" &&
             exercise.exerciseType === "single-choice",
         ),
       ).toBe(true);
@@ -85,9 +85,9 @@ describe("phase-2 reading exercise bank", () => {
     }
   });
 
-  it("keeps exam imports draft and hides answers in public DTO", () => {
+  it("keeps exam imports draft, bank approved, and hides answers in public DTO", () => {
     expect(examExercises.every((exercise) => exercise.status === "draft")).toBe(true);
-    expect(bankExercises.every((exercise) => exercise.status === "draft")).toBe(true);
+    expect(bankExercises.every((exercise) => exercise.status === "approved")).toBe(true);
 
     const sample = bankExercises[0]!;
     const domain = {

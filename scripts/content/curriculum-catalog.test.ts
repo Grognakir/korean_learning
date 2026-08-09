@@ -9,7 +9,7 @@ import {
 const EXPECTED_COUNTS = [5, 4, 5, 5, 5, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5] as const;
 
 describe("phase-2 curriculum catalog coverage", () => {
-  it("loads 16 draft units and 80 draft grammar topics with exact per-unit counts", () => {
+  it("loads 16 approved units and 80 approved grammar topics with exact per-unit counts", () => {
     validatePhase2Content(PHASE_2_CONTENT_ROOT);
     const graph = loadPhase2ContentGraph(PHASE_2_CONTENT_ROOT);
 
@@ -25,7 +25,7 @@ describe("phase-2 curriculum catalog coverage", () => {
 
     const logicalIds = graph.units.items.map((unit) => unit.logicalId);
     expect(new Set(logicalIds).size).toBe(16);
-    expect(graph.units.items.every((unit) => unit.status === "draft")).toBe(true);
+    expect(graph.units.items.every((unit) => unit.status === "approved")).toBe(true);
     expect(
       graph.units.items.every((unit) =>
         unit.sourceRefs.some((ref) => ref.sourceId === "src.curriculum-topics"),
@@ -38,7 +38,7 @@ describe("phase-2 curriculum catalog coverage", () => {
         (topic) => topic.unitLogicalId === unitLogicalId,
       );
       expect(topics, unitLogicalId).toHaveLength(expected);
-      expect(topics.every((topic) => topic.status === "draft")).toBe(true);
+      expect(topics.every((topic) => topic.status === "approved")).toBe(true);
       expect(
         topics.every((topic) =>
           topic.sourceRefs.some((ref) => ref.sourceId === "src.curriculum-grammar"),
@@ -79,7 +79,7 @@ describe("phase-2 curriculum catalog coverage", () => {
       expect(provenanceSubjects.has(topic.logicalId)).toBe(true);
     }
 
-    expect(graph.units.items.every((unit) => unit.status !== "approved")).toBe(true);
-    expect(graph.grammarTopics.items.every((topic) => topic.status !== "approved")).toBe(true);
+    expect(graph.units.items.every((unit) => unit.status === "approved")).toBe(true);
+    expect(graph.grammarTopics.items.every((topic) => topic.status === "approved")).toBe(true);
   });
 });

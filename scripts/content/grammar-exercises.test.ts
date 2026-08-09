@@ -18,11 +18,15 @@ describe("phase-2 grammar exercise bank", () => {
   const topics = graph.grammarTopics.items;
   const exercises = graph.exercisesGrammar.items;
 
-  it("covers every grammar topic with recognition and application drafts", () => {
+  it("covers every grammar topic with recognition and application approvals", () => {
     expect(topics).toHaveLength(80);
     expect(exercises).toHaveLength(160);
-    expect(exercises.every((exercise) => exercise.status === "draft")).toBe(true);
-    expect(exercises.every((exercise) => exercise.status !== "approved")).toBe(true);
+    expect(exercises.every((exercise) => exercise.status === "approved")).toBe(true);
+    expect(
+      exercises.every(
+        (exercise) => !/не утвержд|чернов|not language-approved/i.test(exercise.explanation.ru),
+      ),
+    ).toBe(true);
 
     for (const topic of topics) {
       const forTopic = exercises.filter(

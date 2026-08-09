@@ -22,7 +22,7 @@ vi.mock("@/features/authentication/server/getServerAuthUser", () => ({
 
 vi.mock("next/navigation", () => ({
   useRouter: () => ({ replace: vi.fn(), push: vi.fn() }),
-  usePathname: () => "/topics",
+  usePathname: () => "/training",
 }));
 
 const STATIC_SHELL_ROUTES = [
@@ -52,7 +52,7 @@ describe("application routes", () => {
   it("describes the training route without the removed development preview", () => {
     render(<TrainingPage />);
 
-    expect(screen.getByText("Выберите модуль и начните короткую тренировку.")).toBeInTheDocument();
+    expect(screen.getByText(/Выберите навык, тему и доступные фильтры/)).toBeInTheDocument();
     expect(screen.queryByText(/Draft preview|development/i)).not.toBeInTheDocument();
   });
 
@@ -88,11 +88,19 @@ describe("application routes", () => {
     expect(screen.getByRole("heading", { level: 1, name: "Вход" })).toBeInTheDocument();
   });
 
-  it("loads the validated local exercise set on the training route", async () => {
-    render(await TrainingModulesPanel());
+  it("loads skill based training setup on the training route", async () => {
+    render(
+      await TrainingModulesPanel({
+        searchParams: Promise.resolve({ skill: "grammar", unit: "u01" }),
+      }),
+    );
 
-    expect(screen.getByText(/доступно 14 заданий/)).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Начать тренировку" })).toHaveAttribute(
+    expect(screen.getByRole("button", { name: "Грамматика" })).toHaveAttribute(
+      "aria-pressed",
+      "true",
+    );
+    expect(screen.getByTestId("training-setup-request")).toHaveTextContent('"unitSlug": "u01"');
+    expect(screen.getByRole("link", { name: "Демо sample-module" })).toHaveAttribute(
       "href",
       "/training/demo-session",
     );
@@ -113,10 +121,13 @@ describe("application routes", () => {
     expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
   });
 
-  it("marks the training module level badge with lang=ko", async () => {
-    render(await TrainingModulesPanel());
+  it("keeps a demo session escape hatch from training setup", async () => {
+    render(await TrainingModulesPanel({ searchParams: Promise.resolve({}) }));
 
-    expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
+    expect(screen.getByRole("link", { name: "Демо sample-module" })).toHaveAttribute(
+      "href",
+      "/training/demo-session",
+    );
   });
 
   it("renders the demo training session route", async () => {

@@ -19,6 +19,7 @@ const curriculumMocks = vi.hoisted(() => ({
   getCachedPublicGrammarTopics: vi.fn(),
   getCachedPublicGrammarTopic: vi.fn(),
   getCachedPublicDictionary: vi.fn(),
+  getCachedPublicDictionaryPage: vi.fn(),
   getCachedPublicPassages: vi.fn(),
   getCachedApprovedCurriculumExercises: vi.fn(),
 }));
@@ -28,7 +29,7 @@ vi.mock("@/modules/curriculum/cachedCurriculumContent", () => curriculumMocks);
 
 vi.mock("next/navigation", () => ({
   useRouter: () => ({ replace: vi.fn(), push: vi.fn() }),
-  usePathname: () => "/topics",
+  usePathname: () => "/training",
 }));
 
 beforeEach(() => {
@@ -68,7 +69,7 @@ describe("content store outage", () => {
   it("shows the service unavailable state on the training modules panel", async () => {
     const { TrainingModulesPanel } = await import("@/app/training/TrainingModulesPanel");
 
-    render(await TrainingModulesPanel());
+    render(await TrainingModulesPanel({ searchParams: Promise.resolve({}) }));
 
     expect(screen.getByRole("heading", { name: "Сервис недоступен" })).toBeInTheDocument();
   });

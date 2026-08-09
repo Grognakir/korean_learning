@@ -1,68 +1,136 @@
 import Link from "next/link";
 
 import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedback";
-import { Badge } from "@/components/ui/Badge";
+import { TrainingSetupControls } from "@/features/training/components/TrainingSetup/TrainingSetupControls";
 import { GuestSessionImportPrompt } from "@/features/training/components/GuestSessionImportPrompt";
 import { ResumeTrainingPrompt } from "@/features/training/components/ResumeTrainingPrompt";
 import { DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
+import { parseTrainingSetupQuery } from "@/features/training/setup/parseTrainingSetupQuery";
+import { resolveTrainingSetup } from "@/features/training/setup/resolveTrainingSetup";
+import { getCachedPublishedModuleBySlug } from "@/modules/cachedLearningContent";
 import {
-  getCachedExerciseCountByModuleSlug,
-  getCachedPublishedModuleBySlug,
-} from "@/modules/cachedLearningContent";
+  getCachedApprovedCurriculumExercises,
+  getCachedPublicGrammarTopics,
+  getCachedPublicUnits,
+} from "@/modules/curriculum/cachedCurriculumContent";
 
 import styles from "./page.module.css";
 
-export async function TrainingModulesPanel() {
-  const [sample, sampleCount] = await Promise.all([
+type TrainingModulesPanelProps = {
+  readonly searchParams: Promise<{
+    skill?: string | string[];
+    unit?: string | string[];
+    grammar?: string | string[];
+    difficulty?: string | string[];
+    size?: string | string[];
+  }>;
+};
+
+export async function TrainingModulesPanel({ searchParams }: TrainingModulesPanelProps) {
+  const url = parseTrainingSetupQuery(await searchParams);
+  const [unitsResult, grammarResult, exercisesResult, sample] = await Promise.all([
+    getCachedPublicUnits(),
+    url.unitSlug ? getCachedPublicGrammarTopics(url.unitSlug) : getCachedPublicGrammarTopics(),
+    url.unitSlug
+      ? getCachedApprovedCurriculumExercises({
+          unitSlug: url.unitSlug,
+          ...(url.skill ? { learningSkill: url.skill } : {}),
+        })
+      : Promise.resolve({ status: "ready" as const, data: [] as const }),
     getCachedPublishedModuleBySlug("sample-module"),
-    getCachedExerciseCountByModuleSlug("sample-module"),
   ]);
 
-  if (sample.status === "unavailable" || sampleCount.status === "unavailable") {
+  if (
+    unitsResult.status === "unavailable" ||
+    grammarResult.status === "unavailable" ||
+    exercisesResult.status === "unavailable" ||
+    sample.status === "unavailable"
+  ) {
     return <ServiceUnavailableState />;
   }
 
-  const sampleModule = sample.data;
-  const sampleExerciseCount = sampleCount.data;
+  if (unitsResult.data.length === 0) {
+    return <CatalogEmptyState />;
+  }
+
+  const setup = resolveTrainingSetup({
+    url,
+    units: unitsResult.data,
+    grammarTopics: grammarResult.data,
+    exercises: exercisesResult.data,
+  });
+
+  const unitOptions = unitsResult.data.map((unit) => ({
+    value: unit.slug,
+    label: `Урок ${unit.unitNumber}: ${unit.title.ru}`,
+  }));
+  const grammarOptions = grammarResult.data.map((topic) => ({
+    value: topic.logicalId,
+    label: topic.patternKo,
+    lang: "ko",
+  }));
+  const difficultyOptions = setup.difficulties.map((value) => ({
+    value,
+    label: value,
+  }));
+  const sizeOptions = Array.from({ length: setup.maxSessionSize }, (_, index) => {
+    const value = String(index + 1);
+    return { value, label: value };
+  });
 
   return (
     <>
       <ResumeTrainingPrompt />
       <GuestSessionImportPrompt
         moduleIdBySlug={{
-          ...(sampleModule ? { [sampleModule.slug]: sampleModule.id } : {}),
+          ...(sample.data ? { [sample.data.slug]: sample.data.id } : {}),
         }}
       />
 
-      {!sampleModule ? (
-        <CatalogEmptyState />
-      ) : (
-        <section aria-label="Доступные модули для тренировки" className={styles.grid}>
-          <article className={styles.panel}>
-            <div className={styles.meta}>
-              <Badge lang="ko" tone="accent">
-                {sampleModule.level}
-              </Badge>
-              <span>{sampleExerciseCount} заданий</span>
-            </div>
-            <div className={styles.copy}>
-              {sampleModule.title.ko ? (
-                <p className={styles.koreanTitle} lang="ko">
-                  {sampleModule.title.ko}
-                </p>
-              ) : null}
-              <h2>{sampleModule.title.ru}</h2>
-              <p>
-                В модуле доступно {sampleExerciseCount} заданий. Запустите демо-сессию и пройдите
-                упражнения подряд.
-              </p>
-            </div>
-            <Link className={styles.startAction} href={`/training/${DEMO_TRAINING_SESSION_ID}`}>
-              Начать тренировку
+      <section aria-label="Настройка тренировки" className={styles.setup}>
+        <TrainingSetupControls
+          difficulty={url.difficulty}
+          difficultyOptions={difficultyOptions}
+          grammarOptions={grammarOptions}
+          grammarTopicId={url.grammarTopicId}
+          sessionSize={url.sessionSize}
+          sizeOptions={sizeOptions}
+          skill={url.skill}
+          unitOptions={unitOptions}
+          unitSlug={url.unitSlug}
+        />
+
+        <div className={styles.summary}>
+          <p className={styles.summaryMeta}>
+            Доступно заданий: {setup.availableCount}
+            {setup.request ? ` · размер сессии: ${setup.request.sessionSize}` : null}
+          </p>
+          {setup.request ? (
+            <pre className={styles.requestPreview} data-testid="training-setup-request">
+              {JSON.stringify(setup.request, null, 2)}
+            </pre>
+          ) : null}
+          <div className={styles.actionSlot}>
+            {setup.canPreview && setup.request ? (
+              <Link className={styles.startAction} href={`/training/${DEMO_TRAINING_SESSION_ID}`}>
+                Начать тренировку
+              </Link>
+            ) : (
+              <>
+                <span aria-disabled="true" className={styles.startDisabled}>
+                  Начать тренировку
+                </span>
+                {setup.blockedReason ? (
+                  <p className={styles.blockedReason}>{setup.blockedReason}</p>
+                ) : null}
+              </>
+            )}
+            <Link className={styles.demoLink} href={`/training/${DEMO_TRAINING_SESSION_ID}`}>
+              Демо sample-module
             </Link>
-          </article>
-        </section>
-      )}
+          </div>
+        </div>
+      </section>
     </>
   );
 }

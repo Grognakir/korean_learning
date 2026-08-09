@@ -5,6 +5,64 @@
   padding-block-end: clamp(var(--space-6), 6vw, var(--space-16));
 }
 
+.setup {
+  display: grid;
+  gap: 1.25rem;
+  min-width: 0;
+}
+
+.summary {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.summaryMeta,
+.blockedReason {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.requestPreview {
+  margin: 0;
+  padding: 0.75rem;
+  overflow-x: auto;
+  border-radius: 0.55rem;
+  background: var(--color-surface-muted, #f7f4ee);
+  font-size: 0.85rem;
+}
+
+.actionSlot {
+  display: grid;
+  gap: 0.4rem;
+  align-content: start;
+  min-height: 4.5rem;
+}
+
+.demoLink {
+  justify-self: start;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.startDisabled {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  padding: var(--space-2) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted, #f7f4ee);
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-semibold);
+}
+
 .grid {
   display: grid;
   gap: var(--space-5);

@@ -2,15 +2,15 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I05 `done`; I01–I04 в `main`).
+- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I06 `done`; I01–I05 в `main`).
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I05 dictionary draft и reconciliation — `done`.
-- **Статус текущей итерации:** `done` на ветке `codex/f2-i05-dictionary-canonicalization`.
-- **Уже сделано:** draft dictionary 1091 senses + 50 irregular relations; `dictionary-reconciliation.json` (803/731/179 coverage-only); unit links пустые до тематической карты.
+- **Текущая итерация:** F2-I06 reading corpus — `done`.
+- **Статус текущей итерации:** `done` на ветке `codex/f2-i06-reading-corpus`.
+- **Уже сделано:** 93 textbook/appendix passages + 85 exam passages + 100 draft reading exercises; `reading-reconciliation.json` с merge decisions и regression flags.
 - **Выполненные проверки:** content:validate + content tests; format/lint/typecheck/unit/integration/build (gate итерации).
-- **Сейчас работает:** sample runtime без изменений; canonical catalog/dictionary только в `content/phase-2` (draft).
-- **Пока не работает / ограничения:** reading corpus ещё не импортирован (F2-I06); seed pipeline не подхватывает authoring JSON; Preview SSO как раньше.
-- **Следующий конкретный шаг:** F2-I06 — reading corpus и draft reading bank.
+- **Сейчас работает:** sample runtime без изменений; весь phase-2 authoring в `content/phase-2` (draft/needs_review).
+- **Пока не работает / ограничения:** content audit gate / CP-6 ещё не пройден (F2-I07); seed pipeline не подхватывает authoring JSON; Preview SSO как раньше.
+- **Следующий конкретный шаг:** F2-I07 — content audit gate и CP-6.
 - **Блокирующие вопросы:** нет.
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.

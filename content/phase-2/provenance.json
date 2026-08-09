@@ -18992,6 +18992,4454 @@
         }
       ],
       "notes": "Draft sense from category counters; notes=첫 번째 — первый, 두 번째 — второй; строится на 번 (раз, номер)"
+    },
+    {
+      "logicalId": "prov.passage.u01.section.1-10-track-101",
+      "subjectLogicalId": "passage.u01.section.1-10-track-101",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L23"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u01.section.2-102-track-102",
+      "subjectLogicalId": "passage.u01.section.2-102-track-102",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L38"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u01.section.s003",
+      "subjectLogicalId": "passage.u01.section.s003",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L51"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u01.section.s004",
+      "subjectLogicalId": "passage.u01.section.s004",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L71"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u01.section.s005",
+      "subjectLogicalId": "passage.u01.section.s005",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L87"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u02.section.1-track-105",
+      "subjectLogicalId": "passage.u02.section.1-track-105",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L100"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u02.section.2-track-106",
+      "subjectLogicalId": "passage.u02.section.2-track-106",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L117"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u02.section.35",
+      "subjectLogicalId": "passage.u02.section.35",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L132"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u02.section.37",
+      "subjectLogicalId": "passage.u02.section.37",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L154"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u03.section.1-109-track-109",
+      "subjectLogicalId": "passage.u03.section.1-109-track-109",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L174"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u03.section.2-track-110",
+      "subjectLogicalId": "passage.u03.section.2-track-110",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L190"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u03.section.s012",
+      "subjectLogicalId": "passage.u03.section.s012",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L207"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u03.section.s013",
+      "subjectLogicalId": "passage.u03.section.s013",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L229"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u03.section.track-112",
+      "subjectLogicalId": "passage.u03.section.track-112",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L244"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u04.section.1-113-track-113",
+      "subjectLogicalId": "passage.u04.section.1-113-track-113",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L261"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u04.section.2-114-track-114",
+      "subjectLogicalId": "passage.u04.section.2-114-track-114",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L274"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u04.section.s017",
+      "subjectLogicalId": "passage.u04.section.s017",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L290"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u04.section.s018",
+      "subjectLogicalId": "passage.u04.section.s018",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L310"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u04.section.70",
+      "subjectLogicalId": "passage.u04.section.70",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L324"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u05.section.1-117-track-117",
+      "subjectLogicalId": "passage.u05.section.1-117-track-117",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L339"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u05.section.2-118-track-118",
+      "subjectLogicalId": "passage.u05.section.2-118-track-118",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L352"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u05.section.s022",
+      "subjectLogicalId": "passage.u05.section.s022",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L363"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u05.section.s023",
+      "subjectLogicalId": "passage.u05.section.s023",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L382"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u06.section.1-121-track-121",
+      "subjectLogicalId": "passage.u06.section.1-121-track-121",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L400"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u06.section.2-94-track-122",
+      "subjectLogicalId": "passage.u06.section.2-94-track-122",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L410"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u06.section.98",
+      "subjectLogicalId": "passage.u06.section.98",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L424"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u06.section.100",
+      "subjectLogicalId": "passage.u06.section.100",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L440"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u07.section.1-125-track-125",
+      "subjectLogicalId": "passage.u07.section.1-125-track-125",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L462"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u07.section.2-track-126",
+      "subjectLogicalId": "passage.u07.section.2-track-126",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L479"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u07.section.s030",
+      "subjectLogicalId": "passage.u07.section.s030",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L493"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u07.section.s031",
+      "subjectLogicalId": "passage.u07.section.s031",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L508"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u07.section.track-128",
+      "subjectLogicalId": "passage.u07.section.track-128",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L522"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u08.section.1-129-track-129",
+      "subjectLogicalId": "passage.u08.section.1-129-track-129",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L544"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u08.section.2-126-track-130",
+      "subjectLogicalId": "passage.u08.section.2-126-track-130",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L554"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u08.section.s035",
+      "subjectLogicalId": "passage.u08.section.s035",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L568"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u08.section.s036",
+      "subjectLogicalId": "passage.u08.section.s036",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L583"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u08.section.track-132",
+      "subjectLogicalId": "passage.u08.section.track-132",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L599"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u09.section.1-9-track-133",
+      "subjectLogicalId": "passage.u09.section.1-9-track-133",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L620"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u09.section.2-track-134",
+      "subjectLogicalId": "passage.u09.section.2-track-134",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L640"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u09.section.s040",
+      "subjectLogicalId": "passage.u09.section.s040",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L656"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u09.section.track-136",
+      "subjectLogicalId": "passage.u09.section.track-136",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L677"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u09.section.149",
+      "subjectLogicalId": "passage.u09.section.149",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L694"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u10.section.1-10-track-137",
+      "subjectLogicalId": "passage.u10.section.1-10-track-137",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L716"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u10.section.2-159-track-138",
+      "subjectLogicalId": "passage.u10.section.2-159-track-138",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L731"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u10.section.s045",
+      "subjectLogicalId": "passage.u10.section.s045",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L754"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u10.section.s046",
+      "subjectLogicalId": "passage.u10.section.s046",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L772"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u10.section.track-140",
+      "subjectLogicalId": "passage.u10.section.track-140",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L785"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u11.section.1-11-track-141",
+      "subjectLogicalId": "passage.u11.section.1-11-track-141",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L814"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u11.section.2-177-track-142",
+      "subjectLogicalId": "passage.u11.section.2-177-track-142",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L832"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u11.section.181",
+      "subjectLogicalId": "passage.u11.section.181",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L851"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u11.section.185",
+      "subjectLogicalId": "passage.u11.section.185",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L872"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u12.section.1-12-track-145",
+      "subjectLogicalId": "passage.u12.section.1-12-track-145",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L893"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u12.section.2-track-146",
+      "subjectLogicalId": "passage.u12.section.2-track-146",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L907"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u12.section.198",
+      "subjectLogicalId": "passage.u12.section.198",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L923"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u12.section.s055",
+      "subjectLogicalId": "passage.u12.section.s055",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L945"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u12.section.s056",
+      "subjectLogicalId": "passage.u12.section.s056",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L971"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u12.section.203",
+      "subjectLogicalId": "passage.u12.section.203",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L992"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u13.section.1-13-track-149",
+      "subjectLogicalId": "passage.u13.section.1-13-track-149",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1018"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u13.section.2-211-track-150",
+      "subjectLogicalId": "passage.u13.section.2-211-track-150",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1034"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u13.section.215",
+      "subjectLogicalId": "passage.u13.section.215",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1052"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u13.section.s061",
+      "subjectLogicalId": "passage.u13.section.s061",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1071"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u13.section.13-track-152",
+      "subjectLogicalId": "passage.u13.section.13-track-152",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1095"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u14.section.1-14-track-152-153",
+      "subjectLogicalId": "passage.u14.section.1-14-track-152-153",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1114"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u14.section.2-track-154",
+      "subjectLogicalId": "passage.u14.section.2-track-154",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1131"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u14.section.231",
+      "subjectLogicalId": "passage.u14.section.231",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1146"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u14.section.233",
+      "subjectLogicalId": "passage.u14.section.233",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1166"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u14.section.14-track-156",
+      "subjectLogicalId": "passage.u14.section.14-track-156",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1194"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u15.section.1-238-track-157",
+      "subjectLogicalId": "passage.u15.section.1-238-track-157",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1215"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u15.section.2-243-track-158",
+      "subjectLogicalId": "passage.u15.section.2-243-track-158",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1232"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u15.section.247",
+      "subjectLogicalId": "passage.u15.section.247",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1249"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u15.section.249",
+      "subjectLogicalId": "passage.u15.section.249",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1271"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u15.section.15-track-160",
+      "subjectLogicalId": "passage.u15.section.15-track-160",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1291"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u16.section.1-16-track-161",
+      "subjectLogicalId": "passage.u16.section.1-16-track-161",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1311"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u16.section.2-259-track-162",
+      "subjectLogicalId": "passage.u16.section.2-259-track-162",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1328"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u16.section.s075",
+      "subjectLogicalId": "passage.u16.section.s075",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1343"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u16.section.266",
+      "subjectLogicalId": "passage.u16.section.266",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1366"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u16.section.268",
+      "subjectLogicalId": "passage.u16.section.268",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1392"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u01.appendix.1-272-track-103",
+      "subjectLogicalId": "passage.u01.appendix.1-272-track-103",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1406"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u02.appendix.2-272-track-107",
+      "subjectLogicalId": "passage.u02.appendix.2-272-track-107",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1417"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u03.appendix.3-273-track-111",
+      "subjectLogicalId": "passage.u03.appendix.3-273-track-111",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1425"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u04.appendix.4-273-track-115",
+      "subjectLogicalId": "passage.u04.appendix.4-273-track-115",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1439"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u05.appendix.5-274-track-119",
+      "subjectLogicalId": "passage.u05.appendix.5-274-track-119",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1450"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u06.appendix.6-274-track-123",
+      "subjectLogicalId": "passage.u06.appendix.6-274-track-123",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1464"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u07.appendix.7-275-track-127",
+      "subjectLogicalId": "passage.u07.appendix.7-275-track-127",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1474"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u08.appendix.8-275-track-131",
+      "subjectLogicalId": "passage.u08.appendix.8-275-track-131",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1483"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u09.appendix.9-276-track-135",
+      "subjectLogicalId": "passage.u09.appendix.9-276-track-135",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1494"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u10.appendix.10-276-track-139",
+      "subjectLogicalId": "passage.u10.appendix.10-276-track-139",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1508"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u11.appendix.11-277-track-143",
+      "subjectLogicalId": "passage.u11.appendix.11-277-track-143",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1522"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u12.appendix.12-277-track-147",
+      "subjectLogicalId": "passage.u12.appendix.12-277-track-147",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1535"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u13.appendix.13-278-track-151",
+      "subjectLogicalId": "passage.u13.appendix.13-278-track-151",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1549"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u14.appendix.14-278-track-155",
+      "subjectLogicalId": "passage.u14.appendix.14-278-track-155",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1561"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u15.appendix.15-279-track-159",
+      "subjectLogicalId": "passage.u15.appendix.15-279-track-159",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1571"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.u16.appendix.16-279-track-163",
+      "subjectLogicalId": "passage.u16.appendix.16-279-track-163",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "line-range",
+            "value": "L1585"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Imported from CURRICULUM_TEXTS.md."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s1-i1",
+      "subjectLogicalId": "passage.exam.v01.v1-s1-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s1-i2",
+      "subjectLogicalId": "passage.exam.v01.v1-s1-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s2-i1",
+      "subjectLogicalId": "passage.exam.v01.v1-s2-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s2-i2",
+      "subjectLogicalId": "passage.exam.v01.v1-s2-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s3-i1",
+      "subjectLogicalId": "passage.exam.v01.v1-s3-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s3-i2",
+      "subjectLogicalId": "passage.exam.v01.v1-s3-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s3-i3",
+      "subjectLogicalId": "passage.exam.v01.v1-s3-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s4-i1",
+      "subjectLogicalId": "passage.exam.v01.v1-s4-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s4-i2",
+      "subjectLogicalId": "passage.exam.v01.v1-s4-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s4-i3",
+      "subjectLogicalId": "passage.exam.v01.v1-s4-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s5-i1",
+      "subjectLogicalId": "passage.exam.v01.v1-s5-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s5-i2",
+      "subjectLogicalId": "passage.exam.v01.v1-s5-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s5-i3",
+      "subjectLogicalId": "passage.exam.v01.v1-s5-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s6-shared",
+      "subjectLogicalId": "passage.exam.v01.v1-s6-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s7-shared",
+      "subjectLogicalId": "passage.exam.v01.v1-s7-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s8-i1",
+      "subjectLogicalId": "passage.exam.v01.v1-s8-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v01.v1-s9-shared",
+      "subjectLogicalId": "passage.exam.v01.v1-s9-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s1-i1",
+      "subjectLogicalId": "passage.exam.v02.v2-s1-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s1-i2",
+      "subjectLogicalId": "passage.exam.v02.v2-s1-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s2-i1",
+      "subjectLogicalId": "passage.exam.v02.v2-s2-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s2-i2",
+      "subjectLogicalId": "passage.exam.v02.v2-s2-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s3-i1",
+      "subjectLogicalId": "passage.exam.v02.v2-s3-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s3-i2",
+      "subjectLogicalId": "passage.exam.v02.v2-s3-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s3-i3",
+      "subjectLogicalId": "passage.exam.v02.v2-s3-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s4-i1",
+      "subjectLogicalId": "passage.exam.v02.v2-s4-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s4-i2",
+      "subjectLogicalId": "passage.exam.v02.v2-s4-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s4-i3",
+      "subjectLogicalId": "passage.exam.v02.v2-s4-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s5-i1",
+      "subjectLogicalId": "passage.exam.v02.v2-s5-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s5-i2",
+      "subjectLogicalId": "passage.exam.v02.v2-s5-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s5-i3",
+      "subjectLogicalId": "passage.exam.v02.v2-s5-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s6-shared",
+      "subjectLogicalId": "passage.exam.v02.v2-s6-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s7-shared",
+      "subjectLogicalId": "passage.exam.v02.v2-s7-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s8-i1",
+      "subjectLogicalId": "passage.exam.v02.v2-s8-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v02.v2-s9-shared",
+      "subjectLogicalId": "passage.exam.v02.v2-s9-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s1-i1",
+      "subjectLogicalId": "passage.exam.v03.v3-s1-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s1-i2",
+      "subjectLogicalId": "passage.exam.v03.v3-s1-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s2-i1",
+      "subjectLogicalId": "passage.exam.v03.v3-s2-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s2-i2",
+      "subjectLogicalId": "passage.exam.v03.v3-s2-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s3-i1",
+      "subjectLogicalId": "passage.exam.v03.v3-s3-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s3-i2",
+      "subjectLogicalId": "passage.exam.v03.v3-s3-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s3-i3",
+      "subjectLogicalId": "passage.exam.v03.v3-s3-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s4-i1",
+      "subjectLogicalId": "passage.exam.v03.v3-s4-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s4-i2",
+      "subjectLogicalId": "passage.exam.v03.v3-s4-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s4-i3",
+      "subjectLogicalId": "passage.exam.v03.v3-s4-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s5-i1",
+      "subjectLogicalId": "passage.exam.v03.v3-s5-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s5-i2",
+      "subjectLogicalId": "passage.exam.v03.v3-s5-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s5-i3",
+      "subjectLogicalId": "passage.exam.v03.v3-s5-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s6-shared",
+      "subjectLogicalId": "passage.exam.v03.v3-s6-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s7-shared",
+      "subjectLogicalId": "passage.exam.v03.v3-s7-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s8-i1",
+      "subjectLogicalId": "passage.exam.v03.v3-s8-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v03.v3-s9-shared",
+      "subjectLogicalId": "passage.exam.v03.v3-s9-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s1-i1",
+      "subjectLogicalId": "passage.exam.v04.v4-s1-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s1-i2",
+      "subjectLogicalId": "passage.exam.v04.v4-s1-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s2-i1",
+      "subjectLogicalId": "passage.exam.v04.v4-s2-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s2-i2",
+      "subjectLogicalId": "passage.exam.v04.v4-s2-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s3-i1",
+      "subjectLogicalId": "passage.exam.v04.v4-s3-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s3-i2",
+      "subjectLogicalId": "passage.exam.v04.v4-s3-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s3-i3",
+      "subjectLogicalId": "passage.exam.v04.v4-s3-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s4-i1",
+      "subjectLogicalId": "passage.exam.v04.v4-s4-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s4-i2",
+      "subjectLogicalId": "passage.exam.v04.v4-s4-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s4-i3",
+      "subjectLogicalId": "passage.exam.v04.v4-s4-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s5-i1",
+      "subjectLogicalId": "passage.exam.v04.v4-s5-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s5-i2",
+      "subjectLogicalId": "passage.exam.v04.v4-s5-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s5-i3",
+      "subjectLogicalId": "passage.exam.v04.v4-s5-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s6-shared",
+      "subjectLogicalId": "passage.exam.v04.v4-s6-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s7-shared",
+      "subjectLogicalId": "passage.exam.v04.v4-s7-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s8-i1",
+      "subjectLogicalId": "passage.exam.v04.v4-s8-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v04.v4-s9-shared",
+      "subjectLogicalId": "passage.exam.v04.v4-s9-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s1-i1",
+      "subjectLogicalId": "passage.exam.v05.v5-s1-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s1-i2",
+      "subjectLogicalId": "passage.exam.v05.v5-s1-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s2-i1",
+      "subjectLogicalId": "passage.exam.v05.v5-s2-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s2-i2",
+      "subjectLogicalId": "passage.exam.v05.v5-s2-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s3-i1",
+      "subjectLogicalId": "passage.exam.v05.v5-s3-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s3-i2",
+      "subjectLogicalId": "passage.exam.v05.v5-s3-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s3-i3",
+      "subjectLogicalId": "passage.exam.v05.v5-s3-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s4-i1",
+      "subjectLogicalId": "passage.exam.v05.v5-s4-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s4-i2",
+      "subjectLogicalId": "passage.exam.v05.v5-s4-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s4-i3",
+      "subjectLogicalId": "passage.exam.v05.v5-s4-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s5-i1",
+      "subjectLogicalId": "passage.exam.v05.v5-s5-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s5-i2",
+      "subjectLogicalId": "passage.exam.v05.v5-s5-i2",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s5-i3",
+      "subjectLogicalId": "passage.exam.v05.v5-s5-i3",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s6-shared",
+      "subjectLogicalId": "passage.exam.v05.v5-s6-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s7-shared",
+      "subjectLogicalId": "passage.exam.v05.v5-s7-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s8-i1",
+      "subjectLogicalId": "passage.exam.v05.v5-s8-i1",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.passage.exam.v05.v5-s9-shared",
+      "subjectLogicalId": "passage.exam.v05.v5-s9-shared",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft exam-bank passage extracted from derived reading HTML."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q01",
+      "subjectLogicalId": "exercise.reading.exam.v01.q01",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q02",
+      "subjectLogicalId": "exercise.reading.exam.v01.q02",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q03",
+      "subjectLogicalId": "exercise.reading.exam.v01.q03",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q04",
+      "subjectLogicalId": "exercise.reading.exam.v01.q04",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q05",
+      "subjectLogicalId": "exercise.reading.exam.v01.q05",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q06",
+      "subjectLogicalId": "exercise.reading.exam.v01.q06",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q07",
+      "subjectLogicalId": "exercise.reading.exam.v01.q07",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q08",
+      "subjectLogicalId": "exercise.reading.exam.v01.q08",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q09",
+      "subjectLogicalId": "exercise.reading.exam.v01.q09",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q10",
+      "subjectLogicalId": "exercise.reading.exam.v01.q10",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q11",
+      "subjectLogicalId": "exercise.reading.exam.v01.q11",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q12",
+      "subjectLogicalId": "exercise.reading.exam.v01.q12",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q13",
+      "subjectLogicalId": "exercise.reading.exam.v01.q13",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q14",
+      "subjectLogicalId": "exercise.reading.exam.v01.q14",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q15",
+      "subjectLogicalId": "exercise.reading.exam.v01.q15",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q16",
+      "subjectLogicalId": "exercise.reading.exam.v01.q16",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q17",
+      "subjectLogicalId": "exercise.reading.exam.v01.q17",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q18",
+      "subjectLogicalId": "exercise.reading.exam.v01.q18",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q19",
+      "subjectLogicalId": "exercise.reading.exam.v01.q19",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v01.q20",
+      "subjectLogicalId": "exercise.reading.exam.v01.q20",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q01",
+      "subjectLogicalId": "exercise.reading.exam.v02.q01",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q02",
+      "subjectLogicalId": "exercise.reading.exam.v02.q02",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q03",
+      "subjectLogicalId": "exercise.reading.exam.v02.q03",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q04",
+      "subjectLogicalId": "exercise.reading.exam.v02.q04",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q05",
+      "subjectLogicalId": "exercise.reading.exam.v02.q05",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q06",
+      "subjectLogicalId": "exercise.reading.exam.v02.q06",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q07",
+      "subjectLogicalId": "exercise.reading.exam.v02.q07",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q08",
+      "subjectLogicalId": "exercise.reading.exam.v02.q08",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q09",
+      "subjectLogicalId": "exercise.reading.exam.v02.q09",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q10",
+      "subjectLogicalId": "exercise.reading.exam.v02.q10",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q11",
+      "subjectLogicalId": "exercise.reading.exam.v02.q11",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q12",
+      "subjectLogicalId": "exercise.reading.exam.v02.q12",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q13",
+      "subjectLogicalId": "exercise.reading.exam.v02.q13",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q14",
+      "subjectLogicalId": "exercise.reading.exam.v02.q14",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q15",
+      "subjectLogicalId": "exercise.reading.exam.v02.q15",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q16",
+      "subjectLogicalId": "exercise.reading.exam.v02.q16",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q17",
+      "subjectLogicalId": "exercise.reading.exam.v02.q17",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q18",
+      "subjectLogicalId": "exercise.reading.exam.v02.q18",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q19",
+      "subjectLogicalId": "exercise.reading.exam.v02.q19",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v02.q20",
+      "subjectLogicalId": "exercise.reading.exam.v02.q20",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q01",
+      "subjectLogicalId": "exercise.reading.exam.v03.q01",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q02",
+      "subjectLogicalId": "exercise.reading.exam.v03.q02",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q03",
+      "subjectLogicalId": "exercise.reading.exam.v03.q03",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q04",
+      "subjectLogicalId": "exercise.reading.exam.v03.q04",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q05",
+      "subjectLogicalId": "exercise.reading.exam.v03.q05",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q06",
+      "subjectLogicalId": "exercise.reading.exam.v03.q06",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q07",
+      "subjectLogicalId": "exercise.reading.exam.v03.q07",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q08",
+      "subjectLogicalId": "exercise.reading.exam.v03.q08",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q09",
+      "subjectLogicalId": "exercise.reading.exam.v03.q09",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q10",
+      "subjectLogicalId": "exercise.reading.exam.v03.q10",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q11",
+      "subjectLogicalId": "exercise.reading.exam.v03.q11",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q12",
+      "subjectLogicalId": "exercise.reading.exam.v03.q12",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q13",
+      "subjectLogicalId": "exercise.reading.exam.v03.q13",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q14",
+      "subjectLogicalId": "exercise.reading.exam.v03.q14",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q15",
+      "subjectLogicalId": "exercise.reading.exam.v03.q15",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q16",
+      "subjectLogicalId": "exercise.reading.exam.v03.q16",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q17",
+      "subjectLogicalId": "exercise.reading.exam.v03.q17",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q18",
+      "subjectLogicalId": "exercise.reading.exam.v03.q18",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q19",
+      "subjectLogicalId": "exercise.reading.exam.v03.q19",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v03.q20",
+      "subjectLogicalId": "exercise.reading.exam.v03.q20",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q01",
+      "subjectLogicalId": "exercise.reading.exam.v04.q01",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q02",
+      "subjectLogicalId": "exercise.reading.exam.v04.q02",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q03",
+      "subjectLogicalId": "exercise.reading.exam.v04.q03",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q04",
+      "subjectLogicalId": "exercise.reading.exam.v04.q04",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q05",
+      "subjectLogicalId": "exercise.reading.exam.v04.q05",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q06",
+      "subjectLogicalId": "exercise.reading.exam.v04.q06",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q07",
+      "subjectLogicalId": "exercise.reading.exam.v04.q07",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q08",
+      "subjectLogicalId": "exercise.reading.exam.v04.q08",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q09",
+      "subjectLogicalId": "exercise.reading.exam.v04.q09",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q10",
+      "subjectLogicalId": "exercise.reading.exam.v04.q10",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q11",
+      "subjectLogicalId": "exercise.reading.exam.v04.q11",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q12",
+      "subjectLogicalId": "exercise.reading.exam.v04.q12",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q13",
+      "subjectLogicalId": "exercise.reading.exam.v04.q13",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q14",
+      "subjectLogicalId": "exercise.reading.exam.v04.q14",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q15",
+      "subjectLogicalId": "exercise.reading.exam.v04.q15",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q16",
+      "subjectLogicalId": "exercise.reading.exam.v04.q16",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q17",
+      "subjectLogicalId": "exercise.reading.exam.v04.q17",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q18",
+      "subjectLogicalId": "exercise.reading.exam.v04.q18",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q19",
+      "subjectLogicalId": "exercise.reading.exam.v04.q19",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v04.q20",
+      "subjectLogicalId": "exercise.reading.exam.v04.q20",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q01",
+      "subjectLogicalId": "exercise.reading.exam.v05.q01",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q02",
+      "subjectLogicalId": "exercise.reading.exam.v05.q02",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q03",
+      "subjectLogicalId": "exercise.reading.exam.v05.q03",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q04",
+      "subjectLogicalId": "exercise.reading.exam.v05.q04",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q05",
+      "subjectLogicalId": "exercise.reading.exam.v05.q05",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q06",
+      "subjectLogicalId": "exercise.reading.exam.v05.q06",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q07",
+      "subjectLogicalId": "exercise.reading.exam.v05.q07",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q08",
+      "subjectLogicalId": "exercise.reading.exam.v05.q08",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q09",
+      "subjectLogicalId": "exercise.reading.exam.v05.q09",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q10",
+      "subjectLogicalId": "exercise.reading.exam.v05.q10",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q11",
+      "subjectLogicalId": "exercise.reading.exam.v05.q11",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q12",
+      "subjectLogicalId": "exercise.reading.exam.v05.q12",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q13",
+      "subjectLogicalId": "exercise.reading.exam.v05.q13",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q14",
+      "subjectLogicalId": "exercise.reading.exam.v05.q14",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q15",
+      "subjectLogicalId": "exercise.reading.exam.v05.q15",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q16",
+      "subjectLogicalId": "exercise.reading.exam.v05.q16",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q17",
+      "subjectLogicalId": "exercise.reading.exam.v05.q17",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q18",
+      "subjectLogicalId": "exercise.reading.exam.v05.q18",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q19",
+      "subjectLogicalId": "exercise.reading.exam.v05.q19",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
+    },
+    {
+      "logicalId": "prov.exercise.reading.exam.v05.q20",
+      "subjectLogicalId": "exercise.reading.exam.v05.q20",
+      "contentVersion": "1.0.0",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "notes": "Draft reading exercise from derived HTML; answers kept in authoring JSON only."
     }
   ]
 }

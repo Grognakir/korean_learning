@@ -390,7 +390,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I06 — Импорт канонических текстов и draft reading bank
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** импортировать итоговый `CURRICULUM_TEXTS.md` и 100 производных вопросов без повторного слияния расшифровок.
 - **Вход:** F2-I05 `done`.
 - **Ветка:** `codex/f2-i06-reading-corpus`.

@@ -4,28 +4,27 @@
 
 ## Чем занимаемся
 
-F2-I05 выполнен. Следующая карточка — F2-I06 (reading corpus).
+F2-I06 выполнен. Следующая карточка — F2-I07 (content audit gate / CP-6).
 
-## F2-I05 — результат
+## F2-I06 — результат
 
-- `scripts/content/normalize-dictionary.ts` + `generate-dictionary.ts`
-- `pnpm content:generate-dictionary`
-- `dictionary-entries.json`: 1091 draft senses
-- 50 irregular rows → relations (не новые senses)
-- `dictionary-unit-links.json`: пусто (в Markdown нет unit map)
-- `dictionary-reconciliation.json`: полная классификация строк + derived 803/731/179 coverage-only
-- Категория `добавлено` отсутствует; бизнес-лексика `level=business-draft`, status draft
+- Parser `parse-curriculum-texts.ts` / `parse-reading-html.ts`
+- Generator `pnpm content:generate-reading` (HTML via `tmp/korean_reading_test.html` или `READING_HTML_PATH`)
+- `reading-passages.json`: 93 textbook/appendix + 85 exam passages
+- `exercises-reading.json`: 5×20 = 100 draft single-choice
+- `reading-reconciliation.json`: merge decisions + regression flags
+- HTML UI не копировался в приложение; answers только в authoring JSON
 
 ## Gate
 
-- content:validate / test:content green
-- format/lint/typecheck/unit/integration/build по карточке
+- content:validate / test:content
+- format/lint/typecheck/unit/integration/build
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i05-dictionary-canonicalization`
-- Commit: `feat: reconcile canonical Korean dictionary`
+- Branch: `codex/f2-i06-reading-corpus`
+- Commit: `feat: reconcile reading source corpus`
 
 ## Следующий шаг
 
-F2-I06 — reconcile reading source corpus. Push/merge без ожидания CI по указанию пользователя.
+F2-I07 — audit gate и остановка на CP-6.

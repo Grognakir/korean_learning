@@ -38,3 +38,6 @@ pnpm-debug.log*
 # Local editor and OS files
 .DS_Store
 .obsidian/
+
+# Local derived artifacts used only for content generation
+tmp/

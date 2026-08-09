@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "phase-2.reading-reconciliation.v1",
+  "generatedFrom": {
+    "canonicalTexts": "docs/CURRICULUM_TEXTS.md",
+    "derivedHtml": "tmp/korean_reading_test.html"
+  },
+  "mergeDecisions": [
+    {
+      "id": "decision.1",
+      "summary": "основная структура, номера разделов, маркеры `㉠/㉡`, полные тексты уроков 10, 14 и 15 взяты из версии Claude;"
+    },
+    {
+      "id": "decision.2",
+      "summary": "отсутствовавший у Claude культурный блок урока 1 добавлен из версии ChatGPT;"
+    },
+    {
+      "id": "decision.3",
+      "summary": "в уроке 3 табличные значения не превращены в реплики диалога;"
+    },
+    {
+      "id": "decision.4",
+      "summary": "в уроке 9 сохранены маркеры задания и словосочетание `이 꽃`;"
+    },
+    {
+      "id": "decision.5",
+      "summary": "в уроке 11 сохранена реплика `왕루: 아, 바쁘겠어요.`, а отдельное неподтверждённое `피곤하다` не добавлено;"
+    },
+    {
+      "id": "decision.6",
+      "summary": "в уроке 13 выбран естественный вариант `앞으로 쭉 가면`;"
+    },
+    {
+      "id": "decision.7",
+      "summary": "пробелы и пунктуация нормализованы только там, где это не меняет содержание."
+    }
+  ],
+  "counts": {
+    "textSections": 93,
+    "textbookPassages": 93,
+    "examPassages": 85,
+    "readingPassages": 178,
+    "examVariants": 5,
+    "examQuestions": 100,
+    "appendixSections": 16,
+    "unitsPresent": 16
+  },
+  "regressions": {
+    "unit1Culture": true,
+    "unit3HasTableNote": true,
+    "unit7Blank": true,
+    "unit9FlowerAndMarkers": true,
+    "unit10Present": true,
+    "unit11BusyLine": true,
+    "unit13Straight": true,
+    "unit14Present": true,
+    "unit15Present": true,
+    "appendixPresent": true
+  },
+  "variants": [
+    {
+      "index": 1,
+      "label": "변형 1 — 학교생활",
+      "questionCount": 20,
+      "suggestedUnitLogicalId": "unit.u03"
+    },
+    {
+      "index": 2,
+      "label": "변형 2 — 날씨·여행",
+      "questionCount": 20,
+      "suggestedUnitLogicalId": "unit.u07"
+    },
+    {
+      "index": 3,
+      "label": "변형 3 — 음식·쇼핑",
+      "questionCount": 20,
+      "suggestedUnitLogicalId": "unit.u10"
+    },
+    {
+      "index": 4,
+      "label": "변형 4 — 건강·운동",
+      "questionCount": 20,
+      "suggestedUnitLogicalId": "unit.u15"
+    },
+    {
+      "index": 5,
+      "label": "변형 5 — 가족·직업",
+      "questionCount": 20,
+      "suggestedUnitLogicalId": "unit.u16"
+    }
+  ]
+}

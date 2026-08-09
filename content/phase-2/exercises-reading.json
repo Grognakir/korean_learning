@@ -1,4 +1,6205 @@
 {
   "schemaVersion": "phase-2.v1",
-  "items": []
+  "items": [
+    {
+      "logicalId": "exercise.reading.exam.v01.q01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s1-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "음식",
+            "ru": "음식"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "운동",
+            "ru": "운동"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "노래",
+            "ru": "노래"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "여행",
+            "ru": "여행"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s1-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "날짜",
+            "ru": "날짜"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "시간",
+            "ru": "시간"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "계절",
+            "ru": "계절"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "생활",
+            "ru": "생활"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s2-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "평일",
+            "ru": "평일"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "방학",
+            "ru": "방학"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "주말",
+            "ru": "주말"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "생일",
+            "ru": "생일"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s2-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "나갑니다",
+            "ru": "나갑니다"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "시작합니다",
+            "ru": "시작합니다"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "일어납니다",
+            "ru": "일어납니다"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "도착합니다",
+            "ru": "도착합니다"
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s3-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "극장은 3층, 옷가게는 2층 — 옷가게가 극장 아래에 있습니다, 위가 아닙니다.",
+        "ru": "극장은 3층, 옷가게는 2층 — 옷가게가 극장 아래에 있습니다, 위가 아닙니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "옷가게는 이 층에 있습니다.",
+            "ru": "옷가게는 이 층에 있습니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "극장 위에 옷가게가 있습니다.",
+            "ru": "극장 위에 옷가게가 있습니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "세빈 빌딩에 편의점이 있습니다.",
+            "ru": "세빈 빌딩에 편의점이 있습니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "병원 아래에 극장이 있습니다.",
+            "ru": "병원 아래에 극장이 있습니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q06",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s3-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "오늘이 8일이므로 모레(오늘+2일)는 7월 10일입니다. 11일이라고 한 것이 틀렸습니다.",
+        "ru": "오늘이 8일이므로 모레(오늘+2일)는 7월 10일입니다. 11일이라고 한 것이 틀렸습니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "내일은 목요일입니다.",
+            "ru": "내일은 목요일입니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "모레는 7월 11일입니다.",
+            "ru": "모레는 7월 11일입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "어제는 화요일입니다.",
+            "ru": "어제는 화요일입니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "다음 주 화요일은 7월 14일입니다.",
+            "ru": "다음 주 화요일은 7월 14일입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q07",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s3-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "전공이 한국어교육이라고 나와 있으니 '아니다'는 틀렸습니다.",
+        "ru": "전공이 한국어교육이라고 나와 있으니 '아니다'는 틀렸습니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "세빈은 삼월에 태어났습니다.",
+            "ru": "세빈은 삼월에 태어났습니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "세빈은 한국 사람입니다.",
+            "ru": "세빈은 한국 사람입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "세빈의 전공은 한국어교육이 아닙니다.",
+            "ru": "세빈의 전공은 한국어교육이 아닙니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "세빈은 이천일 년에 태어났습니다.",
+            "ru": "세빈은 이천일 년에 태어났습니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q08",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s4-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 매일 저녁에 운동해요.",
+            "ru": "저는 매일 저녁에 운동해요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 채소를 안 먹어요.",
+            "ru": "저는 채소를 안 먹어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 단 음식을 좋아해서 자주 먹어요.",
+            "ru": "저는 단 음식을 좋아해서 자주 먹어요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 건강을 위해 노력해요.",
+            "ru": "저는 건강을 위해 노력해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q09",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s4-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 매일 파티에 가요.",
+            "ru": "저는 매일 파티에 가요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "다음 달에 시험이 있어요.",
+            "ru": "다음 달에 시험이 있어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "오늘 도서관에서 공부할 거예요.",
+            "ru": "오늘 도서관에서 공부할 거예요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 시험 공부를 전혀 안 해요.",
+            "ru": "저는 시험 공부를 전혀 안 해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q10",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s4-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 이번 학기에 고향에 갔어요.",
+            "ru": "저는 이번 학기에 고향에 갔어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 선물을 받을 거예요.",
+            "ru": "저는 선물을 받을 거예요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 표를 예매할 거예요.",
+            "ru": "저는 표를 예매할 거예요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 고향에 다녀왔어요.",
+            "ru": "저는 고향에 다녀왔어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q11",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s5-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "글 전체의 결론은 '학교생활이 즐겁다'입니다. ③은 나 혼자만의 이야기를 태국 사람 전체로 넓힌 과장입니다.",
+        "ru": "글 전체의 결론은 '학교생활이 즐겁다'입니다. ③은 나 혼자만의 이야기를 태국 사람 전체로 넓힌 과장입니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 혼자 한국어를 공부해요.",
+            "ru": "저는 혼자 한국어를 공부해요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "한국어 문법은 아주 쉬워요.",
+            "ru": "한국어 문법은 아주 쉬워요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "태국 사람은 한국어를 잘해요.",
+            "ru": "태국 사람은 한국어를 잘해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 학교생활이 즐거워요.",
+            "ru": "저는 학교생활이 즐거워요."
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q12",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s5-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 매운 음식을 안 먹어요.",
+            "ru": "저는 매운 음식을 안 먹어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 김치를 안 좋아해요.",
+            "ru": "저는 김치를 안 좋아해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "한국 음식은 아주 매워요.",
+            "ru": "한국 음식은 아주 매워요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 한국 음식을 좋아해요.",
+            "ru": "저는 한국 음식을 좋아해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q13",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s5-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 항상 혼자 운동해요.",
+            "ru": "저는 항상 혼자 운동해요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 오늘 집에서 쉴 거예요.",
+            "ru": "저는 오늘 집에서 쉴 거예요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 건강을 위해 운동해요.",
+            "ru": "저는 건강을 위해 운동해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 운동을 안 좋아해요.",
+            "ru": "저는 운동을 안 좋아해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q14",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "14. ㉠에 알맞은 것을 고르십시오.",
+        "ru": "14. ㉠에 알맞은 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "가지 않고",
+            "ru": "가지 않고"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "간 후에",
+            "ru": "간 후에"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "가서",
+            "ru": "가서"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "가기 전에",
+            "ru": "가기 전에"
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q15",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "15. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "15. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 표를 예매하지 않을 거예요.",
+            "ru": "저는 표를 예매하지 않을 거예요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 친구를 안 만날 거예요.",
+            "ru": "저는 친구를 안 만날 거예요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 이번 방학에 학교에 있을 거예요.",
+            "ru": "저는 이번 방학에 학교에 있을 거예요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 고향에서 가족을 만날 거예요.",
+            "ru": "저는 고향에서 가족을 만날 거예요."
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q16",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "16. 무엇에 대한 이야기입니까?",
+        "ru": "16. 무엇에 대한 이야기입니까?"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "하루 일과",
+            "ru": "하루 일과"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "주말 계획",
+            "ru": "주말 계획"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "학교생활",
+            "ru": "학교생활"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "일상생활",
+            "ru": "일상생활"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q17",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "17. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "17. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "302호는 3층 — '삼 층'입니다. 부지런한 사람은 남 씨, 똑똑한 사람은 리나 씨로 서로 다릅니다.",
+        "ru": "302호는 3층 — '삼 층'입니다. 부지런한 사람은 남 씨, 똑똑한 사람은 리나 씨로 서로 다릅니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "리나 씨는 부지런하고 똑똑합니다.",
+            "ru": "리나 씨는 부지런하고 똑똑합니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "우리는 수업 전에 식당에 갑니다.",
+            "ru": "우리는 수업 전에 식당에 갑니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "한국어 교실은 삼 층에 있습니다.",
+            "ru": "한국어 교실은 삼 층에 있습니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "남 씨는 우리 반 학생이 아닙니다.",
+            "ru": "남 씨는 우리 반 학생이 아닙니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q18",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s8-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)",
+        "ru": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "(나)-(가)-(다)-(라)",
+            "ru": "(나)-(가)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "(가)-(다)-(나)-(라)",
+            "ru": "(가)-(다)-(나)-(라)"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "(가)-(나)-(다)-(라)",
+            "ru": "(가)-(나)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "(가)-(나)-(라)-(다)",
+            "ru": "(가)-(나)-(라)-(다)"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q19",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "19. \"그리고 회사에 갑니다\"가 들어갈 곳을 고르십시오.",
+        "ru": "19. \"그리고 회사에 갑니다\"가 들어갈 곳을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "㉠",
+            "ru": "㉠"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "㉢",
+            "ru": "㉢"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "㉡",
+            "ru": "㉡"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "㉣",
+            "ru": "㉣"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v01.q20",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v1.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u03",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v01.v1-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "20. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "20. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "회사 도착은 8시 30분(8시 정각 아님), 아침은 집에서 먹고, 운동은 저녁에 합니다.",
+        "ru": "회사 도착은 8시 30분(8시 정각 아님), 아침은 집에서 먹고, 운동은 저녁에 합니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "뚜안 씨는 오전에 운동을 합니다.",
+            "ru": "뚜안 씨는 오전에 운동을 합니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "뚜안 씨는 회사에서 아침을 먹습니다.",
+            "ru": "뚜안 씨는 회사에서 아침을 먹습니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "뚜안 씨는 아침 8시에 회사에 도착합니다.",
+            "ru": "뚜안 씨는 아침 8시에 회사에 도착합니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "뚜안 씨는 아침 7시에 일어납니다.",
+            "ru": "뚜안 씨는 아침 7시에 일어납니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s1-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "요일",
+            "ru": "요일"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "여행",
+            "ru": "여행"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "직업",
+            "ru": "직업"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "편지",
+            "ru": "편지"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s1-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "날씨",
+            "ru": "날씨"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "생활",
+            "ru": "생활"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "위치",
+            "ru": "위치"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "음식",
+            "ru": "음식"
+          }
+        }
+      ],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s2-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "뜨거운 차",
+            "ru": "뜨거운 차"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "따뜻한 커피",
+            "ru": "따뜻한 커피"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "시원한 물",
+            "ru": "시원한 물"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "뜨거운 국",
+            "ru": "뜨거운 국"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s2-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "쇼핑합니다",
+            "ru": "쇼핑합니다"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "구경합니다",
+            "ru": "구경합니다"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "예매합니다",
+            "ru": "예매합니다"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "계획합니다",
+            "ru": "계획합니다"
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s3-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "강릉은 22도, 서울은 28도 — 서울이 더 덥습니다.",
+        "ru": "강릉은 22도, 서울은 28도 — 서울이 더 덥습니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "서울은 맑습니다.",
+            "ru": "서울은 맑습니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "제주는 비가 옵니다.",
+            "ru": "제주는 비가 옵니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "강릉이 서울보다 덥습니다.",
+            "ru": "강릉이 서울보다 덥습니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "부산은 흐립니다.",
+            "ru": "부산은 흐립니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q06",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s3-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "내일(오늘+1일)은 8월 6일, 목요일입니다. 금요일이 아닙니다.",
+        "ru": "내일(오늘+1일)은 8월 6일, 목요일입니다. 금요일이 아닙니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "어제는 화요일입니다.",
+            "ru": "어제는 화요일입니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "내일은 금요일입니다.",
+            "ru": "내일은 금요일입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "다음 주 수요일은 8월 12일입니다.",
+            "ru": "다음 주 수요일은 8월 12일입니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "오늘은 8월 5일입니다.",
+            "ru": "오늘은 8월 5일입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q07",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s3-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "출발은 서울, 도착이 제주입니다 — 반대로 되어 있습니다.",
+        "ru": "출발은 서울, 도착이 제주입니다 — 반대로 되어 있습니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "굴세짐 씨는 제주에서 출발합니다.",
+            "ru": "굴세짐 씨는 제주에서 출발합니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "출발 도시는 서울입니다.",
+            "ru": "출발 도시는 서울입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "이 표는 8월 10일 표입니다.",
+            "ru": "이 표는 8월 10일 표입니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "좌석 번호는 12A입니다.",
+            "ru": "좌석 번호는 12A입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q08",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s4-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 산으로 여행을 가요.",
+            "ru": "저는 산으로 여행을 가요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 부산에 처음 가요.",
+            "ru": "저는 부산에 처음 가요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 매년 부산에 가요.",
+            "ru": "저는 매년 부산에 가요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "부산은 회가 맛없어요.",
+            "ru": "부산은 회가 맛없어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q09",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s4-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "오늘은 날씨가 맑아요.",
+            "ru": "오늘은 날씨가 맑아요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 새 우산이 필요해요.",
+            "ru": "저는 새 우산이 필요해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "제 우산은 안 망가졌어요.",
+            "ru": "제 우산은 안 망가졌어요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 우산이 없어서 비를 맞았어요.",
+            "ru": "저는 우산이 없어서 비를 맞았어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q10",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s4-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 겨울을 안 좋아해요.",
+            "ru": "저는 겨울을 안 좋아해요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "겨울에는 비가 많이 와요.",
+            "ru": "겨울에는 비가 많이 와요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 스키 때문에 겨울을 좋아해요.",
+            "ru": "저는 스키 때문에 겨울을 좋아해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 스키를 탈 줄 몰라요.",
+            "ru": "저는 스키를 탈 줄 몰라요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q11",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s5-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "여행은 돈이 많이 들어요.",
+            "ru": "여행은 돈이 많이 들어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 새로운 음식을 안 좋아해요.",
+            "ru": "저는 새로운 음식을 안 좋아해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "여행은 저에게 좋은 경험이에요.",
+            "ru": "여행은 저에게 좋은 경험이에요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 집에 있는 것을 더 좋아해요.",
+            "ru": "저는 집에 있는 것을 더 좋아해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q12",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s5-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "내일 날씨가 좋을 거예요.",
+            "ru": "내일 날씨가 좋을 거예요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 일기 예보를 확인하고 준비해요.",
+            "ru": "저는 일기 예보를 확인하고 준비해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "오늘은 맑고 따뜻해요.",
+            "ru": "오늘은 맑고 따뜻해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 우산이 없어요.",
+            "ru": "저는 우산이 없어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q13",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s5-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "제주도는 날씨가 추워요.",
+            "ru": "제주도는 날씨가 추워요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "제주도 음식은 맛없어요.",
+            "ru": "제주도 음식은 맛없어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "제주도는 인기 있는 여행지예요.",
+            "ru": "제주도는 인기 있는 여행지예요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "제주도에는 바다가 없어요.",
+            "ru": "제주도에는 바다가 없어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q14",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "14. ㉠에 알맞은 것을 고르십시오.",
+        "ru": "14. ㉠에 알맞은 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "가서",
+            "ru": "가서"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "가지 않고",
+            "ru": "가지 않고"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "가기 전에",
+            "ru": "가기 전에"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "간 후에",
+            "ru": "간 후에"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q15",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "15. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "15. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 강릉에서 등산을 할 거예요.",
+            "ru": "저는 강릉에서 등산을 할 거예요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 숙소를 예약하지 않을 거예요.",
+            "ru": "저는 숙소를 예약하지 않을 거예요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 강릉에서 커피를 마실 거예요.",
+            "ru": "저는 강릉에서 커피를 마실 거예요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 다음 달에 강릉에 갈 거예요.",
+            "ru": "저는 다음 달에 강릉에 갈 거예요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q16",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "16. 무엇에 대한 이야기입니까?",
+        "ru": "16. 무엇에 대한 이야기입니까?"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "오늘의 날씨",
+            "ru": "오늘의 날씨"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "이번 주 계획",
+            "ru": "이번 주 계획"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "여행 방법",
+            "ru": "여행 방법"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "교통 정보",
+            "ru": "교통 정보"
+          }
+        }
+      ],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q17",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "17. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "17. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "서울은 비가 옵니다.",
+            "ru": "서울은 비가 옵니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "부산은 맑고 따뜻합니다.",
+            "ru": "부산은 맑고 따뜻합니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "제주도는 바람이 많이 붑니다.",
+            "ru": "제주도는 바람이 많이 붑니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "서울은 흐립니다.",
+            "ru": "서울은 흐립니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q18",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s8-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)",
+        "ru": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "(나)-(가)-(다)-(라)",
+            "ru": "(나)-(가)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "(가)-(나)-(다)-(라)",
+            "ru": "(가)-(나)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "(가)-(다)-(나)-(라)",
+            "ru": "(가)-(다)-(나)-(라)"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "(가)-(나)-(라)-(다)",
+            "ru": "(가)-(나)-(라)-(다)"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q19",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "19. \"그리고 김밥과 물을 준비할 겁니다\"가 들어갈 곳을 고르십시오.",
+        "ru": "19. \"그리고 김밥과 물을 준비할 겁니다\"가 들어갈 곳을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "㉠",
+            "ru": "㉠"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "㉡",
+            "ru": "㉡"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "㉢",
+            "ru": "㉢"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "㉣",
+            "ru": "㉣"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v02.q20",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v2.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u07",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v02.v2-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "20. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "20. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "에미 씨는 혼자 등산을 갈 겁니다.",
+            "ru": "에미 씨는 혼자 등산을 갈 겁니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "에미 씨는 산 정상에서 사진을 찍을 겁니다.",
+            "ru": "에미 씨는 산 정상에서 사진을 찍을 겁니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "에미 씨는 저녁에 친구를 만날 겁니다.",
+            "ru": "에미 씨는 저녁에 친구를 만날 겁니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "에미 씨는 이번 주말에 집에만 있을 겁니다.",
+            "ru": "에미 씨는 이번 주말에 집에만 있을 겁니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s1-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "병원",
+            "ru": "병원"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "은행",
+            "ru": "은행"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "시장",
+            "ru": "시장"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "서점",
+            "ru": "서점"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s1-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "도서관",
+            "ru": "도서관"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "백화점",
+            "ru": "백화점"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "공원",
+            "ru": "공원"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "학교",
+            "ru": "학교"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s2-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "신발",
+            "ru": "신발"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "불고기",
+            "ru": "불고기"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "안경",
+            "ru": "안경"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "지도",
+            "ru": "지도"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s2-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "작은",
+            "ru": "작은"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "비싼",
+            "ru": "비싼"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "좋은",
+            "ru": "좋은"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "무거운",
+            "ru": "무거운"
+          }
+        }
+      ],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s3-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "사과 2개가 4,000원이므로 1개는 2,000원입니다.",
+        "ru": "사과 2개가 4,000원이므로 1개는 2,000원입니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "빵은 3,000원입니다.",
+            "ru": "빵은 3,000원입니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "우유는 2,500원입니다.",
+            "ru": "우유는 2,500원입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "총 금액은 9,500원입니다.",
+            "ru": "총 금액은 9,500원입니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "사과 1개는 3,000원입니다.",
+            "ru": "사과 1개는 3,000원입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q06",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s3-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "비빔밥(9,000원)이 김치찌개(8,000원)보다 더 비쌉니다.",
+        "ru": "비빔밥(9,000원)이 김치찌개(8,000원)보다 더 비쌉니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "라면이 제일 쌉니다.",
+            "ru": "라면이 제일 쌉니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "불고기가 제일 비쌉니다.",
+            "ru": "불고기가 제일 비쌉니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "비빔밥은 김치찌개보다 쌉니다.",
+            "ru": "비빔밥은 김치찌개보다 쌉니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "김치찌개는 8,000원입니다.",
+            "ru": "김치찌개는 8,000원입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q07",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s3-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "등급은 골드입니다 — 실버가 아닙니다.",
+        "ru": "등급은 골드입니다 — 실버가 아닙니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "탄얀 씨는 골드 등급입니다.",
+            "ru": "탄얀 씨는 골드 등급입니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "포인트는 3,200점입니다.",
+            "ru": "포인트는 3,200점입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "가입일은 2025년 5월 1일입니다.",
+            "ru": "가입일은 2025년 5월 1일입니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "탄얀 씨는 실버 등급입니다.",
+            "ru": "탄얀 씨는 실버 등급입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q08",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s4-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 어제 고기를 샀어요.",
+            "ru": "저는 어제 고기를 샀어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 어제 시장에 안 갔어요.",
+            "ru": "저는 어제 시장에 안 갔어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "고기 가격이 비싸서 안 샀어요.",
+            "ru": "고기 가격이 비싸서 안 샀어요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 채소를 안 좋아해요.",
+            "ru": "저는 채소를 안 좋아해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q09",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s4-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "이 식당은 사람이 없어요.",
+            "ru": "이 식당은 사람이 없어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 이 식당에 처음 가 봤어요.",
+            "ru": "저는 이 식당에 처음 가 봤어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "이 식당은 기다리는 시간이 길어요.",
+            "ru": "이 식당은 기다리는 시간이 길어요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "이 식당 음식은 맛없어요.",
+            "ru": "이 식당 음식은 맛없어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q10",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s4-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "제가 산 옷은 사이즈가 맞아요.",
+            "ru": "제가 산 옷은 사이즈가 맞아요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 오늘 백화점에 다시 갈 거예요.",
+            "ru": "저는 오늘 백화점에 다시 갈 거예요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 어제 신발을 샀어요.",
+            "ru": "저는 어제 신발을 샀어요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 옷을 바꾸고 싶지 않아요.",
+            "ru": "저는 옷을 바꾸고 싶지 않아요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q11",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s5-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 요리를 잘 못해요.",
+            "ru": "저는 요리를 잘 못해요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 혼자 먹는 것을 좋아해요.",
+            "ru": "저는 혼자 먹는 것을 좋아해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 요리하는 것이 즐거워요.",
+            "ru": "저는 요리하는 것이 즐거워요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 한식을 안 좋아해요.",
+            "ru": "저는 한식을 안 좋아해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q12",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s5-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 돈을 아끼려고 노력해요.",
+            "ru": "저는 돈을 아끼려고 노력해요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "물건 가격이 내렸어요.",
+            "ru": "물건 가격이 내렸어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 필요 없는 것도 다 사요.",
+            "ru": "저는 필요 없는 것도 다 사요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 돈이 아주 많아요.",
+            "ru": "저는 돈이 아주 많아요."
+          }
+        }
+      ],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q13",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s5-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "이 가게는 물건이 비싸요.",
+            "ru": "이 가게는 물건이 비싸요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "사람들이 이 가게를 좋아해요.",
+            "ru": "사람들이 이 가게를 좋아해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "이 가게는 물건이 별로 없어요.",
+            "ru": "이 가게는 물건이 별로 없어요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 이 가게에 가 본 적이 없어요.",
+            "ru": "저는 이 가게에 가 본 적이 없어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q14",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "14. ㉠에 알맞은 것을 고르십시오.",
+        "ru": "14. ㉠에 알맞은 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "가서",
+            "ru": "가서"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "가지 않고",
+            "ru": "가지 않고"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "간 후에",
+            "ru": "간 후에"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "가기 전에",
+            "ru": "가기 전에"
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q15",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "15. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "15. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 오늘 시장에 갈 거예요.",
+            "ru": "저는 오늘 시장에 갈 거예요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 목록 없이 시장에 갈 거예요.",
+            "ru": "저는 목록 없이 시장에 갈 거예요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 고기를 살 거예요.",
+            "ru": "저는 고기를 살 거예요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 시장에 안 갈 거예요.",
+            "ru": "저는 시장에 안 갈 거예요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q16",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "16. 무엇에 대한 이야기입니까?",
+        "ru": "16. 무엇에 대한 이야기입니까?"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "식당 위치",
+            "ru": "식당 위치"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "이 식당의 메뉴",
+            "ru": "이 식당의 메뉴"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "식당 소개",
+            "ru": "식당 소개"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "요리 방법",
+            "ru": "요리 방법"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q17",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "17. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "17. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "이 식당은 손님이 적어요.",
+            "ru": "이 식당은 손님이 적어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "이 식당 음식은 양이 적어요.",
+            "ru": "이 식당 음식은 양이 적어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "직원들이 친절해요.",
+            "ru": "직원들이 친절해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "이 식당은 아주 싸요.",
+            "ru": "이 식당은 아주 싸요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q18",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s8-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)",
+        "ru": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "(가)-(나)-(다)-(라)",
+            "ru": "(가)-(나)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "(나)-(가)-(다)-(라)",
+            "ru": "(나)-(가)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "(나)-(다)-(가)-(라)",
+            "ru": "(나)-(다)-(가)-(라)"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "(가)-(다)-(나)-(라)",
+            "ru": "(가)-(다)-(나)-(라)"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q19",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "19. \"그리고 여러 신발을 신어 봤습니다\"가 들어갈 곳을 고르십시오.",
+        "ru": "19. \"그리고 여러 신발을 신어 봤습니다\"가 들어갈 곳을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "㉠",
+            "ru": "㉠"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "㉡",
+            "ru": "㉡"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "㉢",
+            "ru": "㉢"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "㉣",
+            "ru": "㉣"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v03.q20",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v3.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u10",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v03.v3-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "20. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "20. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "롱 씨는 옷을 샀습니다.",
+            "ru": "롱 씨는 옷을 샀습니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "롱 씨는 신발을 샀습니다.",
+            "ru": "롱 씨는 신발을 샀습니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "롱 씨는 백화점에 안 갔습니다.",
+            "ru": "롱 씨는 백화점에 안 갔습니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "롱 씨는 신발 가게에 안 갔습니다.",
+            "ru": "롱 씨는 신발 가게에 안 갔습니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s1-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "학교",
+            "ru": "학교"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "병원",
+            "ru": "병원"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "시장",
+            "ru": "시장"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "은행",
+            "ru": "은행"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s1-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "공부",
+            "ru": "공부"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "운동",
+            "ru": "운동"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "요리",
+            "ru": "요리"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "여행",
+            "ru": "여행"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s2-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "미용실",
+            "ru": "미용실"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "병원",
+            "ru": "병원"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "서점",
+            "ru": "서점"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "극장",
+            "ru": "극장"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s2-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "행복한",
+            "ru": "행복한"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "아픈",
+            "ru": "아픈"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "건강한",
+            "ru": "건강한"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "즐거운",
+            "ru": "즐거운"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s3-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "토요일은 9시부터 13시(오후 1시)까지 진료합니다 — 안 하는 게 아닙니다.",
+        "ru": "토요일은 9시부터 13시(오후 1시)까지 진료합니다 — 안 하는 게 아닙니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "이 병원은 일요일에 쉽니다.",
+            "ru": "이 병원은 일요일에 쉽니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "토요일에는 오후 1시까지 진료합니다.",
+            "ru": "토요일에는 오후 1시까지 진료합니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "평일에는 저녁 6시까지 진료합니다.",
+            "ru": "평일에는 저녁 6시까지 진료합니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "토요일에는 진료를 안 합니다.",
+            "ru": "토요일에는 진료를 안 합니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q06",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s3-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "혈압은 '정상'이라고 나와 있습니다 — 안 좋은 게 아닙니다.",
+        "ru": "혈압은 '정상'이라고 나와 있습니다 — 안 좋은 게 아닙니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "이 사람의 몸무게는 65kg입니다.",
+            "ru": "이 사람의 몸무게는 65kg입니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "이 사람의 키는 170cm입니다.",
+            "ru": "이 사람의 키는 170cm입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "이 사람은 혈압이 안 좋습니다.",
+            "ru": "이 사람은 혈압이 안 좋습니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "이 사람은 시력이 좋습니다.",
+            "ru": "이 사람은 시력이 좋습니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q07",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s3-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "만료일은 2026년 12월 31일로, 아직 지나지 않았습니다.",
+        "ru": "만료일은 2026년 12월 31일로, 아직 지나지 않았습니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "제이드 씨는 언제든지 헬스장을 이용할 수 있습니다.",
+            "ru": "제이드 씨는 언제든지 헬스장을 이용할 수 있습니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "등록일은 1월 10일입니다.",
+            "ru": "등록일은 1월 10일입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "만료일이 지났습니다.",
+            "ru": "만료일이 지났습니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "만료일은 12월 31일입니다.",
+            "ru": "만료일은 12월 31일입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q08",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s4-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 조깅을 안 좋아해요.",
+            "ru": "저는 조깅을 안 좋아해요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 요즘 운동을 시작했어요.",
+            "ru": "저는 요즘 운동을 시작했어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "조깅은 아직도 힘들어요.",
+            "ru": "조깅은 아직도 힘들어요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 예전보다 건강이 나빠졌어요.",
+            "ru": "저는 예전보다 건강이 나빠졌어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q09",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s4-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 감기에 걸리지 않았어요.",
+            "ru": "저는 감기에 걸리지 않았어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 병원에 안 갔어요.",
+            "ru": "저는 병원에 안 갔어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 약을 먹었어요.",
+            "ru": "저는 약을 먹었어요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 아직도 하나도 안 나아졌어요.",
+            "ru": "저는 아직도 하나도 안 나아졌어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q10",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s4-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 항상 일찍 자요.",
+            "ru": "저는 항상 일찍 자요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 요즘 피곤해요.",
+            "ru": "저는 요즘 피곤해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 아침에 일찍 일어나요.",
+            "ru": "저는 아침에 일찍 일어나요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 잠을 충분히 자요.",
+            "ru": "저는 잠을 충분히 자요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q11",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s5-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "운동은 저에게 좋은 영향을 줘요.",
+            "ru": "운동은 저에게 좋은 영향을 줘요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 운동을 그만둘 거예요.",
+            "ru": "저는 운동을 그만둘 거예요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "운동은 저에게 안 맞아요.",
+            "ru": "운동은 저에게 안 맞아요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 운동을 한 번도 안 해요.",
+            "ru": "저는 운동을 한 번도 안 해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt1",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q12",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s5-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 잠을 잘 자요.",
+            "ru": "저는 잠을 잘 자요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "커피를 마시면 완전히 괜찮아져요.",
+            "ru": "커피를 마시면 완전히 괜찮아져요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 요즘 건강에 문제가 있는 것 같아요.",
+            "ru": "저는 요즘 건강에 문제가 있는 것 같아요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 병원에 갈 필요가 없어요.",
+            "ru": "저는 병원에 갈 필요가 없어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q13",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s5-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "운동만 하면 충분해요.",
+            "ru": "운동만 하면 충분해요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 건강 관리를 잘 하려고 노력해요.",
+            "ru": "저는 건강 관리를 잘 하려고 노력해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "잘 자는 것은 중요하지 않아요.",
+            "ru": "잘 자는 것은 중요하지 않아요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 아무것도 신경 안 써요.",
+            "ru": "저는 아무것도 신경 안 써요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q14",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "14. ㉠에 알맞은 것을 고르십시오.",
+        "ru": "14. ㉠에 알맞은 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "가서",
+            "ru": "가서"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "간 후에",
+            "ru": "간 후에"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "가지 않고",
+            "ru": "가지 않고"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "가기 전에",
+            "ru": "가기 전에"
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q15",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "15. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "15. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 예약 없이 병원에 갈 거예요.",
+            "ru": "저는 예약 없이 병원에 갈 거예요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 약을 안 받을 거예요.",
+            "ru": "저는 약을 안 받을 거예요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 검사를 받을 거예요.",
+            "ru": "저는 검사를 받을 거예요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 몸이 아주 건강해요.",
+            "ru": "저는 몸이 아주 건강해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q16",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "16. 무엇에 대한 이야기입니까?",
+        "ru": "16. 무엇에 대한 이야기입니까?"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "느이 씨의 취미",
+            "ru": "느이 씨의 취미"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "느이 씨의 건강한 생활 습관",
+            "ru": "느이 씨의 건강한 생활 습관"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "느이 씨의 직업",
+            "ru": "느이 씨의 직업"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "느이 씨의 가족",
+            "ru": "느이 씨의 가족"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q17",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "17. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "17. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "느이 씨는 아침을 안 먹어요.",
+            "ru": "느이 씨는 아침을 안 먹어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "느이 씨는 저녁에 늦게 자요.",
+            "ru": "느이 씨는 저녁에 늦게 자요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "느이 씨는 아침에 조깅을 해요.",
+            "ru": "느이 씨는 아침에 조깅을 해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "느이 씨는 건강이 나빠졌어요.",
+            "ru": "느이 씨는 건강이 나빠졌어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q18",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s8-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)",
+        "ru": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "(나)-(가)-(다)-(라)",
+            "ru": "(나)-(가)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "(가)-(다)-(나)-(라)",
+            "ru": "(가)-(다)-(나)-(라)"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "(가)-(나)-(다)-(라)",
+            "ru": "(가)-(나)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "(다)-(가)-(나)-(라)",
+            "ru": "(다)-(가)-(나)-(라)"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q19",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "19. \"의사 선생님이 여러 가지를 물어봤습니다\"가 들어갈 곳을 고르십시오.",
+        "ru": "19. \"의사 선생님이 여러 가지를 물어봤습니다\"가 들어갈 곳을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "㉠",
+            "ru": "㉠"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "㉡",
+            "ru": "㉡"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "㉢",
+            "ru": "㉢"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "㉣",
+            "ru": "㉣"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v04.q20",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v4.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u15",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v04.v4-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "20. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "20. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "수웨이 씨는 오늘도 아픕니다.",
+            "ru": "수웨이 씨는 오늘도 아픕니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "수웨이 씨는 어제 배가 아팠습니다.",
+            "ru": "수웨이 씨는 어제 배가 아팠습니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "수웨이 씨는 병원에 안 갔습니다.",
+            "ru": "수웨이 씨는 병원에 안 갔습니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "수웨이 씨는 약을 안 먹었습니다.",
+            "ru": "수웨이 씨는 약을 안 먹었습니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q01",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q1"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s1-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "친구",
+            "ru": "친구"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "가족",
+            "ru": "가족"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "학교",
+            "ru": "학교"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "회사",
+            "ru": "회사"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q02",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q2"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s1-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[1-2] 무엇에 대한 이야기입니까? 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "학생",
+            "ru": "학생"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "의사",
+            "ru": "의사"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "회사원",
+            "ru": "회사원"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "가수",
+            "ru": "가수"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q03",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q3"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s2-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "입학합니다",
+            "ru": "입학합니다"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "시작합니다",
+            "ru": "시작합니다"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "졸업합니다",
+            "ru": "졸업합니다"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "다닙니다",
+            "ru": "다닙니다"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q04",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q4"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s2-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)",
+        "ru": "※[3-4] ( )에 들어갈 가장 알맞은 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "일해요",
+            "ru": "일해요"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "공부해요",
+            "ru": "공부해요"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "놀아요",
+            "ru": "놀아요"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "운동해요",
+            "ru": "운동해요"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q05",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q5"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s3-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "언니는 대학생입니다 — 고등학생은 '저'입니다.",
+        "ru": "언니는 대학생입니다 — 고등학생은 '저'입니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "아버지는 회사원입니다.",
+            "ru": "아버지는 회사원입니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "어머니는 선생님입니다.",
+            "ru": "어머니는 선생님입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "언니는 고등학생입니다.",
+            "ru": "언니는 고등학생입니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 고등학생입니다.",
+            "ru": "저는 고등학생입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q06",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q6"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s3-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "수요일은 휴가입니다 — 회식은 금요일입니다.",
+        "ru": "수요일은 휴가입니다 — 회식은 금요일입니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "월요일에 회의가 있습니다.",
+            "ru": "월요일에 회의가 있습니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "수요일에 회식이 있습니다.",
+            "ru": "수요일에 회식이 있습니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "화요일에 출장을 갑니다.",
+            "ru": "화요일에 출장을 갑니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "금요일에 회식이 있습니다.",
+            "ru": "금요일에 회식이 있습니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q07",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q7"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s3-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)",
+        "ru": "※[5-7] 다음을 읽고 맞지 않는(X) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "직급은 과장입니다 — 사장이 아닙니다.",
+        "ru": "직급은 과장입니다 — 사장이 아닙니다."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "탄얀 씨는 과장입니다.",
+            "ru": "탄얀 씨는 과장입니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "회사 이름은 한국무역입니다.",
+            "ru": "회사 이름은 한국무역입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "전화번호는 010-1234-5678입니다.",
+            "ru": "전화번호는 010-1234-5678입니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "탄얀 씨는 사장입니다.",
+            "ru": "탄얀 씨는 사장입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt4",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q08",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q8"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s4-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 이미 선생님이에요.",
+            "ru": "저는 이미 선생님이에요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 의사가 되고 싶어요.",
+            "ru": "저는 의사가 되고 싶어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 교육학을 공부해요.",
+            "ru": "저는 교육학을 공부해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 공부를 안 해요.",
+            "ru": "저는 공부를 안 해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q09",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q9"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s4-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저희 어머니는 회사원이에요.",
+            "ru": "저희 어머니는 회사원이에요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 부모님을 존경해요.",
+            "ru": "저는 부모님을 존경해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저희 아버지는 주부예요.",
+            "ru": "저희 아버지는 주부예요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 부모님과 안 친해요.",
+            "ru": "저는 부모님과 안 친해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q10",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q10"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s4-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)",
+        "ru": "※[8-10] 다음의 내용과 같은(=) 것을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 이미 새 회사에서 일하고 있어요.",
+            "ru": "저는 이미 새 회사에서 일하고 있어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 새 일을 전혀 기대 안 해요.",
+            "ru": "저는 새 일을 전혀 기대 안 해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 다음 달에 새 일을 시작해요.",
+            "ru": "저는 다음 달에 새 일을 시작해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 회사를 그만둘 거예요.",
+            "ru": "저는 회사를 그만둘 거예요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q11",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q11"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s5-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "우리 가족은 자주 안 만나요.",
+            "ru": "우리 가족은 자주 안 만나요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 가족 시간을 소중하게 생각해요.",
+            "ru": "저는 가족 시간을 소중하게 생각해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "우리 가족은 대화가 별로 없어요.",
+            "ru": "우리 가족은 대화가 별로 없어요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 혼자 있는 것을 더 좋아해요.",
+            "ru": "저는 혼자 있는 것을 더 좋아해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q12",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q12"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s5-i2",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 일이 너무 쉬워요.",
+            "ru": "저는 일이 너무 쉬워요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "동료들이 불친절해요.",
+            "ru": "동료들이 불친절해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "일이 힘들지만 만족스러워요.",
+            "ru": "일이 힘들지만 만족스러워요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 아무것도 안 배워요.",
+            "ru": "저는 아무것도 안 배워요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q13",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q13"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s5-i3",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)",
+        "ru": "※[11-13] 다음을 읽고 중심 생각을 고르십시오. (각 5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 사업에 관심이 없어요.",
+            "ru": "저는 사업에 관심이 없어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 꿈을 위해 준비하고 있어요.",
+            "ru": "저는 꿈을 위해 준비하고 있어요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 돈을 모으지 않아요.",
+            "ru": "저는 돈을 모으지 않아요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 이미 사업을 시작했어요.",
+            "ru": "저는 이미 사업을 시작했어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q14",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q14"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "14. ㉠에 알맞은 것을 고르십시오.",
+        "ru": "14. ㉠에 알맞은 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "한 후에",
+            "ru": "한 후에"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "하고",
+            "ru": "하고"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "전에",
+            "ru": "전에"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "하지 않고",
+            "ru": "하지 않고"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q15",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q15"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s6-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "15. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "15. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "저는 이미 면접을 봤어요.",
+            "ru": "저는 이미 면접을 봤어요."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "저는 면접 없이 취직해요.",
+            "ru": "저는 면접 없이 취직해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "저는 면접을 봐야 해요.",
+            "ru": "저는 면접을 봐야 해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "저는 이번 달에 일을 시작해요.",
+            "ru": "저는 이번 달에 일을 시작해요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q16",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q16"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "16. 무엇에 대한 이야기입니까?",
+        "ru": "16. 무엇에 대한 이야기입니까?"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "굴세짐 씨의 학교",
+            "ru": "굴세짐 씨의 학교"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "굴세짐 씨의 가족",
+            "ru": "굴세짐 씨의 가족"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "굴세짐 씨의 취미",
+            "ru": "굴세짐 씨의 취미"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "굴세짐 씨의 건강",
+            "ru": "굴세짐 씨의 건강"
+          }
+        }
+      ],
+      "correctOptionId": "opt2",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q17",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q17"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s7-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "17. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "17. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "아버지는 회사원입니다.",
+            "ru": "아버지는 회사원입니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "형은 고등학생입니다.",
+            "ru": "형은 고등학생입니다."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "가족들은 저녁을 같이 먹습니다.",
+            "ru": "가족들은 저녁을 같이 먹습니다."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "어머니는 의사입니다.",
+            "ru": "어머니는 의사입니다."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q18",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q18"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s8-i1",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)",
+        "ru": "※[18] 다음을 순서대로 맞게 나열한 것을 고르십시오. (5점)"
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "(가)-(다)-(나)-(라)",
+            "ru": "(가)-(다)-(나)-(라)"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "(나)-(가)-(다)-(라)",
+            "ru": "(나)-(가)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "(가)-(나)-(다)-(라)",
+            "ru": "(가)-(나)-(다)-(라)"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "(다)-(나)-(가)-(라)",
+            "ru": "(다)-(나)-(가)-(라)"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q19",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q19"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "19. \"그리고 돈도 모으고 있습니다\"가 들어갈 곳을 고르십시오.",
+        "ru": "19. \"그리고 돈도 모으고 있습니다\"가 들어갈 곳을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "㉠",
+            "ru": "㉠"
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "㉡",
+            "ru": "㉡"
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "㉢",
+            "ru": "㉢"
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "㉣",
+            "ru": "㉣"
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    },
+    {
+      "logicalId": "exercise.reading.exam.v05.q20",
+      "contentVersion": "1.0.0",
+      "status": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "src.curriculum-texts",
+          "locator": {
+            "kind": "section",
+            "value": "derived.reading-html.v5.q20"
+          },
+          "confidence": "high"
+        }
+      ],
+      "skill": "reading",
+      "exerciseType": "single-choice",
+      "unitLogicalId": "unit.u16",
+      "grammarTopicLogicalId": null,
+      "readingPassageLogicalId": "passage.exam.v05.v5-s9-shared",
+      "dictionaryEntryLogicalIds": [],
+      "prompt": {
+        "ko": "20. 이 글의 내용과 같은(=) 것을 고르십시오.",
+        "ru": "20. 이 글의 내용과 같은(=) 것을 고르십시오."
+      },
+      "explanation": {
+        "ko": "Draft reading question imported from derived HTML bank; not language-approved.",
+        "ru": "Draft reading question imported from derived HTML bank; not language-approved."
+      },
+      "difficulty": "practice",
+      "options": [
+        {
+          "id": "opt1",
+          "label": {
+            "ko": "잰드 씨는 이미 유학을 갔습니다.",
+            "ru": "잰드 씨는 이미 유학을 갔습니다."
+          }
+        },
+        {
+          "id": "opt2",
+          "label": {
+            "ko": "잰드 씨는 영어 공부를 안 해요.",
+            "ru": "잰드 씨는 영어 공부를 안 해요."
+          }
+        },
+        {
+          "id": "opt3",
+          "label": {
+            "ko": "가족들이 잰드 씨를 응원해요.",
+            "ru": "가족들이 잰드 씨를 응원해요."
+          }
+        },
+        {
+          "id": "opt4",
+          "label": {
+            "ko": "잰드 씨는 갈 나라를 아직 안 정했어요.",
+            "ru": "잰드 씨는 갈 나라를 아직 안 정했어요."
+          }
+        }
+      ],
+      "correctOptionId": "opt3",
+      "acceptedAnswers": []
+    }
+  ]
 }

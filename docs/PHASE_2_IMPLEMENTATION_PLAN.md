@@ -10,7 +10,7 @@
 
 Исполнитель обязан:
 
-1. полностью прочитать `AGENTS.md`, `docs/ITERATION_MANDATORY_CONDITIONS.md`, `docs/PHASE_2_CONTENT_AUDIT.md` и карточку текущей итерации;
+1. полностью прочитать `AGENTS.md`, `docs/ITERATION_MANDATORY_CONDITIONS.md`, четыре документа раздела 1.1, `docs/PHASE_2_CONTENT_AUDIT.md` и карточку текущей итерации;
 2. выполнять строго одну итерацию за раз;
 3. не начинать следующую карточку, пока текущая не имеет статус `done`, один коммит и зелёные обязательные проверки;
 4. перед изменением Next.js-кода прочитать релевантные локальные документы из `node_modules/next/dist/docs/`;
@@ -20,9 +20,20 @@
 
 Нельзя одновременно объединять несколько карточек «для удобства». Исправление дефекта текущей карточки входит в неё. Дефект уже закрытой карточки оформляется отдельной `F2-FIX-*` итерацией перед продолжением.
 
+### 1.1. Четыре канонических источника контента
+
+Вся реализация фазы 2 строится только на следующих authoring-документах:
+
+1. `docs/CURRICULUM_TOPICS.md` — 16 модулей и учебные результаты;
+2. `docs/CURRICULUM_GRAMMAR.md` — 80 грамматических пунктов и объяснения;
+3. `docs/CURRICULUM_VOCABULARY.md` — полный словарный корпус;
+4. `docs/CURRICULUM_TEXTS.md` — итоговый объединённый корпус текстов.
+
+Исходные файлы, фотографии, HTML и TSV остаются только происхождением этих документов и материалом аудита. Cursor не должен повторно выбирать между Claude/GPT, заново распознавать фотографии или исправлять канонические документы через производные выгрузки. Если реализация обнаруживает содержательное противоречие, сначала отдельной правкой обновляется соответствующий `CURRICULUM_*.md`, затем аудит и план, и только после этого JSON/seed/runtime.
+
 ## 2. Проблема и продуктовый результат
 
-Фаза 1 дала устойчивый общий движок, но приложение всё ещё показывает тестовый `sample-module` и не отражает реальную программу пользователя. Учебные материалы уже покрывают 16 тем, грамматику 1급, словарь и чтение, однако источники разнородны, две расшифровки расходятся, а производные HTML/TSV не могут быть runtime-источником истины.
+Фаза 1 дала устойчивый общий движок, но приложение всё ещё показывает тестовый `sample-module` и не отражает реальную программу пользователя. Учебные материалы сведены в четыре канонических документа: 16 тем, грамматика 1급, словарь и объединённые тексты. Производные HTML/TSV не могут быть runtime-источником истины.
 
 Результат фазы 2:
 
@@ -39,8 +50,8 @@
 ### 3.1. Обязательные цели
 
 1. Завести 16 тематических модулей в порядке учебника и 80 атомарных grammar topic records.
-2. Слить обе расшифровки без потери входных записей и с provenance.
-3. Импортировать словарные источники как draft, различая омонимы и производные повторения.
+2. Импортировать итоговый корпус `CURRICULUM_TEXTS.md` без повторного выбора между исходными расшифровками.
+3. Импортировать `CURRICULUM_VOCABULARY.md` как draft, различая омонимы и производные повторения.
 4. Реализовать каталоги «По темам» и «По грамматике» без добавления лишнего пункта основной навигации.
 5. Реализовать выбор тренировки по навыку и фильтру материала.
 6. Добавить общий `single-choice` для грамматики/чтения, не маскируя его под `meaning-choice`.
@@ -96,7 +107,8 @@ Writing, speaking и listening не добавляются в enum заране�
 
 ### 4.3. Контент и runtime
 
-- Версионируемые canonical JSON-файлы в `content/phase-2/` — authoring source и вход генератора seed.
+- Четыре `docs/CURRICULUM_*.md` — человекочитаемый первичный authoring source.
+- Версионируемые canonical JSON-файлы в `content/phase-2/` — детерминированное производное представление и вход генератора seed.
 - Zod-схемы и integrity checks — в `scripts/content/` и server-only domain.
 - Supabase — runtime-источник на preview/production.
 - Local test fixtures остаются маленькими и независимыми от всего банка.
@@ -123,7 +135,7 @@ Writing, speaking и listening не добавляются в enum заране�
 - confidence;
 - review note при конфликте.
 
-Абсолютные локальные пути пользователя в БД не сохраняются. Используются стабильные source keys, например `textbook-outline-photo`, `inha-texts-claude`, `inha-texts-gpt`, `grammar-notes`, `korean-words`.
+Абсолютные локальные пути пользователя в БД не сохраняются. Верхнеуровневые source keys: `curriculum-topics`, `curriculum-grammar`, `curriculum-vocabulary`, `curriculum-texts`. Исходные ключи `textbook-outline-photo`, `inha-texts-claude`, `inha-texts-gpt`, `grammar-notes`, `korean-words` допустимы только как lineage внутри manifest и не читаются импортерами напрямую.
 
 ## 5. Целевая структура файлов
 
@@ -145,7 +157,7 @@ scripts/
 └── content/
     ├── schemas.ts
     ├── validate-content.ts
-    ├── reconcile-text-sources.ts
+    ├── import-curriculum-texts.ts
     ├── normalize-dictionary.ts
     └── content-integrity.test.ts
 
@@ -318,10 +330,10 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 - **Цель:** определить проверяемый формат authoring data до импорта хотя бы одной записи.
 - **Вход:** F2-I01 `done`.
 - **Ветка:** `codex/f2-i02-content-contracts`.
-- **Задачи:** Zod-схемы source manifest, unit, grammar topic, dictionary sense, unit link, reading passage, exercise, provenance; stable logical ID pattern; semver; lifecycle `draft|needs_review|reviewed|approved|archived`; confidence; locators; cross-file reference validator.
+- **Задачи:** Zod-схемы source manifest, unit, grammar topic, dictionary sense, unit link, reading passage, exercise, provenance; stable logical ID pattern; semver; lifecycle `draft|needs_review|reviewed|approved|archived`; confidence; locators; cross-file reference validator; четыре обязательные canonical source records.
 - **Контракт:** отдельные source record IDs и entity logical IDs; один source record может поддерживать несколько entities; абсолютные local paths запрещены schema.
 - **Файлы:** `scripts/content/schemas.ts`, schema fixtures/tests, `content/phase-2/source-manifest.json` только с metadata источников.
-- **Тесты:** duplicate IDs, dangling refs, invalid status transitions, absolute path, пустой source ref, approved без review/provenance, омоним без sense key.
+- **Тесты:** duplicate IDs, dangling refs, invalid status transitions, absolute path, пустой source ref, approved без review/provenance, омоним без sense key; отсутствие любого из четырёх canonical source keys ломает validation.
 - **Ручная проверка:** названия источников понятны человеку и не раскрывают приватные пути.
 - **Не делать:** не проектировать UI; не писать миграцию; не вставлять учебный текст.
 - **DoD:** любой будущий content file валидируется независимо и вместе с графом.
@@ -348,14 +360,14 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 - **Статус:** `planned`.
 - **Цель:** формализовать полную структуру 1급 без упражнений и без публикации.
-- **Вход:** F2-I03 `done`; таблица раздела 5 аудита.
+- **Вход:** F2-I03 `done`; `CURRICULUM_TOPICS.md` и `CURRICULUM_GRAMMAR.md`.
 - **Ветка:** `codex/f2-i04-curriculum-catalog`.
 - **Задачи:** добавить 16 unit records и 80 atomic grammar records; stable slugs/codes; корейские/русские заголовки; краткие summaries только там, где смысл не спорный; category/usage key; source refs; `needs_review` для конфликтов.
 - **Обязательные коды:** unit prefix `u01..u16`; grammar logical IDs не зависят от отображаемого номера `①/②`; варианты с разным поведением имеют разные usage keys.
 - **Файлы:** `units.json`, `grammar-topics.json`, `provenance.json`, coverage tests.
 - **Тесты:** 16 номеров `1..16`, 80 records, exact per-unit counts `5,4,5,5,5,6,5,5,5,5,5,5,5,5,5,5`; unique codes/slugs/order; every grammar record linked to one unit and source.
-- **Ручная проверка:** сверить каждую строку с двумя приложенными таблицами; внутренние изображения папки не открывать.
-- **Не делать:** не добавлять explanations от себя; не создавать отдельный `honorifics` module; не публиковать.
+- **Ручная проверка:** сверить 16 модулей с `CURRICULUM_TOPICS.md`, а 80 пунктов и краткие объяснения — с `CURRICULUM_GRAMMAR.md`; фотографии не открывать.
+- **Не делать:** не добавлять explanations от себя и не возвращаться к исходным заметкам; не создавать отдельный `honorifics` module; не публиковать.
 - **DoD:** structural catalog полный, но весь новый content остаётся draft/needs_review.
 - **Коммит:** `feat: add level one curriculum catalog`.
 - **Следующий шаг:** F2-I05.
@@ -366,28 +378,28 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 - **Цель:** получить одну словарную базу без молчаливой потери омонимов и без доверия к производным выгрузкам.
 - **Вход:** F2-I04 `done`.
 - **Ветка:** `codex/f2-i05-dictionary-canonicalization`.
-- **Задачи:** parser для Markdown-таблиц; нормализовать category labels; отделить irregular-form links от новых senses; создать draft dictionary entries и unit links; сформировать machine-readable reconciliation report для Markdown/803-card HTML/731 TSV/179 flashcards.
+- **Задачи:** parser для `CURRICULUM_VOCABULARY.md`; нормализовать category labels; отделить irregular-form links от новых senses; создать draft dictionary entries и unit links; сформировать machine-readable reconciliation report, где HTML/TSV/flashcards используются только для отчёта о покрытии и не меняют канонический Markdown.
 - **Правила:** `добавлено` не категория; `눈/다리/만/배/이/저/팔/풀` не дедуплицировать только по spelling; translation/transliteration conflict не решать автоматически; бизнес-лексика остаётся draft.
 - **Файлы:** `normalize-dictionary.ts`, dictionary JSONs, provenance, отчёт validation output, tests.
-- **Тесты:** все 1 142 Markdown table rows классифицированы как canonical sense, relation или duplicate source record; 803/731/179 derived entries учтены в reconciliation; canonical category `добавлено` отсутствует; dangling unit links отсутствуют.
+- **Тесты:** все строки таблиц `CURRICULUM_VOCABULARY.md` классифицированы как canonical sense, relation или duplicate source record; 803/731/179 derived entries учтены только в reconciliation; canonical category `добавлено` отсутствует; dangling unit links отсутствуют.
 - **Ручная проверка:** выборка минимум 10 entries из каждой крупной категории и все известные омонимы.
 - **Не делать:** не генерировать упражнения; не публиковать все слова; не исправлять перевод без review note.
 - **DoD:** повторный запуск детерминирован и не меняет JSON без изменения источника/правил.
 - **Коммит:** `feat: reconcile canonical Korean dictionary`.
 - **Следующий шаг:** F2-I06.
 
-### F2-I06 — Слияние текстов и draft reading bank
+### F2-I06 — Импорт канонических текстов и draft reading bank
 
 - **Статус:** `planned`.
-- **Цель:** объединить две расшифровки и 100 вопросов без потери provenance.
+- **Цель:** импортировать итоговый `CURRICULUM_TEXTS.md` и 100 производных вопросов без повторного слияния расшифровок.
 - **Вход:** F2-I05 `done`.
 - **Ветка:** `codex/f2-i06-reading-corpus`.
-- **Задачи:** parser/reconciler для 93 Claude и 92 GPT blocks; explicit paired/unpaired/conflict map; canonical passage records; импорт 5×20 HTML questions как draft exercises; отдельное хранение passage markers и answers.
-- **Обязательные конфликты:** уроки 1/3/7/9/10/11/13/14/15 из аудита должны присутствовать в report и не закрываться автоматически.
-- **Файлы:** `reconcile-text-sources.ts`, `reading-passages.json`, `exercises-reading.json`, provenance, tests.
-- **Тесты:** вход `93/92`, paired `90`; учёт всех 185 source records; 5 variants/100 questions; 20 questions per variant; passage body сохраняет `㉠/㉡`; один correct option только внутри private authoring shape.
-- **Ручная проверка:** сравнить 10 совпадающих, все конфликтные и все unpaired blocks; просмотреть вопросы без открытия изображений папки.
-- **Не делать:** не объявлять draft question approved; не добавлять LLM; не копировать HTML UI.
+- **Задачи:** parser для структуры 16 уроков и приложения `듣기 지문`; canonical passage records; lineage решений слияния из вводной части документа; импорт 5×20 HTML questions как draft exercises; отдельное хранение passage markers и answers.
+- **Обязательные решения:** импорт должен сохранить культурный блок урока 1, структуру урока 3, пропуск урока 7, маркеры и `이 꽃` урока 9, полные блоки 10/14/15, реплику урока 11 и `앞으로 쭉 가면` урока 13.
+- **Файлы:** parser канонического Markdown, `reading-passages.json`, `exercises-reading.json`, provenance, tests.
+- **Тесты:** 16 уроков присутствуют; все секции и приложение учтены; 5 variants/100 questions; 20 questions per variant; passage body сохраняет `㉠/㉡`; один correct option только внутри private authoring shape; regression assertions на обязательные решения.
+- **Ручная проверка:** сравнить выборку импортированных passage records непосредственно с `CURRICULUM_TEXTS.md`; просмотреть вопросы без открытия изображений папки.
+- **Не делать:** не читать заново `inha-texts-claude.md`/`inha-texts-gpt.md`; не объявлять draft question approved; не добавлять LLM; не копировать HTML UI.
 - **DoD:** corpus воспроизводим, каждый конфликт видим в отчёте и status.
 - **Коммит:** `feat: reconcile reading source corpus`.
 - **Следующий шаг:** F2-I07.
@@ -398,9 +410,9 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 - **Цель:** доказать, что структура и импорт полны, прежде чем строить пользовательский UI.
 - **Вход:** F2-I06 `done`.
 - **Ветка:** `codex/f2-i07-content-audit-gate`.
-- **Задачи:** агрегированный audit command; отчёт counts/conflicts/statuses; link на `PHASE_2_CONTENT_AUDIT.md`; исправить только механические ошибки импорта; подготовить пользователю список решений по спорным языковым пунктам и границе approved vocabulary.
+- **Задачи:** агрегированный audit command; отчёт counts/statuses и соответствия четырём `CURRICULUM_*.md`; link на `PHASE_2_CONTENT_AUDIT.md`; исправить только механические ошибки импорта; подготовить пользователю список ещё не approved записей и границу approved vocabulary.
 - **Тесты:** все content tests; full type/lint/unit/integration/build; DB/RLS после новых migrations; secret/private-path scan.
-- **Ручная проверка:** unit/grammar таблица, известные text conflicts, dictionary homonyms, grammar notes typos.
+- **Ручная проверка:** topics/grammar/texts/vocabulary против четырёх канонических документов; словарные омонимы; регрессии исправленных грамматических опечаток.
 - **CP-6:** остановиться и показать пользователю отчёт. Разрешение открывает перевод проверенных metadata в reviewed и UI-работы.
 - **Не делать:** не начинать seed/runtime repositories/UI; не менять `needs_review` на `approved` без решения.
 - **DoD:** CP-6 принят либо карточка остаётся `blocked` с точным списком вопросов.

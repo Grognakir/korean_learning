@@ -10,12 +10,13 @@
 
 1. Корневой и вложенные `AGENTS.md`
 2. Этот документ
-3. Для фазы 2 — `docs/PHASE_2_IMPLEMENTATION_PLAN.md`
-4. Для фазы 2 — `docs/PHASE_2_CONTENT_AUDIT.md`
-5. Для оставшихся задач фазы 1 — `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`
-6. `docs/APPLICATION_PLAN.md`
-7. Фактические публичные контракты кода
-8. Детали воспроизведения UI-дефектов — `docs/PHASE_1_UI_AUDIT_FINDINGS.md`
+3. Для содержания фазы 2 — `docs/CURRICULUM_TOPICS.md`, `docs/CURRICULUM_GRAMMAR.md`, `docs/CURRICULUM_VOCABULARY.md`, `docs/CURRICULUM_TEXTS.md`
+4. Для порядка фазы 2 — `docs/PHASE_2_IMPLEMENTATION_PLAN.md`
+5. Для аудита фазы 2 — `docs/PHASE_2_CONTENT_AUDIT.md`
+6. Для оставшихся задач фазы 1 — `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`
+7. `docs/APPLICATION_PLAN.md`
+8. Фактические публичные контракты кода
+9. Детали воспроизведения UI-дефектов — `docs/PHASE_1_UI_AUDIT_FINDINGS.md`
 
 ## 1. Чеклист перед кодом
 

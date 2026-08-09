@@ -39,7 +39,7 @@ describe("LocalCatalogRepository", () => {
       grammarTopics: 2,
       dictionaryEntries: 3,
       readingPassages: 1,
-      approvedExercises: 2,
+      approvedExercises: 6,
     });
   });
 });

@@ -102,13 +102,12 @@ export function resolveTrainingSetup(input: {
     };
   }
 
-  // Session creation stays in F2-I18; setup only proves a valid request DTO.
   return {
     availableCount,
     difficulties,
     maxSessionSize,
     request,
-    canPreview: false,
-    blockedReason: "Создание отфильтрованной сессии будет в следующей итерации",
+    canPreview: true,
+    blockedReason: null,
   };
 }

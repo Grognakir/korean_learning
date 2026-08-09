@@ -7,6 +7,8 @@ export type TrainingPersistenceErrorCode =
   | "SESSION_ALREADY_COMPLETED"
   | "EXERCISE_NOT_IN_SESSION"
   | "EXERCISE_NOT_FOUND"
+  | "INSUFFICIENT_CONTENT"
+  | "ACTIVE_SESSION_EXISTS"
   | "VERSION_MISMATCH"
   | "MODULE_NOT_FOUND"
   | "IMPORT_ALREADY_DONE"
@@ -36,6 +38,8 @@ export function trainingPersistenceStatusForCode(code: TrainingPersistenceErrorC
     case "SESSION_ALREADY_COMPLETED":
     case "EXERCISE_NOT_IN_SESSION":
     case "EXERCISE_NOT_FOUND":
+    case "INSUFFICIENT_CONTENT":
+    case "ACTIVE_SESSION_EXISTS":
     case "VERSION_MISMATCH":
     case "MODULE_NOT_FOUND":
     case "IMPORT_ALREADY_DONE":

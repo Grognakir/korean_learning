@@ -52,7 +52,7 @@ describe("application routes", () => {
   it("describes the training route without the removed development preview", () => {
     render(<TrainingPage />);
 
-    expect(screen.getByText(/Выберите навык, тему и доступные фильтры/)).toBeInTheDocument();
+    expect(screen.getByText(/Выберите навык, тему и фильтры/)).toBeInTheDocument();
     expect(screen.queryByText(/Draft preview|development/i)).not.toBeInTheDocument();
   });
 

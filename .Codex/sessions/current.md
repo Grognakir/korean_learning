@@ -4,21 +4,22 @@
 
 ## Чем занимаемся
 
-F2-I17 выполнен. Следующая карточка — F2-I18 (filtered training sessions).
+F2-I18 выполнен. Следующая карточка — F2-I19 (review queue / progress).
 
-## F2-I17 — результат
+## F2-I18 — результат
 
-- Generator `content:generate-reading-bank`
-- 16 canonical passages (prefer `읽고` texts); statuses `reviewed` / `needs_review` if blank markers
-- 48 draft bank questions (main idea / content match / fill via single-choice); fragment cited in explanation
-- Existing 100 exam questions stay draft; `bodyRu` not invented
-- Seed: exercises 388, options 1056
+- Deterministic approved selection (`selectFilteredSessionExercises`)
+- Guest filtered sessions: `filt__skill__unit__…__seed` parseable session ids
+- Setup CTA enabled → filtered session route; demo sample-module kept
+- Local fixture expanded (grammar/vocab/reading on u01) + evaluation via fixture mapper
+- API start accepts filters XOR exerciseIds; rejects second active session
+- Local storage v2 with v1 migration fallback
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i17-reading-exercises`
-- Commit: `feat: add baseline reading exercise bank`
+- Branch: `codex/f2-i18-filtered-training-sessions`
+- Commit: `feat: create filtered learning sessions`
 
 ## Следующий шаг
 
-F2-I18 — create filtered learning sessions.
+F2-I19 — review queue and progress by skill/topic/module.

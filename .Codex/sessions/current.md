@@ -52,6 +52,12 @@ Deployment заблокирован ключом Supabase в окружении 
 - Bundle budgets: green (~159 KB gzip для `/topics`, `/training`).
 - Статусы: `/topics/missing-module`, `/training/missing-session`, `/training/honorifics-preview` → 404 с not-found UI и `noindex`; валидные маршруты → 200.
 
+## Окружения Vercel (проверено на `43daf15`)
+
+- Production отвечает `200` везде, но отдаёт локальные фикстуры: единственная карточка «Первые шаги в корейском», `/topics/honorifics` и `/training/honorifics-preview` → `404`.
+- Вывод из кода: валидация пропускается только при явном `CONTENT_SOURCE=local`, значит именно оно задано в Production-окружении. Это противоречит PERF-I00 шаг 3 и PERF-I01 шаг 4.
+- Поэтому сбой ключа Supabase виден только на Preview. Порядок исправления: подтвердить ключ на Preview → переключить Production на `CONTENT_SOURCE=supabase`.
+
 ## Открытые задачи
 
 - [ ] Разблокировать deployment: перезапустить сборку, при повторе сверить `SUPABASE_SECRET_KEY` в окружении Vercel.

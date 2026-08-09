@@ -122,6 +122,13 @@ const vocabularyBoundary = {
   note: "No dictionary senses are approved yet. Business lexicon remains draft (level=business-draft).",
 };
 
+const importedReadingExercises = graph.exercisesReading.items.filter((item) =>
+  item.logicalId.startsWith("exercise.reading.exam."),
+);
+const baselineReadingExercises = graph.exercisesReading.items.filter((item) =>
+  item.logicalId.startsWith("exercise.reading.bank."),
+);
+
 const report = {
   schemaVersion: "phase-2.content-audit.v1",
   generatedAt: new Date().toISOString(),
@@ -177,7 +184,8 @@ const report = {
     grammarTopics: graph.grammarTopics.items.length === 80,
     grammarPerUnitExact: perUnitGrammar.every((row) => row.ok),
     dictionarySenses: graph.dictionaryEntries.items.length > 1000,
-    readingExamQuestions: graph.exercisesReading.items.length === 100,
+    readingExamQuestions: importedReadingExercises.length === 100,
+    readingBaselineQuestions: baselineReadingExercises.length === 48,
     readingRegressions: readingReport?.regressions ?? null,
   },
   notApprovedSummary: notApproved,
@@ -209,6 +217,9 @@ if (!report.correspondence.topicsUnits) failures.push("expected 16 units");
 if (!report.correspondence.grammarTopics) failures.push("expected 80 grammar topics");
 if (!report.correspondence.grammarPerUnitExact) failures.push("grammar per-unit counts mismatch");
 if (!report.correspondence.readingExamQuestions) failures.push("expected 100 reading exercises");
+if (!report.correspondence.readingBaselineQuestions) {
+  failures.push("expected 48 baseline reading exercises");
+}
 if (absolutePathHits.length > 0) failures.push("absolute local paths found in content JSON");
 if (readingReport) {
   for (const [key, value] of Object.entries(readingReport.regressions)) {

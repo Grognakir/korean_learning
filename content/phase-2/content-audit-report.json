@@ -1,6 +1,6 @@
 {
   "schemaVersion": "phase-2.content-audit.v1",
-  "generatedAt": "2026-08-09T14:27:05.338Z",
+  "generatedAt": "2026-08-09T16:23:49.310Z",
   "auditDoc": "docs/PHASE_2_CONTENT_AUDIT.md",
   "canonicalDocuments": [
     "docs/CURRICULUM_TOPICS.md",
@@ -131,25 +131,27 @@
     "dictionaryEntries": {
       "total": 1091,
       "byStatus": {
-        "draft": 1091
+        "draft": 899,
+        "reviewed": 192
       },
-      "unitLinks": 0
+      "unitLinks": 192
     },
     "readingPassages": {
       "total": 178,
       "byStatus": {
-        "draft": 150,
-        "needs_review": 28
+        "draft": 138,
+        "reviewed": 13,
+        "needs_review": 27
       },
       "textbookOrAppendix": 93,
       "exam": 85
     },
     "exercises": {
-      "grammar": 0,
-      "vocabulary": 0,
-      "reading": 100,
+      "grammar": 160,
+      "vocabulary": 64,
+      "reading": 148,
       "readingByStatus": {
-        "draft": 100
+        "draft": 148
       }
     }
   },
@@ -159,6 +161,7 @@
     "grammarPerUnitExact": true,
     "dictionarySenses": true,
     "readingExamQuestions": true,
+    "readingBaselineQuestions": true,
     "readingRegressions": {
       "unit1Culture": true,
       "unit3HasTableNote": true,
@@ -177,9 +180,9 @@
     "grammarTopics": 80,
     "dictionaryEntries": 1091,
     "readingPassages": 178,
-    "exercisesReading": 100,
-    "exercisesGrammar": 0,
-    "exercisesVocabulary": 0
+    "exercisesReading": 148,
+    "exercisesGrammar": 160,
+    "exercisesVocabulary": 64
   },
   "vocabularyBoundary": {
     "totalSenses": 1091,

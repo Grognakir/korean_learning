@@ -48,12 +48,12 @@ describe("curriculum import idempotency", () => {
     expect(runSql("select count(*)::text from public.dictionary_entries;")).toBe(beforeDict);
     expect(
       runSql(
-        "select count(*)::text from public.exercises where learning_skill = 'reading' and status = 'draft';",
+        "select count(*)::text from public.exercises where learning_skill = 'reading' and status = 'draft' and module_id in (select id from public.learning_modules where unit_number is not null);",
       ),
-    ).toBe("100");
+    ).toBe("148");
     expect(
       runSql(
-        "select count(*)::text from public.exercises where learning_skill = 'reading' and status = 'approved';",
+        "select count(*)::text from public.exercises where learning_skill = 'reading' and status = 'approved' and module_id in (select id from public.learning_modules where unit_number is not null);",
       ),
     ).toBe("0");
   });

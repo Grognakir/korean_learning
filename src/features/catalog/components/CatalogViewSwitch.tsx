@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { useCallback, useId, useRef, type KeyboardEvent } from "react";
 
@@ -20,7 +21,7 @@ export function CatalogViewSwitch({ value }: CatalogViewSwitchProps) {
   const router = useRouter();
   const pathname = usePathname();
   const baseId = useId();
-  const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const tabRefs = useRef<Array<HTMLAnchorElement | null>>([]);
 
   const select = useCallback(
     (next: CatalogView) => {
@@ -68,8 +69,9 @@ export function CatalogViewSwitch({ value }: CatalogViewSwitchProps) {
     <div aria-label="Вид каталога" className={styles.switch} onKeyDown={onKeyDown} role="tablist">
       {OPTIONS.map((option, index) => {
         const selected = option.value === value;
+        const href = option.value === "themes" ? pathname : `${pathname}?view=${option.value}`;
         return (
-          <button
+          <Link
             key={option.value}
             ref={(node) => {
               tabRefs.current[index] = node;
@@ -78,13 +80,14 @@ export function CatalogViewSwitch({ value }: CatalogViewSwitchProps) {
             aria-selected={selected}
             className={selected ? styles.tabActive : styles.tab}
             id={`${baseId}-${option.value}`}
+            href={href}
+            replace
             role="tab"
+            scroll={false}
             tabIndex={selected ? 0 : -1}
-            type="button"
-            onClick={() => select(option.value)}
           >
             {option.label}
-          </button>
+          </Link>
         );
       })}
     </div>

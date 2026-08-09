@@ -1,5 +1,3 @@
-import type { TrainingSessionResponse } from "@/features/training/api/schemas";
-
 import type { LearningSkill } from "../domain/conceptKey";
 
 type ApiErrorBody = {
@@ -14,9 +12,13 @@ export type StartReviewSessionInput = {
   readonly unitSlug?: string | null;
 };
 
+type ReviewSessionResponse = {
+  readonly sessionId: string;
+};
+
 export async function startReviewSession(
   input: StartReviewSessionInput = {},
-): Promise<TrainingSessionResponse> {
+): Promise<ReviewSessionResponse> {
   const body: Record<string, string> = {};
   if (input.skill) {
     body.skill = input.skill;
@@ -47,6 +49,6 @@ export async function startReviewSession(
     throw new Error(message);
   }
 
-  const payload = (await response.json()) as { session: TrainingSessionResponse };
+  const payload = (await response.json()) as { session: ReviewSessionResponse };
   return payload.session;
 }

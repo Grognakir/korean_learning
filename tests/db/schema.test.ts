@@ -13,16 +13,16 @@ describe("database schema and seed", () => {
     await expect(countRows(client, "exercises")).resolves.toBe(388);
     await expect(countRows(client, "dictionary_entries")).resolves.toBe(1091);
     await expect(countRows(client, "reading_passages")).resolves.toBe(179);
-    await expect(countRows(client, "exercise_topics")).resolves.toBe(16);
-    await expect(countRows(client, "content_reviews")).resolves.toBe(15);
+    await expect(countRows(client, "exercise_topics")).resolves.toBe(212);
+    await expect(countRows(client, "content_reviews")).resolves.toBe(17);
     expect(
       runSql("select count(*)::text from public.exercises where learning_skill = 'reading';"),
-    ).toBe("101");
+    ).toBe("149");
     expect(
       runSql(
         "select count(*)::text from public.exercises where status = 'draft' and learning_skill = 'reading';",
       ),
-    ).toBe("100");
+    ).toBe("148");
   });
 
   it("rejects duplicate exercise logical_id + content_version", () => {
@@ -113,7 +113,7 @@ describe("database schema and seed", () => {
 
     expect(
       runSql("select count(*)::text from public.exercises where learning_skill = 'grammar';"),
-    ).toBe("15");
+    ).toBe("175");
     expect(
       runSql(
         "select count(*)::text from public.learning_modules where unit_number is not null and level = '1급';",

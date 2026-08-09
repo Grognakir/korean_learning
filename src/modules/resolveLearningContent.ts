@@ -1,7 +1,8 @@
-import type { Exercise } from "@/features/training/domain";
-import { ModuleRegistry } from "@/features/training/domain";
-import { LocalModuleRepository, type ModuleRepository } from "@/features/training/data";
+import type { Exercise } from "@/features/training/domain/exercise";
+import { ModuleRegistry } from "@/features/training/domain/ModuleRegistry";
+import { LocalModuleRepository } from "@/features/training/data/LocalModuleRepository";
 import type { ExerciseRepository } from "@/features/training/data/ExerciseRepository";
+import type { ModuleRepository } from "@/features/training/data/ModuleRepository";
 import type { LearningModuleDefinition } from "@/types";
 
 import {

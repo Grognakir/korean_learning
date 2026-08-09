@@ -20,6 +20,12 @@ describe("phase-2 reading corpus", () => {
     const decisions = extractMergeDecisions(markdown);
     const report = JSON.parse(readFileSync(REPORT_PATH, "utf8")) as {
       counts: { unitsPresent: number; appendixSections: number; examQuestions: number };
+      sourceComparison: {
+        claudeBlocks: number;
+        gptBlocks: number;
+        pairedBlocks: number;
+        role: string;
+      };
       mergeDecisions: unknown[];
       regressions: Record<string, boolean>;
     };
@@ -28,6 +34,12 @@ describe("phase-2 reading corpus", () => {
     expect(sections.some((section) => section.sectionKind === "appendix")).toBe(true);
     expect(report.counts.unitsPresent).toBe(16);
     expect(report.counts.appendixSections).toBe(16);
+    expect(report.sourceComparison).toEqual({
+      claudeBlocks: 93,
+      gptBlocks: 92,
+      pairedBlocks: 90,
+      role: "accepted-audit-baseline",
+    });
     expect(report.mergeDecisions.length).toBe(decisions.length);
     expect(decisions.length).toBeGreaterThanOrEqual(6);
 

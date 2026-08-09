@@ -154,60 +154,98 @@ for (const variant of htmlVariants) {
   }
 }
 
+const previousPassages = existsSync(path.join(CONTENT_DIR, "reading-passages.json"))
+  ? (JSON.parse(readFileSync(path.join(CONTENT_DIR, "reading-passages.json"), "utf8")) as {
+      items: Array<{
+        logicalId: string;
+        status: string;
+        review?: { reviewedAt?: string; note?: string };
+      }>;
+    })
+  : { items: [] };
+const previousPassageById = new Map(
+  previousPassages.items.map((passage) => [passage.logicalId, passage] as const),
+);
+
 const readingPassages = {
   schemaVersion: "phase-2.v1",
-  items: [...readingPassagesFromTexts, ...examPassages],
+  items: [...readingPassagesFromTexts, ...examPassages].map((passage) => {
+    const previous = previousPassageById.get(passage.logicalId);
+    if (
+      previous &&
+      (previous.status === "reviewed" || previous.status === "needs_review") &&
+      previous.review?.note?.includes("F2-I17")
+    ) {
+      return {
+        ...passage,
+        status: previous.status,
+        review: previous.review,
+      };
+    }
+    return passage;
+  }),
 };
+
+const previousReadingExercises = existsSync(path.join(CONTENT_DIR, "exercises-reading.json"))
+  ? (JSON.parse(readFileSync(path.join(CONTENT_DIR, "exercises-reading.json"), "utf8")) as {
+      items: Array<Record<string, unknown> & { logicalId: string }>;
+    })
+  : { items: [] };
+const preservedBankExercises = previousReadingExercises.items.filter((exercise) =>
+  exercise.logicalId.startsWith("exercise.reading.bank."),
+);
+
+const examExercises = htmlVariants.flatMap((variant) =>
+  variant.questions.map((question) => {
+    const variantPad = String(variant.index).padStart(2, "0");
+    const questionPad = String(question.questionNumber).padStart(2, "0");
+    const unitPad = String(suggestedUnitForVariant(variant.index - 1)).padStart(2, "0");
+    const options = question.options.map((label, optionIndex) => ({
+      id: `opt${optionIndex + 1}`,
+      label: { ko: label, ru: label },
+    }));
+    const correctOptionId = `opt${question.correctOptionIndex + 1}`;
+    const explanationRu =
+      question.explanationKo ||
+      "Draft reading question imported from derived HTML bank; not language-approved.";
+
+    return {
+      logicalId: `exercise.reading.exam.v${variantPad}.q${questionPad}`,
+      contentVersion: "1.0.0",
+      status: "draft" as const,
+      sourceRefs: [
+        sourceRef(
+          "src.curriculum-texts",
+          `derived.reading-html.v${variant.index}.q${question.questionNumber}`,
+          "section",
+        ),
+      ],
+      skill: "reading" as const,
+      exerciseType: "single-choice" as const,
+      unitLogicalId: `unit.u${unitPad}`,
+      grammarTopicLogicalId: null,
+      readingPassageLogicalId: examPassageByGroup.get(question.passageGroupKey)!,
+      dictionaryEntryLogicalIds: [],
+      prompt: {
+        ko: question.promptKo,
+        ru: question.promptKo,
+      },
+      explanation: {
+        ko: question.explanationKo || explanationRu,
+        ru: explanationRu,
+      },
+      difficulty: "practice" as const,
+      options,
+      pairs: [],
+      correctOptionId,
+      acceptedAnswers: [],
+    };
+  }),
+);
 
 const exercisesReading = {
   schemaVersion: "phase-2.v1",
-  items: htmlVariants.flatMap((variant) =>
-    variant.questions.map((question) => {
-      const variantPad = String(variant.index).padStart(2, "0");
-      const questionPad = String(question.questionNumber).padStart(2, "0");
-      const unitPad = String(suggestedUnitForVariant(variant.index - 1)).padStart(2, "0");
-      const options = question.options.map((label, optionIndex) => ({
-        id: `opt${optionIndex + 1}`,
-        label: { ko: label, ru: label },
-      }));
-      const correctOptionId = `opt${question.correctOptionIndex + 1}`;
-      const explanationRu =
-        question.explanationKo ||
-        "Draft reading question imported from derived HTML bank; not language-approved.";
-
-      return {
-        logicalId: `exercise.reading.exam.v${variantPad}.q${questionPad}`,
-        contentVersion: "1.0.0",
-        status: "draft" as const,
-        sourceRefs: [
-          sourceRef(
-            "src.curriculum-texts",
-            `derived.reading-html.v${variant.index}.q${question.questionNumber}`,
-            "section",
-          ),
-        ],
-        skill: "reading" as const,
-        exerciseType: "single-choice" as const,
-        unitLogicalId: `unit.u${unitPad}`,
-        grammarTopicLogicalId: null,
-        readingPassageLogicalId: examPassageByGroup.get(question.passageGroupKey)!,
-        dictionaryEntryLogicalIds: [],
-        prompt: {
-          ko: question.promptKo,
-          ru: question.promptKo,
-        },
-        explanation: {
-          ko: question.explanationKo || explanationRu,
-          ru: explanationRu,
-        },
-        difficulty: "practice" as const,
-        options,
-        pairs: [],
-        correctOptionId,
-        acceptedAnswers: [],
-      };
-    }),
-  ),
+  items: [...examExercises, ...preservedBankExercises],
 };
 
 const report = {
@@ -279,7 +317,8 @@ const dictionaryProvenance = existingProvenance.items.filter((row) =>
 const preservedExerciseProvenance = existingProvenance.items.filter(
   (row) =>
     row.subjectLogicalId.startsWith("exercise.grammar.") ||
-    row.subjectLogicalId.startsWith("exercise.vocabulary."),
+    row.subjectLogicalId.startsWith("exercise.vocabulary.") ||
+    row.subjectLogicalId.startsWith("exercise.reading.bank."),
 );
 
 const provenance = {
@@ -309,7 +348,7 @@ const provenance = {
         ? "Draft exam-bank passage extracted from derived reading HTML."
         : "Imported from CURRICULUM_TEXTS.md.",
     })),
-    ...exercisesReading.items.map((exercise) => ({
+    ...examExercises.map((exercise) => ({
       logicalId: `prov.${exercise.logicalId}`,
       subjectLogicalId: exercise.logicalId,
       contentVersion: exercise.contentVersion,
@@ -336,6 +375,7 @@ console.log(
     `Wrote reading corpus: textbookPassages=${readingPassagesFromTexts.length}`,
     `examPassages=${examPassages.length}`,
     `exercises=${exercisesReading.items.length}`,
+    `bankPreserved=${preservedBankExercises.length}`,
     `appendix=${report.counts.appendixSections}`,
     `provenance=${provenance.items.length}`,
   ].join(", "),

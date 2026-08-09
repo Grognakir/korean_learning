@@ -39,8 +39,15 @@ describe("phase-2 reading corpus", () => {
   it("imports 5×20 draft reading exercises with private correct options and blank markers", () => {
     validatePhase2Content(PHASE_2_CONTENT_ROOT);
     const graph = loadPhase2ContentGraph(PHASE_2_CONTENT_ROOT);
+    const examExercises = graph.exercisesReading.items.filter((exercise) =>
+      exercise.logicalId.startsWith("exercise.reading.exam."),
+    );
+    const bankExercises = graph.exercisesReading.items.filter((exercise) =>
+      exercise.logicalId.startsWith("exercise.reading.bank."),
+    );
 
-    expect(graph.exercisesReading.items).toHaveLength(100);
+    expect(examExercises).toHaveLength(100);
+    expect(bankExercises).toHaveLength(48);
     expect(graph.exercisesReading.items.every((exercise) => exercise.status === "draft")).toBe(
       true,
     );
@@ -58,7 +65,7 @@ describe("phase-2 reading corpus", () => {
     ).toBe(true);
 
     const byVariant = new Map<string, number>();
-    for (const exercise of graph.exercisesReading.items) {
+    for (const exercise of examExercises) {
       const match = exercise.logicalId.match(/exercise\.reading\.exam\.(v\d{2})\.q\d{2}/);
       expect(match).toBeTruthy();
       byVariant.set(match![1]!, (byVariant.get(match![1]!) ?? 0) + 1);

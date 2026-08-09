@@ -10,7 +10,7 @@ describe("database schema and seed", () => {
   it("applies seed counts for the sample module and curriculum import", async () => {
     await expect(countRows(client, "learning_modules")).resolves.toBe(17);
     await expect(countRows(client, "grammar_topics")).resolves.toBe(82);
-    await expect(countRows(client, "exercises")).resolves.toBe(340);
+    await expect(countRows(client, "exercises")).resolves.toBe(388);
     await expect(countRows(client, "dictionary_entries")).resolves.toBe(1091);
     await expect(countRows(client, "reading_passages")).resolves.toBe(179);
     await expect(countRows(client, "exercise_topics")).resolves.toBe(16);
@@ -218,7 +218,7 @@ describe("database reset repeatability", () => {
     runSql("select 1");
     execSync("node_modules/.bin/supabase db reset", { cwd: process.cwd(), stdio: "inherit" });
     await expect(countRows(createLocalAdminClient(), "learning_modules")).resolves.toBe(17);
-    await expect(countRows(createLocalAdminClient(), "exercises")).resolves.toBe(340);
+    await expect(countRows(createLocalAdminClient(), "exercises")).resolves.toBe(388);
     await expect(countRows(createLocalAdminClient(), "dictionary_entries")).resolves.toBe(1091);
   });
 });

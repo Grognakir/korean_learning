@@ -1,0 +1,1 @@
+export { ReadingPassage } from "./ReadingPassage";

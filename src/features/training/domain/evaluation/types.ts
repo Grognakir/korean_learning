@@ -18,7 +18,7 @@ type SubmissionBase<Type extends ExerciseTypeId> = {
 };
 
 export type ChoiceAnswerSubmission = SubmissionBase<
-  "meaning-choice" | "honorific-choice" | "plain-choice"
+  "meaning-choice" | "honorific-choice" | "plain-choice" | "single-choice"
 > & {
   readonly optionId: string;
 };
@@ -110,7 +110,7 @@ type EvaluationBase<Type extends ExerciseTypeId, Submission extends AnswerSubmis
 };
 
 export type ChoiceAnswerEvaluation = EvaluationBase<
-  "meaning-choice" | "honorific-choice" | "plain-choice",
+  "meaning-choice" | "honorific-choice" | "plain-choice" | "single-choice",
   ChoiceAnswerSubmission
 >;
 

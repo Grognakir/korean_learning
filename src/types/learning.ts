@@ -9,6 +9,7 @@ export const EXERCISE_TYPE_IDS = [
   "meaning-choice",
   "honorific-choice",
   "plain-choice",
+  "single-choice",
   "matching-translation",
   "matching-honorific",
   "fill-blank",

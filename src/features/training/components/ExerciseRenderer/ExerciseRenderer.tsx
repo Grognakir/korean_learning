@@ -43,6 +43,7 @@ export function ExerciseRenderer({
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return (
         <ChoiceExercise
           disabled={disabled}

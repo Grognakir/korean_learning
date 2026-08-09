@@ -17,6 +17,7 @@ export function serializeNormalizedAnswer(submission: AnswerSubmission): Json {
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return {
         type: submission.type,
         optionId: submission.optionId,

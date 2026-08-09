@@ -34,12 +34,17 @@ async function loadApprovedExercises(): Promise<LoadedExerciseBundle> {
     { data: topicLinkRows, error: topicLinkError },
     { data: optionRows, error: optionError },
     { data: acceptedAnswerRows, error: acceptedAnswerError },
+    { data: passageRows, error: passageError },
   ] = await Promise.all([
     client.from("learning_modules").select("id,slug,status").eq("status", "published"),
     client.from("exercises").select("*").eq("status", "approved"),
     client.from("exercise_topics").select("*"),
     client.from("exercise_options").select("*"),
     client.from("accepted_answers").select("*"),
+    client
+      .from("reading_passages")
+      .select("id,logical_id,title_ko,title_ru,body_ko,status")
+      .eq("status", "published"),
   ]);
 
   if (moduleError) {
@@ -62,8 +67,23 @@ async function loadApprovedExercises(): Promise<LoadedExerciseBundle> {
     throw new SupabaseExerciseRepositoryError(acceptedAnswerError.message);
   }
 
+  if (passageError) {
+    throw new SupabaseExerciseRepositoryError(passageError.message);
+  }
+
   const moduleSlugById = Object.fromEntries((moduleRows ?? []).map((row) => [row.id, row.slug]));
   const publishedModuleIds = new Set(Object.keys(moduleSlugById));
+  const passageById = new Map(
+    (passageRows ?? []).map((passage) => [
+      passage.id,
+      {
+        logicalId: passage.logical_id,
+        titleKo: passage.title_ko,
+        titleRu: passage.title_ru,
+        bodyKo: passage.body_ko,
+      },
+    ]),
+  );
 
   const exercises = sortExerciseRows(exerciseRows ?? [])
     .filter((row) => publishedModuleIds.has(row.module_id))
@@ -75,12 +95,20 @@ async function loadApprovedExercises(): Promise<LoadedExerciseBundle> {
       }
 
       try {
+        const passage =
+          row.reading_passage_id == null ? null : (passageById.get(row.reading_passage_id) ?? null);
+        if (row.reading_passage_id && !passage) {
+          throw new SupabaseExerciseRepositoryError(
+            `Missing published passage for exercise ${row.id}.`,
+          );
+        }
         return mapExerciseRow({
           row,
           moduleSlug,
           topicRows: topicLinkRows ?? [],
           optionRows: optionRows ?? [],
           acceptedAnswerRows: acceptedAnswerRows ?? [],
+          passage,
         });
       } catch (error) {
         if (error instanceof ExerciseMapperError) {

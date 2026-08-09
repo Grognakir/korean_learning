@@ -49,6 +49,8 @@ export type {
   MatchingTranslationExercise,
   MeaningChoiceExercise,
   PlainChoiceExercise,
+  SingleChoiceExercise,
+  ExercisePassageSnapshot,
 } from "./exercise";
 export { selectPublishedModules, selectPublishedTopics } from "./moduleSelectors";
 export {

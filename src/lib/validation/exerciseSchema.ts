@@ -89,6 +89,20 @@ const plainChoiceExerciseSchema = z.strictObject({
   correctOptionId: z.string().trim().regex(identifierPattern),
 });
 
+const exercisePassageSchema = z.strictObject({
+  logicalId: z.string().trim().min(1),
+  title: exerciseTextSchema,
+  bodyKo: z.string().trim().min(1),
+});
+
+const singleChoiceExerciseSchema = z.strictObject({
+  ...exerciseBaseShape,
+  type: z.literal("single-choice"),
+  options: z.array(exerciseOptionSchema).min(2),
+  correctOptionId: z.string().trim().regex(identifierPattern),
+  passage: exercisePassageSchema.nullable(),
+});
+
 const matchingTranslationExerciseSchema = z.strictObject({
   ...exerciseBaseShape,
   type: z.literal("matching-translation"),
@@ -152,7 +166,10 @@ function validateAcceptedAnswers(
 }
 
 function validateChoiceExercise(
-  exercise: Extract<Exercise, { type: "meaning-choice" | "honorific-choice" | "plain-choice" }>,
+  exercise: Extract<
+    Exercise,
+    { type: "meaning-choice" | "honorific-choice" | "plain-choice" | "single-choice" }
+  >,
   context: RefinementCtx,
 ) {
   const ids = new Set<string>();
@@ -273,6 +290,7 @@ export const exerciseDefinitionSchema = z
     meaningChoiceExerciseSchema,
     honorificChoiceExerciseSchema,
     plainChoiceExerciseSchema,
+    singleChoiceExerciseSchema,
     matchingTranslationExerciseSchema,
     matchingHonorificExerciseSchema,
     fillBlankExerciseSchema,
@@ -299,6 +317,7 @@ export const exerciseDefinitionSchema = z
       case "meaning-choice":
       case "honorific-choice":
       case "plain-choice":
+      case "single-choice":
         validateChoiceExercise(exercise, context);
         break;
       case "matching-translation":

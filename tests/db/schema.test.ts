@@ -10,14 +10,14 @@ describe("database schema and seed", () => {
   it("applies seed counts for the sample module and curriculum import", async () => {
     await expect(countRows(client, "learning_modules")).resolves.toBe(17);
     await expect(countRows(client, "grammar_topics")).resolves.toBe(82);
-    await expect(countRows(client, "exercises")).resolves.toBe(114);
+    await expect(countRows(client, "exercises")).resolves.toBe(116);
     await expect(countRows(client, "dictionary_entries")).resolves.toBe(1091);
-    await expect(countRows(client, "reading_passages")).resolves.toBe(178);
-    await expect(countRows(client, "exercise_topics")).resolves.toBe(14);
+    await expect(countRows(client, "reading_passages")).resolves.toBe(179);
+    await expect(countRows(client, "exercise_topics")).resolves.toBe(16);
     await expect(countRows(client, "content_reviews")).resolves.toBe(15);
     expect(
       runSql("select count(*)::text from public.exercises where learning_skill = 'reading';"),
-    ).toBe("100");
+    ).toBe("101");
     expect(
       runSql(
         "select count(*)::text from public.exercises where status = 'draft' and learning_skill = 'reading';",
@@ -113,7 +113,7 @@ describe("database schema and seed", () => {
 
     expect(
       runSql("select count(*)::text from public.exercises where learning_skill = 'grammar';"),
-    ).toBe("14");
+    ).toBe("15");
     expect(
       runSql(
         "select count(*)::text from public.learning_modules where unit_number is not null and level = '1급';",
@@ -218,7 +218,7 @@ describe("database reset repeatability", () => {
     runSql("select 1");
     execSync("node_modules/.bin/supabase db reset", { cwd: process.cwd(), stdio: "inherit" });
     await expect(countRows(createLocalAdminClient(), "learning_modules")).resolves.toBe(17);
-    await expect(countRows(createLocalAdminClient(), "exercises")).resolves.toBe(114);
+    await expect(countRows(createLocalAdminClient(), "exercises")).resolves.toBe(116);
     await expect(countRows(createLocalAdminClient(), "dictionary_entries")).resolves.toBe(1091);
   });
 });

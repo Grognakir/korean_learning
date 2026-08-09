@@ -24,6 +24,7 @@ function draftFor(view: ExerciseView): AnswerDraft {
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return { kind: "choice", optionId: null };
     case "fill-blank":
       return {
@@ -52,6 +53,7 @@ describe("ExerciseRenderer", () => {
     ["meaning-choice", "text", "Выберите один вариант"],
     ["honorific-choice", "text", "Выберите один вариант"],
     ["plain-choice", "text", "Выберите один вариант"],
+    ["single-choice", "text", "Выберите один вариант"],
     ["fill-blank", "label", /Пропуск 1/],
     ["matching-translation", "combobox", null],
     ["matching-honorific", "combobox", null],

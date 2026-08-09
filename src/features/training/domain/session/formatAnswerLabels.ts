@@ -19,7 +19,8 @@ function choiceLabel(exercise: PublicExercise, optionId: string): string {
   if (
     exercise.type !== "meaning-choice" &&
     exercise.type !== "honorific-choice" &&
-    exercise.type !== "plain-choice"
+    exercise.type !== "plain-choice" &&
+    exercise.type !== "single-choice"
   ) {
     return optionId;
   }
@@ -58,6 +59,7 @@ export function formatSubmittedAnswerLabel(
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return choiceLabel(exercise, submission.optionId);
     case "fill-blank":
       return (

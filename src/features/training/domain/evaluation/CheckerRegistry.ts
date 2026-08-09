@@ -33,6 +33,7 @@ function createInvalidTypeMismatchEvaluation(
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return {
         exerciseId: exercise.id,
         type: exercise.type,
@@ -139,6 +140,7 @@ export function evaluateAnswer(exercise: Exercise, submission: AnswerSubmission)
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return checkChoiceAnswer(exercise, submission as ChoiceAnswerSubmission);
     case "free-response":
       return checkFreeResponseAnswer(exercise, submission as FreeResponseAnswerSubmission);

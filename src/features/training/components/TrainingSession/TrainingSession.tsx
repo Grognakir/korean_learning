@@ -36,6 +36,7 @@ import type { EvaluateSubmissionFn } from "../../testing/createLocalEvaluateSubm
 import { ExerciseFeedback } from "../ExerciseFeedback";
 import { ExerciseRenderer } from "../ExerciseRenderer";
 import { ExerciseText } from "../ExerciseText";
+import { ReadingPassage } from "../ReadingPassage";
 import { TrainingResult } from "../TrainingResult";
 
 import styles from "./TrainingSession.module.css";
@@ -65,6 +66,7 @@ function exerciseInstruction(exercise: PublicExercise): string | null {
     case "meaning-choice":
     case "honorific-choice":
     case "plain-choice":
+    case "single-choice":
       return "Выберите один вариант";
     default:
       return null;
@@ -289,6 +291,9 @@ function TrainingSessionRuntime({
         </div>
 
         <section aria-labelledby="training-prompt-heading" className={styles.promptSection}>
+          {"passage" in session.currentExerciseView && session.currentExerciseView.passage ? (
+            <ReadingPassage passage={session.currentExerciseView.passage} />
+          ) : null}
           <div className={styles.promptCopy}>
             <h2
               className={styles.promptHeading}

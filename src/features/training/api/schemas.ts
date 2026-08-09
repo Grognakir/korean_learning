@@ -8,7 +8,7 @@ const uuidSchema = z.uuid();
 
 const choiceSubmissionSchema = z.strictObject({
   exerciseId: uuidSchema,
-  type: z.enum(["meaning-choice", "honorific-choice", "plain-choice"]),
+  type: z.enum(["meaning-choice", "honorific-choice", "plain-choice", "single-choice"]),
   optionId: z.string().min(1),
 });
 
@@ -119,7 +119,7 @@ export const submitTrainingAttemptResponseSchema = z.strictObject({
   evaluation: z.discriminatedUnion("type", [
     z.strictObject({
       ...evaluationResponseBase,
-      type: z.enum(["meaning-choice", "honorific-choice", "plain-choice"]),
+      type: z.enum(["meaning-choice", "honorific-choice", "plain-choice", "single-choice"]),
     }),
     z.strictObject({
       ...evaluationResponseBase,

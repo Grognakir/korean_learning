@@ -1,5 +1,7 @@
-export const TRAINING_SESSION_STORAGE_KEY = "korean-learning:training-session:v1";
-export const TRAINING_SESSION_STORAGE_VERSION = 1 as const;
+export const TRAINING_SESSION_STORAGE_KEY = "korean-learning:training-session:v2";
+export const TRAINING_SESSION_STORAGE_VERSION = 2 as const;
+/** Prior storage versions that can be loaded and rewritten as v2 without data loss. */
+export const TRAINING_SESSION_LEGACY_STORAGE_VERSIONS = [1] as const;
 export const TRAINING_SESSION_TTL_MS = 7 * 24 * 60 * 60 * 1000;
 
 export type TrainingSessionStorageVersion = typeof TRAINING_SESSION_STORAGE_VERSION;

@@ -4,7 +4,8 @@ import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedbac
 import { TrainingSetupControls } from "@/features/training/components/TrainingSetup/TrainingSetupControls";
 import { GuestSessionImportPrompt } from "@/features/training/components/GuestSessionImportPrompt";
 import { ResumeTrainingPrompt } from "@/features/training/components/ResumeTrainingPrompt";
-import { DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
+import { DEMO_TRAINING_SEED, DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
+import { buildFilteredSessionId } from "@/features/training/setup/filteredSessionId";
 import { parseTrainingSetupQuery } from "@/features/training/setup/parseTrainingSetupQuery";
 import { resolveTrainingSetup } from "@/features/training/setup/resolveTrainingSetup";
 import { getCachedPublishedModuleBySlug } from "@/modules/cachedLearningContent";
@@ -84,6 +85,7 @@ export async function TrainingModulesPanel({ searchParams }: TrainingModulesPane
       <GuestSessionImportPrompt
         moduleIdBySlug={{
           ...(sample.data ? { [sample.data.slug]: sample.data.id } : {}),
+          ...Object.fromEntries(unitsResult.data.map((unit) => [unit.slug, unit.id])),
         }}
       />
 
@@ -112,7 +114,13 @@ export async function TrainingModulesPanel({ searchParams }: TrainingModulesPane
           ) : null}
           <div className={styles.actionSlot}>
             {setup.canPreview && setup.request ? (
-              <Link className={styles.startAction} href={`/training/${DEMO_TRAINING_SESSION_ID}`}>
+              <Link
+                className={styles.startAction}
+                href={`/training/${buildFilteredSessionId({
+                  request: setup.request,
+                  seed: DEMO_TRAINING_SEED,
+                })}`}
+              >
                 Начать тренировку
               </Link>
             ) : (

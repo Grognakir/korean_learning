@@ -47,15 +47,32 @@ export const answerSubmissionRequestSchema = z.discriminatedUnion("type", [
   matchingSubmissionSchema,
 ]);
 
-export const startTrainingSessionRequestSchema = z.strictObject({
-  moduleId: uuidSchema,
-  mode: z.enum(TRAINING_SESSION_MODES),
-  contentVersion: semverSchema,
-  exerciseIds: z.array(uuidSchema).min(1),
-  idempotencyKey: idempotencyKeySchema,
-  randomSeed: z.string().trim().min(1).max(128),
-  difficulty: z.enum(["easy", "medium", "hard"]).optional(),
-});
+export const startTrainingSessionRequestSchema = z
+  .strictObject({
+    moduleId: uuidSchema,
+    mode: z.enum(TRAINING_SESSION_MODES),
+    contentVersion: semverSchema,
+    exerciseIds: z.array(uuidSchema).min(1).optional(),
+    skill: z.enum(["grammar", "vocabulary", "reading"]).optional(),
+    unitSlug: z.string().trim().min(1).optional(),
+    grammarTopicId: z.string().trim().min(1).nullable().optional(),
+    sessionSize: z.number().int().min(1).max(50).optional(),
+    idempotencyKey: idempotencyKeySchema,
+    randomSeed: z.string().trim().min(1).max(128),
+    difficulty: z.enum(["easy", "medium", "hard"]).nullable().optional(),
+  })
+  .superRefine((value, context) => {
+    const hasExplicitIds = Boolean(value.exerciseIds && value.exerciseIds.length > 0);
+    const hasFilters = Boolean(value.skill && value.unitSlug && value.sessionSize);
+
+    if (hasExplicitIds === hasFilters) {
+      context.addIssue({
+        code: "custom",
+        message: "Provide either exerciseIds or skill/unitSlug/sessionSize filters.",
+        path: ["exerciseIds"],
+      });
+    }
+  });
 
 export const submitTrainingAttemptRequestSchema = z.strictObject({
   exerciseId: uuidSchema,

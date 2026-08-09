@@ -52,7 +52,7 @@ const exercise: PublicCurriculumExercise = {
 };
 
 describe("resolveTrainingSetup", () => {
-  it("builds a valid request and keeps preview disabled until session creation", () => {
+  it("builds a valid request and enables start when approved content exists", () => {
     const result = resolveTrainingSetup({
       url: {
         skill: "grammar",
@@ -74,7 +74,8 @@ describe("resolveTrainingSetup", () => {
       difficulty: "easy",
       sessionSize: 1,
     });
-    expect(result.canPreview).toBe(false);
+    expect(result.canPreview).toBe(true);
+    expect(result.blockedReason).toBeNull();
     expect(JSON.stringify(result.request)).not.toContain("correct");
   });
 });

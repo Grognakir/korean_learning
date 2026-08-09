@@ -168,7 +168,7 @@ export const trainingSessionStateSchema = z.strictObject({
 });
 
 export const persistedTrainingSessionRecordSchema = z.strictObject({
-  storageVersion: z.literal(TRAINING_SESSION_STORAGE_VERSION),
+  storageVersion: z.union([z.literal(1), z.literal(TRAINING_SESSION_STORAGE_VERSION)]),
   savedAt: isoDateTimeSchema,
   expiresAt: isoDateTimeSchema,
   sessionState: trainingSessionStateSchema,

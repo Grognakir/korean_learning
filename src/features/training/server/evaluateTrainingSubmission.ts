@@ -20,13 +20,19 @@ export class TrainingEvaluationError extends Error {
 
 async function loadExerciseForEvaluationBoundary(exerciseId: string, contentVersion: string) {
   if (resolveContentSource() === "local") {
-    const exercise = await getLocalLearningContent().exerciseRepository.getById(exerciseId);
-
-    if (!exercise || exercise.contentVersion !== contentVersion) {
-      return undefined;
+    const sample = await getLocalLearningContent().exerciseRepository.getById(exerciseId);
+    if (sample && sample.contentVersion === contentVersion) {
+      return sample;
     }
 
-    return exercise;
+    const { getFixtureDomainExerciseById } =
+      await import("@/modules/curriculum/mapFixtureExerciseToDomain");
+    const curriculum = getFixtureDomainExerciseById(exerciseId);
+    if (curriculum && curriculum.contentVersion === contentVersion) {
+      return curriculum;
+    }
+
+    return undefined;
   }
 
   return loadExerciseForEvaluation(exerciseId, contentVersion);

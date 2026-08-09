@@ -27,7 +27,7 @@ export default function TrainingPage({ searchParams = Promise.resolve({}) }: Tra
   return (
     <PageContainer className={styles.page}>
       <PageHeader
-        description="Выберите навык, тему и доступные фильтры. Создание отфильтрованной сессии подключится в следующей итерации."
+        description="Выберите навык, тему и фильтры, затем запустите сессию из approved банка."
         title="Тренировка"
       />
       <Suspense fallback={<CatalogSectionSkeleton label="Загрузка настройки…" />}>

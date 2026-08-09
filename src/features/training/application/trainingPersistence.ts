@@ -78,22 +78,143 @@ async function validateSessionExercises(
   }));
 }
 
+async function resolveStartExerciseIds(
+  client: SupabaseClient<Database>,
+  request: StartTrainingSessionRequest,
+  moduleSlug: string,
+): Promise<readonly string[]> {
+  if (request.exerciseIds && request.exerciseIds.length > 0) {
+    return request.exerciseIds;
+  }
+
+  if (!request.skill || !request.unitSlug || !request.sessionSize) {
+    throw new TrainingPersistenceError(
+      "VALIDATION_FAILED",
+      "Filtered session requires skill, unitSlug, and sessionSize.",
+      400,
+    );
+  }
+
+  let query = client
+    .from("exercises")
+    .select("id,content_version,learning_skill,difficulty,primary_topic_id,module_id,status")
+    .eq("status", "approved")
+    .eq("learning_skill", request.skill)
+    .eq("module_id", request.moduleId);
+
+  if (request.difficulty) {
+    query = query.eq("difficulty", request.difficulty);
+  }
+
+  const { data, error } = await query;
+  if (error) {
+    throw new TrainingPersistenceError("PERSISTENCE_FAILED", error.message, 503);
+  }
+
+  let rows = data ?? [];
+  if (request.skill === "grammar" && request.grammarTopicId) {
+    const { data: topics, error: topicError } = await client
+      .from("grammar_topics")
+      .select("id,logical_id")
+      .eq("logical_id", request.grammarTopicId)
+      .maybeSingle();
+    if (topicError) {
+      throw new TrainingPersistenceError("PERSISTENCE_FAILED", topicError.message, 503);
+    }
+    if (!topics) {
+      throw new TrainingPersistenceError(
+        "INSUFFICIENT_CONTENT",
+        "No approved exercises match the selected filters.",
+        400,
+      );
+    }
+    rows = rows.filter((row) => row.primary_topic_id === topics.id);
+  }
+
+  const { selectFilteredSessionExercises, FilteredSessionSelectionError } =
+    await import("../setup/selectFilteredSessionExercises");
+
+  try {
+    const seed = Number.parseInt(request.randomSeed, 10);
+    const selection = selectFilteredSessionExercises({
+      exercises: rows.map((row) => ({
+        id: row.id,
+        skill: row.learning_skill,
+        unitSlug: moduleSlug,
+        difficulty: row.difficulty,
+        grammarTopicLogicalId: request.grammarTopicId ?? null,
+        contentVersion: row.content_version,
+        status: "approved" as const,
+      })),
+      request: {
+        skill: request.skill,
+        unitSlug: request.unitSlug,
+        grammarTopicId: request.grammarTopicId ?? null,
+        difficulty: request.difficulty ?? null,
+        sessionSize: request.sessionSize,
+      },
+      seed: Number.isInteger(seed) ? seed : 17,
+    });
+    return selection.exerciseIds;
+  } catch (error) {
+    if (error instanceof FilteredSessionSelectionError) {
+      throw new TrainingPersistenceError("INSUFFICIENT_CONTENT", error.message, 400);
+    }
+    throw error;
+  }
+}
+
 export async function startTrainingSession(input: {
   readonly client: SupabaseClient<Database>;
   readonly userId: string;
   readonly request: StartTrainingSessionRequest;
 }): Promise<TrainingSessionResponse> {
   const repository = createSupabaseTrainingSessionRepository(input.client);
+
+  const existing = await repository.findSessionByIdempotencyKey(
+    input.userId,
+    input.request.idempotencyKey,
+  );
+  if (existing) {
+    const moduleSlug = await loadModuleSlug(input.client, existing.module_id);
+    const persisted = await repository.findSessionById(input.userId, existing.id);
+    if (!persisted) {
+      throw new TrainingPersistenceError("NOT_FOUND", "Training session was not found.", 404);
+    }
+    return mapTrainingSessionResponse(persisted, moduleSlug);
+  }
+
+  const { data: activeRows, error: activeError } = await input.client
+    .from("training_sessions")
+    .select("id")
+    .eq("user_id", input.userId)
+    .eq("status", "active")
+    .limit(1);
+  if (activeError) {
+    throw new TrainingPersistenceError("PERSISTENCE_FAILED", activeError.message, 503);
+  }
+  if ((activeRows ?? []).length > 0) {
+    throw new TrainingPersistenceError(
+      "ACTIVE_SESSION_EXISTS",
+      "An active training session already exists.",
+      400,
+    );
+  }
+
   const moduleSlug = await loadModuleSlug(input.client, input.request.moduleId);
+  const exerciseIds = await resolveStartExerciseIds(input.client, input.request, moduleSlug);
   const exercises = await validateSessionExercises(input.client, {
     moduleId: input.request.moduleId,
     contentVersion: input.request.contentVersion,
-    exerciseIds: input.request.exerciseIds,
+    exerciseIds,
   });
 
   const persisted = await repository.createSession({
     userId: input.userId,
-    request: input.request,
+    request: {
+      ...input.request,
+      exerciseIds: [...exerciseIds],
+    },
     exercises,
   });
 

@@ -584,7 +584,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I18 — Создание и возобновление отфильтрованных сессий
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** связать setup с реальной guest/cloud session без hardcoded demo ID.
 - **Вход:** F2-I17 `done`.
 - **Ветка:** `codex/f2-i18-filtered-training-sessions`.

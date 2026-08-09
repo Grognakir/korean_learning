@@ -3,6 +3,7 @@ import { TRAINING_SESSION_SCHEMA_VERSION } from "../domain";
 
 import { persistedTrainingSessionRecordSchema } from "./sessionStorageSchema";
 import {
+  TRAINING_SESSION_LEGACY_STORAGE_VERSIONS,
   TRAINING_SESSION_STORAGE_KEY,
   TRAINING_SESSION_STORAGE_VERSION,
   TRAINING_SESSION_TTL_MS,
@@ -72,14 +73,15 @@ export class LocalTrainingSessionStore {
       return { status: "corrupt", reason: "invalid-json" };
     }
 
-    if (
-      typeof parsed === "object" &&
-      parsed !== null &&
-      "storageVersion" in parsed &&
-      (parsed as { storageVersion?: unknown }).storageVersion !== TRAINING_SESSION_STORAGE_VERSION
-    ) {
-      this.clearQuietly();
-      return { status: "incompatible", reason: "storage-version" };
+    if (typeof parsed === "object" && parsed !== null && "storageVersion" in parsed) {
+      const storageVersion = (parsed as { storageVersion?: unknown }).storageVersion;
+      const legacyCompatible = (
+        TRAINING_SESSION_LEGACY_STORAGE_VERSIONS as readonly number[]
+      ).includes(storageVersion as number);
+      if (storageVersion !== TRAINING_SESSION_STORAGE_VERSION && !legacyCompatible) {
+        this.clearQuietly();
+        return { status: "incompatible", reason: "storage-version" };
+      }
     }
 
     const validated = persistedTrainingSessionRecordSchema.safeParse(parsed);
@@ -88,7 +90,10 @@ export class LocalTrainingSessionStore {
       return { status: "corrupt", reason: "schema-validation-failed" };
     }
 
-    const record = validated.data as PersistedTrainingSessionRecord;
+    const record: PersistedTrainingSessionRecord = {
+      ...validated.data,
+      storageVersion: TRAINING_SESSION_STORAGE_VERSION,
+    };
 
     if (record.sessionState.schemaVersion !== TRAINING_SESSION_SCHEMA_VERSION) {
       this.clearQuietly();

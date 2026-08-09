@@ -81,8 +81,10 @@ describe("content store outage", () => {
     render(
       await SessionExercisePanel({
         session: {
+          kind: "demo",
           sessionId: "demo-session",
           moduleSlug: "sample-module",
+          seed: 17,
           description: "Тестовая сессия",
         },
       }),

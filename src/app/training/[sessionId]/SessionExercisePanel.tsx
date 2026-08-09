@@ -8,17 +8,9 @@ import { evaluateTrainingSubmissionAction } from "@/features/training/actions/ev
 import { TrainingSession } from "@/features/training/components/TrainingSession";
 import type { Exercise } from "@/features/training/domain";
 import { toPublicExercises } from "@/features/training/presentation";
-import {
-  DEMO_TRAINING_MODULE_SLUG,
-  DEMO_TRAINING_SEED,
-  DEMO_TRAINING_SESSION_ID,
-} from "@/features/training/sessionConstants";
 import { parseFilteredSessionId } from "@/features/training/setup/filteredSessionId";
 import { selectFilteredSessionExercises } from "@/features/training/setup/selectFilteredSessionExercises";
-import {
-  getCachedExercisesByModuleSlug,
-  getCachedPublishedModuleBySlug,
-} from "@/modules/cachedLearningContent";
+import { getCachedPublishedModuleBySlug } from "@/modules/cachedLearningContent";
 import { getCachedApprovedCurriculumExercises } from "@/modules/curriculum/cachedCurriculumContent";
 import { listFixtureDomainExercises } from "@/modules/curriculum/mapFixtureExerciseToDomain";
 import { resolveContentSource } from "@/modules/contentSource";
@@ -27,7 +19,7 @@ export type ResolvedSession = {
   readonly sessionId: string;
   readonly moduleSlug: string;
   readonly description: ReactNode;
-  readonly kind: "demo" | "filtered";
+  readonly kind: "filtered";
   readonly seed: number;
   readonly exerciseIds?: readonly string[];
   readonly contentVersion?: string;
@@ -37,19 +29,6 @@ export type SessionResolution =
   { readonly status: "ready"; readonly session: ResolvedSession } | { readonly status: "unknown" };
 
 export async function resolveSession(sessionId: string): Promise<SessionResolution> {
-  if (sessionId === DEMO_TRAINING_SESSION_ID) {
-    return {
-      status: "ready",
-      session: {
-        kind: "demo",
-        sessionId: DEMO_TRAINING_SESSION_ID,
-        moduleSlug: DEMO_TRAINING_MODULE_SLUG,
-        seed: DEMO_TRAINING_SEED,
-        description: "Отвечайте на задания по очереди. Прогресс считается локально в этой сессии.",
-      },
-    };
-  }
-
   const filtered = parseFilteredSessionId(sessionId);
   if (!filtered) {
     return { status: "unknown" };
@@ -83,63 +62,6 @@ async function loadFilteredDomainExercises(moduleSlug: string): Promise<readonly
 
 export async function SessionExercisePanel({ session }: SessionExercisePanelProps) {
   const user = await getServerAuthUser();
-
-  if (session.kind === "demo") {
-    const [exercises, module] = await Promise.all([
-      getCachedExercisesByModuleSlug(session.moduleSlug),
-      getCachedPublishedModuleBySlug(session.moduleSlug),
-    ]);
-
-    if (exercises.status === "unavailable" || module.status === "unavailable") {
-      return (
-        <>
-          <PageHeader description="Не удалось загрузить задания сессии." title="Учебная сессия" />
-          <ServiceUnavailableState />
-        </>
-      );
-    }
-
-    const learningModule = module.data;
-    const publicExercises = toPublicExercises(exercises.data, { seed: session.seed });
-
-    if (publicExercises.length === 0) {
-      return (
-        <>
-          <PageHeader
-            description="Для выбранной сессии сейчас нет заданий."
-            title="Учебная сессия"
-          />
-          <ExercisesEmptyState />
-        </>
-      );
-    }
-
-    return (
-      <>
-        <PageHeader description={session.description} title="Учебная сессия" />
-        <TrainingSession
-          {...(user && learningModule
-            ? {
-                cloudPersistence: {
-                  moduleId: learningModule.id,
-                  clientSessionKey: session.sessionId,
-                  contentVersion: learningModule.contentVersion,
-                  exerciseIds: publicExercises.map((exercise) => exercise.id),
-                  randomSeed: String(session.seed),
-                },
-              }
-            : {})}
-          contentVersion={learningModule?.contentVersion ?? "1.0.0"}
-          evaluateSubmission={evaluateTrainingSubmissionAction}
-          moduleSlug={session.moduleSlug}
-          publicExercises={publicExercises}
-          seed={session.seed}
-          sessionId={session.sessionId}
-          topics={learningModule?.topics ?? []}
-        />
-      </>
-    );
-  }
 
   const filtered = parseFilteredSessionId(session.sessionId);
   if (!filtered) {

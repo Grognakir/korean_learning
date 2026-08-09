@@ -6,9 +6,9 @@ type RouteSpec = {
 const DEFAULT_ROUTES: readonly RouteSpec[] = [
   { path: "/" },
   { path: "/topics" },
-  { path: "/topics/sample-module" },
+  { path: "/topics/u01" },
   { path: "/training" },
-  { path: "/training/demo-session" },
+  { path: "/training/filt__grammar__u01__grammar.u01.n01__none__2__17" },
   { path: "/progress" },
   { path: "/review" },
   { path: "/dictionary" },

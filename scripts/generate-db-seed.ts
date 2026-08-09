@@ -13,7 +13,7 @@ import {
 } from "./content/curriculumSeedSql";
 
 const lines: string[] = [
-  "-- Deterministic dev seed: sample module (F1) + phase-2 curriculum authoring (F2-I08).",
+  "-- Deterministic dev seed: archived sample module (F2-I23) + phase-2 curriculum authoring.",
   "begin;",
   "",
   `insert into public.learning_modules (`,
@@ -25,7 +25,7 @@ const lines: string[] = [
   `  ${sqlString(sampleModule.title.ko)},`,
   `  ${sqlString(sampleModule.title.ru)},`,
   `  ${sqlString(sampleModule.description.ru)},`,
-  `  'published',`,
+  `  '${sampleModule.status}',`,
   `  '${sampleModule.contentVersion}',`,
   `  ${sampleModule.sortOrder},`,
   `  null`,
@@ -46,7 +46,7 @@ for (const topic of sampleModule.topics) {
     `  ${sqlString(topic.summary.ru)},`,
     `  ${sqlJson({ titleKo: topic.title.ko, summaryKo: topic.summary.ko })},`,
     `  ${sqlString(topic.level)},`,
-    `  'published',`,
+    `  '${topic.status}',`,
     `  ${topic.sortOrder},`,
     `  '${topic.contentVersion}',`,
     `  ${sqlString(`grammar.sample.${topic.code}`)},`,
@@ -108,7 +108,7 @@ for (const exercise of sampleExercises) {
         `  ${sqlString(exercise.passage.title.ko)},`,
         `  ${sqlString(exercise.passage.title.ru)},`,
         `  ${sqlString(exercise.passage.bodyKo)},`,
-        `  'published',`,
+        `  'archived',`,
         `  '${exercise.contentVersion}'`,
         `);`,
         "",
@@ -241,7 +241,7 @@ lines.push(
   `  '${sampleModule.contentVersion}',`,
   `  'seed',`,
   `  'approved',`,
-  `  'Sample module seed approval'`,
+  `  'Sample module retained as archived fixture after F2-I23; curriculum bank is the published baseline.'`,
   `);`,
   "",
 );

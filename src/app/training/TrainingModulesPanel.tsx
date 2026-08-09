@@ -4,11 +4,10 @@ import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedbac
 import { TrainingSetupControls } from "@/features/training/components/TrainingSetup/TrainingSetupControls";
 import { GuestSessionImportPrompt } from "@/features/training/components/GuestSessionImportPrompt";
 import { ResumeTrainingPrompt } from "@/features/training/components/ResumeTrainingPrompt";
-import { DEMO_TRAINING_SEED, DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
+import { DEMO_TRAINING_SEED } from "@/features/training/sessionConstants";
 import { buildFilteredSessionId } from "@/features/training/setup/filteredSessionId";
 import { parseTrainingSetupQuery } from "@/features/training/setup/parseTrainingSetupQuery";
 import { resolveTrainingSetup } from "@/features/training/setup/resolveTrainingSetup";
-import { getCachedPublishedModuleBySlug } from "@/modules/cachedLearningContent";
 import {
   getCachedApprovedCurriculumExercises,
   getCachedPublicGrammarTopics,
@@ -29,7 +28,7 @@ type TrainingModulesPanelProps = {
 
 export async function TrainingModulesPanel({ searchParams }: TrainingModulesPanelProps) {
   const url = parseTrainingSetupQuery(await searchParams);
-  const [unitsResult, grammarResult, exercisesResult, sample] = await Promise.all([
+  const [unitsResult, grammarResult, exercisesResult] = await Promise.all([
     getCachedPublicUnits(),
     url.unitSlug ? getCachedPublicGrammarTopics(url.unitSlug) : getCachedPublicGrammarTopics(),
     url.unitSlug
@@ -38,14 +37,12 @@ export async function TrainingModulesPanel({ searchParams }: TrainingModulesPane
           ...(url.skill ? { learningSkill: url.skill } : {}),
         })
       : Promise.resolve({ status: "ready" as const, data: [] as const }),
-    getCachedPublishedModuleBySlug("sample-module"),
   ]);
 
   if (
     unitsResult.status === "unavailable" ||
     grammarResult.status === "unavailable" ||
-    exercisesResult.status === "unavailable" ||
-    sample.status === "unavailable"
+    exercisesResult.status === "unavailable"
   ) {
     return <ServiceUnavailableState />;
   }
@@ -83,10 +80,7 @@ export async function TrainingModulesPanel({ searchParams }: TrainingModulesPane
     <>
       <ResumeTrainingPrompt />
       <GuestSessionImportPrompt
-        moduleIdBySlug={{
-          ...(sample.data ? { [sample.data.slug]: sample.data.id } : {}),
-          ...Object.fromEntries(unitsResult.data.map((unit) => [unit.slug, unit.id])),
-        }}
+        moduleIdBySlug={Object.fromEntries(unitsResult.data.map((unit) => [unit.slug, unit.id]))}
       />
 
       <section aria-label="Настройка тренировки" className={styles.setup}>
@@ -133,9 +127,6 @@ export async function TrainingModulesPanel({ searchParams }: TrainingModulesPane
                 ) : null}
               </>
             )}
-            <Link className={styles.demoLink} href={`/training/${DEMO_TRAINING_SESSION_ID}`}>
-              Демо sample-module
-            </Link>
           </div>
         </div>
       </section>

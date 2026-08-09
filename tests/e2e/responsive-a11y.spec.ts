@@ -7,6 +7,7 @@ import {
   assertSessionProgressBar,
   clearTrainingSessionStorage,
   expectFeedback,
+  FILTERED_GRAMMAR_SESSION_ID,
   seedShortChoiceSession,
   sweepViewportWidths,
   withPageZoom,
@@ -49,7 +50,7 @@ test.describe("responsive and accessibility gate", () => {
     });
 
     await seedShortChoiceSession(page);
-    await page.goto("/training/demo-session");
+    await page.goto(`/training/${FILTERED_GRAMMAR_SESSION_ID}`);
     await expect(page.getByText(/Задание 1 из 2/)).toBeVisible();
     await sweepViewportWidths(page, async (current) => {
       await assertNoHorizontalOverflow(current);
@@ -58,7 +59,7 @@ test.describe("responsive and accessibility gate", () => {
 
   test("progress bar semantics hold across checkpoint widths", async ({ page }) => {
     await seedShortChoiceSession(page);
-    await page.goto("/training/demo-session");
+    await page.goto(`/training/${FILTERED_GRAMMAR_SESSION_ID}`);
     await expect(page.getByText(/Задание 1 из 2/)).toBeVisible();
 
     for (const width of [320, 768, 1440, 2560] as const) {
@@ -132,7 +133,7 @@ test.describe("responsive and accessibility gate", () => {
     await assertNoHorizontalOverflow(page);
 
     await seedShortChoiceSession(page);
-    await page.goto("/training/demo-session");
+    await page.goto(`/training/${FILTERED_GRAMMAR_SESSION_ID}`);
     await withPageZoom(page, 2);
     await assertNoHorizontalOverflow(page);
   });
@@ -152,7 +153,7 @@ test.describe("responsive and accessibility gate", () => {
     });
 
     await seedShortChoiceSession(page);
-    await page.goto("/training/demo-session");
+    await page.goto(`/training/${FILTERED_GRAMMAR_SESSION_ID}`);
     await testInfo.attach("session-prompt", {
       body: await page.screenshot({ fullPage: true }),
       contentType: "image/png",

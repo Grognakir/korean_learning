@@ -4,6 +4,7 @@ import {
   answerCurrentExercise,
   assertNoHorizontalOverflow,
   expectFeedback,
+  FILTERED_GRAMMAR_SESSION_ID,
   goNext,
   seedShortChoiceSession,
 } from "./helpers";
@@ -11,18 +12,17 @@ import {
 test.describe("training session", () => {
   test("completes a short mixed session and can retry mistakes", async ({ page }, testInfo) => {
     await seedShortChoiceSession(page);
-    await page.goto("/training/demo-session");
+    await page.goto(`/training/${FILTERED_GRAMMAR_SESSION_ID}`);
 
     await expect(page.getByText(/Задание 1 из 2/)).toBeVisible();
 
-    // First exercise: home meaning — wrong answer first radio may vary; pick "школа".
-    await page.getByRole("radio", { name: "школа" }).click();
+    await page.getByRole("radio", { name: "이에요" }).click();
     await page.getByRole("button", { name: "Ответить" }).click();
     await expect(page.getByText("Неверно")).toBeVisible();
     await goNext(page);
 
     await expect(page.getByText(/Задание 2 из 2/)).toBeVisible();
-    await page.getByRole("radio", { name: "школа" }).click();
+    await page.getByRole("radio", { name: "입니까?" }).click();
     await page.getByRole("button", { name: "Ответить" }).click();
     await expect(page.getByText("Верно")).toBeVisible();
     await goNext(page);
@@ -58,7 +58,7 @@ test.describe("training session", () => {
 
   test("supports keyboard-only choice answering", async ({ page }) => {
     await seedShortChoiceSession(page);
-    await page.goto("/training/demo-session");
+    await page.goto(`/training/${FILTERED_GRAMMAR_SESSION_ID}`);
 
     await page.getByRole("radio").first().focus();
     await page.keyboard.press("Space");
@@ -70,10 +70,10 @@ test.describe("training session", () => {
     await expect(page.getByText(/Задание 2 из 2/)).toBeVisible();
   });
 
-  test("answers the live demo session first exercise", async ({ page }) => {
-    await page.goto("/training");
-    await page.getByRole("link", { name: "Демо sample-module" }).click();
-    await expect(page).toHaveURL(/\/training\/demo-session/);
+  test("starts a live filtered curriculum session from setup", async ({ page }) => {
+    await page.goto("/training?skill=grammar&unit=u01&size=2");
+    await page.getByRole("link", { name: "Начать тренировку" }).click();
+    await expect(page).toHaveURL(/\/training\/filt__grammar__/);
     await expect(page.getByText(/Задание 1 из/)).toBeVisible();
     await answerCurrentExercise(page);
     await expectFeedback(page);

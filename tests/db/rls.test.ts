@@ -9,17 +9,17 @@ import {
 } from "./rlsHelpers";
 import { createLocalAdminClient, createLocalAnonClient, runSql } from "./helpers";
 
-const SAMPLE_MODULE_ID = "ad66b9f8-61b6-4fd0-9e98-6ec426547dd0";
-const SAMPLE_EXERCISE_ID = "0f6808ba-3ce6-4c94-8d29-e2d52ca2c65a";
+const SAMPLE_MODULE_ID = "e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1";
+const SAMPLE_EXERCISE_ID = "e680cccf-f429-4166-acef-54aadfda5330";
 
 describe("RLS content visibility", () => {
   const anon = createLocalAnonClient();
 
   it("allows anon to read published content tables", async () => {
-    await expectSelectCount(anon, "learning_modules", 17);
-    await expectSelectCount(anon, "grammar_topics", 82);
-    await expectSelectCount(anon, "exercises", 288);
-    await expectSelectCount(anon, "exercise_topics", 212);
+    await expectSelectCount(anon, "learning_modules", 16);
+    await expectSelectCount(anon, "grammar_topics", 80);
+    await expectSelectCount(anon, "exercises", 272);
+    await expectSelectCount(anon, "exercise_topics", 196);
   });
 
   it("hides draft modules from anon", async () => {
@@ -27,7 +27,7 @@ describe("RLS content visibility", () => {
       "insert into public.learning_modules (id, slug, level, title_ko, title_ru, description_ru, status, content_version, sort_order) values ('11111111-1111-4111-8111-111111111111', 'draft-only-module', '1급', 'draft', 'draft', 'draft', 'draft', '1.0.0', 99);",
     );
 
-    await expectSelectCount(anon, "learning_modules", 17);
+    await expectSelectCount(anon, "learning_modules", 16);
   });
 
   it("blocks direct reads of exercise_options and accepted_answers", async () => {
@@ -147,7 +147,7 @@ describe("RLS user isolation", () => {
   it("allows authenticated users to submit attempts through trusted RPC", async () => {
     const user = await createTestAuthUser("rpc-attempt-user");
     const client = asUserClient(user);
-    const SAMPLE_TOPIC_ID = "d8b1e1e2-97d8-4413-a890-730f85b32b51";
+    const SAMPLE_TOPIC_ID = "2f299044-c8a6-43c6-a4d8-4cc7693a2d1e";
 
     const { data: session, error: sessionError } = await client
       .from("training_sessions")
@@ -209,21 +209,21 @@ describe("RLS curriculum skill tables", () => {
 
   it("hides draft reading passages and authoring provenance from anon", async () => {
     runSql(
-      "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('22222222-2222-4222-8222-222222222222', 'reading.sample.draft', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'draft-ko', 'draft', 'body', 'draft', '1.0.0');",
+      "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('22222222-2222-4222-8222-222222222222', 'reading.sample.draft', 'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1', 'draft-ko', 'draft', 'body', 'draft', '1.0.0');",
     );
 
-    // Seed includes sample + 16 approved canonical passages; drafts stay hidden.
-    await expectSelectCount(anon, "reading_passages", 17);
+    // Seed includes 16 approved canonical passages; archived sample passage stays hidden.
+    await expectSelectCount(anon, "reading_passages", 16);
     await expectSelectDenied(anon, "content_sources");
     await expectSelectDenied(anon, "content_provenance");
   });
 
   it("exposes published reading passages under a published module", async () => {
     runSql(
-      "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('33333333-3333-4333-8333-333333333333', 'reading.sample.published', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'title-ko', 'passage', 'hello', 'published', '1.0.0');",
+      "insert into public.reading_passages (id, logical_id, primary_module_id, title_ko, title_ru, body_ko, status, content_version) values ('33333333-3333-4333-8333-333333333333', 'reading.u01.extra-published', (select id from public.learning_modules where slug = 'u01'), 'title-ko', 'passage', 'hello', 'published', '1.0.0');",
     );
 
-    await expectSelectCount(anon, "reading_passages", 18);
+    await expectSelectCount(anon, "reading_passages", 17);
   });
 
   it("isolates user_skill_progress between users", async () => {
@@ -233,7 +233,7 @@ describe("RLS curriculum skill tables", () => {
     const clientB = asUserClient(userB);
 
     runSql(
-      `insert into public.user_skill_progress (user_id, module_id, learning_skill, attempts, correct, accuracy, mastery) values ('${userA.id}', 'ad66b9f8-61b6-4fd0-9e98-6ec426547dd0', 'grammar', 2, 1, 0.5, 'learning');`,
+      `insert into public.user_skill_progress (user_id, module_id, learning_skill, attempts, correct, accuracy, mastery) values ('${userA.id}', 'e321a5a0-9cb2-4cbd-acfe-0bc1ac533ce1', 'grammar', 2, 1, 0.5, 'learning');`,
     );
 
     await expectSelectCount(clientA, "user_skill_progress", 1);

@@ -6,24 +6,24 @@ import {
   PLACEHOLDER_MODULE_SLUG,
 } from "./resolveRouteExistence";
 
-const PUBLISHED = new Set(["sample-module"]);
+const PUBLISHED = new Set(["u01"]);
 
 describe("matchContentRoute", () => {
   it("matches single-segment module and session routes", () => {
-    expect(matchContentRoute("/topics/sample-module")).toEqual({
+    expect(matchContentRoute("/topics/u01")).toEqual({
       kind: "module",
-      slug: "sample-module",
+      slug: "u01",
     });
-    expect(matchContentRoute("/training/demo-session")).toEqual({
+    expect(matchContentRoute("/training/filt__grammar__u01__none__none__2__1")).toEqual({
       kind: "session",
-      sessionId: "demo-session",
+      sessionId: "filt__grammar__u01__none__none__2__1",
     });
   });
 
   it("ignores list routes and deeper paths", () => {
     expect(matchContentRoute("/topics")).toBeNull();
     expect(matchContentRoute("/training")).toBeNull();
-    expect(matchContentRoute("/topics/sample-module/extra")).toBeNull();
+    expect(matchContentRoute("/topics/u01/extra")).toBeNull();
     expect(matchContentRoute("/progress")).toBeNull();
   });
 
@@ -38,13 +38,13 @@ describe("matchContentRoute", () => {
 
 describe("isKnownContentRoute", () => {
   it("accepts published modules and rejects unknown slugs", () => {
-    expect(isKnownContentRoute({ kind: "module", slug: "sample-module" }, PUBLISHED)).toBe(true);
+    expect(isKnownContentRoute({ kind: "module", slug: "u01" }, PUBLISHED)).toBe(true);
     expect(isKnownContentRoute({ kind: "module", slug: "missing-module" }, PUBLISHED)).toBe(false);
   });
 
-  it("always accepts the demo session", () => {
+  it("rejects legacy demo session ids", () => {
     expect(isKnownContentRoute({ kind: "session", sessionId: "demo-session" }, PUBLISHED)).toBe(
-      true,
+      false,
     );
   });
 

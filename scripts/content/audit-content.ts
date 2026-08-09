@@ -140,14 +140,15 @@ const report = {
     "docs/CURRICULUM_TEXTS.md",
   ],
   checkpoint: {
-    id: "CP-8",
+    id: "CP-9",
     status: "pending_user_acceptance",
     previousAccepted: [
       { id: "CP-6", acceptedAt: "2026-08-09" },
       { id: "CP-7", acceptedAt: "2026-08-10" },
+      { id: "CP-8", acceptedAt: "2026-08-10" },
     ],
     blocks: [
-      "F2-I23 release/preview until CP-8 accepted",
+      "tag/release v0.1.0 until CP-9 accepted",
       "remote supabase seed/migration without explicit step",
     ],
   },
@@ -197,10 +198,10 @@ const report = {
     absoluteLocalPathHits: absolutePathHits,
     appContentImportScan: "passed",
   },
-  openQuestionsForCp8: [
-    "Confirm approved §3.2 minimum (16/80/192/16 + exercise banks) is linguistically acceptable.",
-    "Confirm contested approvals (-아/어서 ①/②, -(으)러, -(으)십시오, blank passages, selected homonyms).",
-    "Confirm non-minimum draft remainder (exam bank, extra dictionary/passages) stays unpublished.",
+  openQuestionsForCp9: [
+    "Confirm preview smoke matrix (catalogs, three skills, dictionary/review/progress, auth).",
+    "Confirm sample-module remains archived and curriculum is the only published baseline.",
+    "Explicitly allow tag/release v0.1.0 after green main CI.",
   ],
   derivedReportsPresent: {
     dictionaryReconciliation: Boolean(dictionaryReport),
@@ -238,7 +239,7 @@ console.log(
   [
     "Content audit passed structural gates.",
     `Report: ${path.relative(ROOT, REPORT_PATH)}`,
-    "CP-8 status: pending_user_acceptance",
+    "CP-9 status: pending_user_acceptance",
     `Not approved remainder: units=${notApproved.units}, grammar=${notApproved.grammarTopics}, dictionary=${notApproved.dictionaryEntries}, passages=${notApproved.readingPassages}, readingExercises=${notApproved.exercisesReading}`,
   ].join("\n"),
 );

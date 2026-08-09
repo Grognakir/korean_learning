@@ -33,15 +33,21 @@ describe("cached learning content", () => {
     vi.restoreAllMocks();
   });
 
-  it("reports published content as ready", async () => {
-    const { getCachedPublishedModules, getCachedExerciseCountByModuleSlug } =
+  it("reports published content as ready without archived sample modules", async () => {
+    const { getCachedPublishedModules, getCachedPublishedModuleBySlug } =
       await import("./cachedLearningContent");
 
     const modules = await getCachedPublishedModules();
-    const count = await getCachedExerciseCountByModuleSlug("sample-module");
+    const sample = await getCachedPublishedModuleBySlug("sample-module");
 
     expect(modules.status).toBe("ready");
-    expect(count.status).toBe("ready");
+    if (modules.status === "ready") {
+      expect(modules.data.every((module) => module.slug !== "sample-module")).toBe(true);
+    }
+    expect(sample.status).toBe("ready");
+    if (sample.status === "ready") {
+      expect(sample.data).toBeUndefined();
+    }
   });
 
   it("reports a store failure as unavailable instead of throwing", async () => {

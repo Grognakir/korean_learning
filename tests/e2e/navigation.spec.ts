@@ -37,13 +37,6 @@ test.describe("navigation", () => {
     await expect(page).toHaveURL(/\/training$/);
     await expect(page.getByRole("heading", { level: 1, name: "Тренировка" })).toBeVisible();
 
-    await page.goto("/topics/sample-module");
-    await expect(
-      page.getByRole("heading", { level: 1, name: "Первые шаги в корейском" }),
-    ).toBeVisible();
-    await page.getByRole("link", { name: "Начать тренировку" }).click();
-    await expect(page).toHaveURL(/\/training/);
-
     await page.goto("/topics/u01");
     await expect(
       page.getByRole("heading", { level: 1, name: "приветствие и представление" }),

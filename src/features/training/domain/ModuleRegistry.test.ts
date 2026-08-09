@@ -10,7 +10,8 @@ describe("ModuleRegistry", () => {
 
     expect(registry.getBySlug("sample-module")?.id).toBe(sampleModule.id);
     expect(registry.getById(sampleModule.id)?.slug).toBe("sample-module");
-    expect(registry.getPublished()).toHaveLength(1);
+    expect(registry.getPublished()).toHaveLength(0);
+    expect(registry.getBySlug("sample-module")?.status).toBe("archived");
   });
 
   it("rejects duplicate module slugs", () => {

@@ -26,13 +26,13 @@ vi.mock("next/navigation", async (importOriginal) => ({
 }));
 
 describe("module routing integration", () => {
-  it("generates module routes from sample and curriculum catalogs", async () => {
+  it("generates module routes from published curriculum catalogs", async () => {
     const params = await generateModuleParams();
     const published = (await learningModuleRegistry.getPublished()).map((entry) => entry.slug);
     const slugs = params.map((entry) => entry.moduleSlug);
 
     expect(slugs).toEqual(expect.arrayContaining([...published, "u01", "u02"]));
-    expect(params.some((entry) => entry.moduleSlug === "sample-module")).toBe(true);
+    expect(params.some((entry) => entry.moduleSlug === "sample-module")).toBe(false);
     expect(params.some((entry) => entry.moduleSlug === "u16-draft-only")).toBe(false);
   });
 
@@ -43,17 +43,6 @@ describe("module routing integration", () => {
     render(await TopicsCatalog({ searchParams: Promise.resolve({}) }));
     expect(screen.getByRole("tab", { name: "По темам" })).toHaveAttribute("aria-selected", "true");
     expect(screen.getByRole("heading", { name: "인사와 소개" })).toBeInTheDocument();
-
-    render(
-      await ModuleDetailPanel({
-        moduleSlug: "sample-module",
-        searchParams: Promise.resolve({}),
-      }),
-    );
-    expect(
-      await screen.findByRole("heading", { level: 1, name: "Первые шаги в корейском" }),
-    ).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Основы хангыля" })).toBeInTheDocument();
 
     render(
       await ModuleDetailPanel({

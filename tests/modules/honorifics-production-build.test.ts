@@ -5,7 +5,8 @@ import { describe, expect, it } from "vitest";
 
 import { generateStaticParams as generateTopicStaticParams } from "@/app/topics/[moduleSlug]/page";
 import { generateStaticParams as generateSessionStaticParams } from "@/app/training/[sessionId]/page";
-import { DEMO_TRAINING_SESSION_ID } from "@/features/training";
+import { DEMO_TRAINING_SEED } from "@/features/training";
+import { buildFilteredSessionId } from "@/features/training/setup/filteredSessionId";
 import { composeLearningContent } from "@/modules";
 
 const nextDirectory = path.join(process.cwd(), ".next");
@@ -36,7 +37,18 @@ describe("production build excludes removed honorifics preview", () => {
     const sessionParams = await generateSessionStaticParams();
 
     expect(params.map((entry) => entry.moduleSlug)).not.toContain("honorifics");
-    expect(sessionParams.map((entry) => entry.sessionId)).toEqual([DEMO_TRAINING_SESSION_ID]);
+    expect(sessionParams.map((entry) => entry.sessionId)).toEqual([
+      buildFilteredSessionId({
+        request: {
+          skill: "grammar",
+          unitSlug: "u01",
+          grammarTopicId: "grammar.u01.n01",
+          difficulty: null,
+          sessionSize: 2,
+        },
+        seed: DEMO_TRAINING_SEED,
+      }),
+    ]);
     expect(
       composeLearningContent(process.env.NODE_ENV ?? "test").modules.map((module) => module.slug),
     ).not.toContain("honorifics");

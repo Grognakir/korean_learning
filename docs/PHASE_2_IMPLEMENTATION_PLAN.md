@@ -682,7 +682,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I23 — Preview stabilization, CP-9 и release
 
-- **Статус:** `planned`.
+- **Статус:** `in_progress`.
 - **Цель:** выпустить фазу 2 без sample UI и с проверенной production-like работой.
 - **Вход:** F2-I22 `done`, CP-8 принят.
 - **Ветка:** `codex/f2-i23-release-stabilization`.

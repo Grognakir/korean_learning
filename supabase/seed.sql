@@ -1,4 +1,4 @@
--- Deterministic dev seed: sample module (F1) + phase-2 curriculum authoring (F2-I08).
+-- Deterministic dev seed: archived sample module (F2-I23) + phase-2 curriculum authoring.
 begin;
 
 insert into public.learning_modules (
@@ -10,7 +10,7 @@ insert into public.learning_modules (
   '한국어 첫걸음',
   'Первые шаги в корейском',
   'Познакомьтесь с корейским письмом и базовыми выражениями в коротких темах.',
-  'published',
+  'archived',
   '1.0.0',
   10,
   null
@@ -27,7 +27,7 @@ insert into public.grammar_topics (
   'Базовые буквы и принцип построения корейского слога.',
   '{"titleKo":"한글 기초","summaryKo":"한글의 기본 글자와 음절 구조를 살펴봅니다."}'::jsonb,
   '1급',
-  'published',
+  'archived',
   10,
   '1.0.0',
   'grammar.sample.hangul-basics',
@@ -47,7 +47,7 @@ insert into public.grammar_topics (
   'Приветствия и простые фразы для знакомства.',
   '{"titleKo":"첫 표현","summaryKo":"인사와 간단한 자기소개 표현을 배웁니다."}'::jsonb,
   '1급',
-  'published',
+  'archived',
   20,
   '1.0.0',
   'grammar.sample.first-phrases',
@@ -65,7 +65,7 @@ insert into public.reading_passages (
   '자기소개',
   'Самопредставление',
   '안녕하세요? 저는 왕루입니다. 학교에 갑니다.',
-  'published',
+  'archived',
   '1.0.0'
 );
 
@@ -905,7 +905,7 @@ insert into public.content_reviews (
   '1.0.0',
   'seed',
   'approved',
-  'Sample module seed approval'
+  'Sample module retained as archived fixture after F2-I23; curriculum bank is the published baseline.'
 );
 
 -- Phase-2 canonical curriculum seed (generated; sample module stays separate).

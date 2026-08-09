@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 
 import { CatalogSectionSkeleton } from "@/components/feedback";
-import { DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
+import { DEMO_TRAINING_SEED } from "@/features/training/sessionConstants";
+import { buildFilteredSessionId } from "@/features/training/setup/filteredSessionId";
 import { PageContainer } from "@/wrappers";
 
 import { SessionPageContent } from "./SessionExercisePanel";
@@ -18,7 +19,20 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-  return [{ sessionId: DEMO_TRAINING_SESSION_ID }];
+  return [
+    {
+      sessionId: buildFilteredSessionId({
+        request: {
+          skill: "grammar",
+          unitSlug: "u01",
+          grammarTopicId: "grammar.u01.n01",
+          difficulty: null,
+          sessionSize: 2,
+        },
+        seed: DEMO_TRAINING_SEED,
+      }),
+    },
+  ];
 }
 
 export default async function SessionPage({ params }: SessionPageProps) {

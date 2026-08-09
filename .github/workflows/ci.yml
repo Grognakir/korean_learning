@@ -115,6 +115,12 @@ jobs:
         github.ref == 'refs/heads/chore/framework-quality-gate' ||
         github.ref == 'refs/heads/chore/framework-stabilization'
       ))
+    # Guest e2e uses local fixtures. Public Supabase keys are still required at runtime because
+    # auth session refresh parses them on every request; values here are CI placeholders only.
+    env:
+      CONTENT_SOURCE: local
+      NEXT_PUBLIC_SUPABASE_URL: http://127.0.0.1:54321
+      NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: e2e-ci-publishable-key
 
     steps:
       - name: Check out repository

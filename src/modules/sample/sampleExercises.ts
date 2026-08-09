@@ -1,4 +1,4 @@
-import type { Exercise } from "@/features/training";
+import type { Exercise } from "@/features/training/domain/exercise";
 
 import { sampleModule } from "./sampleModule";
 

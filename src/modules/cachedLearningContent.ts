@@ -1,6 +1,6 @@
 import { cacheLife, cacheTag } from "next/cache";
 
-import type { Exercise } from "@/features/training/domain";
+import type { Exercise } from "@/features/training/domain/exercise";
 import type { LearningModuleDefinition } from "@/types";
 
 import { resolveContentSource } from "./contentSource";

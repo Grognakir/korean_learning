@@ -16,14 +16,15 @@ describe("CatalogViewSwitch", () => {
     replace.mockReset();
   });
 
-  it("switches views with click and keyboard", async () => {
+  it("exposes resilient links and switches views with keyboard", async () => {
     const user = userEvent.setup();
     const { rerender } = render(<CatalogViewSwitch value="themes" />);
 
     expect(screen.getByRole("tab", { name: "По темам" })).toHaveAttribute("aria-selected", "true");
-
-    await user.click(screen.getByRole("tab", { name: "По грамматике" }));
-    expect(replace).toHaveBeenCalledWith("/topics?view=grammar", { scroll: false });
+    expect(screen.getByRole("tab", { name: "По грамматике" })).toHaveAttribute(
+      "href",
+      "/topics?view=grammar",
+    );
 
     rerender(<CatalogViewSwitch value="grammar" />);
     const grammarTab = screen.getByRole("tab", { name: "По грамматике" });

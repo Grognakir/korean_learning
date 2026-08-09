@@ -4,25 +4,21 @@
 
 ## Чем занимаемся
 
-F2-I20 выполнен. **Остановка на CP-7** — без подтверждения пользователя F2-I21 не начинать.
+F2-FIX-01 завершена: исправлены регрессии закрытых итераций и документационный дрейф перед CP-7. F2-I21 не начата; проект остаётся на пользовательской контрольной точке CP-7.
 
-## F2-I20 — результат
+## Принятые решения
 
-- E2E `tests/e2e/responsive-a11y.spec.ts`: checkpoint widths, smooth sweep step≤6, progress bar, three skills, catalog/dictionary keyboard, reduced motion + 200% zoom, screenshots
-- Helpers: `sweepViewportWidths`, `assertSessionProgressBar`, `withPageZoom`
-- Component: Select Escape/ArrowUp; TrainingSetupControls; SkillProgressList a11y
-- Fix: Proxy `isKnownContentRoute` accepts `filt__*` session ids (was 404)
-- E2E storage key aligned to v2
+- Source comparison 93/92/90 хранится и тестируется как принятый audit baseline; runtime не перечитывает исходные локальные расшифровки.
+- Производные количества 803/731/179 остаются справочным audit baseline при `artifactsPresent: false`.
+- Спекулятивный запас контента до языковой проверки не создаётся; дефицит после F2-I22 закрывается отдельной `F2-FIX-*` карточкой.
+- Catalog tabs используют настоящие ссылки с `replace`, поэтому работают до гидратации и сохраняют клавиатурную семантику.
+- Server content loaders используют прямые импорты вместо общего training barrel; `/review` уменьшен со 161 до 15 КБ gzip.
 
-## Коммит / ветка
+## Открытые задачи
 
-- Branch: `codex/f2-i20-responsive-accessibility`
-- Commit: `fix: stabilize curriculum learning experience`
+- [ ] Пользователю принять CP-7: оба catalog views и три skill flows на целевых ширинах.
+- [ ] После явного принятия CP-7 начать только F2-I21.
 
-## Checkpoint
+## Контекст для следующей сессии
 
-**CP-7:** показать пользователю три skill flows (grammar/vocabulary/reading) и оба catalog views (темы / грамматика). Ждём подтверждения.
-
-## Следующий шаг
-
-После CP-7 — F2-I21 quality gate.
+Ветка `codex/f2-fix-pre-quality-gate`. Исправлены integration mock, идемпотентность `accepted_answers`, DB/content counts, разделение 100 exam + 48 baseline reading exercises, E2E history/selectors, pre-hydration tabs и client bundle leakage. Два последовательных полных gate зелёные: format/lint/typecheck, unit 358/358, content 38/38, integration 19/19, DB 24/24, RLS 13/13, E2E 34/34, build, bundle budgets и performance smoke. Следующий шаг — только CP-7, не F2-I21 без подтверждения.

@@ -45,6 +45,7 @@ describe("curriculum seed SQL builder", () => {
     const upsert = buildCurriculumSeedSql("upsert");
     expect(upsert.sql).toContain("status = learning_modules.status");
     expect(upsert.sql).toContain("status = exercises.status");
+    expect(upsert.sql).toContain("delete from public.accepted_answers");
     expect(upsert.sql).toContain("delete from public.content_provenance");
   });
 });

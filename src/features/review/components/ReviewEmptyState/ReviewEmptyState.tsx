@@ -1,8 +1,6 @@
-"use client";
-
 import Link from "next/link";
 
-import { EmptyState } from "@/components/feedback";
+import { EmptyState } from "@/components/feedback/EmptyState";
 
 import styles from "./ReviewEmptyState.module.css";
 

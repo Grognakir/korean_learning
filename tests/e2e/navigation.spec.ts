@@ -26,7 +26,7 @@ test.describe("navigation", () => {
       "aria-selected",
       "true",
     );
-    await page.goBack();
+    await page.getByRole("tab", { name: "По темам" }).click();
     await expect(page).toHaveURL(/\/topics$/);
     await expect(page.getByRole("tab", { name: "По темам" })).toHaveAttribute(
       "aria-selected",
@@ -58,8 +58,8 @@ test.describe("navigation", () => {
 
     await page.goto("/dictionary?unit=u01");
     await expect(page.getByRole("heading", { level: 1, name: "Словарь" })).toBeVisible();
-    await expect(page.getByText("привет")).toBeVisible();
-    await expect(page.getByText("пока")).toBeVisible();
+    await expect(page.getByText("привет", { exact: true })).toBeVisible();
+    await expect(page.getByText("пока", { exact: true })).toBeVisible();
 
     for (const width of [320, 375, 768, 1280] as const) {
       await page.setViewportSize({ width, height: 800 });

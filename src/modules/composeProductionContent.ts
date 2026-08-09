@@ -1,11 +1,9 @@
-import {
-  LocalExerciseRepository,
-  LocalModuleRepository,
-  ModuleRegistry,
-  type Exercise,
-  type ExerciseRepository,
-  type ModuleRepository,
-} from "@/features/training";
+import { LocalExerciseRepository } from "@/features/training/data/LocalExerciseRepository";
+import { LocalModuleRepository } from "@/features/training/data/LocalModuleRepository";
+import type { ExerciseRepository } from "@/features/training/data/ExerciseRepository";
+import type { ModuleRepository } from "@/features/training/data/ModuleRepository";
+import { ModuleRegistry } from "@/features/training/domain/ModuleRegistry";
+import type { Exercise } from "@/features/training/domain/exercise";
 import type { LearningModuleDefinition } from "@/types";
 
 import { sampleExercises, sampleModule } from "./sample";

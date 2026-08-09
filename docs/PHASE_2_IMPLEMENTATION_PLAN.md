@@ -1,8 +1,8 @@
 # Фаза 2 — подробный исполнимый план для Cursor
 
-Последнее обновление: 2026-08-09
+Последнее обновление: 2026-08-10
 
-Статус: `in_progress` (F2-I01–F2-I03 `done`). Фаза 1 завершена и слита в `main` коммитом `4fb00b8`.
+Статус: `in_progress` (F2-I01–F2-I20 и F2-FIX-01 `done`; остановка на CP-7). Фаза 1 завершена и слита в `main` коммитом `4fb00b8`.
 
 ## 1. Как использовать этот документ
 
@@ -137,7 +137,9 @@ Writing, speaking и listening не добавляются в enum заране�
 
 Абсолютные локальные пути пользователя в БД не сохраняются. Верхнеуровневые source keys: `curriculum-topics`, `curriculum-grammar`, `curriculum-vocabulary`, `curriculum-texts`. Исходные ключи `textbook-outline-photo`, `inha-texts-claude`, `inha-texts-gpt`, `grammar-notes`, `korean-words` допустимы только как lineage внутри manifest и не читаются импортерами напрямую.
 
-## 5. Целевая структура файлов
+## 5. Ориентировочная структура файлов на момент F2-I01
+
+Это схема границ ответственности, а не исчерпывающий реестр файлов. Генераторы, reconciliation-отчёты, progress/review features и тесты добавляются рядом с владельцем сценария. Фактическое имя общего импортера — `scripts/content/import-curriculum.ts`.
 
 ```text
 content/
@@ -157,7 +159,7 @@ scripts/
 └── content/
     ├── schemas.ts
     ├── validate-content.ts
-    ├── import-curriculum-texts.ts
+    ├── import-curriculum.ts
     ├── normalize-dictionary.ts
     └── content-integrity.test.ts
 
@@ -281,31 +283,32 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ## 9. Сводка итераций
 
-| Итерация | Результат                                             |
-| -------- | ----------------------------------------------------- |
-| F2-I01   | baseline, ветка, команды content quality              |
-| F2-I02   | схемы canonical контента и provenance                 |
-| F2-I03   | forward-only DB schema для тем/слов/чтения/навыков    |
-| F2-I04   | 16 модулей и 80 grammar topics в draft                |
-| F2-I05   | canonical draft словаря и reconciliation отчёт        |
-| F2-I06   | слитый корпус текстов и draft reading bank            |
-| F2-I07   | полный content audit gate и CP-6                      |
-| F2-I08   | детерминированный seed/import pipeline                |
-| F2-I09   | repositories, DTO и cache queries для нового контента |
-| F2-I10   | каталог «По темам / По грамматике»                    |
-| F2-I11   | детальная страница темы и грамматики                  |
-| F2-I12   | рабочий словарь по темам и категориям                 |
-| F2-I13   | экран настройки тренировки по навыку/фильтру          |
-| F2-I14   | общий `single-choice` и reading presentation          |
-| F2-I15   | минимальный grammar exercise bank                     |
-| F2-I16   | минимальный vocabulary exercise bank                  |
-| F2-I17   | минимальный reading exercise bank                     |
-| F2-I18   | создание/возобновление отфильтрованных сессий         |
-| F2-I19   | review queue и прогресс по skill/topic/module         |
-| F2-I20   | адаптивность, клавиатура, a11y и CP-7                 |
-| F2-I21   | автоматический content/repository/security gate       |
-| F2-I22   | ручной language review, статусы approved, CP-8        |
-| F2-I23   | preview stabilization, CP-9 и `v0.1.0`                |
+| Итерация  | Результат                                             |
+| --------- | ----------------------------------------------------- |
+| F2-I01    | baseline, ветка, команды content quality              |
+| F2-I02    | схемы canonical контента и provenance                 |
+| F2-I03    | forward-only DB schema для тем/слов/чтения/навыков    |
+| F2-I04    | 16 модулей и 80 grammar topics в draft                |
+| F2-I05    | canonical draft словаря и reconciliation отчёт        |
+| F2-I06    | слитый корпус текстов и draft reading bank            |
+| F2-I07    | полный content audit gate и CP-6                      |
+| F2-I08    | детерминированный seed/import pipeline                |
+| F2-I09    | repositories, DTO и cache queries для нового контента |
+| F2-I10    | каталог «По темам / По грамматике»                    |
+| F2-I11    | детальная страница темы и грамматики                  |
+| F2-I12    | рабочий словарь по темам и категориям                 |
+| F2-I13    | экран настройки тренировки по навыку/фильтру          |
+| F2-I14    | общий `single-choice` и reading presentation          |
+| F2-I15    | минимальный grammar exercise bank                     |
+| F2-I16    | минимальный vocabulary exercise bank                  |
+| F2-I17    | минимальный reading exercise bank                     |
+| F2-I18    | создание/возобновление отфильтрованных сессий         |
+| F2-I19    | review queue и прогресс по skill/topic/module         |
+| F2-I20    | адаптивность, клавиатура, a11y и CP-7                 |
+| F2-FIX-01 | стабилизация закрытых итераций перед CP-7             |
+| F2-I21    | автоматический content/repository/security gate       |
+| F2-I22    | ручной language review, статусы approved, CP-8        |
+| F2-I23    | preview stabilization, CP-9 и `v0.1.0`                |
 
 ## 10. Карточки итераций
 
@@ -381,7 +384,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 - **Задачи:** parser для `CURRICULUM_VOCABULARY.md`; нормализовать category labels; отделить irregular-form links от новых senses; создать draft dictionary entries и unit links; сформировать machine-readable reconciliation report, где HTML/TSV/flashcards используются только для отчёта о покрытии и не меняют канонический Markdown.
 - **Правила:** `добавлено` не категория; `눈/다리/만/배/이/저/팔/풀` не дедуплицировать только по spelling; translation/transliteration conflict не решать автоматически; бизнес-лексика остаётся draft.
 - **Файлы:** `normalize-dictionary.ts`, dictionary JSONs, provenance, отчёт validation output, tests.
-- **Тесты:** все строки таблиц `CURRICULUM_VOCABULARY.md` классифицированы как canonical sense, relation или duplicate source record; 803/731/179 derived entries учтены только в reconciliation; canonical category `добавлено` отсутствует; dangling unit links отсутствуют.
+- **Тесты:** все строки таблиц `CURRICULUM_VOCABULARY.md` классифицированы как canonical sense, relation или duplicate source record; 803/731/179 зафиксированы только как принятые audit-baseline количества производных источников (`artifactsPresent: false`) и не считаются повторно из отсутствующих runtime-артефактов; canonical category `добавлено` отсутствует; dangling unit links отсутствуют.
 - **Ручная проверка:** выборка минимум 10 entries из каждой крупной категории и все известные омонимы.
 - **Не делать:** не генерировать упражнения; не публиковать все слова; не исправлять перевод без review note.
 - **DoD:** повторный запуск детерминирован и не меняет JSON без изменения источника/правил.
@@ -632,6 +635,19 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 - **Коммит:** `fix: stabilize curriculum learning experience`.
 - **Следующий шаг:** после CP-7 — F2-I21.
 
+### F2-FIX-01 — Стабилизация закрытых итераций перед CP-7
+
+- **Статус:** `done`.
+- **Цель:** устранить фактические регрессии и документационный дрейф, найденные итоговой сверкой F2-I01–F2-I20.
+- **Вход:** F2-I20 `done`; CP-7 ещё не принят.
+- **Ветка:** `codex/f2-fix-pre-quality-gate`.
+- **Задачи:** восстановить integration mock `next/navigation`; сделать seed идемпотентным для `accepted_answers`; синхронизировать DB/content counts; разделить 100 экзаменационных и 48 baseline reading exercises в audit; исправить E2E ожидание истории для tab navigation через `router.replace`; убрать server barrel leakage из client bundle; автоматизировать audit-baseline 93/92/90; синхронизировать план и ревью.
+- **Тесты:** полный обязательный gate раздела 12 два последовательных раза; отдельно проверить повторный seed, warm navigation и budgets `/review`/`/training`.
+- **Не делать:** не начинать F2-I21; не менять lifecycle status учебного контента; не ослаблять budgets или проверки.
+- **DoD:** все обнаруженные дефекты закрыты причиной, оба полных gate зелёные, CP-7 снова готов к пользовательской проверке.
+- **Коммит:** `fix: stabilize phase two pre-quality gate`.
+- **Следующий шаг:** остановиться на CP-7; только после подтверждения — F2-I21.
+
 ### F2-I21 — Автоматический content/repository/security gate
 
 - **Статус:** `planned`.
@@ -639,6 +655,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 - **Вход:** F2-I20 `done`, CP-7 принят.
 - **Ветка:** `codex/f2-i21-phase-two-quality-gate`.
 - **Задачи:** coverage tests минимума; all rule/exercise branch tests; DB reset/upgrade; RLS matrix; DTO leak scan; bundle budgets; performance smoke; source/private path/secret scan; production build; CI workflow update.
+- **Решение по запасу:** спекулятивный запас до языковой проверки не генерируется. Coverage считается по фактически допустимым к публикации элементам. Если F2-I22 отклоняет элемент и минимум нельзя восстановить исправлением новой версии того же элемента, F2-I22 приостанавливается, создаётся отдельная `F2-FIX-*` карточка авторинга, после неё повторяются content gate и затронутые проверки.
 - **Обязательный полный gate:** format check, lint, typecheck, unit/component, content, integration, DB, RLS, E2E, build, bundle, perf smoke.
 - **Повторяемость:** полный gate минимум два последовательных раза; flaky failure исследуется, а не rerun-until-green.
 - **Отчёт:** counts approved/reviewed/draft/conflicts, durations, bundle deltas, known nonblocking issues.
@@ -658,7 +675,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 - **Status transition:** `draft/needs_review → reviewed → approved`; bulk SQL без individual manifest decisions запрещён.
 - **Тесты:** content validate/coverage после каждого batch; затем полный gate затронутого слоя и финальный content gate.
 - **CP-8:** пользователь подтверждает опубликованный минимум. Непроверенный остаток остаётся draft и не блокирует, если minimum coverage выполнен.
-- **Не делать:** не публиковать «на доверии к Cursor»; не требовать approval всего 803/1 075-word массива; не добавлять новый контент.
+- **Не делать:** не публиковать «на доверии к Cursor»; не требовать approval всего 803/1 075-word массива; не добавлять новый контент внутри F2-I22. Дефицит минимума закрывается отдельной `F2-FIX-*` карточкой по правилу F2-I21.
 - **DoD:** CP-8 принят, minimum coverage approved, review history полна.
 - **Коммит:** `chore: approve baseline level one content`.
 - **Следующий шаг:** F2-I23.

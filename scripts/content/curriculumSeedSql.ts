@@ -404,6 +404,7 @@ export function buildCurriculumSeedSql(
         `delete from public.exercise_options where exercise_id = '${id}';`,
         `delete from public.exercise_topics where exercise_id = '${id}';`,
         `delete from public.exercise_dictionary_entries where exercise_id = '${id}';`,
+        `delete from public.accepted_answers where exercise_id = '${id}';`,
         "",
       );
     }

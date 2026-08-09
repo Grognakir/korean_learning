@@ -19,7 +19,8 @@ import { learningModuleRegistry } from "@/modules";
 import { createChoiceExercise } from "../factories/exerciseFactory";
 import { createTestModule } from "../factories/moduleFactory";
 
-vi.mock("next/navigation", () => ({
+vi.mock("next/navigation", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("next/navigation")>()),
   useRouter: () => ({ replace: vi.fn() }),
   usePathname: () => "/topics",
 }));

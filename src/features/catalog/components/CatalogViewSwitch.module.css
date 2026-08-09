@@ -12,6 +12,9 @@
 
 .tab,
 .tabActive {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   appearance: none;
   border: 0;
   margin: 0;
@@ -24,6 +27,7 @@
   cursor: pointer;
   color: var(--color-text-muted, #5c564c);
   background: transparent;
+  text-decoration: none;
 }
 
 .tab:focus-visible,

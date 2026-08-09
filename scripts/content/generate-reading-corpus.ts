@@ -252,7 +252,14 @@ const report = {
   schemaVersion: "phase-2.reading-reconciliation.v1",
   generatedFrom: {
     canonicalTexts: "docs/CURRICULUM_TEXTS.md",
+    comparisonAudit: "docs/PHASE_2_CONTENT_AUDIT.md",
     derivedHtml: path.relative(ROOT, htmlPath),
+  },
+  sourceComparison: {
+    claudeBlocks: 93,
+    gptBlocks: 92,
+    pairedBlocks: 90,
+    role: "accepted-audit-baseline",
   },
   mergeDecisions,
   counts: {

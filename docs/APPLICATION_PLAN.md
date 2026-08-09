@@ -2,16 +2,16 @@
 
 ## Статус проекта
 
-- **Общее состояние:** F1-I01–F1-I33 на ветке стабилизации; CP-1A/CP-2/CP-3/CP-4 приняты; CP-5 открыт (CI зелёный, Preview SSO).
-- **Текущая фаза:** фаза 1 — создание рабочего каркаса (стабилизация).
-- **Текущая итерация:** F1-I33 stabilize learning application framework — push+CI `done`, CP-5 не принят.
-- **Статус текущей итерации:** ветка запушена; внешний CI зелёный; automated Preview smoke блокирован Vercel SSO.
-- **Уже сделано:** удалён preview 높임말; CI e2e получает `CONTENT_SOURCE=local` + placeholder public Supabase env; 3× local full gate.
-- **Выполненные проверки:** local 3× 309 unit/17 integration/20 e2e/16 db/10 rls/build/bundles; CI run `31312096968` (checks+db/rls+e2e) success.
-- **Сейчас работает:** каркас без draft honorifics; checkpoint CI полный; Preview Ready.
-- **Пока не работает:** unauthenticated Preview HTTP smoke (Vercel Deployment Protection → SSO); CP-5 не закрыт.
-- **Следующий конкретный шаг:** ручной Preview smoke после SSO / bypass secret / ослабления Protection → принятие CP-5. Merge/production/phase 2 не начинать без явного решения.
-- **Блокирующие вопросы:** как пройти Preview smoke (ручной SSO / bypass / принять ограничение как в F1-I24)?
+- **Общее состояние:** фаза 1 завершена; F1-I01–F1-I33 и CP-1A/CP-2/CP-3/CP-4/CP-5 приняты.
+- **Текущая фаза:** фаза 1 закрыта; ожидание явного решения по merge/`main`, production launch или phase 2.
+- **Текущая итерация:** F1-I33 stabilize learning application framework — `done`; CP-5 принят 2026-08-09.
+- **Статус текущей итерации:** `done` (ветка `chore/framework-stabilization`; merge в `main` не выполнен).
+- **Уже сделано:** удалён preview 높임말; 3× local full gate; внешний CI checkpoint зелёный; CI e2e с local placeholders.
+- **Выполненные проверки:** local 3× 309 unit/17 integration/20 e2e/16 db/10 rls/build/bundles; CI run `31312096968` success.
+- **Сейчас работает:** каркас фазы 1 без draft honorifics; review/progress/training на sample + demo-session.
+- **Пока не работает / ограничения:** Preview Deployment Protection (Vercel SSO) блокирует unauthenticated HTTP smoke — принято в CP-5 как известное ограничение; ветка стабилизации ещё не в `main`.
+- **Следующий конкретный шаг:** только по явному решению — merge `chore/framework-stabilization` → `main`, production launch или F2-I01.
+- **Блокирующие вопросы:** нет (ожидание следующего указания).
 - **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; миграция F1-I32 применена remote.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.
 - **Последнее обновление:** 2026-08-09.
@@ -44,7 +44,7 @@ MVP включает каталог тем, прохождение и возоб
 - **CP-2:** после F1-I23 — локальный quality gate и внешний CI ветки `chore/framework-quality-gate`.
 - **CP-3:** перед F1-I24 — отдельное разрешение на создание/изменение Vercel-проекта и первый деплой.
 - **CP-4:** перед F1-I25 — предоставление/создание Supabase-проекта и согласование auth-настроек.
-- **CP-5:** после F1-I33 — удаление временного preview-кода, полный локальный gate, preview smoke и внешний CI ветки `chore/framework-stabilization`.
+- **CP-5:** после F1-I33 — удаление временного preview-кода, полный локальный gate, preview smoke и внешний CI ветки `chore/framework-stabilization`. **Принят 2026-08-09** (Preview SSO — известное ограничение, как F1-I24).
 - **CP-6:** после F2-I05 — утверждение словаря, грамматических правил и спорных переводов.
 - **CP-7:** после F2-I18 — проверка всех типов упражнений и учебной обратной связи.
 - **CP-8:** после F2-I21 — языковая приёмка проверяющим.
@@ -794,7 +794,7 @@ MVP включает каталог тем, прохождение и возоб
 
 ### F1-I33 — Стабилизация рабочего каркаса
 
-- **Фаза / статус:** 1 / `planned`.
+- **Фаза / статус:** 1 / `done` (CP-5 принят 2026-08-09).
 - **Цель и зачем:** принять фазу 1 как стабильную платформу для 높임말.
 - **Входные зависимости:** F1-I32.
 - **Задачи:** удалить dev-only preview 높임말 из F1-I17A и его composition; полный security/quality/data review; schema reset; preview smoke; auth/two-user tests; accessibility/mobile/performance; после отдельного разрешения push `chore/framework-stabilization` и зелёный полный внешний CI; исправления отдельными fix iterations; CP-5.

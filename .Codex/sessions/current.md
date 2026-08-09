@@ -4,37 +4,24 @@
 
 ## Чем занимаемся
 
-F1-I33: локально + push + внешний CI зелёные. Preview Ready, но Deployment Protection (Vercel SSO) блокирует автоматизированный HTTP smoke. CP-5 ждёт ручного smoke / bypass / принятия ограничения.
+Фаза 1 закрыта по CP-5 (принято пользователем 2026-08-09). Работа остановлена до следующего явного указания. Production launch и phase 2 не начинать без решения.
 
-## Коммиты
+## F1-I33 / CP-5 — итог
+
+- Preview honorifics и development composition удалены.
+- Три локальных full gate зелёные; внешний CI checkpoint-ветки зелёный.
+- Preview Ready; unauthenticated HTTP smoke блокирован Vercel SSO (принято как известное ограничение, аналогично F1-I24).
+- CP-5 принят пользователем.
+
+## Коммиты / ссылки
 
 - `9586d4f` — `chore: stabilize learning application framework`
 - `3f1f63c` — `fix: supply local Supabase placeholders for CI e2e`
+- `3a4dcee` — docs CI/SSO status
+- Branch: `chore/framework-stabilization`
+- CI: https://github.com/Grognakir/korean_learning/actions/runs/31312096968
+- Preview: https://korean-learning-jbzevla4e-grognakirs-projects.vercel.app
 
-Ветка: `chore/framework-stabilization` (pushed).
+## Следующий шаг
 
-## Внешний CI
-
-- Run: https://github.com/Grognakir/korean_learning/actions/runs/31312096968
-- Static checks and build ✓
-- Supabase DB migrations and seed ✓
-- Playwright e2e ✓
-
-## Preview
-
-- Deployment: https://korean-learning-jbzevla4e-grognakirs-projects.vercel.app
-- Branch alias: https://korean-learning-git-chore-framework-5aaae0-grognakirs-projects.vercel.app
-- Dashboard: https://vercel.com/grognakirs-projects/korean-learning/32RPX1iiimMNvfBQ2WJgtuQkFYbc
-- Status: Ready; unauthenticated curl → Vercel SSO login
-
-## Открытые задачи
-
-- [ ] Preview smoke matrix (нужен browser SSO login, `VERCEL_AUTOMATION_BYPASS_SECRET`, или ослабление Protection)
-- [ ] Принятие CP-5 пользователем
-- [ ] Не merge в `main` / production launch / phase 2 без явного решения
-
-## Известные ограничения
-
-- Preview SSO как в F1-I24 risk note.
-- Production catalog remote — только `sample-module`.
-- Shell Node v22.15.0 vs wanted 24.18.0 (локальный caveat).
+Только по явному решению пользователя: merge в `main`, production launch, или phase 2 (F2-I01).

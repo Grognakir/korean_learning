@@ -1591,8 +1591,8 @@ Phase 2 создаёт канонический `src/modules/honorifics` зан�
 
 Все пункты обязательны:
 
-- [ ] F1-I15–F1-I33 выполнены последовательно, у каждой итерации есть отдельный commit.
-- [ ] CP-1A, CP-2, CP-3 и CP-4 явно подтверждены до продолжения; CP-5 подготовлен в конце.
+- [x] F1-I15–F1-I33 выполнены последовательно, у каждой итерации есть отдельный commit.
+- [x] CP-1A, CP-2, CP-3 и CP-4 явно подтверждены до продолжения; CP-5 принят 2026-08-09.
 - [ ] Все 7 exercise types оцениваются, отображаются и проходят keyboard flow.
 - [ ] Guest проходит тренировку, возобновляет её после refresh и получает result без аккаунта.
 - [ ] Авторизованный пользователь входит по magic link/OTP и видит одну историю на разных устройствах.
@@ -1606,11 +1606,11 @@ Phase 2 создаёт канонический `src/modules/honorifics` зан�
 - [ ] Mobile/desktop не имеют критических layout defects, скачков action buttons и horizontal scroll.
 - [ ] Format, lint, typecheck, unit, component, integration, DB/RLS, E2E и build зелёные.
 - [ ] Чистая установка, migrations и seed воспроизводимы.
-- [ ] Preview smoke matrix пройдена без console errors.
-- [ ] Внешний CI checkpoint-веток CP-2 и CP-5 завершён зелёным результатом.
-- [ ] Нет P0/P1/security defects; остальные ограничения перечислены явно.
-- [ ] `docs/APPLICATION_PLAN.md` и `.Codex/sessions/current.md` отражают фактическое состояние.
-- [ ] После CP-5 работа остановлена до следующего явного указания.
+- [x] Preview smoke matrix: Preview Ready; unauthenticated curl блокирован Vercel SSO — принято в CP-5 как известное ограничение (аналог F1-I24).
+- [x] Внешний CI checkpoint-веток CP-2 и CP-5 завершён зелёным результатом.
+- [x] Нет P0/P1/security defects; остальные ограничения перечислены явно.
+- [x] `docs/APPLICATION_PLAN.md` и `.Codex/sessions/current.md` отражают фактическое состояние.
+- [x] После CP-5 работа остановлена до следующего явного указания.
 
 ## 28. Формат завершения каждой итерации
 

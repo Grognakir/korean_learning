@@ -1,19 +1,21 @@
 # Обязательные условия перед каждой итерацией
 
-Последнее обновление: 2026-08-08 (§4.8.1 инвентарь рядов + MatchingExercise label+Select)
+Последнее обновление: 2026-08-09 (фаза 2: canonical content, три навыка и новый исполнимый план)
 
 ## 0. Когда читать
 
-Исполнитель **обязан полностью прочитать этот документ** перед началом любой итерации фазы 1 (`F1-I*`, `fix/*` по CP, checkpoint-ветки) и перед любым коммитом, затрагивающим training UI, AppShell, navigation или session layout.
+Исполнитель **обязан полностью прочитать этот документ** перед началом любой итерации (`F1-*`, `F2-*`, `fix/*`, checkpoint-ветки) и перед любым коммитом, затрагивающим content, training UI, AppShell, navigation или session layout.
 
 Этот файл — рабочий preflight. Он не заменяет карточки итераций. При расхождении приоритет:
 
 1. Корневой и вложенные `AGENTS.md`
 2. Этот документ
-3. `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`
-4. `docs/APPLICATION_PLAN.md`
-5. Фактические публичные контракты кода
-6. Детали воспроизведения UI-дефектов — `docs/PHASE_1_UI_AUDIT_FINDINGS.md`
+3. Для фазы 2 — `docs/PHASE_2_IMPLEMENTATION_PLAN.md`
+4. Для фазы 2 — `docs/PHASE_2_CONTENT_AUDIT.md`
+5. Для оставшихся задач фазы 1 — `docs/PHASE_1_REMAINING_IMPLEMENTATION_PLAN.md`
+6. `docs/APPLICATION_PLAN.md`
+7. Фактические публичные контракты кода
+8. Детали воспроизведения UI-дефектов — `docs/PHASE_1_UI_AUDIT_FINDINGS.md`
 
 ## 1. Чеклист перед кодом
 
@@ -192,6 +194,10 @@
 | CP-3       | отдельное разрешение                       | любые действия Vercel / preview deploy |
 | CP-4       | отдельное разрешение                       | Supabase project / миграции remote     |
 | CP-5       | после F1-I33 + CI                          | phase 2 / production launch            |
+| CP-6       | после F2-I07 content audit                 | runtime publication и UI фазы 2        |
+| CP-7       | после F2-I20 responsive/a11y               | финальная языковая публикация          |
+| CP-8       | после F2-I22 language review               | release candidate                      |
+| CP-9       | после F2-I23 preview smoke                 | tag/release `v0.1.0`                   |
 
 Если CP не подтверждён: статус `blocked`, зафиксировать требуемый ответ, следующую итерацию не выполнять.
 
@@ -205,8 +211,10 @@
 
 - Не начинать следующую feature в том же шаге.
 - Не пушить промежуточные iteration branches (кроме исключений плана: preview/CP).
-- Не публиковать draft honorifics; не тащить preview в production composition.
+- Не публиковать `draft`/`needs_review` curriculum content; не использовать HTML/TSV как runtime-источник истины.
 - Не добавлять OpenAI, password login, OAuth, payments, SM-2/FSRS, Storage bucket, админку.
 - Не ставить Playwright раньше F1-I22.
 - Не расширять MVP «заодно».
 - Не вводить нативные `<select>` / системные dropdown и не оставлять «голые» нативные формы вне design-system (§4.7).
+- Не начинать writing/СГ, speaking, audio, transcription или pronunciation scoring в фазе 2.
+- Не заменять маркеры пропусков в исходном reading passage готовыми ответами.

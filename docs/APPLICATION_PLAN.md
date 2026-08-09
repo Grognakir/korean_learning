@@ -2,17 +2,17 @@
 
 ## Статус проекта
 
-- **Общее состояние:** фаза 1 завершена; фаза 2 в работе (F2-I01–F2-I22 и F2-FIX-01 `done`; CP-6–CP-8 приняты; F2-I23 в работе).
+- **Общее состояние:** фаза 1 завершена; реализация фазы 2 завершена и находится на финальной приёмке CP-9.
 - **Текущая фаза:** фаза 2 — программа 1급 по темам и грамматике.
-- **Текущая итерация:** F2-I23 release stabilization.
-- **Статус текущей итерации:** corrective patch готов локально; remote migration/deploy/smoke и CP-9 ещё не выполнены.
-- **Уже сделано:** CP-8; I23 #16 + cache fix #17; исходный remote import; локально исправлены Supabase links/counts, grammar filter, outage cache и approved answers.
-- **Выполненные проверки:** unit 362; content 44; integration 20; DB 24; RLS 13; E2E 34; local и Supabase production builds; bundles/scans.
-- **Сейчас работает локально:** 16 уроков, словарь по уроку, тренировка по конкретной грамматике, корректные counts и безопасная деградация хранилища.
-- **Пока не работает / ограничения:** corrective migration `20260810000002` и обновлённый content upsert ещё не применены remote; новый код не задеплоен; tag/release `v0.1.0` заблокирован.
-- **Следующий конкретный шаг:** push/merge corrective patch → remote migration/content upsert → Vercel smoke → CP-9.
-- **Блокирующие вопросы:** требуется отдельное разрешение на внешние изменения GitHub/Supabase/Vercel.
-- **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; corrective migration `20260810000002` pending.
+- **Текущая итерация:** F2-I23 release acceptance.
+- **Статус текущей итерации:** код, remote migration/upsert, production deployment и smoke завершены; ожидается только явное подтверждение CP-9 перед тегом.
+- **Уже сделано:** PR #16–#19 смержены; migration `20260810000002` и идемпотентный curriculum upsert применены; production commit `7520673` развёрнут.
+- **Выполненные проверки:** unit 366; content 46; integration 20; DB 24; RLS 13; E2E 34; local и Supabase production builds; bundles, performance и scans; post-merge CI зелёный.
+- **Сейчас работает в production:** 16 уроков, 80 грамматик, словарь по уроку, точные фильтры тренировки, 286 approved заданий, чтение и интерактивная сессия с Enter/feedback/progress.
+- **Пока не работает / ограничения:** тег и release `v0.1.0` не созданы без CP-9; Preview SSO остаётся известным ограничением среды preview.
+- **Следующий конкретный шаг:** пользователь проверяет production и явно принимает CP-9 → создаётся тег `v0.1.0`.
+- **Блокирующие вопросы:** только явное подтверждение CP-9 для релизного тега.
+- **Remote Supabase:** project `korean-learning` (`cyoezrdxqncroflgkyry`, `ap-northeast-2`); URL `https://cyoezrdxqncroflgkyry.supabase.co`; linked; migration `20260810000002` applied.
 - **Corrective stabilization (PERF):** PERF-I01—I11 закрыты на Production.
 - **Последнее обновление:** 2026-08-10.
 

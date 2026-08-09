@@ -1,4 +1,5 @@
 import { DEMO_TRAINING_SESSION_ID } from "@/features/training/sessionConstants";
+import { isFilteredSessionId } from "@/features/training/setup/filteredSessionId";
 
 export type ContentRoute =
   | { readonly kind: "module"; readonly slug: string }
@@ -49,5 +50,5 @@ export function isKnownContentRoute(
     return publishedModuleSlugs.has(route.slug);
   }
 
-  return route.sessionId === DEMO_TRAINING_SESSION_ID;
+  return route.sessionId === DEMO_TRAINING_SESSION_ID || isFilteredSessionId(route.sessionId);
 }

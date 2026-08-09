@@ -60,4 +60,30 @@ describe("Select", () => {
     await user.keyboard("{ArrowDown}{Enter}");
     expect(onChange).toHaveBeenCalledWith("school");
   });
+
+  it("closes on Escape and keeps focus on the trigger", async () => {
+    const user = userEvent.setup();
+    render(<ControlledSelect />);
+
+    const trigger = screen.getByRole("combobox", { name: "Значение" });
+    trigger.focus();
+    await user.keyboard("{ArrowDown}");
+    expect(screen.getByRole("listbox")).toBeInTheDocument();
+
+    await user.keyboard("{Escape}");
+    expect(trigger).toHaveAttribute("aria-expanded", "false");
+    expect(screen.queryByRole("listbox")).not.toBeInTheDocument();
+    expect(trigger).toHaveFocus();
+  });
+
+  it("moves with ArrowUp inside an open listbox", async () => {
+    const user = userEvent.setup();
+    const onChange = vi.fn();
+    render(<ControlledSelect onChange={onChange} />);
+
+    const trigger = screen.getByRole("combobox", { name: "Значение" });
+    trigger.focus();
+    await user.keyboard("{ArrowDown}{ArrowDown}{ArrowUp}{Enter}");
+    expect(onChange).toHaveBeenCalledWith("home");
+  });
 });

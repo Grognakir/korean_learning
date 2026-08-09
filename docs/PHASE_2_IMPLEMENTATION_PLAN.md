@@ -616,7 +616,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I20 — Responsive, keyboard и accessibility gate; CP-7
 
-- **Статус:** `planned`.
+- **Статус:** `done`.
 - **Цель:** проверить все новые экраны и виды упражнений как единый пользовательский путь.
 - **Вход:** F2-I19 `done`.
 - **Ветка:** `codex/f2-i20-responsive-accessibility`.

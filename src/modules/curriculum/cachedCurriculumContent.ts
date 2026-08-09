@@ -1,7 +1,10 @@
 import { cacheLife, cacheTag } from "next/cache";
 
-import type { CatalogQuery } from "@/features/catalog/domain/types";
-import type { PublicUnitSummary } from "@/features/catalog/domain/types";
+import type {
+  CatalogQuery,
+  PublicGrammarTopicSummary,
+  PublicUnitSummary,
+} from "@/features/catalog/domain/types";
 import type { PublicDictionaryEntry } from "@/features/dictionary/domain/types";
 import type {
   PublicCurriculumExercise,
@@ -28,6 +31,23 @@ export async function getCachedPublicUnits(): Promise<ContentResult<readonly Pub
     const { catalogRepository } = await getCurriculumRepositories();
     const result = await catalogRepository.listUnits();
     return result.status === "ready" ? result.items : [];
+  });
+}
+
+export async function getCachedPublicGrammarTopics(
+  unitSlug?: string,
+): Promise<ContentResult<readonly PublicGrammarTopicSummary[]>> {
+  "use cache";
+  cacheTag("curriculum-catalog");
+  cacheLife("learningContent");
+
+  return readSafe(async () => {
+    const { catalogRepository } = await getCurriculumRepositories();
+    const result = await catalogRepository.listGrammarTopics(unitSlug ? { unitSlug } : {});
+    if (result.status === "ready") {
+      return result.items;
+    }
+    return [];
   });
 }
 

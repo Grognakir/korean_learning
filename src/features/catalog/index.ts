@@ -9,3 +9,5 @@ export type {
 export type { CatalogRepository } from "./data/CatalogRepository";
 export { LocalCatalogRepository } from "./data/LocalCatalogRepository";
 export { assertPublicCurriculumShape } from "./data/assertPublicCatalogShape";
+export { parseCatalogView, type CatalogView } from "./presentation/parseCatalogView";
+export { groupGrammarTopics } from "./presentation/groupGrammarTopics";

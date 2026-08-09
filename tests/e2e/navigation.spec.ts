@@ -16,6 +16,22 @@ test.describe("navigation", () => {
     await expect(page).toHaveURL(/\/topics$/);
     await expect(page.getByRole("heading", { level: 1, name: "Темы" })).toBeVisible();
     await expect(nav.getByRole("link", { name: /Темы/ })).toHaveAttribute("aria-current", "page");
+    await expect(page.getByRole("tab", { name: "По темам" })).toHaveAttribute(
+      "aria-selected",
+      "true",
+    );
+    await page.getByRole("tab", { name: "По грамматике" }).click();
+    await expect(page).toHaveURL(/\/topics\?view=grammar/);
+    await expect(page.getByRole("tab", { name: "По грамматике" })).toHaveAttribute(
+      "aria-selected",
+      "true",
+    );
+    await page.goBack();
+    await expect(page).toHaveURL(/\/topics$/);
+    await expect(page.getByRole("tab", { name: "По темам" })).toHaveAttribute(
+      "aria-selected",
+      "true",
+    );
 
     await nav.getByRole("link", { name: /Учиться|Тренировка/ }).click();
     await expect(page).toHaveURL(/\/training$/);

@@ -4,22 +4,23 @@
 
 ## Чем занимаемся
 
-F2-I09 выполнен. Следующая карточка — F2-I10 (dual catalog).
+F2-I10 выполнен. Следующая карточка — F2-I11 (theme/grammar detail pages).
 
-## F2-I09 — результат
+## F2-I10 — результат
 
-- `src/features/catalog|dictionary|reading` — repositories + public DTOs
-- Local published fixture (не импортирует `content/phase-2` в app graph)
-- Supabase adapters: только `published` / `approved`; options через `exercise_options_public`
-- `resolveCurriculumContent` / `cachedCurriculumContent`
-- Public shape asserts forbid correct flags / provenance hashes
-- Integration parity: local fixture ≡ supabase-fixture adapter
+- `/topics` принимает `?view=themes|grammar` (unknown → themes)
+- Кастомный segmented/tab control (`CatalogViewSwitch`) без native `<select>`
+- Themes: compact `UnitSummaryCard` из `getCachedPublicUnits`
+- Grammar: grouping по уроку/category (`GrammarCatalogList`)
+- Loading/error/empty через существующие feedback states
+- Counts только из published/approved public DTO
+- Tests: parse/group/switch/page + e2e navigation back/forward
 
 ## Коммит / ветка
 
-- Branch: `codex/f2-i09-content-repositories`
-- Commit: `feat: add curriculum content repositories`
+- Branch: `codex/f2-i10-dual-catalog`
+- Commit: `feat: add theme and grammar catalogs`
 
 ## Следующий шаг
 
-F2-I10 — theme and grammar catalogs.
+F2-I11 — curriculum detail pages.

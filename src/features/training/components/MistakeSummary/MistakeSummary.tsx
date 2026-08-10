@@ -1,3 +1,6 @@
+import { BilingualTitle } from "@/features/catalog/presentation/BilingualTitle";
+import { formatGrammarPatternDisplay } from "@/features/catalog/presentation/formatGrammarPatternDisplay";
+
 import type { TrainingResultMistake, TrainingResultTopicBreakdown } from "../../domain";
 import { toExerciseTextView } from "../../presentation";
 import { ExerciseText } from "../ExerciseText";
@@ -37,12 +40,10 @@ export function MistakeSummary({ mistakes, topics }: MistakeSummaryProps) {
             {topics.map((topic) => (
               <li className={styles.topicItem} key={topic.topicId}>
                 <div className={styles.topicHeading}>
-                  {topic.title.ko ? (
-                    <span className={styles.topicKo} lang="ko">
-                      {topic.title.ko}
-                    </span>
-                  ) : null}
-                  <span>{topic.title.ru}</span>
+                  <BilingualTitle
+                    ko={topic.title.ko ? formatGrammarPatternDisplay(topic.title.ko) : ""}
+                    ru={topic.title.ru}
+                  />
                 </div>
                 <p className={styles.topicMeta}>
                   Верно {topic.correctCount} из {topic.gradedCount} · {topic.score} /{" "}

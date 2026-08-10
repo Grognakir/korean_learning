@@ -58,6 +58,13 @@
   font-size: var(--font-size-xs);
 }
 
+.userMenu {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-self: end;
+}
+
 .login {
   display: inline-flex;
   min-height: 2.75rem;
@@ -79,11 +86,22 @@
   }
 }
 
+/* Match PageContainer horizontal padding breakpoint. */
+@media (min-width: 48rem) {
+  .inner {
+    padding-inline-start: max(var(--space-8), env(safe-area-inset-left));
+    padding-inline-end: max(var(--space-8), env(safe-area-inset-right));
+  }
+}
+
 @media (min-width: 64rem) {
   .inner {
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-    padding-inline-start: max(var(--space-8), env(safe-area-inset-left));
-    padding-inline-end: max(var(--space-8), env(safe-area-inset-right));
+  }
+
+  /* Keep auth/admin controls in the trailing column even when PrimaryNavigation is null. */
+  .userMenu {
+    grid-column: 3;
   }
 }
 

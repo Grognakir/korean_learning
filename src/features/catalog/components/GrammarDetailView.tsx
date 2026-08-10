@@ -2,8 +2,11 @@ import Link from "next/link";
 
 import { ContentSection } from "@/wrappers";
 
+import { buildGrammarTopicDetail } from "../domain/grammarDetail";
 import type { PublicGrammarTopicSummary, PublicUnitSummary } from "../domain/types";
+import { BilingualTitle } from "../presentation/BilingualTitle";
 import { buildTrainingSetupHref } from "../presentation/buildTrainingSetupHref";
+import { GrammarMarkdownBody } from "../presentation/GrammarMarkdownBody";
 import { createDetailAction, DetailActionArea } from "./DetailActionArea";
 
 import styles from "./GrammarDetailView.module.css";
@@ -15,23 +18,26 @@ type GrammarDetailViewProps = {
 };
 
 export function GrammarDetailView({ topic, unit, practiceAvailable }: GrammarDetailViewProps) {
+  const detail = buildGrammarTopicDetail({
+    patternKo: topic.patternKo,
+    summaryRu: topic.summary.ru,
+    titleRu: topic.title.ru,
+    enrichment: topic.detail,
+  });
+
   return (
     <div className={styles.root}>
-      <ContentSection description="Краткое объяснение конструкции." title="Правило">
-        <p className={styles.rule}>{topic.summary.ru}</p>
-        <p className={styles.rule} lang="ko">
-          {topic.summary.ko}
-        </p>
+      <ContentSection title="Описание">
+        <GrammarMarkdownBody markdown={detail.bodyMd} />
       </ContentSection>
 
-      <ContentSection description="Связанный урок программы 1급." title="Тема">
+      <ContentSection title="Тема">
         <Link className={styles.unitLink} href={`/topics/${unit.slug}`} prefetch>
-          <span lang="ko">{unit.title.ko}</span>
-          <span>{unit.title.ru.charAt(0).toUpperCase() + unit.title.ru.slice(1)}</span>
+          <BilingualTitle ko={unit.title.ko} ru={unit.title.ru} />
         </Link>
       </ContentSection>
 
-      <ContentSection description="Практика только по этой конструкции." title="Тренировка">
+      <ContentSection title="Тренировка">
         <DetailActionArea
           actions={[
             createDetailAction({

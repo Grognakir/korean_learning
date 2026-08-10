@@ -1,0 +1,13 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.button {
+  min-height: 2.25rem;
+  min-width: 2.25rem;
+  padding: var(--space-1) var(--space-3);
+  font-weight: var(--font-weight-semibold);
+}

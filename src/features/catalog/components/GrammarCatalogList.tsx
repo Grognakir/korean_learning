@@ -1,7 +1,9 @@
 import Link from "next/link";
 
 import type { PublicGrammarTopicSummary, PublicUnitSummary } from "../domain/types";
+import { formatBilingualLabel } from "../presentation/formatBilingualLabel";
 import { groupGrammarTopics } from "../presentation/groupGrammarTopics";
+import { GrammarTopicLink } from "./GrammarTopicLink";
 
 import styles from "./GrammarCatalogList.module.css";
 
@@ -26,7 +28,9 @@ function getConstructionCountLabel(count: number): string {
 }
 
 export function GrammarCatalogList({ topics, units }: GrammarCatalogListProps) {
-  const unitTitles = new Map(units.map((unit) => [unit.slug, unit.title.ru]));
+  const unitTitles = new Map(
+    units.map((unit) => [unit.slug, formatBilingualLabel(unit.title.ko, unit.title.ru)]),
+  );
   const groups = groupGrammarTopics(topics, unitTitles);
 
   return (
@@ -37,9 +41,7 @@ export function GrammarCatalogList({ topics, units }: GrammarCatalogListProps) {
             <span className={styles.unitHeading}>
               <span className={styles.unitNumber}>Урок {group.unitNumber}</span>
               {group.unitTitleRu ? (
-                <span className={styles.unitTitle}>
-                  {group.unitTitleRu.charAt(0).toUpperCase() + group.unitTitleRu.slice(1)}
-                </span>
+                <span className={styles.unitTitle}>{group.unitTitleRu}</span>
               ) : null}
             </span>
             <span className={styles.topicCount}>
@@ -62,16 +64,7 @@ export function GrammarCatalogList({ topics, units }: GrammarCatalogListProps) {
                 <ul className={styles.topics}>
                   {category.topics.map((topic) => (
                     <li key={topic.logicalId} className={styles.topic}>
-                      <Link
-                        className={styles.topicLink}
-                        href={`/topics/${topic.unitSlug}?grammar=${encodeURIComponent(topic.logicalId)}`}
-                        prefetch
-                      >
-                        <span className={styles.pattern} lang="ko">
-                          {topic.patternKo}
-                        </span>
-                        <span className={styles.topicTitle}>{topic.title.ru}</span>
-                      </Link>
+                      <GrammarTopicLink topic={topic} />
                     </li>
                   ))}
                 </ul>

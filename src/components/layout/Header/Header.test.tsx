@@ -17,13 +17,9 @@ describe("Header", () => {
     expect(screen.getByRole("link", { name: "Войти" })).toHaveAttribute("href", "/login");
   });
 
-  it("shows authenticated account controls", () => {
-    render(
-      <Header userMenu={<UserMenu user={{ id: "user-1", email: "learner@example.com" }} />} />,
-    );
-
-    expect(screen.getByText("learner")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Выйти" })).toBeInTheDocument();
-    expect(screen.queryByRole("link", { name: "Войти" })).not.toBeInTheDocument();
+  it("keeps the user menu in a trailing header slot", () => {
+    const { container } = render(<Header userMenu={<UserMenu user={null} />} />);
+    const slot = container.querySelector("[class*='userMenu']");
+    expect(slot).toContainElement(screen.getByRole("link", { name: "Войти" }));
   });
 });

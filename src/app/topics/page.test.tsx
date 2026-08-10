@@ -20,8 +20,12 @@ describe("TopicsPage", () => {
     render(await TopicsCatalog({ searchParams: Promise.resolve({}) }));
 
     expect(screen.getByRole("tab", { name: "По темам" })).toHaveAttribute("aria-selected", "true");
-    expect(screen.getByRole("heading", { name: "인사와 소개" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "학교와 집" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "인사와 소개 (Приветствие и представление)" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "학교와 집 (Школа и дом)" }),
+    ).toBeInTheDocument();
   });
 
   it("renders grammar grouping for the grammar view", async () => {

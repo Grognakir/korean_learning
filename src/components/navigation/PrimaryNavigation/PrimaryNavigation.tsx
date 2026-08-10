@@ -8,8 +8,16 @@ import { NAVIGATION_ITEMS } from "@/constants";
 import { isNavigationItemActive } from "../navigationState";
 import styles from "./PrimaryNavigation.module.css";
 
+function isAdminPath(pathname: string): boolean {
+  return pathname === "/admin" || pathname.startsWith("/admin/");
+}
+
 export function PrimaryNavigation() {
   const pathname = usePathname() ?? "/";
+
+  if (isAdminPath(pathname)) {
+    return null;
+  }
 
   return (
     <nav aria-label="Основная навигация" className={styles.navigation}>

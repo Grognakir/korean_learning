@@ -302,6 +302,8 @@ function applyPhase(
     if (!entity) throw new Error(`Missing entity ${decision.logicalId} in ${fileName}`);
 
     if (entity.status === target) continue;
+    // Already past this phase (e.g. approved while re-running review after a catalog regen).
+    if (target === "reviewed" && entity.status === "approved") continue;
 
     assertLifecycleTransition(entity.status, target);
     entity.status = target;

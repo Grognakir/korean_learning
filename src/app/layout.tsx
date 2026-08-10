@@ -4,6 +4,7 @@ import { Suspense } from "react";
 
 import { APP_DESCRIPTION, APP_NAME, DEFAULT_LANGUAGE } from "@/constants";
 import { AuthProvider } from "@/features/authentication/context/AuthContext";
+import { HeaderUserSlot } from "@/features/authentication/components/HeaderUserSlot/HeaderUserSlot";
 import { UserMenuPlaceholder } from "@/features/authentication/components/UserMenu/UserMenuPlaceholder";
 import { HeaderAuthSection } from "@/features/authentication/server/HeaderAuthSection";
 import { AppShell } from "@/wrappers";
@@ -34,9 +35,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <AuthProvider user={null}>
           <AppShell
             userMenu={
-              <Suspense fallback={<UserMenuPlaceholder />}>
-                <HeaderAuthSection />
-              </Suspense>
+              <HeaderUserSlot>
+                <Suspense fallback={<UserMenuPlaceholder />}>
+                  <HeaderAuthSection />
+                </Suspense>
+              </HeaderUserSlot>
             }
           >
             {children}

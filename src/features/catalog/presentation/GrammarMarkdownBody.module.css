@@ -1,0 +1,63 @@
+.root {
+  display: grid;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.heading {
+  margin: 0.35rem 0 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold, 700);
+  line-height: 1.35;
+}
+
+.paragraph {
+  margin: 0;
+  max-width: none;
+  overflow-wrap: break-word;
+  line-height: 1.55;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.orderedList {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.list li,
+.orderedList li {
+  overflow-wrap: break-word;
+  line-height: 1.5;
+}
+
+.rule {
+  margin: 0.25rem 0;
+  border: 0;
+  border-top: 1px solid var(--color-border, #ddd6c8);
+}
+
+.tableWrap {
+  overflow-x: auto;
+  min-width: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+.table td {
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--color-border, #ddd6c8);
+  vertical-align: top;
+  overflow-wrap: break-word;
+}

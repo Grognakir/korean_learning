@@ -117,7 +117,10 @@ describe("application routes", () => {
     );
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "Приветствие и представление" }),
+      screen.getByRole("heading", {
+        level: 1,
+        name: "인사와 소개 (Приветствие и представление)",
+      }),
     ).toBeInTheDocument();
     expect(screen.getByText("N입니다/입니까?")).toBeInTheDocument();
   });

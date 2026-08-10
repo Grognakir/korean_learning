@@ -81,6 +81,11 @@
   --content-width-default: 72rem;
   --content-width-wide: 90rem;
 
+  /* Shared page shell rhythm (PageContainer column + vertical padding). */
+  --page-gap: clamp(var(--space-5), 2.5vw, var(--space-8));
+  --page-padding-block-start: clamp(var(--space-8), 6vw, 3.75rem);
+  --page-padding-block-end: clamp(var(--space-6), 6vw, var(--space-16));
+
   --z-index-base: 0;
   --z-index-header: 10;
   --z-index-overlay: 50;

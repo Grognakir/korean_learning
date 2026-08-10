@@ -8,6 +8,8 @@ import { DEMO_TRAINING_SEED } from "@/features/training/sessionConstants";
 import { buildFilteredSessionId } from "@/features/training/setup/filteredSessionId";
 import { parseTrainingSetupQuery } from "@/features/training/setup/parseTrainingSetupQuery";
 import { resolveTrainingSetup } from "@/features/training/setup/resolveTrainingSetup";
+import { formatBilingualLabel } from "@/features/catalog/presentation/formatBilingualLabel";
+import { formatGrammarPatternDisplay } from "@/features/catalog/presentation/formatGrammarPatternDisplay";
 import {
   getCachedApprovedCurriculumExercises,
   getCachedPublicGrammarTopics,
@@ -81,11 +83,11 @@ export async function TrainingModulesPanel({ searchParams }: TrainingModulesPane
 
   const unitOptions = unitsResult.data.map((unit) => ({
     value: unit.slug,
-    label: `Урок ${unit.unitNumber}: ${unit.title.ru.charAt(0).toUpperCase() + unit.title.ru.slice(1)}`,
+    label: `Урок ${unit.unitNumber}: ${formatBilingualLabel(unit.title.ko, unit.title.ru)}`,
   }));
   const grammarOptions = grammarResult.data.map((topic) => ({
     value: topic.logicalId,
-    label: topic.patternKo,
+    label: formatGrammarPatternDisplay(topic.patternKo),
     lang: "ko",
   }));
   const difficultyOptions = setup.difficulties.map((value) => ({

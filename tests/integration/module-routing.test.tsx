@@ -42,7 +42,9 @@ describe("module routing integration", () => {
 
     render(await TopicsCatalog({ searchParams: Promise.resolve({}) }));
     expect(screen.getByRole("tab", { name: "По темам" })).toHaveAttribute("aria-selected", "true");
-    expect(screen.getByRole("heading", { name: "인사와 소개" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "인사와 소개 (Приветствие и представление)" }),
+    ).toBeInTheDocument();
 
     render(
       await ModuleDetailPanel({
@@ -51,7 +53,10 @@ describe("module routing integration", () => {
       }),
     );
     expect(
-      screen.getByRole("heading", { level: 1, name: "Приветствие и представление" }),
+      screen.getByRole("heading", {
+        level: 1,
+        name: "인사와 소개 (Приветствие и представление)",
+      }),
     ).toBeInTheDocument();
     expect(screen.getByText("N입니다/입니까?")).toBeInTheDocument();
 
@@ -61,7 +66,8 @@ describe("module routing integration", () => {
         searchParams: Promise.resolve({ grammar: "grammar.u01.n01" }),
       }),
     );
-    expect(screen.getByRole("heading", { name: "N입니다/입니까?" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "N입니다/입니까?" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Описание" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Тренировать конструкцию" })).toHaveAttribute(
       "href",
       "/training?skill=grammar&unit=u01&grammar=grammar.u01.n01",

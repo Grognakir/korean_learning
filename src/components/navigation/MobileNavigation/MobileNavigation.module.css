@@ -16,7 +16,7 @@
 
 .list {
   display: grid;
-  max-width: 40rem;
+  max-width: var(--content-width-narrow);
   margin-inline: auto;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   list-style: none;
@@ -59,4 +59,12 @@
   .navigation {
     display: block;
   }
+}
+
+.adminNavigation {
+  display: block;
+}
+
+.adminList {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }

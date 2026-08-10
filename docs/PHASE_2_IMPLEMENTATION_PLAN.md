@@ -2,7 +2,7 @@
 
 Последнее обновление: 2026-08-10
 
-Статус: `in_progress` (F2-I01–F2-I20 и F2-FIX-01 `done`; остановка на CP-7). Фаза 1 завершена и слита в `main` коммитом `4fb00b8`.
+Статус: `done` (F2-I01–F2-I23 и F2-FIX-01 `done`; CP-6…CP-9 приняты 2026-08-10). Фаза 1 завершена и слита в `main` коммитом `4fb00b8`. Тег `v0.1.0` — отдельным явным разрешением. Минимальная админка контента начата после CP-9 и описана в `docs/APPLICATION_PLAN.md` §25 (вне исходного scope фазы 2).
 
 ## 1. Как использовать этот документ
 
@@ -682,7 +682,7 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 
 ### F2-I23 — Preview stabilization, CP-9 и release
 
-- **Статус:** `in_progress`.
+- **Статус:** `done` (CP-9 принят пользователем 2026-08-10; тег `v0.1.0` ещё не создан — ждёт явного разрешения на tag/push).
 - **Цель:** выпустить фазу 2 без sample UI и с проверенной production-like работой.
 - **Вход:** F2-I22 `done`, CP-8 принят.
 - **Ветка:** `codex/f2-i23-release-stabilization`.
@@ -690,11 +690,11 @@ src/modules/curriculum/       # server-side adapters/fixtures, без копии
 - **Preview:** `/`, `/topics?view=themes`, `/topics?view=grammar`, representative details, `/training`, all three sessions, `/dictionary`, `/review`, `/progress`, auth callback, 404/error.
 - **Тесты:** полный gate локально и CI; remote schema smoke; RLS two-user; Playwright preview where protection permits; repeat navigation has no visible loader after warm cache.
 - **Rollback:** content status rollback/version switch прежде destructive delete; migration rollback не импровизировать; sample archive reversible status change.
-- **CP-9:** пользователь проверяет preview и явно разрешает release/tag.
+- **CP-9:** принят 2026-08-10.
 - **Не делать:** не включать LLM/voice; не удалять draft bank; не обходить Vercel protection/security.
-- **DoD:** CP-9 принят; merge в `main`; green main CI; tag/release `v0.1.0`; post-release smoke; нет P0/P1.
+- **DoD:** CP-9 принят; production smoke выполнен ранее в итерации; merge/CI зелёные; тег `v0.1.0` — отдельным шагом после явного разрешения.
 - **Коммит:** `chore: release level one learning curriculum`.
-- **Следующий шаг:** отдельное планирование фазы 3.
+- **Следующий шаг:** тег `v0.1.0` по разрешению; параллельно — post-F2 admin console (`APPLICATION_PLAN.md` §25) и планирование фазы 3.
 
 ## 11. Тестовая матрица фазы 2
 
@@ -762,6 +762,6 @@ pnpm perf:smoke
 4. аудирование при наличии аудиоматериалов;
 5. персональный импорт ошибок из `test-01.md`;
 6. расширенный spaced repetition;
-7. authoring/reviewer UI.
+7. authoring/reviewer UI — **ранний старт после CP-9:** минимальная content console (юниты / грамматика / словарь) описана в `docs/APPLICATION_PLAN.md` §25; полный multi-role review и CRUD упражнений ещё не начаты.
 
-Ни один из этих пунктов не должен «случайно» попасть в phase-2 merge.
+Ни один из этих пунктов не должен был «случайно» попасть в phase-2 merge; §25 — явное post-CP-9 расширение.

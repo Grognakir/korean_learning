@@ -1,0 +1,12 @@
+.term {
+  color: var(--color-accent, #0d513f);
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.paragraph {
+  display: block;
+}

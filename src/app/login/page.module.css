@@ -11,19 +11,3 @@
   border-radius: var(--radius-lg);
   background: var(--color-surface);
 }
-
-.guestAction {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.guestAction a {
-  color: var(--color-accent-hover);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  text-decoration: none;
-}
-
-.guestAction a:hover {
-  text-decoration: underline;
-}

@@ -22,7 +22,7 @@ async function expectStableShell(page: Page) {
 const KEY_PAGES = [
   { path: "/topics", heading: "Темы" },
   { path: "/topics?view=grammar", heading: "Темы" },
-  { path: "/topics/u01", heading: "приветствие и представление" },
+  { path: "/topics/u01", heading: "Приветствие и представление" },
   { path: "/dictionary?unit=u01", heading: "Словарь" },
   { path: "/training", heading: "Тренировка" },
   { path: "/review", heading: "Повторение" },

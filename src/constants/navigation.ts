@@ -6,10 +6,10 @@ export type NavigationItem = {
 };
 
 export const NAVIGATION_ITEMS = [
-  { href: "/", label: "Главная", mobile: true, shortLabel: "Главная" },
+  { href: "/", label: "Главная", mobile: false, shortLabel: "Главная" },
   { href: "/topics", label: "Темы", mobile: true, shortLabel: "Темы" },
   { href: "/training", label: "Тренировка", mobile: true, shortLabel: "Учиться" },
-  { href: "/review", label: "Повторение", mobile: false, shortLabel: "Повтор" },
+  { href: "/review", label: "Повторение", mobile: true, shortLabel: "Повтор" },
   { href: "/progress", label: "Прогресс", mobile: true, shortLabel: "Прогресс" },
-  { href: "/dictionary", label: "Словарь", mobile: false, shortLabel: "Словарь" },
+  { href: "/dictionary", label: "Словарь", mobile: true, shortLabel: "Словарь" },
 ] as const satisfies readonly NavigationItem[];

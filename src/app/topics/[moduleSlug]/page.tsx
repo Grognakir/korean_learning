@@ -65,16 +65,20 @@ export async function generateStaticParams() {
   return params.length > 0 ? params : [{ moduleSlug: PLACEHOLDER_MODULE_SLUG }];
 }
 
-export default async function ModulePage({
+async function ModulePageContent({ params, searchParams = Promise.resolve({}) }: ModulePageProps) {
+  const { moduleSlug } = await params;
+
+  return <ModuleDetailPanel moduleSlug={moduleSlug} searchParams={searchParams} />;
+}
+
+export default function ModulePage({
   params,
   searchParams = Promise.resolve({}),
 }: ModulePageProps) {
-  const { moduleSlug } = await params;
-
   return (
     <PageContainer className={styles.page}>
       <Suspense fallback={<CatalogSectionSkeleton label="Загрузка модуля…" />}>
-        <ModuleDetailPanel moduleSlug={moduleSlug} searchParams={searchParams} />
+        <ModulePageContent params={params} searchParams={searchParams} />
       </Suspense>
     </PageContainer>
   );

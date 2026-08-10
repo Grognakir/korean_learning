@@ -1,6 +1,7 @@
 import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedback";
 import { DictionaryEntryList } from "@/features/dictionary/components/DictionaryEntryList";
 import { DictionaryFilters } from "@/features/dictionary/components/DictionaryFilters";
+import { getPartOfSpeechLabel } from "@/features/dictionary/presentation/dictionaryLabels";
 import { parseDictionaryQuery } from "@/features/dictionary/presentation/parseDictionaryQuery";
 import {
   getCachedPublicDictionaryPage,
@@ -36,11 +37,11 @@ export async function DictionaryCatalog({ searchParams }: DictionaryCatalogProps
 
   const unitOptions = unitsResult.data.map((unit) => ({
     value: unit.slug,
-    label: `Урок ${unit.unitNumber}: ${unit.title.ru}`,
+    label: `Урок ${unit.unitNumber}: ${unit.title.ru.charAt(0).toUpperCase() + unit.title.ru.slice(1)}`,
   }));
   const posOptions = pageResult.data.posOptions.map((value) => ({
     value,
-    label: value,
+    label: getPartOfSpeechLabel(value),
   }));
 
   return (

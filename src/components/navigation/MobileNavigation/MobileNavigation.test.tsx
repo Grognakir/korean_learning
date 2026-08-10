@@ -17,6 +17,11 @@ describe("MobileNavigation", () => {
 
     expect(screen.getAllByRole("link")).toHaveLength(mobileItems.length);
     expect(container.querySelectorAll("nav svg")).toHaveLength(mobileItems.length);
-    expect(screen.getByRole("link", { name: /Учиться/ })).toHaveAttribute("aria-current", "page");
+    expect(screen.getByRole("link", { name: "Тренировка" })).toHaveAttribute(
+      "aria-current",
+      "page",
+    );
+    expect(screen.getByRole("link", { name: "Повторение" })).toHaveAttribute("href", "/review");
+    expect(screen.getByRole("link", { name: "Словарь" })).toHaveAttribute("href", "/dictionary");
   });
 });

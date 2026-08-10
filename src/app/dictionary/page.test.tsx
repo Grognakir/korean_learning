@@ -23,5 +23,8 @@ describe("DictionaryPage", () => {
     expect(screen.getByText("пока")).toBeInTheDocument();
     expect(screen.getByText("значение: privet")).toBeInTheDocument();
     expect(screen.getByText("значение: poka")).toBeInTheDocument();
+    expect(screen.getAllByText("междометие").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Урок 1").length).toBeGreaterThan(0);
+    expect(screen.queryByText("interjection")).not.toBeInTheDocument();
   });
 });

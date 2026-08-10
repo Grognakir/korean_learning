@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 import { Alert } from "@/components/feedback";
@@ -106,6 +107,9 @@ export function LoginForm({ callbackError = null, nextPath = null }: LoginFormPr
       ) : null}
 
       <div className={styles.actions}>
+        <Link className={styles.guestAction} href="/">
+          Продолжить как гость
+        </Link>
         <Button disabled={submitState === "pending" || submitState === "success"} type="submit">
           {submitState === "pending" ? "Отправляем..." : "Получить ссылку для входа"}
         </Button>

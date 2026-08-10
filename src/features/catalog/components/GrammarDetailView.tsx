@@ -17,40 +17,21 @@ type GrammarDetailViewProps = {
 export function GrammarDetailView({ topic, unit, practiceAvailable }: GrammarDetailViewProps) {
   return (
     <div className={styles.root}>
-      <div className={styles.intro}>
-        <p className={styles.meta}>
-          Урок {topic.unitNumber} · {topic.category}
-        </p>
-        <h2 className={styles.pattern} lang="ko">
-          {topic.patternKo}
-        </h2>
-        <p className={styles.title}>{topic.title.ru}</p>
-      </div>
-
-      <ContentSection description="Краткое правило без review notes." title="Правило">
+      <ContentSection description="Краткое объяснение конструкции." title="Правило">
         <p className={styles.rule}>{topic.summary.ru}</p>
         <p className={styles.rule} lang="ko">
           {topic.summary.ko}
         </p>
       </ContentSection>
 
-      <ContentSection description="Примеры появятся после language review." title="Примеры">
-        <p className={styles.empty}>
-          Отдельные example records для этой конструкции пока не опубликованы.
-        </p>
-      </ContentSection>
-
       <ContentSection description="Связанный урок программы 1급." title="Тема">
         <Link className={styles.unitLink} href={`/topics/${unit.slug}`} prefetch>
           <span lang="ko">{unit.title.ko}</span>
-          <span>{unit.title.ru}</span>
+          <span>{unit.title.ru.charAt(0).toUpperCase() + unit.title.ru.slice(1)}</span>
         </Link>
       </ContentSection>
 
-      <ContentSection
-        description="Тренировка только по этой конструкции, если есть approved банк."
-        title="Тренировка"
-      >
+      <ContentSection description="Практика только по этой конструкции." title="Тренировка">
         <DetailActionArea
           actions={[
             createDetailAction({
@@ -61,7 +42,7 @@ export function GrammarDetailView({ topic, unit, practiceAvailable }: GrammarDet
               }),
               label: "Тренировать конструкцию",
               available: practiceAvailable,
-              unavailableReason: "Нет approved упражнений для этой конструкции",
+              unavailableReason: "Для этой конструкции пока нет заданий",
             }),
           ]}
         />

@@ -79,7 +79,7 @@
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 64rem) {
   .inner {
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     padding-inline-start: max(var(--space-8), env(safe-area-inset-left));
@@ -87,8 +87,8 @@
   }
 }
 
-@media (min-width: 48rem) and (max-width: 71.99rem) {
-  .brandCopy {
+@media (min-width: 64rem) and (max-width: 71.99rem) {
+  .brandCopy > span {
     display: none;
   }
 }

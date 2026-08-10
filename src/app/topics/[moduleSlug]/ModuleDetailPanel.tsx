@@ -81,8 +81,8 @@ export async function ModuleDetailPanel({
               К теме
             </Link>
           }
-          description={topic.summary.ru}
-          title={topic.title.ru}
+          eyebrow={`Урок ${topic.unitNumber} · Грамматика`}
+          title={<span lang="ko">{topic.patternKo}</span>}
         />
         <GrammarDetailView
           practiceAvailable={exercisesResult.data.length > 0}
@@ -143,8 +143,9 @@ export async function ModuleDetailPanel({
               К каталогу
             </Link>
           }
-          description={unit.summary.ru}
-          title={unit.title.ru}
+          description={<span lang="ko">{unit.title.ko}</span>}
+          eyebrow={`Урок ${unit.unitNumber} · ${unit.level}`}
+          title={unit.title.ru.charAt(0).toUpperCase() + unit.title.ru.slice(1)}
         />
         <UnitDetailView
           grammarPracticeAvailable={grammarEx.data.length > 0}

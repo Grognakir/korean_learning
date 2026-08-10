@@ -52,7 +52,7 @@ describe("application routes", () => {
   it("describes the training route without the removed development preview", () => {
     render(<TrainingPage />);
 
-    expect(screen.getByText(/Выберите навык, тему и фильтры/)).toBeInTheDocument();
+    expect(screen.getByText(/Выберите навык и тему/)).toBeInTheDocument();
     expect(screen.queryByText(/Draft preview|development/i)).not.toBeInTheDocument();
   });
 
@@ -99,7 +99,8 @@ describe("application routes", () => {
       "aria-pressed",
       "true",
     );
-    expect(screen.getByTestId("training-setup-request")).toHaveTextContent('"unitSlug": "u01"');
+    expect(screen.getByText(/Доступно: 2 задания · в тренировке: 2 задания/)).toBeInTheDocument();
+    expect(screen.queryByText(/unitSlug|grammarTopicId|sessionSize/)).not.toBeInTheDocument();
     expect(screen.queryByRole("link", { name: /Демо sample-module/ })).not.toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Начать тренировку" })).toHaveAttribute(
       "href",
@@ -116,7 +117,7 @@ describe("application routes", () => {
     );
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "приветствие и представление" }),
+      screen.getByRole("heading", { level: 1, name: "Приветствие и представление" }),
     ).toBeInTheDocument();
     expect(screen.getByText("N입니다/입니까?")).toBeInTheDocument();
   });

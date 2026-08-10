@@ -1,7 +1,7 @@
 .page {
   display: grid;
   gap: clamp(var(--space-5), 2.5vw, var(--space-8));
-  padding-block-start: 3.75rem;
+  padding-block-start: clamp(var(--space-8), 6vw, 3.75rem);
   padding-block-end: clamp(var(--space-6), 6vw, var(--space-16));
 }
 
@@ -25,15 +25,6 @@
 .blockedReason {
   margin: 0;
   color: var(--color-text-muted);
-}
-
-.requestPreview {
-  margin: 0;
-  padding: 0.75rem;
-  overflow-x: auto;
-  border-radius: 0.55rem;
-  background: var(--color-surface-muted, #f7f4ee);
-  font-size: 0.85rem;
 }
 
 .actionSlot {
@@ -149,5 +140,9 @@
 @media (min-width: 58rem) {
   .grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid > :last-child:nth-child(3n + 1) {
+    grid-column: 2;
   }
 }

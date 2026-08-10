@@ -10,14 +10,14 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Повторение",
-  description: "Очередь повторения ошибок из облачных тренировок.",
+  description: "Очередь повторения ошибок из сохранённых тренировок.",
 };
 
 export default function ReviewPage() {
   return (
     <PageContainer className={styles.page}>
       <PageHeader
-        description="Ошибочные ответы из облачных тренировок попадают сюда и возвращаются по фиксированному расписанию."
+        description="Ошибочные ответы из сохранённых тренировок возвращаются сюда по расписанию."
         title="Повторение"
       />
       <Suspense fallback={<CatalogSectionSkeleton label="Загрузка очереди повторения…" />}>

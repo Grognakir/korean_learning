@@ -5,11 +5,34 @@
 
 .actions {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.guestAction {
+  color: var(--color-accent-hover);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.guestAction:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 30rem) {
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .guestAction {
+    text-align: center;
+  }
+
   .actions :global(button) {
+    order: -1;
     width: 100%;
   }
 }

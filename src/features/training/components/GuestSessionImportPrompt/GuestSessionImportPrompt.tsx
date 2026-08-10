@@ -78,7 +78,7 @@ export function GuestSessionImportPrompt({
     if (!moduleId) {
       setView({
         status: "error",
-        message: "Не удалось сопоставить модуль guest-сессии с серверным каталогом.",
+        message: "Не удалось найти тему локальной тренировки в каталоге.",
       });
       return;
     }
@@ -107,7 +107,7 @@ export function GuestSessionImportPrompt({
       storeRef.current.clear();
       setView({
         status: "success",
-        message: "Guest-сессия перенесена в аккаунт. Локальная копия удалена.",
+        message: "Тренировка перенесена в аккаунт. Локальная копия удалена.",
       });
     } catch (error) {
       setView({
@@ -115,7 +115,7 @@ export function GuestSessionImportPrompt({
         message:
           error instanceof Error
             ? error.message
-            : "Не удалось импортировать guest-сессию. Повторите попытку.",
+            : "Не удалось перенести тренировку. Повторите попытку.",
       });
     } finally {
       setIsImporting(false);
@@ -123,12 +123,12 @@ export function GuestSessionImportPrompt({
   }
 
   return (
-    <section aria-label="Импорт guest-сессии" className={styles.panel}>
+    <section aria-label="Перенос локальной тренировки" className={styles.panel}>
       <div className={styles.copy}>
         <h2 className={styles.title}>Перенести локальную тренировку?</h2>
         <p className={styles.description}>
-          После входа можно перенести текущую незавершённую guest-сессию в аккаунт. Без
-          подтверждения она останется только на этом устройстве.
+          После входа можно перенести текущую незавершённую тренировку в аккаунт. Без подтверждения
+          она останется только на этом устройстве.
         </p>
       </div>
       <div className={styles.actions}>

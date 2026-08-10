@@ -27,7 +27,7 @@ export default function DictionaryPage({
   return (
     <PageContainer className={styles.page}>
       <PageHeader
-        description="Проверенные значения по темам. Полнотекстовый поиск отложен до серверного query."
+        description="Выберите тему или часть речи, чтобы найти нужные слова."
         title="Словарь"
       />
       <Suspense fallback={<CatalogSectionSkeleton label="Загрузка словаря…" />}>

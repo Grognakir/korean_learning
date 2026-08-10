@@ -10,14 +10,14 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Прогресс",
-  description: "Статистика освоенных тем после завершения облачных тренировок.",
+  description: "Статистика освоенных тем после завершения сохранённых тренировок.",
 };
 
 export default function ProgressPage() {
   return (
     <PageContainer className={styles.page}>
       <PageHeader
-        description="Статус по модулям и темам считается только из завершённых облачных тренировок."
+        description="Прогресс по темам считается после завершённых тренировок, сохранённых в аккаунте."
         title="Прогресс"
       />
       <Suspense fallback={<CatalogSectionSkeleton label="Загрузка прогресса…" />}>

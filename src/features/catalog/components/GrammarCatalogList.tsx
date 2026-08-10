@@ -10,6 +10,21 @@ type GrammarCatalogListProps = {
   readonly units: readonly PublicUnitSummary[];
 };
 
+function getConstructionCountLabel(count: number): string {
+  const remainder100 = count % 100;
+  const remainder10 = count % 10;
+  const form =
+    remainder100 >= 11 && remainder100 <= 14
+      ? "конструкций"
+      : remainder10 === 1
+        ? "конструкция"
+        : remainder10 >= 2 && remainder10 <= 4
+          ? "конструкции"
+          : "конструкций";
+
+  return `${count} ${form}`;
+}
+
 export function GrammarCatalogList({ topics, units }: GrammarCatalogListProps) {
   const unitTitles = new Map(units.map((unit) => [unit.slug, unit.title.ru]));
   const groups = groupGrammarTopics(topics, unitTitles);
@@ -17,47 +32,53 @@ export function GrammarCatalogList({ topics, units }: GrammarCatalogListProps) {
   return (
     <div className={styles.list}>
       {groups.map((group) => (
-        <section
-          key={group.unitSlug}
-          aria-label={`Урок ${group.unitNumber}${group.unitTitleRu ? `: ${group.unitTitleRu}` : ""}`}
-          className={styles.unit}
-        >
-          <header className={styles.unitHeader}>
-            <h2 className={styles.unitTitle}>
-              Урок {group.unitNumber}
+        <details key={group.unitSlug} className={styles.unit} open={group.unitNumber === 1}>
+          <summary className={styles.unitSummary}>
+            <span className={styles.unitHeading}>
+              <span className={styles.unitNumber}>Урок {group.unitNumber}</span>
               {group.unitTitleRu ? (
-                <>
-                  {" · "}
-                  <span>{group.unitTitleRu}</span>
-                </>
+                <span className={styles.unitTitle}>
+                  {group.unitTitleRu.charAt(0).toUpperCase() + group.unitTitleRu.slice(1)}
+                </span>
               ) : null}
-            </h2>
+            </span>
+            <span className={styles.topicCount}>
+              {getConstructionCountLabel(
+                group.categories.reduce((count, category) => count + category.topics.length, 0),
+              )}
+            </span>
+          </summary>
+          <div className={styles.unitBody}>
             <Link className={styles.unitLink} href={`/topics/${group.unitSlug}`}>
-              Открыть тему
+              Открыть урок
             </Link>
-          </header>
-          {group.categories.map((category) => (
-            <div key={category.category} className={styles.category}>
-              <h3 className={styles.categoryTitle}>{category.category}</h3>
-              <ul className={styles.topics}>
-                {category.topics.map((topic) => (
-                  <li key={topic.logicalId} className={styles.topic}>
-                    <Link
-                      className={styles.topicLink}
-                      href={`/topics/${topic.unitSlug}?grammar=${encodeURIComponent(topic.logicalId)}`}
-                      prefetch
-                    >
-                      <span className={styles.pattern} lang="ko">
-                        {topic.patternKo}
-                      </span>
-                      <span className={styles.topicTitle}>{topic.title.ru}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </section>
+            {group.categories.map((category) => (
+              <div key={category.category} className={styles.category}>
+                {group.categories.length > 1 ? (
+                  <h3 className={styles.categoryTitle}>
+                    {category.category === "syllabus" ? "Основная программа" : "Дополнительно"}
+                  </h3>
+                ) : null}
+                <ul className={styles.topics}>
+                  {category.topics.map((topic) => (
+                    <li key={topic.logicalId} className={styles.topic}>
+                      <Link
+                        className={styles.topicLink}
+                        href={`/topics/${topic.unitSlug}?grammar=${encodeURIComponent(topic.logicalId)}`}
+                        prefetch
+                      >
+                        <span className={styles.pattern} lang="ko">
+                          {topic.patternKo}
+                        </span>
+                        <span className={styles.topicTitle}>{topic.title.ru}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </details>
       ))}
     </div>
   );

@@ -32,6 +32,12 @@ export type ResolvedSession = {
 export type SessionResolution =
   { readonly status: "ready"; readonly session: ResolvedSession } | { readonly status: "unknown" };
 
+const SESSION_SKILL_LABELS = {
+  grammar: "Грамматика",
+  reading: "Чтение",
+  vocabulary: "Словарь",
+} as const;
+
 export async function resolveSession(sessionId: string): Promise<SessionResolution> {
   const filtered = parseFilteredSessionId(sessionId);
   if (!filtered) {
@@ -45,7 +51,7 @@ export async function resolveSession(sessionId: string): Promise<SessionResoluti
       sessionId,
       moduleSlug: filtered.request.unitSlug,
       seed: filtered.seed,
-      description: `Отфильтрованная тренировка: ${filtered.request.skill} · ${filtered.request.unitSlug}.`,
+      description: `${SESSION_SKILL_LABELS[filtered.request.skill]} · Урок ${Number(filtered.request.unitSlug.replace(/^u/i, ""))}`,
     },
   };
 }
@@ -121,10 +127,7 @@ export async function SessionExercisePanel({ session }: SessionExercisePanelProp
   } catch {
     return (
       <>
-        <PageHeader
-          description="Для выбранных фильтров нет approved заданий."
-          title="Учебная сессия"
-        />
+        <PageHeader description="Для выбранных настроек нет заданий." title="Учебная сессия" />
         <ExercisesEmptyState />
       </>
     );

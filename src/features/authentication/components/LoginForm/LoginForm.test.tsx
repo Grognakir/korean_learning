@@ -24,6 +24,8 @@ describe("LoginForm", () => {
     const user = userEvent.setup();
     render(<LoginForm />);
 
+    expect(screen.getByRole("link", { name: "Продолжить как гость" })).toHaveAttribute("href", "/");
+
     await user.type(screen.getByRole("textbox", { name: /Email/i }), "bad-email");
     await user.click(screen.getByRole("button", { name: "Получить ссылку для входа" }));
 

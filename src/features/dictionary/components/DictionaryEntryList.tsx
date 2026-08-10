@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import type { PublicDictionaryEntry } from "../domain/types";
+import { getPartOfSpeechLabel, getUnitLabels } from "../presentation/dictionaryLabels";
 import { buildDictionaryHref } from "../presentation/parseDictionaryQuery";
 import { withHomonymLabels } from "../presentation/homonymLabels";
 
@@ -47,8 +48,8 @@ export function DictionaryEntryList({
             </div>
             <p className={styles.gloss}>{entry.gloss.ru}</p>
             <div className={styles.metaRow}>
-              {entry.pos ? <span>{entry.pos}</span> : null}
-              {entry.unitSlugs.length > 0 ? <span>темы: {entry.unitSlugs.join(", ")}</span> : null}
+              {entry.pos ? <span>{getPartOfSpeechLabel(entry.pos)}</span> : null}
+              {entry.unitSlugs.length > 0 ? <span>{getUnitLabels(entry.unitSlugs)}</span> : null}
             </div>
           </li>
         ))}

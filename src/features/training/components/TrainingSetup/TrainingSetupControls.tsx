@@ -140,9 +140,9 @@ export function TrainingSetupControls({
         </label>
 
         <label className={styles.field}>
-          <span className={styles.label}>Размер сессии</span>
+          <span className={styles.label}>Количество заданий</span>
           <Select
-            aria-label="Размер сессии"
+            aria-label="Количество заданий"
             disabled={!unitSlug || sizeOptions.length === 0}
             options={[{ value: "", label: "Авто" }, ...sizeOptions]}
             value={sessionSize ? String(sessionSize) : ""}

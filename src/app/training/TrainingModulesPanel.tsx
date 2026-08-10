@@ -26,6 +26,27 @@ type TrainingModulesPanelProps = {
   }>;
 };
 
+const DIFFICULTY_LABELS = {
+  easy: "Легко",
+  hard: "Сложно",
+  medium: "Средне",
+} as const;
+
+function getExerciseCountLabel(count: number): string {
+  const remainder100 = count % 100;
+  const remainder10 = count % 10;
+  const form =
+    remainder100 >= 11 && remainder100 <= 14
+      ? "заданий"
+      : remainder10 === 1
+        ? "задание"
+        : remainder10 >= 2 && remainder10 <= 4
+          ? "задания"
+          : "заданий";
+
+  return `${count} ${form}`;
+}
+
 export async function TrainingModulesPanel({ searchParams }: TrainingModulesPanelProps) {
   const url = parseTrainingSetupQuery(await searchParams);
   const [unitsResult, grammarResult, exercisesResult] = await Promise.all([
@@ -60,7 +81,7 @@ export async function TrainingModulesPanel({ searchParams }: TrainingModulesPane
 
   const unitOptions = unitsResult.data.map((unit) => ({
     value: unit.slug,
-    label: `Урок ${unit.unitNumber}: ${unit.title.ru}`,
+    label: `Урок ${unit.unitNumber}: ${unit.title.ru.charAt(0).toUpperCase() + unit.title.ru.slice(1)}`,
   }));
   const grammarOptions = grammarResult.data.map((topic) => ({
     value: topic.logicalId,
@@ -69,7 +90,7 @@ export async function TrainingModulesPanel({ searchParams }: TrainingModulesPane
   }));
   const difficultyOptions = setup.difficulties.map((value) => ({
     value,
-    label: value,
+    label: DIFFICULTY_LABELS[value],
   }));
   const sizeOptions = Array.from({ length: setup.maxSessionSize }, (_, index) => {
     const value = String(index + 1);
@@ -98,14 +119,11 @@ export async function TrainingModulesPanel({ searchParams }: TrainingModulesPane
 
         <div className={styles.summary}>
           <p className={styles.summaryMeta}>
-            Доступно заданий: {setup.availableCount}
-            {setup.request ? ` · размер сессии: ${setup.request.sessionSize}` : null}
+            Доступно: {getExerciseCountLabel(setup.availableCount)}
+            {setup.request
+              ? ` · в тренировке: ${getExerciseCountLabel(setup.request.sessionSize)}`
+              : null}
           </p>
-          {setup.request ? (
-            <pre className={styles.requestPreview} data-testid="training-setup-request">
-              {JSON.stringify(setup.request, null, 2)}
-            </pre>
-          ) : null}
           <div className={styles.actionSlot}>
             {setup.canPreview && setup.request ? (
               <Link

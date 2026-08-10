@@ -51,7 +51,7 @@ describe("module routing integration", () => {
       }),
     );
     expect(
-      screen.getByRole("heading", { level: 1, name: "приветствие и представление" }),
+      screen.getByRole("heading", { level: 1, name: "Приветствие и представление" }),
     ).toBeInTheDocument();
     expect(screen.getByText("N입니다/입니까?")).toBeInTheDocument();
 

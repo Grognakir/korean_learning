@@ -38,5 +38,7 @@ describe("FeatureEmptyStates", () => {
 
     rerender(<ServiceUnavailableState />);
     expect(screen.getByRole("heading", { name: "Сервис недоступен" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Повторить" })).toBeInTheDocument();
+    expect(screen.queryByText(/аккаунт|облак|stack|SQL|env|uuid/i)).not.toBeInTheDocument();
   });
 });

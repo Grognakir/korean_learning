@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Suspense } from "react";
 
 import { PageHeader } from "@/components/layout";
@@ -30,18 +29,15 @@ async function LoginFormPanel({
   return (
     <section aria-label="Форма входа" className={styles.panel}>
       <LoginForm callbackError={params.error ?? null} nextPath={params.next ?? null} />
-      <div className={styles.guestAction}>
-        <Link href="/">Продолжить как гость</Link>
-      </div>
     </section>
   );
 }
 
 export default function LoginPage({ searchParams }: LoginPageProps) {
   return (
-    <PageContainer className={styles.page}>
+    <PageContainer className={styles.page} width="narrow">
       <PageHeader
-        description="Войдите по email, чтобы сохранять прогресс в облаке. Локальная тренировка остаётся доступной и без входа."
+        description="Войдите по email, чтобы сохранять прогресс в аккаунте. Тренироваться можно и без входа."
         title="Вход"
       />
       <Suspense

@@ -16,7 +16,9 @@
 
 .list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 40rem;
+  margin-inline: auto;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   list-style: none;
 }
 
@@ -53,7 +55,7 @@
   color: var(--color-accent-hover);
 }
 
-@media (max-width: 47.99rem) {
+@media (max-width: 63.99rem) {
   .navigation {
     display: block;
   }

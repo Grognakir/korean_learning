@@ -1,5 +1,8 @@
 .emptyState {
   display: grid;
+  width: 100%;
+  max-width: 56rem;
+  margin-inline: auto;
   justify-items: center;
   gap: var(--space-4);
   padding: clamp(var(--space-6), 8vw, var(--space-12));

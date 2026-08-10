@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import { Badge } from "@/components/ui/Badge";
 import { ContentSection } from "@/wrappers";
 
 import type { PublicGrammarTopicSummary, PublicUnitSummary } from "../domain/types";
@@ -19,6 +18,21 @@ type UnitDetailViewProps = {
   readonly readingPracticeAvailable: boolean;
 };
 
+function getWordCountLabel(count: number): string {
+  const remainder100 = count % 100;
+  const remainder10 = count % 10;
+  const form =
+    remainder100 >= 11 && remainder100 <= 14
+      ? "слов"
+      : remainder10 === 1
+        ? "слово"
+        : remainder10 >= 2 && remainder10 <= 4
+          ? "слова"
+          : "слов";
+
+  return `${count} ${form}`;
+}
+
 export function UnitDetailView({
   unit,
   grammarTopics,
@@ -30,28 +44,7 @@ export function UnitDetailView({
 }: UnitDetailViewProps) {
   return (
     <div className={styles.root}>
-      <div className={styles.intro}>
-        <Badge lang="ko" tone="accent">
-          {unit.level}
-        </Badge>
-        <p className={styles.meta}>Урок {unit.unitNumber}</p>
-        <h2 className={styles.koreanTitle} lang="ko">
-          {unit.title.ko}
-        </h2>
-        <p className={styles.summary}>{unit.summary.ru}</p>
-      </div>
-
-      <ContentSection description="Кратко, чему учит этот урок." title="Цели">
-        <p className={styles.goal}>{unit.summary.ru}</p>
-        <p className={styles.goal} lang="ko">
-          {unit.summary.ko}
-        </p>
-      </ContentSection>
-
-      <ContentSection
-        description="Опубликованные конструкции урока. Черновики скрыты."
-        title="Грамматика"
-      >
+      <ContentSection description="Конструкции и правила этого урока." title="Грамматика">
         {grammarTopics.length === 0 ? (
           <p className={styles.empty}>Пока нет опубликованной грамматики.</p>
         ) : (
@@ -74,36 +67,37 @@ export function UnitDetailView({
         )}
       </ContentSection>
 
-      <ContentSection description="Только проверенные материалы." title="Словарь и чтение">
+      <ContentSection description="Слова и тексты по теме урока." title="Материалы">
         <ul className={styles.counts}>
-          <li>Словарь: {vocabularyCount} проверенных записей</li>
-          <li>Чтение: {readingAvailable ? "есть опубликованные тексты" : "пока недоступно"}</li>
+          <li>
+            <Link className={styles.materialLink} href={`/dictionary?unit=${unit.slug}`} prefetch>
+              Открыть словарь · {getWordCountLabel(vocabularyCount)}
+            </Link>
+          </li>
+          <li>{readingAvailable ? "Тексты для чтения доступны" : "Тексты появятся позже"}</li>
         </ul>
       </ContentSection>
 
-      <ContentSection
-        description="Переход в настройку тренировки с выбранным навыком."
-        title="Тренировка"
-      >
+      <ContentSection description="Выберите навык для короткой практики." title="Тренировка">
         <DetailActionArea
           actions={[
             createDetailAction({
               href: buildTrainingSetupHref({ skill: "grammar", unitSlug: unit.slug }),
               label: "Грамматика",
               available: grammarPracticeAvailable,
-              unavailableReason: "Нет approved упражнений по грамматике",
+              unavailableReason: "Нет доступных заданий по грамматике",
             }),
             createDetailAction({
               href: buildTrainingSetupHref({ skill: "vocabulary", unitSlug: unit.slug }),
               label: "Словарь",
               available: vocabularyPracticeAvailable,
-              unavailableReason: "Нет approved упражнений по словарю",
+              unavailableReason: "Нет доступных заданий по словарю",
             }),
             createDetailAction({
               href: buildTrainingSetupHref({ skill: "reading", unitSlug: unit.slug }),
               label: "Чтение",
               available: readingPracticeAvailable,
-              unavailableReason: "Нет approved упражнений по чтению",
+              unavailableReason: "Нет доступных заданий по чтению",
             }),
           ]}
         />

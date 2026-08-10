@@ -10,7 +10,7 @@
   align-content: start;
   gap: clamp(var(--space-5), 2.5vw, var(--space-8));
   min-height: calc(100svh - var(--app-header-height) - var(--app-mobile-nav-reserve));
-  padding-block-start: 3.75rem;
+  padding-block-start: clamp(var(--space-8), 6vw, 3.75rem);
   padding-block-end: var(--page-block-padding);
   box-sizing: border-box;
 }
@@ -69,7 +69,7 @@
   background: var(--color-accent-soft);
 }
 
-@media (max-width: 47.99rem) {
+@media (max-width: 63.99rem) {
   .page {
     --app-mobile-nav-reserve: calc(4.75rem + env(safe-area-inset-bottom));
   }

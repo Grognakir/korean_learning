@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -80,8 +82,21 @@ export function GuestFeatureEmptyState({
 export function ServiceUnavailableState() {
   return (
     <EmptyState
-      action={<ActionLink href="/">На главную</ActionLink>}
-      description="Сервис временно недоступен. Проверьте соединение и попробуйте позже — данные аккаунта появятся здесь после подключения облака."
+      action={
+        <>
+          <button
+            className={styles.primaryAction}
+            onClick={() => window.location.reload()}
+            type="button"
+          >
+            Повторить
+          </button>
+          <ActionLink href="/" variant="secondary">
+            На главную
+          </ActionLink>
+        </>
+      }
+      description="Не удалось загрузить данные. Проверьте соединение и повторите попытку."
       title="Сервис недоступен"
     />
   );

@@ -31,7 +31,8 @@ describe("TopicsPage", () => {
       "aria-selected",
       "true",
     );
-    expect(screen.getByRole("heading", { name: /Урок 1/ })).toBeInTheDocument();
+    expect(screen.getByText("Урок 1")).toBeInTheDocument();
+    expect(screen.queryByText("syllabus")).not.toBeInTheDocument();
     expect(screen.getByText("N입니다/입니까?")).toBeInTheDocument();
   });
 

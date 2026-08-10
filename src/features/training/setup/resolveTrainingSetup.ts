@@ -98,7 +98,7 @@ export function resolveTrainingSetup(input: {
       maxSessionSize: 0,
       request,
       canPreview: false,
-      blockedReason: `Нет approved упражнений по ${SKILL_LABEL[url.skill]} для выбранных фильтров`,
+      blockedReason: `Нет доступных упражнений по ${SKILL_LABEL[url.skill]} для выбранных настроек`,
     };
   }
 

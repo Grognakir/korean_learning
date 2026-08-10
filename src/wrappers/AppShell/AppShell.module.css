@@ -10,8 +10,13 @@
   flex-direction: column;
 }
 
+/* Admin bottom nav is always visible, so reserve space at every breakpoint. */
+.adminShell {
+  padding-block-end: calc(4.75rem + env(safe-area-inset-bottom));
+}
+
 @media (max-width: 63.99rem) {
-  .shell {
+  .shell:not(.adminShell) {
     padding-block-end: calc(4.75rem + env(safe-area-inset-bottom));
   }
 }

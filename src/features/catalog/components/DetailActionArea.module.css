@@ -35,6 +35,14 @@
   color: var(--color-text-on-accent, #ffffff);
 }
 
+.action:hover,
+.action:focus-visible,
+.action:visited {
+  border-color: var(--color-accent-hover, #0a3f32);
+  background: var(--color-accent-hover, #0a3f32);
+  color: var(--color-text-on-accent, #ffffff);
+}
+
 .action:focus-visible {
   outline: 2px solid var(--color-accent, #0d513f);
   outline-offset: 2px;

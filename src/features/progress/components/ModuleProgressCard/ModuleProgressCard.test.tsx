@@ -61,7 +61,7 @@ describe("ModuleProgressCard", () => {
       />,
     );
 
-    expect(screen.getByRole("article", { name: /Первые шаги/i })).toBeInTheDocument();
+    expect(screen.getByRole("article", { name: /한국어 \(Первые шаги\)/i })).toBeInTheDocument();
     expect(screen.getByText("75%")).toBeInTheDocument();
     expect(screen.getByRole("region", { name: "Прогресс по навыкам" })).toBeInTheDocument();
     expect(screen.getByText("Грамматика")).toBeInTheDocument();

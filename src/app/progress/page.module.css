@@ -1,6 +1,6 @@
 .page {
   display: grid;
-  gap: clamp(var(--space-5), 2.5vw, var(--space-8));
-  padding-block-start: clamp(var(--space-8), 6vw, 3.75rem);
-  padding-block-end: clamp(var(--space-6), 6vw, var(--space-16));
+  gap: var(--page-gap);
+  padding-block-start: var(--page-padding-block-start);
+  padding-block-end: var(--page-padding-block-end);
 }

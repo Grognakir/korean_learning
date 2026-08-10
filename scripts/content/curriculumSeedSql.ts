@@ -1,8 +1,32 @@
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 
 import { loadPhase2ContentGraph, PHASE_2_CONTENT_ROOT } from "./contentValidation";
+
+type GrammarDetailEnrichmentFile = {
+  readonly items?: Record<
+    string,
+    {
+      bodyMd?: string;
+    }
+  >;
+};
+
+function loadGrammarDetailEnrichment(
+  rootDirectory: string,
+): NonNullable<GrammarDetailEnrichmentFile["items"]> {
+  const filePath = path.join(rootDirectory, "grammar-detail-enrichment.json");
+  if (!existsSync(filePath)) {
+    return {};
+  }
+  try {
+    const parsed = JSON.parse(readFileSync(filePath, "utf8")) as GrammarDetailEnrichmentFile;
+    return parsed.items ?? {};
+  } catch {
+    return {};
+  }
+}
 
 const DEFAULT_DICTIONARY_HOME_UNIT = "unit.u01";
 
@@ -113,6 +137,7 @@ export function buildCurriculumSeedSql(
   rootDirectory: string = PHASE_2_CONTENT_ROOT,
 ): { sql: string; stats: CurriculumSeedStats } {
   const graph = loadPhase2ContentGraph(rootDirectory);
+  const grammarDetailByLogicalId = loadGrammarDetailEnrichment(rootDirectory);
   const lines: string[] = [
     "-- Phase-2 canonical curriculum seed (generated; sample module stays separate).",
   ];
@@ -221,7 +246,11 @@ export function buildCurriculumSeedSql(
       `  ${sqlString(code)},`,
       `  ${sqlString(topic.title.ru)},`,
       `  ${sqlString(topic.summary?.ru ?? topic.title.ru)},`,
-      `  ${sqlJson({ titleKo: topic.title.ko, summaryKo: topic.summary?.ko ?? topic.title.ko })},`,
+      `  ${sqlJson({
+        titleKo: topic.title.ko,
+        summaryKo: topic.summary?.ko ?? topic.title.ko,
+        detail: grammarDetailByLogicalId[topic.logicalId] ?? null,
+      })},`,
       `  ${sqlString("1급")},`,
       `  '${status}',`,
       `  ${sortOrder},`,

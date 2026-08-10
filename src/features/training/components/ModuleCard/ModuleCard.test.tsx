@@ -16,7 +16,9 @@ describe("ModuleCard", () => {
   it("renders module metadata and a valid detail link", () => {
     render(<ModuleCard module={publishedSample} />);
 
-    expect(screen.getByRole("heading", { name: "Первые шаги в корейском" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "한국어 첫걸음 (Первые шаги в корейском)" }),
+    ).toBeInTheDocument();
     expect(screen.getByText("한국어 첫걸음")).toHaveAttribute("lang", "ko");
     expect(screen.getByText("1급")).toHaveAttribute("lang", "ko");
     expect(screen.getByText("2 темы")).toBeInTheDocument();

@@ -24,7 +24,7 @@ export function Header({ userMenu }: HeaderProps) {
           </span>
         </Link>
         <PrimaryNavigation />
-        {userMenu}
+        <div className={styles.userMenu}>{userMenu}</div>
       </div>
     </header>
   );

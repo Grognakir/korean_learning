@@ -1,5 +1,7 @@
 import type { ContentVersion, LocalizedText } from "@/types";
 
+import type { GrammarDetailEnrichment } from "./grammarDetail";
+
 export type LearningSkillId = "grammar" | "vocabulary" | "reading";
 
 export type CatalogContentCounts = {
@@ -34,6 +36,8 @@ export type PublicGrammarTopicSummary = {
   readonly summary: LocalizedText;
   readonly contentVersion: ContentVersion;
   readonly language: { readonly pattern: "ko"; readonly summary: "ru" };
+  /** Full CURRICULUM_GRAMMAR.md body via rule_payload.detail.bodyMd. */
+  readonly detail?: GrammarDetailEnrichment | null;
 };
 
 export type CatalogQuery = {

@@ -63,5 +63,6 @@ export function mapFixtureGrammarToPublic(
     summary: { ko: topic.summaryKo, ru: topic.summaryRu },
     contentVersion: topic.contentVersion,
     language: { pattern: "ko", summary: "ru" },
+    detail: topic.detail ?? null,
   };
 }

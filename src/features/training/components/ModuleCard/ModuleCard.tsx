@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/Badge";
+import { BilingualTitle } from "@/features/catalog/presentation/BilingualTitle";
+import { formatBilingualLabel } from "@/features/catalog/presentation/formatBilingualLabel";
 import { selectPublishedTopics } from "@/features/training/domain";
 import type { LearningModuleDefinition } from "@/types";
 
@@ -35,7 +37,7 @@ export function ModuleCard({ module }: ModuleCardProps) {
   return (
     <article className={styles.card}>
       <Link
-        aria-label={`Открыть модуль «${module.title.ru}»`}
+        aria-label={`Открыть модуль «${formatBilingualLabel(module.title.ko, module.title.ru)}»`}
         className={styles.link}
         href={`/topics/${module.slug}`}
       >
@@ -46,10 +48,7 @@ export function ModuleCard({ module }: ModuleCardProps) {
           <span>Версия {module.contentVersion}</span>
         </div>
         <div className={styles.copy}>
-          <p className={styles.koreanTitle} lang="ko">
-            {module.title.ko}
-          </p>
-          <h2>{module.title.ru}</h2>
+          <BilingualTitle as="h2" ko={module.title.ko} ru={module.title.ru} />
           <p>{module.description.ru}</p>
         </div>
         <div className={styles.action}>

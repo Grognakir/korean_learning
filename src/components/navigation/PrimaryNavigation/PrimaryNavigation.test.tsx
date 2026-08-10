@@ -26,4 +26,10 @@ describe("PrimaryNavigation", () => {
     expect(screen.getByRole("link", { name: "Темы" })).toHaveAttribute("aria-current", "page");
     expect(screen.getByRole("link", { name: "Главная" })).not.toHaveAttribute("aria-current");
   });
+
+  it("hides learner navigation on admin routes", () => {
+    usePathname.mockReturnValue("/admin/units");
+    const { container } = render(<PrimaryNavigation />);
+    expect(container).toBeEmptyDOMElement();
+  });
 });

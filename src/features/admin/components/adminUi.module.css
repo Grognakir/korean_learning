@@ -1,0 +1,330 @@
+.page {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.heading {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.backLink {
+  display: inline-grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.backLink:hover,
+.backLink:focus-visible {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-hover);
+  outline: none;
+}
+
+.backLinkIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.form {
+  display: grid;
+  gap: var(--space-4);
+  width: 100%;
+  max-width: none;
+}
+
+.formRow {
+  display: grid;
+  column-gap: var(--space-4);
+  row-gap: var(--space-2);
+  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+@media (min-width: 48rem) {
+  .formRow {
+    /* label | control | hint | error — shared tracks so controls match height */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .formRow > * {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    min-width: 0;
+  }
+
+  .formRow > * > :nth-child(2) {
+    width: 100%;
+    min-height: 2.75rem;
+    box-sizing: border-box;
+    align-self: stretch;
+  }
+
+  .formRow > * > textarea:nth-child(2) {
+    min-height: 8rem;
+    height: 100%;
+  }
+}
+
+@media (min-width: 64rem) {
+  .formRow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.label {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.error {
+  margin: 0;
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-heading);
+}
+
+.toolbarLink {
+  display: inline-grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-accent-hover);
+  text-decoration: none;
+}
+
+.toolbarLinkPlus {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 2.5;
+}
+
+.toolbarLink:hover,
+.toolbarLink:focus-visible {
+  background: var(--color-accent-soft);
+  outline: none;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+.table th,
+.table td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  text-align: start;
+  vertical-align: middle;
+}
+
+.table th {
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-semibold);
+}
+
+.table tbody tr {
+  position: relative;
+  transition: background-color var(--transition-fast);
+}
+
+.table tbody tr:hover,
+.table tbody tr:has(:focus-visible) {
+  background: var(--color-accent-soft);
+}
+
+.rowStretchLink {
+  color: inherit;
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.rowStretchLink::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+}
+
+.rowStretchLink:focus-visible {
+  outline: none;
+}
+
+.rowStretchLink:focus-visible::after {
+  outline: 2px solid var(--color-focus);
+  outline-offset: -2px;
+}
+
+.empty {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.filters {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: 1fr;
+  align-items: end;
+  min-width: 0;
+}
+
+@media (min-width: 48rem) {
+  .filters {
+    grid-template-columns: minmax(0, 1.4fr) minmax(10rem, 0.8fr) minmax(12rem, 1fr);
+  }
+}
+
+.filterField {
+  display: grid;
+  gap: var(--space-2);
+  min-width: 0;
+  align-content: end;
+}
+
+.filterLabel {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+}
+
+.listMeta {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.pageLink,
+.pageDisabled {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  min-width: 5.5rem;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.pageLink {
+  border: 1px solid var(--color-border);
+  color: inherit;
+  text-decoration: none;
+  background: var(--color-surface-muted);
+}
+
+.pageLink:hover {
+  background: var(--color-accent-soft);
+}
+
+.pageLink:focus-visible {
+  background: var(--color-accent-soft);
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.pageDisabled {
+  border: 1px solid transparent;
+  color: var(--color-text-muted);
+}
+
+.pageStatus {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.cards {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.cardTitle {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.cardCount {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.cardMeta {
+  margin: 0 0 var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.cardLink {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.cardLink:hover,
+.cardLink:focus-visible {
+  color: var(--color-accent-hover);
+  outline: none;
+}

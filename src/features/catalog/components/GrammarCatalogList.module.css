@@ -113,35 +113,9 @@
   min-width: 0;
 }
 
-.topicLink {
-  display: grid;
-  min-height: 2.75rem;
-  gap: var(--space-1);
-  padding: var(--space-3);
-  border-radius: var(--radius-md);
-  background: var(--color-surface-muted);
-  color: inherit;
-  text-decoration: none;
-}
-
-.topicLink:hover {
-  background: var(--color-accent-soft);
-}
-
-.unitLink:focus-visible,
-.topicLink:focus-visible {
+.unitLink:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
-}
-
-.pattern {
-  font-weight: var(--font-weight-bold);
-  overflow-wrap: break-word;
-}
-
-.topicTitle {
-  color: var(--color-text-muted);
-  overflow-wrap: break-word;
 }
 
 @media (max-width: 30rem) {

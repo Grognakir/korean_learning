@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 
 import { CatalogSectionSkeleton } from "@/components/feedback";
+import { formatBilingualLabel } from "@/features/catalog/presentation/formatBilingualLabel";
 import {
   getCachedPublishedModules,
   getCachedPublishedModuleBySlug,
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: ModulePageProps): Promise<Met
   const curriculum = await getCachedPublicUnitBySlug(moduleSlug);
   if (curriculum.status === "ready" && curriculum.data) {
     return {
-      title: curriculum.data.title.ru,
+      title: formatBilingualLabel(curriculum.data.title.ko, curriculum.data.title.ru),
       description: curriculum.data.summary.ru,
     };
   }

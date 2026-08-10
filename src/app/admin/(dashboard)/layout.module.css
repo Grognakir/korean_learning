@@ -1,0 +1,12 @@
+.content {
+  display: grid;
+  gap: var(--page-gap);
+  padding-block-start: var(--page-padding-block-start);
+  padding-block-end: var(--page-padding-block-end);
+}
+
+.loading {
+  margin: var(--space-8) auto;
+  color: var(--color-text-muted);
+  text-align: center;
+}

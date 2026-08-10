@@ -41,13 +41,10 @@ describe("UnitDetailView", () => {
   it("renders a compact learner-facing lesson without internal labels", () => {
     render(
       <UnitDetailView
-        grammarPracticeAvailable
         grammarTopics={[topic]}
         readingAvailable
-        readingPracticeAvailable
         unit={unit}
         vocabularyCount={2}
-        vocabularyPracticeAvailable
       />,
     );
 
@@ -57,5 +54,6 @@ describe("UnitDetailView", () => {
     );
     expect(screen.queryByText(/approved|syllabus|Черновики/i)).not.toBeInTheDocument();
     expect(screen.queryByRole("heading", { name: "Цели" })).not.toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: "Тренировка" })).not.toBeInTheDocument();
   });
 });

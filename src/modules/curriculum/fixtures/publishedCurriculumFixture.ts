@@ -30,6 +30,9 @@ export type FixtureGrammarTopic = {
   readonly summaryRu: string;
   readonly contentVersion: ContentVersion;
   readonly status: "published";
+  readonly detail?: {
+    readonly bodyMd?: string;
+  } | null;
 };
 
 export type FixtureDictionaryEntry = {

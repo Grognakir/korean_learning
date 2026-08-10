@@ -6,8 +6,14 @@ import { TopicsEmptyState, ServiceUnavailableState } from "@/components/feedback
 import { PageHeader } from "@/components/layout";
 import { Badge } from "@/components/ui/Badge";
 import { GrammarDetailView } from "@/features/catalog/components/GrammarDetailView";
-import { UnitDetailView } from "@/features/catalog/components/UnitDetailView";
+import {
+  UnitDetailView,
+  UnitPracticeActions,
+} from "@/features/catalog/components/UnitDetailView";
+import { BilingualTitle } from "@/features/catalog/presentation/BilingualTitle";
+import { formatGrammarPatternDisplay } from "@/features/catalog/presentation/formatGrammarPatternDisplay";
 import { parseGrammarQuery } from "@/features/catalog/presentation/parseGrammarQuery";
+import { renderMarkedTerms } from "@/features/catalog/presentation/renderMarkedTerms";
 import { selectPublishedTopics } from "@/features/training/domain/moduleSelectors";
 import { getCachedPublishedModuleBySlug } from "@/modules/cachedLearningContent";
 import {
@@ -76,13 +82,12 @@ export async function ModuleDetailPanel({
     return (
       <>
         <PageHeader
-          actions={
-            <Link className={styles.secondaryAction} href={`/topics/${moduleSlug}`}>
-              К теме
-            </Link>
-          }
+          backHref={`/topics/${moduleSlug}`}
+          backLabel="К теме"
           eyebrow={`Урок ${topic.unitNumber} · Грамматика`}
-          title={<span lang="ko">{topic.patternKo}</span>}
+          title={
+            <span lang="ko">{formatGrammarPatternDisplay(topic.patternKo)}</span>
+          }
         />
         <GrammarDetailView
           practiceAvailable={exercisesResult.data.length > 0}
@@ -138,23 +143,24 @@ export async function ModuleDetailPanel({
     return (
       <>
         <PageHeader
-          actions={
-            <Link className={styles.secondaryAction} href="/topics">
-              К каталогу
-            </Link>
+          backHref="/topics"
+          backLabel="К каталогу"
+          belowTitle={
+            <UnitPracticeActions
+              grammarPracticeAvailable={grammarEx.data.length > 0}
+              readingPracticeAvailable={readingEx.data.length > 0}
+              unit={unit}
+              vocabularyPracticeAvailable={vocabEx.data.length > 0}
+            />
           }
-          description={<span lang="ko">{unit.title.ko}</span>}
           eyebrow={`Урок ${unit.unitNumber} · ${unit.level}`}
-          title={unit.title.ru.charAt(0).toUpperCase() + unit.title.ru.slice(1)}
+          title={<BilingualTitle ko={unit.title.ko} ru={unit.title.ru} />}
         />
         <UnitDetailView
-          grammarPracticeAvailable={grammarEx.data.length > 0}
           grammarTopics={grammarResult.data}
           readingAvailable={passagesResult.data.length > 0}
-          readingPracticeAvailable={readingEx.data.length > 0}
           unit={unit}
           vocabularyCount={dictionaryResult.data.length}
-          vocabularyPracticeAvailable={vocabEx.data.length > 0}
         />
       </>
     );
@@ -211,11 +217,10 @@ export async function ModuleDetailPanel({
               <li className={styles.topicCard} key={topic.id}>
                 <span className={styles.topicNumber}>{String(index + 1).padStart(2, "0")}</span>
                 <div>
-                  <p className={styles.topicKoreanTitle} lang="ko">
-                    {topic.title.ko}
-                  </p>
-                  <h3>{topic.title.ru}</h3>
-                  <p>{topic.summary.ru}</p>
+                  <h3>
+                    <BilingualTitle ko={topic.title.ko} ru={topic.title.ru} />
+                  </h3>
+                  <p>{renderMarkedTerms(topic.summary.ru)}</p>
                 </div>
               </li>
             ))}

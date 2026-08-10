@@ -1,0 +1,43 @@
+.link {
+  display: grid;
+  gap: 0.2rem;
+  min-height: 2.75rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 0.55rem;
+  color: inherit;
+  text-decoration: none;
+  background: var(--color-surface-muted, #f7f4ee);
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease;
+}
+
+.link:hover,
+.link:focus-visible {
+  border-color: color-mix(in srgb, var(--color-accent, #0d513f) 35%, transparent);
+  background: var(--color-accent-soft, #e7f5ef);
+  color: inherit;
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--color-accent, #0d513f);
+  outline-offset: 2px;
+}
+
+.link:hover .pattern,
+.link:focus-visible .pattern {
+  color: var(--color-accent, #0d513f);
+}
+
+.pattern {
+  color: var(--color-text, #1f1a14);
+  font-weight: 700;
+  overflow-wrap: break-word;
+  transition: color 140ms ease;
+}
+
+.description {
+  color: var(--color-text-muted, #5c564c);
+  overflow-wrap: break-word;
+}

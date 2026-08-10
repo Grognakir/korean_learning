@@ -1,4 +1,5 @@
 import { CatalogEmptyState, ServiceUnavailableState } from "@/components/feedback";
+import { formatBilingualLabel } from "@/features/catalog/presentation/formatBilingualLabel";
 import { DictionaryEntryList } from "@/features/dictionary/components/DictionaryEntryList";
 import { DictionaryFilters } from "@/features/dictionary/components/DictionaryFilters";
 import { getPartOfSpeechLabel } from "@/features/dictionary/presentation/dictionaryLabels";
@@ -37,7 +38,7 @@ export async function DictionaryCatalog({ searchParams }: DictionaryCatalogProps
 
   const unitOptions = unitsResult.data.map((unit) => ({
     value: unit.slug,
-    label: `Урок ${unit.unitNumber}: ${unit.title.ru.charAt(0).toUpperCase() + unit.title.ru.slice(1)}`,
+    label: `Урок ${unit.unitNumber}: ${formatBilingualLabel(unit.title.ko, unit.title.ru)}`,
   }));
   const posOptions = pageResult.data.posOptions.map((value) => ({
     value,

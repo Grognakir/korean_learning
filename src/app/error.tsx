@@ -20,7 +20,7 @@ export default function AppError({ error, retry }: AppErrorProps) {
   }, [error]);
 
   return (
-    <PageContainer>
+    <PageContainer className="page-section">
       <RouteError onRetry={retry} />
     </PageContainer>
   );

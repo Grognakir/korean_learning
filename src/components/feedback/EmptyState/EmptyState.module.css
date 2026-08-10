@@ -1,7 +1,7 @@
 .emptyState {
   display: grid;
   width: 100%;
-  max-width: 56rem;
+  max-width: var(--content-width-narrow);
   margin-inline: auto;
   justify-items: center;
   gap: var(--space-4);

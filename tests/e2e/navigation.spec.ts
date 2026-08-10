@@ -39,7 +39,10 @@ test.describe("navigation", () => {
 
     await page.goto("/topics/u01");
     await expect(
-      page.getByRole("heading", { level: 1, name: "Приветствие и представление" }),
+      page.getByRole("heading", {
+        level: 1,
+        name: "인사와 소개 (Приветствие и представление)",
+      }),
     ).toBeVisible();
     await page.getByRole("link", { name: /N입니다\/입니까\?/ }).click();
     await expect(page).toHaveURL(/grammar=grammar\.u01\.n01/);

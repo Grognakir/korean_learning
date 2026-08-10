@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import type { PublicUnitSummary } from "../domain/types";
+import { BilingualTitle } from "../presentation/BilingualTitle";
 
 import styles from "./UnitSummaryCard.module.css";
 
@@ -19,10 +20,12 @@ export function UnitSummaryCard({ unit }: UnitSummaryCardProps) {
     <article className={styles.card}>
       <Link className={styles.link} href={`/topics/${unit.slug}`} prefetch>
         <p className={styles.meta}>Урок {unit.unitNumber}</p>
-        <h2 className={styles.title}>
-          <span lang="ko">{unit.title.ko}</span>
-        </h2>
-        <p className={styles.summary}>{unit.title.ru}</p>
+        <BilingualTitle
+          as="h2"
+          className={styles.title}
+          ko={unit.title.ko}
+          ru={unit.title.ru}
+        />
         <p className={styles.counts}>
           {available > 0
             ? `Доступно материалов: ${available}`

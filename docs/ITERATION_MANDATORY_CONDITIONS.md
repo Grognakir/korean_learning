@@ -220,7 +220,8 @@
 - Не начинать следующую feature в том же шаге.
 - Не пушить промежуточные iteration branches (кроме исключений плана: preview/CP).
 - Не публиковать `draft`/`needs_review` curriculum content; не использовать HTML/TSV как runtime-источник истины.
-- Не добавлять OpenAI, password login, OAuth, payments, SM-2/FSRS, Storage bucket, админку.
+- Не добавлять OpenAI, password login для learner, OAuth, payments, SM-2/FSRS, Storage bucket.
+- Минимальная `/admin` content console допустима только как явное post-CP-9 / фаза-3 направление (`APPLICATION_PLAN.md` §25); не смешивать её с незакрытой карточкой фазы 2.
 - Не ставить Playwright раньше F1-I22.
 - Не расширять MVP «заодно».
 - Не вводить нативные `<select>` / системные dropdown и не оставлять «голые» нативные формы вне design-system (§4.7).

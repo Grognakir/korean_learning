@@ -34,7 +34,11 @@ type TopicRow = {
   title: string;
   summary_ru: string;
   content_version: string;
-  rule_payload: { titleKo?: string; summaryKo?: string } | null;
+  rule_payload: {
+    titleKo?: string;
+    summaryKo?: string;
+    detail?: PublicGrammarTopicSummary["detail"];
+  } | null;
 };
 
 type PublishedCatalogSnapshot = {
@@ -186,6 +190,7 @@ export async function loadPublishedCatalogSnapshot(
         summary: { ko: payload.summaryKo ?? topic.pattern_ko, ru: topic.summary_ru },
         contentVersion: topic.content_version as PublicGrammarTopicSummary["contentVersion"],
         language: { pattern: "ko", summary: "ru" },
+        detail: payload.detail ?? null,
       },
     ];
   });

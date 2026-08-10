@@ -60,6 +60,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -97,8 +98,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N입니다/입니까?"],
+      "acceptedAnswers": [
+        "N입니다/입니까?"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -163,6 +167,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -200,8 +205,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N이/가"],
+      "acceptedAnswers": [
+        "N이/가"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -266,6 +274,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -303,8 +312,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N은/는①", "N은/는"],
+      "acceptedAnswers": [
+        "N은/는①",
+        "N은/는"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -369,6 +382,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -406,8 +420,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N이/가 아니다"],
+      "acceptedAnswers": [
+        "N이/가 아니다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -472,6 +489,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -509,8 +527,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N도"],
+      "acceptedAnswers": [
+        "N도"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -575,6 +596,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -612,8 +634,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["이/그/저"],
+      "acceptedAnswers": [
+        "이/그/저"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -678,6 +703,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -715,8 +741,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N의"],
+      "acceptedAnswers": [
+        "N의"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -781,6 +810,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -818,8 +848,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N에①", "N에"],
+      "acceptedAnswers": [
+        "N에①",
+        "N에"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -884,6 +918,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -921,8 +956,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N이/가 있다/없다"],
+      "acceptedAnswers": [
+        "N이/가 있다/없다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -987,6 +1025,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1024,8 +1063,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-(스)ㅂ니다/-(스)ㅂ니까?"],
+      "acceptedAnswers": [
+        "V-(스)ㅂ니다/-(스)ㅂ니까?"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -1090,6 +1132,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1127,8 +1170,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N을/를"],
+      "acceptedAnswers": [
+        "N을/를"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -1193,6 +1239,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1230,8 +1277,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N만"],
+      "acceptedAnswers": [
+        "N만"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -1296,6 +1346,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1333,8 +1384,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N에 가다/오다"],
+      "acceptedAnswers": [
+        "N에 가다/오다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -1399,6 +1453,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1436,8 +1491,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["수①", "수"],
+      "acceptedAnswers": [
+        "수①",
+        "수"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -1502,6 +1561,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1539,8 +1599,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N와/과 N"],
+      "acceptedAnswers": [
+        "N와/과 N"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -1605,6 +1668,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1642,8 +1706,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N하고 N"],
+      "acceptedAnswers": [
+        "N하고 N"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -1708,6 +1775,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1745,8 +1813,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N에서"],
+      "acceptedAnswers": [
+        "N에서"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -1811,6 +1882,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1848,8 +1920,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["수②", "수"],
+      "acceptedAnswers": [
+        "수②",
+        "수"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -1914,6 +1990,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -1951,8 +2028,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N에②", "N에"],
+      "acceptedAnswers": [
+        "N에②",
+        "N에"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2017,6 +2098,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2054,8 +2136,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-아/어/여요①", "V-아/어/여요"],
+      "acceptedAnswers": [
+        "V-아/어/여요①",
+        "V-아/어/여요"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2120,6 +2206,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2157,8 +2244,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N이에요/예요"],
+      "acceptedAnswers": [
+        "N이에요/예요"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2223,6 +2313,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2260,8 +2351,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["수③", "수"],
+      "acceptedAnswers": [
+        "수③",
+        "수"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2326,6 +2421,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2363,8 +2459,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N부터 N까지"],
+      "acceptedAnswers": [
+        "N부터 N까지"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2429,6 +2528,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2466,8 +2566,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["안 V/V-지 않다"],
+      "acceptedAnswers": [
+        "안 V/V-지 않다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2532,6 +2635,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2569,8 +2673,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-았/었/였-"],
+      "acceptedAnswers": [
+        "V-았/었/였-"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2635,6 +2742,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2672,8 +2780,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N이었/였-"],
+      "acceptedAnswers": [
+        "N이었/였-"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2738,6 +2849,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2775,8 +2887,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-고①", "V-고"],
+      "acceptedAnswers": [
+        "V-고①",
+        "V-고"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2841,6 +2957,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2878,8 +2995,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N(이)고"],
+      "acceptedAnswers": [
+        "N(이)고"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -2944,6 +3064,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -2981,8 +3102,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-아/어/여 보다"],
+      "acceptedAnswers": [
+        "AV-아/어/여 보다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3047,6 +3171,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -3084,8 +3209,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["ㅡ 동사"],
+      "acceptedAnswers": [
+        "ㅡ 동사"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3150,6 +3278,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -3187,8 +3316,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N은/는②", "N은/는"],
+      "acceptedAnswers": [
+        "N은/는②",
+        "N은/는"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3253,6 +3386,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -3290,8 +3424,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["ㅂ 동사"],
+      "acceptedAnswers": [
+        "ㅂ 동사"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3356,6 +3493,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -3393,8 +3531,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-아/어/여서①", "AV-아/어/여서"],
+      "acceptedAnswers": [
+        "AV-아/어/여서①",
+        "AV-아/어/여서"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3459,6 +3601,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -3496,8 +3639,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N(으)로①", "N(으)로"],
+      "acceptedAnswers": [
+        "N(으)로①",
+        "N(으)로"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3562,6 +3709,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -3599,8 +3747,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)러 가다/오다"],
+      "acceptedAnswers": [
+        "AV-(으)러 가다/오다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3665,6 +3816,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -3702,8 +3854,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)ㄹ 거예요①", "AV-(으)ㄹ 거예요"],
+      "acceptedAnswers": [
+        "AV-(으)ㄹ 거예요①",
+        "AV-(으)ㄹ 거예요"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3768,6 +3924,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -3805,8 +3962,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-고②", "AV-고"],
+      "acceptedAnswers": [
+        "AV-고②",
+        "AV-고"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3871,6 +4032,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -3908,8 +4070,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-기 전에/N 전에"],
+      "acceptedAnswers": [
+        "AV-기 전에/N 전에"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -3974,6 +4139,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4011,8 +4177,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)ㄴ 후에/N 후에"],
+      "acceptedAnswers": [
+        "AV-(으)ㄴ 후에/N 후에"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -4077,6 +4246,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4114,8 +4284,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N 동안"],
+      "acceptedAnswers": [
+        "N 동안"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -4180,6 +4353,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4217,8 +4391,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["수④", "수"],
+      "acceptedAnswers": [
+        "수④",
+        "수"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -4283,6 +4461,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4320,8 +4499,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)세요/-(으)십시오"],
+      "acceptedAnswers": [
+        "AV-(으)세요/-(으)십시오"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -4386,6 +4568,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4423,8 +4606,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N이랑"],
+      "acceptedAnswers": [
+        "N이랑"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -4489,6 +4675,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4526,8 +4713,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-고 있다①", "AV-고 있다"],
+      "acceptedAnswers": [
+        "AV-고 있다①",
+        "AV-고 있다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -4592,6 +4783,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4629,8 +4821,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N에게(서)/한테(서)"],
+      "acceptedAnswers": [
+        "N에게(서)/한테(서)"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -4695,6 +4890,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4732,8 +4928,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)ㄹ까요?①", "AV-(으)ㄹ까요?"],
+      "acceptedAnswers": [
+        "AV-(으)ㄹ까요?①",
+        "AV-(으)ㄹ까요?"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -4798,6 +4998,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4835,8 +5036,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)ㅂ시다"],
+      "acceptedAnswers": [
+        "AV-(으)ㅂ시다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -4901,6 +5105,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -4938,8 +5143,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-(으)니까①/N(이)니까", "V-(으)니까/N(이)니까"],
+      "acceptedAnswers": [
+        "V-(으)니까①/N(이)니까",
+        "V-(으)니까/N(이)니까"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5004,6 +5213,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5041,8 +5251,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-고 싶다"],
+      "acceptedAnswers": [
+        "AV-고 싶다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5107,6 +5320,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5144,8 +5358,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-겠-①", "AV-겠-"],
+      "acceptedAnswers": [
+        "AV-겠-①",
+        "AV-겠-"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5210,6 +5428,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5247,8 +5466,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-지요?/N(이)지요?"],
+      "acceptedAnswers": [
+        "V-지요?/N(이)지요?"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5313,6 +5535,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5350,8 +5573,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-겠-②/N이겠-", "V-겠-/N이겠-"],
+      "acceptedAnswers": [
+        "V-겠-②/N이겠-",
+        "V-겠-/N이겠-"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5416,6 +5643,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5453,8 +5681,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-아/어/여 주다"],
+      "acceptedAnswers": [
+        "AV-아/어/여 주다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5519,6 +5750,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5556,8 +5788,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-(으)면/N이면"],
+      "acceptedAnswers": [
+        "V-(으)면/N이면"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5622,6 +5857,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5659,8 +5895,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["ㄷ 동사"],
+      "acceptedAnswers": [
+        "ㄷ 동사"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5725,6 +5964,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5762,8 +6002,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-아/어/여서②/N이어/여서", "V-아/어/여서/N이어/여서"],
+      "acceptedAnswers": [
+        "V-아/어/여서②/N이어/여서",
+        "V-아/어/여서/N이어/여서"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5828,6 +6072,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5865,8 +6110,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)ㄹ 수 있다/없다"],
+      "acceptedAnswers": [
+        "AV-(으)ㄹ 수 있다/없다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -5931,6 +6179,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -5968,8 +6217,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-(으)ㄹ까요?②/N일까요?", "V-(으)ㄹ까요?/N일까요?"],
+      "acceptedAnswers": [
+        "V-(으)ㄹ까요?②/N일까요?",
+        "V-(으)ㄹ까요?/N일까요?"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6034,6 +6287,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6071,8 +6325,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)ㄹ 거예요②/N일 거예요", "AV-(으)ㄹ 거예요/N일 거예요"],
+      "acceptedAnswers": [
+        "AV-(으)ㄹ 거예요②/N일 거예요",
+        "AV-(으)ㄹ 거예요/N일 거예요"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6137,6 +6395,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6174,8 +6433,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)ㄹ게요"],
+      "acceptedAnswers": [
+        "AV-(으)ㄹ게요"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6240,6 +6502,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6277,8 +6540,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-아/어/여요②", "AV-아/어/여요"],
+      "acceptedAnswers": [
+        "AV-아/어/여요②",
+        "AV-아/어/여요"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6343,6 +6610,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6380,8 +6648,12 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N(으)로②", "N(으)로"],
+      "acceptedAnswers": [
+        "N(으)로②",
+        "N(으)로"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6446,6 +6718,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6483,8 +6756,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["ㄹ 동사"],
+      "acceptedAnswers": [
+        "ㄹ 동사"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6549,6 +6825,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6586,8 +6863,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-거나/N이나"],
+      "acceptedAnswers": [
+        "V-거나/N이나"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6652,6 +6932,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6689,8 +6970,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["못 AV/AV-지 못하다"],
+      "acceptedAnswers": [
+        "못 AV/AV-지 못하다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6750,11 +7034,12 @@
         {
           "id": "opt4",
           "label": {
-            "ko": "V-아/어/야 되다/하다",
-            "ru": "V-아/어/야 되다/하다"
+            "ko": "V-아/어/여야 되다/하다",
+            "ru": "V-아/어/여야 되다/하다"
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6792,8 +7077,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)려고 하다"],
+      "acceptedAnswers": [
+        "AV-(으)려고 하다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6853,11 +7141,12 @@
         {
           "id": "opt4",
           "label": {
-            "ko": "V-아/어/야 되다/하다",
-            "ru": "V-아/어/야 되다/하다"
+            "ko": "V-아/어/여야 되다/하다",
+            "ru": "V-아/어/여야 되다/하다"
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6895,8 +7184,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N께서/N께서는"],
+      "acceptedAnswers": [
+        "N께서/N께서는"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -6956,11 +7248,12 @@
         {
           "id": "opt4",
           "label": {
-            "ko": "V-아/어/야 되다/하다",
-            "ru": "V-아/어/야 되다/하다"
+            "ko": "V-아/어/여야 되다/하다",
+            "ru": "V-아/어/여야 되다/하다"
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -6998,8 +7291,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-(으)시-/N이시-"],
+      "acceptedAnswers": [
+        "V-(으)시-/N이시-"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7030,16 +7326,16 @@
         "ru": "Выберите корейский паттерн для правила: «выражает обязанность или необходимость.»"
       },
       "explanation": {
-        "ko": "정답은 「V-아/어/야 되다/하다」입니다. 이 패턴은 「выражает обязанность или необходимость」 의미로 쓰입니다.",
-        "ru": "Верный паттерн — «V-아/어/야 되다/하다»: выражает обязанность или необходимость."
+        "ko": "정답은 「V-아/어/여야 되다/하다」입니다. 이 패턴은 「выражает обязанность или необходимость」 의미로 쓰입니다.",
+        "ru": "Верный паттерн — «V-아/어/여야 되다/하다»: выражает обязанность или необходимость."
       },
       "difficulty": "intro",
       "options": [
         {
           "id": "opt1",
           "label": {
-            "ko": "V-아/어/야 되다/하다",
-            "ru": "V-아/어/야 되다/하다"
+            "ko": "V-아/어/여야 되다/하다",
+            "ru": "V-아/어/여야 되다/하다"
           }
         },
         {
@@ -7064,6 +7360,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -7096,13 +7393,16 @@
         "ru": "Напишите корейский паттерн для правила: «выражает обязанность или необходимость.»"
       },
       "explanation": {
-        "ko": "쓰기 연습입니다. 정답 패턴은 「V-아/어/야 되다/하다」이며, 「выражает обязанность или необходимость」 의미입니다.",
-        "ru": "Напишите паттерн «V-아/어/야 되다/하다» — выражает обязанность или необходимость."
+        "ko": "쓰기 연습입니다. 정답 패턴은 「V-아/어/여야 되다/하다」이며, 「выражает обязанность или необходимость」 의미입니다.",
+        "ru": "Напишите паттерн «V-아/어/여야 되다/하다» — выражает обязанность или необходимость."
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-아/어/야 되다/하다"],
+      "acceptedAnswers": [
+        "V-아/어/여야 되다/하다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7167,6 +7467,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -7204,8 +7505,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-지 말다"],
+      "acceptedAnswers": [
+        "AV-지 말다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7265,11 +7569,12 @@
         {
           "id": "opt4",
           "label": {
-            "ko": "V-아/어/여도 되다",
-            "ru": "V-아/어/여도 되다"
+            "ko": "V-아/어/여도 되다(좋다, 괜찮다)",
+            "ru": "V-아/어/여도 되다(좋다, 괜찮다)"
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -7307,8 +7612,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N보다"],
+      "acceptedAnswers": [
+        "N보다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7368,11 +7676,12 @@
         {
           "id": "opt4",
           "label": {
-            "ko": "V-아/어/여도 되다",
-            "ru": "V-아/어/여도 되다"
+            "ko": "V-아/어/여도 되다(좋다, 괜찮다)",
+            "ru": "V-아/어/여도 되다(좋다, 괜찮다)"
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -7410,8 +7719,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-지만/N(이)지만"],
+      "acceptedAnswers": [
+        "V-지만/N(이)지만"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7471,11 +7783,12 @@
         {
           "id": "opt4",
           "label": {
-            "ko": "V-아/어/여도 되다",
-            "ru": "V-아/어/여도 되다"
+            "ko": "V-아/어/여도 되다(좋다, 괜찮다)",
+            "ru": "V-아/어/여도 되다(좋다, 괜찮다)"
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -7513,8 +7826,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["DV-(으)ㄴ N"],
+      "acceptedAnswers": [
+        "DV-(으)ㄴ N"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7542,19 +7858,19 @@
       "dictionaryEntryLogicalIds": [],
       "prompt": {
         "ko": "알맞은 문법 패턴을 고르십시오.",
-        "ru": "Выберите корейский паттерн для правила: «запрашивает или даёт разрешение: «можно».»"
+        "ru": "Выберите корейский паттерн для правила: «запрашивает или даёт разрешение: «можно»; варианты с `좋다` / `괜찮다`.»"
       },
       "explanation": {
-        "ko": "정답은 「V-아/어/여도 되다」입니다. 이 패턴은 「запрашивает или даёт разрешение: «можно»」 의미로 쓰입니다.",
-        "ru": "Верный паттерн — «V-아/어/여도 되다»: запрашивает или даёт разрешение: «можно»."
+        "ko": "정답은 「V-아/어/여도 되다(좋다, 괜찮다)」입니다. 이 패턴은 「запрашивает или даёт разрешение: «можно»; варианты с `좋다` / `괜찮다`」 의미로 쓰입니다.",
+        "ru": "Верный паттерн — «V-아/어/여도 되다(좋다, 괜찮다)»: запрашивает или даёт разрешение: «можно»; варианты с `좋다` / `괜찮다`."
       },
       "difficulty": "intro",
       "options": [
         {
           "id": "opt1",
           "label": {
-            "ko": "V-아/어/여도 되다",
-            "ru": "V-아/어/여도 되다"
+            "ko": "V-아/어/여도 되다(좋다, 괜찮다)",
+            "ru": "V-아/어/여도 되다(좋다, 괜찮다)"
           }
         },
         {
@@ -7579,6 +7895,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -7608,16 +7925,19 @@
       "dictionaryEntryLogicalIds": [],
       "prompt": {
         "ko": "설명에 맞는 문법 패턴을 쓰십시오.",
-        "ru": "Напишите корейский паттерн для правила: «запрашивает или даёт разрешение: «можно».»"
+        "ru": "Напишите корейский паттерн для правила: «запрашивает или даёт разрешение: «можно»; варианты с `좋다` / `괜찮다`.»"
       },
       "explanation": {
-        "ko": "쓰기 연습입니다. 정답 패턴은 「V-아/어/여도 되다」이며, 「запрашивает или даёт разрешение: «можно»」 의미입니다.",
-        "ru": "Напишите паттерн «V-아/어/여도 되다» — запрашивает или даёт разрешение: «можно»."
+        "ko": "쓰기 연습입니다. 정답 패턴은 「V-아/어/여도 되다(좋다, 괜찮다)」이며, 「запрашивает или даёт разрешение: «можно»; варианты с `좋다` / `괜찮다`」 의미입니다.",
+        "ru": "Напишите паттерн «V-아/어/여도 되다(좋다, 괜찮다)» — запрашивает или даёт разрешение: «можно»; варианты с `좋다` / `괜찮다`."
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-아/어/여도 되다"],
+      "acceptedAnswers": [
+        "V-아/어/여도 되다(좋다, 괜찮다)"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7682,6 +8002,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -7719,8 +8040,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)면 안 되다"],
+      "acceptedAnswers": [
+        "AV-(으)면 안 되다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7785,6 +8109,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -7822,8 +8147,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-(으)ㄴ/는/(으)ㄹ N"],
+      "acceptedAnswers": [
+        "AV-(으)ㄴ/는/(으)ㄹ N"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7888,6 +8216,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -7925,8 +8254,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N인 N"],
+      "acceptedAnswers": [
+        "N인 N"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -7991,6 +8323,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -8028,8 +8361,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["V-(으)ㄴ/는데/N인데"],
+      "acceptedAnswers": [
+        "V-(으)ㄴ/는데/N인데"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -8094,6 +8430,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -8131,8 +8468,11 @@
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["N께"],
+      "acceptedAnswers": [
+        "N께"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."
@@ -8160,19 +8500,19 @@
       "dictionaryEntryLogicalIds": [],
       "prompt": {
         "ko": "알맞은 문법 패턴을 고르십시오.",
-        "ru": "Выберите корейский паттерн для правила: «действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.»"
+        "ru": "Выберите корейский паттерн для правила: «действие для другого лица; `드리다` — для уважаемого получателя, `주시다` — уважаемый субъект делает для говорящего.»"
       },
       "explanation": {
-        "ko": "정답은 「AV-아/어/여 드리다/주다」입니다. 이 패턴은 「действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем」 의미로 쓰입니다.",
-        "ru": "Верный паттерн — «AV-아/어/여 드리다/주다»: действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем."
+        "ko": "정답은 「AV-아/어/여 드리다/주시다」입니다. 이 패턴은 「действие для другого лица; `드리다` — для уважаемого получателя, `주시다` — уважаемый субъект делает для говорящего」 의미로 쓰입니다.",
+        "ru": "Верный паттерн — «AV-아/어/여 드리다/주시다»: действие для другого лица; `드리다` — для уважаемого получателя, `주시다` — уважаемый субъект делает для говорящего."
       },
       "difficulty": "intro",
       "options": [
         {
           "id": "opt1",
           "label": {
-            "ko": "AV-아/어/여 드리다/주다",
-            "ru": "AV-아/어/여 드리다/주다"
+            "ko": "AV-아/어/여 드리다/주시다",
+            "ru": "AV-아/어/여 드리다/주시다"
           }
         },
         {
@@ -8197,6 +8537,7 @@
           }
         }
       ],
+      "pairs": [],
       "correctOptionId": "opt1",
       "acceptedAnswers": [],
       "review": {
@@ -8226,16 +8567,19 @@
       "dictionaryEntryLogicalIds": [],
       "prompt": {
         "ko": "설명에 맞는 문법 패턴을 쓰십시오.",
-        "ru": "Напишите корейский паттерн для правила: «действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем.»"
+        "ru": "Напишите корейский паттерн для правила: «действие для другого лица; `드리다` — для уважаемого получателя, `주시다` — уважаемый субъект делает для говорящего.»"
       },
       "explanation": {
-        "ko": "쓰기 연습입니다. 정답 패턴은 「AV-아/어/여 드리다/주다」이며, 「действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем」 의미입니다.",
-        "ru": "Напишите паттерн «AV-아/어/여 드리다/주다» — действие для другого лица; `드리다` понижает говорящего перед уважаемым получателем."
+        "ko": "쓰기 연습입니다. 정답 패턴은 「AV-아/어/여 드리다/주시다」이며, 「действие для другого лица; `드리다` — для уважаемого получателя, `주시다` — уважаемый субъект делает для говорящего」 의미입니다.",
+        "ru": "Напишите паттерн «AV-아/어/여 드리다/주시다» — действие для другого лица; `드리다` — для уважаемого получателя, `주시다` — уважаемый субъект делает для говорящего."
       },
       "difficulty": "practice",
       "options": [],
+      "pairs": [],
       "correctOptionId": null,
-      "acceptedAnswers": ["AV-아/어/여 드리다/주다"],
+      "acceptedAnswers": [
+        "AV-아/어/여 드리다/주시다"
+      ],
       "review": {
         "reviewedAt": "2026-08-10T02:30:00.000Z",
         "note": "F2-I22 language approval by project-owner. Minimal grammar bank (recognition + application); explanation rewritten on approval."

@@ -1,6 +1,7 @@
 "use client";
 
 import { Badge } from "@/components/ui";
+import { BilingualTitle } from "@/features/catalog/presentation/BilingualTitle";
 
 import {
   formatAccuracyPercent,
@@ -63,12 +64,13 @@ export function ModuleProgressCard({ module }: ModuleProgressCardProps) {
           </Badge>
         </div>
         <div className={styles.copy}>
-          <p className={styles.koreanTitle} lang="ko">
-            {module.titleKo}
-          </p>
-          <h2 className={styles.title} id={`module-progress-${module.moduleId}`}>
-            {module.titleRu}
-          </h2>
+          <BilingualTitle
+            as="h2"
+            className={styles.title}
+            id={`module-progress-${module.moduleId}`}
+            ko={module.titleKo}
+            ru={module.titleRu}
+          />
         </div>
       </div>
 
